@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/users/data-maintainer/</guid>
-      <description>People who submit or update data. Developers who must submit data to comply with regulatory requirements, for example. Or local authorities who collect and maintain land and housing data. Resources here include tools for validating datasets and guidance on ensuring compliance.</description>
+      <description>Developers complying with regulations, local authorities collecting land and housing data, and others submitting or updating data.</description>
     </item>
     
     <item>
@@ -43,7 +43,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/users/proptech/</guid>
-      <description>Software developers who create digital tools that use land and housing data to make it easier to develop, buy, sell or rent property. Resources here include tools for collecting data and exploring its use.</description>
+      <description>These software developers create digital tools that use land and housing data to make it easier to develop, buy, sell or rent property.</description>
     </item>
     
   </channel>

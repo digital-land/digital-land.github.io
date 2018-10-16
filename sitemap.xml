@@ -359,6 +359,10 @@
   </url>
   
   <url>
+    <loc>https://digital-land.github.io/events/</loc>
+  </url>
+  
+  <url>
     <loc>https://digital-land.github.io/friction/fear-of-feedback/</loc>
   </url>
   
@@ -583,13 +587,12 @@
   </url>
   
   <url>
-    <loc>https://digital-land.github.io/project/</loc>
-    <priority>0</priority>
+    <loc>https://digital-land.github.io/portfolio/project/</loc>
+    <lastmod>2018-07-31T14:44:08+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://digital-land.github.io/portfolio/project/</loc>
-    <lastmod>2018-07-31T14:44:08+01:00</lastmod>
+    <loc>https://digital-land.github.io/project/</loc>
   </url>
   
   <url>

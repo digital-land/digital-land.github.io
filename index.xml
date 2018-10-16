@@ -408,16 +408,18 @@ In order to carry out any work to a scheduled ancient monument or site you will 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/glossary/annual-monitoring-report/</guid>
-      <description></description>
+      <description>The annual monitoting report is forms a part of the Local Plan.
+It&amp;rsquo;s purpose is to assess:
+ Are policies achieving their objectives, and is sustainable development being delivered? Have policies had the intended consequences? Are the assumptions and objectives behind policies still relevant? Are the targets set in the Local Development Framework being achieved?  </description>
     </item>
     
     <item>
-      <title>Area of archaeologial potential</title>
+      <title>Area of archaeological potential</title>
       <link>https://digital-land.github.io/glossary/area-of-archaeological-potential/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/glossary/area-of-archaeological-potential/</guid>
-      <description></description>
+      <description>These are area&amp;rsquo;s where there is a possibility of buried archeology. If a planning application is submitted on one of these sites the case will referred to a county archaeologist.</description>
     </item>
     
     <item>
@@ -449,12 +451,23 @@ Many users fear data you have to request cannot then be presented in services, e
     </item>
     
     <item>
+      <title>Brownfield sites</title>
+      <link>https://digital-land.github.io/project/brownfield-sites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/brownfield-sites/</guid>
+      <description>All local authorities must publish a register of brownfield sites.
+We were interested in learning about how this policy was implemented, the process that local authorities follow to publish the data, and whether there were any tools that we could build to help people collect and maintain the data.
+Prototypes A way of validating the collected data Our hypothesis Through speaking with local authorities we understood that often times the person responsible for collecting the brownfield site data</description>
+    </item>
+    
+    <item>
       <title>Building age</title>
       <link>https://digital-land.github.io/glossary/building-age/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/glossary/building-age/</guid>
-      <description></description>
+      <description>The Valuation Office Agency frequently publish data on the year (or year range) of when a building was built.</description>
     </item>
     
     <item>
@@ -463,7 +476,7 @@ Many users fear data you have to request cannot then be presented in services, e
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/glossary/building-use/</guid>
-      <description></description>
+      <description>Planning use cases determine what an individual property may be used for.</description>
     </item>
     
     <item>
@@ -490,7 +503,7 @@ Many users fear data you have to request cannot then be presented in services, e
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/glossary/conservation-area/</guid>
-      <description></description>
+      <description>As defined in the [Planning (Listed Buildings and Conservation Areas) Act 1990(https://www.legislation.gov.uk/ukpga/1990/9/contents) a conservation area is an area considered worthy of preservation.</description>
     </item>
     
     <item>
@@ -557,7 +570,7 @@ The amount of council tax owed for each band is determined by each local authori
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/users/data-maintainer/</guid>
-      <description>People who submit or update data. Developers who must submit data to comply with regulatory requirements, for example. Or local authorities who collect and maintain land and housing data. Resources here include tools for validating datasets and guidance on ensuring compliance.</description>
+      <description>Developers complying with regulations, local authorities collecting land and housing data, and others submitting or updating data.</description>
     </item>
     
     <item>
@@ -651,6 +664,18 @@ Such restrictions limit unforseen, innovative use-cases for the data.</descripti
     </item>
     
     <item>
+      <title>Developer contributions</title>
+      <link>https://digital-land.github.io/project/developer-contributions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/developer-contributions/</guid>
+      <description>The National Planning Policy Framework introduces the need for a planning authority to publish their developer contributions
+This page outlines how the Developer Contribution policy team are working with planning authorities to design and test a new data standard for Section 106 agreements and viability assessments.
+We have published a blog post with more information about this project.
+Prototypes In progress Collecting data for a Section 106 executive summary  Our hypothesis Section 106 contributions are published as documents.</description>
+    </item>
+    
+    <item>
       <title>Development Corporation</title>
       <link>https://digital-land.github.io/glossary/development-corporation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -716,6 +741,19 @@ An EPC contains:
       
       <guid>https://digital-land.github.io/glossary/flood-zone/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Golden thread of building information</title>
+      <link>https://digital-land.github.io/project/golden-thread-of-building-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/golden-thread-of-building-information/</guid>
+      <description>Overview here&amp;hellip;
+Prototypes Prototype name Our hypothesis hypothesis
+What we tested  a link to the thing  What we&amp;rsquo;ve learned What we learned.
+Next steps  do 1 do 2 do 3 do 4  Data fields The specification has not yet defined.
+Publications There are no publication for this specification.</description>
     </item>
     
     <item>
@@ -852,6 +890,19 @@ However many organisations see publishing data is seen as a burden, an externali
       
       <guid>https://digital-land.github.io/legislation/ukpa-1975-76/</guid>
       <description>An Act to make fresh provision for and in connection with the keeping of local land charges registers and the registration of matters therein.</description>
+    </item>
+    
+    <item>
+      <title>Local Plans</title>
+      <link>https://digital-land.github.io/project/local-plans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/local-plans/</guid>
+      <description>Overview here&amp;hellip;
+Prototypes Prototype name Our hypothesis hypothesis
+What we tested  a link to the thing  What we&amp;rsquo;ve learned What we learned.
+Next steps  do 1 do 2 do 3 do 4  Data fields The specification has not yet defined.
+Publications There are no publication for this specification.</description>
     </item>
     
     <item>
@@ -1043,7 +1094,7 @@ As a part of the viability assessment a third party may work with a property dev
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/users/proptech/</guid>
-      <description>Software developers who create digital tools that use land and housing data to make it easier to develop, buy, sell or rent property. Resources here include tools for collecting data and exploring its use.</description>
+      <description>These software developers create digital tools that use land and housing data to make it easier to develop, buy, sell or rent property.</description>
     </item>
     
     <item>

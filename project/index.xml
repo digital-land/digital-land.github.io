@@ -10,5 +10,54 @@
 	<atom:link href="https://digital-land.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Brownfield sites</title>
+      <link>https://digital-land.github.io/project/brownfield-sites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/brownfield-sites/</guid>
+      <description>All local authorities must publish a register of brownfield sites.
+We were interested in learning about how this policy was implemented, the process that local authorities follow to publish the data, and whether there were any tools that we could build to help people collect and maintain the data.
+Prototypes A way of validating the collected data Our hypothesis Through speaking with local authorities we understood that often times the person responsible for collecting the brownfield site data</description>
+    </item>
+    
+    <item>
+      <title>Developer contributions</title>
+      <link>https://digital-land.github.io/project/developer-contributions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/developer-contributions/</guid>
+      <description>The National Planning Policy Framework introduces the need for a planning authority to publish their developer contributions
+This page outlines how the Developer Contribution policy team are working with planning authorities to design and test a new data standard for Section 106 agreements and viability assessments.
+We have published a blog post with more information about this project.
+Prototypes In progress Collecting data for a Section 106 executive summary  Our hypothesis Section 106 contributions are published as documents.</description>
+    </item>
+    
+    <item>
+      <title>Golden thread of building information</title>
+      <link>https://digital-land.github.io/project/golden-thread-of-building-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/golden-thread-of-building-information/</guid>
+      <description>Overview here&amp;hellip;
+Prototypes Prototype name Our hypothesis hypothesis
+What we tested  a link to the thing  What we&amp;rsquo;ve learned What we learned.
+Next steps  do 1 do 2 do 3 do 4  Data fields The specification has not yet defined.
+Publications There are no publication for this specification.</description>
+    </item>
+    
+    <item>
+      <title>Local Plans</title>
+      <link>https://digital-land.github.io/project/local-plans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/local-plans/</guid>
+      <description>Overview here&amp;hellip;
+Prototypes Prototype name Our hypothesis hypothesis
+What we tested  a link to the thing  What we&amp;rsquo;ve learned What we learned.
+Next steps  do 1 do 2 do 3 do 4  Data fields The specification has not yet defined.
+Publications There are no publication for this specification.</description>
+    </item>
+    
   </channel>
 </rss>
