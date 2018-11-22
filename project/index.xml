@@ -28,9 +28,8 @@ Prototypes In progress A way of validating the collected data  Our hypothesis Th
       
       <guid>https://digital-land.github.io/project/developer-contributions/</guid>
       <description>The National Planning Policy Framework introduces the need for a planning authority to publish their developer contributions
-This page outlines how the Developer Contribution policy team are working with planning authorities to design and test a new data standard for Section 106 agreements and viability assessments.
-We have published a blog post with more information about this project.
-Prototypes In progress Collecting data for a Section 106 executive summary  Our hypothesis Section 106 contributions are published as documents.</description>
+The way planning authorities currently publish these varies, and the inconsistent formats means the data is difficult to compare and hard to consume in bulk. The process of compiling and publishing these is also time-consuming for planning authorities.
+The Digital Land team and the Developer Contribution policy team at MHCLG are working to address these problems.</description>
     </item>
     
     <item>
