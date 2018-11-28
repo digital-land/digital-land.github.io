@@ -18,8 +18,8 @@
       
       <guid>https://digital-land.github.io/prototype/digital-land-portfolio/</guid>
       <description>We made a portfolio of patterns and use-cases for digital land data during discovery. We will review the need for this tool, or if it can be iterated to cover the needs for a handbook.
-Update 1  Sept 2018
- added 2 projects; Bristol Maps and Propective.io updated portfolio to use Govuk design system   Initial  May 2018
+Sept 2018
+ added 2 projects; Bristol Maps and Propective.io updated portfolio to use Govuk design system   May 2018
  created a portfolio for the team to collect interesting projects in the digital land space categorised these projects according to some patterns we have observed  notices better local plans better planning applications geographies information about an area information about a property    </description>
     </item>
     
@@ -30,9 +30,10 @@ Update 1  Sept 2018
       
       <guid>https://digital-land.github.io/prototype/validator/</guid>
       <description>This tool will assist publishers ensure their publication meets a standard, such as the brownfield sites register standard, and the emerging standards for Local Plans and Section 106.
-Update 2  Sept 2018
- added regex validators to text for correct planning application states   Update 1  July 2018
- created validator for brownfield sites (brownfield sites standard) collected links to all published brownfield site registers (number?) added warnings if the csv file is not served correctly   </description>
+November 2018
+ applied the validator to support developer contributions which has multiple files.   September 2018
+ added regex validators to text for correct planning application states   July 2018
+ created validator for brownfield sites (brownfield sites standard) collected links to published brownfield site registers added warnings if the csv file is not served correctly   </description>
     </item>
     
     <item>
@@ -96,8 +97,9 @@ Update 2  Sept 2018
       
       <guid>https://digital-land.github.io/prototype/digital-land-explorer/</guid>
       <description>We will continue to develop our explorer to better understand data which is available and demonstrate to others how to consume collected data.
-Update 2  July 2018
- display metadata for each publication/dataset users can exlore individual datasets  all data shown on map user can inspect a point or polygon to see properties  lazy loading and clustering added so that users can explore larger datasets   Update 1  June 2018</description>
+July 2018
+ display metadata for each publication/dataset users can exlore individual datasets  all data shown on map user can inspect a point or polygon to see properties  lazy loading and clustering added so that users can explore larger datasets   June 2018
+ added functionality to find all data we have collected that is related to a user provided address or point add basic search to lists of publications and local authorities   May 2018</description>
     </item>
     
     <item>
