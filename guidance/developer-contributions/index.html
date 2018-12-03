@@ -195,7 +195,7 @@
 <li>Update the national register of developer contributions</li>
 </ol>
 
-<h3 id="step-1-create-your-csv-files">Step 1: Create your .csv files</h3>
+<h2 id="step-1-create-your-csv-files">Step 1: Create your .csv files</h2>
 
 <p>You must create 3 .csv files:</p>
 
@@ -216,7 +216,7 @@
 
 <p>For general information on creating a .csv file see the W3C’s <a href="http://w3c.github.io/csvw/primer/">CSVs on the web: a primer</a>. </p>
 
-<h4 id="developer-agreements">Developer agreements</h4>
+<h3 id="developer-agreements">Developer agreements</h3>
 
 <p>Developer agreements must be listed in a .csv file named using the following convention:</p>
 
@@ -224,40 +224,45 @@
 
 <p>Here YYYMMDD represents the year, month and day you have created the file.</p>
 
-<p><strong>Column 1: ‘developer-agreement&rsquo;</strong></p>
+<h4 id="columns">Columns</h4>
+
+<p><strong>developer-agreement</strong></p>
 
 <p>Enter a unique reference number to identify the agreement. By ‘unique’ this means it should not be used for anything else in your organisation.</p>
 
-<p><strong>Column 2: ‘organisation’</strong></p>
+<p><strong>organisation</strong></p>
 
 <p>The text entered here must be in a specific format as expressed in this list. All text must be in lower case, with no spaces. Norfolk’s local planning authority, for example, would be:</p>
 
 <p>local-authority:nfk</p>
 
-<p><strong>Column 3: ‘entry-date’</strong></p>
+<p><strong>entry-date</strong></p>
 
 <p>Enter the date the record was created, in the format yyyy-mm-dd. For 1 February 2019, for example, you should enter 2019-02-01</p>
 
-<p><strong>Column 4: ‘start-date&rsquo;</strong></p>
+<p><strong>start-date</strong></p>
 
-<p>Enter the date on which the agreement comes into effect, in the same format as column 3.</p>
+<p>Enter the date on which the agreement comes into effect, in the same format as the entry-date column.</p>
 
-<p><strong>Column 5: ‘end-date’</strong></p>
+<p><strong>end-date</strong></p>
 
-<p>Enter the last day the agreement is in effect, in the same format as column 3.</p>
+<p>Enter the last day the agreement is in effect, in the same format as the entry-date column.</p>
 
-<p><strong>Column 6: ‘planning-application’</strong></p>
+<p><strong>planning-application</strong></p>
 
 <p>Enter the unique reference number for the planning application as it appears on the Planning Portal.</p>
 
-<p><strong>Column 7: ‘document-url’</strong>
-Enter the web address that links directly to the actual agreement document.</p>
+<p><strong>document-url</strong></p>
 
-<p><strong>Column 8: ‘developer-agreement-type’</strong></p>
+<p>Enter the web address that links directly to the actual agreement document.</p>
+
+<p><strong>developer-agreement-type</strong></p>
 
 <p>This is either ‘CIL’ (community investment levy) or ‘S106’ (Section 106). More developer agreement types will gradually be added to the developer-agreement-type.csv file here.</p>
 
-<h4 id="developer-agreement-contributions">Developer agreement contributions</h4>
+<hr />
+
+<h3 id="developer-agreement-contributions">Developer agreement contributions</h3>
 
 <p>Developer agreement contributions must be listed in a .csv file named using the following convention:</p>
 
@@ -265,37 +270,41 @@ Enter the web address that links directly to the actual agreement document.</p>
 
 <p>Here YYYMMDD represents the year, month and day you have created the file.</p>
 
-<p><strong>Column 1: ‘developer-contribution&rsquo;</strong></p>
+<h4 id="columns-1">Columns</h4>
+
+<p><strong>developer-contribution</strong></p>
 
 <p>Enter a unique reference number to identify the contribution. By ‘unique’ this means it should not be used for anything else in
 your organisation.</p>
 
-<p><strong>Column 2: ‘developer-agreement&rsquo;</strong></p>
+<p><strong>developer-agreement</strong></p>
 
 <p>Enter the unique reference number you’ve used to identify the agreement.</p>
 
-<p><strong>Column 3: ‘contribution-purpose‘</strong></p>
+<p><strong>contribution-purpose</strong></p>
 
 <p>Enter the ID for the intended purpose of the developer contribution. This is found in the first column of the
 developer-contribution-purpose.csv file, held by MHCLG here.</p>
 
-<p><strong>Column 4: ‘amount‘</strong></p>
+<p><strong>amount</strong></p>
 
 <p>Enter the agreed contribution amount, in pounds and pence but without a currency symbol or commas (for example ‘100000.00’).</p>
 
-<p><strong>Column 5: ‘entry-date‘</strong></p>
+<p><strong>entry-date</strong></p>
 
 <p>Enter the date the record was created, in the format yyyy-mm-dd. For 1 February 2019, for example, you should enter 2019-02-01.</p>
 
-<p><strong>Column 6: ‘start-date&rsquo;</strong></p>
+<p><strong>start-date</strong></p>
 
-<p>Enter the date on which the agreement comes into effect, in the same format as column 5.</p>
+<p>Enter the date on which the agreement comes into effect, in the same format as the entry-date column.</p>
 
-<p><strong>Column 7: ‘end-date’</strong></p>
+<p><strong>end-date</strong></p>
 
-<p>Enter the last day the agreement is in effect, in the same format as column 5.</p>
+<p>Enter the last day the agreement is in effect, in the same format as the entry-date column.</p>
 
-<h4 id="developer-agreement-transactions">Developer agreement transactions</h4>
+<hr />
+
+<h3 id="developer-agreement-transactions">Developer agreement transactions</h3>
 
 <p>Developer agreement transactions must be listed in a .csv file named using the following convention:</p>
 
@@ -303,29 +312,31 @@ developer-contribution-purpose.csv file, held by MHCLG here.</p>
 
 <p>Here YYYMMDD represents the year, month and day you have created the file.</p>
 
-<p><strong>Column 1: ‘developer-agreement-transaction‘</strong></p>
+<h4 id="columns-2">Columns</h4>
+
+<p><strong>developer-agreement-transaction</strong></p>
 
 <p>Enter a unique reference number to identify the transaction. By ‘unique’ this means it should not be used for anything else in your organisation.</p>
 
-<p><strong>Column 2: ‘developer-contribution&rsquo;</strong></p>
+<p><strong>developer-contribution</strong></p>
 
 <p>Enter the unique reference number you’ve used to identify the contribution. By ‘unique’ this means it should not be used for anything else in your organisation.</p>
 
-<p><strong>Column 3: ‘amount&rsquo;</strong></p>
+<p><strong>amount</strong></p>
 
 <p>Enter the amount received from a developer for part or full payment of a contribution (inserting ‘+ve’ before the amount) or the amount spent by a planning authority (inserting ‘-ve’ before the amount), as applicable.</p>
 
-<p><strong>Column 4: ‘entry-date‘</strong></p>
+<p><strong>entry-date</strong></p>
 
 <p>Enter the date the record was created, in the format yyyy-mm-dd. For 1 February 2019, for example, you should enter 2019-02-01.</p>
 
-<p><strong>Column 5: ‘start-date&rsquo;</strong></p>
+<p><strong>start-date</strong></p>
 
-<p>Enter the date on which the entry comes into effect, in the same format as column 4.</p>
+<p>Enter the date on which the entry comes into effect, in the same format as the entry-date column.</p>
 
-<p><strong>Column 6: ‘end-date’</strong></p>
+<p><strong>end-date</strong></p>
 
-<p>Enter the last day the entry is in effect, in the same format as column 4.</p>
+<p>Enter the last day the entry is in effect, in the same format as column the entry-date column.</p>
 
 <h3 id="step-2-upload-the-files-to-a-persistent-url">Step 2: Upload the files to a persistent URL</h3>
 
@@ -346,25 +357,25 @@ developer-contribution-purpose.csv file, held by MHCLG here.</p>
 
 <p>All organisations with a statutory duty to publish their own registers of contributions should ensure this file is kept accurate and up to date. To update the register you must …</p>
 
-<p><strong>Column 3: ‘name’</strong></p>
+<p><strong>name</strong></p>
 
 <p>Find your organisation in the alphabetised list.</p>
 
-<p><strong>Column 2: ‘register-url’</strong></p>
+<p><strong>register-url</strong></p>
 
 <p>Enter the web address of the web page created in step 3.</p>
 
-<p><strong>Column 4: ‘entry-date’</strong></p>
+<p><strong>entry-date</strong></p>
 
 <p>Enter the date you last updated the registry, in the format yyyy-mm-dd. For 1 February 2019, for example, you should enter 2019-02-01.</p>
 
-<p><strong>Column 5: ‘start-date’</strong></p>
+<p><strong>start-date</strong></p>
 
-<p>Enter the date the registry was first created, in the format described in column 4.</p>
+<p>Enter the date the registry was first created, in the format described in the entry-date column.</p>
 
-<p><strong>Column 6: ‘end-date’</strong></p>
+<p><strong>end-date</strong></p>
 
-<p>Enter the date the registry will no longer be valid, in the format described in column 4.</p>
+<p>Enter the date the registry will no longer be valid, in the format described in the entry-date column.</p>
 
 		</div>
 	</div>
