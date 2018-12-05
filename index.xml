@@ -682,7 +682,9 @@ We want to develop a data format and publishing guidance that results in better 
       
       <guid>https://digital-land.github.io/project/developer-contributions/</guid>
       <description>The Ministry of Housing, Communities &amp;amp; Local Government has been working with local planning authorities to design a data format for publishing Section 106 agreements, viability assessments, and other developer contributions.
-We need your input to create a common data format As part of an alpha project, we’re investigating the issues we’ve identified around developer contributions. This involves building prototype tools that allow us to test how robust and flexible the data format is and to make adjustments to it accordingly.</description>
+How you can help us develop a common data format This page documents the alpha phase for developing a format for representing developer contributions as data.
+You can us improve the format by:
+ participating in the discussion on our GitHub issues making comments using our feedback form  We will continue to develop the format as we learn from testing the format with data and the prototypes with users.</description>
     </item>
     
     <item>
