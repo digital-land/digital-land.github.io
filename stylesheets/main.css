@@ -301,7 +301,7 @@
   }
 }
 
-.govuk-heading-m, .markdown-output h3 {
+.govuk-heading-m {
   color: #0b0c0c;
   font-family: "nta", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -315,33 +315,33 @@
 }
 
 @media print {
-  .govuk-heading-m, .markdown-output h3 {
+  .govuk-heading-m {
     color: #000000;
   }
 }
 
 @media print {
-  .govuk-heading-m, .markdown-output h3 {
+  .govuk-heading-m {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .govuk-heading-m, .markdown-output h3 {
+  .govuk-heading-m {
     font-size: 24px;
     line-height: 1.25;
   }
 }
 
 @media print {
-  .govuk-heading-m, .markdown-output h3 {
+  .govuk-heading-m {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .govuk-heading-m, .markdown-output h3 {
+  .govuk-heading-m {
     margin-bottom: 20px;
   }
 }
@@ -700,13 +700,10 @@
   }
 }
 
-.govuk-body-m + .govuk-heading-m, .govuk-body + .govuk-heading-m, .markdown-output p + .govuk-heading-m, .markdown-output .govuk-body-m + h3, .markdown-output .govuk-body + h3, .markdown-output p + h3,
+.govuk-body-m + .govuk-heading-m, .govuk-body + .govuk-heading-m, .markdown-output p + .govuk-heading-m,
 .govuk-body-s + .govuk-heading-m,
-.markdown-output .govuk-body-s + h3,
 .govuk-list + .govuk-heading-m,
 .markdown-output ul + .govuk-heading-m,
-.markdown-output .govuk-list + h3,
-.markdown-output ul + h3,
 .govuk-body-m + .govuk-heading-s,
 .govuk-body + .govuk-heading-s,
 .markdown-output p + .govuk-heading-s,
@@ -723,13 +720,10 @@
 }
 
 @media (min-width: 40.0625em) {
-  .govuk-body-m + .govuk-heading-m, .govuk-body + .govuk-heading-m, .markdown-output p + .govuk-heading-m, .markdown-output .govuk-body-m + h3, .markdown-output .govuk-body + h3, .markdown-output p + h3,
+  .govuk-body-m + .govuk-heading-m, .govuk-body + .govuk-heading-m, .markdown-output p + .govuk-heading-m,
   .govuk-body-s + .govuk-heading-m,
-  .markdown-output .govuk-body-s + h3,
   .govuk-list + .govuk-heading-m,
   .markdown-output ul + .govuk-heading-m,
-  .markdown-output .govuk-list + h3,
-  .markdown-output ul + h3,
   .govuk-body-m + .govuk-heading-s,
   .govuk-body + .govuk-heading-s,
   .markdown-output p + .govuk-heading-s,
@@ -3781,7 +3775,7 @@
   }
 }
 
-.govuk-table {
+.govuk-table, .markdown-output table {
   font-family: "nta", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3796,45 +3790,45 @@
 }
 
 @media print {
-  .govuk-table {
+  .govuk-table, .markdown-output table {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .govuk-table {
+  .govuk-table, .markdown-output table {
     font-size: 19px;
     line-height: 1.31579;
   }
 }
 
 @media print {
-  .govuk-table {
+  .govuk-table, .markdown-output table {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
 @media print {
-  .govuk-table {
+  .govuk-table, .markdown-output table {
     color: #000000;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .govuk-table {
+  .govuk-table, .markdown-output table {
     margin-bottom: 30px;
   }
 }
 
-.govuk-table__header {
+.govuk-table__header, .markdown-output thead th {
   font-weight: 700;
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
 }
 
-.govuk-table__cell {
+.govuk-table__cell, .markdown-output td {
   padding: 10px 20px 10px 0;
   border-bottom: 1px solid #bfc1c3;
   text-align: left;
@@ -3858,8 +3852,9 @@
   text-align: right;
 }
 
-.govuk-table__header:last-child,
-.govuk-table__cell:last-child {
+.govuk-table__header:last-child, .markdown-output thead th:last-child,
+.govuk-table__cell:last-child,
+.markdown-output td:last-child {
   padding-right: 0;
 }
 
@@ -5299,6 +5294,23 @@
   }
 }
 
+* {
+  font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+}
+
+.govuk-warning-text__icon {
+  line-height: 26px;
+}
+
+.govuk-button--start {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.govuk-tag {
+  padding: 5px 8px 4px;
+}
+
 blockquote {
   font-family: "nta", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -5516,6 +5528,13 @@ blockquote p:last-child:after {
   color: #28a197;
 }
 
+.in-progress-flag--inverse {
+  background: #28a197;
+  color: #fff;
+  padding: 3px 5px 0;
+  padding: 3px 5px 2px;
+}
+
 .later-flag {
   color: #2b8cc4;
 }
@@ -5532,6 +5551,16 @@ blockquote p:last-child:after {
 
 .markdown-output p:first-child {
   margin-top: 0;
+}
+
+.markdown-output p, .markdown-output ul {
+  margin-top: 15px;
+}
+
+@media (min-width: 40.0625em) {
+  .markdown-output p, .markdown-output ul {
+    margin-top: 20px;
+  }
 }
 
 .markdown-output h1 {
@@ -5555,23 +5584,60 @@ blockquote p:last-child:after {
 }
 
 .markdown-output h3 {
-  margin-top: 15px;
+  font-family: "nta", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11111;
+  margin-top: 40px;
+}
+
+@media print {
+  .markdown-output h3 {
+    font-family: sans-serif;
+  }
 }
 
 @media (min-width: 40.0625em) {
   .markdown-output h3 {
-    margin-top: 20px;
+    font-size: 27px;
+    line-height: 1.11111;
+  }
+}
+
+@media print {
+  .markdown-output h3 {
+    font-size: 18pt;
+    line-height: 1.15;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .markdown-output h3 {
+    margin-top: 60px;
   }
 }
 
 .markdown-output h4 {
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 @media (min-width: 40.0625em) {
   .markdown-output h4 {
-    margin-top: 10px;
+    margin-top: 40px;
   }
+}
+
+.markdown-output p code {
+  line-height: 1.31579em;
+  padding: 2px 5px;
+  background-color: #f8f8f8;
+  color: #001526;
+}
+
+* {
+  font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif !important;
 }
 
 .govuk-body, .markdown-output p,
@@ -5716,4 +5782,93 @@ blockquote p:last-child:after {
 
 .prototype-update-container:last-child {
   border-bottom: none;
+}
+
+.prototype-summary {
+  padding-top: 20px;
+}
+
+@media (min-width: 40.0625em) {
+  .prototype-summary {
+    padding-top: 30px;
+  }
+}
+
+.prototype-summary .prototype-summary--heading {
+  margin-top: 0;
+}
+
+.prototype-summary .prototype-summary--heading a {
+  color: #0b0c0c;
+}
+
+.prototype-summary .prototype-progress-flag {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.column-guidance-container {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 40.0625em) {
+  .column-guidance-container {
+    margin-bottom: 30px;
+  }
+}
+
+.column-guidance-container .column-heading {
+  font-family: "nta", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 5px;
+}
+
+@media print {
+  .column-guidance-container .column-heading {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .column-guidance-container .column-heading {
+    font-size: 19px;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .column-guidance-container .column-heading {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.column-guidance-container p {
+  margin-top: 5px;
+}
+
+.tech-block {
+  background: #fcfcfc;
+  padding: 15px;
+  overflow: auto;
+  border: 1px solid #bfc1c3;
+  border-radius: 1px;
+}
+
+.tech-block code {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 16px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+}
+
+.no-op {
+  display: none;
 }
