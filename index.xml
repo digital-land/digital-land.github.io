@@ -657,16 +657,6 @@ Such restrictions limit unforseen, innovative use-cases for the data.</descripti
     </item>
     
     <item>
-      <title>Developer contribution data format and publishing</title>
-      <link>https://digital-land.github.io/guidance/developer-contributions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/guidance/developer-contributions/</guid>
-      <description>The National Planning Policy Framework requires all local planning authorities and certain other organisations to publish their developer contributions data on a regular basis and in an agreed format. That format hasn’t yet been agreed, but the following guidance is a working approach that we plan to refine with your input.
-Our aim is to develop a data format and publishing guidance that results in better insights into how developer contributions are supporting community infrastructure.</description>
-    </item>
-    
-    <item>
       <title>Developer contributions</title>
       <link>https://digital-land.github.io/glossary/developer-contributions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -682,7 +672,7 @@ Our aim is to develop a data format and publishing guidance that results in bett
       
       <guid>https://digital-land.github.io/project/developer-contributions/</guid>
       <description>The Ministry of Housing, Communities &amp;amp; Local Government has been working with local planning authorities to design a data format for publishing Section 106 agreements, viability assessments, and other developer contributions.
-How you can help us develop a common data format This page documents the alpha phase for developing a format for representing developer contributions as data.
+Help us develop a common data format This page documents the alpha phase for developing a format for representing developer contributions as data.
 You can help us improve the format by:
  participating in the discussion on our GitHub issues making comments using our feedback form  We will continue to develop the format as we learn from testing the format with data and the prototypes with users.</description>
     </item>
@@ -1122,6 +1112,16 @@ As a part of the viability assessment a third party may work with a property dev
       
       <guid>https://digital-land.github.io/needs/provide-feedback/</guid>
       <description>When data is incorrect or missing, I want to be able to inform the data maintainer, so that they can fix the dataset.</description>
+    </item>
+    
+    <item>
+      <title>Publish your developer contributions data</title>
+      <link>https://digital-land.github.io/guidance/developer-contributions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/developer-contributions/</guid>
+      <description>The National Planning Policy Framework requires all local planning authorities and certain other organisations to publish their developer contributions data on a regular basis and in an agreed format. That format hasn’t yet been agreed, but the following guidance is a working approach that we plan to refine with your input.
+Our aim is to develop a data format and publishing guidance that results in better insights into how developer contributions are supporting community infrastructure.</description>
     </item>
     
     <item>
