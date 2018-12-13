@@ -666,17 +666,6 @@ Such restrictions limit unforseen, innovative use-cases for the data.</descripti
     </item>
     
     <item>
-      <title>Developer contributions</title>
-      <link>https://digital-land.github.io/project/developer-contributions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/project/developer-contributions/</guid>
-      <description>The Ministry of Housing, Communities &amp;amp; Local Government has been working with local planning authorities to design a data format for publishing Section 106 agreements, viability assessments, and other developer contributions.
-Help us develop a common data format  Publish using our proposed data format We are proposing a simple data format for developer contributions that:
- meets the user needs we’ve identified requires minimal effort from local planning authorities to create and make the data available  By using this format next time you publish your contributions, you’ll be giving us data and insights that will help us improve it.</description>
-    </item>
-    
-    <item>
       <title>Development Corporation</title>
       <link>https://digital-land.github.io/glossary/development-corporation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -789,6 +778,18 @@ Next steps  we&amp;rsquo;re meeting with the team from the Building Safety Progr
       
       <guid>https://digital-land.github.io/glossary/health-and-safety-executive/</guid>
       <description>The Health and Safety Executive is the body responsible for the encouragement, regulation and enforcement of workplace health, safety and welfare, and for research into occupational risks in Great Britain. It is a non-departmental public body of the United Kingdom.</description>
+    </item>
+    
+    <item>
+      <title>Help us develop a common data format</title>
+      <link>https://digital-land.github.io/project/developer-contributions/develop-a-common-data-format/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/developer-contributions/develop-a-common-data-format/</guid>
+      <description>This page documents the alpha phase for developing a format for representing developer contributions as data.
+You can help us improve the format by:
+ participating in the discussion on our GitHub issues making comments using our feedback form  We will continue to develop the format as we learn from testing the format with data and the prototypes with users.
+We would particularly like to hear from local planning authorities who are able to make their developer contributions public and would be willing to participate in our user research.</description>
     </item>
     
     <item>
