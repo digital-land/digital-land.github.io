@@ -22,6 +22,18 @@ Prototypes In progress A way of validating the collected data   Our hypothesis T
     </item>
     
     <item>
+      <title>Developer contributions</title>
+      <link>https://digital-land.github.io/project/developer-contributions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/developer-contributions/</guid>
+      <description>The Ministry of Housing, Communities &amp;amp; Local Government has been working with local planning authorities to design a data format for publishing Section 106 agreements, viability assessments, and other developer contributions.
+Help us develop a common data format This page documents the alpha phase for developing a format for representing developer contributions as data.
+You can help us improve the format by:
+ participating in the discussion on our GitHub issues making comments using our feedback form  We will continue to develop the format as we learn from testing the format with data and the prototypes with users.</description>
+    </item>
+    
+    <item>
       <title>Golden thread of building information</title>
       <link>https://digital-land.github.io/project/golden-thread-of-building-information/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
