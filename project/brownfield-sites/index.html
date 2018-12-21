@@ -228,11 +228,16 @@
 
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-<h2 id="next-steps">Next steps</h2>
+<h2 id="upcoming-areas-of-investigation">Upcoming areas of investigation</h2>
 
-<ul>
-<li>next we&rsquo;ll be doing these things&hellip;</li>
-</ul>
+
+
+<div class="upcoming-areas-section">
+  <p>We plan to explore the following by prototyping tools and by testing and consulting with people involved with developer contributions, and responding to your feedback.</p>
+
+<p>We will regularly add updates to the following <a href="https://github.com/digital-land/digital-land/issues">issues on github</a>:</p>
+
+</div>
 
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
@@ -248,8 +253,6 @@
 
 		</div>
 	</div>
-
-  
 
 
       </main>
@@ -295,6 +298,53 @@
     <script src="/javascripts/govuk-template.js?0.24.0"></script>
 
     
+<script src="/js/pretty.js"></script>
+<script src="/js/octokit-rest.js"></script>
+<script>
+
+  const issueShortTemplate = (issue) => `
+  <li class="project-issue"><a href="${issue.html_url}">${issue.title}</a></li>`;
+
+  const octokit = new Octokit();
+  const owner = "digital-land";
+  const repo = "digital-land";
+  const projectLabel = "project:brownfield-sites";
+
+  const futureIssuesContainer = document.querySelector(".upcoming-areas-section");
+  if( futureIssuesContainer ) {
+    const issuesListEl = addGovukListEl(futureIssuesContainer);
+
+    octokit.issues.listForRepo({
+      owner: owner,
+      repo: repo,
+      labels: projectLabel,
+      per_page: 100 
+    }).then(({data, headers, status}) => {
+      const futureIssues = data.filter((issue) => {
+        
+        const labels = issue.labels.map((labelObj) => labelObj.name);
+        
+        return !labels.includes("current-area-of-investigation");
+      });
+      
+      let issuesHTML = futureIssues.map(issue => `
+        <li class="project-issue"><a href="${issue.html_url}">${issue.title}</a></li>
+      `).join("");
+
+      issuesListEl.innerHTML = issuesHTML;
+    });
+  }
+
+  function addGovukListEl(container) {
+    const newListElement = document.createElement("ul");
+    newListElement.classList.add("govuk-list");
+    newListElement.classList.add("govuk-list--bullet");
+    container.appendChild(newListElement);
+    return newListElement;
+  }
+  
+</script>
+
 
 
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>

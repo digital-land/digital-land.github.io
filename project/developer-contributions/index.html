@@ -337,18 +337,14 @@
 
 <h2 id="upcoming-areas-of-investigation">Upcoming areas of investigation</h2>
 
-<p>We plan to explore the following by prototyping tools and by testing with, consulting people involved with developer contributions, and responding to your feedback:</p>
 
-<ul>
-<li><a href="https://github.com/digital-land/digital-land/issues/23">Is it possible to extract Section 106 data from third party tools?</a></li>
-<li><a href="https://github.com/digital-land/digital-land/issues/24">What do planning authorities need from an index of viability assessments?</a></li>
-<li><a href="https://github.com/digital-land/digital-land/issues/25">Would it be useful to track contributions at a project level?</a></li>
-<li><a href="https://github.com/digital-land/digital-land/issues/28">Are ‘developer contributions’ the correct name for this work?</a></li>
-<li><a href="https://github.com/digital-land/digital-land/issues/26">Is it possible to have a standardised set of contribution purposes?</a></li>
-<li><a href="https://github.com/digital-land/digital-land/issues/27">What dates are important and do we need to capture them?</a></li>
-<li><a href="https://github.com/digital-land/digital-land/issues/29">How do we capture non-financial obligations as data?</a></li>
-<li><a href="https://github.com/digital-land/digital-land/issues/33">How do we avoid introducing additional work to local planning authorities who use 3rd party tool to manage their agreements?</a></li>
-</ul>
+
+<div class="upcoming-areas-section">
+  <p>We plan to explore the following by prototyping tools and by testing and consulting with people involved with developer contributions, and responding to your feedback.</p>
+
+<p>We will regularly add updates to the following <a href="https://github.com/digital-land/digital-land/issues">issues on github</a>:</p>
+
+</div>
 
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
@@ -372,8 +368,6 @@
 
 		</div>
 	</div>
-
-  
 
 
       </main>
@@ -419,6 +413,53 @@
     <script src="/javascripts/govuk-template.js?0.24.0"></script>
 
     
+<script src="/js/pretty.js"></script>
+<script src="/js/octokit-rest.js"></script>
+<script>
+
+  const issueShortTemplate = (issue) => `
+  <li class="project-issue"><a href="${issue.html_url}">${issue.title}</a></li>`;
+
+  const octokit = new Octokit();
+  const owner = "digital-land";
+  const repo = "digital-land";
+  const projectLabel = "project:developer-contributions";
+
+  const futureIssuesContainer = document.querySelector(".upcoming-areas-section");
+  if( futureIssuesContainer ) {
+    const issuesListEl = addGovukListEl(futureIssuesContainer);
+
+    octokit.issues.listForRepo({
+      owner: owner,
+      repo: repo,
+      labels: projectLabel,
+      per_page: 100 
+    }).then(({data, headers, status}) => {
+      const futureIssues = data.filter((issue) => {
+        
+        const labels = issue.labels.map((labelObj) => labelObj.name);
+        
+        return !labels.includes("current-area-of-investigation");
+      });
+      
+      let issuesHTML = futureIssues.map(issue => `
+        <li class="project-issue"><a href="${issue.html_url}">${issue.title}</a></li>
+      `).join("");
+
+      issuesListEl.innerHTML = issuesHTML;
+    });
+  }
+
+  function addGovukListEl(container) {
+    const newListElement = document.createElement("ul");
+    newListElement.classList.add("govuk-list");
+    newListElement.classList.add("govuk-list--bullet");
+    container.appendChild(newListElement);
+    return newListElement;
+  }
+  
+</script>
+
 
 
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
