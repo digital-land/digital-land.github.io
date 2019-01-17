@@ -71,10 +71,8 @@ The Ministry of Housing, Communities and Local Government is working with local 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/project/single-register-of-planning/</guid>
-      <description>Overview here&amp;hellip;
-Prototypes We&amp;rsquo;ve not yet started prototype for this project.
-Next steps Data fields The specification has not yet defined.
-Publications There are no publication for this specification.</description>
+      <description>mySociety and the Ministry of Housing, Communities &amp;amp; Local Government are exploring how to make trustworthy, up-to-date planning application data easier to find, use, and build into services.
+Next steps  Develop a simple model of planning application data flows, by reviewing existing literature and data sources, and interviewing domain experts from MHCLG, GLA, LGA, and Future Cities Catapult. Understand what planning permission data is needed by developers, PropTech companies, and analysts.</description>
     </item>
     
   </channel>
