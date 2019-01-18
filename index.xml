@@ -6,10 +6,28 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Wed, 19 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Oct 2018 13:24:27 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data and Information</title>
+      <link>https://digital-land.github.io/blog-post/data-and-information/</link>
+      <pubDate>Thu, 25 Oct 2018 13:24:27 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/blog-post/data-and-information/</guid>
+      <description>Based on our learnings from discovery, this is the first in a series of blog posts that explains the points of friction that our users face when trying to use housing data.</description>
+    </item>
+    
+    <item>
+      <title>Making developer contributions open and transparent</title>
+      <link>https://digital-land.github.io/blog-post/making-developer-contributions-open-and-transparent/</link>
+      <pubDate>Tue, 16 Oct 2018 14:00:35 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/blog-post/making-developer-contributions-open-and-transparent/</guid>
+      <description>How we’re working with planning policy people, local authorities and suppliers to evolve minimal data standards for Section 106 agreements and Viability assessments.</description>
+    </item>
     
     <item>
       <title>Digital Land Portfolio</title>
@@ -163,6 +181,15 @@ July 2018
       
       <guid>https://digital-land.github.io/portfolio/project/prospective-io/</guid>
       <description>We&amp;rsquo;re developing tailored products for a range of industries including planning and architecture, real estate development, transport and logistics, retail and marketing, investment and insurance. ​ Our solutions will enable public and private sector organisations to optimise property design, development and investment processes, streamline service provision and improve transport and infrastructure operations.</description>
+    </item>
+    
+    <item>
+      <title>Introducing user research to housing and planning data</title>
+      <link>https://digital-land.github.io/blog-post/introducing-user-research-to-housing-and-planning-data/</link>
+      <pubDate>Mon, 11 Jun 2018 17:48:35 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/blog-post/introducing-user-research-to-housing-and-planning-data/</guid>
+      <description>Our approach for user research during the discovery phase.</description>
     </item>
     
     <item>

@@ -6,9 +6,37 @@
     <description>Recent content in Blog posts on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
+    <lastBuildDate>Thu, 25 Oct 2018 13:24:27 +0000</lastBuildDate>
     
-	<atom:link href="https://digital-land.github.io/blog-post/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://digital-land.github.io/blog-post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data and Information</title>
+      <link>https://mhclgdigital.blog.gov.uk/2018/10/25/data-and-information/</link>
+      <pubDate>Thu, 25 Oct 2018 13:24:27 +0000</pubDate>
+      <author>Paul Downey</author>
+      <guid>https://mhclgdigital.blog.gov.uk/2018/10/25/data-and-information/</guid>
+      <description>Based on our learnings from discovery, this is the first in a series of blog posts that explains the points of friction that our users face when trying to use housing data.</description>
+    </item>
+    
+    <item>
+      <title>Making developer contributions open and transparent</title>
+      <link>https://mhclgdigital.blog.gov.uk/2018/10/16/making-developer-contributions-open-and-transparent/</link>
+      <pubDate>Tue, 16 Oct 2018 14:00:35 +0000</pubDate>
+      <author>Matt Lucht</author>
+      <guid>https://mhclgdigital.blog.gov.uk/2018/10/16/making-developer-contributions-open-and-transparent/</guid>
+      <description>How we’re working with planning policy people, local authorities and suppliers to evolve minimal data standards for Section 106 agreements and Viability assessments.</description>
+    </item>
+    
+    <item>
+      <title>Introducing user research to housing and planning data</title>
+      <link>https://mhclgdigital.blog.gov.uk/2018/06/11/introducing-user-research-to-housing-and-planning-data/</link>
+      <pubDate>Mon, 11 Jun 2018 17:48:35 +0000</pubDate>
+      <author>Rose Rees-Jones</author>
+      <guid>https://mhclgdigital.blog.gov.uk/2018/06/11/introducing-user-research-to-housing-and-planning-data/</guid>
+      <description>Our approach for user research during the discovery phase.</description>
+    </item>
     
   </channel>
 </rss>
