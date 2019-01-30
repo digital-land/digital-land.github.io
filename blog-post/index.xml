@@ -6,10 +6,19 @@
     <description>Recent content in Blog posts on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Mon, 21 Jan 2019 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Jan 2019 12:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://digital-land.github.io/blog-post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Planning permissions ‘Single register of planning’ discovery: Sprint notes 14-28 Jan 2019</title>
+      <link>https://digital-land.github.io/blog-post/planning-project-sprint-notes-28-jan/</link>
+      <pubDate>Wed, 30 Jan 2019 12:00:00 +0000</pubDate>
+      <author>Emily Robertson-Knowlton</author>
+      <guid>https://digital-land.github.io/blog-post/planning-project-sprint-notes-28-jan/</guid>
+      <description>Headlines  Creating and validating a basic model of planning applications, with information and insights from our Discovery phase user research interviews thus far.  Last sprint we…  Kicked off the project! See this blog post. Created a draft roadmap for the Discovery and Alpha phases of this work. Arranged and held 7+ stakeholder and user research interviews to find out more about the lifecycle of a planning application, the data links around planning applications and permissions, the schema that existing planning application/permissions viewing tools have, what kinds of people make use of planning applications/permissions data, and how a central government data source might be able to help them.</description>
+    </item>
     
     <item>
       <title>Kicking off the Planning Permissions project</title>
