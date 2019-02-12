@@ -148,7 +148,7 @@
 
   
   
-    <li class="govuk-breadcrumbs__list-item" aria-current="page">Kicking off the Planning Permissions project</li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">A short history of planning application data projects</li>
   
 
   </ol>
@@ -161,13 +161,13 @@
       <header>
         <span class="govuk-caption-xl">Blog post</span>
         <h1 class="govuk-heading-xl">
-          Kicking off the Planning Permissions project
+          A short history of planning application data projects
         </h1>
         <p class="byline author vcard">
           <span class="visuallyhidden">Posted by:</span>
-          <span class="author url fn" rel="author">Emily Robertson-Knowlton</span>,
+          <span class="author url fn" rel="author">Mike Thompson</span>,
           <span class="visuallyhidden">Posted on:</span>
-          <time class="updated" datetime="2019-01-21 12:00:00 &#43;0000 UTC" pubdate="">21 January 2019</time>
+          <time class="updated" datetime="2019-02-12 12:00:00 &#43;0000 UTC" pubdate="">12 February 2019</time>
           
   <span class="byline__relations">
     -
@@ -185,37 +185,60 @@
       <div class="markdown-output">
         
 
-<p>The Digital Land team at the Ministry of Housing, Communities and Local Government (MHCLG) is working to make it easier for people to find, access and trust the data underlying England’s housing market.</p>
+<p><em>mySociety is working with MHCLG on a Discovery and Alpha project to research, prototype, and test ways to make data around planning applications more open, accessible, sustainable, and trustworthy.</em></p>
 
-<p>Access to reliable data on where planning permissions have been granted, rejected and built out is an important part of this work. That’s where the mySociety team come in – we are collaborating on <a href="/project/single-register-of-planning/">a Discovery and Alpha project</a>, to research, prototype, and test ways to make data around planning applications more open, accessible, sustainable, and trustworthy.</p>
+<p>One of the things we were struck by as we started this project was by how much work has already happened in this area. So, we thought it might be useful to document some of this history, for anyone else who might travel this way in future.</p>
 
-<h2 id="background">Background</h2>
+<h2 id="planning-alerts-uk">Planning Alerts UK</h2>
 
-<p>At the moment, finding and combining this data is challenging for a number of reasons:</p>
+<p>Perhaps the first project that attempted to open up planning data was a service called PlanningAlerts created in late 2006 by Richard Pope, and hosted for a time on mySociety servers. PlanningAlerts had a simple concept: tell people about planning applications near them that they might care about, irrespective of planning authority boundaries.</p>
+
+<p>A revealing quote from a <a href="https://www.theguardian.com/technology/2007/jan/25/freeourdata.localgovernment">2007 Guardian article</a> on the project said:</p>
+
+<blockquote>
+<p>Though it&rsquo;s only got 40-odd of the 387 planning authorities, Pope is confident that adding more will be easy: &ldquo;Councils only use three or four off-the-shelf packages to put their data up.&rdquo; Ultimately, he suggests that councils should also provide a data feed to end the need to scrape the relevant text off their websites. That would be an ideal endpoint, fulfilling everyone&rsquo;s requirements at once.</p>
+</blockquote>
+
+<p>It’s rather chastening that it’s now 2019 and we’re still not there yet.</p>
+
+<h2 id="planning-alerts-australia">Planning Alerts Australia</h2>
+
+<p>Planning Alerts UK <a href="https://countculture.wordpress.com/2011/10/10/planningalerts-is-dead-long-live-planningalerts/">was ultimately retired</a> due to the amount of time needed to maintain the many scrapers that provided the underlying data. But out of its legacy, its open source codebase, and the hard work of Matthew Landauer and Katherine Szuminska (and <a href="https://www.planningalerts.org.au/about#contributors">many others</a>) came <a href="https://www.planningalerts.org.au">PlanningAlerts.org.au</a>. Run by the <a href="https://www.oaf.org.au/">Open Australia Foundation</a>, the site is still flourishing today (it covers 72% of Australia’s population) and sending emails to people about new planning applications near them.</p>
+
+<h2 id="lga-open-data-incentive-scheme">LGA open data incentive scheme</h2>
+
+<p>Roll on 2014, and the Local Government Association ran their <a href="https://incentive.opendata.esd.org.uk/">open data incentive scheme</a> off the back of the open data push of the coalition government years.</p>
+
+<p>They offered cash (£2,000) along with technical support to any local authority who wanted to release some planning application data according to the <a href="https://github.com/esd-org-uk/schemas/tree/master/PlanningApplications">schema that they defined</a>. 95 local authorities accepted the challenge, and 70 of them got their cash prize. A lot of these releases can still be found on <a href="https://data.gov.uk/search?q=planning+applications">data.gov.uk</a> and although many are static snapshots, <a href="https://data.gov.uk/dataset/d997986f-54d0-4752-b450-d0f08894a9d8/planning-applications">some</a> are <a href="https://data.gov.uk/dataset/b046881f-b699-4629-91cd-93397f619a41/planning-applications">still</a> live feeds.</p>
+
+<p>There were two particularly notable projects related to this scheme. The <a href="http://digitalservices.surreyi.gov.uk/">Surrey Planning Hub</a> automatically aggregated planning application data feeds from the districts within Surrey and provided it through an API. The <a href="http://blog.swirrl.com/articles/hampshire-hub/">Hampshire Hub</a>, now sadly no longer with us, attempted to do the same for Hampshire but in a linked format. mySociety had some involvement with this: we <a href="https://www.mysociety.org/2014/09/30/making-planning-applications-more-open-with-the-hampshire-hub-partnership/">built a prototype</a> (itself based on the Planning Alerts Australia codebase) to show householder applications on a map and make it easy for people to browse through them.</p>
+
+<h2 id="other-providers">Other providers</h2>
+
+<p>In the absence of definitive action by central and local government in this area, other providers have stepped in to help the various different organisations who need this data.
+* Commercial providers like <a href="https://www.glenigan.com/our-products/marketing-planning/">Glenigan</a> and <a href="https://www.landinsight.io/api">LandInsight</a> scrape the data from local authority websites and provide both access to the data and services built on top of it.
+* Independent operations like <a href="http://planit.org.uk/">PlanIt.org.uk</a> run by Andrew Speakman, <a href="https://planningfinder.co.uk/">Planning Finder</a> run by Archant Media, and Adrian Short’s <a href="https://github.com/adrianshort/uk_planning_scraper/">open source code</a> all scrape the data and provide it free to the public and other organisations who want to use it.</p>
+
+<h2 id="what-can-the-public-sector-do-now">What can the public sector do now?</h2>
+
+<p>Here we are in 2019, and many different people in the public sector are once again looking at this area. We’ve been trying to talk to as many of them as we can to find opportunities to share knowledge and approaches:</p>
 
 <ul>
-<li>While local planning authorities (LPAs) have a <a href="http://www.legislation.gov.uk/ukpga/1990/8/section/69">legal obligation</a> to maintain their own register of planning applications and how they have been dealt with, there is no such legal obligation for provision of the underlying data.</li>
-<li>Different LPAs use different systems that model data differently. As far as we can tell, these systems do not offer raw data access via public APIs.</li>
-<li>Some authorities (e.g. <a href="https://opendata.camden.gov.uk/Environment/Planning-Applications/2eiu-s2cw">London Borough of Camden</a>, <a href="https://datamillnorth.org/dataset/planning-applications-datamill">Leeds City Council</a>) extract and publish their planning application data regularly, but the vast majority of LPAs do not.</li>
-<li>Property companies, government, other organisations and individual citizens look to access this data openly and to know that it is trustworthy.</li>
+<li>The <a href="https://www.london.gov.uk/what-we-do/planning/london-plan/london-development-database/london-development-database-automation-project">London Development Database Automation Project</a> which is aiming to create a live hub of planning application data for all 35 planning authorities in London.</li>
+<li><a href="https://blogs.hackney.gov.uk/hackit/An-open-data-standard-for-planning-applications">Hackney Council’s ICT Team</a> are exploring the idea of an open data standard to support their work on digital planning applications.</li>
+<li>The <a href="https://futurecities.catapult.org.uk/project/future-of-planning/">Future of Planning</a> programme at Future Cities Catapult has been painting a vivid picture of what a fully digital planning system could look like.</li>
+<li>The <a href="https://localdigital.gov.uk/funding/london-borough-of-southwark-3/">London Borough of Southwark</a> planning team are conducting user research on how to create a scalable and useable back office planning system for case management.</li>
 </ul>
 
-<p>This project has been set up to tackle these problems, and to begin the process of fulfilling a <a href="https://www.gov.uk/government/publications/autumn-budget-2017-documents/autumn-budget-2017#ensuring-that-planning-permissions-are-built-out-faster">commitment made</a> in the Autumn 2017 budget to create a register of planning permissions.</p>
-
-<h2 id="goals">Goals</h2>
-
-<p>Our goals for this project are to:</p>
+<p>From our conversations so far, it seems to us that the big questions for MHCLG as we progress with this project are:</p>
 
 <ul>
-<li><strong>Prototype:</strong> Prototype how to make planning applications available as a collection of data in order to show how a beta system with more complete data could work.</li>
-<li><strong>Inspire:</strong> Create, or support the creation of, experimental prototypes of what can be done with this data, in order to demonstrate the potential value of making an open index of this data.</li>
-<li><strong>Plan for scale:</strong> Explore options for how to scale from a prototype to a production system, and the challenges that would need to be addressed, in order to show how to turn this into a sustainable solution.</li>
-<li><strong>Share our approach:</strong> Document and share our user research work, findings, prototypes and other outputs openly in order to gather wider input and feedback, and so others can learn from this work.</li>
+<li>How do we get more structured data about planning applications—and the developments they relate to—flowing through the system from application through to approval?</li>
+<li>How do we help users of this data tie related planning submissions together and to other datasets they might be using?</li>
+<li>And perhaps hardest of all, how do we help the ~360 or so local planning authorities across England, with a variety of systems in use, and pressures on time and budget, to all release it in the same format?</li>
 </ul>
 
-<p>Our team at mySociety is starting the Discovery phase with user research and stakeholder consultations. Our focus initially is to draw on the work and experience of others who have spent time working on planning application data. We are researching existing projects and platforms around planning application data, and learning a lot from people currently doing great work in the field.</p>
-
-<p>We are in our first sprint now, and are in the middle of creating a model of planning application data flows to help situate our work. Stay tuned for <a href="/blog-post/">more sprint notes and blog posts here</a>!</p>
+<p>These are hard problems, but wouldn’t it be great if we could finally meet the seemingly simple vision of 12 years ago?</p>
 
       </div>
     </div>
