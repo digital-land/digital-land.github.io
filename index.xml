@@ -6,10 +6,20 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Tue, 12 Feb 2019 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 Mar 2019 12:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Register of planning application data: Discovery findings</title>
+      <link>https://digital-land.github.io/blog-post/register-of-planning-discovery-findings/</link>
+      <pubDate>Thu, 07 Mar 2019 12:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/blog-post/register-of-planning-discovery-findings/</guid>
+      <description>mySociety is working with MHCLG on a Discovery and Alpha project to research, prototype, and test ways to make data around planning applications more open, accessible, sustainable, and trustworthy.
+We’ve spent the first six weeks of this project getting to grips with the domain of planning applications. We started by looking at what other people and organisations have done in this area already and then moved on to talking to as many people as we could, with an aim of exploring a number of different topics: * user needs for planning application data, with a particular focus on the PropTech sector the high-level concepts that are being modelled in the data * planning application data flows and systems * technical constraints and capabilities of the underlying systems</description>
+    </item>
     
     <item>
       <title>A short history of planning application data projects</title>
