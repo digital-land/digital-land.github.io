@@ -179,7 +179,7 @@
 <p>Developer contributions data has a wide range of current and potential uses, including:</p>
 
 <ul>
-<li>planning land and housing developing</li>
+<li>planning land and housing development</li>
 <li>creating new digital services</li>
 <li>giving community members insight into local development and how they can influence it</li>
 </ul>
@@ -209,33 +209,70 @@
 <li><a href="#transaction">developer agreement transactions </a></li>
 </ul>
 
-<p>Storing your data in 3 separate files rather than one file makes it possible to use the data more robustly and in more ways. A .csv file is a comma separated value file, which comprises numbers and/or text separated by commas, as in the following example:</p>
+<p>Storing your data in 3 separate files rather than one file makes it possible to use the data more robustly and in more ways.</p>
 
-<div class="tech-block">
-  <code>“apple”, “orange”, “banana”
-“grape”, “strawberry”, “lemon”<div class="tech-block">
-  <code>
+<p>A .csv file (or comma separated value file) is a universally recognised file format for storing tabular data in plain text. The following table of data comprises headers describing columns and data arranged in rows:</p>
 
-One commonplace way to create a .csv file is to enter the values in an Excel spreadsheet and “save as .csv”.
+<table>
+<thead>
+<tr>
+<th>fruit</th>
+<th align="center">quantity</th>
+<th align="right">price</th>
+</tr>
+</thead>
 
-Each of the .csv files must:
+<tbody>
+<tr>
+<td>orange</td>
+<td align="center">100</td>
+<td align="right">1.00</td>
+</tr>
 
-* be named using the convention specified in each section below 
-* contain certain column headers  (written exactly as shown, in lowercase) 
-* include 1 row of data for each agreement, contribution or transaction (as relevant)
-* only entries that conform to the constraints described below
+<tr>
+<td>banana</td>
+<td align="center">3</td>
+<td align="right">2.00</td>
+</tr>
 
-For general information on creating a .csv file see the W3C’s [CSVs on the web: a primer](http://w3c.github.io/csvw/primer/). 
+<tr>
+<td>papaya</td>
+<td align="center">0</td>
+<td align="right">30000</td>
+</tr>
+</tbody>
+</table>
 
-### Developer agreements<a name="agreement"></a>
+<p>This is represented in a .csv file in the following format:</p>
 
-Developer agreements must be listed in a .csv file named exactly as follows, but with the actual date you created the file instead of YYYYMMDD:
+<pre><code>fruit,quantity,price
+orange,100,1.00
+banana,3,2.00
+papaya,0,30000
+</code></pre>
+
+<p>One commonplace way to create a .csv file is to enter the values in an Excel spreadsheet and “save as .csv”.</p>
+
+<p>Each of the .csv files must:</p>
+
+<ul>
+<li>be named using the convention specified in each section below </li>
+<li>contain certain column headers  (written exactly as shown, in lowercase) </li>
+<li>include 1 row of data for each agreement, contribution or transaction (as relevant)</li>
+<li>only entries that conform to the constraints described below</li>
+</ul>
+
+<p>For general information on creating a .csv file see the W3C’s <a href="http://w3c.github.io/csvw/primer/">CSVs on the web: a primer</a>. </p>
+
+<h3 id="developer-agreements-a-name-agreement-a">Developer agreements<a name="agreement"></a></h3>
+
+<p>Developer agreements must be listed in a .csv file named exactly as follows, but with the actual date you created the file instead of YYYYMMDD:</p>
 
 <div class="tech-block">
   <code>developer-agreement_YYYYMMDD.csv</code>
 </div>
 
-#### Columns
+<h4 id="columns">Columns</h4>
 
 <div class="column-guidance-container">
   <h5 class="column-heading govuk-!-font-weight-bold">developer-agreement</h5>
@@ -289,17 +326,17 @@ Developer agreements must be listed in a .csv file named exactly as follows, but
 
 </div>
 
-***
+<hr />
 
-### Developer agreement contributions<a name="contribution"></a>
+<h3 id="developer-agreement-contributions-a-name-contribution-a">Developer agreement contributions<a name="contribution"></a></h3>
 
-Developer agreement contributions must be listed exactly as follows, but with the actual date you created the file instead of YYYYMMDD:
+<p>Developer agreement contributions must be listed exactly as follows, but with the actual date you created the file instead of YYYYMMDD:</p>
 
 <div class="tech-block">
   <code>developer-agreement-contribution_YYYYMMDD.csv</code>
 </div>
 
-#### Columns
+<h4 id="columns-1">Columns</h4>
 
 <div class="column-guidance-container">
   <h5 class="column-heading govuk-!-font-weight-bold">developer-agreement-contribution</h5>
@@ -349,17 +386,17 @@ Developer agreement contributions must be listed exactly as follows, but with th
 
 </div>
 
-***
+<hr />
 
-### Developer agreement transactions<a name="transaction"></a>
+<h3 id="developer-agreement-transactions-a-name-transaction-a">Developer agreement transactions<a name="transaction"></a></h3>
 
-Developer agreement transactions must be listed in a .csv file exactly as follows, but with the actual date you created the file instead of YYYYMMDD:
+<p>Developer agreement transactions must be listed in a .csv file exactly as follows, but with the actual date you created the file instead of YYYYMMDD:</p>
 
 <div class="tech-block">
   <code>developer-agreement-transaction_YYYYMMDD.csv</code>
 </div>
 
-#### Columns
+<h4 id="columns-2">Columns</h4>
 
 <div class="column-guidance-container">
   <h5 class="column-heading govuk-!-font-weight-bold">developer-agreement-transaction</h5>
@@ -409,50 +446,49 @@ Developer agreement transactions must be listed in a .csv file exactly as follow
 
 </div>
 
-### Step 2: Upload the files to a persistent URL
+<h3 id="step-2-upload-the-files-to-a-persistent-url">Step 2: Upload the files to a persistent URL</h3>
 
-Next you need to upload each .csv file to your organisation’s website using a [persistent URL](https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator) – a web address that will not change over time. As an example, Norfolk’s local planning authority might use the following persistent addresses (note that these are examples, not live data): 
+<p>Next you need to upload each .csv file to your organisation’s website using a <a href="https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator">persistent URL</a> – a web address that will not change over time. As an example, Norfolk’s local planning authority might use the following persistent addresses (note that these are examples, not live data):</p>
 
-https://www.norfolk.gov.uk/developer-agreement/developer-agreement_20190101.csv
-https://www.norfolk.gov.uk/developer-agreement-contribution/developer-agreement-contribution_20190101.csv
-https://www.norfolk.gov.uk/developer-agreement-transaction/developer-agreement-transaction_20190101.csv
-https://www.norfolk.gov.uk/developer-agreement-transaction/latest
+<p><a href="https://www.norfolk.gov.uk/developer-agreement/developer-agreement_20190101.csv">https://www.norfolk.gov.uk/developer-agreement/developer-agreement_20190101.csv</a>
+<a href="https://www.norfolk.gov.uk/developer-agreement-contribution/developer-agreement-contribution_20190101.csv">https://www.norfolk.gov.uk/developer-agreement-contribution/developer-agreement-contribution_20190101.csv</a>
+<a href="https://www.norfolk.gov.uk/developer-agreement-transaction/developer-agreement-transaction_20190101.csv">https://www.norfolk.gov.uk/developer-agreement-transaction/developer-agreement-transaction_20190101.csv</a>
+<a href="https://www.norfolk.gov.uk/developer-agreement-transaction/latest">https://www.norfolk.gov.uk/developer-agreement-transaction/latest</a></p>
 
-* keep your older files online – it’s important to retain a history of all developer contribution files
-* make a copy of the new files, rename the copies exactly the same except with ‘latest’ in place of the date, then upload both sets of files
+<ul>
+<li>keep your older files online – it’s important to retain a history of all developer contribution files</li>
+<li>make a copy of the new files, rename the copies exactly the same except with ‘latest’ in place of the date, then upload both sets of files</li>
+</ul>
 
-### Step 3: Create/update a developer contributions page on your organisation’s website
+<h3 id="step-3-create-update-a-developer-contributions-page-on-your-organisation-s-website">Step 3: Create/update a developer contributions page on your organisation’s website</h3>
 
-The page must list the URLs in step 2 and must be publicly accessible and indexed or searchable. The URLs must be visible rather than embedded in text.
+<p>The page must list the URLs in step 2 and must be publicly accessible and indexed or searchable. The URLs must be visible rather than embedded in text.</p>
 
-### Step 4: Update the national register of developer contributions
+<h3 id="step-4-update-the-national-register-of-developer-contributions">Step 4: Update the national register of developer contributions</h3>
 
-The Ministry of Housing, Communities and Local Government (MHCLG) will [subject to this consultation] maintain a national register of developer contributions in a file called developer-contribution-register.csv.
+<p>The Ministry of Housing, Communities and Local Government (MHCLG) will [subject to this consultation] maintain a national register of developer contributions in a file called developer-contribution-register.csv.</p>
 
-All organisations with a statutory duty to publish their own registers of contributions should ensure that the following columns in this file are kept accurate and up to date:
+<p>All organisations with a statutory duty to publish their own registers of contributions should ensure that the following columns in this file are kept accurate and up to date:</p>
 
-**name**
+<p><strong>name</strong></p>
 
-Find your organisation in the alphabetised list.
+<p>Find your organisation in the alphabetised list.</p>
 
-**register-url**
+<p><strong>register-url</strong></p>
 
-Enter the web address of the web page created in step 3.
+<p>Enter the web address of the web page created in step 3.</p>
 
-**entry-date**
+<p><strong>entry-date</strong></p>
 
-Enter the date you last updated the registry, in the format `yyyy-mm-dd`. For 1 February 2019, for example, you should enter `2019-02-01`.
+<p>Enter the date you last updated the registry, in the format <code>yyyy-mm-dd</code>. For 1 February 2019, for example, you should enter <code>2019-02-01</code>.</p>
 
-**start-date**
+<p><strong>start-date</strong></p>
 
-Enter the date the registry was first created, in the format described in the entry-date column.
+<p>Enter the date the registry was first created, in the format described in the entry-date column.</p>
 
-**end-date**
+<p><strong>end-date</strong></p>
 
-Enter the date the registry will no longer be valid, in the format described in the entry-date column.
-</code>
-</div></code>
-</div>
+<p>Enter the date the registry will no longer be valid, in the format described in the entry-date column.</p>
 
 		</div>
 	</div>
