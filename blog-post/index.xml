@@ -6,10 +6,21 @@
     <description>Recent content in Blog posts on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Thu, 07 Mar 2019 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Apr 2019 12:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://digital-land.github.io/blog-post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A design pattern for planning permission data</title>
+      <link>https://digital-land.github.io/blog-post/design-pattern-for-planning-permission-data/</link>
+      <pubDate>Tue, 02 Apr 2019 12:00:00 +0000</pubDate>
+      <author>Zarino Zappia</author>
+      <guid>https://digital-land.github.io/blog-post/design-pattern-for-planning-permission-data/</guid>
+      <description>mySociety is working with MHCLG on a Discovery and Alpha project to research, prototype, and test ways to make data around planning applications more open, accessible, sustainable, and trustworthy.
+Our Single register of planning project began as a response to a commitment made in the Autumn 2017 budget to create a register of planning permissions across all planning authorities in England and Wales:
+ The government will develop a central register of residential planning permissions from local authorities to improve information on where permissions are held and progress towards them being built out.</description>
+    </item>
     
     <item>
       <title>Register of planning application data: Discovery findings</title>
