@@ -132,6 +132,8 @@
   
     
   
+    
+  
   
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="https://digital-land.github.io/">Digital Land</a>
@@ -140,7 +142,14 @@
 
   
   
-    <li class="govuk-breadcrumbs__list-item" aria-current="page">Projects</li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://digital-land.github.io/project/">Projects</a>
+    </li>
+  
+
+  
+  
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Housing numbers</li>
   
 
   </ol>
@@ -148,53 +157,122 @@
       <main class="govuk-main-wrapper">
 			
 
+  <div class="govuk-grid-row">
+		<div class="govuk-grid-column-full">
+      <span class="govuk-caption-xl">Project</span>
+    	<h1 class="govuk-heading-xl">
+    	  Housing numbers
+    	</h1>
+		</div>
+	</div>
+
   
-	<h1 class="govuk-heading-xl">
-	  Projects
-	</h1>
-
 	<div class="govuk-grid-row">
-		<div class="govuk-grid-column-two-thirds">
-			<p class="govuk-body-l"></p>
-      <div class="markdown-output">
-        <p>Projects that the Digital Land Service team are currently working on.</p>
+		<div class="govuk-grid-column-two-thirds markdown-output">
+			
 
-      </div>
+<p>As part of our wider project on <a href="/project/local-plans/">Local Plans</a>, we’re collecting and publishing the number of houses each local authority has committed to build. Focussing on just one piece of data will help us to learn how local plans are structured, what challenges there are around collecting data, and how to prioritise the wider Local Plans project.</p>
 
-			<ul class="govuk-list govuk-list--bullet">
-	    
-        <li>
-					<a href="https://digital-land.github.io/project/brownfield-sites/">Brownfield sites</a>
-        </li>
-	    
-        <li>
-					<a href="https://digital-land.github.io/project/compulsory-purchase-orders/">Compulsory Purchase Orders</a>
-        </li>
-	    
-        <li>
-					<a href="https://digital-land.github.io/project/developer-contributions/">Developer contributions</a>
-        </li>
-	    
-        <li>
-					<a href="https://digital-land.github.io/project/golden-thread-of-building-information/">Golden thread of building information</a>
-        </li>
-	    
-        <li>
-					<a href="https://digital-land.github.io/project/housing-numbers/">Housing numbers</a>
-        </li>
-	    
-        <li>
-					<a href="https://digital-land.github.io/project/local-plans/">Local Plans</a>
-        </li>
-	    
-        <li>
-					<a href="https://digital-land.github.io/project/single-register-of-planning/">Single register of planning</a>
-        </li>
-	    
-			</ul>
+<p>We hope that by publishing these numbers in one place, local authorities can easily check and update their data, and other people who are interested can easily find, trust and use the data.</p>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+<h2 id="current-areas-of-investigation">Current areas of investigation</h2>
+
+<div class="prototype-summary" data-issue-number=''>
+  <span class="prototype-progress-flag in-progress-flag--inverse">In progress</span>
+  <h3 class="govuk-heading-m prototype-summary--heading">
+    Collecting and publishing housing numbers
+  </h3>
+  <h4 id="questions-we-re-asking">Questions we&rsquo;re asking</h4>
+
+<p>What is the best way to collect and publish data from local plans?</p>
+
+<h4 id="what-we-re-testing">What we&rsquo;re testing</h4>
+
+<p>We’re focussing on one piece of data from local plans. We’ve now collected the housing numbers from most local plans, and are testing a tool to help us publish this data.</p>
+
+<h4 id="what-we-ve-learned">What we’ve learned</h4>
+
+<p>We now know that each local plan varies hugely in structure, format and how the data is presented. This means that finding one piece of information in each local plan can be challenging.</p>
+
+<p>By focussing on finding housing numbers, we have developed efficient ways to find the right data in local plans. This will inform the discovery phase of our wider Local Plans project.</p>
+
+<div class="prototype-summary" data-issue-number=''>
+  <span class="prototype-progress-flag in-progress-flag--inverse">In progress</span>
+  <h3 class="govuk-heading-m prototype-summary--heading">
+    Validation of data
+  </h3>
+  <h4 id="questions-we-re-asking">Questions we’re asking</h4>
+
+<p>How can we make sure the data we’ve collected is accurate and up to date?</p>
+
+<h4 id="what-we-ll-test">What we’ll test</h4>
+
+<p>We’re currently building a tool which displays the number of houses each local authority has committed to building. This will allow local authorities a way to check and update their data.</p>
+
+<p>We will send each local authority their housing numbers to confirm the data is correct, or to update the numbers and show where the correct data could have been found. This will help us understand how each authority is publishing their data, and will inform our wider Local Plans project.</p>
+
+<p>Take a look at what <a href="https://local-plans-prototype.herokuapp.com">we’ve built so far</a> and join our local plans <a href="https://github.com/digital-land/digital-land/labels/project%3Alocal-plans">discussion on GitHub</a></p>
+
+</div>
+
+</div>
+
+
+      
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
 
 		</div>
 	</div>
+  
 
 
       </main>
@@ -240,6 +318,80 @@
     <script src="/javascripts/govuk-template.js?0.24.0"></script>
 
     
+<script src="/js/pretty.js"></script>
+<script src="/js/octokit-rest.js"></script>
+<script>
+
+  const issueShortTemplate = (issue) => `
+  <li class="project-issue"><a href="${issue.html_url}">${issue.title}</a></li>`;
+
+  const octokit = new Octokit();
+  const owner = "digital-land";
+  const repo = "digital-land";
+  const projectLabel = "project:housing-numbers";
+
+  const futureIssuesContainer = document.querySelector(".upcoming-areas-section");
+  if( futureIssuesContainer ) {
+    const issuesListEl = addGovukListEl(futureIssuesContainer);
+
+    octokit.issues.listForRepo({
+      owner: owner,
+      repo: repo,
+      labels: projectLabel,
+      per_page: 100 
+    }).then(({data, headers, status}) => {
+      const futureIssues = data.filter((issue) => {
+        
+        const labels = issue.labels.map((labelObj) => labelObj.name);
+        
+        return !labels.includes("current-area-of-investigation");
+      });
+      
+      let issuesHTML = futureIssues.map(issue => `
+        <li class="project-issue"><a href="${issue.html_url}">${issue.title}</a></li>
+      `).join("");
+
+      issuesListEl.innerHTML = issuesHTML;
+    });
+  }
+
+  function addGovukListEl(container) {
+    const newListElement = document.createElement("ul");
+    newListElement.classList.add("govuk-list");
+    newListElement.classList.add("govuk-list--bullet");
+    container.appendChild(newListElement);
+    return newListElement;
+  }
+
+  
+  function getIssue(number, cb) {
+    octokit.issues.get({
+      owner: owner,
+      repo: repo,
+      number: number
+    }).then(({data, headers, status}) => {
+      cb(data);
+    });
+  }
+  
+  const inProgressIssues = document.querySelectorAll('[data-issue-number]');
+  inProgressIssues.forEach((issueEl) => {
+    getIssue(issueEl.dataset.issueNumber, function(issueData) {
+      const heading = issueEl.querySelector(".prototype-summary--heading");
+      const statusEl = document.createElement("span");
+      const textContent = document.createTextNode(`Lasted updated: ${prettyDate(issueData.updated_at)}. `);
+      const linkEl = document.createElement('a');
+      linkEl.appendChild(document.createTextNode("See full discussion"));
+      linkEl.href = issueData.html_url;
+      linkEl.classList.add("govuk-link");
+      statusEl.appendChild(textContent);
+      statusEl.appendChild(linkEl);
+      
+      heading.parentNode.insertBefore(statusEl, heading.nextSibling);
+    });
+  });
+</script>
+
 
 
     <script>if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '');</script>
