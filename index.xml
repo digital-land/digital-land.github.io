@@ -544,9 +544,8 @@ Many users fear data you have to request cannot then be presented in services, e
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/project/brownfield-sites/</guid>
-      <description>All local authorities must publish a register of brownfield sites.
-We were interested in learning about how this policy was implemented, the process that local authorities follow to publish the data, and whether there were any tools that we could build to help people collect and maintain the data.
-Prototypes In progress A way of validating the collected data   Our hypothesis Through speaking with local authorities we understood that often times the person responsible for collecting the brownfield site data</description>
+      <description>Brownfield sites are plots of land that have previously been developed but are not currently in use. Recent analysis suggests more than 1 million houses could be built on brownfield sites across England.
+The Digital Land team is working with local planning authorities to improve the quality and availability of data on brownfield sites across England. We&amp;rsquo;ve created resources to help local planning authorities publish and update their brownfield site data.</description>
     </item>
     
     <item>
@@ -846,9 +845,8 @@ An EPC contains:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/project/golden-thread-of-building-information/</guid>
-      <description>In the 2018 Independent Review of Building Regulations and Fire Safety there is a recommendation that there is a &amp;lsquo;digital record&amp;rsquo; for buildings. We are working with the Building Safety Programme to understand what a &amp;lsquo;digital record&amp;rsquo; might look like, and how the data could be collected and made available.
-Prototypes We&amp;rsquo;ve not yet started to prototype for this project.
-Next steps  we&amp;rsquo;re meeting with the team from the Building Safety Programme to demo the work we&amp;rsquo;ve done so far around Developer Contributions and Brownfield Sites  Data fields The specification has not yet defined.</description>
+      <description>In the 2018 Independent Review of Building Regulations and Fire Safety there is a recommendation to keep a &amp;lsquo;digital record&amp;rsquo; of information on residential buildings that have 10 or more storeys. Its purpose is to make accurate building information available to those responsible for assessing and demonstrating the safety of buildings.
+The Digital Land team and policy teams at the Ministry of Housing, Communities are working with the Building Safety Programme to understand what a &amp;lsquo;digital record&amp;rsquo; might look like, and how the data could be collected and made available.</description>
     </item>
     
     <item>
@@ -1003,8 +1001,7 @@ However many organisations see publishing data is seen as a burden, an externali
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/project/local-plans/</guid>
-      <description>Local plans set out local planning policies and identify how land is used, determining what will be built where. They are a rich source of information, but the equally useful data used to produce them isn’t easily extracted from them.
-The Ministry of Housing, Communities and Local Government is working with local planning authorities to design a data format for publishing local plan data so that it’s easy to find, use and trust.</description>
+      <description>Local plans set out local planning policies, identify how land is used, and decide what will be built where. They are a rich source of information, but the equally useful data used to produce them isn’t easily extracted. For example, a local plan might show a map of where housing will be built, but the data that made the map (such as addresses and coordinates) is not made available.</description>
     </item>
     
     <item>
