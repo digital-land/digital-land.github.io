@@ -532,10 +532,6 @@
   </url>
   
   <url>
-    <loc>https://digital-land.github.io/project/local-plans/</loc>
-  </url>
-  
-  <url>
     <loc>https://digital-land.github.io/glossary/local-development-scheme/</loc>
   </url>
   
@@ -549,6 +545,10 @@
   
   <url>
     <loc>https://digital-land.github.io/glossary/local-planning-authority/</loc>
+  </url>
+  
+  <url>
+    <loc>https://digital-land.github.io/project/local-plans/</loc>
   </url>
   
   <url>

@@ -996,15 +996,6 @@ However many organisations see publishing data is seen as a burden, an externali
     </item>
     
     <item>
-      <title>Local Plans</title>
-      <link>https://digital-land.github.io/project/local-plans/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/project/local-plans/</guid>
-      <description>Local plans set out local planning policies, identify how land is used, and decide what will be built where. They are a rich source of information, but the equally useful data used to produce them isn’t easily extracted. For example, a local plan might show a map of where housing will be built, but the data that made the map (such as addresses and coordinates) is not made available.</description>
-    </item>
-    
-    <item>
       <title>Local development scheme</title>
       <link>https://digital-land.github.io/glossary/local-development-scheme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1040,6 +1031,15 @@ The local development scheme acts as the starting point for the community and st
       
       <guid>https://digital-land.github.io/glossary/local-planning-authority/</guid>
       <description>A local planning authority is the local government body that is empowered by law to exercise urban planning functions for a particular area.</description>
+    </item>
+    
+    <item>
+      <title>Local plans</title>
+      <link>https://digital-land.github.io/project/local-plans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/local-plans/</guid>
+      <description>Local plans set out local planning policies, identify how land is used, and decide what will be built where. They are a rich source of information, but the equally useful data used to produce them isn’t easily extracted. For example, a local plan might show a map of where housing will be built, but the data that made the map (such as addresses and coordinates) is not made available.</description>
     </item>
     
     <item>
