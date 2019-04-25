@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Digital Land</title>
+    <link>https://digital-land.github.io/project/</link>
+    <description>Recent content in Projects on Digital Land</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    
+	<atom:link href="https://digital-land.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Brownfield sites</title>
+      <link>https://digital-land.github.io/project/brownfield-sites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/brownfield-sites/</guid>
+      <description>Brownfield sites are plots of land that have previously been developed but are not currently in use. Recent analysis suggests more than 1 million houses could be built on brownfield sites across England.
+The Digital Land team is working with local planning authorities to improve the quality and availability of data on brownfield sites across England. We&amp;rsquo;ve created resources to help local planning authorities publish and update their brownfield site data.</description>
+    </item>
+    
+    <item>
+      <title>Compulsory purchase orders</title>
+      <link>https://digital-land.github.io/project/compulsory-purchase-orders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/compulsory-purchase-orders/</guid>
+      <description>A compulsory purchase order (CPO) is a tool that can be used by certain bodies to authorise the acquisition of land and property. Its use can help make possible a wide range of development, regeneration and infrastructure projects, where there is a compelling case in the public interest.
+The Secretary of State is responsible for taking decisions on the approval of CPOs. There is currently no central, publicly accessible register of these decisions or how they were arrived at.</description>
+    </item>
+    
+    <item>
+      <title>Developer contributions</title>
+      <link>https://digital-land.github.io/project/developer-contributions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/developer-contributions/</guid>
+      <description>Help us develop a common data format In the alpha phase of this project, we developed a new common standard for publishing data on developer contributions.
+We are proposing a simple data format for developer contributions that:
+ meets the user needs we’ve identified requires minimal effort from local planning authorities to create and make the data available  You can help us improve the format by:
+ joining the discussion on our GitHub issues making comments using our feedback form following the proposed guidance next time you publish your developer contributions  We will continue to develop the format as we learn from testing the format with data and the prototypes with users.</description>
+    </item>
+    
+    <item>
+      <title>Golden thread of building information</title>
+      <link>https://digital-land.github.io/project/golden-thread-of-building-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/golden-thread-of-building-information/</guid>
+      <description>In the 2018 Independent Review of Building Regulations and Fire Safety there is a recommendation to keep a &amp;lsquo;digital record&amp;rsquo; of information on residential buildings that have 10 or more storeys. Its purpose is to make accurate building information available to those responsible for assessing and demonstrating the safety of buildings.
+The Digital Land team and policy teams at the Ministry of Housing, Communities and Local Government are working with the Building Safety Programme to understand what a &amp;lsquo;digital record&amp;rsquo; might look like, and how the data could be collected and made available.</description>
+    </item>
+    
+    <item>
+      <title>Housing numbers</title>
+      <link>https://digital-land.github.io/project/housing-numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/housing-numbers/</guid>
+      <description>As part of our wider project on local plans, we’re collecting and publishing the number of houses each local authority has committed to build. Focussing on just one piece of data will help us to learn how local plans are structured, what challenges there are around collecting data, and how to prioritise the wider local plans project.
+We hope that by publishing these numbers in one place, local authorities can easily check and update their data, and other people who are interested can easily find, trust and use the data.</description>
+    </item>
+    
+    <item>
+      <title>Local plans</title>
+      <link>https://digital-land.github.io/project/local-plans/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/local-plans/</guid>
+      <description>Local plans set out local planning policies, identify how land is used, and decide what will be built where. They are a rich source of information, but the equally useful data used to produce them isn’t easily extracted. For example, a local plan might show a map of where housing will be built, but the data that made the map (such as addresses and coordinates) is not made available.</description>
+    </item>
+    
+    <item>
+      <title>Single register of planning</title>
+      <link>https://digital-land.github.io/project/single-register-of-planning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/single-register-of-planning/</guid>
+      <description>Goals Our goals for this project are to:
+ Prototype: Prototype how to make planning applications available as a collection of data in order to show how a beta system with more complete data could work. Inspire: Create, or support the creation of, experimental prototypes of what can be done with this data, in order to demonstrate the potential value of making an open index of this data. Plan for scale: Explore options for how to scale from a prototype to a production system, and the challenges that would need to be addressed, in order to show how to turn this into a sustainable solution.</description>
+    </item>
+    
+  </channel>
+</rss>
