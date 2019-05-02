@@ -544,8 +544,9 @@ Many users fear data you have to request cannot then be presented in services, e
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/project/brownfield-sites/</guid>
-      <description>Brownfield sites are plots of land that have previously been developed but are not currently in use. They are often ready to build housing upon as soon as planning permission is given. Recent analysis suggests more than 1 million houses could be built on brownfield sites across England.
-Local authorities must keep records of their brownfield sites updated, publicly available and published in an agreed data format. This helps housing developers find the right places to build and planners make informed decisions on local housing.</description>
+      <description>Resources for planning authorities Update your brownfield site data: guidance for local planning authorities Follow these simple instructions when adding new brownfield sites to their registers.
+Check brownfield site data for errors Our validator will check local planning authorities&amp;rsquo; brownfield site data for common errors and omissions and fix them. A comparison of data quality for brownfield registers that have been checked is also available.
+View brownfield site registers View brownfield site data by local authority.</description>
     </item>
     
     <item>
@@ -581,8 +582,10 @@ Local authorities must keep records of their brownfield sites updated, publicly 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/project/compulsory-purchase-orders/</guid>
-      <description>A compulsory purchase order (CPO) is a tool that can be used by certain bodies to authorise the acquisition of land and property. Its use can help make possible a wide range of development, regeneration and infrastructure projects, where there is a compelling case in the public interest.
-The Secretary of State is responsible for taking decisions on the approval of CPOs. There is currently no central, publicly accessible register of these decisions or how they were arrived at.</description>
+      <description>Upcoming areas of investigation We plan to explore the following by prototyping tools and by testing and consulting with people involved with developer contributions, and responding to your feedback.
+We will regularly add updates to the following issues on GitHub:
+ Timeline Spring 2019
+We are planning a discovery workshop with the policy team, Planning Inspectorate and the Planning Caseworker Unit to identify user needs and agree next steps.</description>
     </item>
     
     <item>
@@ -846,8 +849,9 @@ An EPC contains:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/project/golden-thread-of-building-information/</guid>
-      <description>In the 2018 Independent Review of Building Regulations and Fire Safety there is a recommendation to keep a &amp;lsquo;digital record&amp;rsquo; of information on residential buildings that have 10 or more storeys. Its purpose is to make accurate building information available to those responsible for assessing and demonstrating the safety of buildings.
-The Digital Land team and policy teams at the Ministry of Housing, Communities and Local Government are working with the Building Safety Programme to understand what a &amp;lsquo;digital record&amp;rsquo; might look like, and how the data could be collected and made available.</description>
+      <description>Upcoming areas of investigation We will be meeting with representatives of the Building Safety Programme to discuss relevant areas of investigation.
+Timeline December 2018
+We met with the team from the Building Safety Programme to demonstrate the work we&amp;rsquo;ve done so far around developer contributions and brownfield sites.</description>
     </item>
     
     <item>
@@ -928,8 +932,9 @@ The Digital Land team and policy teams at the Ministry of Housing, Communities a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/project/housing-numbers/</guid>
-      <description>As part of our wider project on local plans, we’re collecting and publishing the number of houses each local authority has committed to build. Focussing on just one piece of data will help us to learn how local plans are structured, what challenges there are around collecting data, and how to prioritise the wider local plans project.
-We hope that by publishing these numbers in one place, local authorities can easily check and update their data, and other people who are interested can easily find, trust and use the data.</description>
+      <description>Current areas of investigation The following areas of investigation explore how the data could be used and made easier to work with:
+In progress Collecting and publishing housing numbers  Questions we&amp;rsquo;re asking What is the best way to collect and publish data from local plans?
+What we&amp;rsquo;re testing We’re focussing on one piece of data from local plans. We’ve now collected the housing numbers from most local plans, and are testing a tool to help us publish this data.</description>
     </item>
     
     <item>
@@ -1040,7 +1045,8 @@ The local development scheme acts as the starting point for the community and st
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/project/local-plans/</guid>
-      <description>Local plans set out local planning policies, identify how land is used, and decide what will be built where. They are a rich source of information, but the equally useful data used to produce them isn’t easily extracted. For example, a local plan might show a map of where housing will be built, but the data that made the map (such as addresses and coordinates) is not made available.</description>
+      <description>Current areas of investigation The following areas of investigation explore how the data could be used and made easier to work with:
+In progress A timetable for local plan production  Questions we’re asking There is no central record of where local planning authorities are in the process of producing their local plans. Would creating one be useful to users of local plans? What would a useful one record of local plan production look like?</description>
     </item>
     
     <item>
