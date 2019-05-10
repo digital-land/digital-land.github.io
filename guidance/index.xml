@@ -11,6 +11,17 @@
     
     
     <item>
+      <title>Data principles</title>
+      <link>https://digital-land.github.io/guidance/data-principles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/data-principles/</guid>
+      <description>To ensure consistency of data that has been provided from multiple sources, we have established a set of principles that are used across all data sets.
+Structuring data Our data models share similar principles of a relational database. This helps to reduce duplication and makes the data easier to maintain, which in turn increases the trust and usefulness of the data.
+When modelling the data standard for developer contributions we created 3 files which can be linked together using unique identifiers.</description>
+    </item>
+    
+    <item>
       <title>Publish your developer contributions data</title>
       <link>https://digital-land.github.io/guidance/developer-contributions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
