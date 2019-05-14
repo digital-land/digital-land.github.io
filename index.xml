@@ -1233,16 +1233,6 @@ As a part of the viability assessment a third party may work with a property dev
     </item>
     
     <item>
-      <title>Publish your developer contributions data</title>
-      <link>https://digital-land.github.io/guidance/developer-contributions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/guidance/developer-contributions/</guid>
-      <description>The National Planning Policy Framework requires all local planning authorities and certain other organisations to publish their developer contributions data on a regular basis and in an agreed format. That format hasn’t yet been agreed, but the following guidance is a working approach that we plan to refine with your input.
-Our aim is to develop a data format and publishing guidance that results in better insights into how developer contributions are supporting community infrastructure.</description>
-    </item>
-    
-    <item>
       <title>Radon</title>
       <link>https://digital-land.github.io/glossary/radon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1298,6 +1288,36 @@ The Section 106 agreement contains one or more developer contributions which sup
       <description>A Site of Special Scientific Interest (SSSI) is a formal conservation designation for an area which is of particular interest because of its fauna, flora or geological or physiological features.
 Local authorities are required to have policies within their local plan to protect SSSIs, and should a planning application be submitted either on or close to the site then the appropriate conversation body must be consulted.
 Orginally established in the National Parks and Access to the Countryside Act 1949.</description>
+    </item>
+    
+    <item>
+      <title>Step 1: Create your .csv files</title>
+      <link>https://digital-land.github.io/guidance/developer-contributions/create-your-csv-files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/developer-contributions/create-your-csv-files/</guid>
+      <description>Contents  Publish your developer contributions data Step 1: Create your .csv files Step 2: Update your developer contributions web page Step 3: Update the national register of developer contributions   To complete step 1 you must be able to create or amend .csv files, for example by using spreadsheet software.
+ If you are a planning authority using third-party software to manage your developer contributions, ask your vendor if the software can export the data to .</description>
+    </item>
+    
+    <item>
+      <title>Step 2: Update your developer contributions web page</title>
+      <link>https://digital-land.github.io/guidance/developer-contributions/update-your-developer-contributions-web-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/developer-contributions/update-your-developer-contributions-web-page/</guid>
+      <description>Contents  Publish your developer contributions data Step 1: Create your .csv files Step 2: Update your developer contributions web page Step 3: Update the national register of developer contributions   To complete step 2 you must be able to upload the files created in step 1 to your local authority’s website and edit (or create) your developer contributions web page. If you aren’t able or authorised to do this speak to someone who is (this might be the person who updates your local authority’s brownfield site register).</description>
+    </item>
+    
+    <item>
+      <title>Step 3: Update the national register of developer contributions</title>
+      <link>https://digital-land.github.io/guidance/developer-contributions/update-the-national-register-of-developer-contributions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/developer-contributions/update-the-national-register-of-developer-contributions/</guid>
+      <description>Contents  Publish your developer contributions data Step 1: Create your .csv files Step 2: Update your developer contributions web page Step 3: Update the national register of developer contributions   To complete step 3 you must be able to download, amend and upload a .csv file.
+ MHCLG will [subject to this consultation] maintain a national register of developer contributions in a file called developer-contribution-register.csv
+All organisations with a statutory duty to publish their own registers of contributions should ensure that the following columns in this file are kept accurate and up to date:</description>
     </item>
     
     <item>
