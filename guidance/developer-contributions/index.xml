@@ -35,9 +35,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/guidance/developer-contributions/update-the-national-register-of-developer-contributions/</guid>
-      <description>Contents  Publish your developer contributions data Step 1: Create your .csv files Step 2: Update your developer contributions web page Step 3: Update the national register of developer contributions   To complete step 3 you must be able to download, amend and upload a .csv file.
- MHCLG will maintain a national register of developer contributions in a file called developer-contribution-register.csv
-All organisations with a statutory duty to publish their own developer contributions data should ensure that the following columns in this file are kept accurate and up to date:</description>
+      <description>Contents  Publish your developer contributions data Step 1: Create your .csv files Step 2: Update your developer contributions web page Step 3: Update the national register of developer contributions   MHCLG will maintain a national register of developer contributions.
+The first time you create and publish your 3 .csv files you must tell us where these are published (the persistent URL created in step 2). You must tell us if this ever changes.</description>
     </item>
     
   </channel>
