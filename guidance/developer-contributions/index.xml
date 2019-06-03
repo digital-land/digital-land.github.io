@@ -11,13 +11,13 @@
     
     
     <item>
-      <title>Step 1: Create your .csv files</title>
+      <title>Step 1: Create your CSV files</title>
       <link>https://digital-land.github.io/guidance/developer-contributions/create-your-csv-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/guidance/developer-contributions/create-your-csv-files/</guid>
-      <description>Contents  Publish your developer contributions data Step 1: Create your .csv files Step 2: Update your developer contributions web page Step 3: Update the national register of developer contributions   Step 1: Create your .csv files To complete step 1 you must be able to create or amend .csv files, for example by using spreadsheet software.
- If you are a planning authority using third-party software to manage your developer contributions, ask your vendor if the software can export the data to .</description>
+      <description>Contents  Publish your developer contributions data Step 1: Create your CSV files Step 2: Update your developer contributions web page Step 3: Update the national register of developer contributions   Step 1: Create your CSV files To complete step 1 you must be able to create or amend CSV files, for example by using spreadsheet software.
+ If you are a planning authority using third-party software to manage your developer contributions, ask your vendor if the software can export the data to CSV files as defined in this guidance.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/guidance/developer-contributions/update-your-developer-contributions-web-page/</guid>
-      <description>Contents  Publish your developer contributions data Step 1: Create your .csv files Step 2: Update your developer contributions web page Step 3: Update the national register of developer contributions   To complete step 2 you must be able to upload the files created in step 1 to your local authority’s website and edit (or create) your developer contributions web page. If you aren’t able or authorised to do this, speak to someone who is (this might be the person who updates your local authority’s brownfield site register or planning application web pages).</description>
+      <description>Contents  Publish your developer contributions data Step 1: Create your CSV files Step 2: Update your developer contributions web page Step 3: Update the national register of developer contributions   To complete step 2 you must be able to upload the files created in step 1 to your local planning authority’s website and edit (or create) your developer contributions web page. If you aren’t able or authorised to do this, speak to someone who is (this might be the person who updates your local planning authority’s brownfield site register or planning application web pages).</description>
     </item>
     
     <item>
@@ -35,8 +35,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/guidance/developer-contributions/update-the-national-register-of-developer-contributions/</guid>
-      <description>Contents  Publish your developer contributions data Step 1: Create your .csv files Step 2: Update your developer contributions web page Step 3: Update the national register of developer contributions   MHCLG will maintain a national register of developer contributions.
-The first time you create and publish your 3 .csv files you must tell us where these are published (the persistent URL created in step 2). You must tell us if this ever changes.</description>
+      <description>Contents  Publish your developer contributions data Step 1: Create your CSV files Step 2: Update your developer contributions web page Step 3: Update the national register of developer contributions   MHCLG will maintain a national register of developer contributions.
+The first time you create and publish your 3 CSV files you must tell us where these are published (the persistent URL created in step 2). You must also tell us if this ever changes.</description>
     </item>
     
   </channel>
