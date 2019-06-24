@@ -6,10 +6,19 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Tue, 02 Apr 2019 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lessons we learned at the Future PropTech exhibition</title>
+      <link>https://digital-land.github.io/blog-post/future-proptech-exhibition/</link>
+      <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/blog-post/future-proptech-exhibition/</guid>
+      <description>The Digital Land team was represented at this year’s FUTURE: PropTech event to engage with and learn from innovators in the housing and planning sector. Find out more about the event and what we learned.</description>
+    </item>
     
     <item>
       <title>A design pattern for planning permission data</title>
