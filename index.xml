@@ -6,19 +6,10 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Tue, 18 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Apr 2019 12:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Lessons we learned at the Future PropTech exhibition</title>
-      <link>https://digital-land.github.io/blog-post/future-proptech-exhibition/</link>
-      <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/blog-post/future-proptech-exhibition/</guid>
-      <description>The Digital Land team was represented at this year’s FUTURE: PropTech event to engage with and learn from innovators in the housing and planning sector. Find out more about the event and what we learned.</description>
-    </item>
     
     <item>
       <title>A design pattern for planning permission data</title>
@@ -593,8 +584,8 @@ View brownfield site registers View brownfield site data by local authority.</de
       <guid>https://digital-land.github.io/project/compulsory-purchase-orders/</guid>
       <description>Upcoming areas of investigation We plan to explore the following by prototyping tools and by testing and consulting with people involved with developer contributions, and responding to your feedback.
 We will regularly add updates to the following issues on GitHub:
- Timeline 19 May 2019
-We met with the planning caseworker team in Birmingham to understand more about the exisiting and legacy systems used to manage CPOs. We explored what data is entered and how we can extract the data with a view of making it publicly available.</description>
+ Timeline 28 May 2019
+We met with colleagues from the compulsory purchase orders policy team, the planning inspectorate and planning casework unit to understand more about the process of raising a CPO, and to explore the opportunities of opening up their data.</description>
     </item>
     
     <item>
