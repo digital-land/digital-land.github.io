@@ -149,7 +149,7 @@
 
   
   
-    <li class="govuk-breadcrumbs__list-item" aria-current="page">Local plans</li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Unused properties</li>
   
 
   </ol>
@@ -161,134 +161,36 @@
 		<div class="govuk-grid-column-full">
       <span class="govuk-caption-xl">Project</span>
     	<h1 class="govuk-heading-xl">
-    	  Local plans
+    	  Unused properties
     	</h1>
 		</div>
 	</div>
 
   
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full markdown-output">
-    <p><a href="https://www.gov.uk/guidance/plan-making">Local plans</a> set out local planning policies, identify how land is used, and decide what will be built where. They are a rich source of information, but the equally useful data used to produce them isn’t easily extracted. For example, a local plan might show a map of where housing will be built, but the data that made the map (such as addresses and coordinates) is not made available.</p>
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds markdown-output">
+			<p>We’re working with the Cities and Local Growth unit at MHCLG to investigate the best way to collect and publish data on unused properties. This project is part of <a href="https://www.gov.uk/government/publications/our-plan-for-the-high-street-budget-2018-brief">Our plan for the high street: Budget 2018 brief</a>, which states that “the government will trial a register of empty commercial properties to help prospective retailers to find empty properties and help local stakeholders tackle fragmented ownership on their high street.”</p>
 
-<p>The Digital Land team and policy specialists at the Ministry of Housing, Communities and Local Government are working with local planning authorities to design a data format for publishing local plan data so that it’s easy to find, use and trust.</p>
-
-    
-    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-    </div>
-  </div>
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-third markdown-output contents-section">
-      <p>Contents</p>
+<p>Currently, data on unused properties is not easily accessible or useable, with much of the available data being kept behind a paywall. We predict that this causes difficulties for potential users of this data, including:</p>
 
 <ul>
-<li><a href="#current-areas-of-investigation">Current areas of investigation</a></li>
-<li><a href="#upcoming-areas-of-investigation">Upcoming areas of investigation</a></li>
-<li><a href="#timeline">Timeline</a></li>
+<li>impacting local planning authorities ability to make good policy decisions</li>
+<li>limiting community groups ability to make good use of spaces</li>
+<li>making it difficult for business owners to find and use appropriate properties</li>
 </ul>
 
-    </div>
-	  <div class="govuk-grid-column-two-thirds markdown-output has-side-contents">
-			
+<p>We want to explore other user groups of this data and points of friction. We also want to explore whether opening up this data and making it easy to find, use and trust, will help to solve existing problems, as well as discovering how best to collect and publish the data.</p>
 
-<h2 id="current-areas-of-investigation">Current areas of investigation</h2>
+<p>After an initial investigation into these problems, we plan to move into a <a href="https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works">discovery</a> and gain a good understanding of:</p>
 
-<p>The following areas of investigation explore how the data could be used and made easier to work with:</p>
+<ul>
+<li>the users of unused properties data</li>
+<li>how to find and collect the data and what to test in <a href="https://www.gov.uk/service-manual/agile-delivery/how-the-alpha-phase-works">alpha</a></li>
+<li>current systems and constraints</li>
+<li>the size and shape of an alpha</li>
+</ul>
 
-<div class="prototype-summary" data-issue-number='61'>
-  <span class="prototype-progress-flag in-progress-flag--inverse">In progress</span>
-  <h3 class="govuk-heading-m prototype-summary--heading">
-    <a href='https://github.com/digital-land/digital-land/issues/61'>A timetable for local plan production</a>
-  </h3>
-  <h4 id="questions-we-re-asking">Questions we’re asking</h4>
-
-<p>There is no central record of where local planning authorities are in the process of producing their local plans. Would creating one be useful to users of local plans?  What would a useful one record of local plan production look like?</p>
-
-<h4 id="what-we-re-testing">What we&rsquo;re testing</h4>
-
-<p>Our current <a href="https://local-plans-prototype.herokuapp.com/local-plans">local plan explorer</a> allows planning authorities to update their planning timetables and others to view it.</p>
-
-<h4 id="what-we-ve-learned">What we&rsquo;ve learned</h4>
-
-<p>We are continuing to test the prototype and analyse our findings for this area of investigation.</p>
-
-<div class="prototype-summary" data-issue-number='62'>
-  <span class="prototype-progress-flag in-progress-flag--inverse">In progress</span>
-  <h3 class="govuk-heading-m prototype-summary--heading">
-    <a href='https://github.com/digital-land/digital-land/issues/62'>A resource showing local authorities’ targets for housing units</a>
-  </h3>
-  <h4 id="questions-we-re-asking">Questions we’re asking</h4>
-
-<p>There is no central resource indicating the number of housing units each local planning authority has promised. Would it be possible to aggregate this data accurately and what form would be most useful to potential users of this data?</p>
-
-<p>See our <a href="https://digital-land.github.io/project/housing-numbers/">project page on housing numbers</a> to find out what we&rsquo;re testing and what we&rsquo;ve learned so far.</p>
-
-<div class="prototype-summary" data-issue-number='63'>
-  <span class="prototype-progress-flag in-progress-flag--inverse">In progress</span>
-  <h3 class="govuk-heading-m prototype-summary--heading">
-    <a href='https://github.com/digital-land/digital-land/issues/63'>A record of geographies in local plans</a>
-  </h3>
-  <h4 id="questions-we-re-asking">Questions we&rsquo;re asking</h4>
-
-<p>Local plans contain data mapped to geographical areas. While useful, they can be difficult to extract as data. Would it be possible to build a central record of geographies in local plans? Would this be useful to users of data – and what would it look like?</p>
-
-<h4 id="what-we-re-testing">What we&rsquo;re testing</h4>
-
-<p>As part of our project on housing numbers we’ve collected the number of new houses that planning authorities have committed to in their local plans. We’ve developed a tool that makes this data available on <a href="https://local-plans-prototype.herokuapp.com/local-plans/map-of-data">a clickable map of England</a>.</p>
-
-<h4 id="what-we-ve-learned">What we&rsquo;ve learned</h4>
-
-<p>We are continuing to test the prototype and analyse our findings for this area of investigation.</p>
-
-<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-<h2 id="upcoming-areas-of-investigation">Upcoming areas of investigation</h2>
-
-<div class="upcoming-areas-section">
-  <p>We plan to explore the following by prototyping tools and by testing and consulting with people involved with developer contributions, and responding to your feedback.</p>
-
-<p>We will regularly add updates to the following <a href="https://github.com/digital-land/digital-land/labels/project%3Alocal-plans">issues on github</a>:</p>
-
-</div>
-
-<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-<h2 id="timeline">Timeline</h2>
-
-<p><strong>24 May 2019</strong></p>
-
-<p>We ran a workshop with the housing policy team to learn about how they use local plans.</p>
-
-<p><strong>March - May 2019</strong></p>
-
-<p>We are meeting with local authorities across the country to understand the different Local Plan making processes, the challenges faced by those involved, and the data used throughout the process. This is a key part of our research into how digital tools could support the process of collecting and publishing data, and making local plans.</p>
-
-<p><strong>24 April 2019</strong></p>
-
-<p>We met with the <a href="https://www.gov.uk/government/organisations/planning-inspectorate">Planning Inspectorate</a> to learn about their involvement in monitoring emerging plans.</p>
-
-<p><strong>April 2019</strong></p>
-
-<p>We met with 2 councils in April to learn about their plan-making process.</p>
-
-<p><strong>28 February 2019</strong></p>
-
-<p>We ran a workshop with the planning policy team to learn about their needs around creating, monitoring and reviewing local plans.</p>
-
-<p><strong>February 2019</strong></p>
-
-<p>We started the discovery phase.</p>
-
-<p><strong>10 January 2019</strong></p>
-
-<p>We attended the ‘Answering the Housing Land Question - Building a Knowledge Base’ conference in Reading and participated in a panel on ‘Land: The State of Data and Information Availability’.</p>
-
-<p></div></p>
-
-<p></div></p>
-
-</div>
-
+<p>If you are interested in this project, please <a href="mailto:digitalland@communities.gov.uk">get in touch with us</a>.</p>
 
       
 
@@ -355,7 +257,7 @@
   
   <div class="dlf-pg-feedback">
     <div class="dlf-pg-feedback__prompt">
-      Help us improve Digital Land by <a href="mailto:DigitalLand@communities.gov.uk?subject=Digital land feedback (Page: Projects, Local%20plans)" class="dlf-pg-feedback__link">sharing your feedback</a> with us.
+      Help us improve Digital Land by <a href="mailto:DigitalLand@communities.gov.uk?subject=Digital land feedback (Page: Projects, Unused%20properties)" class="dlf-pg-feedback__link">sharing your feedback</a> with us.
     </div>
   </div>
   
@@ -409,7 +311,7 @@
   const octokit = new Octokit();
   const owner = "digital-land";
   const repo = "digital-land";
-  const projectLabel = "project:local-plans";
+  const projectLabel = "";
 
   const futureIssuesContainer = document.querySelector(".upcoming-areas-section");
   if( futureIssuesContainer ) {

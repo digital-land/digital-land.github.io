@@ -29,8 +29,8 @@ View brownfield site registers View brownfield site data by local authority.</de
       <guid>https://digital-land.github.io/project/compulsory-purchase-orders/</guid>
       <description>Upcoming areas of investigation We plan to explore the following by prototyping tools and by testing and consulting with people involved with developer contributions, and responding to your feedback.
 We will regularly add updates to the following issues on GitHub:
- Timeline 28 May 2019
-We met with colleagues from the compulsory purchase orders policy team, the planning inspectorate and planning casework unit to understand more about the process of raising a CPO, and to explore the opportunities of opening up their data.</description>
+ Timeline 19 May 2019
+We met with the planning caseworker team in Birmingham to understand more about the exisiting and legacy systems used to manage CPOs. We explored what data is entered and how we can extract the data with a view of making it publicly available.</description>
     </item>
     
     <item>
@@ -85,6 +85,15 @@ In progress A timetable for local plan production  Questions we’re asking Ther
       <guid>https://digital-land.github.io/project/single-register-of-planning/</guid>
       <description>Goals Our goals for this project are to:
  Prototype: Prototype how to make planning applications available as a collection of data in order to show how a beta system with more complete data could work. Inspire: Create, or support the creation of, experimental prototypes of what can be done with this data, in order to demonstrate the potential value of making an open index of this data. Plan for scale: Explore options for how to scale from a prototype to a production system, and the challenges that would need to be addressed, in order to show how to turn this into a sustainable solution.</description>
+    </item>
+    
+    <item>
+      <title>Unused properties</title>
+      <link>https://digital-land.github.io/project/unused-properties/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/unused-properties/</guid>
+      <description>We’re working with the Cities and Local Growth unit at MHCLG to investigate the best way to collect and publish data on unused properties. This project is part of Our plan for the high street: Budget 2018 brief, which states that “the government will trial a register of empty commercial properties to help prospective retailers to find empty properties and help local stakeholders tackle fragmented ownership on their high street.”</description>
     </item>
     
   </channel>
