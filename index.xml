@@ -674,24 +674,6 @@ The amount of council tax owed for each band is determined by each local authori
     </item>
     
     <item>
-      <title>Data Maintainer</title>
-      <link>https://digital-land.github.io/users/data-maintainer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/users/data-maintainer/</guid>
-      <description>Developers complying with regulations, local authorities collecting land and housing data, and others submitting or updating data.</description>
-    </item>
-    
-    <item>
-      <title>Data Modeller</title>
-      <link>https://digital-land.github.io/users/data-modeller/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/users/data-modeller/</guid>
-      <description>People who create data specifications, such as those commissioned by councils to write the specifications for land and housing datasets.</description>
-    </item>
-    
-    <item>
       <title>Data collection is hard to keep up to date</title>
       <link>https://digital-land.github.io/friction/data-collection-is-hard-to-keep-up-to-date/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1004,6 +986,15 @@ However many organisations see publishing data is seen as a burden, an externali
     </item>
     
     <item>
+      <title>Land and housing data</title>
+      <link>https://digital-land.github.io/about/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/about/data/</guid>
+      <description>Data is at the foundation of the UK land and housing system. It records important decisions made by planners and others working in the sector, such as whether a tree or building is to be preserved, if a former commercial site is approved for residential development, or how much money a developer will commit to planning obligations for the community. There’s data around some 300 such ‘land and housing concerns’ that government legislation requires local planning authorities to publish.</description>
+    </item>
+    
+    <item>
       <title>Listed Building</title>
       <link>https://digital-land.github.io/glossary/listed-building/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1029,6 +1020,16 @@ However many organisations see publishing data is seen as a burden, an externali
       <guid>https://digital-land.github.io/glossary/local-development-scheme/</guid>
       <description>Local development schemes are public &amp;lsquo;project plans&amp;rsquo; which identify which local development documents will be produced, in what order and when. It became a statutory requirement for local planning authorities in the UK to produce these schemes under the Planning and Compulsory Purchase Act 2004.
 The local development scheme acts as the starting point for the community and stakeholders to find out about the local authority&amp;rsquo;s planning policies in respect to a particular place or issue, and what the status of those policies is.</description>
+    </item>
+    
+    <item>
+      <title>Local government</title>
+      <link>https://digital-land.github.io/users/local-government/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/users/local-government/</guid>
+      <description>If you work for a local authority and publish or maintain data on one of the land and housing concerns we’re looking at in our projects, we offer guidance and tools that will help you publish the data more easily and accurately. These will both help you comply with your duty to publish and ensure the data is consistent and machine readable.
+Our offer to local government We’re working closely with local government to understand how they work and what their resources and constraints are around collecting, publishing and updating data.</description>
     </item>
     
     <item>
@@ -1206,21 +1207,26 @@ As a part of the viability assessment a third party may work with a property dev
     </item>
     
     <item>
-      <title>Policy Maker</title>
+      <title>Policymakers</title>
       <link>https://digital-land.github.io/users/policy-maker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/users/policy-maker/</guid>
-      <description>Government policy professionals who decide what and how data must be supplied and maintained by developers, local authorities and others in the housing sector.</description>
+      <description>Creating and delivering policy requires access to high quality, relevant data. Most land and housing data is created by local authorities, who report it according to government regulations or guidelines.
+But the data isn’t always fit for policymakers’ purposes.
+This is partly because government guidelines for submission are often vague or nonexistent, leading local authorities to submit data:
+ in a range of file types using inconsistent formats with different metadata fields in different orders  As a result it’s often very difficult for policymakers to process and use this data.</description>
     </item>
     
     <item>
-      <title>PropTech Developers</title>
+      <title>PropTech developers</title>
       <link>https://digital-land.github.io/users/proptech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/users/proptech/</guid>
-      <description>Software developers who create digital tools that use land and housing data to make it easier to develop, buy, sell or rent property.</description>
+      <description>If you work in ‘PropTech’, ‘PlanTech’ or another emergent industry using land and housing data to develop innovative services and products for the marketplace, we’re working to help give you better access to quality data.
+Our offer to PropTech developers Have a look at the data platform we’re building. It will include:
+ a digital land explorer that maps a wide range of land and housing data to geographical coordinates a data maturity model that can be used to assess the quality of an existing dataset  We’ve also created a data collector prototype that’s used to populate the explorer and to assess the state of published land and housing data.</description>
     </item>
     
     <item>

@@ -228,6 +228,10 @@
   </url>
   
   <url>
+    <loc>https://digital-land.github.io/about/</loc>
+  </url>
+  
+  <url>
     <loc>https://digital-land.github.io/needs/access-to-data-in-bulk/</loc>
   </url>
   
@@ -350,14 +354,6 @@
   
   <url>
     <loc>https://digital-land.github.io/copyright/crown-copyright-os/</loc>
-  </url>
-  
-  <url>
-    <loc>https://digital-land.github.io/users/data-maintainer/</loc>
-  </url>
-  
-  <url>
-    <loc>https://digital-land.github.io/users/data-modeller/</loc>
   </url>
   
   <url>
@@ -524,6 +520,10 @@
   </url>
   
   <url>
+    <loc>https://digital-land.github.io/about/data/</loc>
+  </url>
+  
+  <url>
     <loc>https://digital-land.github.io/legislation/</loc>
   </url>
   
@@ -542,6 +542,10 @@
   
   <url>
     <loc>https://digital-land.github.io/glossary/local-development-scheme/</loc>
+  </url>
+  
+  <url>
+    <loc>https://digital-land.github.io/users/local-government/</loc>
   </url>
   
   <url>
