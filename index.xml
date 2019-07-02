@@ -23,16 +23,6 @@ Another exciting milestone is that the updates to our Digital Land website are l
     
     <item>
       <title>This week at Digital Land</title>
-      <link>https://digital-land.github.io/weeknote/2019-06-14/</link>
-      <pubDate>Mon, 24 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/weeknote/2019-06-14/</guid>
-      <description>This week, we spent Tuesday and Wednesday together at our Team Away days. We kicked off with a team retrospective, which led to discussions around building further relationships with policy teams and how to improve the delivery of products we&amp;rsquo;re working on. We also went to the Imaginary Cities exhibition at the British Library and were joined by Lorna, our new user researcher.
-Rebecca met with policy teams to talk about how we capture policy needs in our team planning, and met with Cities and Local Growth (CLOG) team to action things from last weeks One Team Gov wellbeing camp.</description>
-    </item>
-    
-    <item>
-      <title>This week at Digital Land</title>
       <link>https://digital-land.github.io/weeknote/2019-06-21/</link>
       <pubDate>Fri, 21 Jun 2019 00:00:00 +0000</pubDate>
       
@@ -53,6 +43,16 @@ Colm has also been working on Digital Land Front-end, creating component macros 
     
     <item>
       <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-06-14/</link>
+      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-06-14/</guid>
+      <description>This week, we spent Tuesday and Wednesday together at our Team Away days. We kicked off with a team retrospective, which led to discussions around building further relationships with policy teams and how to improve the delivery of products we&amp;rsquo;re working on. We also went to the Imaginary Cities exhibition at the British Library and were joined by Lorna, our new user researcher.
+Rebecca met with policy teams to talk about how we capture policy needs in our team planning, and met with Cities and Local Growth (CLOG) team to action things from last weeks One Team Gov wellbeing camp.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
       <link>https://digital-land.github.io/weeknote/2019-06-07/</link>
       <pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate>
       
@@ -64,30 +64,30 @@ Paul D participated in the first Product Management community of practice meetin
     
     <item>
       <title>This week at Digital Land</title>
-      <link>https://digital-land.github.io/weeknote/2019-05-27/</link>
-      <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
+      <link>https://digital-land.github.io/weeknote/2019-05-31/</link>
+      <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://digital-land.github.io/weeknote/2019-05-27/</guid>
+      <guid>https://digital-land.github.io/weeknote/2019-05-31/</guid>
       <description>This week Christine has been prototyping the registers editor and Paul D has been revisiting the python open register library. Adam and Colm have been tweaking the housing numbers prototype which is part of our bigger local plans project.
 On Tuesday Paul D and Matt visited Bristol to learn more about compulsory purchase orders (CPOs). They met with colleagues from policy, the planning caseworker unit and the Planning Inspectorate. During the workshop they explored the process of raising and managing CPOs and looked at the decision making process.</description>
     </item>
     
     <item>
       <title>This week at Digital Land</title>
-      <link>https://digital-land.github.io/weeknote/2019-05-20/</link>
-      <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
+      <link>https://digital-land.github.io/weeknote/2019-05-24/</link>
+      <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://digital-land.github.io/weeknote/2019-05-20/</guid>
+      <guid>https://digital-land.github.io/weeknote/2019-05-24/</guid>
       <description>It’s been a big week for the team as digital services and policy have merged! Ed Culliney and new recruit Natalie Record have joined the team, marking the official joining of Digital Land services with policy – the ultimate multidisciplinary team.
 It&amp;rsquo;s official! No more separate Digital Land &amp;lsquo;Services&amp;rsquo; and &amp;lsquo;Policy&amp;rsquo; teams &amp;hellip; just one big happy Digital Land team with policy and services working together. Living the #OneTeamGov dream 🙌 pic.</description>
     </item>
     
     <item>
       <title>This week at Digital Land</title>
-      <link>https://digital-land.github.io/weeknote/2019-05-06/</link>
-      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      <link>https://digital-land.github.io/weeknote/2019-05-10/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://digital-land.github.io/weeknote/2019-05-06/</guid>
+      <guid>https://digital-land.github.io/weeknote/2019-05-10/</guid>
       <description>Local plans This week, Paul (Bermudez) and Helena have been busy working on the tail end of the Local Plans discovery. Their primary focus has been to analyse the insights that they&amp;rsquo;ve gathered so far ahead of an internal steering group next week.
 On another aspect of Local Plans, the housing numbers, our colleagues on the policy team have collected housing numbers from local plans. The vast majority of Local Planning Authorities have now been accounted for, and Colm and Adam are helping to make some changes to how we capture data for joint plans.</description>
     </item>
@@ -237,11 +237,11 @@ Also related to developer contributions, we visited Mid Suffolk and Babergh to t
     
     <item>
       <title>This week at Digital Land</title>
-      <link>https://digital-land.github.io/weeknote/2018-12-06/</link>
-      <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
+      <link>https://digital-land.github.io/weeknote/2018-12-07/</link>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://digital-land.github.io/weeknote/2018-12-06/</guid>
-      <description>We showed our progress on developer contributions. This included the updated guidance, a tool to validate local planning authority data against the specification, and how we&amp;rsquo;ll be managing feedback during alpha.</description>
+      <guid>https://digital-land.github.io/weeknote/2018-12-07/</guid>
+      <description>We presented our progress on developer contributions at a show and tell. This included the updated guidance, a tool to validate local planning authority data against the specification, and how we&amp;rsquo;ll be managing feedback during alpha.</description>
     </item>
     
     <item>
@@ -271,7 +271,7 @@ On the developer contributions project we met with the GLA, Southwark and TFL to
       <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/weeknote/2018-11-16/</guid>
-      <description>This week the team focused on two area:
+      <description>This week the team focused on 2 areas:
 Brownfield sites Michael has been updating the guidance on brownfield sites. He has a draft of the proposed content and the next step is to review with the brownfield policy team before replacing the existing guidance on GOV.UK. We hope that with clearer guidance, and being about to point to the validator tool the revised registers will be of improved quality once they’re updated in the new year.</description>
     </item>
     
@@ -617,8 +617,7 @@ We rebuilt our data collector and started to collect tree preservation orders an
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/weeknote/2018-06-01/</guid>
-      <description>More than 40 people came to our open meeting where we gleaned many insights from users of land and housing data. Next week the team are focussing their research on analysing the state of data in brownfield registers, how they are being maintained, and if they meets the needs of users.
-An open team meeting in an exhibition space attended by more than 40 people from start-ups, campaign groups, local and central government.</description>
+      <description>More than 40 people came to our open meeting where we gleaned many insights from users of land and housing data. Next week the team are focussing their research on analysing the state of data in brownfield registers, how they are being maintained, and if they meets the needs of users.</description>
     </item>
     
     <item>
