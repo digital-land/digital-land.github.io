@@ -29,8 +29,8 @@ View brownfield site registers View brownfield site data by local authority.</de
       <guid>https://digital-land.github.io/project/compulsory-purchase-orders/</guid>
       <description>Upcoming areas of investigation We plan to explore the following by prototyping tools and by testing and consulting with people involved with developer contributions, and responding to your feedback.
 We will regularly add updates to the following issues on GitHub:
- Timeline 19 May 2019
-We met with the planning caseworker team in Birmingham to understand more about the exisiting and legacy systems used to manage CPOs. We explored what data is entered and how we can extract the data with a view of making it publicly available.</description>
+ Timeline 02 July 2019
+Paul created a script which extracted the key information from the formatted MS Excel report and translated into a .csv file. From this we&amp;rsquo;ve been able to start modeling how the register may work.</description>
     </item>
     
     <item>
