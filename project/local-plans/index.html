@@ -24,7 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="/images/opengraph-image.png?0.24.0">
     <meta property="description" content="Current areas of investigation The following areas of investigation explore how the data could be used and made easier to work with:
-In progress A timetable for local plan production  Questions we’re asking There is no central record of where local planning authorities are in the process of producing their local plans. Would creating one be useful to users of local plans? What would a useful one record of local plan production look like?">
+In progress What needs are we trying to address through opening up local plan data?  Questions we’re asking To identify what data we want to make usable in local plans, we need to first understand who local plans are for and what people need from them.">
     
       <link rel="stylesheet" media="all" href="/stylesheets/main.css" />
     
@@ -161,9 +161,13 @@ In progress A timetable for local plan production  Questions we’re asking Ther
   
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full markdown-output">
-    <p><a href="https://www.gov.uk/guidance/plan-making">Local plans</a> set out local planning policies, identify how land is used, and decide what will be built where. They are a rich source of information, but the equally useful data used to produce them isn’t easily extracted. For example, a local plan might show a map of where housing will be built, but the data that made the map (such as addresses and coordinates) is not made available.</p>
+    <p>A <a href="https://www.gov.uk/guidance/plan-making">local plan</a> sets out all local planning policies and decisions for authorities. It identifies how land is used, decides what will be built where and is used to determine all local planning decisions. Every local planning authority is required to update its local plan every 5 years.</p>
 
-<p>The Digital Land team and policy specialists at the Ministry of Housing, Communities and Local Government are working with local planning authorities to design a data format for publishing local plan data so that it’s easy to find, use and trust.</p>
+<p>Local plans are a rich source of information, but the data used to produce that information isn’t easily extracted. For example, a local plan might show a map of where housing will be built, but the data that made the map (such as addresses and coordinates) is not available.</p>
+
+<p>Local plans are published in a wide range of formats and aren’t always consistent in what types of information they include, or how they define or represent that information. This makes it difficult to collect, use and compare data across local plans and difficult for machines to read the data.</p>
+
+<p>The Digital Land team is working with local planning authorities to investigate ways that useful data might be extracted from local plans more easily and how the process of producing local plans might be improved.</p>
 
     
     <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
@@ -187,6 +191,31 @@ In progress A timetable for local plan production  Questions we’re asking Ther
 
 <p>The following areas of investigation explore how the data could be used and made easier to work with:</p>
 
+<div class="prototype-summary" data-issue-number='52'>
+  <span class="prototype-progress-flag in-progress-flag--inverse">In progress</span>
+  <h3 class="govuk-heading-m prototype-summary--heading">
+    <a href='https://github.com/digital-land/digital-land/issues/52'>What needs are we trying to address through opening up local plan data?</a>
+  </h3>
+  <h4 id="questions-we-re-asking">Questions we’re asking</h4>
+
+<p>To identify what data we want to make usable in local plans, we need to first understand <a href="https://github.com/digital-land/digital-land/issues/51">who local plans are for</a> and <a href="https://github.com/digital-land/digital-land/issues/57">what people need from them</a>.</p>
+
+<h4 id="what-we-re-testing">What we’re testing</h4>
+
+<p>We&rsquo;re conducting user research with local planning authorities, specifically investigating the quality and characteristics of the data – Is it binary? How often is it replicated? Who owns it?</p>
+
+<h4 id="what-we-ve-learned">What we’ve learned</h4>
+
+<ul>
+<li><p>few authorities have adequate record keeping systems that create reliable data, aside from a record of the plan being submitted (Regulation 19)</p></li>
+
+<li><p>systems for tracking the progress of local plans are minimal or non-existent, as are standards for publishing local plans or related evidence or documentation</p></li>
+
+<li><p>decisions that are normally communicated in a narrative often aren’t easy to record as binary data</p></li>
+
+<li><p>the timing of the examination process isn’t clear, which creates uncertainty for local planning authorities and developers</p></li>
+</ul>
+
 <div class="prototype-summary" data-issue-number='61'>
   <span class="prototype-progress-flag in-progress-flag--inverse">In progress</span>
   <h3 class="govuk-heading-m prototype-summary--heading">
@@ -194,7 +223,7 @@ In progress A timetable for local plan production  Questions we’re asking Ther
   </h3>
   <h4 id="questions-we-re-asking">Questions we’re asking</h4>
 
-<p>There is no central record of where local planning authorities are in the process of producing their local plans. Would creating one be useful to users of local plans?  What would a useful one record of local plan production look like?</p>
+<p>There is no central record of where local planning authorities are in the process of producing their local plans. Would creating a central record be useful to users of local plans? What would a useful record of local plan production look like? What are the obstacles to creating one?</p>
 
 <h4 id="what-we-re-testing">What we&rsquo;re testing</h4>
 
@@ -204,33 +233,48 @@ In progress A timetable for local plan production  Questions we’re asking Ther
 
 <p>We are continuing to test the prototype and analyse our findings for this area of investigation.</p>
 
-<div class="prototype-summary" data-issue-number='62'>
+<p>We’ve meanwhile arrived at a number of insights from our research around local plans:</p>
+
+<ul>
+<li><p>creating a local plan is a very lengthy, involved process, and it’s often difficult to know the status of a local plan in the publication process, even by those involved in its creation</p></li>
+
+<li><p>the length of the publication process means that accurate, up-to-date information isn’t always available</p></li>
+
+<li><p>both of the above can result in uncertainty, which can slow or stop development and undermine a local planning authority’s ability to make decisions</p></li>
+
+<li><p>there are tensions between the desire to produce a comprehensive local plan of the highest quality and the need to make the production process efficient and cost effective</p></li>
+
+<li><p>a lack of standardisation in the process makes it difficult to create and maintain a central record</p></li>
+</ul>
+
+<div class="prototype-summary" data-issue-number='50'>
   <span class="prototype-progress-flag in-progress-flag--inverse">In progress</span>
   <h3 class="govuk-heading-m prototype-summary--heading">
-    <a href='https://github.com/digital-land/digital-land/issues/62'>A resource showing local authorities’ targets for housing units</a>
+    <a href='https://github.com/digital-land/digital-land/issues/50'>How are local plans created?</a>
   </h3>
   <h4 id="questions-we-re-asking">Questions we’re asking</h4>
 
-<p>There is no central resource indicating the number of housing units each local planning authority has promised. Would it be possible to aggregate this data accurately and what form would be most useful to potential users of this data?</p>
+<p>What is the process for creating a local plan?</p>
 
-<p>See our <a href="https://digital-land.github.io/project/housing-numbers/">project page on housing numbers</a> to find out what we&rsquo;re testing and what we&rsquo;ve learned so far.</p>
+<p>What steps are required, what data is needed, who is involved and what are their roles?</p>
 
-<div class="prototype-summary" data-issue-number='63'>
-  <span class="prototype-progress-flag in-progress-flag--inverse">In progress</span>
-  <h3 class="govuk-heading-m prototype-summary--heading">
-    <a href='https://github.com/digital-land/digital-land/issues/63'>A record of geographies in local plans</a>
-  </h3>
-  <h4 id="questions-we-re-asking">Questions we&rsquo;re asking</h4>
+<p>How does the process vary between local planning authorities and what are the implications of differences?</p>
 
-<p>Local plans contain data mapped to geographical areas. While useful, they can be difficult to extract as data. Would it be possible to build a central record of geographies in local plans? Would this be useful to users of data – and what would it look like?</p>
+<p>How much are communities consulted on plans and is there a role for data to support that?</p>
 
-<h4 id="what-we-re-testing">What we&rsquo;re testing</h4>
+<p>What are the pain points in generating the data?</p>
 
-<p>As part of our project on housing numbers we’ve collected the number of new houses that planning authorities have committed to in their local plans. We’ve developed a tool that makes this data available on <a href="https://local-plans-prototype.herokuapp.com/local-plans/map-of-data">a clickable map of England</a>.</p>
+<h4 id="what-we-re-testing">What we’re testing</h4>
 
-<h4 id="what-we-ve-learned">What we&rsquo;ve learned</h4>
+<p>We are researching the barriers, opportunities and challenges to data / record-keeping at different stages of plan production:
+* assembling plans
+* consulting on plans
+* approving / examining plans
+* using plans for future planning decisions</p>
 
-<p>We are continuing to test the prototype and analyse our findings for this area of investigation.</p>
+<h4 id="what-we-ve-learned">What we’ve learned</h4>
+
+<p>A lack of standardisation in the process of creating local plans mean that different local planning authorities create local plans in different ways, and with widely different outcomes that make the data difficult to extract and use. For example, the way authorities represent their <a href="https://digital-land.github.io/project/housing-numbers/">targets for housing units</a> varies widely, which means it’s difficult to make meaningful comparisons or contrasts between areas.</p>
 
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
@@ -246,6 +290,22 @@ In progress A timetable for local plan production  Questions we’re asking Ther
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
 <h2 id="timeline">Timeline</h2>
+
+<p><strong>Late July</strong></p>
+
+<p>Present findings and next steps to the planning directorate steering group.</p>
+
+<p><strong>Mid July</strong></p>
+
+<p>We will be running workshops internally with the Local Digital team and stakeholders to share results and plan for alpha.</p>
+
+<p><strong>Late June</strong></p>
+
+<p>We completed a full analysis of discovery findings, ID user traits, pain points and user needs. We also created hypotheses for moving into alpha (or breaking the project down into several different alphas).</p>
+
+<p><strong>Early June</strong></p>
+
+<p>We completed interviews with 9 local authorities across England who are at various stages in their plan making process. We also completed interviews with neighbourhood planning experts to understand the use of local plans after they have been adopted.</p>
 
 <p><strong>24 May 2019</strong></p>
 
