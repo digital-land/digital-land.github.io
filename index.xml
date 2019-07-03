@@ -1159,6 +1159,16 @@ An EPC contains:
     </item>
     
     <item>
+      <title>Energy performance of buildings</title>
+      <link>https://digital-land.github.io/project/energy-performance-of-buildings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/energy-performance-of-buildings/</guid>
+      <description>The Energy Performance for Buildings (EPB) team within the Ministry of Housing, Communities &amp;amp; Local Government (MHCLG) Digital Directorate have been building a new online service to help users find an energy certificate, or to find an energy assessor. Part of this journey is to find an energy performance certificate (EPC).
+The team recently passed their alpha assessment with GDS and are now moving into beta, testing and iterating the current prototype.</description>
+    </item>
+    
+    <item>
       <title>Ensure data meets the specification</title>
       <link>https://digital-land.github.io/needs/ensure-data-meets-the-specification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
