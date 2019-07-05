@@ -13,16 +13,6 @@
     
     <item>
       <title>This week at Digital Land</title>
-      <link>https://digital-land.github.io/weeknote/05.07.2019/</link>
-      <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/weeknote/05.07.2019/</guid>
-      <description>This week the Digital Land team made good progress on several projects, even with most of the team at an away day on Thursday.
-We started work on a register for Compulsory Purchase Order (CPO) data that we plan to publish in the next month or so. We based this on sample data we extracted from one of the legacy systems MHCLG use to manage CPOs. The data required some tidying up to make it consistent and (potentially) machine-readable.</description>
-    </item>
-    
-    <item>
-      <title>This week at Digital Land</title>
       <link>https://digital-land.github.io/weeknote/2019-06-28/</link>
       <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>
       
