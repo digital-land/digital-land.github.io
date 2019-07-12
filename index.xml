@@ -6,10 +6,21 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Fri, 05 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-07-12/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-07-12/</guid>
+      <description>This week Paul D spoke at the PlanTech - July Breakfast Show &amp;amp; Tell at the ODI in Leeds, and attended the Compulsory Purchase Association conference.
+Our compulsory purchase orders has seen some progress this week. Matt met with the data protection team to explore options for publishing decision letters and inspectors reports, and we&amp;rsquo;ve also drafted a data model for the register which we&amp;rsquo;ll test next week.
+Helena and Paul B have been working on finalising analysis for the local plans discovery, including defining user needs and hypotheses for potential opportunity areas.</description>
+    </item>
     
     <item>
       <title>This week at Digital Land</title>
