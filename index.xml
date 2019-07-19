@@ -6,10 +6,20 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Fri, 12 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-07-19/</link>
+      <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-07-19/</guid>
+      <description>Great news this week - EPC data is now being updated and published again on Open Data Communities, thanks to a lot of hard work from Ed and other policy specialists over the past year. Read Paul&amp;rsquo;s blog post on our user research and policy work involved in resuming the publication of EPC data.
+Here&amp;#39;s a blog post about the user research and policy work behind resuming publication of the EPC data on Open Data Communities: https://t.</description>
+    </item>
     
     <item>
       <title>This week at Digital Land</title>
