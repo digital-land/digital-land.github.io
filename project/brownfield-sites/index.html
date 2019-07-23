@@ -23,9 +23,8 @@
     <meta name="theme-color" content="#0b0c0c" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="/images/opengraph-image.png?0.24.0">
-    <meta property="description" content="Resources for planning authorities Update your brownfield site data: guidance for local planning authorities Follow these simple instructions when adding new brownfield sites to their registers.
-Check brownfield site data for errors Our validator will check local planning authorities&rsquo; brownfield site data for common errors and omissions and fix them. A comparison of data quality for brownfield registers that have been checked is also available.
-View brownfield site registers View brownfield site data by local authority.">
+    <meta property="description" content="Current areas of investigation We&rsquo;re exploring the following areas to help us learn how we can make the data more open and easier to use:
+In progress An index of brownfield site registers   Questions we&rsquo;re asking Brownfield site data for local authorities can be difficult to locate and there’s no public register where all LA’s data can be viewed in one place. Would creating a national index of all brownfield data be of value to local authorities and interested members of the community?">
     
       <link rel="stylesheet" media="all" href="/stylesheets/main.css" />
     
@@ -185,25 +184,9 @@ View brownfield site registers View brownfield site data by local authority.">
 	  <div class="govuk-grid-column-two-thirds markdown-output has-side-contents">
 			
 
-<h2 id="resources-for-planning-authorities">Resources for planning authorities</h2>
-
-<h3 id="update-your-brownfield-site-data-guidance-for-local-planning-authorities">Update your brownfield site data: guidance for local planning authorities</h3>
-
-<p>Follow <a href="https://digital-land.github.io/guidance/brownfield-sites/">these simple instructions</a> when adding new brownfield sites to their registers.</p>
-
-<h3 id="check-brownfield-site-data-for-errors">Check brownfield site data for errors</h3>
-
-<p>Our validator will <a href="https://brownfield-sites-validator.herokuapp.com/start">check local planning authorities&rsquo; brownfield site data</a> for common errors and omissions and fix them. A comparison of data quality for <a href="https://digital-land.github.io/brownfield-sites/">brownfield registers that have been checked</a> is also available.</p>
-
-<h3 id="view-brownfield-site-registers">View brownfield site registers</h3>
-
-<p><a href="https://github.com/communitiesuk/digital-land-collector/tree/master/data/publication/brownfield-sites">View brownfield site data</a> by local authority.</p>
-
-<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
 <h2 id="current-areas-of-investigation">Current areas of investigation</h2>
 
-<p>We&rsquo;re exploring the following areas to help us learn how we can make the data more open and easier to use.</p>
+<p>We&rsquo;re exploring the following areas to help us learn how we can make the data more open and easier to use:</p>
 
 <div class="prototype-summary">
   
@@ -241,24 +224,67 @@ View brownfield site registers View brownfield site data by local authority.">
   <span class="prototype-progress-flag in-progress-flag--inverse">In progress</span>
 
   <h3 class="govuk-heading-m prototype-summary--heading">
-    A way of validating the collected data
+    Guidance on updating your brownfield site data
   </h3>
 </div>
 
 
 <h4 id="questions-we-re-asking-1">Questions we&rsquo;re asking</h4>
 
-<p>Often the person in the local authority updating the brownfield site data has little or no spare time, has varied responsibilities and is not familiar with the brownfield data format. As a result errors are common in brownfield data. Would offering a simple tool for validating the data improve this?</p>
+<p>Would guidance help local authorities publish their brownfield data to a standard format, and minimise errors?</p>
+
+<h4 id="what-we-will-test">What we will test</h4>
+
+<p>We&rsquo;re currently creating <a href="https://digital-land.github.io/guidance/brownfield-sites/">guidance on publishing brownfield site data</a>. We will test this guidance with users from local planning authorities and continue to improve it.</p>
+
+<div class="prototype-summary">
+  
+  <span class="prototype-progress-flag in-progress-flag--inverse">In progress</span>
+
+  <h3 class="govuk-heading-m prototype-summary--heading">
+    Brownfield site data validator
+  </h3>
+</div>
+
+
+<h4 id="questions-we-re-asking-2">Questions we&rsquo;re asking</h4>
+
+<p>Often the person in the local authority updating the brownfield site data has little or no spare time, has varied responsibilities and is not familiar with the brownfield data format. As a result, errors are common in the published data. Would offering a simple tool for validating a local authorities’ data improve this?</p>
+
+<h4 id="what-we-will-test-1">What we will test</h4>
+
+<p>We built and tested a validator and are now creating a new  <a href="https://brownfield-sites-status.herokuapp.com/">validator tool</a> based on our learnings.  This validator will check local planning authorities&rsquo; brownfield site data and display the <a href="https://brownfield-sites-status.herokuapp.com/breakdown">results of all local authorities&rsquo; data</a>.</p>
+
+<div class="prototype-summary">
+  
+  <span class="prototype-progress-flag in-progress-flag--inverse">In progress</span>
+
+  <h3 class="govuk-heading-m prototype-summary--heading">
+    View brownfield site registers
+  </h3>
+</div>
+
+
+<h4 id="questions-we-re-asking-3">Questions we&rsquo;re asking</h4>
+
+<p>Brownfield site data for local authorities can be difficult to locate and there’s no public register where all LA’s data can be viewed in one place. Would creating a national index of all brownfield data be of value to local authorities and interested members of the community?</p>
 
 <h4 id="what-we-tested-1">What we tested</h4>
 
 <ul>
-<li>a <a href="https://brownfield-sites-validator.herokuapp.com">validation tool</a> for brownfield site data</li>
+<li>a simple <a href="https://github.com/communitiesuk/digital-land-collector/blob/master/etc/brownfield-site-publication.tsv">index of brownfield site registers</a></li>
 </ul>
 
 <h4 id="what-we-learned-1">What we learned</h4>
 
-<p>We tested the tool with some local planning authorities whose brownfield site data contained errors. They were able to use the tool to identify the error, correct and republish it.</p>
+<p>We made a number of useful observations while compiling the simple index, including that:</p>
+
+<ul>
+<li>planning authorities often failed to provide a direct link to the data (ie to a policy page instead)</li>
+<li>when some registers were updated their URLs changed (ie they&rsquo;re not static)</li>
+<li>registers were often published in formats other than .csv (eg Excel files)</li>
+<li>registers often contained gaps or errors</li>
+</ul>
 
 <div class="prototype-summary">
   
@@ -270,21 +296,19 @@ View brownfield site registers View brownfield site data by local authority.">
 </div>
 
 
-<h4 id="questions-we-re-asking-2">Questions we&rsquo;re asking</h4>
+<h4 id="questions-we-re-asking-4">Questions we&rsquo;re asking</h4>
 
 <p>Many of the errors we identified in published brownfield data were common mistakes, such as switching GeoX and GeoY coordinates, or omitting empty rows in the data. Would offering to automatically fix common errors after validating the data be useful to LAs and improve the state of data?</p>
 
-<h4 id="what-we-tested-2">What we tested</h4>
+<h4 id="what-we-will-test-2">What we will test</h4>
 
 <ul>
-<li>a <a href="https://brownfield-sites-validator.herokuapp.com">validation tool</a> for brownfield sites</li>
+<li>a <a href="https://brownfield-sites-status.herokuapp.com/">validation tool</a> for brownfield sites</li>
 </ul>
 
 <h4 id="what-we-ve-learned">What we&rsquo;ve learned</h4>
 
-<p>We spoke with many of those in local authorities who are responsible for publishing the data. Often they were not technically trained or experienced with working with data. We tested the validator with some of these users, many of whom were able to spot and correct the data errors.</p>
-
-<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+<p>We spoke with people from local authorities who are responsible for publishing the data. Often they were not technically trained or experienced with working with data. We tested an old version of the validator with some of these users, many of whom were able to spot and correct the data errors. We may work on building a way of automatically correcting errors into the new validator.</p>
 
 <h2 id="upcoming-areas-of-investigation">Upcoming areas of investigation</h2>
 
@@ -303,15 +327,15 @@ View brownfield site registers View brownfield site data by local authority.">
 
 <p><strong>15 June 2019</strong></p>
 
-<p>We met again with <a href="https://cpre.org.uk/">Campign to Protect Rural England (CPRE)</a> to further understand how they&rsquo;re using brownfield data and how this might connect to other data sets. We also spoke about our ideas to make it easier for local authorities to collect and publish their data.</p>
+<p>We met again with <a href="https://cpre.org.uk/">Campaign to Protect Rural England (CPRE)</a> to further understand how they&rsquo;re using brownfield data and how this might connect to other data sets. We also spoke about our ideas to make it easier for local authorities to collect and publish their data.</p>
 
 <p><strong>June 2019</strong></p>
 
-<p>We&rsquo;ve been analysing the exisiting brownfield data to explore whether we can propose a simplified data standard that&rsquo;ll be easier for local authorities to publish against. As a part of this work we&rsquo;ve also been looking at what has changed since we last looked at the published registers.</p>
+<p>We&rsquo;ve been analysing the existing brownfield data to explore whether we can propose a simplified data standard that&rsquo;ll be easier for local authorities to publish against. As a part of this work we&rsquo;ve also been looking at what has changed since we last looked at the published registers.</p>
 
 <p><strong>4 April 2019</strong></p>
 
-<p>We met with <a href="https://cpre.org.uk/">Campign to Protect Rural England (CPRE)</a> to understand more about how they collected the brownfield data, the challenges they faced, and how they used the data.</p>
+<p>We met with <a href="https://cpre.org.uk/">CPRE</a> to understand more about how they collected the brownfield data, the challenges they faced, and how they used the data.</p>
 
 <p><strong>March 2019</strong></p>
 
