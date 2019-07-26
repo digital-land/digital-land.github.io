@@ -6,10 +6,20 @@
     <description>Recent content in Weeknotes on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Fri, 19 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/weeknote/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-07-26/</link>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-07-26/</guid>
+      <description>This week we held the local plans steering group to present the findings from Paul B and Helena&amp;rsquo;s discovery work to our internal stakeholders. The work was positively recieved and we&amp;rsquo;re now planning the next steps of the project as we prepare to move into alpha.
+Matt has continued his work on Compulsory Purchase Orders (CPOs) and has plans for a proposed model that will be published on our project page soon.</description>
+    </item>
     
     <item>
       <title>This week at Digital Land</title>
@@ -19,16 +29,6 @@
       <guid>https://digital-land.github.io/weeknote/2019-07-19/</guid>
       <description>Great news this week - EPC data is now being updated and published again on Open Data Communities, thanks to a lot of hard work over the past year from policy specialists, including Ed. Read Paul&amp;rsquo;s blog post on our user research and policy work involved in resuming the publication of EPC data.
 Here&amp;#39;s a blog post about the user research and policy work behind resuming publication of the EPC data on Open Data Communities: https://t.</description>
-    </item>
-    
-    <item>
-      <title>This week at Digital Land</title>
-      <link>https://digital-land.github.io/weeknote/2019-07-26/</link>
-      <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/weeknote/2019-07-26/</guid>
-      <description>This week we held the local plans steering group to present the findings from Paul B and Helena&amp;rsquo;s discovery work to our internal stakeholders. The work was positively recieved and we&amp;rsquo;re now planning the next steps of the project as we prepare to move into alpha.
-Matt has continued his work on Compulsory Purchase Orders (CPOs) and has plans for a proposed model that will be published on our project page soon.</description>
     </item>
     
     <item>
