@@ -6,10 +6,20 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Fri, 19 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-07-26/</link>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-07-26/</guid>
+      <description>This week we held the local plans steering group to present the findings from Paul B and Helena&amp;rsquo;s discovery work to our internal stakeholders. The work was positively recieved and we&amp;rsquo;re now planning the next steps of the project as we prepare to move into alpha.
+Matt has continued his work on Compulsory Purchase Orders (CPOs) and has plans for a proposed model that will be published on our CPO project page soon.</description>
+    </item>
     
     <item>
       <title>Publishing energy performance certificate data</title>
@@ -944,8 +954,8 @@ Many users fear data you have to request cannot then be presented in services, e
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/project/brownfield-sites/</guid>
-      <description>Current areas of investigation We&amp;rsquo;re exploring the following areas to help us learn how we can make the data more open and easier to use:
-In progress An index of brownfield site registers   Questions we&amp;rsquo;re asking Brownfield site data for local authorities can be difficult to locate and there’s no public register where all local authorities&amp;rsquo; data can be viewed in one place. Would creating a national index of all brownfield data be of value to local authorities and interested members of the community?</description>
+      <description>Current areas of investigation We&amp;rsquo;re exploring the following areas to help us learn how we can open up brownfield site data and make it easier to use:
+In progress An index of brownfield site registers  Questions we&amp;rsquo;re asking Brownfield site data for local authorities can be difficult to locate and there’s no public register where all local authorities&amp;rsquo; data can be viewed in one place. Would creating a national index of all brownfield data be of value to local authorities and other interested members of the community?</description>
     </item>
     
     <item>
