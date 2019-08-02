@@ -6,10 +6,21 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Fri, 26 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-08-02/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-08-02/</guid>
+      <description>Paul D presented at a couple of boards and attended the Royal Town Planning Institute (RTPI) workshop at Connected Places Catapult.
+Paul and Emily also held interviews for a new senior user researcher who will be joining the Digital Land team soon.
+Rebecca spent a day visiting the delivery manager community at GDS along with the other MHCLG delivery managers, to share experiences of agile teams working in a policy department.</description>
+    </item>
     
     <item>
       <title>This week at Digital Land</title>
