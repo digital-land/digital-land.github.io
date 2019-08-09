@@ -6,10 +6,21 @@
     <description>Recent content in Weeknotes on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Fri, 02 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/weeknote/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-08-09/</link>
+      <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-08-09/</guid>
+      <description>A few of the digital land team were off on holiday this week, but it was still a busy week!
+Local plans Helena and Paul B presented the insights and outcomes from the Local Plans discovery to planning and housing colleagues across MHCLG. The discovery findings focused on the needs of users working in our department, the Planning Inspectorate Service (PINS) and local planning authorities.
+We&amp;rsquo;re now in the process of shaping an alpha to define the data needed to increase the visibility of where Local authorities are in their local plan making, and the types of policy areas covered in a local plan.</description>
+    </item>
     
     <item>
       <title>This week at Digital Land</title>
