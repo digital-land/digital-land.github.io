@@ -6,10 +6,19 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Fri, 16 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-08-23/</link>
+      <pubDate>Fri, 23 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-08-23/</guid>
+      <description>It&amp;rsquo;s August, and some of the team have been seconded to lend their digital skills to another project in the department, but still quite a busy week for those of us left in the office. Natalie, Ed and Paul been involved in preparing papers and participating in discussions on a number of different policy areas, which we can&amp;rsquo;t talk about publicly, yet. We also begun investigating two new projects related to building regulations.</description>
+    </item>
     
     <item>
       <title>This week at Digital Land</title>
@@ -19,15 +28,6 @@
       <guid>https://digital-land.github.io/weeknote/2019-08-16/</guid>
       <description>The week we&amp;rsquo;ve been working on a flow diagram that shows how data for developer contributions will be collected, stored and used to produce the dashboard and infrastructure funding statement.
 Plan X also came in to show us what they&amp;rsquo;ve been working on, as they&amp;rsquo;re planning on going into a beta phase with Southwark in the near future. We&amp;rsquo;re really interested in what they&amp;rsquo;re doing and we&amp;rsquo;re keen to see how we can work together.</description>
-    </item>
-    
-    <item>
-      <title>This week at Digital Land</title>
-      <link>https://digital-land.github.io/weeknote/2019-08-23/</link>
-      <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/weeknote/2019-08-23/</guid>
-      <description>It&amp;rsquo;s August, and some of the team have been seconded to lend their digital skills to another project in the department, but still quite a busy week for those of us left in the office. Natalie, Ed and Paul been involved in preparing papers and participating in discussions on a number of different policy areas, which we can&amp;rsquo;t talk about publicly, yet. We also begun investigating two new projects related to building regulations.</description>
     </item>
     
     <item>
