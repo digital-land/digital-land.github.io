@@ -6,10 +6,20 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Fri, 30 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-09-06/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-09-06/</guid>
+      <description>Developer Contributions We started the week on a high with the announcement on Sunday morning of new planning rules. These are intended help local people better understand the value of development to their community. The publication included our guidance for publishing developer contributions as data.
+There&amp;rsquo;s still a lot more we can do to simplify the publishing process for local planning authorities, and a few wrinkles to iron out. Not least, we need to be clearer about crown copyright and open government licensing terms to ensure it is published as open data.</description>
+    </item>
     
     <item>
       <title>This week at Digital Land</title>
