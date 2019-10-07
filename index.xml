@@ -6,10 +6,21 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Fri, 27 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-10-04/</link>
+      <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-10-04/</guid>
+      <description>Team 
+Much of this week has been focussed on planning. Lorna, Matt and Helena have been lining up local authorities for our Developer Contributions private beta, and preparing for testing Compulsory Purchase Orders in a usability lab. and a number of policy events and papers.
+Emily and Michael worked with Helena on a redseign for our project pages, which we aim to deploy next week, starting with the end of discovery reports for Local Plans, and Planning Permissions.</description>
+    </item>
     
     <item>
       <title>This week at Digital Land</title>
