@@ -6,10 +6,20 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Mon, 07 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-10-14/</link>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-10-14/</guid>
+      <description>Team Natalie and Jess have been working out plans for a PropTech event with the Minister of State for Housing, Esther McVey. We&amp;rsquo;re looking forward to discussing opportunities for greater efficiency and transparency in the housing market, some of the barriers to PropTech adoption and growth, and how central government can best support the sector.
+Helena, Emily and Jake attended a brilliant service assessor training run by the GDS assessment team.</description>
+    </item>
     
     <item>
       <title>This week at Digital Land</title>
@@ -1843,7 +1853,8 @@ Orginally established in the National Parks and Access to the Countryside Act 19
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/guidance/brownfield-sites/create-your-csv-file/</guid>
-      <description>Contents  Publish your brownfield land data Step 1: Create your CSV file Step 2: Update your brownfield land web page Step 3: Update the national register of brownfield sites   To complete step 1 you must be able to create or amend CSV files using spreadsheet software such as Microsoft Excel, Google Sheets or Apple Numbers, then when saving simply select ‘save as .csv file’. Find out more about creating a CSV file.</description>
+      <description>Contents  Publish your brownfield land data Step 1: Create your CSV file Step 2: Update your brownfield land web page Step 3: Update the national register of brownfield sites   Brownfield site data should be listed in a CSV file named brownfield-land.csv
+To complete step 1 you must be able to create or amend CSV files using spreadsheet software such as Microsoft Excel, Google Sheets or Apple Numbers, then when saving simply select ‘save as .</description>
     </item>
     
     <item>
