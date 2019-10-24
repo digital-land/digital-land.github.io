@@ -1838,6 +1838,15 @@ Orginally established in the National Parks and Access to the Countryside Act 19
     </item>
     
     <item>
+      <title>Step 1: Create your CSV file</title>
+      <link>https://digital-land.github.io/guidance/brownfield-sites/create-your-csv-file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/brownfield-sites/create-your-csv-file/</guid>
+      <description>Contents  Publish your brownfield land data Step 1: Create your CSV file Step 2: Update your brownfield land web page Step 3: Update the national register of brownfield sites   To complete step 1 you must be able to create or amend CSV files using spreadsheet software such as Microsoft Excel, Google Sheets or Apple Numbers, then when saving simply select ‘save as .csv file’. Find out more about creating a CSV file.</description>
+    </item>
+    
+    <item>
       <title>Step 1: Create your CSV files</title>
       <link>https://digital-land.github.io/guidance/developer-contributions/create-your-csv-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1848,12 +1857,31 @@ Orginally established in the National Parks and Access to the Countryside Act 19
     </item>
     
     <item>
+      <title>Step 2: Update your brownfield land web page</title>
+      <link>https://digital-land.github.io/guidance/brownfield-sites/update-your-brownfield-land-web-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/brownfield-sites/update-your-brownfield-land-web-page/</guid>
+      <description>Contents  Publish your brownfield land data Step 1: Create your CSV file Step 2: Update your brownfield land web page Step 3: Update the national brownfield land register   To complete step 2 you must be able to edit (or create) your local authority’s brownfield land web page. If you aren’t able or authorised to do this, speak to someone who is (this might be the person who updates your local planning authority’s developer contribution or planning application web pages).</description>
+    </item>
+    
+    <item>
       <title>Step 2: Update your developer contributions web page</title>
       <link>https://digital-land.github.io/guidance/developer-contributions/update-your-developer-contributions-web-page/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digital-land.github.io/guidance/developer-contributions/update-your-developer-contributions-web-page/</guid>
       <description>Contents  Publish your developer contributions data Step 1: Create your CSV files Step 2: Update your developer contributions web page Step 3: Update the national register of developer contributions   To complete step 2 you must be able to upload the files created in step 1 to your local planning authority’s website and edit (or create) your developer contributions web page. If you aren’t able or authorised to do this, speak to someone who is (this might be the person who updates your local planning authority’s brownfield site register or planning application web pages).</description>
+    </item>
+    
+    <item>
+      <title>Step 3: Update the national brownfield land register</title>
+      <link>https://digital-land.github.io/guidance/brownfield-sites/update-the-national-brownfield-land-register/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/brownfield-sites/update-the-national-brownfield-land-register/</guid>
+      <description>Contents  Publish your brownfield land data Step 1: Create your CSV file Step 2: Update your brownfield land web page Step 3: Update the national brownfield land register   The Ministry of Housing, Communities and Local Government (MHCLG) will maintain a national brownfield land register.
+The first time you create and publish your CSV file you must tell us where this is published (the persistent URL created in step 2).</description>
     </item>
     
     <item>
@@ -2003,17 +2031,6 @@ It would be difficult to create a service that knows which authority to send a p
       
       <guid>https://digital-land.github.io/needs/up-to-date-data/</guid>
       <description>When I am building a service, I want to have confidence that I have access to the most recent data, so that the thing I am building is useful and relevant.</description>
-    </item>
-    
-    <item>
-      <title>Update your brownfield site register</title>
-      <link>https://digital-land.github.io/guidance/brownfield-sites/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/guidance/brownfield-sites/</guid>
-      <description>Local planning authorities must maintain a register of their brownfield sites that is publicly available and in an agreed format.
-This guidance, alongside the Check your brownfield site register service, will help local authorities ensure brownfield site registers are:
- in the agreed format and contain the required data kept up-to-date easily found online  This ensures the data is fit for purpose and meets the needs of planners, developers, policymakers and communities.</description>
     </item>
     
     <item>
