@@ -97,16 +97,6 @@ In progress What needs are we trying to address through opening up local plan da
     </item>
     
     <item>
-      <title>Single register of planning</title>
-      <link>https://digital-land.github.io/project/single-register-of-planning/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/project/single-register-of-planning/</guid>
-      <description>Goals Our goals for this project are to:
- Prototype: Prototype how to make planning applications available as a collection of data in order to show how a beta system with more complete data could work. Inspire: Create, or support the creation of, experimental prototypes of what can be done with this data, in order to demonstrate the potential value of making an open index of this data. Plan for scale: Explore options for how to scale from a prototype to a production system, and the challenges that would need to be addressed, in order to show how to turn this into a sustainable solution.</description>
-    </item>
-    
-    <item>
       <title>Unused properties</title>
       <link>https://digital-land.github.io/project/unused-properties/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
