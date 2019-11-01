@@ -968,6 +968,25 @@ We are also interested in the datasets that make these projects possible.</descr
     
     <item>
       <title></title>
+      <link>https://digital-land.github.io/project/local-plans/_contents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/local-plans/_contents/</guid>
+      <description>Contents
+ Current areas of investigation Upcoming areas of investigation Local plans project discovery report Timeline  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://digital-land.github.io/project/local-plans/_upcoming-areas-of-investigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/local-plans/_upcoming-areas-of-investigation/</guid>
+      <description>We plan to explore the following by prototyping tools and by testing and consulting with people involved with developer contributions, and responding to your feedback. We will regularly add updates to the following issues on GitHub:</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://digital-land.github.io/project/single-register-of-planning/_contents/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1630,16 +1649,6 @@ Our offer to local government We’re working closely with local government to u
       
       <guid>https://digital-land.github.io/glossary/local-planning-authority/</guid>
       <description>A local planning authority is the local government body that is empowered by law to exercise urban planning functions for a particular area.</description>
-    </item>
-    
-    <item>
-      <title>Local plans</title>
-      <link>https://digital-land.github.io/project/local-plans/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/project/local-plans/</guid>
-      <description>Current areas of investigation The following areas of investigation explore how the data could be used and made easier to work with:
-In progress What needs are we trying to address through opening up local plan data?  Questions we’re asking To identify what data we want to make usable in local plans, we need to first understand who local plans are for and what people need from them.</description>
     </item>
     
     <item>

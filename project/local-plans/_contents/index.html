@@ -8,7 +8,7 @@
     
 
     
-      <title>Local plans | Digital Land</title>
+      <title>Digital Land</title>
     
     <link rel="stylesheet" media="screen" href="/stylesheets/govuk-template.css?0.24.0"/>
     
@@ -26,8 +26,8 @@
     <meta name="theme-color" content="#0b0c0c" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="/images/opengraph-image.png?0.24.0">
-    <meta property="description" content="A local plan sets out all local planning policies and decisions for authorities. It identifies how land is used, decides what will be built where and is used to determine all local planning decisions. Every local planning authority is required to update its local plan every 5 years.
-Local plans are a rich source of information, but the data used to produce that information isn’t easily extracted. For example, a local plan might show a map of where housing will be built, but the data that made the map (such as addresses and coordinates) is not available.">
+    <meta property="description" content="Contents
+ Current areas of investigation Upcoming areas of investigation Local plans project discovery report Timeline  ">
     
       <link rel="stylesheet" media="all" href="/stylesheets/main.css" />
     
@@ -121,6 +121,8 @@ Local plans are a rich source of information, but the data used to produce that 
   
     
   
+    
+  
   
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="https://digital-land.github.io/">Digital Land</a>
@@ -136,7 +138,14 @@ Local plans are a rich source of information, but the data used to produce that 
 
   
   
-    <li class="govuk-breadcrumbs__list-item" aria-current="page">Local plans</li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://digital-land.github.io/project/local-plans/">Local plans</a>
+    </li>
+  
+
+  
+  
+    <li class="govuk-breadcrumbs__list-item" aria-current="page"></li>
   
 
   </ol>
@@ -150,7 +159,7 @@ Local plans are a rich source of information, but the data used to produce that 
         <span class="govuk-caption-xl">Project</span>
       
     	<h1 class="govuk-heading-xl">
-    	  Local plans
+    	  
     	</h1>
 		</div>
 	</div>
@@ -158,24 +167,14 @@ Local plans are a rich source of information, but the data used to produce that 
   
 	<div class="govuk-grid-row">
 		<div class="govuk-grid-column-two-thirds markdown-output">
-			
+			<p>Contents</p>
 
-<p>A <a href="https://www.gov.uk/guidance/plan-making">local plan</a> sets out all local planning policies and decisions for authorities. It identifies how land is used, decides what will be built where and is used to determine all local planning decisions. Every local planning authority is required to update its local plan every 5 years.</p>
-
-<p>Local plans are a rich source of information, but the data used to produce that information isn’t easily extracted. For example, a local plan might show a map of where housing will be built, but the data that made the map (such as addresses and coordinates) is not available.</p>
-
-<p>Local plans are published in a wide range of formats and aren’t always consistent in what types of information they include, or how they define or represent that information. This makes it difficult to collect, use and compare data across local plans and difficult for machines to read the data.</p>
-
-<p>The Digital Land team carried out a discovery project on local plans during summer 2019. We spoke with representatives of the main user groups of local plans in order to better understand their needs from local plans and the obstacles to those needs being met.  The discovery identified users’ problems with extracting data from local plans and opportunities for solving some of these.</p>
-
-<h2 id="phases">Phases</h2>
-
-<p>
-    <a class="govuk-link govuk-body-l" href="/project/local-plans/discovery">Discovery</a> <strong class="govuk-tag">done</strong>
-</p>
-<p>
-    <span class="govuk-body-l">Alpha</span> <strong class="govuk-tag">upcoming</strong>
-</p>
+<ul>
+<li><a href="#current-areas-of-investigation">Current areas of investigation</a></li>
+<li><a href="#upcoming-areas-of-investigation">Upcoming areas of investigation</a></li>
+<li><a href="#local-plans-project-discovery-report">Local plans project discovery report</a></li>
+<li><a href="#timeline">Timeline</a></li>
+</ul>
 
       
 
@@ -243,12 +242,6 @@ Local plans are a rich source of information, but the data used to produce that 
 		
 
   
-  <div class="dlf-pg-feedback">
-    <div class="dlf-pg-feedback__prompt">
-      Help us improve Digital Land by <a href="mailto:DigitalLand@communities.gov.uk?subject=Digital land feedback (Page: Projects, Local%20plans)" class="dlf-pg-feedback__link">sharing your feedback</a> with us.
-    </div>
-  </div>
-  
 
     <footer class="govuk-footer " role="contentinfo">
       <div class="govuk-width-container ">
@@ -299,7 +292,7 @@ Local plans are a rich source of information, but the data used to produce that 
   const octokit = new Octokit();
   const owner = "digital-land";
   const repo = "digital-land";
-  const projectLabel = "project:local-plans";
+  const projectLabel = "";
 
   const futureIssuesContainer = document.querySelector(".upcoming-areas-section");
   if( futureIssuesContainer ) {

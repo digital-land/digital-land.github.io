@@ -493,6 +493,14 @@
   </url>
   
   <url>
+    <loc>https://digital-land.github.io/project/local-plans/_contents/</loc>
+  </url>
+  
+  <url>
+    <loc>https://digital-land.github.io/project/local-plans/_upcoming-areas-of-investigation/</loc>
+  </url>
+  
+  <url>
     <loc>https://digital-land.github.io/project/single-register-of-planning/_contents/</loc>
   </url>
   
@@ -680,6 +688,10 @@
   
   <url>
     <loc>https://digital-land.github.io/project/single-register-of-planning/discovery/</loc>
+  </url>
+  
+  <url>
+    <loc>https://digital-land.github.io/project/local-plans/discovery/</loc>
   </url>
   
   <url>
