@@ -20,7 +20,7 @@
       <description>We updated the guidance on GOV.UK for publishing brownfield land registers, improved the data pages on this site, and published discovery reports for the local plans, and single register of planning projects.
 Brownfield Sites We have updated the guidance on publishing brownfield land data on GOV.UK.
 Data produced following this new guidance is backwards-compatible with the old standard, but we have made some changes to the format:
- Our research showed a number of fields didn&amp;rsquo;t add any information, were rarely used by publishers, or useful to users, so we have deprecated them.</description>
+ Research showed a number of fields were redundant, rarely used by publishers, or were otherwise not useful to our users, so we deprecated them.</description>
     </item>
     
     <item>
