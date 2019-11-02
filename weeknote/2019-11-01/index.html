@@ -29,7 +29,7 @@
     <meta property="description" content="We updated the guidance on GOV.UK for publishing brownfield land registers, improved the data pages on this site, and published discovery reports for the local plans, and single register of planning projects.
 Brownfield Sites We have updated the guidance on publishing brownfield land data on GOV.UK.
 Data produced following this new guidance is backwards-compatible with the old standard, but we have made some changes to the format:
- We deprecated a number of redundant fields.">
+ Our research showed a number of fields didn&rsquo;t add any information, were rarely used by publishers, or useful to users, so we have deprecated them.">
     
       <link rel="stylesheet" media="all" href="/stylesheets/main.css" />
     
@@ -168,10 +168,9 @@ Data produced following this new guidance is backwards-compatible with the old s
 <p>Data produced following this new guidance is <a href="https://en.wikipedia.org/wiki/Backward_compatibility">backwards-compatible</a> with the <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/653657/BrownfieldLandRegisters_-_DataStandard.pdf">old standard</a>, but we have made some changes to the format:</p>
 
 <ul>
-<li>We <a href="https://en.wikipedia.org/wiki/Deprecation#Software_deprecation">deprecated</a> a number of redundant fields.</li>
-<li>A number of fields which our research showed weren&rsquo;t understood by publishers, or useful to users, so we have made these optional.</li>
-<li>There were 6 separate text fields which weren&rsquo;t often blank or misused. So we combined them into a single &ldquo;Notes&rdquo; field.</li>
-<li>The open standards for government <a href="https://www.gov.uk/government/publications/open-standards-for-government/exchange-of-location-point">exchange of location point</a> for coordinates, means coordinates must now be in WGS84 (ERTS89). This makes the points easier to create, and test using Web mapping services such as Google, Bing, and OpenStreetMaps</li>
+<li>Our research showed a number of fields didn&rsquo;t add any information, were rarely used by publishers, or useful to users, so we have <a href="https://en.wikipedia.org/wiki/Deprecation#Software_deprecation">deprecated</a> them.</li>
+<li>There were 6 separate text fields which weren&rsquo;t often blank or misused, so we have combined them into a single &ldquo;Notes&rdquo; field.</li>
+<li>The mandated open standards for government <a href="https://www.gov.uk/government/publications/open-standards-for-government/exchange-of-location-point">exchange of location point</a> for coordinates, means coordinates must now meet the <a href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS84</a>/<a href="https://en.wikipedia.org/wiki/European_Terrestrial_Reference_System_1989">ERTS89</a> open data standards. This makes the points easier to create, and test using open source software and Web mapping services such as Google, Bing, and OpenStreetMaps.</li>
 </ul>
 
 <p>Most importantly, we have clarified the same publication should be updated more frequently, rather than creating a new publication each year, and sites which have been developed should remain in the register, but marked in a new &ldquo;EndDate&rdquo; field.</p>
