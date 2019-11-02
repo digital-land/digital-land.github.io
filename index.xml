@@ -18,7 +18,8 @@
       
       <guid>https://digital-land.github.io/weeknote/2019-11-01/</guid>
       <description>We updated the guidance on GOV.UK for publishing brownfield land registers, improved the data pages on this site, and published discovery reports for the local plans, and single register of planning projects.
-Brownfield Sites Our updated guidance on publishing brownfield land data is now live on GOV.UK. This is compatible with the old data standard. As well as simplifying the text, we have deprecated a number of fields which our research showed weren&amp;rsquo;t understood by publishers, useful to users, or were duplicated in the data, in particular we combined 6 separate description fields into a single &amp;ldquo;Notes&amp;rdquo; field.</description>
+Brownfield Sites Our updated guidance on publishing brownfield land data is now live on GOV.UK.
+Data produced by following the new guidance is backwards-compatible with the old standard, but we have made some changes. We deprecated a number of fields were redundant or which our research showed weren&amp;rsquo;t understood by publishers, or useful to users.</description>
     </item>
     
     <item>
