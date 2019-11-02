@@ -26,10 +26,10 @@
     <meta name="theme-color" content="#0b0c0c" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="/images/opengraph-image.png?0.24.0">
-    <meta property="description" content="We updated the guidance on GOV.UK for publishing brownfield land registers, improved the data pages on this site, and published discovery reports for the local plans, and single register of planning projects.
+    <meta property="description" content="We updated the guidance on GOV.UK for publishing brownfield land registers, improved the data pages on this site, and published discovery reports for the local plans, and the single register of planning projects.
 Brownfield Sites We have updated the guidance on publishing brownfield land data on GOV.UK.
 Data produced following this new guidance is backwards-compatible with the old standard, but we have made some changes to the format:
- Research showed a number of fields were redundant, rarely used by publishers, or were otherwise not useful to our users, so we deprecated them.">
+ Research showed a number of fields were redundant, rarely used by publishers, or were otherwise not useful to our users, so we deprecated them, that is we&rsquo;ve said they&rsquo;re no longer a part of the specification.">
     
       <link rel="stylesheet" media="all" href="/stylesheets/main.css" />
     
@@ -159,7 +159,7 @@ Data produced following this new guidance is backwards-compatible with the old s
 		<div class="govuk-grid-column-two-thirds markdown-output">
 			
 
-<p><em>We updated the guidance on GOV.UK for publishing brownfield land registers, improved the data pages on this site, and published discovery reports for the local plans, and single register of planning projects.</em></p>
+<p><em>We updated the guidance on GOV.UK for publishing brownfield land registers, improved the data pages on this site, and published discovery reports for the local plans, and the single register of planning projects.</em></p>
 
 <h2 id="brownfield-sites-https-digital-land-github-io-project-brownfield-sites"><a href="https://digital-land.github.io/project/brownfield-sites/">Brownfield Sites</a></h2>
 
@@ -168,12 +168,13 @@ Data produced following this new guidance is backwards-compatible with the old s
 <p>Data produced following this new guidance is <a href="https://en.wikipedia.org/wiki/Backward_compatibility">backwards-compatible</a> with the <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/653657/BrownfieldLandRegisters_-_DataStandard.pdf">old standard</a>, but we have made some changes to the format:</p>
 
 <ul>
-<li>Research showed a number of fields were redundant, rarely used by publishers, or were otherwise not useful to our users, so we <a href="https://en.wikipedia.org/wiki/Deprecation#Software_deprecation">deprecated</a> them.</li>
-<li>There were 6 separate text fields which weren&rsquo;t often blank or misused, so we combined them into a single &ldquo;Notes&rdquo; field.</li>
-<li>The mandated open standards for government <a href="https://www.gov.uk/government/publications/open-standards-for-government/exchange-of-location-point">exchange of location point</a> for coordinates, means coordinates must now meet the <a href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS84</a>/<a href="https://en.wikipedia.org/wiki/European_Terrestrial_Reference_System_1989">ERTS89</a> open data standards. This makes the points easier to create, and test using open source software and Web mapping services such as Google, Bing, and OpenStreetMaps.</li>
+<li>Research showed a number of fields were redundant, rarely used by publishers, or were otherwise not useful to our users, so we <a href="https://en.wikipedia.org/wiki/Deprecation#Software_deprecation">deprecated</a> them, that is we&rsquo;ve said they&rsquo;re no longer a part of the specification.</li>
+<li>There were 6 separate text fields which were often blank, or misused, so we have combined them into a single &ldquo;Notes&rdquo; field.</li>
+<li>The mandated open standards for government <a href="https://www.gov.uk/government/publications/open-standards-for-government/exchange-of-location-point">exchange of location point</a> for coordinates, means coordinates must now meet the <a href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS84</a>/<a href="https://en.wikipedia.org/wiki/European_Terrestrial_Reference_System_1989">ERTS89</a> open data standards. This makes the points easier to create using open source software. It also helps people test use them in Web mapping services such as Google Maps, Bing Maps, and OpenStreetMaps.</li>
 </ul>
 
-<p>Most importantly, we clarified the data should be updated more frequently, and in the same file, rather than creating a new publication each year. So as not to lose old information, sites which are no longer brownfield should remain listed, but marked in a new &ldquo;EndDate&rdquo; field.</p>
+<p>Most importantly, we made it clear the importance of keeping the same file up to date, rather than creating a new publication each year.
+Sites which are no longer brownfield should remain listed, but marked with the new &ldquo;EndDate&rdquo; field, so as not to lose important historical information,</p>
 
 <p>We know many potential users of this data need the site boundary rather than just a single point and area. We considered adding a new polygon field, but publishers already find the existing data format difficult enough to produce, and CSV is not the best format for representing geospatial data. We expect extent and boundary data to emerge from other projects, such as strategic sites in local plans, and site plans held against planning permissions.</p>
 
@@ -183,12 +184,12 @@ Data produced following this new guidance is backwards-compatible with the old s
 
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/psd/48980962116/in/album-72157703657907285/" title="Colm and Adam, the dynamic duo"><img src="https://live.staticflickr.com/65535/48980962116_aa95091bf0_c.jpg" alt="Colm and Adam, the dynamic duo"></a></p>
 
-<p>We&rsquo;ve also begun to <a href="https://github.com/digital-land/brownfield-sites-collection">collect brownfield land</a> data from local planning authority each night, alongside older copies of data found in <a href="https://datasets.opendata.esd.org.uk/?filter=brownfield">data inventories</a> made available by the <a href="https://www.local.gov.uk/">Local Government Association</a>.  Showing the results of validating these files should help understand the performance of our work. We will see over time if we succeeding in helping local planning authorities publish better data, and more frequently.</p>
+<p>We&rsquo;ve also begun to <a href="https://github.com/digital-land/brownfield-sites-collection">collect brownfield land</a> data from local planning authorities each night, alongside older copies of data found in <a href="https://datasets.opendata.esd.org.uk/?filter=brownfield">data inventories</a> made available by the <a href="https://www.local.gov.uk/">Local Government Association</a>.  Showing the results of validating these files should help understand the performance of our work. We will see over time if we are being successful in helping local planning authorities publish better data, and more frequently.</p>
 
 <h2 id="compulsory-purchase-orders-https-digital-land-github-io-project-compulsory-purchase-orders"><a href="https://digital-land.github.io/project/compulsory-purchase-orders/">Compulsory Purchase Orders</a></h2>
 
 <p>We introduced our work at the Digital Showcase, which included Tom presenting the policy, remotely, and Matt giving a live demonstration of our prototype dashboard.
-Matt and Lorna held a workshop with Tom and the policy team to find ways improving the data we hold about the CPO process, using insights from testing the dashboard with users.</p>
+Matt and Lorna held a workshop with Tom and the policy team to find ways of improving the data we hold about the CPO process, using insights from testing the dashboard with users.</p>
 
 <p><a href="https://www.flickr.com/photos/psd/48980296578/in/album-72157703657907285/" title="CPO process mapping and planning"><img src="https://live.staticflickr.com/65535/48980296578_1e4cc9b42f_c.jpg" alt="CPO process mapping and planning"></a></p>
 
@@ -207,7 +208,8 @@ Matt and Lorna held a workshop with Tom and the policy team to find ways improvi
 <p>Paul, Jake, Adam and Colm spent some time this week reviewing how we collect and analyse files published by local planning authorities. Paul sketched out a new structure for our website and repositories, which we’re now in the process of implementing, starting with our <a href="https://digital-land.github.io/organisation/">organisation</a> pages.</p>
 
 <p>Paul has begun contributing to a <a href="https://www.wikidata.org/wiki/Wikidata_talk:WikiProject_UK_and_Ireland/adm/England">wikidata project</a> to help us link to local authority websites, and information about development corporations and other organisations which don&rsquo;t appear in government registers.
-Paul also had a catch-up this week with the <a href="https://www.local.gov.uk/">Local Government Association</a>&rsquo;s <a href="https://twitter.com/juliet_w">Juliette Witworth</a>, who suggested an number of data resources which could potentially be useful for our users.</p>
+Paul also had a catch-up this week with <a href="https://twitter.com/juliet_w">Juliette Witworth</a> from the <a href="https://www.local.gov.uk/">Local Government Association</a>.
+Juliette suggested a number of <a href="https://api.esd.org.uk/introduction">LGA Inform Plus</a> resources which could potentially be useful for our users.</p>
 
 <p><a data-flickr-embed="true" href="https://www.flickr.com/photos/psd/48994693023/in/dateposted/" title="Repos for our GitHub pages"><img src="https://live.staticflickr.com/65535/48994693023_09849abd7d_c.jpg" alt="Repos for our GitHub pages"></a></p>
 
