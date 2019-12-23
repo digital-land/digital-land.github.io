@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Weeknotes on Digital Land</title>
+    <link>https://digital-land.github.io/weeknote/</link>
+    <description>Recent content in Weeknotes on Digital Land</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://digital-land.github.io/weeknote/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-11-01/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-11-01/</guid>
+      <description>We updated the guidance on GOV.UK for publishing brownfield land registers, improved the data pages on this site, and published discovery reports for the local plans, and the single register of planning projects.
+Brownfield Sites We have updated the guidance on publishing brownfield land data on GOV.UK.
+Data produced following this new guidance is backwards-compatible with the old standard, but we have made some changes to the format:
+ Research showed a number of fields were redundant, rarely used by publishers, or were otherwise not useful to our users, so we deprecated them, that is we&amp;rsquo;ve said they&amp;rsquo;re no longer a part of the specification.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-10-21/</link>
+      <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-10-21/</guid>
+      <description>Team 
+Our week started well with a PropTech round table event. The Minister of State for Housing and Planning, Esther McVey, saw demonstrations of 5 digital products and then chaired a discussion with 12 PropTech companies. The Minister, who supports our strategy, announced several Digital Land projects including:
+ opening up compulsory purchase orders data for the first time to improve transparency enabling PropTech companies to access more data, such as energy performance certificates and the square footage information of properties the introduction of a national index of brownfield sites, simplifying and improving the quality of data from brownfield land registers to help developers to find brownfield land to build on continuing to work with the PropTech industry to help open up data held by local authorities  We’re embracing new tech where the UK can lead the world.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-10-14/</link>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-10-14/</guid>
+      <description>Team Natalie and Jess have been working out plans for a PropTech event with the Minister of State for Housing, Esther McVey. We&amp;rsquo;re looking forward to discussing opportunities for greater efficiency and transparency in the housing market, some of the barriers to PropTech adoption and growth, and how central government can best support the sector.
+Helena, Emily and Jake attended a brilliant service assessor training run by the GDS assessment team.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-10-07/</link>
+      <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-10-07/</guid>
+      <description>Team It’s been a rollercoaster of a week for the Digital Land team. Sadly we’ve said goodbye to Ed, our brilliant policy lead, who is moving upstairs to start his new job as Private Secretary to the Permanent Secretary - a bit of a tongue twister, but a brilliant role! Whilst we’re sad to see him go, we’re proud to have a Digital Land alumnus working at the top levels of MHCLG.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-10-04/</link>
+      <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-10-04/</guid>
+      <description>Team 
+Much of this week has been focussed on planning. Lorna, Matt and Helena have been lining up local authorities for our Developer Contributions private beta, and preparing for testing Compulsory Purchase Orders in a usability lab.
+Emily and Michael worked with Helena on a redseign for our project pages, which we aim to deploy next week, starting with the end of discovery reports for Local Plans, and Planning Permissions.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-09-27/</link>
+      <pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-09-27/</guid>
+      <description>With some of the team still seconded to another project, and a few of the team taking well deserved holidays we were fairly light on people in the office this week. However, we did manage to make some good progress!
+Developer Contributions Lorna and Matt met with The Future Fox to talk about the developer contributions data that we&amp;rsquo;re opening up. The Future Fox working to change how communities and local authorities engage with each other.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-09-20/</link>
+      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-09-20/</guid>
+      <description>Developer Contributions 
+Monday began with a retrospective following publishing our guidance on GOV.UK. We concluded most things had gone well thanks to the high degree of trust built between the policy and digital teams over the course of the past year. Where things had gone less well, not understanding each other&amp;rsquo;s process, and policy and digital people not having a common language was often at the heart of the matter.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-09-13/</link>
+      <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-09-13/</guid>
+      <description>Policy Jess, Natalie, and Ed have been working on next week&amp;rsquo;s PropTech workshop for colleagues in the Housing Delivery and Planning directorates. Jess was out Thursday night moderating a panel at a PropTech event at the London Connectory, seeing a number of friends of the team.
+Natalie, Ed, and the team have been also been involved in writing submissions, contributing to papers, and attending steering groups and cross-government meetings, work which is hard for us to talk about in public.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-09-06/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-09-06/</guid>
+      <description>Developer Contributions We started the week on a high with the announcement on Sunday morning of new planning rules. These are intended help local people better understand the value of development to their community. The publication included our guidance for publishing developer contributions as data.
+There&amp;rsquo;s still a lot more we can do to simplify the publishing process for local planning authorities, and a few wrinkles to iron out. Not least, we need to be clearer about crown copyright and open government licensing terms to ensure it is published as open data.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-08-30/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-08-30/</guid>
+      <description>A short but busy week for those of us still in the office in August. The nature of policy often makes it hard for us to talk publicly about some of the bigger things which have occupied much of the team&amp;rsquo;s focus. That was truer than ever this week.
+Jess, Natalie and Ed met with the Geospatial Commission, and the newly formed Real Estate Data Foundation about our priorities. Dan Hughes, aka @PropertyDanH, visited Jess in the office, and tweeted a photo of our walls.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-08-23/</link>
+      <pubDate>Fri, 23 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-08-23/</guid>
+      <description>It&amp;rsquo;s August, and some of the team have been seconded to lend their digital skills to another project in the department, but it&amp;rsquo;s still been quite a busy week for those of us left in the office. Natalie, Ed and Paul have been involved in preparing papers and participating in discussions on a number of different policy areas which we unfortunately can&amp;rsquo;t talk about publicly, yet. We also began investigating two new projects related to building regulations.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-08-16/</link>
+      <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-08-16/</guid>
+      <description>The week we&amp;rsquo;ve been working on a flow diagram that shows how data for developer contributions will be collected, stored and used to produce the dashboard and infrastructure funding statement.
+Plan X also came in to show us what they&amp;rsquo;ve been working on, as they&amp;rsquo;re planning on going into a beta phase with Southwark in the near future. We&amp;rsquo;re really interested in what they&amp;rsquo;re doing and we&amp;rsquo;re keen to see how we can work together.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-08-09/</link>
+      <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-08-09/</guid>
+      <description>A few of the digital land team were off on holiday this week, but it was still a busy week!
+Local plans Helena and Paul B presented the insights and outcomes from the Local Plans discovery to planning and housing colleagues across MHCLG. The discovery findings focused on the needs of users working in our department, the Planning Inspectorate Service (PINS) and local planning authorities.
+We&amp;rsquo;re now in the process of shaping an alpha to define the data needed to increase the visibility of where Local authorities are in their local plan making, and the types of policy areas covered in a local plan.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-08-02/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-08-02/</guid>
+      <description>Paul D presented at a couple of boards and attended the Royal Town Planning Institute (RTPI) workshop at Connected Places Catapult.
+Paul and Emily also held interviews for a new senior user researcher to join the Digital Land team.
+Rebecca spent a day visiting the delivery manager community at GDS along with the other MHCLG delivery managers, to share experiences of agile teams working in a policy department.
+Natalie and Ed met with the Geospatial Commission to discuss collaboration on work that builds on our Local Plans discovery.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-07-26/</link>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-07-26/</guid>
+      <description>This week we held the local plans steering group to present the findings from Paul B and Helena&amp;rsquo;s discovery work to our internal stakeholders. The work was positively recieved and we&amp;rsquo;re now planning the next steps of the project as we prepare to move into alpha.
+Matt has continued his work on Compulsory Purchase Orders (CPOs) and has plans for a proposed model that will be published on our CPO project page soon.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-07-19/</link>
+      <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-07-19/</guid>
+      <description>Great news this week - EPC data is now being updated and published again on Open Data Communities, thanks to a lot of hard work over the past year from policy specialists, including Ed. Read Paul&amp;rsquo;s blog post on our user research and policy work involved in resuming the publication of EPC data.
+Here&amp;#39;s a blog post about the user research and policy work behind resuming publication of the EPC data on Open Data Communities: https://t.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-07-12/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-07-12/</guid>
+      <description>This week Paul D spoke at the PlanTech - July Breakfast Show &amp;amp; Tell at the ODI in Leeds, and attended the Compulsory Purchase Association conference.
+Our compulsory purchase orders has seen some progress this week. Matt met with the data protection team to explore options for publishing decision letters and inspectors reports, and we&amp;rsquo;ve also drafted a data model for the register which we&amp;rsquo;ll test next week.
+Helena and Paul B have been working on finalising analysis for the local plans discovery, including defining user needs and hypotheses for potential opportunity areas.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-07-05/</link>
+      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-07-05/</guid>
+      <description>This week the Digital Land team made good progress on several projects, even with most of the team at an away day on Thursday.
+We started work on a register for Compulsory Purchase Order (CPO) data that we plan to publish in the next month or so. We based this on data we extracted from one of the legacy systems MHCLG use to manage CPOs. The data required some tidying up to make it consistent and (potentially) machine-readable.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-06-28/</link>
+      <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-06-28/</guid>
+      <description>It’s been an exciting week! On Tuesday we found out that the Find an Energy Certificate or Assessor alpha, which Jake and Emily worked on, has passed the GDS assessment and can move onto beta.
+Another exciting milestone is that the updates to our Digital Land website are live. Michael has been writing the new content for the website, working on our team vision, mission statement, about us and user pages.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-06-21/</link>
+      <pubDate>Fri, 21 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-06-21/</guid>
+      <description>This week in the Digital Land team, Adam, Colm and Jake have been working on the brownfield sites validator. Paul D has also been looking at the data published in brownfield registers to help design a simpler format. He also held a fireside chat with Emma Williamson of Haringey at the digileaders event.
+
+Colm has also been working on Digital Land Front-end, creating component macros and converting templates into Jinja templating language, so they can be used with Flask applications.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-06-14/</link>
+      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-06-14/</guid>
+      <description>This week, we spent Tuesday and Wednesday together at our Team Away days. We kicked off with a team retrospective, which led to discussions around building further relationships with policy teams and how to improve the delivery of products we&amp;rsquo;re working on. We also went to the Imaginary Cities exhibition at the British Library and were joined by Lorna, our new user researcher.
+Rebecca met with policy teams to talk about how we capture policy needs in our team planning, and met with Cities and Local Growth (CLOG) team to action things from last weeks One Team Gov wellbeing camp.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-06-07/</link>
+      <pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-06-07/</guid>
+      <description>The big news this week was new regulations for The Community Infrastructure Levy (Amendment) (England) Regulations 2019 have been laid before Parliament, an important step for the developer contributions policy.
+
+Paul D participated in the first Product Management community of practice meeting organised by Sam and represented the team at a workshop looking at how the department collects data for analysis, which resulted in these postits to explain Digital Land:</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-05-31/</link>
+      <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-05-31/</guid>
+      <description>This week Christine has been prototyping the registers editor and Paul D has been revisiting the python open register library. Adam and Colm have been tweaking the housing numbers prototype which is part of our bigger local plans project.
+On Tuesday Paul D and Matt visited Bristol to learn more about compulsory purchase orders (CPOs). They met with colleagues from policy, the planning caseworker unit and the Planning Inspectorate. During the workshop they explored the process of raising and managing CPOs and looked at the decision making process.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-05-24/</link>
+      <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-05-24/</guid>
+      <description>It’s been a big week for the team as digital services and policy have merged! Ed Culliney and new recruit Natalie Record have joined the team, marking the official joining of Digital Land services with policy – the ultimate multidisciplinary team.
+It&amp;rsquo;s official! No more separate Digital Land &amp;lsquo;Services&amp;rsquo; and &amp;lsquo;Policy&amp;rsquo; teams &amp;hellip; just one big happy Digital Land team with policy and services working together. Living the #OneTeamGov dream 🙌 pic.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-05-10/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-05-10/</guid>
+      <description>Local plans This week, Paul (Bermudez) and Helena have been busy working on the tail end of the Local Plans discovery. Their primary focus has been to analyse the insights that they&amp;rsquo;ve gathered so far ahead of an internal steering group next week.
+On another aspect of Local Plans, the housing numbers, our colleagues on the policy team have collected housing numbers from local plans. The vast majority of Local Planning Authorities have now been accounted for, and Colm and Adam are helping to make some changes to how we capture data for joint plans.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-02-15/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-02-15/</guid>
+      <description>This week Paul had his first MHCLG Digital Land birthday! It was a good moment to reflect on what we&amp;rsquo;ve done so far and where we&amp;rsquo;re heading over the next year.
+One year at @mhclg, think we&amp;#39;ve found a feasible approach to tackle a massive issue, everyone here is lovely, helped recruit some great people it&amp;#39;s a pleasure to work with, and am still learning.
+&amp;mdash; Paul Downey (@psd) February 14, 2019</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-02-08/</link>
+      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-02-08/</guid>
+      <description>Following the three workshops we held last week for our project on developer contributions, this week the team were analysing the findings and putting together an approach to further iterate our design.
+Elsewhere, Paul attended the LDCU roadshow in Bristol and held a session on our data mission with local government colleagues.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-02-01/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-02-01/</guid>
+      <description>This week the Digital Land Service and the Planning Infrastructure policy team ran 3 workshops with local planning authority representatives focusing on developer contributions. The public consultation on developer contributions has just closed, but we’ll be continuing to seek input from all stakeholders through forums like these as well as other channels.
+Held in London, Leeds and Birmingham, the workshops helped the Digital Land team better understand how planning authorities manage developer contributions, what challenges they face and what opportunities they can see in opening up developer contribution data.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-01-25/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-01-25/</guid>
+      <description>This week the team worked on preparing for the three workshops we are holding next week on developer contributions, to test the data standard with users and get feedback. We are also preparing for two user research workshops on local plans, one with internal MHCLG policy users and one with external users, to better understand the user needs and problems that need to be solved.
+Emily from MySociety hotdesked with our team on Monday, and will be doing so one day a week from now on.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-01-18/</link>
+      <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-01-18/</guid>
+      <description>This week the team had a project kickoff with MySociety for the central register of planning applications work.
+Rebecca and Paul attended a Royal Geographical Society lecture on “Creating a Mastermap”. Paul sketched some notes!
+
+The team’s work on developer contributions is progressing. Three workshops we have just announced over subscribed within 24 hours! We look forward to meeting with local authority planners at those workshops at the end of January.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-01-11/</link>
+      <pubDate>Fri, 11 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-01-11/</guid>
+      <description>Our team is still growing! This week we welcomed our new User Research Paul Bermudez. Welcome (yet another) Paul!
+We progressed the architecture of our work, which feeds into our roadmapping, which we talked through at our show and tell. Thanks to everyone who came!
+
+Paul Downey spoke on a panel at Reading University about planning data. Excitingly, the Digital Land team were being talked about by other speakers before Paul had even introduced our work!</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-12-21/</link>
+      <pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-12-21/</guid>
+      <description>This week the developer contributions public consultation went live. We don’t anticipate a huge flurry of activity over the holiday period, but we have already seen some comments and questions being added to the our GitHub issues – we’ll be monitoring these closely and keeping the conversation going.
+Also related to developer contributions, we visited Mid Suffolk and Babergh to talk with them about the data format we are proposing. It was very useful to hear how they are currently managing their Section 106 and CIL agreements, and are committed to making everything as open and transparent as possible.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-12-14/</link>
+      <pubDate>Fri, 14 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-12-14/</guid>
+      <description>In advance of the public consultation for developer contributions the team have been thinking about how we’ll manage questions and feedback in an open and transparent fashion. We’ve decided to try using GitHub issues – it provides us with a place where we can document all our feedback, have conversations in the open, and record any design decisions that are made. We haven’t publicised this approach, but we’re already getting feedback from members of the community about what we’re doing.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-12-07/</link>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-12-07/</guid>
+      <description>We presented our progress on developer contributions at a show and tell. This included the updated guidance, a tool to validate local planning authority data against the specification, and how we&amp;rsquo;ll be managing feedback during alpha.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-11-30/</link>
+      <pubDate>Fri, 30 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-11-30/</guid>
+      <description>We are delighted to welcome Helena Trippe to our team as our new service designer!
+The primary focus for the team this week was getting the developer contribution project ready for public consultation, the date has yet to be agreed.
+We’ve updated the project page to include a feedback form, and for areas where we have outstanding questions or concerns we’ve created a GitHub issue. We’ve aso written some draft guidance to help people publish their data.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-11-23/</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-11-23/</guid>
+      <description>On Tuesday Paul joined a panel at the ODI summit to talk about how local governments can take advantage of the opportunities created by data to improve public services and better serve communities.
+On the developer contributions project we met with the GLA, Southwark and TFL to discuss the user needs and data model. It was encouraging to hear that we’re all on the same page with regards to the data we’d like to publish.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-11-16/</link>
+      <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-11-16/</guid>
+      <description>This week the team focused on 2 areas:
+Brownfield sites Michael has been updating the guidance on brownfield sites. He has a draft of the proposed content and the next step is to review with the brownfield policy team before replacing the existing guidance on GOV.UK. We hope that with clearer guidance, and being about to point to the validator tool the revised registers will be of improved quality once they’re updated in the new year.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-11-09/</link>
+      <pubDate>Fri, 09 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-11-09/</guid>
+      <description>This week we continued further work on the brownfield site validator. You can now see a side-by-side comparison of some of the common errors (ie reversed GeoX and GeoY coordinates). For a number of the common errors we can automatically fix these, and provide the local authority with a valid .csv file that they can re-upload to their site.
+We met with the Greater London Authority (GLA) at City Hall. We talked about data standards and how that fits into their London Development Database initiative.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-11-02/</link>
+      <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-11-02/</guid>
+      <description>A quiet team week with just two of us in the office. Adam continued to iterate the brownfield sites validator and we revisited the collector for continuous validation. Paul joined Linda for a workshop at Future Cities Catapult on opportunities to work together, in particular with users of standards developed by Digital Land Services.
+We showed more work on collecting concerns, progress on developer contributions, and testing the brownfield sites registers with policy and local authority users.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-10-26/</link>
+      <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-10-26/</guid>
+      <description>The team has been working on the brownfield sites validator iterating the data model so we can understand the history of changes to registers. Of the 381 registers we have found 339 published, only 20 meet the standard, 5 with no errors. Over the course of the past two months, 32 have been moved or gone missing. We’re working on better guidance and tools to help publishers meet the standard.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-10-19/</link>
+      <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-10-19/</guid>
+      <description>The team visited the excellent Living with Buildings exhibition ahead of retrospective and roadmapping sessions in Camden. We were particularly surprised by the invective Charles Booth used on his poverty maps.
+
+Following a meeting with one of the brownfield policy team we’ve done some further work on the validator to plot the results of the validated data onto a map. There’s a bit more work we can do, but it’s something that we’re eager to take out and test.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-10-12/</link>
+      <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-10-12/</guid>
+      <description>Along with colleagues in the developer contribution policy team we met with one of the 3rd party suppliers of Section 106 management software. It was a productive meeting where we were able to explore possibilites of getting Section 106 data directly from their software in a format that meets our data standard. We&amp;rsquo;ll continue to work together and with other suppliers to test this further.
+We’ve continued to work on the Digital Land website.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-10-05/</link>
+      <pubDate>Fri, 05 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-10-05/</guid>
+      <description>We did some further work on the brownfield site validator, this was demoed by Adam in the show and tell on Thursday 4th. We also continued to add content to the Digital Land website, and begun to think about the future information architecture of the site.
+We had a very interesting meeting with the Open Data Institute where we talked and demoed our respective work. There are definitely some shared goals between them and us, so over the coming weeks we plan to have a more detailed workshop to agree areas of reuse, and how we can work together.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-09-28/</link>
+      <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-09-28/</guid>
+      <description>Over the past week the team have been looking at the following things:
+Section 106 and Viability Assessments We’ve been working closely with the Planning Policy Team and Local Planning Authorities to understand their needs around Section 106 and Viability Assessment data. We’ve learnt that although the NPPF encourages Local Authorities to publish this information the appetite to do so varies between each authority.
+To help us learn more about what is needed we’ve built a couple of prototypes that collects and publishes the pertinent information.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-09-13/</link>
+      <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-09-13/</guid>
+      <description>A show and tell hosted by the planning directorate. Paul Tweeted the agenda.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-09-06/</link>
+      <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-09-06/</guid>
+      <description>We showed early work on a brownfield site register validator brownfield site validation tool. Paul introduced a concept model for information and data.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-08-30/</link>
+      <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-08-30/</guid>
+      <description>Playback of user research visits to Waltham Forest, Southwalk, Lambeth and Islington councils.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-08-03/</link>
+      <pubDate>Fri, 03 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-08-03/</guid>
+      <description>This week the team continued working on Section 106. We met with Southwark Council who told us about the work their team are doing around collecting and publishing Section 106 data.
+We’ve also started to build an online form to collect Section 106 summary and Viability Assessment summary data. We’ll use this to help test the data standard with Local Planning Authorities.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-07-27/</link>
+      <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-07-27/</guid>
+      <description>This week the Digital Land Services team ran their first show and tell where we talked about some of our findings from discovery, and demoed an early view of the ‘brownfield sites validator’ tool. We plan to run future show and tells on a fortnightly basis, and hope to be able to make them publicly available soon.
+We continued development work on the ‘brownfield sites validator’ which now feeds back whether a given set of data meets the specification, and if not where the problems are.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-06-15/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-06-15/</guid>
+      <description>We were joined this week by Matt Lucht, our new delivery manager, Michael Nottingham, our new part-time content editor and by Alex Blandford, a user researcher working for Rose. We’ve begun to write-up our discovery findings which we plan to present on the 28th and publish publicly on our new blog shortly afterwards.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-06-08/</link>
+      <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-06-08/</guid>
+      <description>Rose has been recruiting participants to give us insight into how the brownfield registers were made, and if they are working for users. We were joined by Alex Blandford, who has been helping us start our end-of-discovery report.
+We rebuilt our data collector and started to collect tree preservation orders and contaminated land datasets published by planning authorities. So far this has meant sending out 120 emails, many of which we learnt, arrived in the inbox of one person working at Misoportal</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-06-01/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-06-01/</guid>
+      <description>More than 40 people came to our open meeting where we gleaned many insights from users of land and housing data. Next week the team are focussing their research on analysing the state of data in brownfield registers, how they are being maintained, and if they meets the needs of users.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-05-04/</link>
+      <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-05-04/</guid>
+      <description>Paul presented at the cross government event on API best practice [slides].</description>
+    </item>
+    
+  </channel>
+</rss>

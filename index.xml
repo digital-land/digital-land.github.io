@@ -1,0 +1,2134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Digital Land</title>
+    <link>https://digital-land.github.io/</link>
+    <description>Recent content on Digital Land</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-11-01/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-11-01/</guid>
+      <description>We updated the guidance on GOV.UK for publishing brownfield land registers, improved the data pages on this site, and published discovery reports for the local plans, and the single register of planning projects.
+Brownfield Sites We have updated the guidance on publishing brownfield land data on GOV.UK.
+Data produced following this new guidance is backwards-compatible with the old standard, but we have made some changes to the format:
+ Research showed a number of fields were redundant, rarely used by publishers, or were otherwise not useful to our users, so we deprecated them, that is we&amp;rsquo;ve said they&amp;rsquo;re no longer a part of the specification.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-10-21/</link>
+      <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-10-21/</guid>
+      <description>Team 
+Our week started well with a PropTech round table event. The Minister of State for Housing and Planning, Esther McVey, saw demonstrations of 5 digital products and then chaired a discussion with 12 PropTech companies. The Minister, who supports our strategy, announced several Digital Land projects including:
+ opening up compulsory purchase orders data for the first time to improve transparency enabling PropTech companies to access more data, such as energy performance certificates and the square footage information of properties the introduction of a national index of brownfield sites, simplifying and improving the quality of data from brownfield land registers to help developers to find brownfield land to build on continuing to work with the PropTech industry to help open up data held by local authorities  We’re embracing new tech where the UK can lead the world.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-10-14/</link>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-10-14/</guid>
+      <description>Team Natalie and Jess have been working out plans for a PropTech event with the Minister of State for Housing, Esther McVey. We&amp;rsquo;re looking forward to discussing opportunities for greater efficiency and transparency in the housing market, some of the barriers to PropTech adoption and growth, and how central government can best support the sector.
+Helena, Emily and Jake attended a brilliant service assessor training run by the GDS assessment team.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-10-07/</link>
+      <pubDate>Mon, 07 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-10-07/</guid>
+      <description>Team It’s been a rollercoaster of a week for the Digital Land team. Sadly we’ve said goodbye to Ed, our brilliant policy lead, who is moving upstairs to start his new job as Private Secretary to the Permanent Secretary - a bit of a tongue twister, but a brilliant role! Whilst we’re sad to see him go, we’re proud to have a Digital Land alumnus working at the top levels of MHCLG.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-10-04/</link>
+      <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-10-04/</guid>
+      <description>Team 
+Much of this week has been focussed on planning. Lorna, Matt and Helena have been lining up local authorities for our Developer Contributions private beta, and preparing for testing Compulsory Purchase Orders in a usability lab.
+Emily and Michael worked with Helena on a redseign for our project pages, which we aim to deploy next week, starting with the end of discovery reports for Local Plans, and Planning Permissions.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-09-27/</link>
+      <pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-09-27/</guid>
+      <description>With some of the team still seconded to another project, and a few of the team taking well deserved holidays we were fairly light on people in the office this week. However, we did manage to make some good progress!
+Developer Contributions Lorna and Matt met with The Future Fox to talk about the developer contributions data that we&amp;rsquo;re opening up. The Future Fox working to change how communities and local authorities engage with each other.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-09-20/</link>
+      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-09-20/</guid>
+      <description>Developer Contributions 
+Monday began with a retrospective following publishing our guidance on GOV.UK. We concluded most things had gone well thanks to the high degree of trust built between the policy and digital teams over the course of the past year. Where things had gone less well, not understanding each other&amp;rsquo;s process, and policy and digital people not having a common language was often at the heart of the matter.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-09-13/</link>
+      <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-09-13/</guid>
+      <description>Policy Jess, Natalie, and Ed have been working on next week&amp;rsquo;s PropTech workshop for colleagues in the Housing Delivery and Planning directorates. Jess was out Thursday night moderating a panel at a PropTech event at the London Connectory, seeing a number of friends of the team.
+Natalie, Ed, and the team have been also been involved in writing submissions, contributing to papers, and attending steering groups and cross-government meetings, work which is hard for us to talk about in public.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-09-06/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-09-06/</guid>
+      <description>Developer Contributions We started the week on a high with the announcement on Sunday morning of new planning rules. These are intended help local people better understand the value of development to their community. The publication included our guidance for publishing developer contributions as data.
+There&amp;rsquo;s still a lot more we can do to simplify the publishing process for local planning authorities, and a few wrinkles to iron out. Not least, we need to be clearer about crown copyright and open government licensing terms to ensure it is published as open data.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-08-30/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-08-30/</guid>
+      <description>A short but busy week for those of us still in the office in August. The nature of policy often makes it hard for us to talk publicly about some of the bigger things which have occupied much of the team&amp;rsquo;s focus. That was truer than ever this week.
+Jess, Natalie and Ed met with the Geospatial Commission, and the newly formed Real Estate Data Foundation about our priorities. Dan Hughes, aka @PropertyDanH, visited Jess in the office, and tweeted a photo of our walls.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-08-23/</link>
+      <pubDate>Fri, 23 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-08-23/</guid>
+      <description>It&amp;rsquo;s August, and some of the team have been seconded to lend their digital skills to another project in the department, but it&amp;rsquo;s still been quite a busy week for those of us left in the office. Natalie, Ed and Paul have been involved in preparing papers and participating in discussions on a number of different policy areas which we unfortunately can&amp;rsquo;t talk about publicly, yet. We also began investigating two new projects related to building regulations.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-08-16/</link>
+      <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-08-16/</guid>
+      <description>The week we&amp;rsquo;ve been working on a flow diagram that shows how data for developer contributions will be collected, stored and used to produce the dashboard and infrastructure funding statement.
+Plan X also came in to show us what they&amp;rsquo;ve been working on, as they&amp;rsquo;re planning on going into a beta phase with Southwark in the near future. We&amp;rsquo;re really interested in what they&amp;rsquo;re doing and we&amp;rsquo;re keen to see how we can work together.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-08-09/</link>
+      <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-08-09/</guid>
+      <description>A few of the digital land team were off on holiday this week, but it was still a busy week!
+Local plans Helena and Paul B presented the insights and outcomes from the Local Plans discovery to planning and housing colleagues across MHCLG. The discovery findings focused on the needs of users working in our department, the Planning Inspectorate Service (PINS) and local planning authorities.
+We&amp;rsquo;re now in the process of shaping an alpha to define the data needed to increase the visibility of where Local authorities are in their local plan making, and the types of policy areas covered in a local plan.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-08-02/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-08-02/</guid>
+      <description>Paul D presented at a couple of boards and attended the Royal Town Planning Institute (RTPI) workshop at Connected Places Catapult.
+Paul and Emily also held interviews for a new senior user researcher to join the Digital Land team.
+Rebecca spent a day visiting the delivery manager community at GDS along with the other MHCLG delivery managers, to share experiences of agile teams working in a policy department.
+Natalie and Ed met with the Geospatial Commission to discuss collaboration on work that builds on our Local Plans discovery.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-07-26/</link>
+      <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-07-26/</guid>
+      <description>This week we held the local plans steering group to present the findings from Paul B and Helena&amp;rsquo;s discovery work to our internal stakeholders. The work was positively recieved and we&amp;rsquo;re now planning the next steps of the project as we prepare to move into alpha.
+Matt has continued his work on Compulsory Purchase Orders (CPOs) and has plans for a proposed model that will be published on our CPO project page soon.</description>
+    </item>
+    
+    <item>
+      <title>Publishing energy performance certificate data</title>
+      <link>https://digital-land.github.io/blog-post/publishing-epc-data/</link>
+      <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/blog-post/publishing-epc-data/</guid>
+      <description>Read about the user research and policy work to resume publishing EPC data on Open Data Communities.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-07-19/</link>
+      <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-07-19/</guid>
+      <description>Great news this week - EPC data is now being updated and published again on Open Data Communities, thanks to a lot of hard work over the past year from policy specialists, including Ed. Read Paul&amp;rsquo;s blog post on our user research and policy work involved in resuming the publication of EPC data.
+Here&amp;#39;s a blog post about the user research and policy work behind resuming publication of the EPC data on Open Data Communities: https://t.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-07-12/</link>
+      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-07-12/</guid>
+      <description>This week Paul D spoke at the PlanTech - July Breakfast Show &amp;amp; Tell at the ODI in Leeds, and attended the Compulsory Purchase Association conference.
+Our compulsory purchase orders has seen some progress this week. Matt met with the data protection team to explore options for publishing decision letters and inspectors reports, and we&amp;rsquo;ve also drafted a data model for the register which we&amp;rsquo;ll test next week.
+Helena and Paul B have been working on finalising analysis for the local plans discovery, including defining user needs and hypotheses for potential opportunity areas.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-07-05/</link>
+      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-07-05/</guid>
+      <description>This week the Digital Land team made good progress on several projects, even with most of the team at an away day on Thursday.
+We started work on a register for Compulsory Purchase Order (CPO) data that we plan to publish in the next month or so. We based this on data we extracted from one of the legacy systems MHCLG use to manage CPOs. The data required some tidying up to make it consistent and (potentially) machine-readable.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-06-28/</link>
+      <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-06-28/</guid>
+      <description>It’s been an exciting week! On Tuesday we found out that the Find an Energy Certificate or Assessor alpha, which Jake and Emily worked on, has passed the GDS assessment and can move onto beta.
+Another exciting milestone is that the updates to our Digital Land website are live. Michael has been writing the new content for the website, working on our team vision, mission statement, about us and user pages.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-06-21/</link>
+      <pubDate>Fri, 21 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-06-21/</guid>
+      <description>This week in the Digital Land team, Adam, Colm and Jake have been working on the brownfield sites validator. Paul D has also been looking at the data published in brownfield registers to help design a simpler format. He also held a fireside chat with Emma Williamson of Haringey at the digileaders event.
+
+Colm has also been working on Digital Land Front-end, creating component macros and converting templates into Jinja templating language, so they can be used with Flask applications.</description>
+    </item>
+    
+    <item>
+      <title>Lessons we learned at the Future PropTech exhibition</title>
+      <link>https://digital-land.github.io/blog-post/future-proptech-exhibition/</link>
+      <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/blog-post/future-proptech-exhibition/</guid>
+      <description>The Digital Land team was represented at this year’s FUTURE: PropTech event to engage with and learn from innovators in the housing and planning sector. Find out more about the event and what we learned.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-06-14/</link>
+      <pubDate>Fri, 14 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-06-14/</guid>
+      <description>This week, we spent Tuesday and Wednesday together at our Team Away days. We kicked off with a team retrospective, which led to discussions around building further relationships with policy teams and how to improve the delivery of products we&amp;rsquo;re working on. We also went to the Imaginary Cities exhibition at the British Library and were joined by Lorna, our new user researcher.
+Rebecca met with policy teams to talk about how we capture policy needs in our team planning, and met with Cities and Local Growth (CLOG) team to action things from last weeks One Team Gov wellbeing camp.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-06-07/</link>
+      <pubDate>Fri, 07 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-06-07/</guid>
+      <description>The big news this week was new regulations for The Community Infrastructure Levy (Amendment) (England) Regulations 2019 have been laid before Parliament, an important step for the developer contributions policy.
+
+Paul D participated in the first Product Management community of practice meeting organised by Sam and represented the team at a workshop looking at how the department collects data for analysis, which resulted in these postits to explain Digital Land:</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-05-31/</link>
+      <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-05-31/</guid>
+      <description>This week Christine has been prototyping the registers editor and Paul D has been revisiting the python open register library. Adam and Colm have been tweaking the housing numbers prototype which is part of our bigger local plans project.
+On Tuesday Paul D and Matt visited Bristol to learn more about compulsory purchase orders (CPOs). They met with colleagues from policy, the planning caseworker unit and the Planning Inspectorate. During the workshop they explored the process of raising and managing CPOs and looked at the decision making process.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-05-24/</link>
+      <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-05-24/</guid>
+      <description>It’s been a big week for the team as digital services and policy have merged! Ed Culliney and new recruit Natalie Record have joined the team, marking the official joining of Digital Land services with policy – the ultimate multidisciplinary team.
+It&amp;rsquo;s official! No more separate Digital Land &amp;lsquo;Services&amp;rsquo; and &amp;lsquo;Policy&amp;rsquo; teams &amp;hellip; just one big happy Digital Land team with policy and services working together. Living the #OneTeamGov dream 🙌 pic.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-05-10/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-05-10/</guid>
+      <description>Local plans This week, Paul (Bermudez) and Helena have been busy working on the tail end of the Local Plans discovery. Their primary focus has been to analyse the insights that they&amp;rsquo;ve gathered so far ahead of an internal steering group next week.
+On another aspect of Local Plans, the housing numbers, our colleagues on the policy team have collected housing numbers from local plans. The vast majority of Local Planning Authorities have now been accounted for, and Colm and Adam are helping to make some changes to how we capture data for joint plans.</description>
+    </item>
+    
+    <item>
+      <title>A design pattern for planning permission data</title>
+      <link>https://digital-land.github.io/blog-post/design-pattern-for-planning-permission-data/</link>
+      <pubDate>Tue, 02 Apr 2019 12:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/blog-post/design-pattern-for-planning-permission-data/</guid>
+      <description>mySociety is working with MHCLG on a Discovery and Alpha project to research, prototype, and test ways to make data around planning applications more open, accessible, sustainable, and trustworthy.
+Our Single register of planning project began as a response to a commitment made in the Autumn 2017 budget to create a register of planning permissions across all planning authorities in England and Wales:
+ The government will develop a central register of residential planning permissions from local authorities to improve information on where permissions are held and progress towards them being built out.</description>
+    </item>
+    
+    <item>
+      <title>Register of planning application data: Discovery findings</title>
+      <link>https://digital-land.github.io/blog-post/register-of-planning-discovery-findings/</link>
+      <pubDate>Thu, 07 Mar 2019 12:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/blog-post/register-of-planning-discovery-findings/</guid>
+      <description>mySociety is working with MHCLG on a Discovery and Alpha project to research, prototype, and test ways to make data around planning applications more open, accessible, sustainable, and trustworthy.
+We’ve spent the first six weeks of this project getting to grips with the domain of planning applications. We started by looking at what other people and organisations have done in this area already and then moved on to talking to as many people as we could, with an aim of exploring a number of different topics:</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-02-15/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-02-15/</guid>
+      <description>This week Paul had his first MHCLG Digital Land birthday! It was a good moment to reflect on what we&amp;rsquo;ve done so far and where we&amp;rsquo;re heading over the next year.
+One year at @mhclg, think we&amp;#39;ve found a feasible approach to tackle a massive issue, everyone here is lovely, helped recruit some great people it&amp;#39;s a pleasure to work with, and am still learning.
+&amp;mdash; Paul Downey (@psd) February 14, 2019</description>
+    </item>
+    
+    <item>
+      <title>A short history of planning application data projects</title>
+      <link>https://digital-land.github.io/blog-post/a-short-history-of-planning-application-data-projects/</link>
+      <pubDate>Tue, 12 Feb 2019 12:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/blog-post/a-short-history-of-planning-application-data-projects/</guid>
+      <description>mySociety is working with MHCLG on a Discovery and Alpha project to research, prototype, and test ways to make data around planning applications more open, accessible, sustainable, and trustworthy.
+One of the things we were struck by as we started this project was by how much work has already happened in this area. So, we thought it might be useful to document some of this history, for anyone else who might travel this way in future.</description>
+    </item>
+    
+    <item>
+      <title>Planning permissions ‘Single register of planning’ discovery: Sprint notes 29 Jan - 12 Feb 2019</title>
+      <link>https://digital-land.github.io/blog-post/planning-project-sprint-notes-12-feb/</link>
+      <pubDate>Tue, 12 Feb 2019 12:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/blog-post/planning-project-sprint-notes-12-feb/</guid>
+      <description>Headlines  Wrapping up the Discovery phase user research interviews and analysing the findings.  Last sprint we…  Talked to OpenAustralia about their PlanningAlerts project, as well as the folks at PlanningPortal and the PlanX team. Went to the Show &amp;amp; Tell by Southwark Council / Unboxed about their 8-week project to build a back-office planning system. Conducted a further 10 user research interviews!  This sprint we will…  Present our Discovery phase findings at a session with the Digital Land team.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-02-08/</link>
+      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-02-08/</guid>
+      <description>Following the three workshops we held last week for our project on developer contributions, this week the team were analysing the findings and putting together an approach to further iterate our design.
+Elsewhere, Paul attended the LDCU roadshow in Bristol and held a session on our data mission with local government colleagues.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-02-01/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-02-01/</guid>
+      <description>This week the Digital Land Service and the Planning Infrastructure policy team ran 3 workshops with local planning authority representatives focusing on developer contributions. The public consultation on developer contributions has just closed, but we’ll be continuing to seek input from all stakeholders through forums like these as well as other channels.
+Held in London, Leeds and Birmingham, the workshops helped the Digital Land team better understand how planning authorities manage developer contributions, what challenges they face and what opportunities they can see in opening up developer contribution data.</description>
+    </item>
+    
+    <item>
+      <title>Planning permissions ‘Single register of planning’ discovery: Sprint notes 14-28 Jan 2019</title>
+      <link>https://digital-land.github.io/blog-post/planning-project-sprint-notes-28-jan/</link>
+      <pubDate>Wed, 30 Jan 2019 12:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/blog-post/planning-project-sprint-notes-28-jan/</guid>
+      <description>Headlines  Creating and validating a basic model of planning applications, with information and insights from our Discovery phase user research interviews thus far.  Last sprint we…  Kicked off the project! See this blog post. Created a draft roadmap for the Discovery and Alpha phases of this work. Arranged and held 7+ stakeholder and user research interviews to find out more about the lifecycle of a planning application, the data links around planning applications and permissions, the schema that existing planning application/permissions viewing tools have, what kinds of people make use of planning applications/permissions data, and how a central government data source might be able to help them.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-01-25/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-01-25/</guid>
+      <description>This week the team worked on preparing for the three workshops we are holding next week on developer contributions, to test the data standard with users and get feedback. We are also preparing for two user research workshops on local plans, one with internal MHCLG policy users and one with external users, to better understand the user needs and problems that need to be solved.
+Emily from MySociety hotdesked with our team on Monday, and will be doing so one day a week from now on.</description>
+    </item>
+    
+    <item>
+      <title>Kicking off the Planning Permissions project</title>
+      <link>https://digital-land.github.io/blog-post/kicking-off-the-planning-permissions-project/</link>
+      <pubDate>Mon, 21 Jan 2019 12:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/blog-post/kicking-off-the-planning-permissions-project/</guid>
+      <description>The Digital Land team at the Ministry of Housing, Communities and Local Government (MHCLG) is working to make it easier for people to find, access and trust the data underlying England’s housing market.
+Access to reliable data on where planning permissions have been granted, rejected and built out is an important part of this work. That’s where the mySociety team come in – we are collaborating on a Discovery and Alpha project, to research, prototype, and test ways to make data around planning applications more open, accessible, sustainable, and trustworthy.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-01-18/</link>
+      <pubDate>Fri, 18 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-01-18/</guid>
+      <description>This week the team had a project kickoff with MySociety for the central register of planning applications work.
+Rebecca and Paul attended a Royal Geographical Society lecture on “Creating a Mastermap”. Paul sketched some notes!
+
+The team’s work on developer contributions is progressing. Three workshops we have just announced over subscribed within 24 hours! We look forward to meeting with local authority planners at those workshops at the end of January.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2019-01-11/</link>
+      <pubDate>Fri, 11 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2019-01-11/</guid>
+      <description>Our team is still growing! This week we welcomed our new User Research Paul Bermudez. Welcome (yet another) Paul!
+We progressed the architecture of our work, which feeds into our roadmapping, which we talked through at our show and tell. Thanks to everyone who came!
+
+Paul Downey spoke on a panel at Reading University about planning data. Excitingly, the Digital Land team were being talked about by other speakers before Paul had even introduced our work!</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-12-21/</link>
+      <pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-12-21/</guid>
+      <description>This week the developer contributions public consultation went live. We don’t anticipate a huge flurry of activity over the holiday period, but we have already seen some comments and questions being added to the our GitHub issues – we’ll be monitoring these closely and keeping the conversation going.
+Also related to developer contributions, we visited Mid Suffolk and Babergh to talk with them about the data format we are proposing. It was very useful to hear how they are currently managing their Section 106 and CIL agreements, and are committed to making everything as open and transparent as possible.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-12-14/</link>
+      <pubDate>Fri, 14 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-12-14/</guid>
+      <description>In advance of the public consultation for developer contributions the team have been thinking about how we’ll manage questions and feedback in an open and transparent fashion. We’ve decided to try using GitHub issues – it provides us with a place where we can document all our feedback, have conversations in the open, and record any design decisions that are made. We haven’t publicised this approach, but we’re already getting feedback from members of the community about what we’re doing.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-12-07/</link>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-12-07/</guid>
+      <description>We presented our progress on developer contributions at a show and tell. This included the updated guidance, a tool to validate local planning authority data against the specification, and how we&amp;rsquo;ll be managing feedback during alpha.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-11-30/</link>
+      <pubDate>Fri, 30 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-11-30/</guid>
+      <description>We are delighted to welcome Helena Trippe to our team as our new service designer!
+The primary focus for the team this week was getting the developer contribution project ready for public consultation, the date has yet to be agreed.
+We’ve updated the project page to include a feedback form, and for areas where we have outstanding questions or concerns we’ve created a GitHub issue. We’ve aso written some draft guidance to help people publish their data.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-11-23/</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-11-23/</guid>
+      <description>On Tuesday Paul joined a panel at the ODI summit to talk about how local governments can take advantage of the opportunities created by data to improve public services and better serve communities.
+On the developer contributions project we met with the GLA, Southwark and TFL to discuss the user needs and data model. It was encouraging to hear that we’re all on the same page with regards to the data we’d like to publish.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-11-16/</link>
+      <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-11-16/</guid>
+      <description>This week the team focused on 2 areas:
+Brownfield sites Michael has been updating the guidance on brownfield sites. He has a draft of the proposed content and the next step is to review with the brownfield policy team before replacing the existing guidance on GOV.UK. We hope that with clearer guidance, and being about to point to the validator tool the revised registers will be of improved quality once they’re updated in the new year.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-11-09/</link>
+      <pubDate>Fri, 09 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-11-09/</guid>
+      <description>This week we continued further work on the brownfield site validator. You can now see a side-by-side comparison of some of the common errors (ie reversed GeoX and GeoY coordinates). For a number of the common errors we can automatically fix these, and provide the local authority with a valid .csv file that they can re-upload to their site.
+We met with the Greater London Authority (GLA) at City Hall. We talked about data standards and how that fits into their London Development Database initiative.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-11-02/</link>
+      <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-11-02/</guid>
+      <description>A quiet team week with just two of us in the office. Adam continued to iterate the brownfield sites validator and we revisited the collector for continuous validation. Paul joined Linda for a workshop at Future Cities Catapult on opportunities to work together, in particular with users of standards developed by Digital Land Services.
+We showed more work on collecting concerns, progress on developer contributions, and testing the brownfield sites registers with policy and local authority users.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-10-26/</link>
+      <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-10-26/</guid>
+      <description>The team has been working on the brownfield sites validator iterating the data model so we can understand the history of changes to registers. Of the 381 registers we have found 339 published, only 20 meet the standard, 5 with no errors. Over the course of the past two months, 32 have been moved or gone missing. We’re working on better guidance and tools to help publishers meet the standard.</description>
+    </item>
+    
+    <item>
+      <title>Data and Information</title>
+      <link>https://digital-land.github.io/blog-post/data-and-information/</link>
+      <pubDate>Thu, 25 Oct 2018 13:24:27 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/blog-post/data-and-information/</guid>
+      <description>Based on our learnings from discovery, this is the first in a series of blog posts that explains the points of friction that our users face when trying to use housing data.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-10-19/</link>
+      <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-10-19/</guid>
+      <description>The team visited the excellent Living with Buildings exhibition ahead of retrospective and roadmapping sessions in Camden. We were particularly surprised by the invective Charles Booth used on his poverty maps.
+
+Following a meeting with one of the brownfield policy team we’ve done some further work on the validator to plot the results of the validated data onto a map. There’s a bit more work we can do, but it’s something that we’re eager to take out and test.</description>
+    </item>
+    
+    <item>
+      <title>Making developer contributions open and transparent</title>
+      <link>https://digital-land.github.io/blog-post/making-developer-contributions-open-and-transparent/</link>
+      <pubDate>Tue, 16 Oct 2018 14:00:35 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/blog-post/making-developer-contributions-open-and-transparent/</guid>
+      <description>How we’re working with planning policy people, local authorities and suppliers to evolve minimal data standards for Section 106 agreements and Viability assessments.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-10-12/</link>
+      <pubDate>Fri, 12 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-10-12/</guid>
+      <description>Along with colleagues in the developer contribution policy team we met with one of the 3rd party suppliers of Section 106 management software. It was a productive meeting where we were able to explore possibilites of getting Section 106 data directly from their software in a format that meets our data standard. We&amp;rsquo;ll continue to work together and with other suppliers to test this further.
+We’ve continued to work on the Digital Land website.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-10-05/</link>
+      <pubDate>Fri, 05 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-10-05/</guid>
+      <description>We did some further work on the brownfield site validator, this was demoed by Adam in the show and tell on Thursday 4th. We also continued to add content to the Digital Land website, and begun to think about the future information architecture of the site.
+We had a very interesting meeting with the Open Data Institute where we talked and demoed our respective work. There are definitely some shared goals between them and us, so over the coming weeks we plan to have a more detailed workshop to agree areas of reuse, and how we can work together.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-09-28/</link>
+      <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-09-28/</guid>
+      <description>Over the past week the team have been looking at the following things:
+Section 106 and Viability Assessments We’ve been working closely with the Planning Policy Team and Local Planning Authorities to understand their needs around Section 106 and Viability Assessment data. We’ve learnt that although the NPPF encourages Local Authorities to publish this information the appetite to do so varies between each authority.
+To help us learn more about what is needed we’ve built a couple of prototypes that collects and publishes the pertinent information.</description>
+    </item>
+    
+    <item>
+      <title>Digital Land Portfolio</title>
+      <link>https://digital-land.github.io/prototype/digital-land-portfolio/</link>
+      <pubDate>Wed, 19 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/prototype/digital-land-portfolio/</guid>
+      <description>We made a portfolio of patterns and use-cases for digital land data during discovery. We will review the need for this tool, or if it can be iterated to cover the needs for a handbook.
+Sept 2018
+ added 2 projects; Bristol Maps and Propective.io updated portfolio to use Govuk design system   May 2018
+ created a portfolio for the team to collect interesting projects in the digital land space categorised these projects according to some patterns we have observed  notices better local plans better planning applications geographies information about an area information about a property    </description>
+    </item>
+    
+    <item>
+      <title>Validator</title>
+      <link>https://digital-land.github.io/prototype/validator/</link>
+      <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/prototype/validator/</guid>
+      <description>This tool will assist publishers ensure their publication meets a standard, such as the brownfield sites register standard, and the emerging standards for Local Plans and Section 106.
+November 2018
+ applied the validator to support developer contributions which has multiple files.   September 2018
+ added regex validators to text for correct planning application states   July 2018
+ created validator for brownfield sites (brownfield sites standard) collected links to published brownfield site registers added warnings if the csv file is not served correctly   </description>
+    </item>
+    
+    <item>
+      <title>Better data standard specifications</title>
+      <link>https://digital-land.github.io/prototype/better-data-standard-specifications/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/prototype/better-data-standard-specifications/</guid>
+      <description>A tool to generate specifications from a formal schema may help people write better specifications.</description>
+    </item>
+    
+    <item>
+      <title>Better standard design process</title>
+      <link>https://digital-land.github.io/prototype/better-standard-design-process/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/prototype/better-standard-design-process/</guid>
+      <description>We need a new, much better approach for people developing data standards, based on needs of users, with scope for learning and iteration.</description>
+    </item>
+    
+    <item>
+      <title>Builder</title>
+      <link>https://digital-land.github.io/prototype/builder/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/prototype/builder/</guid>
+      <description>A tool for making a dataset from scratch. For example, the brownfield sites register requires codes, a webform could include drop-downs and pre-populated fields.</description>
+    </item>
+    
+    <item>
+      <title>Business case builder</title>
+      <link>https://digital-land.github.io/prototype/business-case-builder/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/prototype/business-case-builder/</guid>
+      <description>Guidance, use-cases, economic models and patterns help more people make more data available.</description>
+    </item>
+    
+    <item>
+      <title>Data field dictionary</title>
+      <link>https://digital-land.github.io/prototype/data-field-dictionary/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/prototype/data-field-dictionary/</guid>
+      <description>We need a distributed way to enable multiple people establishing standards which are consistent with each other. We can work with the registers team on new field register names, and investigate using OSM tags and Wikidata properties.</description>
+    </item>
+    
+    <item>
+      <title>Digital Land Collector</title>
+      <link>https://digital-land.github.io/prototype/digital-land-collector/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/prototype/digital-land-collector/</guid>
+      <description>The Digital Land team regularly updates this collection of datasets related to housing and land. We use it to assess the state of published data and gauge the work necessary to keep a copy of a dataset up to date.</description>
+    </item>
+    
+    <item>
+      <title>Digital Land Explorer</title>
+      <link>https://digital-land.github.io/prototype/digital-land-explorer/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/prototype/digital-land-explorer/</guid>
+      <description>We will continue to develop our explorer to better understand data which is available and demonstrate to others how to consume collected data.
+July 2018
+ display metadata for each publication/dataset users can exlore individual datasets  all data shown on map user can inspect a point or polygon to see properties  lazy loading and clustering added so that users can explore larger datasets   June 2018
+ added functionality to find all data we have collected that is related to a user provided address or point add basic search to lists of publications and local authorities   May 2018</description>
+    </item>
+    
+    <item>
+      <title>Digital Land Handbook</title>
+      <link>https://digital-land.github.io/prototype/digital-land-handbook/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/prototype/digital-land-handbook/</guid>
+      <description>Guidance and documentation for the collector and explorers to help others to understand how to find data, overcome points of friction and increase the use and trust of government data.</description>
+    </item>
+    
+    <item>
+      <title>Maturity Model</title>
+      <link>https://digital-land.github.io/prototype/maturity-model/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/prototype/maturity-model/</guid>
+      <description>A set of criteria to assess the status of an existing dataset. The collector could use this model and the validator (below) to report on invalid datasets, how frequently each dataset is updated, when a dataset goes missing, etc. These could be surfaced on the explorer.</description>
+    </item>
+    
+    <item>
+      <title>Registers</title>
+      <link>https://digital-land.github.io/prototype/registers/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/prototype/registers/</guid>
+      <description>Building the collector highlighted the need for several authoritative datasets which we have prototyped. Where possible we should identify the appropriate custodian and work with GDS to establish these as GOV.UK registers.</description>
+    </item>
+    
+    <item>
+      <title>Supporting feedback</title>
+      <link>https://digital-land.github.io/prototype/supporting-feedback/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/prototype/supporting-feedback/</guid>
+      <description>Tools for soliciting and handling feedback on a geospatial dataset.</description>
+    </item>
+    
+    <item>
+      <title>Viewer</title>
+      <link>https://digital-land.github.io/prototype/viewer/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/prototype/viewer/</guid>
+      <description>A tool to show an individual dataset on a map and to give other feedback to someone making a dataset before it is published.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-09-13/</link>
+      <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-09-13/</guid>
+      <description>A show and tell hosted by the planning directorate. Paul Tweeted the agenda.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-09-06/</link>
+      <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-09-06/</guid>
+      <description>We showed early work on a brownfield site register validator brownfield site validation tool. Paul introduced a concept model for information and data.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-08-30/</link>
+      <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-08-30/</guid>
+      <description>Playback of user research visits to Waltham Forest, Southwalk, Lambeth and Islington councils.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-08-03/</link>
+      <pubDate>Fri, 03 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-08-03/</guid>
+      <description>This week the team continued working on Section 106. We met with Southwark Council who told us about the work their team are doing around collecting and publishing Section 106 data.
+We’ve also started to build an online form to collect Section 106 summary and Viability Assessment summary data. We’ll use this to help test the data standard with Local Planning Authorities.</description>
+    </item>
+    
+    <item>
+      <title>Bristol Maps</title>
+      <link>https://digital-land.github.io/portfolio/project/bristol-maps/</link>
+      <pubDate>Tue, 31 Jul 2018 14:44:08 +0100</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/project/bristol-maps/</guid>
+      <description>Map of Bristol that allows you to apply layers of information from numerous data sets, both current and an historic view.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-07-27/</link>
+      <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-07-27/</guid>
+      <description>This week the Digital Land Services team ran their first show and tell where we talked about some of our findings from discovery, and demoed an early view of the ‘brownfield sites validator’ tool. We plan to run future show and tells on a fortnightly basis, and hope to be able to make them publicly available soon.
+We continued development work on the ‘brownfield sites validator’ which now feeds back whether a given set of data meets the specification, and if not where the problems are.</description>
+    </item>
+    
+    <item>
+      <title>Prospective.io</title>
+      <link>https://digital-land.github.io/portfolio/project/prospective-io/</link>
+      <pubDate>Tue, 19 Jun 2018 15:40:49 +0800</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/project/prospective-io/</guid>
+      <description>We&amp;rsquo;re developing tailored products for a range of industries including planning and architecture, real estate development, transport and logistics, retail and marketing, investment and insurance. ​ Our solutions will enable public and private sector organisations to optimise property design, development and investment processes, streamline service provision and improve transport and infrastructure operations.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-06-15/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-06-15/</guid>
+      <description>We were joined this week by Matt Lucht, our new delivery manager, Michael Nottingham, our new part-time content editor and by Alex Blandford, a user researcher working for Rose. We’ve begun to write-up our discovery findings which we plan to present on the 28th and publish publicly on our new blog shortly afterwards.</description>
+    </item>
+    
+    <item>
+      <title>Introducing user research to housing and planning data</title>
+      <link>https://digital-land.github.io/blog-post/introducing-user-research-to-housing-and-planning-data/</link>
+      <pubDate>Mon, 11 Jun 2018 17:48:35 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/blog-post/introducing-user-research-to-housing-and-planning-data/</guid>
+      <description>Our approach for user research during the discovery phase.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-06-08/</link>
+      <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-06-08/</guid>
+      <description>Rose has been recruiting participants to give us insight into how the brownfield registers were made, and if they are working for users. We were joined by Alex Blandford, who has been helping us start our end-of-discovery report.
+We rebuilt our data collector and started to collect tree preservation orders and contaminated land datasets published by planning authorities. So far this has meant sending out 120 emails, many of which we learnt, arrived in the inbox of one person working at Misoportal</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-06-01/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-06-01/</guid>
+      <description>More than 40 people came to our open meeting where we gleaned many insights from users of land and housing data. Next week the team are focussing their research on analysing the state of data in brownfield registers, how they are being maintained, and if they meets the needs of users.</description>
+    </item>
+    
+    <item>
+      <title>London street trees</title>
+      <link>https://digital-land.github.io/portfolio/project/london-street-trees/</link>
+      <pubDate>Mon, 28 May 2018 15:54:17 +0100</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/project/london-street-trees/</guid>
+      <description>This map plots the 700,000+ trees and the tree type in the city of London.</description>
+    </item>
+    
+    <item>
+      <title>Mapping Greater Manchester</title>
+      <link>https://digital-land.github.io/portfolio/project/mapping-greater-manachester/</link>
+      <pubDate>Tue, 22 May 2018 05:31:49 +0800</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/project/mapping-greater-manachester/</guid>
+      <description>Originally developed in 2014&amp;frasl;15 to create a map of social and physical infrastructure across Greater Manchester, but has since expanded to focus on planning, housing, environmental, social, economic and demographic data.</description>
+    </item>
+    
+    <item>
+      <title>Urban Intelligence: Howard</title>
+      <link>https://digital-land.github.io/portfolio/project/urban-intelligence-howard/</link>
+      <pubDate>Tue, 22 May 2018 05:24:37 +0800</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/project/urban-intelligence-howard/</guid>
+      <description>A central repository of planning policy. Aimed at developers, large and small, as well as local authorities.</description>
+    </item>
+    
+    <item>
+      <title>Private Eye: Overseas ownership</title>
+      <link>https://digital-land.github.io/portfolio/project/private-eye-overseas-ownership/</link>
+      <pubDate>Tue, 22 May 2018 05:01:17 +0800</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/project/private-eye-overseas-ownership/</guid>
+      <description>&amp;ndash; Provide a desciption of the project &amp;ndash;</description>
+    </item>
+    
+    <item>
+      <title>Land usage UK</title>
+      <link>https://digital-land.github.io/portfolio/project/land-usage-uk/</link>
+      <pubDate>Wed, 16 May 2018 15:21:29 +0800</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/project/land-usage-uk/</guid>
+      <description>A visualisation of how land is used in the UK, separated by region and local authority.</description>
+    </item>
+    
+    <item>
+      <title>London schools and fast food outlets</title>
+      <link>https://digital-land.github.io/portfolio/project/london-schools-fast-food/</link>
+      <pubDate>Wed, 16 May 2018 14:56:25 +0800</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/project/london-schools-fast-food/</guid>
+      <description>A simple map to analyse a proposed policy to restrict fast food outlets being within 400m of a school in the capital.</description>
+    </item>
+    
+    <item>
+      <title>ODI Leeds clearer plan</title>
+      <link>https://digital-land.github.io/portfolio/project/odi-leeds-clearer-plan/</link>
+      <pubDate>Wed, 16 May 2018 14:43:49 +0800</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/project/odi-leeds-clearer-plan/</guid>
+      <description>&amp;ndash; Provide a desciption of the project &amp;ndash;</description>
+    </item>
+    
+    <item>
+      <title>Edinburgh tree map</title>
+      <link>https://digital-land.github.io/portfolio/project/edinburgh-tree-map/</link>
+      <pubDate>Tue, 15 May 2018 20:08:56 +0800</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/project/edinburgh-tree-map/</guid>
+      <description>This project plots all the trees and tree types known to Edinburgh City Council.</description>
+    </item>
+    
+    <item>
+      <title>IMA LDN Infrastructure map</title>
+      <link>https://digital-land.github.io/portfolio/project/ima-ldn-infrastructure-map/</link>
+      <pubDate>Tue, 15 May 2018 15:29:53 +0800</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/project/ima-ldn-infrastructure-map/</guid>
+      <description>IMA LDN has been developed to support improved planning, delivery and coordination of infrastructure throughout the capital, by providing improved visibility of London&amp;rsquo;s future growth, infrastructure investment and development pipeline.</description>
+    </item>
+    
+    <item>
+      <title>LandInsight</title>
+      <link>https://digital-land.github.io/portfolio/project/land-insights/</link>
+      <pubDate>Tue, 15 May 2018 14:59:57 +0800</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/project/land-insights/</guid>
+      <description>LandInsight is a subscription service that helps users find and assess off-market land. It combines maps, data and tools to help discover new opportunities.</description>
+    </item>
+    
+    <item>
+      <title>Land explorer</title>
+      <link>https://digital-land.github.io/portfolio/project/land-explorer/</link>
+      <pubDate>Fri, 11 May 2018 14:35:42 +0800</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/project/land-explorer/</guid>
+      <description>Land Explorer helps you find information about land in the UK.</description>
+    </item>
+    
+    <item>
+      <title>Surrey Planning Application Map</title>
+      <link>https://digital-land.github.io/portfolio/project/surrey-planning-application-map/</link>
+      <pubDate>Fri, 11 May 2018 14:35:42 +0800</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/project/surrey-planning-application-map/</guid>
+      <description>A project to display recent planning applications in the local Surrey area.</description>
+    </item>
+    
+    <item>
+      <title>The future of planning</title>
+      <link>https://digital-land.github.io/portfolio/project/the-future-of-planning/</link>
+      <pubDate>Fri, 11 May 2018 14:35:42 +0800</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/project/the-future-of-planning/</guid>
+      <description>A project to improve the way we produce planning applications. Read more about the project</description>
+    </item>
+    
+    <item>
+      <title>Better planning applications</title>
+      <link>https://digital-land.github.io/portfolio/pattern/better-planning-applications/</link>
+      <pubDate>Thu, 10 May 2018 15:26:36 +0800</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/pattern/better-planning-applications/</guid>
+      <description>These projects aim to improve the quality of planning applications, for example by increasing the success rate of applications or reducing the amount of work involved in creating one.
+We are also interested in the datasets that make these projects possible.</description>
+    </item>
+    
+    <item>
+      <title>Better local plans</title>
+      <link>https://digital-land.github.io/portfolio/pattern/better-local-plans/</link>
+      <pubDate>Thu, 10 May 2018 15:26:26 +0800</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/pattern/better-local-plans/</guid>
+      <description>These projects work towards better local plans, which are huge, costly undertakings faced by all planning authorities. Local plans have a wide range of users, including developers of all sizes and the planning authorities themselves. So everyone would benefit if these were easier to create and easier to use.</description>
+    </item>
+    
+    <item>
+      <title>Info about a property</title>
+      <link>https://digital-land.github.io/portfolio/pattern/info-about-a-property/</link>
+      <pubDate>Thu, 10 May 2018 15:26:11 +0800</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/pattern/info-about-a-property/</guid>
+      <description>These projects aim to improve the availability, accessibility and readability of data related to a particular property.</description>
+    </item>
+    
+    <item>
+      <title>Info about an area</title>
+      <link>https://digital-land.github.io/portfolio/pattern/info-about-an-area/</link>
+      <pubDate>Thu, 10 May 2018 15:25:55 +0800</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/pattern/info-about-an-area/</guid>
+      <description>These projects aim to improve the quality of the data related to a given area.</description>
+    </item>
+    
+    <item>
+      <title>Notices</title>
+      <link>https://digital-land.github.io/portfolio/pattern/notices/</link>
+      <pubDate>Thu, 10 May 2018 15:12:10 +0800</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/pattern/notices/</guid>
+      <description>These projects aim to improve how people are notified about the planning applications submitted and reviewed in an area.</description>
+    </item>
+    
+    <item>
+      <title>Geographies</title>
+      <link>https://digital-land.github.io/portfolio/pattern/geographies/</link>
+      <pubDate>Thu, 10 May 2018 11:07:34 +0800</pubDate>
+      
+      <guid>https://digital-land.github.io/portfolio/pattern/geographies/</guid>
+      <description>These data sets and projects are associated with specifc UK geographical locations, from smaller local areas to larger regions.</description>
+    </item>
+    
+    <item>
+      <title>This week at Digital Land</title>
+      <link>https://digital-land.github.io/weeknote/2018-05-04/</link>
+      <pubDate>Fri, 04 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2018-05-04/</guid>
+      <description>Paul presented at the cross government event on API best practice [slides].</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://digital-land.github.io/project/local-plans/_contents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/local-plans/_contents/</guid>
+      <description>Contents
+ Current areas of investigation Upcoming areas of investigation Local plans project discovery report Timeline  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://digital-land.github.io/project/local-plans/_upcoming-areas-of-investigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/local-plans/_upcoming-areas-of-investigation/</guid>
+      <description>We plan to explore the following by prototyping tools and by testing and consulting with people involved with developer contributions, and responding to your feedback. We will regularly add updates to the following issues on GitHub:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://digital-land.github.io/project/single-register-of-planning/_contents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/single-register-of-planning/_contents/</guid>
+      <description>Contents
+ Goals Discovery Prototypes Blog posts  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://digital-land.github.io/project/single-register-of-planning/_introduction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/single-register-of-planning/_introduction/</guid>
+      <description>mySociety and the Ministry of Housing, Communities &amp;amp; Local Government are exploring how to make trustworthy, up to date planning application data easier to find, use, and build into services.</description>
+    </item>
+    
+    <item>
+      <title>Access to data in bulk</title>
+      <link>https://digital-land.github.io/needs/access-to-data-in-bulk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/needs/access-to-data-in-bulk/</guid>
+      <description>When building a service, I want to be able to access data in bulk, so that I do not have to make multiple requests for data</description>
+    </item>
+    
+    <item>
+      <title>Access to raw data</title>
+      <link>https://digital-land.github.io/needs/maintained-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/needs/maintained-data/</guid>
+      <description>When building a service, I want to have access to raw data (as opposed to calculated statistical data), so that I am able to get the fullest value from the data</description>
+    </item>
+    
+    <item>
+      <title>Affordable housing</title>
+      <link>https://digital-land.github.io/glossary/affordable-housing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/affordable-housing/</guid>
+      <description>Affordable housing includes social rented, affordable rented and intermediate housing, provided to specified eligible households whose needs are not met by the market. It can be a new-build property or a private sector property that has been purchased for use as an affordable home.
+Every year Homes England publish statistics on the supply of affordable homes.</description>
+    </item>
+    
+    <item>
+      <title>Air quality management</title>
+      <link>https://digital-land.github.io/glossary/air-quality-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/air-quality-management/</guid>
+      <description>In an effort to reduce air pollution the Department for Environment, Food and Rural Affairs have set air quality targets for each local authority.
+When a local authority identifies an area where they are at risk of not meeting their target they must set an Air Quality Action Plan.</description>
+    </item>
+    
+    <item>
+      <title>Aircraft noise</title>
+      <link>https://digital-land.github.io/glossary/aircraft-noise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/aircraft-noise/</guid>
+      <description>Land located close to airports and flight paths may be subject to aircraft noise. This noise is classified in 3 ways:
+ mechanical noise — rotation of the engine parts, most noticeable when fan blades reach supersonic speeds aerodynamic noise — from the airflow around the surfaces of the aircraft, especially when flying low at high speeds noise from aircraft systems — cockpit and cabin pressurization and conditioning systems, and Auxiliary Power units  The Aviation Policy Framework outlines planning considerations with regards to aircraft noise</description>
+    </item>
+    
+    <item>
+      <title>Ancient Monuments and Archaeological Areas Act 1979</title>
+      <link>https://digital-land.github.io/legislation/ukpga-1979-46/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/legislation/ukpga-1979-46/</guid>
+      <description>Regulations relating to the the preservation of ancient monuments and sites of archaeological or historic importance.</description>
+    </item>
+    
+    <item>
+      <title>Ancient Monuments and Archaeological Sites</title>
+      <link>https://digital-land.github.io/glossary/ancient-monuments-and-archaeological-sites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/ancient-monuments-and-archaeological-sites/</guid>
+      <description>Sites of archaeological or historic importance are protected by the Ancient Monuments and Archaeological Areas Act 1979 and are listed on the National Heritage List for England. This gives them legally protected status.
+In order to carry out any work to a scheduled ancient monument or site you will need to apply to Historic England for a Scheduled Monument Consent.</description>
+    </item>
+    
+    <item>
+      <title>Annual monitoring report</title>
+      <link>https://digital-land.github.io/glossary/annual-monitoring-report/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/annual-monitoring-report/</guid>
+      <description>The annual monitoting report is forms a part of the Local Plan.
+It&amp;rsquo;s purpose is to assess:
+ Are policies achieving their objectives, and is sustainable development being delivered? Have policies had the intended consequences? Are the assumptions and objectives behind policies still relevant? Are the targets set in the Local Development Framework being achieved?  </description>
+    </item>
+    
+    <item>
+      <title>Area of archaeological potential</title>
+      <link>https://digital-land.github.io/glossary/area-of-archaeological-potential/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/area-of-archaeological-potential/</guid>
+      <description>These are area&amp;rsquo;s where there is a possibility of buried archeology. If a planning application is submitted on one of these sites the case will referred to a county archaeologist.</description>
+    </item>
+    
+    <item>
+      <title>Asking for open data isn’t open data</title>
+      <link>https://digital-land.github.io/friction/asking-for-open-data-isnt-open-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/friction/asking-for-open-data-isnt-open-data/</guid>
+      <description>Often there is no direct download for the data, but rather an email contact, who in many cases must be emailed separately for each requested dataset. This was the case when we tried to compile a national database of tree preservation orders. Of the 80 datasets listed on data.gov.uk, 31 were behind an email gateway operated by misoportal.com.
+Many users fear data you have to request cannot then be presented in services, even when it’s licensed as open data:</description>
+    </item>
+    
+    <item>
+      <title>Benchmark land value</title>
+      <link>https://digital-land.github.io/glossary/benchmark-land-value/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/benchmark-land-value/</guid>
+      <description>Benchmark land value is the estimated cost of the land given its current use.</description>
+    </item>
+    
+    <item>
+      <title>Brownfield sites</title>
+      <link>https://digital-land.github.io/glossary/brownfield-site/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/brownfield-site/</guid>
+      <description>Are often on disused or derelict land. Are more available in the North and Midlands (but most housing demand is in the south east). Are valuable as existing buildings can be split up into more homes on any one site. The site has already been developed so reduces urban sprawl. Use unsightly areas for building developments, so improves the urban environment. Are found in urban areas, so building housing there reduces demand on car use.</description>
+    </item>
+    
+    <item>
+      <title>Brownfield sites</title>
+      <link>https://digital-land.github.io/project/brownfield-sites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/brownfield-sites/</guid>
+      <description>Current areas of investigation We&amp;rsquo;re exploring the following areas to help us learn how we can open up brownfield site data and make it easier to use:
+In progress An index of brownfield site registers  Questions we&amp;rsquo;re asking Brownfield site data for local authorities can be difficult to locate and there’s no public register where all local authorities&amp;rsquo; data can be viewed in one place. Would creating a national index of all brownfield data be of value to local authorities and other interested members of the community?</description>
+    </item>
+    
+    <item>
+      <title>Building age</title>
+      <link>https://digital-land.github.io/glossary/building-age/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/building-age/</guid>
+      <description>The Valuation Office Agency frequently publish data on the year (or year range) of when a building was built.</description>
+    </item>
+    
+    <item>
+      <title>Building use</title>
+      <link>https://digital-land.github.io/glossary/building-use/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/building-use/</guid>
+      <description>Planning use cases determine what an individual property may be used for.</description>
+    </item>
+    
+    <item>
+      <title>Community infrastructure levy</title>
+      <link>https://digital-land.github.io/glossary/community-infrastructure-levy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/community-infrastructure-levy/</guid>
+      <description>The Community Infrastructure Levy (CIL) is a planning charge, introduced by the Planning Act 2008 as a tool for local authorities in England and Wales to help deliver infrastructure to support the development of their area. It came into force on 6 April 2010 through the Community Infrastructure Levy Regulations 2010.</description>
+    </item>
+    
+    <item>
+      <title>Compulsory purchase orders</title>
+      <link>https://digital-land.github.io/project/compulsory-purchase-orders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/compulsory-purchase-orders/</guid>
+      <description>Upcoming areas of investigation We plan to explore the following by prototyping tools and by testing and consulting with people involved with developer contributions, and responding to your feedback.
+We will regularly add updates to the following issues on GitHub:
+ Timeline 11 July 2019
+We met with colleagues from the Knowledge and Information Management team to understand the steps we need to take to publish decision letters and inspector reports.</description>
+    </item>
+    
+    <item>
+      <title>Con29</title>
+      <link>https://digital-land.github.io/glossary/con29/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/con29/</guid>
+      <description>The CON29 form has been in use for over 50 years and was created to complement the Local Land Charges Register search. The form contains a standard set of enquiries agreed by central government, the Law Society and local authorities.</description>
+    </item>
+    
+    <item>
+      <title>Conservation area</title>
+      <link>https://digital-land.github.io/glossary/conservation-area/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/conservation-area/</guid>
+      <description>As defined in the [Planning (Listed Buildings and Conservation Areas) Act 1990(https://www.legislation.gov.uk/ukpga/1990/9/contents) a conservation area is an area considered worthy of preservation.</description>
+    </item>
+    
+    <item>
+      <title>Contaminated Land</title>
+      <link>https://digital-land.github.io/glossary/contaminated-land/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/contaminated-land/</guid>
+      <description>Land is legally defined as ‘contaminated land’ where substances are causing or could cause:
+ significant harm to people, property or protected species significant pollution of surface waters (for example lakes and rivers) or groundwater harm to people as a result of radioactivity  Contaminated land may previously have been used as a:
+ factory mine steel mill refinery landfill  </description>
+    </item>
+    
+    <item>
+      <title>Council Tax</title>
+      <link>https://digital-land.github.io/glossary/council-tax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/council-tax/</guid>
+      <description>Introduced in the Local Government Finance Act 1992, Council Tax is a tax on domestic property.
+There are eight council tax bands (A to H) for which a property will fall into one of based on the property value as determined by the Valuation Office Agency.
+The amount of council tax owed for each band is determined by each local authority and various discount or reduction schemes apply, such as a discount for sole occupancy.</description>
+    </item>
+    
+    <item>
+      <title>Country Park</title>
+      <link>https://digital-land.github.io/glossary/country-park/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/country-park/</guid>
+      <description>A country park is an area designated for people to visit and enjoy recreation in a countryside environment.</description>
+    </item>
+    
+    <item>
+      <title>Countryside and Rights of Way Act 2000</title>
+      <link>https://digital-land.github.io/legislation/ukpga-2000-37/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/legislation/ukpga-2000-37/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Crown Copyright</title>
+      <link>https://digital-land.github.io/copyright/crown-copyright/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/copyright/crown-copyright/</guid>
+      <description>© Crown copyright and database right 2018</description>
+    </item>
+    
+    <item>
+      <title>Crown Copyright and Ordnance Survey</title>
+      <link>https://digital-land.github.io/copyright/crown-copyright-os/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/copyright/crown-copyright-os/</guid>
+      <description>© Crown copyright and database rights 2018 Ordnance Survey 100026316.</description>
+    </item>
+    
+    <item>
+      <title>Data collection is hard to keep up to date</title>
+      <link>https://digital-land.github.io/friction/data-collection-is-hard-to-keep-up-to-date/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/friction/data-collection-is-hard-to-keep-up-to-date/</guid>
+      <description>It’s often hard to write an automatic process to download a dataset:
+ URLs change or break Some data is made using JavaScript which only works when a human is present Many datasets are kept behind email or permissions-walls  These barriers mean collecting and updating datasets published by organisations including Ordnance Survey, Environment Agency, Historic England and many local authorities is a manual process.</description>
+    </item>
+    
+    <item>
+      <title>Data is inaccessible</title>
+      <link>https://digital-land.github.io/friction/data-is-inaccessible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/friction/data-is-inaccessible/</guid>
+      <description>Data needed is seldom found online, with many datasets held locally and in widely varying formats.
+Local plans are often locked inside PDF documents, for example, which means the values can’t be extracted automatically. This is particularly difficult for geospatial data, where conservation and other areas are presented as images.
+Even where there are regional or national repositories of data, these typically do not link to the actual data, but often rather to an authority or other data publisher’s homepage or to a dead link.</description>
+    </item>
+    
+    <item>
+      <title>Data is not always available in bulk</title>
+      <link>https://digital-land.github.io/friction/data-is-not-always-available-in-bulk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/friction/data-is-not-always-available-in-bulk/</guid>
+      <description>Data is also sometimes only accessible in a limited fashion through proprietary tools, such as a mapping tool for tree preservation orders that lets you search for individual trees but doesn’t display the complete dataset.</description>
+    </item>
+    
+    <item>
+      <title>Data is often hard to trust</title>
+      <link>https://digital-land.github.io/friction/data-is-often-hard-to-trust/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/friction/data-is-often-hard-to-trust/</guid>
+      <description>Users aren’t always confident that the data will be maintained. We spoke to several small companies who had built business processes based on Energy Performance Certificate data, now concerned they haven’t been updated as promised.
+Unreliable data undermines the value of any product based on that data, and impedes the development of such products.</description>
+    </item>
+    
+    <item>
+      <title>Data is often published as statistics</title>
+      <link>https://digital-land.github.io/friction/data-is-often-published-as-statistics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/friction/data-is-often-published-as-statistics/</guid>
+      <description>Much of the data is compiled in raw form, but only published by government in the form of statistics.
+Local plan making involves commissioning a lot of data, but that evidence is often unavailable with the local plan, but later challenged during the planning appeals process.
+Raw data has more use-cases than statistics, so limiting access to raw data is in effect limiting the development of innovative products for the housing marketplace.</description>
+    </item>
+    
+    <item>
+      <title>Data often isn&#39;t available as data</title>
+      <link>https://digital-land.github.io/friction/data-often-isnt-available-as-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/friction/data-often-isnt-available-as-data/</guid>
+      <description>Often even the most basic information often isn’t available as data. For example, every local planning authority should publish a local plan, but there isn’t an authoritative list of local planning authorities, and there isn’t a single list of local plans.
+The best public list of local planning authorities we’ve found is a PDF published by the planning inspectorate, but the data in this is text, which requires effort and care to process.</description>
+    </item>
+    
+    <item>
+      <title>Data principles</title>
+      <link>https://digital-land.github.io/guidance/data-principles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/data-principles/</guid>
+      <description>To ensure consistency of data that has been provided from multiple sources, we have established a set of principles that are used across all data sets.
+Structuring data Our data models share similar principles of a relational database. This helps to reduce duplication and makes the data easier to maintain, which in turn increases the trust and usefulness of the data.
+When modelling the data standard for developer contributions we created 3 files which can be linked together using unique identifiers.</description>
+    </item>
+    
+    <item>
+      <title>Data use is restricted</title>
+      <link>https://digital-land.github.io/friction/data-use-is-restricted/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/friction/data-use-is-restricted/</guid>
+      <description>Much data is made available under an open government licence, but with additional, restrictive terms.
+National radon data, for example, commissioned by the Health and Safety Executive is made available “for planning purposes only” and one brownfield register publisher explicitly warns against building services which compete with Ordnance Survey.
+Such restrictions limit unforseen, innovative use-cases for the data.</description>
+    </item>
+    
+    <item>
+      <title>Developer contributions</title>
+      <link>https://digital-land.github.io/glossary/developer-contributions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/developer-contributions/</guid>
+      <description>Developer contributions is the collective term for Section 106 and CIL, which are levied on developers by local authorities to pay for the local infrastructure necessary for new developments.</description>
+    </item>
+    
+    <item>
+      <title>Developer contributions</title>
+      <link>https://digital-land.github.io/project/developer-contributions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/developer-contributions/</guid>
+      <description>Help us develop a common data format In the alpha phase of this project, we developed a new common standard for publishing data on developer contributions.
+We are proposing a simple data format for developer contributions that:
+ meets the user needs we’ve identified requires minimal effort from local planning authorities to create and make the data available  You can help us improve the format by:
+ joining the discussion on our GitHub issues making comments using our feedback form following the proposed guidance next time you publish your developer contributions  We will continue to develop the format as we learn from testing the format with data and the prototypes with users.</description>
+    </item>
+    
+    <item>
+      <title>Development Corporation</title>
+      <link>https://digital-land.github.io/glossary/development-corporation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/development-corporation/</guid>
+      <description>Development Corporations are organisations, established byt the Government, for the purpose of urban development. They are often for the development of new surbudan areas or the redevelopment of existing ones.</description>
+    </item>
+    
+    <item>
+      <title>Easy access to data</title>
+      <link>https://digital-land.github.io/needs/easy-access-to-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/needs/easy-access-to-data/</guid>
+      <description>When building a service, I want access to data without having to ask for it</description>
+    </item>
+    
+    <item>
+      <title>Energy Performance Certificate Data</title>
+      <link>https://digital-land.github.io/glossary/energy-performance-certificate-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/energy-performance-certificate-data/</guid>
+      <description>Energy Performance Certificates (EPCs) are needed whenever a property is:
+ built sold rented  You must order an EPC for potential buyers and tenants before you market your property to sell or rent.
+An EPC contains:
+ information about a property’s energy use and typical energy costs recommendations about how to reduce energy use and save money  An EPC gives a property an energy efficiency rating from A (most efficient) to G (least efficient) and is valid for 10 years.</description>
+    </item>
+    
+    <item>
+      <title>Energy performance of buildings</title>
+      <link>https://digital-land.github.io/project/energy-performance-of-buildings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/energy-performance-of-buildings/</guid>
+      <description>Finding an energy certificate or an energy assessor for a building is being made easier thanks to a new online service. A prototype being developed by the energy performance of buildings (EPB) team within the Ministry of Housing, Communities and Local Government (MHCLG) Digital Directorate lets users search:
+ by postcode or accreditation number for an energy assessor by postcode or certificate reference for 3 types of energy certificate, including the energy performance certificate (EPC)  Previously if someone wanted to find an EPC they had to use the EPC register.</description>
+    </item>
+    
+    <item>
+      <title>Ensure data meets the specification</title>
+      <link>https://digital-land.github.io/needs/ensure-data-meets-the-specification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/needs/ensure-data-meets-the-specification/</guid>
+      <description>Before publishing a data, I want to be able to validate that data I&amp;rsquo;ve collect meets the specification, so that I can fix any issues</description>
+    </item>
+    
+    <item>
+      <title>Environment Agency Conditional Licence</title>
+      <link>https://digital-land.github.io/licence/environment-agency-conditional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/licence/environment-agency-conditional/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fear of feedback</title>
+      <link>https://digital-land.github.io/friction/fear-of-feedback/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/friction/fear-of-feedback/</guid>
+      <description>The quality of many datasets is poor, and feedback can be a source of improvement. However we heard many perceived reasons not to publish, including uninformed feedback:
+ your site says my village has contaminated land!.
+ </description>
+    </item>
+    
+    <item>
+      <title>Flood zone</title>
+      <link>https://digital-land.github.io/glossary/flood-zone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/flood-zone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golden thread of building information</title>
+      <link>https://digital-land.github.io/project/golden-thread-of-building-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/golden-thread-of-building-information/</guid>
+      <description>Upcoming areas of investigation We will be meeting with representatives of the Building Safety Programme to discuss relevant areas of investigation.
+Timeline December 2018
+We met with the team from the Building Safety Programme to demonstrate the work we&amp;rsquo;ve done so far around developer contributions and brownfield sites.</description>
+    </item>
+    
+    <item>
+      <title>Greenbelt</title>
+      <link>https://digital-land.github.io/glossary/greenbelt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/greenbelt/</guid>
+      <description>A policy for controlling urban growth and sprawl. Rings of countryside where urbanisation will be resisted for the foreseeable future, maintaining an area where agriculture, forestry and outdoor leisure can prevail.</description>
+    </item>
+    
+    <item>
+      <title>Greenfield site</title>
+      <link>https://digital-land.github.io/glossary/greenfield-site/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/greenfield-site/</guid>
+      <description>Greenfield land is undeveloped land in either a city or urban area.</description>
+    </item>
+    
+    <item>
+      <title>Gross development value</title>
+      <link>https://digital-land.github.io/glossary/gross-development-value/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/gross-development-value/</guid>
+      <description>Gross development value is the estimated value that a new development could fetch. To work out the gross development value the property developer needs to factor in the percentage of affordable housing that the relevant local authority states in their local plan policy.</description>
+    </item>
+    
+    <item>
+      <title>Health and safety executive</title>
+      <link>https://digital-land.github.io/glossary/health-and-safety-executive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/health-and-safety-executive/</guid>
+      <description>The Health and Safety Executive is the body responsible for the encouragement, regulation and enforcement of workplace health, safety and welfare, and for research into occupational risks in Great Britain. It is a non-departmental public body of the United Kingdom.</description>
+    </item>
+    
+    <item>
+      <title>Historic England Copyright</title>
+      <link>https://digital-land.github.io/copyright/historic-england/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/copyright/historic-england/</guid>
+      <description>© Historic England 2018. Contains Ordnance Survey data © Crown copyright and database right 2018 The Historic England GIS Data contained in this material was obtained on 21 April 2018. The most publicly available up to date Historic England GIS Data can be obtained from http://www.HistoricEngland.org.uk.</description>
+    </item>
+    
+    <item>
+      <title>Historic England GIS terms</title>
+      <link>https://digital-land.github.io/licence/historic-england/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/licence/historic-england/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Historic map vectors</title>
+      <link>https://digital-land.github.io/glossary/historic-map-vectors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/historic-map-vectors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Housing benefit</title>
+      <link>https://digital-land.github.io/glossary/housing-benefit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/housing-benefit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Housing numbers</title>
+      <link>https://digital-land.github.io/project/housing-numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/housing-numbers/</guid>
+      <description>Current areas of investigation The following areas of investigation explore how the data could be used and made easier to work with:
+In progress Collecting and publishing housing numbers  Questions we&amp;rsquo;re asking What is the best way to collect and publish data from local plans?
+What we&amp;rsquo;re testing We’re focussing on one piece of data from local plans. We’ve now collected the housing numbers from most local plans, and are testing a tool to help us publish this data.</description>
+    </item>
+    
+    <item>
+      <title>Housing waiting list</title>
+      <link>https://digital-land.github.io/glossary/housing-waiting-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/housing-waiting-list/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>INSPIRE End User Licence</title>
+      <link>https://digital-land.github.io/licence/inspire-end-user/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/licence/inspire-end-user/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Infrastructure funding statement</title>
+      <link>https://digital-land.github.io/project/infrastructure-funding-statement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/infrastructure-funding-statement/</guid>
+      <description>Current areas of investigation The following areas of investigation explore how the data could be used and made easier to work with:
+In progress How will the infrastructure funding statement be produced?  Questions we&amp;rsquo;re asking Each year local planning authorities will have to publish an infrastructure funding statement. This report will use data that has been published throughout the year (using our guidance) to give an annual summary.</description>
+    </item>
+    
+    <item>
+      <title>Lack of value seen in publishing data</title>
+      <link>https://digital-land.github.io/friction/lack-of-value-seen-in-publishing-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/friction/lack-of-value-seen-in-publishing-data/</guid>
+      <description>Some local authorities have seen benefits in publishing open data. Mid-Sussex for example, reported a fall in calls to their call-centre by making tree preservation orders open data.
+However many organisations see publishing data is seen as a burden, an externality, with little return on the costs of publication.</description>
+    </item>
+    
+    <item>
+      <title>Land Registry INSPIRE</title>
+      <link>https://digital-land.github.io/licence/land-registry-inspire/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/licence/land-registry-inspire/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Land Terrier</title>
+      <link>https://digital-land.github.io/glossary/land-terrier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/land-terrier/</guid>
+      <description>A land terrier is a record system for an institution&amp;rsquo;s land and property holdings. It differs from a land registry in that it is maintained for the organisation&amp;rsquo;s own needs and may not be publicly accessible.</description>
+    </item>
+    
+    <item>
+      <title>Land and housing data</title>
+      <link>https://digital-land.github.io/about/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/about/data/</guid>
+      <description>Data is at the foundation of the UK land and housing system. It records important decisions made by planners and others working in the sector, such as whether a tree or building is to be preserved, if a former commercial site is approved for residential development, or how much money a developer will commit to planning obligations for the community. There’s data around some 300 such ‘land and housing concerns’ that government legislation requires local planning authorities to publish.</description>
+    </item>
+    
+    <item>
+      <title>Listed Building</title>
+      <link>https://digital-land.github.io/glossary/listed-building/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/listed-building/</guid>
+      <description>Status attributed to buildings with special architectural or historical interest. Results in additional restrictions being applied in the planning system in an attempt to protect it for future generations. There are categories of listed buildings, called Grades. The higher the grade the more restrictions that apply.</description>
+    </item>
+    
+    <item>
+      <title>Local Land Charges Act 1975</title>
+      <link>https://digital-land.github.io/legislation/ukpa-1975-76/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/legislation/ukpa-1975-76/</guid>
+      <description>An Act to make fresh provision for and in connection with the keeping of local land charges registers and the registration of matters therein.</description>
+    </item>
+    
+    <item>
+      <title>Local development scheme</title>
+      <link>https://digital-land.github.io/glossary/local-development-scheme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/local-development-scheme/</guid>
+      <description>Local development schemes are public &amp;lsquo;project plans&amp;rsquo; which identify which local development documents will be produced, in what order and when. It became a statutory requirement for local planning authorities in the UK to produce these schemes under the Planning and Compulsory Purchase Act 2004.
+The local development scheme acts as the starting point for the community and stakeholders to find out about the local authority&amp;rsquo;s planning policies in respect to a particular place or issue, and what the status of those policies is.</description>
+    </item>
+    
+    <item>
+      <title>Local government</title>
+      <link>https://digital-land.github.io/users/local-government/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/users/local-government/</guid>
+      <description>If you work for a local authority and publish or maintain data on one of the land and housing concerns we’re looking at in our projects, we offer guidance and tools that will help you publish the data more easily and accurately. These will both help you comply with your duty to publish and ensure the data is consistent and machine readable.
+Our offer to local government We’re working closely with local government to understand how they work and what their resources and constraints are around collecting, publishing and updating data.</description>
+    </item>
+    
+    <item>
+      <title>Local land charge</title>
+      <link>https://digital-land.github.io/glossary/local-land-charge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/local-land-charge/</guid>
+      <description>A local land charge is a restriction on a piece of land or property that can limit its use or bind the owner to a payment of a sum of money. Charges can include:
+ planning decisions road agreements tree preservation orders conservation areas and listed buildings notices environmental health notices charges or objections made against previous owners  A local land charges search will highlight these charges and help you to make an informed choice about buying the parcel of land or property.</description>
+    </item>
+    
+    <item>
+      <title>Local plan</title>
+      <link>https://digital-land.github.io/glossary/local-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/local-plan/</guid>
+      <description>A local plan sets out local planning policies and identifies how land is used, determining what will be built where. Adopted local plans provide the framework for development across England. Local peoples&amp;rsquo; views are vital in shaping a local plan, helping determine how their community develops.</description>
+    </item>
+    
+    <item>
+      <title>Local planning authority</title>
+      <link>https://digital-land.github.io/glossary/local-planning-authority/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/local-planning-authority/</guid>
+      <description>A local planning authority is the local government body that is empowered by law to exercise urban planning functions for a particular area.</description>
+    </item>
+    
+    <item>
+      <title>Localism Act 2011</title>
+      <link>https://digital-land.github.io/legislation/ukpga-2011-20/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/legislation/ukpga-2011-20/</guid>
+      <description>An Act to make provision about the functions and procedures of local and certain other authorities; to make provision about the functions of the Commission for Local Administration in England; to enable the recovery of financial sanctions imposed by the Court of Justice of the European Union on the United Kingdom from local and public authorities; to make provision about local government finance; to make provision about town and country planning, the Community Infrastructure Levy and the authorisation of nationally significant infrastructure projects; to make provision about social and other housing; to make provision about regeneration in London; and for connected purposes.</description>
+    </item>
+    
+    <item>
+      <title>Maintained data</title>
+      <link>https://digital-land.github.io/needs/access-to-raw-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/needs/access-to-raw-data/</guid>
+      <description>When using a dataset, I want to have confidence that the dataset is being maintained, so that I can trust that the data is relevent and usable</description>
+    </item>
+    
+    <item>
+      <title>Mineral safeguarding area</title>
+      <link>https://digital-land.github.io/glossary/mineral-safeguarding-area/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/mineral-safeguarding-area/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>National Park</title>
+      <link>https://digital-land.github.io/glossary/national-park/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/national-park/</guid>
+      <description>Areas in the UK designated under the National Parks and Access to the Countryside Act (2016).</description>
+    </item>
+    
+    <item>
+      <title>National Parks and Access to the Countryside Act 1949</title>
+      <link>https://digital-land.github.io/legislation/ukpga-geo6-12-13-14-97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/legislation/ukpga-geo6-12-13-14-97/</guid>
+      <description>An Act to make provision for National Parks and the establishment of a National Parks Commission.</description>
+    </item>
+    
+    <item>
+      <title>National Planning Policy Framework</title>
+      <link>https://digital-land.github.io/glossary/national-planning-policy-framework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/national-planning-policy-framework/</guid>
+      <description>The revised National Planning Policy Framework (NPPF) was published on July 24th 2018 and sets out government&amp;rsquo;s planning policies for England and how these are expected to be applied.</description>
+    </item>
+    
+    <item>
+      <title>Natural England Copyright</title>
+      <link>https://digital-land.github.io/copyright/natural-england/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/copyright/natural-england/</guid>
+      <description>© Natural England copyright. Contains Ordnance Survey data © Crown copyright and database right 2018.</description>
+    </item>
+    
+    <item>
+      <title>Net development value</title>
+      <link>https://digital-land.github.io/glossary/net-development-value/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/net-development-value/</guid>
+      <description>The net development value is the estimated amount of money that a property development expects to make once all costs (land value, development, marketing etc) and sales have been taken into consideration.
+As a part of the viability assessment a third party may work with a property developer and local authority to ensure that estimates reflect current market values.</description>
+    </item>
+    
+    <item>
+      <title>Number of stories</title>
+      <link>https://digital-land.github.io/glossary/number-of-stories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/number-of-stories/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Number of tenancy</title>
+      <link>https://digital-land.github.io/glossary/number-of-tenancy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/number-of-tenancy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ONS Boundary</title>
+      <link>https://digital-land.github.io/copyright/ons-boundary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/copyright/ons-boundary/</guid>
+      <description>Contains National Statistics data © Crown copyright and database right 2018 Contains OS data © Crown copyright and database right 2018</description>
+    </item>
+    
+    <item>
+      <title>Open Government Licence</title>
+      <link>https://digital-land.github.io/licence/ogl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/licence/ogl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parking restriction</title>
+      <link>https://digital-land.github.io/glossary/parking-restriction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/parking-restriction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Planning Act 2008</title>
+      <link>https://digital-land.github.io/legislation/ukpga-2008-29/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/legislation/ukpga-2008-29/</guid>
+      <description>The Planning Act 2008 introduced Community Infrastructure Levy planning charges.</description>
+    </item>
+    
+    <item>
+      <title>Planning and Compulsory Purchase Act 2004</title>
+      <link>https://digital-land.github.io/legislation/ukpha-2004-5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/legislation/ukpha-2004-5/</guid>
+      <description>Regulation for local development schemes.</description>
+    </item>
+    
+    <item>
+      <title>Policymakers</title>
+      <link>https://digital-land.github.io/users/policy-maker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/users/policy-maker/</guid>
+      <description>Creating and delivering policy requires access to high quality, relevant data. Most land and housing data is created by local authorities, who report it according to government regulations or guidelines.
+But the data isn’t always fit for policymakers’ purposes.
+This is partly because government guidelines for submission are often vague or nonexistent, leading local authorities to submit data:
+ in a range of file types using inconsistent formats with different metadata fields in different orders  As a result it’s often very difficult for policymakers to process and use this data.</description>
+    </item>
+    
+    <item>
+      <title>PropTech</title>
+      <link>https://digital-land.github.io/users/proptech/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/users/proptech/</guid>
+      <description>If you work in ‘PropTech’, ‘PlanTech’ or another emergent industry using land and housing data to develop innovative services and products for the marketplace, we’re working to help give you better access to quality data.
+Our offer to PropTech companies Have a look at the data platform we’re building. It will include:
+ a digital land explorer that maps a wide range of land and housing data to geographical coordinates a data maturity model that can be used to assess the quality of an existing dataset  We’ve also created a data collector prototype that’s used to populate the explorer and to assess the state of published land and housing data.</description>
+    </item>
+    
+    <item>
+      <title>Protected View</title>
+      <link>https://digital-land.github.io/glossary/protected-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/protected-view/</guid>
+      <description>A protected view or protected vista is the legal requirement within urban planning to preserve the view of a specific place or historic building from another location.</description>
+    </item>
+    
+    <item>
+      <title>Provide feedback</title>
+      <link>https://digital-land.github.io/needs/provide-feedback/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/needs/provide-feedback/</guid>
+      <description>When data is incorrect or missing, I want to be able to inform the data maintainer, so that they can fix the dataset.</description>
+    </item>
+    
+    <item>
+      <title>Radon</title>
+      <link>https://digital-land.github.io/glossary/radon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/radon/</guid>
+      <description>Radon is a colourless, odourless radioactive gas. It is formed by the radioactive decay of the small amounts of uranium that occur naturally in all rocks and soils.</description>
+    </item>
+    
+    <item>
+      <title>Ramsar site</title>
+      <link>https://digital-land.github.io/glossary/ramsar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/ramsar/</guid>
+      <description>A Ramsar site is wetlands of international importance designated under the Ramsar Convention.</description>
+    </item>
+    
+    <item>
+      <title>Safeguarding</title>
+      <link>https://digital-land.github.io/glossary/safeguarding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/safeguarding/</guid>
+      <description>Safeguarding is an established part of the planning process, designed to ensure that land which has been identified for major infrastructure projects is protected from conflicting developments.</description>
+    </item>
+    
+    <item>
+      <title>Section 106</title>
+      <link>https://digital-land.github.io/glossary/section-106/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/section-106/</guid>
+      <description>Section 106 is a legal agreement between an property developer and the local planning authority. It is used to mitigate the impact of any new property development to the local community and infrastructure.
+The Section 106 agreement contains one or more developer contributions which support the generation of affordable housing, or contribute towards local infrastructure such as green spaces, schools or highway maintenance.</description>
+    </item>
+    
+    <item>
+      <title>Site of special scientific interest</title>
+      <link>https://digital-land.github.io/glossary/special-scientific-interest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/special-scientific-interest/</guid>
+      <description>A Site of Special Scientific Interest (SSSI) is a formal conservation designation for an area which is of particular interest because of its fauna, flora or geological or physiological features.
+Local authorities are required to have policies within their local plan to protect SSSIs, and should a planning application be submitted either on or close to the site then the appropriate conversation body must be consulted.
+Orginally established in the National Parks and Access to the Countryside Act 1949.</description>
+    </item>
+    
+    <item>
+      <title>Step 1: Create your CSV file</title>
+      <link>https://digital-land.github.io/guidance/brownfield-sites/create-your-csv-file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/brownfield-sites/create-your-csv-file/</guid>
+      <description>Contents  Publish your brownfield land data Step 1: Create your CSV file Step 2: Update your brownfield land web page Step 3: Update the national register of brownfield sites   Brownfield site data should be listed in a CSV file named brownfield-land.csv
+To complete step 1 you must be able to create or amend CSV files using spreadsheet software such as Microsoft Excel, Google Sheets or Apple Numbers, then when saving simply select ‘save as .</description>
+    </item>
+    
+    <item>
+      <title>Step 1: Create your CSV files</title>
+      <link>https://digital-land.github.io/guidance/developer-contributions/create-your-csv-files/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/developer-contributions/create-your-csv-files/</guid>
+      <description>Contents  Publish your developer contributions data Step 1: Create your CSV files Step 2: Update your developer contributions web page Step 3: Update the national register of developer contributions   Step 1: Create your CSV files To complete step 1 you must be able to create or amend CSV files, for example by using spreadsheet software.
+ If you are a planning authority using third-party software to manage your developer contributions, ask your vendor if the software can export the data to CSV files as defined in this guidance.</description>
+    </item>
+    
+    <item>
+      <title>Step 2: Update your brownfield land web page</title>
+      <link>https://digital-land.github.io/guidance/brownfield-sites/update-your-brownfield-land-web-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/brownfield-sites/update-your-brownfield-land-web-page/</guid>
+      <description>Contents  Publish your brownfield land data Step 1: Create your CSV file Step 2: Update your brownfield land web page Step 3: Update the national brownfield land register   To complete step 2 you must be able to edit (or create) your local authority’s brownfield land web page. If you aren’t able or authorised to do this, speak to someone who is (this might be the person who updates your local planning authority’s developer contribution or planning application web pages).</description>
+    </item>
+    
+    <item>
+      <title>Step 2: Update your developer contributions web page</title>
+      <link>https://digital-land.github.io/guidance/developer-contributions/update-your-developer-contributions-web-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/developer-contributions/update-your-developer-contributions-web-page/</guid>
+      <description>Contents  Publish your developer contributions data Step 1: Create your CSV files Step 2: Update your developer contributions web page Step 3: Update the national register of developer contributions   To complete step 2 you must be able to upload the files created in step 1 to your local planning authority’s website and edit (or create) your developer contributions web page. If you aren’t able or authorised to do this, speak to someone who is (this might be the person who updates your local planning authority’s brownfield site register or planning application web pages).</description>
+    </item>
+    
+    <item>
+      <title>Step 3: Update the national brownfield land register</title>
+      <link>https://digital-land.github.io/guidance/brownfield-sites/update-the-national-brownfield-land-register/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/brownfield-sites/update-the-national-brownfield-land-register/</guid>
+      <description>Contents  Publish your brownfield land data Step 1: Create your CSV file Step 2: Update your brownfield land web page Step 3: Update the national brownfield land register   The Ministry of Housing, Communities and Local Government (MHCLG) will maintain a national brownfield land register, using the data you publish.
+The first time you create and publish your CSV file you must tell us where this is published (the persistent URL created in step 2).</description>
+    </item>
+    
+    <item>
+      <title>Step 3: Update the national register of developer contributions</title>
+      <link>https://digital-land.github.io/guidance/developer-contributions/update-the-national-register-of-developer-contributions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/developer-contributions/update-the-national-register-of-developer-contributions/</guid>
+      <description>Contents  Publish your developer contributions data Step 1: Create your CSV files Step 2: Update your developer contributions web page Step 3: Update the national register of developer contributions   MHCLG will maintain a national register of developer contributions.
+The first time you create and publish your 3 CSV files you must tell us where these are published (the persistent URL created in step 2). You must also tell us if this ever changes.</description>
+    </item>
+    
+    <item>
+      <title>Tenancy deposit</title>
+      <link>https://digital-land.github.io/glossary/tenancy-deposit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/tenancy-deposit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tenancy length</title>
+      <link>https://digital-land.github.io/glossary/tenancy-length/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/tenancy-length/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Local Government Finance Act 1992</title>
+      <link>https://digital-land.github.io/legislation/ukpga-1992-14/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/legislation/ukpga-1992-14/</guid>
+      <description>Legislation introducing Council Tax.</description>
+    </item>
+    
+    <item>
+      <title>The Local Land Charges Rules 2018</title>
+      <link>https://digital-land.github.io/legislation/uksi-2018-273/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/legislation/uksi-2018-273/</guid>
+      <description>Regulations pertaining to the Local Land Charges Act 1975 including easements.</description>
+    </item>
+    
+    <item>
+      <title>The Town and Country Planning (Local Planning) (England) Regulations 2012</title>
+      <link>https://digital-land.github.io/legislation/uksi-2012-605/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/legislation/uksi-2012-605/</guid>
+      <description>Legislation for Tree Preservation Orders</description>
+    </item>
+    
+    <item>
+      <title>The Town and Country Planning (Local Planning) (England) Regulations 2012</title>
+      <link>https://digital-land.github.io/legislation/uksi-2012-767/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/legislation/uksi-2012-767/</guid>
+      <description>Regulations for local planning in England coming into force April 2012.</description>
+    </item>
+    
+    <item>
+      <title>The same data is inconsistent across publishers</title>
+      <link>https://digital-land.github.io/friction/data-is-inconsistent-across-publishers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/friction/data-is-inconsistent-across-publishers/</guid>
+      <description>Often the same specific types of data are defined or formatted differently depending on the publisher. This inconsistency exists even where a standard is in place.
+For example, among the 330 lists made available to meet the brownfield register standard we found 31 different file formats and a wide range of character encoding, blank lines, blank column names, incorrect formatting, incompatibility and other useability issues.
+This widespread inconsistency across publishers is problematic for anyone developing data-based products that serve the housing market nationwide.</description>
+    </item>
+    
+    <item>
+      <title>Town and Country Planning Act 1990</title>
+      <link>https://digital-land.github.io/legislation/ukpga-1990-8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/legislation/ukpga-1990-8/</guid>
+      <description>An Act to consolidate certain enactments relating to town and country planning (excluding special controls in respect of buildings and areas of special architectural or historic interest and in respect of hazardous substances) with amendments to give effect to recommendations of the Law Commission.</description>
+    </item>
+    
+    <item>
+      <title>Tree preservation order</title>
+      <link>https://digital-land.github.io/glossary/tree-preservation-order/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/tree-preservation-order/</guid>
+      <description>A Tree Preservation Order is an order made by a local planning authority in England to protect specific trees, groups of trees or woodlands in the interests of amenity. An Order prohibit the:
+ cutting down topping lopping uprooting wilful damage wilful destruction  of trees without the local planning authority’s written consent. If consent is given, it can be subject to conditions which have to be followed. In the Secretary of State’s view, cutting roots is also a prohibited activity and requires the authority’s consent.</description>
+    </item>
+    
+    <item>
+      <title>Uncertainty around what data is needed</title>
+      <link>https://digital-land.github.io/friction/uncertainty-around-what-data-is-needed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/friction/uncertainty-around-what-data-is-needed/</guid>
+      <description>It’s hard to determine what data is needed to make a better planning application. We have asked local authorities for their lists of constraints, but often these are general concerns (e.g. “Gas”) rather than a more precise reference to an authoritative source of information.
+It would be difficult to create a service that knows which authority to send a planning application to, let alone which pieces of data are needed to create a strong planning application.</description>
+    </item>
+    
+    <item>
+      <title>Unknown Copyright</title>
+      <link>https://digital-land.github.io/copyright/unknown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/copyright/unknown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unknown Licence</title>
+      <link>https://digital-land.github.io/licence/unknown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/licence/unknown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unrestrictive usage</title>
+      <link>https://digital-land.github.io/needs/unrestrictive-usage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/needs/unrestrictive-usage/</guid>
+      <description>When building a service, I want to use data openly and without any prohibitive restrictions, so that I am able to get full value from the data</description>
+    </item>
+    
+    <item>
+      <title>Unused properties</title>
+      <link>https://digital-land.github.io/project/unused-properties/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/project/unused-properties/</guid>
+      <description>We’re working with the Cities and Local Growth unit at MHCLG to investigate the best way to collect and publish data on unused properties. This project is part of Our plan for the high street: Budget 2018 brief, which states that “the government will trial a register of empty commercial properties to help prospective retailers to find empty properties and help local stakeholders tackle fragmented ownership on their high street.”</description>
+    </item>
+    
+    <item>
+      <title>Up-to-date data</title>
+      <link>https://digital-land.github.io/needs/up-to-date-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/needs/up-to-date-data/</guid>
+      <description>When I am building a service, I want to have confidence that I have access to the most recent data, so that the thing I am building is useful and relevant.</description>
+    </item>
+    
+    <item>
+      <title>Viability assessement</title>
+      <link>https://digital-land.github.io/glossary/viability-assessment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/viability-assessment/</guid>
+      <description>A viability assessment is a part of the planning application process and is used to help a property development and local authority determine a fair developer contribution that will for a section 106 agreement.</description>
+    </item>
+    
+    <item>
+      <title>Ward</title>
+      <link>https://digital-land.github.io/glossary/ward/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/ward/</guid>
+      <description>Wards in the UK are electoral districts represented by one or more councillors. They are the primary unit of English electoral geography.</description>
+    </item>
+    
+    <item>
+      <title>Waste sites</title>
+      <link>https://digital-land.github.io/glossary/waste-sites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/glossary/waste-sites/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Water Resources Act 1991</title>
+      <link>https://digital-land.github.io/legislation/ukpga-1991-57/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/legislation/ukpga-1991-57/</guid>
+      <description>An Act of Parliment that that regulates water resources, water quality and pollution, and flood defence.</description>
+    </item>
+    
+    <item>
+      <title>What data is needed</title>
+      <link>https://digital-land.github.io/needs/what-data-is-needed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/needs/what-data-is-needed/</guid>
+      <description>When defining a data standard, I want to know what data is needed, so that the right data is made available</description>
+    </item>
+    
+  </channel>
+</rss>

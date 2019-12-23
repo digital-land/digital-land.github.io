@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Users on Digital Land</title>
+    <link>https://digital-land.github.io/users/</link>
+    <description>Recent content in Users on Digital Land</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    
+	<atom:link href="https://digital-land.github.io/users/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Local government</title>
+      <link>https://digital-land.github.io/users/local-government/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/users/local-government/</guid>
+      <description>If you work for a local authority and publish or maintain data on one of the land and housing concerns we’re looking at in our projects, we offer guidance and tools that will help you publish the data more easily and accurately. These will both help you comply with your duty to publish and ensure the data is consistent and machine readable.
+Our offer to local government We’re working closely with local government to understand how they work and what their resources and constraints are around collecting, publishing and updating data.</description>
+    </item>
+    
+    <item>
+      <title>Policymakers</title>
+      <link>https://digital-land.github.io/users/policy-maker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/users/policy-maker/</guid>
+      <description>Creating and delivering policy requires access to high quality, relevant data. Most land and housing data is created by local authorities, who report it according to government regulations or guidelines.
+But the data isn’t always fit for policymakers’ purposes.
+This is partly because government guidelines for submission are often vague or nonexistent, leading local authorities to submit data:
+ in a range of file types using inconsistent formats with different metadata fields in different orders  As a result it’s often very difficult for policymakers to process and use this data.</description>
+    </item>
+    
+    <item>
+      <title>PropTech</title>
+      <link>https://digital-land.github.io/users/proptech/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/users/proptech/</guid>
+      <description>If you work in ‘PropTech’, ‘PlanTech’ or another emergent industry using land and housing data to develop innovative services and products for the marketplace, we’re working to help give you better access to quality data.
+Our offer to PropTech companies Have a look at the data platform we’re building. It will include:
+ a digital land explorer that maps a wide range of land and housing data to geographical coordinates a data maturity model that can be used to assess the quality of an existing dataset  We’ve also created a data collector prototype that’s used to populate the explorer and to assess the state of published land and housing data.</description>
+    </item>
+    
+  </channel>
+</rss>

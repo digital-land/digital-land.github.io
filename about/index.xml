@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About us on Digital Land</title>
+    <link>https://digital-land.github.io/about/</link>
+    <description>Recent content in About us on Digital Land</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    
+	<atom:link href="https://digital-land.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Land and housing data</title>
+      <link>https://digital-land.github.io/about/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/about/data/</guid>
+      <description>Data is at the foundation of the UK land and housing system. It records important decisions made by planners and others working in the sector, such as whether a tree or building is to be preserved, if a former commercial site is approved for residential development, or how much money a developer will commit to planning obligations for the community. There’s data around some 300 such ‘land and housing concerns’ that government legislation requires local planning authorities to publish.</description>
+    </item>
+    
+  </channel>
+</rss>
