@@ -6,10 +6,20 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Fri, 24 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Digital land sprint notes</title>
+      <link>https://digital-land.github.io/weeknote/2020-02-07/</link>
+      <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2020-02-07/</guid>
+      <description>This sprint we’ve made good progress on brownfield land, including creating a report on the data and improving the map. We’ve also shortlisted suppliers for our local plans alpha!
+Brownfield land Matt and Colm created a brownfield land report to show the current state of the data and to show the steps that our pipeline goes through to shape the data. We also presented this to our policy colleagues and decided next steps.</description>
+    </item>
     
     <item>
       <title>Digital land sprint notes</title>
