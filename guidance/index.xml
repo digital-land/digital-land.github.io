@@ -21,5 +21,16 @@ Structuring data Our data models share similar principles of a relational databa
 When modelling the data standard for developer contributions we created 3 files which can be linked together using unique identifiers.</description>
     </item>
     
+    <item>
+      <title>Pipeline – how we collect and process data</title>
+      <link>https://digital-land.github.io/guidance/pipeline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/pipeline/</guid>
+      <description>One of our principles is that data should be maintained as close to the source as possible. This means that we often have to bring together over 350 sources to make one national dataset.
+Our “pipeline” describes the steps we take to collect data from each of those sources and transform them into a national dataset.
+We support publishers of data by providing guidance and tools to help ensure their data meets the data standard.</description>
+    </item>
+    
   </channel>
 </rss>

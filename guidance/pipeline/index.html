@@ -8,7 +8,7 @@
     
 
     
-      <title>Guidance | Digital Land</title>
+      <title>Pipeline – how we collect and process data | Digital Land</title>
     
     <link rel="stylesheet" media="screen" href="/stylesheets/govuk-template.css?0.24.0"/>
     
@@ -26,7 +26,9 @@
     <meta name="theme-color" content="#0b0c0c" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="/images/opengraph-image.png?0.24.0">
-    <meta property="description" content="As part of our efforts to improve land and housing data we are working with local planning authorities and other users of the data to create guidance around a range of subjects. These will include complying with different requirements for publishing data, mapping data, understanding data definitions and specifications, and more.">
+    <meta property="description" content="One of our principles is that data should be maintained as close to the source as possible. This means that we often have to bring together over 350 sources to make one national dataset.
+Our “pipeline” describes the steps we take to collect data from each of those sources and transform them into a national dataset.
+We support publishers of data by providing guidance and tools to help ensure their data meets the data standard.">
     
       <link rel="stylesheet" media="all" href="/stylesheets/main.css" />
     
@@ -120,6 +122,8 @@
   
     
   
+    
+  
   
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="https://digital-land.github.io/">Digital Land</a>
@@ -128,7 +132,14 @@
 
   
   
-    <li class="govuk-breadcrumbs__list-item" aria-current="page">Guidance</li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://digital-land.github.io/guidance/">Guidance</a>
+    </li>
+  
+
+  
+  
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Pipeline – how we collect and process data</li>
   
 
   </ol>
@@ -136,48 +147,96 @@
       <main class="govuk-main-wrapper">
 			
 
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+      <span class="govuk-caption-xl">Guidance</span>
+    	<h1 class="govuk-heading-xl">
+    	  Pipeline – how we collect and process data
+    	</h1>
+		</div>
+	</div>
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds markdown-output">
+			
+
+<p>One of our principles is that data should be maintained as close to the source as possible. This means that we often have to bring together over 350 sources to make one national dataset.</p>
+
+<p>Our “pipeline” describes the steps we take to collect data from each of those sources and transform them into a national dataset.</p>
+
+<p>We support publishers of data by providing guidance and tools to help ensure their data meets the data standard. Any changes that we make to the data as it passes through the pipeline brings a risk that we’ll introduce errors.</p>
+
+<div class="highlight-box--cta">
+  <p>For any resource you can view its state at each step in the pipeline, allowing you to see what we have changed.</p>
+
+</div>
+
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/mattlucht/49547009136/in/datetaken-public/" title="Brownfield_Land_Report_-_Google_Slides"><img src="https://live.staticflickr.com/65535/49547009136_f3c86e9e31_b.jpg" alt="Brownfield_Land_Report_-_Google_Slides"></a></p>
+
+<p>The pipeline follows these steps:</p>
+
+<ol>
+<li>Collect</li>
+<li>Convert</li>
+<li>Normalise</li>
+<li>Map</li>
+<li>Harmonise</li>
+<li>Transform</li>
+</ol>
+
+<h2 id="1-collect">1. Collect</h2>
+
+<p>The collector’s primary purpose is to gather all of the resources that we know about.</p>
+
+<p>Each night it visits every link that we know about and checks whether the URL is still valid.</p>
+
+<p>We produce a <a href="/resource/log/2020-01-16">daily log</a> which records what the collector has found. This reports any links that cannot be accessed or if a new resource has been found at a URL.</p>
+
+<p>If a resource has changed then we add it into our collection. As an example of a data collection, see the <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/dataset/brownfield-land.csv">brownfield collection</a>.</p>
+
+<h2 id="2-convert">2. Convert</h2>
+
+<p>If the collected resource is not a UTF-8 encoded CSV then we’ll try to convert it to one.</p>
+
+<p>We can convert certain file types with varying degrees of confidence, for instance, an Excel file.</p>
+
+<p>We are unable to reliably convert files that are in PDF or an image file so those file types will fail at this stage.</p>
+
+<h2 id="3-normalise">3. Normalise</h2>
+
+<p>Once we have a UTF-8 CSV file, we strip out anything that isn’t recognisable as data. For example, if a row has no values or where there are descriptions above the column headers.</p>
+
+<h2 id="4-map-the-headers">4. Map the headers</h2>
+
+<p>Next, we check (or “map”) the column headers in the resource against those in the data standard.</p>
+
+<p>If we have made any changes to the data standard over time, sometimes the header names in a published resource haven’t been updated to meet the new standard.</p>
+
+<p>Or there might be typos that we can identify and correctly map. For instance, we can confidently map both <code>HazourdousSubstances</code> and <code>HazardousSubtances</code> to the correct header: <code>HazardousSubstances</code>.</p>
+
+<div class="highlight-box--cta">
+  <p>Here you can see that there are ~800 different <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/index/count/column.csv">column headers</a> that appear in the brownfield land data collection, that we attempted to map against 20 headers in the standard.</p>
+
+</div>
+
+<h2 id="5-harmonise">5. Harmonise</h2>
+
+<p>We then look at the values in the data and check that everything is consistent with the data standard. This step can be the trickiest to implement with certainty as it involves an element of interpreting what the data publisher meant.
+<code>yes</code> has been entered as <code>Y</code>, can confidently be changed. But an incorrect date of <code>2019-11-31</code> requires investigation to determine what the correct date should be. For instance, it wouldn’t be safe to assume that the correct value should be <code>2019-11-30</code>.</p>
+
+<div class="highlight-box--cta">
+  <p>Here you can see the <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/bin/harmonise.py">harmonisation rules that we’ve been able to automate</a> based on what we learnt through the brownfield land project.</p>
+
+</div>
+
+<h2 id="6-transform">6. Transform</h2>
+
+<p>The final step takes each harmonised resource and builds a <a href="/dataset/brownfield-land/">national dataset</a>.</p>
+
+		</div>
+	</div>
+
   
-  <h1 class="govuk-heading-xl">
-    Guidance
-  </h1>
-
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <p class="govuk-body-l"></p>
-          <div class="markdown-output">
-          <p>As part of our efforts to improve land and housing data we are working with local planning authorities and other users of the data to create guidance around a range of subjects. These will include complying with different requirements for publishing data, mapping data, understanding data definitions and specifications, and more.</p>
-
-          </div>
-          <ul class="govuk-list">
-            
-              <li>
-                <a href="https://digital-land.github.io/guidance/data-principles/" class="govuk-link govuk-body-l">Data principles</a>
-                <p class="govuk-body">Follow our data principles to ensure consistency of data across all data sets.</p>
-              </li>
-            
-              <li>
-                <a href="https://digital-land.github.io/guidance/pipeline/" class="govuk-link govuk-body-l">Pipeline – how we collect and process data</a>
-                <p class="govuk-body">This guidance describes our pipeline process of collecting individual publications of data and turning them into national datasets.</p>
-              </li>
-            
-            
-              
-                <li>
-                  <a href="https://www.gov.uk/government/publications/brownfield-land-registers-data-standard/publish-your-brownfield-land-data" class="govuk-link govuk-body-l">Publish your brownfield land data</a>
-                  <p class="govuk-body">When publishing your brownfield land data, follow this guidance on how to format, label and publish the data.</p>
-                </li>
-              
-            
-              
-                <li>
-                  <a href="https://www.gov.uk/guidance/publish-your-developer-contributions-data" class="govuk-link govuk-body-l">Publish your developer contributions data</a>
-                  <p class="govuk-body">When publishing your developer contributions data, follow this guidance on how to format, label and publish the data.</p>
-                </li>
-              
-            
-          </ul>
-    </div>
-  </div>
 
 
       </main>
