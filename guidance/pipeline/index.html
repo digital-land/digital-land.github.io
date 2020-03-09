@@ -8,7 +8,7 @@
     
 
     
-      <title>Pipeline – how we collect and process data | Digital Land</title>
+      <title>Pipeline: how we collect and process data | Digital Land</title>
     
     <link rel="stylesheet" media="screen" href="/stylesheets/govuk-template.css?0.24.0"/>
     
@@ -26,8 +26,7 @@
     <meta name="theme-color" content="#0b0c0c" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="/images/opengraph-image.png?0.24.0">
-    <meta property="description" content="One of our principles is that data should be maintained as close to the source as possible. This means that we often have to bring together over 350 sources to make one national dataset.
-Our “pipeline” describes the steps we take to collect data from each of those sources and transform them into a national dataset.
+    <meta property="description" content="One of our principles is that data should be maintained as close to the source as possible. This means that we often have to bring together over 350 sources to make 1 national dataset. Our “pipeline” describes the steps we take to collect data from each source and transform them into a national dataset.
 We support publishers of data by providing guidance and tools to help ensure their data meets the data standard.">
     
       <link rel="stylesheet" media="all" href="/stylesheets/main.css" />
@@ -139,7 +138,7 @@ We support publishers of data by providing guidance and tools to help ensure the
 
   
   
-    <li class="govuk-breadcrumbs__list-item" aria-current="page">Pipeline – how we collect and process data</li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Pipeline: how we collect and process data</li>
   
 
   </ol>
@@ -151,7 +150,7 @@ We support publishers of data by providing guidance and tools to help ensure the
 		<div class="govuk-grid-column-two-thirds">
       <span class="govuk-caption-xl">Guidance</span>
     	<h1 class="govuk-heading-xl">
-    	  Pipeline – how we collect and process data
+    	  Pipeline: how we collect and process data
     	</h1>
 		</div>
 	</div>
@@ -160,14 +159,12 @@ We support publishers of data by providing guidance and tools to help ensure the
 		<div class="govuk-grid-column-two-thirds markdown-output">
 			
 
-<p>One of our principles is that data should be maintained as close to the source as possible. This means that we often have to bring together over 350 sources to make one national dataset.</p>
+<p>One of our principles is that data should be maintained as close to the source as possible. This means that we often have to bring together over 350 sources to make 1 national dataset. Our “pipeline” describes the steps we take to collect data from each source and transform them into a national dataset.</p>
 
-<p>Our “pipeline” describes the steps we take to collect data from each of those sources and transform them into a national dataset.</p>
-
-<p>We support publishers of data by providing guidance and tools to help ensure their data meets the data standard. Any changes that we make to the data as it passes through the pipeline brings a risk that we’ll introduce errors.</p>
+<p>We support publishers of data by providing guidance and tools to help ensure their data meets the data standard. Any changes that we make to the data as it passes through the pipeline, brings a risk that we’ll introduce errors.</p>
 
 <div class="highlight-box--cta">
-  <p>For any resource you can view its state at each step in the pipeline, allowing you to see what we have changed.</p>
+  <p>For any resource, you can view its state at each step in the pipeline, allowing you to see what we&rsquo;ve changed.</p>
 
 </div>
 
@@ -176,62 +173,57 @@ We support publishers of data by providing guidance and tools to help ensure the
 <p>The pipeline follows these steps:</p>
 
 <ol>
-<li>Collect</li>
-<li>Convert</li>
-<li>Normalise</li>
-<li>Map</li>
-<li>Harmonise</li>
-<li>Transform</li>
+<li><a href="#1-collect">Collect</a></li>
+<li><a href="#2-convert">Convert</a></li>
+<li><a href="#3-normalise">Normalise</a></li>
+<li><a href="#4-map-the-headers">Map</a></li>
+<li><a href="#5-harmonise">Harmonise</a></li>
+<li><a href="#6-transform">Transform</a></li>
 </ol>
 
 <h2 id="1-collect">1. Collect</h2>
 
-<p>The collector’s primary purpose is to gather all of the resources that we know about.</p>
+<p>The collector’s primary purpose is to gather all of the resources that we know about. Each night it visits the URL for each resource to check if it&rsquo;s still valid.</p>
 
-<p>Each night it visits every link that we know about and checks whether the URL is still valid.</p>
+<p>We produce a <a href="/resource/log/2020-03-09">daily log</a> which records what the collector has found. This includes any links that cannot be accessed, or new resources found at a URL.</p>
 
-<p>We produce a <a href="/resource/log/2020-01-16">daily log</a> which records what the collector has found. This reports any links that cannot be accessed or if a new resource has been found at a URL.</p>
-
-<p>If a resource has changed then we add it into our collection. As an example of a data collection, see the <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/dataset/brownfield-land.csv">brownfield collection</a>.</p>
+<p>If a resource has changed, we add it to our collection. The <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/dataset/brownfield-land.csv">brownfield collection</a> is an example of a data collection.</p>
 
 <h2 id="2-convert">2. Convert</h2>
 
-<p>If the collected resource is not a UTF-8 encoded CSV then we’ll try to convert it to one.</p>
+<p>If the collected resource is not a <a href="https://www.w3schools.com/charsets/ref_html_utf8.asp">UTF-8 encoded</a> CSV file, we’ll try to convert it into one.</p>
 
-<p>We can convert certain file types with varying degrees of confidence, for instance, an Excel file.</p>
-
-<p>We are unable to reliably convert files that are in PDF or an image file so those file types will fail at this stage.</p>
+<p>We can convert certain file types with varying degrees of confidence. For example, a Microsoft Excel file may be easy to convert into a CSV file, whereas we would not be able to convert a PDF or image file.</p>
 
 <h2 id="3-normalise">3. Normalise</h2>
 
-<p>Once we have a UTF-8 CSV file, we strip out anything that isn’t recognisable as data. For example, if a row has no values or where there are descriptions above the column headers.</p>
+<p>Once we have a UTF-8 CSV file, we strip out anything that is not recognisable as data, for example if a row has no values, or if there are descriptions above the column headers.</p>
 
 <h2 id="4-map-the-headers">4. Map the headers</h2>
 
-<p>Next, we check (or “map”) the column headers in the resource against those in the data standard.</p>
+<p>Next we check (or “map”) the column headers in the resource against those in the data standard.</p>
 
-<p>If we have made any changes to the data standard over time, sometimes the header names in a published resource haven’t been updated to meet the new standard.</p>
+<p>If we have made any changes to the data standard over time, the header names in a published resource may not have been updated to meet the new standard.</p>
 
-<p>Or there might be typos that we can identify and correctly map. For instance, we can confidently map both <code>HazourdousSubstances</code> and <code>HazardousSubtances</code> to the correct header: <code>HazardousSubstances</code>.</p>
+<p>We may also be able to identify and correctly map typos. For example, we can confidently map both <code>HazourdousSubstances</code> and <code>HazardousSubtances</code> to the correctly spelled header: <code>HazardousSubstances</code>.</p>
 
 <div class="highlight-box--cta">
-  <p>Here you can see that there are ~800 different <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/index/count/column.csv">column headers</a> that appear in the brownfield land data collection, that we attempted to map against 20 headers in the standard.</p>
+  <p>We found ~800 different <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/index/count/column.csv">column headers</a> that were submitted to the brownfield land data collection. We have attempted to map these against 20 headers in the standard.</p>
 
 </div>
 
 <h2 id="5-harmonise">5. Harmonise</h2>
 
-<p>We then look at the values in the data and check that everything is consistent with the data standard. This step can be the trickiest to implement with certainty as it involves an element of interpreting what the data publisher meant.
-<code>yes</code> has been entered as <code>Y</code>, can confidently be changed. But an incorrect date of <code>2019-11-31</code> requires investigation to determine what the correct date should be. For instance, it wouldn’t be safe to assume that the correct value should be <code>2019-11-30</code>.</p>
+<p>We then look at the values in the data and check that everything is consistent with the data standard. This step can be the trickiest to do with certainty, because sometimes we have to interpret what the data publisher meant. For example, if <code>yes</code> has been entered as <code>Y</code>, we can confidently change this. However, we cannot guess what the data publisher meant by an incorrect date, such as <code>2019-11-31</code>. Since this date does not exist, it would not be safe to assume that the correct value should be <code>2019-11-30</code>.</p>
 
 <div class="highlight-box--cta">
-  <p>Here you can see the <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/bin/harmonise.py">harmonisation rules that we’ve been able to automate</a> based on what we learnt through the brownfield land project.</p>
+  <p>View the <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/bin/harmonise.py">harmonisation rules that we’ve been able to automate</a> based on what we&rsquo;ve learned through the brownfield land project.</p>
 
 </div>
 
 <h2 id="6-transform">6. Transform</h2>
 
-<p>The final step takes each harmonised resource and builds a <a href="/dataset/brownfield-land/">national dataset</a>.</p>
+<p>The final step in our pipeline process takes each harmonised resource and builds a <a href="/dataset/brownfield-land/">national dataset</a>.</p>
 
 		</div>
 	</div>
