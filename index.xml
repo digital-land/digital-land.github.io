@@ -6,10 +6,20 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Fri, 21 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Digital land sprint notes</title>
+      <link>https://digital-land.github.io/weeknote/2020-03-13/</link>
+      <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2020-03-13/</guid>
+      <description>A lot has happened over the last 3 weeks, including choosing a supplier for the local plans alpha, emailing 499 people in local planning authorities, and having the brownfield land map announced as part of the housing Budget.
+Policy Big news for the Digital Land team this week as the brownfield land map has been announced by our Secretary of State, as a part of a series of plans following Budget 2020.</description>
+    </item>
     
     <item>
       <title>Digital land sprint notes</title>

@@ -185,7 +185,7 @@ We support publishers of data by providing guidance and tools to help ensure the
 
 <p>The collector’s primary purpose is to gather all of the resources that we know about. Each night it visits the URL for each resource to check if it&rsquo;s still valid.</p>
 
-<p>We produce a <a href="/resource/log/2020-03-09">daily log</a> which records what the collector has found. This includes any links that cannot be accessed, or new resources found at a URL.</p>
+<p>We produce a <a href="/resource/log/2020-03-09">daily log</a> which records what the collector has found. This includes any links that cannot be accessed and new resources found at a URL.</p>
 
 <p>If a resource has changed, we add it to our collection. The <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/dataset/brownfield-land.csv">brownfield collection</a> is an example of a data collection.</p>
 
@@ -197,7 +197,7 @@ We support publishers of data by providing guidance and tools to help ensure the
 
 <h2 id="3-normalise">3. Normalise</h2>
 
-<p>Once we have a UTF-8 CSV file, we strip out anything that is not recognisable as data, for example if a row has no values, or if there are descriptions above the column headers.</p>
+<p>Once we have a UTF-8 CSV file, we strip out anything that is not recognisable as data. For example if a row has no values, or if there are descriptions above the column headers.</p>
 
 <h2 id="4-map-the-headers">4. Map the headers</h2>
 
@@ -214,7 +214,9 @@ We support publishers of data by providing guidance and tools to help ensure the
 
 <h2 id="5-harmonise">5. Harmonise</h2>
 
-<p>We then look at the values in the data and check that everything is consistent with the data standard. This step can be the trickiest to do with certainty, because sometimes we have to interpret what the data publisher meant. For example, if <code>yes</code> has been entered as <code>Y</code>, we can confidently change this. However, we cannot guess what the data publisher meant by an incorrect date, such as <code>2019-11-31</code>. Since this date does not exist, it would not be safe to assume that the correct value should be <code>2019-11-30</code>.</p>
+<p>We then look at the values in the data and check that everything is consistent with the data standard. This step can be the trickiest to do with certainty, because sometimes we have to interpret what the data publisher meant.</p>
+
+<p>For example, if <code>yes</code> has been entered as <code>Y</code>, we can confidently change this. However, we cannot guess what the data publisher meant by an incorrect date, such as <code>2019-11-31</code>. Since this date does not exist, it would not be safe to assume that the correct value should be <code>2019-11-30</code>.</p>
 
 <div class="highlight-box--cta">
   <p>View the <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/bin/harmonise.py">harmonisation rules that we’ve been able to automate</a> based on what we&rsquo;ve learned through the brownfield land project.</p>
