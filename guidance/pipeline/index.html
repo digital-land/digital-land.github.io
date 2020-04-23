@@ -10,13 +10,7 @@
     
       <title>Pipeline: how we collect and process data | Digital Land</title>
     
-    <link rel="stylesheet" media="screen" href="/stylesheets/govuk-template.css?0.24.0"/>
-    
-    
-    
-    <link rel="stylesheet" media="print" href="/stylesheets/govuk-template-print.css?0.24.0"/>
-    <link rel="stylesheet" media="all" href="/stylesheets/fonts.css?0.24.0"/>
-    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" href="/images/favicon.ico?0.24.0" type="image/x-icon" />
     <link rel="mask-icon" href="/images/gov.uk_logotype_crown.svg?0.24.0" color="#0b0c0c">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png?0.24.0">
@@ -29,58 +23,67 @@
     <meta property="description" content="One of our principles is that data should be maintained as close to the source as possible. This means that we often have to bring together over 350 sources to make 1 national dataset. Our “pipeline” describes the steps we take to collect data from each source and transform them into a national dataset.
 We support publishers of data by providing guidance and tools to help ensure their data meets the data standard.">
     
+      <link rel="stylesheet" media="all" href="/stylesheets/dl-frontend.css" />
       <link rel="stylesheet" media="all" href="/stylesheets/main.css" />
     
   </head>
 
-  <body class="">
+  <body class="govuk-template__body ">
     <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
 
     
 
-    <div id="skiplink-container">
-      <div>
-        <a href="#content" class="skiplink">Skip to main content</a>
-      </div>
-    </div>
+    <a href="#content" class="govuk-skip-link">Skip to main content</a>
 
-    <div id="global-cookie-message">
-        <p>We use cookies on this site to help us make it better. <a href="/cookies">Find out more about cookies</a></p>
-    </div>
-
-
-    <header role="banner" id="global-header" class=" with-proposition">
-      <div class="header-wrapper">
+    <header role="banner" id="global-header" class='govuk-header  with-proposition'>
+      <div class="govuk-header__container govuk-width-container">
         
         
 			  <div class="header-proposition">
-			    <div class="content">
-			      <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
-			      <nav id="proposition-menu">
-			        <a href="/" id="proposition-name">
-			          
+			    <div class="govuk-header__content">
+            <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+              
 			            Digital Land
-			          
-			        </a>
+			        
+            </a>
+            <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
 
-			        <ul id="proposition-links">
+			      <nav>
+
+			        <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
   
   
-    <li><a href="/about">Team</a></li>
+    <li class="govuk-header__navigation-item">
+      <a class="govuk-header__link" href="/about">Team</a>
+    </li>
   
-    <li><a href="/project/">Projects</a></li>
+    <li class="govuk-header__navigation-item">
+      <a class="govuk-header__link" href="/project/">Projects</a>
+    </li>
   
-    <li><a href="/weeknote/">Weeknotes</a></li>
+    <li class="govuk-header__navigation-item">
+      <a class="govuk-header__link" href="/weeknote/">Weeknotes</a>
+    </li>
   
-    <li><a href="/blog-post/">Blog</a></li>
+    <li class="govuk-header__navigation-item">
+      <a class="govuk-header__link" href="/blog-post/">Blog</a>
+    </li>
   
-    <li><a href="/guidance/">Guidance</a></li>
+    <li class="govuk-header__navigation-item">
+      <a class="govuk-header__link" href="/guidance/">Guidance</a>
+    </li>
   
-    <li><a href="/dataset/">Datasets</a></li>
+    <li class="govuk-header__navigation-item">
+      <a class="govuk-header__link" href="/dataset/">Datasets</a>
+    </li>
   
-    <li><a href="/organisation/">Organisations</a></li>
+    <li class="govuk-header__navigation-item">
+      <a class="govuk-header__link" href="/organisation/">Organisations</a>
+    </li>
   
-    <li><a href="/map/">Map</a></li>
+    <li class="govuk-header__navigation-item">
+      <a class="govuk-header__link" href="/map/">Map</a>
+    </li>
   
 </ul>
 
@@ -124,21 +127,27 @@ We support publishers of data by providing guidance and tools to help ensure the
     
   
   
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="https://digital-land.github.io/">Digital Land</a>
-    </li>
+    
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://digital-land.github.io/">Digital Land</a>
+      </li>
+    
   
 
   
   
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="https://digital-land.github.io/guidance/">Guidance</a>
-    </li>
+    
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://digital-land.github.io/guidance/">Guidance</a>
+      </li>
+    
   
 
   
   
-    <li class="govuk-breadcrumbs__list-item" aria-current="page">Pipeline: how we collect and process data</li>
+    
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Pipeline: how we collect and process data</li>
+    
   
 
   </ol>
@@ -162,6 +171,7 @@ We support publishers of data by providing guidance and tools to help ensure the
 <p>One of our principles is that data should be maintained as close to the source as possible. This means that we often have to bring together over 350 sources to make 1 national dataset. Our “pipeline” describes the steps we take to collect data from each source and transform them into a national dataset.</p>
 
 <p>We support publishers of data by providing guidance and tools to help ensure their data meets the data standard. Any changes that we make to the data as it passes through the pipeline, brings a risk that we’ll introduce errors.</p>
+
 
 <div class="highlight-box--cta">
   <p>For any resource, you can view its state at each step in the pipeline, allowing you to see what we&rsquo;ve changed.</p>
@@ -207,6 +217,7 @@ We support publishers of data by providing guidance and tools to help ensure the
 
 <p>We may also be able to identify and correctly map typos. For example, we can confidently map both <code>HazourdousSubstances</code> and <code>HazardousSubtances</code> to the correctly spelled header: <code>HazardousSubstances</code>.</p>
 
+
 <div class="highlight-box--cta">
   <p>We found ~800 different <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/index/count/column.csv">column headers</a> that were submitted to the brownfield land data collection. We have attempted to map these against 20 headers in the standard.</p>
 
@@ -217,6 +228,7 @@ We support publishers of data by providing guidance and tools to help ensure the
 <p>We then look at the values in the data and check that everything is consistent with the data standard. This step can be the trickiest to do with certainty, because sometimes we have to interpret what the data publisher meant.</p>
 
 <p>For example, if <code>yes</code> has been entered as <code>Y</code>, we can confidently change this. However, we cannot guess what the data publisher meant by an incorrect date, such as <code>2019-11-31</code>. Since this date does not exist, it would not be safe to assume that the correct value should be <code>2019-11-30</code>.</p>
+
 
 <div class="highlight-box--cta">
   <p>View the <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/bin/harmonise.py">harmonisation rules that we’ve been able to automate</a> based on what we&rsquo;ve learned through the brownfield land project.</p>
