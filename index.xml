@@ -1471,6 +1471,57 @@ An EPC contains:
     </item>
     
     <item>
+      <title>Extremely vulnerable person&#39;s service: guidance on the data</title>
+      <link>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/contact-us/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/contact-us/</guid>
+      <description>Contents  Introduction Daily incoming data NHS Shielded patient data Wholesaler food delivery data Contact us   Contact us Email transfer-coronavirus-data-service@digital.cabinet-office.gov.uk with specific questions about the data.
+Email shielding@communities.gov.uk with questions about policy and the overall process, such as questions about the food parcels.
+If you want to get involved in the service more generally, you can join the conversation on the LocalGov Digital Slack channel #coronavirus-vulnerable-people-service. If you don’t have access to localgovdigital.</description>
+    </item>
+    
+    <item>
+      <title>Extremely vulnerable person&#39;s service: guidance on the data</title>
+      <link>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/daily-incoming-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/daily-incoming-data/</guid>
+      <description>Contents  Introduction Daily incoming data NHS Shielded patient data Wholesaler food delivery data Contact us   Daily incoming data on extremely vulnerable people who have applied for support This is the data on people who have applied for support via the clinically extremely vulnerable person’s service, through the GOV.UK form or phone line.
+A new file is added to each hub’s GOV.​UK transfer data account every day at 4pm.</description>
+    </item>
+    
+    <item>
+      <title>Extremely vulnerable person&#39;s service: guidance on the data</title>
+      <link>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/more-information-about-the-process/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/more-information-about-the-process/</guid>
+      <description> Contents  Introduction Daily incoming data NHS Shielded patient data Wholesaler food delivery data More information about the process Contact us   More information about the process   Previous   : Wholesaler food delivery data     Next   : Contact us  
+  </description>
+    </item>
+    
+    <item>
+      <title>Extremely vulnerable person&#39;s service: guidance on the data</title>
+      <link>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/nhs-shielded-patient-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/nhs-shielded-patient-data/</guid>
+      <description>Contents  Introduction Daily incoming data NHS Shielded patient data Wholesaler food delivery data Contact us   NHS shielding patient data There are currently 2 files of NHS patient data. Local authority hubs can access these on their GOV.​UK transfer data account. Hubs should share the relevant cuts of data with local authorities within their hub.
+The first file was released on 2 April. It is the data on the original ~900k people the NHS deemed extremely vulnerable and contacted, advising them to apply for support.</description>
+    </item>
+    
+    <item>
+      <title>Extremely vulnerable person&#39;s service: guidance on the data</title>
+      <link>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/wholesaler-food-delivery-data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/wholesaler-food-delivery-data/</guid>
+      <description>Contents  Introduction Daily incoming data NHS Shielded patient data Wholesaler food delivery data Contact us   Wholesaler food delivery data This is the information from wholesalers (Brakes and Bidfood) about upcoming deliveries and the status of completed or attempted deliveries.
+Local authority hubs should have been emailed a link to a secure online folder (URL beginning with “micollab.joinedupdclg.net”). In this folder are 2 files for each local authority within a hub:</description>
+    </item>
+    
+    <item>
       <title>Fear of feedback</title>
       <link>https://digital-land.github.io/friction/fear-of-feedback/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1526,47 +1577,6 @@ We met with the team from the Building Safety Programme to demonstrate the work 
       
       <guid>https://digital-land.github.io/glossary/gross-development-value/</guid>
       <description>Gross development value is the estimated value that a new development could fetch. To work out the gross development value the property developer needs to factor in the percentage of affordable housing that the relevant local authority states in their local plan policy.</description>
-    </item>
-    
-    <item>
-      <title>Guidance on the data for local authorities</title>
-      <link>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/contact-us/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/contact-us/</guid>
-      <description>Contents  Introduction Daily incoming data NHS Shielded patient data Wholesaler food delivery data Contact us   Contact us Email transfer-coronavirus-data-service@digital.cabinet-office.gov.uk with specific questions about the data.
-Email shielding@communities.gov.uk with questions about policy and the overall process, such as questions about the food parcels.
-If you want to get involved in the service more generally, you can join the conversation on the LocalGov Digital Slack channel #coronavirus-vulnerable-people-service. If you don’t have access to localgovdigital.</description>
-    </item>
-    
-    <item>
-      <title>Guidance on the data for local authorities</title>
-      <link>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/daily-incoming-data/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/daily-incoming-data/</guid>
-      <description>Contents  Introduction Daily incoming data NHS Shielded patient data Wholesaler food delivery data Contact us   Daily incoming data on extremely vulnerable people who have applied for support This is the data on people who have applied for support via the clinically extremely vulnerable person’s service, through the GOV.UK form or phone line.
-A new file is added to each hub’s GOV.​UK transfer data account every day at 4pm.</description>
-    </item>
-    
-    <item>
-      <title>Guidance on the data for local authorities</title>
-      <link>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/nhs-shielded-patient-data/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/nhs-shielded-patient-data/</guid>
-      <description>Contents  Introduction Daily incoming data NHS Shielded patient data Wholesaler food delivery data Contact us   NHS shielding patient data There are currently 2 files of NHS patient data. Local authority hubs can access these on their GOV.​UK transfer data account. Hubs should share the relevant cuts of data with local authorities within their hub.
-The first file was released on 2 April. It is the data on the original ~900k people the NHS deemed extremely vulnerable and contacted, advising them to apply for support.</description>
-    </item>
-    
-    <item>
-      <title>Guidance on the data for local authorities</title>
-      <link>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/wholesaler-food-delivery-data/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/wholesaler-food-delivery-data/</guid>
-      <description>Contents  Introduction Daily incoming data NHS Shielded patient data Wholesaler food delivery data Contact us   Wholesaler food delivery data This is the information from wholesalers (Brakes and Bidfood) about upcoming deliveries and the status of completed or attempted deliveries.
-Local authority hubs should have been emailed a link to a secure online folder (URL beginning with “micollab.joinedupdclg.net”). In this folder are 2 files for each local authority within a hub:</description>
     </item>
     
     <item>
@@ -1651,16 +1661,6 @@ We work in 2-week sprints, making it easier to manage and prioritise tasks. Thro
       
       <guid>https://digital-land.github.io/licence/inspire-end-user/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Information on the extremely vulnerable person’s service</title>
-      <link>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/more-information-about-the-process/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/guidance/extremely-vulnerable-person-service/more-information-about-the-process/</guid>
-      <description> Contents  Introduction Daily incoming data NHS Shielded patient data Wholesaler food delivery data More information about the process Contact us   More information about the process   Previous   : Wholesaler food delivery data     Next   : Contact us  
-  </description>
     </item>
     
     <item>
