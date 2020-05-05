@@ -6,10 +6,48 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Fri, 13 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Local plans</title>
+      <link>https://digital-land.github.io/weeknote/2020-05-01/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2020-05-01/</guid>
+      <description>What are we thinking about? We’re coming to the end of our second sprint. In this sprint, we’ve focussed on what a national picture of plan making might look like, and what the data needed to support that would be. By testing the needs of MHCLG and PINS, we are building confidence in what the data standard(s) should be. Whether the data provided about local plan making can be trusted, however, is the difficult part.</description>
+    </item>
+    
+    <item>
+      <title>Local plans</title>
+      <link>https://digital-land.github.io/weeknote/2020-04-24/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2020-04-24/</guid>
+      <description>What are we thinking about? The right starting point for the standard.
+Because local plans are not always one thing, and where they consist of multiple ‘documents’ the different parts don’t always contain the same parts of the plan, we need to design for the lowest level. As someone we spoke to this week said, it’s easier to put things together than it is to break them apart. Our research has shown that the document-centric view of the world (where policies are contained in documents, and those documents are consulted on, inspected and adopted) can constrain or slow down updates where just a few policies need to be updated to respond to a local or national need.</description>
+    </item>
+    
+    <item>
+      <title>Local plans</title>
+      <link>https://digital-land.github.io/weeknote/2020-04-17/</link>
+      <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2020-04-17/</guid>
+      <description>What are we thinking about? We’ve had a busy start to the project, building up our domain knowledge in a complex area and designing and testing a prototype to get feedback from local authority users.
+Our focus on the prototype has been on an ‘exemplar page for local plan information’. This has been invaluable in understanding where there is common language and some of the constraints around standardisation. Local plans necessarily respond to local needs, and the flexibility in their production is a strength of the system.</description>
+    </item>
+    
+    <item>
+      <title>Local plans</title>
+      <link>https://digital-land.github.io/weeknote/2020-04-10/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2020-04-10/</guid>
+      <description>The planning process is complicated and dynamic. Local plans are a rich source of information, but the data used to produce that information isn’t easily extracted. Plans are published in a wide range of formats and aren’t always consistent in the types of information they include, or how they define or represent that information. This makes it difficult to collect, use and compare data across local plans and difficult for machines to read the data.</description>
+    </item>
     
     <item>
       <title>Digital land sprint notes</title>
