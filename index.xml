@@ -6,10 +6,20 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Fri, 01 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Local plans</title>
+      <link>https://digital-land.github.io/weeknote/2020-05-07/</link>
+      <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2020-05-07/</guid>
+      <description>What are we thinking about? This week we finished our second sprint where we explored what a national picture of plan making could look like, and started our final sprint where we are focussing on how and when local planning authorities should submit their data. A data standard, and ways to present that data, is only useful if local planning authorities can and will regularly submit accurate data.
+We finished our second show and tell by posing the following questions to guide us through this final sprint:</description>
+    </item>
     
     <item>
       <title>Local plans</title>
