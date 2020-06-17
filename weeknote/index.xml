@@ -6,10 +6,20 @@
     <description>Recent content in Weeknotes on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Thu, 07 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/weeknote/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Digital land sprint notes</title>
+      <link>https://digital-land.github.io/weeknote/2020-06-17/</link>
+      <pubDate>Wed, 17 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2020-06-17/</guid>
+      <description>We’re back! After supporting the department’s Covid-19 response, we’re working on Digital Land projects once again and we’ve hit the ground running in this first sprint.
+Team Most of the team have been supporting the department’s response to Covid-19 since March. We’ve been working with GDS and the MHCLG Shielding team, helping to get data on extremely vulnerable people to local authorities and wholesalers, in order to provide food, essential supplies and support to people who need it.</description>
+    </item>
     
     <item>
       <title>Local plans</title>
