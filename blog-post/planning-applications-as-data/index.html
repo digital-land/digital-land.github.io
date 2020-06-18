@@ -8,7 +8,7 @@
     
 
     
-      <title>Digital Land</title>
+      <title>Start treating planning applications as data, rather than documents | Digital Land</title>
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" href="/images/favicon.ico?0.24.0" type="image/x-icon" />
@@ -20,11 +20,10 @@
     <meta name="theme-color" content="#0b0c0c" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:image" content="/images/opengraph-image.png?0.24.0">
-    <meta property="description" content="Contents
- Current areas of investigation Upcoming areas of investigation Local plans project discovery report Timeline  ">
+    <meta property="description" content="Euan talks about his first week in MHCLG Digital, and reflects on how digital is transforming the built environment sector.">
     
-      <link rel="stylesheet" media="all" href="/stylesheets/dl-frontend.css" />
-      <link rel="stylesheet" media="all" href="/stylesheets/main.css" />
+    <link rel="stylesheet" media="all" href="/stylesheets/main.css" />
+    <link rel="alternate" type="application/rss+xml" href="https://digital-land.github.io/blog-post/index.xml" title="Blog posts - Digital Land" />
     
   </head>
 
@@ -126,8 +125,6 @@
   
     
   
-    
-  
   
     
       <li class="govuk-breadcrumbs__list-item">
@@ -140,7 +137,7 @@
   
     
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="https://digital-land.github.io/project/">Projects</a>
+        <a class="govuk-breadcrumbs__link" href="https://digital-land.github.io/blog-post/">Blog posts</a>
       </li>
     
   
@@ -148,16 +145,7 @@
   
   
     
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="https://digital-land.github.io/project/local-plans/">Local plans</a>
-      </li>
-    
-  
-
-  
-  
-    
-      <li class="govuk-breadcrumbs__list-item" aria-current="page"></li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Start treating planning applications as data, rather than documents</li>
     
   
 
@@ -167,90 +155,27 @@
 			
 
   <div class="govuk-grid-row">
-		<div class="govuk-grid-column-full">
-      
-        <span class="govuk-caption-xl">Project</span>
-      
-    	<h1 class="govuk-heading-xl">
-    	  
-    	</h1>
-		</div>
-	</div>
+    <article class="blog-post govuk-grid-column-two-thirds">
+      <header>
+        <span class="govuk-caption-xl">Blog post</span>
+        <h1 class="govuk-heading-xl">
+          Start treating planning applications as data, rather than documents
+        </h1>
+        <p class="byline author vcard">
+          <span class="govuk-visually-hidden">Posted by:</span>
+          <span class="author url fn" rel="author">Euan Mills</span>,
+          <span class="govuk-visually-hidden">Posted on:</span>
+          <time class="updated" datetime="2020-05-28 00:00:00 &#43;0000 UTC" pubdate="">28 May 2020</time>
+          
 
-  
-	<div class="govuk-grid-row">
-		<div class="govuk-grid-column-two-thirds markdown-output">
-			<p>Contents</p>
+        </p>
+      </header>
+      <div class="markdown-output">
+        <p>Euan talks about his first week in MHCLG Digital, and reflects on how digital is transforming the built environment sector.</p>
 
-<ul>
-<li><a href="#current-areas-of-investigation">Current areas of investigation</a></li>
-<li><a href="#upcoming-areas-of-investigation">Upcoming areas of investigation</a></li>
-<li><a href="#local-plans-project-discovery-report">Local plans project discovery report</a></li>
-<li><a href="#timeline">Timeline</a></li>
-</ul>
-
-      
-
-
-
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-    
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-
-
-
-		</div>
-	</div>
-  
+      </div>
+    </div>
+  </div>
 
 
       </main>
@@ -298,52 +223,6 @@
     <script src="/javascripts/govuk-template.js?0.24.0"></script>
 
     
-<script src="/js/pretty.js"></script>
-<script src="/js/octokit-rest.js"></script>
-<script>
-
-  const issueShortTemplate = (issue) => `
-  <li class="project-issue"><a href="${issue.html_url}">${issue.title}</a></li>`;
-
-  const octokit = new Octokit();
-  const owner = "digital-land";
-  const repo = "digital-land";
-  const projectLabel = "";
-
-  const futureIssuesContainer = document.querySelector(".upcoming-areas-section");
-  if( futureIssuesContainer ) {
-    const issuesListEl = addGovukListEl(futureIssuesContainer);
-
-    octokit.issues.listForRepo({
-      owner: owner,
-      repo: repo,
-      labels: projectLabel,
-      per_page: 100 
-    }).then(({data, headers, status}) => {
-      const futureIssues = data.filter((issue) => {
-        
-        const labels = issue.labels.map((labelObj) => labelObj.name);
-        
-        return !labels.includes("current-area-of-investigation");
-      });
-      
-      let issuesHTML = futureIssues.map(issue => `
-        <li class="project-issue"><a href="${issue.html_url}">${issue.title}</a></li>
-      `).join("");
-
-      issuesListEl.innerHTML = issuesHTML;
-    });
-  }
-
-  function addGovukListEl(container) {
-    const newListElement = document.createElement("ul");
-    newListElement.classList.add("govuk-list");
-    newListElement.classList.add("govuk-list--bullet");
-    container.appendChild(newListElement);
-    return newListElement;
-  }
-</script>
-
 
     <script>
       if (typeof window.GOVUK === 'undefined') document.body.className = document.body.className.replace('js-enabled', '')
