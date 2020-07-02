@@ -6,10 +6,21 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Wed, 17 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Digital land sprint notes</title>
+      <link>https://digital-land.github.io/weeknote/2020-06-30/</link>
+      <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2020-06-30/</guid>
+      <description>This sprint we’ve built on our roadmap, published the learnings from the local plans alpha, and had lots of involvement in the PropTech world.
+Team Moving into a beta phase as a team, we&amp;rsquo;re starting to create options, test hypotheses, test our ideas and roadmap with stakeholders, and refine the roadmap.
+At the start of the sprint, we ran a roadmapping workshop, outlining at a high level what we want to achieve.</description>
+    </item>
     
     <item>
       <title>Digital land sprint notes</title>
