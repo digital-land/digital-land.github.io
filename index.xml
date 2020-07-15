@@ -6,10 +6,20 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Tue, 30 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Digital land sprint notes</title>
+      <link>https://digital-land.github.io/weeknote/2020-07-14/</link>
+      <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2020-07-14/</guid>
+      <description>This sprint we’ve started the local plans beta phase, improved our platform, and started some exciting policy work.
+Team We were joined by Caroline Cooke and Lauren Olukoya from the government policy profession, who came to shadow the team and learn more about how we work. They had sessions with Laura (Delivery Manager), Lorna (User Researcher) and Rishi (Policy), and learnt more about how policy and digital can work together in a multidisciplinary team.</description>
+    </item>
     
     <item>
       <title>Digital land sprint notes</title>
