@@ -6,10 +6,21 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Tue, 14 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Digital land sprint notes</title>
+      <link>https://digital-land.github.io/weeknote/2020-07-28/</link>
+      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2020-07-28/</guid>
+      <description>This sprint we’ve done a lot of work on local plans, and Paul has written guidance on finding the local authority from an address.
+Team We’re sad to see our developer Jake leave the team for a new role at the Ministry of Justice. He’ll be missed by us. However, we’ve already sifted some great applications for his replacement.
+Jess and Lawrence both spoke at recent PropTech events addressing the role of public sector in supporting built environment innovation, sharing work of the department and hearing from other key organisations.</description>
+    </item>
     
     <item>
       <title>Digital land sprint notes</title>
