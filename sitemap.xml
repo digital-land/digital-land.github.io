@@ -594,10 +594,6 @@
   </url>
   
   <url>
-    <loc>https://digital-land.github.io/project/single-register-of-planning/alpha/</loc>
-  </url>
-  
-  <url>
     <loc>https://digital-land.github.io/about/</loc>
   </url>
   
@@ -623,6 +619,10 @@
   
   <url>
     <loc>https://digital-land.github.io/project/local-plans/alpha/</loc>
+  </url>
+  
+  <url>
+    <loc>https://digital-land.github.io/project/single-register-of-planning/alpha/</loc>
   </url>
   
   <url>
