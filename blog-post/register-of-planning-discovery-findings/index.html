@@ -46,7 +46,7 @@ We’ve spent the first six weeks of this project getting to grips with the doma
           </div>
           <div class="cooke-banner__buttons govuk-grid-row">
             <div class="govuk-grid-column-one-half">
-              <button class="govuk-button" onclick="acceptCookies();">Accept all cookies</button>
+              <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
             </div>
             <div class="govuk-grid-column-one-half">
               <a class="govuk-button"href="/cookies">Set cookie preferences</a>
@@ -62,7 +62,7 @@ We’ve spent the first six weeks of this project getting to grips with the doma
     </div>
   
 </div>
-  
+
     <header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
     <div class="govuk-header__container govuk-width-container">
       <div class="header-proposition">
@@ -349,8 +349,6 @@ the high-level concepts that are being modelled in the data</li>
 
     <div id="global-app-error" class="app-error hidden"></div>
 
-    
-
     <script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend-3.0.0.min.js"></script>
     <script>
       
@@ -359,5 +357,7 @@ the high-level concepts that are being modelled in the data</li>
 
     <script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-cookies.js"></script>
     <script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script>
+
+    
   </body>
 </html>

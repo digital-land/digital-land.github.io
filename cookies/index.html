@@ -8,7 +8,7 @@
     
 
     
-      <title>Cookies | Digital Land</title>
+      <title>Cookies on Digital Land | Digital Land</title>
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" href="/images/favicon.ico?0.24.0" type="image/x-icon" />
@@ -23,7 +23,7 @@
     <meta property="description" content="Digital Land puts small files (known as ‘cookies’) onto your computer to collect information about how you browse the site.
 Cookies are used to:
  measure how you use the website so it can be updated and improved based on your needs remember the notifications you’ve seen so that we don’t show them to you again  Find out more about how to manage cookies.
-How cookies are used on Digital Land Our introductory message You may see a pop-up welcome message when you first visit Digital Land.">
+How cookies are used on Digital Land Our cookie banner You may see a pop-up welcome message when you first visit Digital Land.">
     
       
       <link href="/stylesheets/dl-frontend.css" rel="stylesheet">
@@ -48,7 +48,7 @@ How cookies are used on Digital Land Our introductory message You may see a pop-
           </div>
           <div class="cooke-banner__buttons govuk-grid-row">
             <div class="govuk-grid-column-one-half">
-              <button class="govuk-button" onclick="acceptCookies();">Accept all cookies</button>
+              <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
             </div>
             <div class="govuk-grid-column-one-half">
               <a class="govuk-button"href="/cookies">Set cookie preferences</a>
@@ -64,7 +64,7 @@ How cookies are used on Digital Land Our introductory message You may see a pop-
     </div>
   
 </div>
-  
+
     <header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
     <div class="govuk-header__container govuk-width-container">
       <div class="header-proposition">
@@ -147,7 +147,7 @@ How cookies are used on Digital Land Our introductory message You may see a pop-
   
   
     
-      <li class="govuk-breadcrumbs__list-item" aria-current="page">Cookies</li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Cookies on Digital Land</li>
     
   
 
@@ -156,16 +156,28 @@ How cookies are used on Digital Land Our introductory message You may see a pop-
       <main class="govuk-main-wrapper">
 			
 
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-message__confirmation govuk-!-margin-bottom-8" data-cookie-confirmation="true">
+            <section class="gem-c-notice" aria-label="Notice" aria-live="polite" role="region">
+                <h2 class="gem-c-notice__title govuk-heading-m">Your cookie settings were saved</h2>
+                <p class="govuk-body govuk-!-margin-bottom-0">Government services may set additional cookies and, if so, will have their own cookie policy and banner.</p>
+            </section>
+        </div>
+    </div>
+</div>
+
+
   
 	<h1 class="govuk-heading-xl">
-	  Cookies
+	  Cookies on Digital Land
 	</h1>
 
 	<div class="govuk-grid-row">
 		<div class="govuk-grid-column-two-thirds">
 			<p class="govuk-body-l"></p>
       		<div class="markdown-output">
-        	
+            
 
 <p>Digital Land puts small files (known as ‘cookies’) onto your computer to collect information about how you browse the site.</p>
 
@@ -180,9 +192,11 @@ How cookies are used on Digital Land Our introductory message You may see a pop-
 
 <h3 id="how-cookies-are-used-on-digital-land">How cookies are used on Digital Land</h3>
 
-<h4 id="our-introductory-message">Our introductory message</h4>
+<h4 id="our-cookie-banner">Our cookie banner</h4>
 
 <p>You may see a pop-up welcome message when you first visit Digital Land. We’ll store a cookie so that your computer knows you’ve seen it and knows not to show it again.</p>
+
+<p>We will also store a cookie that records your choice. You can always change your mind and change your choice on this page.</p>
 
 <table>
 <thead>
@@ -195,8 +209,14 @@ How cookies are used on Digital Land Our introductory message You may see a pop-
 
 <tbody>
 <tr>
-<td>seen_cookie_message</td>
-<td>Saves a message to let us know that you’ve seen our cookie message</td>
+<td>cookies_preferences_set</td>
+<td>Lets us know you&rsquo;ve seen our cookie message</td>
+<td>1 month</td>
+</tr>
+
+<tr>
+<td>cookies_policy</td>
+<td>Saves your cookie choices</td>
 <td>1 month</td>
 </tr>
 </tbody>
@@ -259,11 +279,40 @@ How cookies are used on Digital Land Our introductory message You may see a pop-
 
 </div>
 
-      		</div>
+            </div>
 
-			<ul class="govuk-list govuk-list--bullet">
-	    	
-			</ul>
+            
+            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+            <h3 class="govuk-heading-l">Change your cookie options</h3>
+
+            <form id="cookie-form" class="govuk-form" onsubmit="return false;">
+                <fieldset class="govuk-fieldset" aria-describedby="cookie-ga-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">Cookies that measure website use</legend>
+                    <div id="cookie-ga-hint" class="govuk-!-margin-bottom-3">
+                        <p class="govuk-body">We use Google Analytics to measure how you use the website so we can improve it based on user needs.
+                        We do not allow Google to use or share the data about how you use this site.</p>
+                        <p class="govuk-body">Google Analytics sets cookies that store anonymised information about:</p>
+                        <ul class="govuk-list govuk-list--bullet">
+                            <li>how you got to the site</li>
+                            <li>the pages you visit on GOV.UK and government digital services, and how long you spend on each page</li>
+                            <li>what you click on while you're visiting the site</li>
+                        </ul>
+                    </div>
+                    <div class="govuk-form-group govuk-radios">
+                        <div class="govuk-radios__item" data-children-count="1">
+                            <input type="radio" name="cookies-usage" id="radio-ga-on" value="on" class="govuk-radios__input">
+                            <label for="radio-ga-on" class="govuk-label govuk-radios__label">Use cookies that measure my website use</label>
+                        </div>
+                        <div class="govuk-radios__item" data-children-count="1">
+                            <input type="radio" name="cookies-usage" id="radio-ga-off" value="off" class="govuk-radios__input">
+                            <label for="radio-ga-off" class="govuk-label govuk-radios__label">Do not use cookies that measure my website use</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button class="govuk-button" type="submit" onclick="saveCookiePrefs();">Save changes</button>
+            </form>
 
 		</div>
 	</div>
@@ -311,8 +360,6 @@ How cookies are used on Digital Land Our introductory message You may see a pop-
 
     <div id="global-app-error" class="app-error hidden"></div>
 
-    
-
     <script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend-3.0.0.min.js"></script>
     <script>
       
@@ -321,5 +368,36 @@ How cookies are used on Digital Land Our introductory message You may see a pop-
 
     <script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-cookies.js"></script>
     <script src="https://digital-land-design.herokuapp.com/static/javascripts/dl-frontend.js"></script>
+
+    
+<script src="/javascripts/dl-cookies.js"></script>
+<script language="javascript">
+    document.addEventListener('DOMContentLoaded', function(event) {
+        event.preventDefault()
+        var _cookie_options_saved_el = document.querySelector(".cookie-message__confirmation")
+        function saveCookiePrefs() {
+            if (document.getElementById("radio-ga-on").checked) {
+                acceptCookies()
+            } else {
+                declineCookies()
+            }
+            _cookie_options_saved_el.classList.add('saved')
+            scroll(0,0)
+        }
+
+        var cookiesPolicy = JSON.parse(getCookie("cookies_policy"))
+        if (cookiesPolicy != null) {
+            if (cookiesPolicy.usage) {
+                document.getElementById("radio-ga-on").checked = true
+            } else {
+                document.getElementById("radio-ga-off").checked = true
+            }
+        }
+
+        
+        window.saveCookiePrefs = saveCookiePrefs;
+    });
+</script>
+
   </body>
 </html>
