@@ -6,10 +6,20 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Tue, 11 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Digital land sprint notes</title>
+      <link>https://digital-land.github.io/weeknote/2020-08-25/</link>
+      <pubDate>Tue, 25 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2020-08-25/</guid>
+      <description>This sprint we’ve listed datasets we want to standardise, researched with more local authorities about their local plan making process, and added a cookie banner to our website.
+Local plans Euan and Paul started creating a backlog of policy data that needs to be standardised. We’re starting with data that is required in order to run RIPA. We’ve also been speaking to our planning colleagues to understand what they need.</description>
+    </item>
     
     <item>
       <title>Digital land sprint notes</title>
