@@ -6,10 +6,20 @@
     <description>Recent content in Weeknotes on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Tue, 25 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/weeknote/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Digital land sprint notes</title>
+      <link>https://digital-land.github.io/weeknote/2020-09-08/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2020-09-08/</guid>
+      <description>This sprint we’ve finished our first round of local plans user research into data providers, and we&amp;rsquo;re now speaking with data consumers. We&amp;rsquo;ve worked with BOPS and RIPA to build a backlog of planning data, and Paul has started building a collection of conservation areas.
+User research into local plans Lorna carried out the last interviews with local planning authorities about their local plan processes and systems, and how development policies might be understood as data.</description>
+    </item>
     
     <item>
       <title>Digital land sprint notes</title>
