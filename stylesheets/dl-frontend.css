@@ -8402,7 +8402,6 @@
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1.25;
-  padding-left: 8px;
 }
 
 @media print {
@@ -8430,6 +8429,20 @@
     font-size: 12pt;
     line-height: 1.2;
   }
+}
+
+.filter-group__auto-filter {
+  display: none;
+  padding-bottom: 15px;
+}
+
+.js-enabled .filter-group__auto-filter {
+  display: block;
+}
+
+.filter-group__auto-filter__input {
+  padding-left: 30px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36' width='40' height='40'%3E%3Cpath d='M25.7 24.8L21.9 21c.7-1 1.1-2.2 1.1-3.5 0-3.6-2.9-6.5-6.5-6.5S10 13.9 10 17.5s2.9 6.5 6.5 6.5c1.6 0 3-.6 4.1-1.5l3.7 3.7 1.4-1.4zM12 17.5c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5-2 4.5-4.5 4.5-4.5-2-4.5-4.5z' fill='currentColor'%3E%3C/path%3E%3C/svg%3E") #ffffff no-repeat -5px -3px;
 }
 
 .chart-bar__row {
@@ -9488,6 +9501,74 @@
   display: inline;
 }
 
+.local-plan-card {
+  max-width: 630px;
+  border: 1px solid #b1b4b6;
+  border-bottom-width: 4px;
+}
+
+.local-plan-card:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.local-plan-card__main {
+  padding: 10px;
+}
+
+.local-plan-card__info {
+  border-top: 1px solid #b1b4b6;
+  font-family: "GDS Transport", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+@media print {
+  .local-plan-card__info {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .local-plan-card__info {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .local-plan-card__info {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.local-plan-card__info > div:first-child {
+  border-right: 1px solid #b1b4b6;
+}
+
+.local-plan-card__info > div {
+  padding: 10px;
+}
+
+.local-plan-card__name {
+  margin-bottom: 0;
+}
+
+.local-plan-card__creators {
+  margin: 5px 0 0;
+}
+
+.local-plan-card__status .govuk-tag {
+  margin-right: 15px;
+}
+
 .collection-list > li:not(:last-child) {
   margin-bottom: 15px;
 }
@@ -10341,6 +10422,38 @@
   border: 2px solid #ffffff;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.facet-search__showing {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #b1b4b6;
+}
+
+.facet-search__showing > p {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 40.0625em) {
+  .lp-details-section {
+    border-left: 1px solid #b1b4b6;
+  }
+}
+
+.lp-section-break {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 40.0625em) {
+  .lp-section-break {
+    margin-bottom: 30px;
+  }
+}
+
+.dl-document-preview {
+  width: 156px;
+  height: 198px;
+  border: 5px solid #b1b4b6;
+  background: #ffffff;
 }
 
 [aria-sort] button,
