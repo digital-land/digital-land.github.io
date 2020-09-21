@@ -3154,17 +3154,6 @@
   text-decoration: none;
 }
 
-.govuk-footer__inline-list .govuk-footer__link,
-.govuk-footer__list .govuk-footer__link {
-  text-decoration: none;
-}
-
-.govuk-footer__inline-list .govuk-footer__link:hover:not(:focus), .govuk-footer__inline-list .govuk-footer__link:active:not(:focus),
-.govuk-footer__list .govuk-footer__link:hover:not(:focus),
-.govuk-footer__list .govuk-footer__link:active:not(:focus) {
-  text-decoration: underline;
-}
-
 .govuk-footer__section-break {
   margin: 0;
   margin-bottom: 30px;
