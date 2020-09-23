@@ -6,10 +6,21 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Tue, 08 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Digital land sprint notes</title>
+      <link>https://digital-land.github.io/weeknote/2020-09-22/</link>
+      <pubDate>Tue, 22 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2020-09-22/</guid>
+      <description>This sprint we held a show and tell and Loic played back the recent user research findings. We also published our local plans explorer, and Matt and Euan have been working hard listing local plan policies.
+Local plans Colm has built a local plans explorer. This tool is built on the data we collected with the local plans policy team.
+The explorer lets users search for a local plan. When a user selects a plan, they are able to view the main, high level information about each local plan.</description>
+    </item>
     
     <item>
       <title>Digital land sprint notes</title>
