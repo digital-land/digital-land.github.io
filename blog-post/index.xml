@@ -6,10 +6,19 @@
     <description>Recent content in Blog posts on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://digital-land.github.io/blog-post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Meet the Digital Land team</title>
+      <link>https://mhclgdigital.blog.gov.uk/2020/10/02/meet-the-digital-land-team/</link>
+      <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
+      <author>Matt Lucht</author>
+      <guid>https://mhclgdigital.blog.gov.uk/2020/10/02/meet-the-digital-land-team/</guid>
+      <description>Watch our video about the work the Digital Land team are doing to improve access to land and housing data.</description>
+    </item>
     
     <item>
       <title>Start treating planning applications as data, rather than documents</title>
@@ -18,6 +27,15 @@
       <author>Euan Mills</author>
       <guid>https://mhclgdigital.blog.gov.uk/2020/05/28/start-treating-planning-applications-as-data-rather-than-documents/</guid>
       <description>Euan talks about his first week in MHCLG Digital, and reflects on how digital is transforming the built environment sector.</description>
+    </item>
+    
+    <item>
+      <title>Unique property identifiers to be opened under Open Government License</title>
+      <link>https://mhclgdigital.blog.gov.uk/2020/04/02/unique-property-identifiers-to-be-opened-under-open-government-license/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      <author>Rishi Patel</author>
+      <guid>https://mhclgdigital.blog.gov.uk/2020/04/02/unique-property-identifiers-to-be-opened-under-open-government-license/</guid>
+      <description>Unique property identifiers will be available as open data under the Open Government Licence from July 2020. Read about what this means for the PropTech sector and the wider significance of the decision.</description>
     </item>
     
     <item>

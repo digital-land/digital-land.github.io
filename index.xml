@@ -6,10 +6,19 @@
     <description>Recent content on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Tue, 22 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Meet the Digital Land team</title>
+      <link>https://digital-land.github.io/blog-post/meet-digital-land-team/</link>
+      <pubDate>Fri, 02 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/blog-post/meet-digital-land-team/</guid>
+      <description>Watch our video about the work the Digital Land team are doing to improve access to land and housing data.</description>
+    </item>
     
     <item>
       <title>Digital land sprint notes</title>
@@ -149,6 +158,15 @@ Our focus on the prototype has been on an ‘exemplar page for local plan inform
       
       <guid>https://digital-land.github.io/weeknote/2020-04-10/</guid>
       <description>The planning process is complicated and dynamic. Local plans are a rich source of information, but the data used to produce that information isn’t easily extracted. Plans are published in a wide range of formats and aren’t always consistent in the types of information they include, or how they define or represent that information. This makes it difficult to collect, use and compare data across local plans and difficult for machines to read the data.</description>
+    </item>
+    
+    <item>
+      <title>Unique property identifiers to be opened under Open Government License</title>
+      <link>https://digital-land.github.io/blog-post/uprns-to-be-opened/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/blog-post/uprns-to-be-opened/</guid>
+      <description>Unique property identifiers will be available as open data under the Open Government Licence from July 2020. Read about what this means for the PropTech sector and the wider significance of the decision.</description>
     </item>
     
     <item>
