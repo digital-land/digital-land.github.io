@@ -1189,44 +1189,6 @@ We are also interested in the datasets that make these projects possible.</descr
     </item>
     
     <item>
-      <title></title>
-      <link>https://digital-land.github.io/project/local-plans/_contents/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/project/local-plans/_contents/</guid>
-      <description>Contents
- Current areas of investigation Upcoming areas of investigation Local plans project discovery report Timeline  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://digital-land.github.io/project/local-plans/_upcoming-areas-of-investigation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/project/local-plans/_upcoming-areas-of-investigation/</guid>
-      <description>We plan to explore the following by prototyping tools and by testing and consulting with people involved with developer contributions, and responding to your feedback. We will regularly add updates to the following issues on GitHub:</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://digital-land.github.io/project/single-register-of-planning/_contents/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/project/single-register-of-planning/_contents/</guid>
-      <description>Contents
- Goals Discovery Prototypes Blog posts  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://digital-land.github.io/project/single-register-of-planning/_introduction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/project/single-register-of-planning/_introduction/</guid>
-      <description>mySociety and the Ministry of Housing, Communities &amp;amp; Local Government are exploring how to make trustworthy, up to date planning application data easier to find, use, and build into services.</description>
-    </item>
-    
-    <item>
       <title>Access to data in bulk</title>
       <link>https://digital-land.github.io/needs/access-to-data-in-bulk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1272,16 +1234,6 @@ When a local authority identifies an area where they are at risk of not meeting 
       <guid>https://digital-land.github.io/glossary/aircraft-noise/</guid>
       <description>Land located close to airports and flight paths may be subject to aircraft noise. This noise is classified in 3 ways:
  mechanical noise — rotation of the engine parts, most noticeable when fan blades reach supersonic speeds aerodynamic noise — from the airflow around the surfaces of the aircraft, especially when flying low at high speeds noise from aircraft systems — cockpit and cabin pressurization and conditioning systems, and Auxiliary Power units  The Aviation Policy Framework outlines planning considerations with regards to aircraft noise</description>
-    </item>
-    
-    <item>
-      <title>Alpha</title>
-      <link>https://digital-land.github.io/project/local-plans/alpha/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/project/local-plans/alpha/</guid>
-      <description>Introduction In March 2020, we opened a supplier opportunity on Digital Marketplace to work on the local plans alpha phase. It was awarded to dxw.
-The project tested ideas for the better use of data held within and about local plans. Data within local plans is information contained in a plan, such as the number of houses a local authority plans to build. An example of data about local plans might be an overview of when each local planning authority last published theirs.</description>
     </item>
     
     <item>
@@ -1352,16 +1304,6 @@ Many users fear data you have to request cannot then be presented in services, e
     </item>
     
     <item>
-      <title>Brownfield sites</title>
-      <link>https://digital-land.github.io/project/brownfield-sites/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/project/brownfield-sites/</guid>
-      <description>Current areas of investigation We&amp;rsquo;re exploring the following areas to help us learn how we can open up brownfield site data and make it easier to use:
-In progress An index of brownfield site registers  Questions we&amp;rsquo;re asking Brownfield site data for local authorities can be difficult to locate and there’s no public register where all local authorities&amp;rsquo; data can be viewed in one place. Would creating a national index of all brownfield data be of value to local authorities and other interested members of the community?</description>
-    </item>
-    
-    <item>
       <title>Building age</title>
       <link>https://digital-land.github.io/glossary/building-age/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1386,18 +1328,6 @@ In progress An index of brownfield site registers  Questions we&amp;rsquo;re ask
       
       <guid>https://digital-land.github.io/glossary/community-infrastructure-levy/</guid>
       <description>The Community Infrastructure Levy (CIL) is a planning charge, introduced by the Planning Act 2008 as a tool for local authorities in England and Wales to help deliver infrastructure to support the development of their area. It came into force on 6 April 2010 through the Community Infrastructure Levy Regulations 2010.</description>
-    </item>
-    
-    <item>
-      <title>Compulsory purchase orders</title>
-      <link>https://digital-land.github.io/project/compulsory-purchase-orders/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/project/compulsory-purchase-orders/</guid>
-      <description>Upcoming areas of investigation We plan to explore the following by prototyping tools and by testing and consulting with people involved with developer contributions, and responding to your feedback.
-We will regularly add updates to the following issues on GitHub:
- Timeline 11 July 2019
-We met with colleagues from the Knowledge and Information Management team to understand the steps we need to take to publish decision letters and inspector reports.</description>
     </item>
     
     <item>
@@ -1569,18 +1499,6 @@ Such restrictions limit unforseen, innovative use-cases for the data.</descripti
     </item>
     
     <item>
-      <title>Developer contributions</title>
-      <link>https://digital-land.github.io/project/developer-contributions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/project/developer-contributions/</guid>
-      <description>Help us develop a common data format In the alpha phase of this project, we developed a new common standard for publishing data on developer contributions.
-We are proposing a simple data format for developer contributions that:
- meets the user needs we’ve identified requires minimal effort from local planning authorities to create and make the data available  You can help us improve the format by:
- joining the discussion on our GitHub issues making comments using our feedback form following the proposed guidance next time you publish your developer contributions  We will continue to develop the format as we learn from testing the format with data and the prototypes with users.</description>
-    </item>
-    
-    <item>
       <title>Development Corporation</title>
       <link>https://digital-land.github.io/glossary/development-corporation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1608,16 +1526,6 @@ We are proposing a simple data format for developer contributions that:
  built sold rented  You must order an EPC for potential buyers and tenants before you market your property to sell or rent.
 An EPC contains:
  information about a property’s energy use and typical energy costs recommendations about how to reduce energy use and save money  An EPC gives a property an energy efficiency rating from A (most efficient) to G (least efficient) and is valid for 10 years.</description>
-    </item>
-    
-    <item>
-      <title>Energy performance of buildings</title>
-      <link>https://digital-land.github.io/project/energy-performance-of-buildings/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/project/energy-performance-of-buildings/</guid>
-      <description>Finding an energy certificate or an energy assessor for a building is being made easier thanks to a new online service. A prototype being developed by the energy performance of buildings (EPB) team within the Ministry of Housing, Communities and Local Government (MHCLG) Digital Directorate lets users search:
- by postcode or accreditation number for an energy assessor by postcode or certificate reference for 3 types of energy certificate, including the energy performance certificate (EPC)  Previously if someone wanted to find an EPC they had to use the EPC register.</description>
     </item>
     
     <item>
@@ -1656,17 +1564,6 @@ An EPC contains:
       
       <guid>https://digital-land.github.io/glossary/flood-zone/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Golden thread of building information</title>
-      <link>https://digital-land.github.io/project/golden-thread-of-building-information/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/project/golden-thread-of-building-information/</guid>
-      <description>Upcoming areas of investigation We will be meeting with representatives of the Building Safety Programme to discuss relevant areas of investigation.
-Timeline December 2018
-We met with the team from the Building Safety Programme to demonstrate the work we&amp;rsquo;ve done so far around developer contributions and brownfield sites.</description>
     </item>
     
     <item>
@@ -1742,17 +1639,6 @@ We met with the team from the Building Safety Programme to demonstrate the work 
     </item>
     
     <item>
-      <title>Housing numbers</title>
-      <link>https://digital-land.github.io/project/housing-numbers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/project/housing-numbers/</guid>
-      <description>Current areas of investigation The following areas of investigation explore how the data could be used and made easier to work with:
-In progress Collecting and publishing housing numbers  Questions we&amp;rsquo;re asking What is the best way to collect and publish data from local plans?
-What we&amp;rsquo;re testing We’re focussing on one piece of data from local plans. We’ve now collected the housing numbers from most local plans, and are testing a tool to help us publish this data.</description>
-    </item>
-    
-    <item>
       <title>Housing waiting list</title>
       <link>https://digital-land.github.io/glossary/housing-waiting-list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1778,16 +1664,6 @@ We work in 2-week sprints, making it easier to manage and prioritise tasks. Thro
       
       <guid>https://digital-land.github.io/licence/inspire-end-user/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Infrastructure funding statement</title>
-      <link>https://digital-land.github.io/project/infrastructure-funding-statement/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/project/infrastructure-funding-statement/</guid>
-      <description>Current areas of investigation The following areas of investigation explore how the data could be used and made easier to work with:
-In progress How will the infrastructure funding statement be produced?  Questions we&amp;rsquo;re asking Each year local planning authorities will have to publish an infrastructure funding statement. This report will use data that has been published throughout the year (using our guidance) to give an annual summary.</description>
     </item>
     
     <item>
@@ -2305,15 +2181,6 @@ It would be difficult to create a service that knows which authority to send a p
       
       <guid>https://digital-land.github.io/needs/unrestrictive-usage/</guid>
       <description>When building a service, I want to use data openly and without any prohibitive restrictions, so that I am able to get full value from the data</description>
-    </item>
-    
-    <item>
-      <title>Unused properties</title>
-      <link>https://digital-land.github.io/project/unused-properties/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digital-land.github.io/project/unused-properties/</guid>
-      <description>We’re working with the Cities and Local Growth unit at MHCLG to investigate the best way to collect and publish data on unused properties. This project is part of Our plan for the high street: Budget 2018 brief, which states that “the government will trial a register of empty commercial properties to help prospective retailers to find empty properties and help local stakeholders tackle fragmented ownership on their high street.”</description>
     </item>
     
     <item>
