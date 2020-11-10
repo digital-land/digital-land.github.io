@@ -6,10 +6,20 @@
     <description>Recent content in Weeknotes on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Wed, 21 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/weeknote/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Digital land sprint notes</title>
+      <link>https://digital-land.github.io/weeknote/2020-11-10/</link>
+      <pubDate>Tue, 10 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2020-11-10/</guid>
+      <description>The main focus for this sprint has been around building a way to collect conservation areas and speaking with local planning authorities to help test our local plans schema
+Conservation areas We’ve collected the conservation area geographies for around 60 local planning authorities. As mentioned in previous week notes we’ve extended our data pipeline to allow us to create a consistent .CSV collection and over the course of the next sprint we’re aiming to publish the data we’ve collected on the digital land website.</description>
+    </item>
     
     <item>
       <title>Digital land sprint notes</title>

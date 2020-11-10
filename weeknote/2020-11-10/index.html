@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    
+    
+
+    
+      <title>Digital land sprint notes: 2020-11-10 | Weeknotes | Digital Land</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="/images/favicon.ico?0.24.0" type="image/x-icon" />
+    <link rel="mask-icon" href="/images/gov.uk_logotype_crown.svg?0.24.0" color="#0b0c0c">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png?0.24.0">
+    <link rel="apple-touch-icon" sizes="167x167" href="/images/apple-touch-icon-167x167.png?0.24.0">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon-152x152.png?0.24.0">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png?0.24.0">
+    <meta name="theme-color" content="#0b0c0c" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="/images/opengraph-image.png?0.24.0">
+    <meta property="description" content="The main focus for this sprint has been around building a way to collect conservation areas and speaking with local planning authorities to help test our local plans schema
+Conservation areas We’ve collected the conservation area geographies for around 60 local planning authorities. As mentioned in previous week notes we’ve extended our data pipeline to allow us to create a consistent .CSV collection and over the course of the next sprint we’re aiming to publish the data we’ve collected on the digital land website.">
+    
+      
+      <link href="/stylesheets/dl-frontend.css" rel="stylesheet">
+    
+  </head>
+
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    
+
+    <a href="#content" class="govuk-skip-link">Skip to main content</a>
+
+    
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button"href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div>
+
+    <header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+    <div class="govuk-header__container govuk-width-container">
+      <div class="header-proposition">
+        <div class="govuk-header__content">
+          <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+          Digital Land
+          </a>
+          <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+  
+          <nav>
+            <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+              <li class="govuk-header__navigation-item">
+                <a class="govuk-header__link" href="/about">Team</a>
+              </li>
+              <li class="govuk-header__navigation-item">
+                <a class="govuk-header__link" href="/project/">Projects</a>
+              </li>
+              <li class="govuk-header__navigation-item">
+                <a class="govuk-header__link" href="/weeknote/">Weeknotes</a>
+              </li>
+              <li class="govuk-header__navigation-item">
+                <a class="govuk-header__link" href="/blog-post/">Blog</a>
+              </li>
+              <li class="govuk-header__navigation-item">
+                <a class="govuk-header__link" href="/guidance/">Guidance</a>
+              </li>
+              <li class="govuk-header__navigation-item">
+                <a class="govuk-header__link" href="/dataset/">Datasets</a>
+              </li>
+              <li class="govuk-header__navigation-item">
+                <a class="govuk-header__link" href="/organisation/">Organisations</a>
+              </li>
+              <li class="govuk-header__navigation-item">
+                <a class="govuk-header__link" href="/map/">Map</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+</header>
+  
+
+    
+
+    <div id="global-header-bar"></div>
+
+    <div class="govuk-width-container">
+      <div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  Prototype
+</strong>
+    <span class="govuk-phase-banner__text">
+      This is a prototype.
+    </span>
+  </p>
+</div>
+
+    </div>
+
+
+    
+		<div id="content" class="govuk-width-container hugo-content">
+      
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    
+  
+    
+  
+    
+  
+  
+    
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://digital-land.github.io/">Digital Land</a>
+      </li>
+    
+  
+
+  
+  
+    
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://digital-land.github.io/weeknote/">Weeknotes</a>
+      </li>
+    
+  
+
+  
+  
+    
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Digital land sprint notes</li>
+    
+  
+
+  </ol>
+</div>
+      <main class="govuk-main-wrapper">
+			
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+      <span class="govuk-caption-xl">Weeknote</span>
+    	<h1 class="govuk-heading-xl">
+    	  Digital land sprint notes
+    	</h1>
+		</div>
+	</div>
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds markdown-output">
+			
+
+<p><em>The main focus for this sprint has been around building a way to collect conservation areas and speaking with local planning authorities to help test our local plans schema</em></p>
+
+<h2 id="conservation-areas">Conservation areas</h2>
+
+<p>We’ve collected the conservation area geographies for <a href="https://github.com/digital-land/conservation-area-geography-collection/tree/master/collection">around 60 local planning authorities</a>. As mentioned in previous week notes we’ve extended our data pipeline to allow us to create a consistent .CSV collection and over the course of the next sprint we’re aiming to publish the data we’ve collected on the digital land website.</p>
+
+<h2 id="local-plans">Local Plans</h2>
+
+<p>Loic has been leading a round of research looking at local plans data and helping test our <a href="https://digital-land.github.io/specification/dataset/local-plans/">proposed specification</a>. So far we’ve spoken with three local planning authorities who helped us test some of our assumptions and have further conversations lined up for next week. Based on what we’ve learnt so far we’ve made a few minor adjustments to the specification which we hope will make it easier for local authorities to provide data inline with their current ways of working.</p>
+
+<h2 id="brownfield-land">Brownfield land</h2>
+
+<p>Through our <a href="https://digital-land.github.io/collection/">logging</a> we noticed that some of the brownfield registers that we’ve been collecting from Local Authorities have started failing. Kishan has been investigating the causes of this, which were mostly cases where a new register has been published and the old one taken offline – the new registers have now been added to our <a href="https://github.com/digital-land/brownfield-land-collection/blob/master/index/dataset.csv">brownfield land collection</a>. In future sprints we’d like to explore more efficient ways of reporting and fixing collection errors.</p>
+
+<p>Colm has worked on simplifying our <a href="https://digital-land.github.io/dataset/brownfield-land/">brownfield land dataset page</a> with the goal of making it more focused on the data we’ve collected and hopefully making it easier for people to download and use the raw data.</p>
+
+<p>Speaking of people using the data, “The Countryside Charity” (formerly the Campaign to Protect Rural England) have published their <a href="https://www.cpre.org.uk/resources/state-of-brownfield-2020/">2020 State of Brownfield report</a>. After they published their 2019 report we spoke with them about their experience of having to compile a national picture from each individual local authority register, those discussions helped inform our design of our national dataset which The Countryside Charity used in their 2020 report.</p>
+
+<h2 id="developer-contributions">Developer contributions</h2>
+
+<p>In recent weeks our colleagues in MHCLG Planning Policy have been running workshops with the Planning Advisory Service to help local authorities produce their developer contributions Infrastructure Funding Statements. The workshops have highlighted a few areas which need further explanation. Based on what we learnt through these workshops we’ve updated our <a href="https://www.gov.uk/guidance/publish-your-developer-contributions-data">guidance on GOV.UK</a> as well as updated the <a href="https://digital-land.github.io/tools/developer-contribution-purposes.html">list of contribution purposes</a>.</p>
+
+<h2 id="policy-and-proptech">Policy and PropTech</h2>
+
+<p>Continuing to get feedback from the tech sector into the planning consultation, we worked with TechUK on a Planning for the Future Roundtable held 27 October. Paul Maltby, Chief Digital Officer, and Simon Gallagher, Director of Planning, both joined from MHCLG and attendees included a range of software providers across the planning industry. We were very appreciative of the additional input and grateful for the high engagement from tech companies throughout this process.</p>
+
+<h2 id="roadmap">Roadmap</h2>
+
+<p>Last sprint we talked about the work we’ve been doing to identify the priority planning datasets that PropTech are asking for. This sprint we’ve <a href="https://digital-land.github.io/project/">published our dataset roadmap</a> on the site. We know that priorities around what is needed are likely to change in response to the planning reform and we’ll continue to keep this list up-to-date.</p>
+
+<p>If you’d like to provide any feedback or are interested in finding out more about our work then please do <a href="mailto:digitalland@communities.gov.uk">get in touch</a>.</p>
+
+		</div>
+	</div>
+
+  
+
+
+      </main>
+		</div>
+		
+
+  
+
+  <footer class="govuk-footer" role="contentinfo">
+    <div class="govuk-width-container ">
+      <div class="govuk-footer__meta">
+        <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+          
+          <h2 class="govuk-visually-hidden">Support links</h2>
+          <ul class="govuk-footer__inline-list">
+          
+            <li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="/cookies">
+                Cookies
+              </a>
+            </li>
+          
+            <li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="/accessibility-statement">
+                Accessibility statement
+              </a>
+            </li>
+          
+            <li class="govuk-footer__inline-list-item">
+              <a class="govuk-footer__link" href="/design-system">
+                Design system
+              </a>
+            </li>
+          
+          </ul>
+          
+          <p>This site has been built using <a class="govuk-footer__link" href="https://github.com/digital-land">open source</a> software, contributions are welcome.</p>
+
+          <svg role="presentation" focusable="false" class="govuk-footer__licence-logo" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 483.2 195.7" height="17" width="41">
+            <path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+            />
+          </svg>
+          <span class="govuk-footer__licence-description">
+            All content is available under the
+            <a class="govuk-footer__link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated
+          </span>
+        </div>
+        <div class="govuk-footer__meta-item">
+          <a class="govuk-footer__link govuk-footer__copyright-logo" href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">© Crown copyright</a>
+        </div>
+      </div>
+    </div>
+</footer>
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="/javascripts/govuk/govuk-frontend.min.js"></script>
+    <script>
+      
+      window.GOVUKFrontend.initAll();
+    </script>
+
+    <script src="/javascripts/dl-cookies.js"></script>
+    <script src="/javascripts/dl-frontend.js"></script>
+
+    
+  </body>
+</html>
