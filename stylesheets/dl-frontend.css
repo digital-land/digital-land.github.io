@@ -7110,6 +7110,7 @@
 }
 
 .data-record__properties {
+  width: calc(100% - 30px);
   margin-bottom: 0;
   padding: 0 15px;
 }
@@ -7151,6 +7152,10 @@
     font-size: 14pt;
     line-height: 1.2;
   }
+}
+
+.data-reference {
+  display: inline-block;
 }
 
 .data-table__viewer,
