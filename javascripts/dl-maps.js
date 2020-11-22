@@ -23,6 +23,7 @@ const organisationBoundaryStyle = {
 
 function Map ($module) {
   this.$module = $module;
+  this.$wrapper = $module.closest('.dl-map__wrapper');
 }
 
 Map.prototype.init = function (params) {
@@ -33,6 +34,7 @@ Map.prototype.init = function (params) {
   this.styles = {
     defaultBoundaryStyle: organisationBoundaryStyle
   };
+  this.$loader = this.$wrapper.querySelector('.dl-map__loader');
 
   this.geojsonUrls = params.geojsonURLs || [];
   this.geojsonUrls = this.extractURLS();
@@ -88,6 +90,12 @@ Map.prototype.extractURLS = function () {
     });
   }
   return urlList
+};
+
+Map.prototype.hideLoader = function () {
+  if (this.$loader) {
+    this.$loader.classList.add('js-hidden');
+  }
 };
 
 Map.prototype.plotBoundaries = function (urls) {

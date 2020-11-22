@@ -6775,8 +6775,8 @@
   width: 100%;
   margin-bottom: 0;
   padding: 10px 15px;
-  transition: background .15s ease-in;
   background: #f3f2f1;
+  transition: background .15s ease-in;
 }
 
 @media (min-width: 40.0625em) {
@@ -8460,6 +8460,10 @@
   color: #0b0c0c;
 }
 
+.highlight-box p:last-child {
+  margin-bottom: 0;
+}
+
 .highlight-box--flush {
   margin-left: 0;
 }
@@ -9282,6 +9286,75 @@
   margin-top: 2px;
   margin-bottom: 0;
   font-weight: 700;
+}
+
+.dl-map__wrapper {
+  position: relative;
+}
+
+.dl-map__loader {
+  position: absolute;
+  z-index: 1001;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(243, 242, 241, 0.9);
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.11111;
+}
+
+@media print {
+  .dl-map__loader {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .dl-map__loader {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+}
+
+@media print {
+  .dl-map__loader {
+    font-size: 18pt;
+    line-height: 1.15;
+  }
+}
+
+.dl-map__loader-msg {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dl-map__spinning-loader {
+  width: 60px;
+  height: 60px;
+  margin: -30px auto 0 auto;
+  border: 8px solid rgba(86, 148, 202, 0.4);
+  border-radius: 50%;
+  border-top-color: rgba(29, 112, 184, 0.5);
+  border-top-color: #1d70b8;
+  animation: loader-rotate 1s linear infinite;
+}
+
+@keyframes loader-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .hub-list__separator {
@@ -11044,6 +11117,10 @@
   border-color: #d4351c;
   color: #d4351c;
   background: transparent;
+}
+
+.content__img {
+  max-width: 100%;
 }
 
 .dl-timeline__filter,
