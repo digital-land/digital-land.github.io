@@ -6661,6 +6661,13 @@
   color: transparent;
 }
 
+.dl-code {
+  padding: 2px 5px;
+  color: #0c2d4a;
+  background-color: #f3f2f1;
+  line-height: 1.31579em;
+}
+
 .dlf-pg-feedback {
   margin-top: 30px;
   border-bottom: 10px solid #1d70b8;
