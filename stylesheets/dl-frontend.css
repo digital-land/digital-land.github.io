@@ -9025,7 +9025,39 @@
 }
 
 .bfs__header .bfs__addr {
-  margin-bottom: 5px;
+  margin-bottom: 0;
+}
+
+.bfs__header .bfs__coords {
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  font-style: italic;
+}
+
+@media print {
+  .bfs__header .bfs__coords {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .bfs__header .bfs__coords {
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.42857;
+  }
+}
+
+@media print {
+  .bfs__header .bfs__coords {
+    font-size: 12pt;
+    line-height: 1.2;
+  }
 }
 
 .bfs__footer {
