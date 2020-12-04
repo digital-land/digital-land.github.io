@@ -6522,9 +6522,62 @@
   margin-bottom: -10px;
 }
 
+.dl-full-width-container {
+  max-width: 1920px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+@supports (margin: max(calc(0px))) {
+  .dl-full-width-container {
+    margin-right: max(15px, calc(15px + env(safe-area-inset-right)));
+    margin-left: max(15px, calc(15px + env(safe-area-inset-left)));
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .dl-full-width-container {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  @supports (margin: max(calc(0px))) {
+    .dl-full-width-container {
+      margin-right: max(30px, calc(15px + env(safe-area-inset-right)));
+      margin-left: max(30px, calc(15px + env(safe-area-inset-left)));
+    }
+  }
+}
+
+@media (min-width: 1980px) {
+  .dl-full-width-container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @supports (margin: max(calc(0px))) {
+    .dl-full-width-container {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
 .dl-header .govuk-header__content {
   width: 100%;
   padding-left: 0;
+}
+
+.dl-header--full {
+  border-color: #1d70b8;
+}
+
+@media (min-width: 60em) {
+  .dl-header--full .govuk-header__content nav {
+    display: inline-block;
+    margin-left: 60px;
+  }
+  .dl-header--full .govuk-header__navigation-item .govuk-header__link {
+    font-weight: 400;
+  }
 }
 
 .dlf-warning__icon--inline {
