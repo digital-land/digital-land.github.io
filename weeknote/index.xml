@@ -6,10 +6,21 @@
     <description>Recent content in Weeknotes on Digital Land</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Tue, 24 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://digital-land.github.io/weeknote/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Digital land sprint notes</title>
+      <link>https://digital-land.github.io/weeknote/2020-12-02/</link>
+      <pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://digital-land.github.io/weeknote/2020-12-02/</guid>
+      <description>The main focus for this sprint has been to pilot collecting development plan data from 3 local authorities.
+Development plan documents This sprint we launched a pilot with 3 local authorities (Southwark, Lambeth and Buckinghamshire) designed to help us collect development plan data.
+Loïc, Colm and Matt, prepared and published some guidance to help users in local authorities produce their data. This time we are trialling a different approach to our guidance.</description>
+    </item>
     
     <item>
       <title>Digital land sprint notes</title>
