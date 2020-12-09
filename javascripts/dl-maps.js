@@ -11,19 +11,31 @@ var colours = {
   lightBlue: '#1d70b8',
   darkBlue: '#003078',
   brown: '#594d00',
-  yellow_brown: '#a0964e'
+  yellow_brown: '#a0964e',
+  black: '#0b0c0c'
 };
 
-const organisationBoundaryStyle = {
+const boundaryStyle = {
   fillOpacity: 0.2,
   weight: 2,
   color: colours.darkBlue,
   fillColor: colours.lightBlue
 };
 
+const boundaryHoverStyle = {
+  fillOpacity: 0.25,
+  weight: 2,
+  color: colours.black,
+  fillColor: colours.darkBlue
+};
+
 function Map ($module) {
   this.$module = $module;
   this.$wrapper = $module.closest('.dl-map__wrapper');
+}
+
+function isFunction (x) {
+  return Object.prototype.toString.call(x) === '[object Function]'
 }
 
 Map.prototype.init = function (params) {
@@ -32,16 +44,18 @@ Map.prototype.init = function (params) {
   this.map = this.createMap();
   this.featureGroups = {};
   this.styles = {
-    defaultBoundaryStyle: organisationBoundaryStyle
+    defaultBoundaryStyle: boundaryStyle,
+    defaultBoundaryHoverStyle: boundaryHoverStyle
   };
   this.$loader = this.$wrapper.querySelector('.dl-map__loader');
 
   this.geojsonUrls = params.geojsonURLs || [];
+  const geojsonOptions = params.geojsonOptions || {};
   this.geojsonUrls = this.extractURLS();
   // if pointers to geojson provided add to the default featureGroup (a featureGroup has getBounds() func)
   if (this.geojsonUrls.length) {
     this.createFeatureGroup('initBoundaries').addTo(this.map);
-    this.plotBoundaries(this.geojsonUrls);
+    this.plotBoundaries(this.geojsonUrls, geojsonOptions);
   }
 
   return this
@@ -56,6 +70,33 @@ Map.prototype.setTiles = function () {
 
 Map.prototype.addStyle = function (name, style) {
   this.styles[name] = style;
+};
+
+/**
+ * Add event listeners for hovering a layer
+ * @param  {Object} layer A leaflet layer (e.g. a polygon)
+ * @param  {Object} options Options for configuring hover interaction
+ *    {Func} .check Check to decide whether styles+ should be performed
+ *    {Object} .defaultStyle Leaflet style object to apply when not hovered
+ *    {Object} .hoverStyle Leaflet style object to apply when hovered
+ *    {Func} .cb Optional callback to trigger, accepts cb(layer <- leaflet layer, hovered <- boolean)
+ */
+Map.prototype.addLayerHoverState = function (layer, options) {
+  const hasCheck = (options.check && isFunction(options.check));
+  const defaultStyle = options.defaultStyle || this.styles.defaultBoundaryStyle;
+  const hoverStyle = options.hoverStyle || this.styles.defaultBoundaryHoverStyle;
+  layer.on('mouseover', function () {
+    if ((hasCheck) ? options.check(layer) : true) {
+      layer.setStyle(hoverStyle);
+      if (options.cb && isFunction(options.cb)) { options.cb(layer, true); }
+    }
+  });
+  layer.on('mouseout', function () {
+    if ((hasCheck) ? options.check(layer) : true) {
+      layer.setStyle(defaultStyle);
+      if (options.cb && isFunction(options.cb)) { options.cb(layer, false); }
+    }
+  });
 };
 
 Map.prototype.createMap = function () {
@@ -78,6 +119,16 @@ Map.prototype.createFeatureGroup = function (name, options) {
   const fG = L.featureGroup([], _options);
   this.featureGroups[name] = fG;
   return fG
+};
+
+Map.prototype.setMapHeight = function (height) {
+  const h = height || (2 / 3);
+  const $map = this.$module;
+  const width = $map.offsetWidth;
+  const v = (h < 1) ? width * h : h;
+
+  $map.style.height = v + 'px';
+  this.map.invalidateSize();
 };
 
 Map.prototype.zoomToLayer = function (layer) {
@@ -108,10 +159,26 @@ Map.prototype.hideLoader = function () {
   }
 };
 
-Map.prototype.plotBoundaries = function (urls) {
+Map.prototype.geojsonLayer = function (data, type, options) {
+  const style = options.style || this.styles.defaultBoundaryStyle;
+  const onEachFeature = options.onEachFeature || function () {};
+  if (type === 'point') {
+    return L.geoJSON(data, {
+      pointToLayer: options.pointToLayer,
+      onEachFeature: onEachFeature
+    })
+  }
+  return L.geoJSON(data, {
+    style: style,
+    onEachFeature: onEachFeature
+  })
+};
+
+Map.prototype.plotBoundaries = function (urls, options) {
+  const that = this;
   const map = this.map;
   const defaultFG = this.featureGroups.initBoundaries;
-  const defaultStyle = this.styles.defaultBoundaryStyle;
+  const _type = options.type || 'polygon';
   var count = 0;
   urls.forEach(function (url) {
     fetch(url)
@@ -119,9 +186,8 @@ Map.prototype.plotBoundaries = function (urls) {
         return response.json()
       })
       .then((data) => {
-        let boundary = L.geoJSON(data, {
-          style: defaultStyle
-        }).addTo(defaultFG);
+        const layer = options.geojsonDataToLayer(data, options) || that.geojsonLayer(data, _type, options);
+        layer.addTo(defaultFG);
         count++;
         // only pan map once all boundaries have loaded
         if (count === urls.length) {
@@ -142,6 +208,253 @@ Map.prototype.setupOptions = function (params) {
   this.mapId = params.mapId || 'aMap';
 };
 
+var utils = {};
+
+function camelCaseReplacer (match, s) {
+  return s.toUpperCase()
+}
+
+utils.curie_to_url_part = function (curie) {
+  return curie.replace(':', '/')
+};
+
+utils.toCamelCase = function (s) {
+  // check to see string isn't already camelCased
+  var nonWordChars = /\W/g;
+  if (s && s.match(nonWordChars)) {
+    return s.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, camelCaseReplacer)
+  }
+  return s
+};
+
+utils.truncate = function (s, len) {
+  return s.slice(0, len) + '...'
+};
+
+/**
+ * Create an organisation mapper. Maps organisation ids to names
+ * @param  {Array} orgsObj Array of organisation objs. Must contain .id and .name propterties
+ */
+utils.createOrgMapper = function (orgsObj) {
+  const mapper = {};
+  orgsObj.forEach(function (o) {
+    mapper[o.id] = o.name;
+  });
+  return mapper
+};
+
+/* global L, fetch */
+
+function isFunction$1 (x) {
+  return Object.prototype.toString.call(x) === '[object Function]'
+}
+
+// set up config variables
+
+let organisationMapper = {};
+
+const popupTemplate =
+  '<div class="bfs">' +
+    '{hasEndDate}' +
+    '<div class="bfs__header">' +
+      '<span class="govuk-caption-s">{site}</span>' +
+      '<h3 class="govuk-heading-s bfs__addr">{site-address}</h3>' +
+      '{ifCoords}' +
+    '</div>' +
+    '<div class="govuk-grid-row bfs__key-data">' +
+      '<dl class="govuk-grid-column-one-half">' +
+        '<dt>Hectare</dt>' +
+        '<dd>{hectares}</dd>' +
+      '</dl>' +
+      '<dl class="govuk-grid-column-one-half">' +
+        '<dt>Dwellings</dt>' +
+        '<dd>{isRange}</dd>' +
+      '</dl>' +
+    '</div>' +
+    '<div class="bfs__meta">' +
+      '{orgLink}' +
+      '{optionalFields}' +
+      '{datesSection}' +
+    '</div>' +
+    '<div class="bfs__footer">' +
+      'From resource: <a href="https://digital-land.github.io/resource/{resource}" class="govuk-link">{resourceTrunc}</a>' +
+    '</div>' +
+  '</div>';
+
+const popupOptions = {
+  minWidth: '270',
+  maxWidth: '270',
+  className: 'bfs-popup'
+};
+
+const brownfieldSiteStyle = {
+  color: '#745729',
+  fillColor: '#745729',
+  fillOpacity: 0.5
+};
+
+const historicalBrownfieldSiteStyle = {
+  color: '#d53880 ',
+  fillColor: '#f3f2f1',
+  fillOpacity: 0.5
+};
+
+const potentiallyNullFields = ['deliverable', 'hazardous-substances', 'ownership', 'planning-permission-status', 'planning-permission-type'];
+
+// private functions
+
+function ifCoords (data) {
+  if (data.latitude && data.longitude) {
+    return `<span class="bfs__coords">${data.latitude},${data.longitude}</span>`
+  }
+  return ''
+}
+
+function datesSection (data) {
+  return definitionList('Date added', data['start-date'])
+}
+
+function definitionList (field, value) {
+  return ['<dl>',
+    `<dt>${field}</dt>`,
+    `<dd>${value}</dd>`,
+    '</dl>'].join('\n')
+}
+
+function hasEndDate (data) {
+  if (data['end-date']) {
+    return '<span class="bfs__end-banner">End date: ' + data['end-date'] + '</span>'
+  }
+  return ''
+}
+
+function isRange (data) {
+  var str = data['minimum-net-dwellings'];
+  if (data['minimum-net-dwellings'] != null) {
+    if (parseInt(data['minimum-net-dwellings']) !== parseInt(data['maximum-net-dwellings']) || parseInt(data['maximum-net-dwellings']) === 0) {
+      str = data['minimum-net-dwellings'] + '-' + data['maximum-net-dwellings'];
+    }
+    return str
+  }
+  return ''
+}
+
+function linkToOrg (data) {
+  let orgName = data.organisation;
+  if (Object.prototype.hasOwnProperty.call(organisationMapper, data.organisation)) {
+    orgName = organisationMapper[data.organisation];
+  }
+  return '<dl>' +
+  '<dt>Organisation</dt>' +
+  `<dd><a class="govuk-link" href="https://digital-land.github.io/organisation/${utils.curie_to_url_part(data.organisation)}">${orgName}</a></dd>` +
+  '</dl>'
+}
+
+function optionalFields (data) {
+  let extras = '';
+  potentiallyNullFields.forEach(function (field) {
+    if (data[field]) {
+      extras += definitionList(field, data[field]);
+    }
+  });
+  return extras
+}
+
+function processSiteData (row) {
+  const templateFuncs = {
+    ifCoords: ifCoords,
+    isRange: isRange,
+    hasEndDate: hasEndDate,
+    datesSection: datesSection,
+    orgLink: linkToOrg,
+    resourceTrunc: utils.truncate(row.resource, 9),
+    optionalFields: optionalFields
+  };
+  // need Object.assign polyfill for IE
+  return Object.assign(row, templateFuncs)
+}
+
+function bindBrownfieldPopup (feature, layer) {
+  var popupHTML = createPopup(feature.properties);
+  layer
+    .bindPopup(popupHTML, popupOptions)
+    .on('popupopen', function (e) {
+      console.log('Brownfield site selected', e.sourceTarget.feature);
+    });
+}
+
+function plot (feature, latlng) {
+  var style = (feature.properties['end-date']) ? historicalBrownfieldSiteStyle : brownfieldSiteStyle;
+  var size = siteSize(feature.properties.hectares);
+  style.radius = size.toFixed(2);
+  return L.circle(latlng, style)
+}
+
+// public methods - available on object
+
+function createPopup (row) {
+  return L.Util.template(popupTemplate, processSiteData(row))
+}
+
+/**
+ * Converts brownfield geojson data into points and popups on the map
+ * @param  {Object} geojson Set of geojson features
+ * @param  {Object} options Options overriding defaults
+ *    {Func} .onEachFeature Function to execute on each feature layer created
+ */
+function brownfieldGeojsonToLayer (geojson, options) {
+  return L.geoJSON(geojson, {
+    pointToLayer: plot,
+    onEachFeature: options.onEachFeature || bindBrownfieldPopup
+  })
+}
+
+function loadBrownfieldSites (map, url, groupName, options) {
+  const groupNameCC = utils.toCamelCase(groupName);
+  // check to see if already loaded data
+  if (!Object.prototype.hasOwnProperty.call(map.featureGroups, groupNameCC)) {
+    console.log('fetch from url', url);
+    fetch(url)
+      .then(resp => resp.json())
+      .then((data) => {
+        var l = map.createFeatureGroup(groupNameCC);
+        const geojsonLayer = brownfieldGeojsonToLayer(data, options);
+        geojsonLayer.addTo(l);
+        if (typeof options.layerGroup !== 'undefined') {
+          l.addTo(options.layerGroup);
+        }
+        // run any callback
+        if (options.cb && isFunction$1(options.cb)) { options.cb(l, groupName); }
+      })
+      .catch(function (err) {
+        console.log('error loading brownfield sites', err);
+      });
+  }
+}
+
+// this feels messy!
+function registerMapper (mapper) {
+  organisationMapper = mapper;
+}
+
+function siteSize (hectares) {
+  if (isNaN(hectares)) {
+    return 100 // give it a default size
+  }
+  return (Math.sqrt((hectares * 10000) / Math.PI))
+}
+
+const brownfieldSites = {
+  calcSiteSize: siteSize,
+  createPopup: createPopup,
+  geojsonToLayer: brownfieldGeojsonToLayer,
+  loadSites: loadBrownfieldSites,
+  popupOptions: popupOptions,
+  popupTemplate: popupTemplate,
+  registerOrganisationMapper: registerMapper
+};
+
 exports.Map = Map;
+exports.brownfieldSites = brownfieldSites;
 
 })));

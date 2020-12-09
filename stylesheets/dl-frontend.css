@@ -9449,6 +9449,69 @@
   }
 }
 
+.dl-map__side-panel {
+  position: absolute;
+  z-index: 1001;
+  top: 15px;
+  right: 15px;
+  width: 330px;
+  background: #ffffff;
+}
+
+.dl-map__side-panel__section {
+  padding: 15px;
+  border-top: 1px solid #b1b4b6;
+}
+
+.dl-map__side-panel__section:first-child {
+  border-top: 0;
+}
+
+.dl-map__side-panel__section--title {
+  border-top-width: 2px;
+  border-top-color: #0b0c0c;
+}
+
+.dl-map__highlight--yellow {
+  display: block;
+  margin-left: -7px;
+  padding: 4px 7px;
+  color: #594d00;
+  background: #fff7bf;
+}
+
+.dl-map__error {
+  color: #d4351c;
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.14286;
+}
+
+@media print {
+  .dl-map__error {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .dl-map__error {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+}
+
+@media print {
+  .dl-map__error {
+    font-size: 14pt;
+    line-height: 1.2;
+  }
+}
+
 .hub-list__separator {
   margin-top: 30px;
   margin-bottom: 20px;
