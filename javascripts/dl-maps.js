@@ -4,7 +4,46 @@
 	(factory((global.DLMaps = {})));
 }(this, (function (exports) { 'use strict';
 
-/* global L, fetch */
+var utils = {};
+
+function camelCaseReplacer (match, s) {
+  return s.toUpperCase()
+}
+
+utils.curie_to_url_part = function (curie) {
+  return curie.replace(':', '/')
+};
+
+utils.toCamelCase = function (s) {
+  // check to see string isn't already camelCased
+  var nonWordChars = /\W/g;
+  if (s && s.match(nonWordChars)) {
+    return s.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, camelCaseReplacer)
+  }
+  return s
+};
+
+utils.truncate = function (s, len) {
+  return s.slice(0, len) + '...'
+};
+
+/**
+ * Create an organisation mapper. Maps organisation ids to names
+ * @param  {Array} orgsObj Array of organisation objs. Must contain .id and .name propterties
+ */
+utils.createOrgMapper = function (orgsObj) {
+  const mapper = {};
+  orgsObj.forEach(function (o) {
+    mapper[o.id] = o.name;
+  });
+  return mapper
+};
+
+utils.isFunction = function (x) {
+  return Object.prototype.toString.call(x) === '[object Function]'
+};
+
+/* global L, fetch, window */
 
 // govuk consistent colours
 var colours = {
@@ -32,10 +71,6 @@ const boundaryHoverStyle = {
 function Map ($module) {
   this.$module = $module;
   this.$wrapper = $module.closest('.dl-map__wrapper');
-}
-
-function isFunction (x) {
-  return Object.prototype.toString.call(x) === '[object Function]'
 }
 
 Map.prototype.init = function (params) {
@@ -82,19 +117,19 @@ Map.prototype.addStyle = function (name, style) {
  *    {Func} .cb Optional callback to trigger, accepts cb(layer <- leaflet layer, hovered <- boolean)
  */
 Map.prototype.addLayerHoverState = function (layer, options) {
-  const hasCheck = (options.check && isFunction(options.check));
+  const hasCheck = (options.check && utils.isFunction(options.check));
   const defaultStyle = options.defaultStyle || this.styles.defaultBoundaryStyle;
   const hoverStyle = options.hoverStyle || this.styles.defaultBoundaryHoverStyle;
   layer.on('mouseover', function () {
     if ((hasCheck) ? options.check(layer) : true) {
       layer.setStyle(hoverStyle);
-      if (options.cb && isFunction(options.cb)) { options.cb(layer, true); }
+      if (options.cb && utils.isFunction(options.cb)) { options.cb(layer, true); }
     }
   });
   layer.on('mouseout', function () {
     if ((hasCheck) ? options.check(layer) : true) {
       layer.setStyle(defaultStyle);
-      if (options.cb && isFunction(options.cb)) { options.cb(layer, false); }
+      if (options.cb && utils.isFunction(options.cb)) { options.cb(layer, false); }
     }
   });
 };
@@ -121,13 +156,30 @@ Map.prototype.createFeatureGroup = function (name, options) {
   return fG
 };
 
-Map.prototype.setMapHeight = function (height) {
-  const h = height || (2 / 3);
-  const $map = this.$module;
-  const width = $map.offsetWidth;
-  const v = (h < 1) ? width * h : h;
+function greaterThanViewport (h) {
+  return h > window.innerHeight
+}
 
-  $map.style.height = v + 'px';
+/**
+ * Sets the height of the map
+ * @param  {Integer} height Height in pixels
+ */
+Map.prototype.setMapHeight = function (height) {
+  const $map = this.$module;
+  const h = height || (2 / 3);
+  const offsetMin = 75;
+  const minHeight = 300;
+  const width = $map.offsetWidth;
+  let v = (h < 1) ? width * h : h;
+
+  // limit height to less than viewport to help scrolling
+  if (greaterThanViewport(v)) {
+    const portion = window.innerHeight * 0.1;
+    v = window.innerHeight - ((portion < offsetMin) ? offsetMin : portion);
+  }
+
+  // but should never be less than minHeight
+  $map.style.height = ((v < minHeight) ? minHeight : v) + 'px';
   this.map.invalidateSize();
 };
 
@@ -186,7 +238,7 @@ Map.prototype.plotBoundaries = function (urls, options) {
         return response.json()
       })
       .then((data) => {
-        const layer = options.geojsonDataToLayer(data, options) || that.geojsonLayer(data, _type, options);
+        const layer = (utils.isFunction(options.geojsonDataToLayer)) ? options.geojsonDataToLayer(data, options) : that.geojsonLayer(data, _type, options);
         layer.addTo(defaultFG);
         count++;
         // only pan map once all boundaries have loaded
@@ -208,46 +260,38 @@ Map.prototype.setupOptions = function (params) {
   this.mapId = params.mapId || 'aMap';
 };
 
-var utils = {};
+// assign() polyfill from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
+// probably just needed by IE browsers
+if (typeof Object.assign !== 'function') {
+  // Must be writable: true, enumerable: false, configurable: true
+  Object.defineProperty(Object, 'assign', {
+    value: function assign (target, varArgs) { // .length of function is 2
+      if (target === null || target === undefined) {
+        throw new TypeError('Cannot convert undefined or null to object')
+      }
 
-function camelCaseReplacer (match, s) {
-  return s.toUpperCase()
-}
+      var to = Object(target);
 
-utils.curie_to_url_part = function (curie) {
-  return curie.replace(':', '/')
-};
+      for (var index = 1; index < arguments.length; index++) {
+        var nextSource = arguments[index];
 
-utils.toCamelCase = function (s) {
-  // check to see string isn't already camelCased
-  var nonWordChars = /\W/g;
-  if (s && s.match(nonWordChars)) {
-    return s.toLowerCase().replace(/[^a-zA-Z0-9]+(.)/g, camelCaseReplacer)
-  }
-  return s
-};
-
-utils.truncate = function (s, len) {
-  return s.slice(0, len) + '...'
-};
-
-/**
- * Create an organisation mapper. Maps organisation ids to names
- * @param  {Array} orgsObj Array of organisation objs. Must contain .id and .name propterties
- */
-utils.createOrgMapper = function (orgsObj) {
-  const mapper = {};
-  orgsObj.forEach(function (o) {
-    mapper[o.id] = o.name;
+        if (nextSource !== null && nextSource !== undefined) {
+          for (var nextKey in nextSource) {
+            // Avoid bugs when hasOwnProperty is shadowed
+            if (Object.prototype.hasOwnProperty.call(nextSource, nextKey)) {
+              to[nextKey] = nextSource[nextKey];
+            }
+          }
+        }
+      }
+      return to
+    },
+    writable: true,
+    configurable: true
   });
-  return mapper
-};
+}
 
 /* global L, fetch */
-
-function isFunction$1 (x) {
-  return Object.prototype.toString.call(x) === '[object Function]'
-}
 
 // set up config variables
 
@@ -370,7 +414,6 @@ function processSiteData (row) {
     resourceTrunc: utils.truncate(row.resource, 9),
     optionalFields: optionalFields
   };
-  // need Object.assign polyfill for IE
   return Object.assign(row, templateFuncs)
 }
 
@@ -424,7 +467,7 @@ function loadBrownfieldSites (map, url, groupName, options) {
           l.addTo(options.layerGroup);
         }
         // run any callback
-        if (options.cb && isFunction$1(options.cb)) { options.cb(l, groupName); }
+        if (options.cb && utils.isFunction(options.cb)) { options.cb(l, groupName); }
       })
       .catch(function (err) {
         console.log('error loading brownfield sites', err);
