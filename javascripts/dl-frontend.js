@@ -2264,6 +2264,10 @@ utils.createOrgMapper = function (orgsObj) {
   return mapper
 };
 
+utils.isFunction = function (x) {
+  return Object.prototype.toString.call(x) === '[object Function]'
+};
+
 function polyfill (options) {
   // polyfill for browsers without NodeList forEach method
   if (window.NodeList && !window.NodeList.prototype.forEach) {
