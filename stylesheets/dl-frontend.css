@@ -6580,6 +6580,38 @@
   }
 }
 
+.dl-header__service-name {
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.11111;
+  padding-left: 15px;
+}
+
+@media print {
+  .dl-header__service-name {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .dl-header__service-name {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+}
+
+@media print {
+  .dl-header__service-name {
+    font-size: 18pt;
+    line-height: 1.15;
+  }
+}
+
 .dlf-warning__icon--inline {
   font-family: "GDS Transport", arial, sans-serif;
   -webkit-font-smoothing: antialiased;
