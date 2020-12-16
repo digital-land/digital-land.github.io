@@ -74,7 +74,8 @@ function Map ($module) {
 }
 
 Map.prototype.init = function (params) {
-  this.setupOptions(params);
+  const _params = params || {};
+  this.setupOptions(_params);
   this.tiles = this.setTiles();
   this.map = this.createMap();
   this.featureGroups = {};
@@ -84,8 +85,9 @@ Map.prototype.init = function (params) {
   };
   this.$loader = this.$wrapper.querySelector('.dl-map__loader');
 
-  this.geojsonUrls = params.geojsonURLs || [];
-  const geojsonOptions = params.geojsonOptions || {};
+  console.log("params", _params);
+  this.geojsonUrls = _params.geojsonURLs || [];
+  const geojsonOptions = _params.geojsonOptions || {};
   this.geojsonUrls = this.extractURLS();
   // if pointers to geojson provided add to the default featureGroup (a featureGroup has getBounds() func)
   if (this.geojsonUrls.length) {
