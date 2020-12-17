@@ -83,7 +83,10 @@ Map.prototype.init = function (params) {
     defaultBoundaryStyle: boundaryStyle,
     defaultBoundaryHoverStyle: boundaryHoverStyle
   };
-  this.$loader = this.$wrapper.querySelector('.dl-map__loader');
+
+  if (this.$wrapper) {
+    this.$loader = this.$wrapper.querySelector('.dl-map__loader');
+  }
 
   console.log("params", _params);
   this.geojsonUrls = _params.geojsonURLs || [];
