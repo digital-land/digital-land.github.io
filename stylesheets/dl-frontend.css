@@ -10029,6 +10029,7 @@
 
 .dl-sbs__entry-heading {
   color: #505a5f;
+  font-weight: 400;
 }
 
 .dl-sbs__entry--current:before {
@@ -10038,6 +10039,7 @@
 
 .dl-sbs__entry--current .dl-sbs__entry-heading {
   color: #0b0c0c;
+  font-weight: 700;
 }
 
 .dl-timeline__entry__content {
@@ -10073,6 +10075,11 @@
 
 .dl-timeline__entry__content p:not(.govuk-body) {
   margin: 5px 0;
+}
+
+.dl-sbs__nav__title {
+  padding-top: 15px;
+  border-top: 4px solid #1d70b8;
 }
 
 .data-item {
