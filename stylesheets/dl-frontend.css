@@ -6738,6 +6738,7 @@
   white-space: nowrap;
 }
 
+.dl-break-word,
 .long-link {
   word-break: break-all;
 }

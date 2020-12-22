@@ -326,7 +326,7 @@ const popupTemplate =
       '{datesSection}' +
     '</div>' +
     '<div class="bfs__footer">' +
-      'From resource: <a href="https://digital-land.github.io/resource/{resource}" class="govuk-link">{resourceTrunc}</a>' +
+      '<a href="{slug}" class="govuk-link">View complete record</a>' +
     '</div>' +
   '</div>';
 
