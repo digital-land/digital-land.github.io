@@ -9276,6 +9276,74 @@
   margin-left: 5px;
 }
 
+.bfs-hectares-key {
+  box-sizing: border-box;
+  width: 90px;
+  padding: 10px 5px 0;
+  background: #ffffff;
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media print {
+  .bfs-hectares-key {
+    font-family: sans-serif;
+  }
+}
+
+.bfs-hectares-key__title {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bfs-hectares-key__container {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+}
+
+.bfs-hectare {
+  position: absolute;
+  bottom: 10px;
+  left: 27px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #745729;
+  border-radius: 50%;
+}
+
+.bfs-hectare:after {
+  content: "1";
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: calc(50% - 8px);
+  width: 16px;
+  height: 16px;
+  padding-top: 1px;
+  border-radius: 50%;
+  background: #ffffff;
+  font-size: 10px;
+  line-height: 1;
+  text-align: center;
+}
+
+.bfs-hectare--lg {
+  left: 14px;
+  width: 50px;
+  height: 50px;
+}
+
+.bfs-hectare--lg:after {
+  content: "50";
+}
+
 .map-wrapper {
   position: relative;
   padding-top: 30px;
@@ -9484,6 +9552,22 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.dl-map__panel-bottom-left, .dl-map__panel-top-left {
+  position: absolute;
+  z-index: 1000;
+  box-shadow: 0 0 3px 0 rgba(80, 90, 95, 0.75);
+}
+
+.dl-map__panel-bottom-left {
+  bottom: 10px;
+  left: 10px;
+}
+
+.dl-map__panel-top-left {
+  top: 10px;
+  left: 10px;
 }
 
 .dl-map__side-panel {
