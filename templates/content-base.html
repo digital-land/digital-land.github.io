@@ -1,0 +1,18 @@
+{% extends "digital-land-frontend/dlf-base.html" %}
+
+{% block dlHead %}
+{%- if pageContent.frontmatter.external_url is defined %}
+<!-- redirect to {{pageContent.frontmatter.external_url}} -->
+<meta http-equiv="Refresh" pageContent="0; url='{{pageContent.frontmatter.external_url}}'" />
+{% endif -%}
+{% endblock dlHead %}
+
+{% block beforeContent %}
+  {% include 'digital-land-frontend/partials/dl-prototype-banner.html' %}
+  {% block dl_breadcrumbs %}
+  {{ govukBreadcrumbs({
+    "items": breadcrumbs
+  }) }}
+  {% endblock %}
+{% endblock %}
+

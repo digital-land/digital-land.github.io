@@ -1,0 +1,45 @@
+name: Build digital-land.github.io
+
+on:
+  push:
+    paths-ignore:
+      - 'docs/**'
+    branches:
+      - main
+  schedule:
+    - cron: '30 5 * * *'
+  workflow_dispatch:
+
+env:
+  DLB_BOT_EMAIL: ${{ secrets.DLB_BOT_EMAIL }}
+  DLB_BOT_TOKEN: ${{ secrets.DLB_BOT_TOKEN }}
+  DLB_BOT_USERNAME: ${{ secrets.DLB_BOT_USERNAME }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: true
+    - uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Setup git
+      run: |
+        git config user.email "${DLB_BOT_EMAIL}"
+        git config user.name "${DLB_BOT_USERNAME}"
+        git remote set-url origin https://${DLB_BOT_USERNAME}:${DLB_BOT_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        git checkout main
+
+    - name: Install dependencies
+      run: make init
+
+    - name: Start clean
+      run: make clean
+
+    - name: Build docs
+      run: make render
+
+    - name: Commit docs
+      run: make commit-docs

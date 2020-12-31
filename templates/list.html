@@ -1,0 +1,39 @@
+{% extends "content-base.html" %}
+
+{% block content %}
+<h1 class="govuk-heading-xl">{{ pageContent.title }}</h1>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    {%- if pageContent.lede %}<p class="govuk-body-l">{{ pageContent.lede }}</p>{% endif -%}
+    {{ pageContent.content|safe }}
+  </div>
+  <div class="govuk-grid-column-two-thirds">
+    <ul class="govuk-list{%- if not pageContent.show_summaries %} govuk-list--bullet{% endif %}">
+      {% for i in pageContent.pages %}
+      {% set itemUrl = i.frontmatter.external_url if i.frontmatter.external_url is defined else i.url %}
+      <li>
+        {%- if pageContent.show_summaries -%}
+        <article>
+          <header>
+            <h2 class="govuk-heading-m">
+                <a class="govuk-link" href="{{ itemUrl }}">{{ i.title }}</a>
+            </h2>
+          </header>
+          {% if i.summary %}
+          <div class="entry-summary">
+            {{ i.summary|markdown }}
+          </div>
+          {% endif %}
+        </article>
+        {% else %}
+        <a class="govuk-link" href="{{ itemUrl }}">{{ i.title }}</a>
+        {% endif -%}
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</div>
+
+{% endblock %}
+

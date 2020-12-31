@@ -1,0 +1,50 @@
+{% extends "content-base.html" %}
+
+{% block content %}
+<h1 class="govuk-heading-xl">{{ pageContent.title }}</h1>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    {%- if pageContent.lede %}<p class="govuk-body-l">{{ pageContent.lede }}</p>{% endif -%}
+    {{ pageContent.content|safe }}
+  </div>
+
+  <div class="govuk-grid-column-two-thirds">
+    {% for i in pageContent.pages %}
+    {% set itemUrl = i.frontmatter.external_url if i.frontmatter.external_url is defined else i.url %}
+    <article class="blog-post blog-post-preview">
+        <header>
+          <h2 class="govuk-heading-l">
+              <a class="govuk-link" href="{{ itemUrl }}">{{ i.title }}</a>
+          </h2>
+          <p class="byline author vcard">
+              {% if i.frontmatter.author -%}
+              <span class="govuk-visually-hidden">Posted by:</span>
+              <span class="author url fn" rel="author">{{ i.frontmatter.author }}</span>,
+              {%- endif %}
+              {% if i.frontmatter.date -%}
+              <span class="govuk-visually-hidden">Posted on:</span>
+              <time class="updated" datetime="{{ i.frontmatter.date }}" pubdate="">{{ i.frontmatter.date.strftime('%d %B %Y') }}</time>
+              {%- endif %}
+          </p>
+        </header>
+        {% if i.summary %}
+        <div class="entry-summary">
+        {{ i.summary|markdown }}
+        </div>
+        {% endif %}
+        <footer class="entry-footer">
+          <ul class="govuk-list">
+              <li>
+              <a class="govuk-link read-more" href="{{ itemUrl }}">Read more <span class="govuk-visually-hidden">about this topic</span></a>
+              </li>
+          </ul>
+        </footer>
+    </article>
+    {%- endfor %}
+  </div>
+
+</div>
+
+{% endblock %}
+
