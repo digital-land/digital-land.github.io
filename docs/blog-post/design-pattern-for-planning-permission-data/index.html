@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>GOV.UK - The best place to find government services and information</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
+      <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
+      <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
+      <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/govuk-apple-touch-icon-152x152.png">
+      <link rel="apple-touch-icon" href="/assets/images/govuk-apple-touch-icon.png">
+    
+
+    
+	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+	
+    
+    
+    <meta property="og:image" content="/assets/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    
+
+    
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+    
+
+    
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div>
+
+
+<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="header-proposition">
+      <div class="govuk-header__content">
+        <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+        Digital Land
+        </a>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+        <nav>
+          <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/about">Team</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/project/">Projects</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/weeknote/">Weeknotes</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/blog-post/">Blog</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/guidance/">Guidance</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/dataset/">Datasets</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/organisation/">Organisations</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/map/">Map</a>
+            </li>
+          </ul>
+        </nav>
+        </div>
+    </div>
+  </div>
+</header>
+
+
+
+    
+      <div class="govuk-width-container ">
+        
+  
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  prototype
+</strong><span class="govuk-phase-banner__text">
+      This is a prototype. Please provide feedback to the Digital Land team.
+    </span>
+  </p>
+</div>
+  
+  <div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/blog-post">Blog post</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Design pattern for planning permission data</li>
+    
+  
+  </ol>
+</div>
+  
+
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          
+
+<h1 class="govuk-heading-xl">A design pattern for planning permission data</h1>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds"><p class="govuk-body" class="govuk-body"><em>mySociety is working with MHCLG on a Discovery and Alpha project to research, prototype, and test ways to make data around planning applications more open, accessible, sustainable, and trustworthy.</em></p>
+<p class="govuk-body" class="govuk-body">Our <a href="/project/single-register-of-planning/">Single register of planning</a> project began as a response to a commitment made in the <a href="https://www.gov.uk/government/publications/autumn-budget-2017-documents/autumn-budget-2017#ensuring-that-planning-permissions-are-built-out-faster">Autumn 2017 budget</a> to create a register of planning permissions across all planning authorities in England and Wales:</p>
+<blockquote>
+<p class="govuk-body" class="govuk-body">The government will develop a central register of residential planning permissions from local authorities to improve information on where permissions are held and progress towards them being built out.</p>
+</blockquote>
+<p class="govuk-body" class="govuk-body">Much of our work so far has gone into understanding the <a href="/blog-post/a-short-history-of-planning-application-data-projects/">history of planning data projects</a>, and the <a href="/blog-post/register-of-planning-discovery-findings/">user needs and processes that exist around planning applications</a> – for both local authorities and the businesses reusing and building upon the data.</p>
+<p class="govuk-body" class="govuk-body">What became clear during our research was that the value in planning permission data is contingent on its interoperability. It’s for this reason that we’ve seen so many attempts over the years to standardise planning data into a particular schema, or to extract and transform it into a single aggregated database.</p>
+<p class="govuk-body" class="govuk-body">There was a danger that our project—the “central register” of planning permissions—could have set off down one of these well-trodden paths too. The problem was, introducing <em>yet another</em> standard into this space doesn’t fit the user needs we identified. And neither does developing a “sticking plaster” data aggregation service.</p>
+<p class="govuk-body" class="govuk-body">There are <em>already</em> standards out there, with varying levels of adoption. There are already many diverse, incompatible planning authority systems out there. This inconsistency is the underlying pain point that the Autumn Budget identified. But attempting to fix this with either another competing standard—even one with the blessing of MHCLG—or a bolted-on scraping service, both feel like interventions at the wrong layer of the stack.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="taking-inspiration-from-the-tech-sector">Taking inspiration from the tech sector</h2>
+<p class="govuk-body" class="govuk-body">In comparison to the clean, tidy world of government registers, software development is a wild west. The open-ended nature of programming languages implicitly permits almost infinite diversity in the solutions you can create for a given problem.</p>
+<p class="govuk-body" class="govuk-body">It’s for this reason that software developers often rely on “design patterns” to shape the things they build.</p>
+<p class="govuk-body" class="govuk-body">Design patterns are <a href="https://www.gov.uk/service-manual/design/using-adapting-and-creating-patterns">evidence-based solutions to common design problems</a>. They are like tried-and-tested blueprints you can use to immediately build efficiency or interoperability into your product.</p>
+<p class="govuk-body" class="govuk-body">The UK Government was one of the early leaders in researching and developing design patterns to help create a <a href="https://gds.blog.gov.uk/2016/02/29/lets-talk-about-service-patterns/">“consistent, but not uniform”</a> experience of government services. For example, the design patterns in the <a href="https://design-system.service.gov.uk/">GOV.UK Design System</a> are currently in action across a whole range of national and local government websites, making it easier for citizens to <a href="https://design-system.service.gov.uk/patterns/addresses/">enter their address details</a>, <a href="https://design-system.service.gov.uk/patterns/gender-or-sex/">declare their gender</a>, or <a href="https://design-system.service.gov.uk/patterns/check-a-service-is-suitable/">check eligibility for government services</a>.</p>
+<p class="govuk-body" class="govuk-body">Design patterns help government departments prototype and build services quicker, and help them strike a sensible balance between maintaining consistency for the end user and staying flexible enough to properly address the specific service or workflow at hand.</p>
+<p class="govuk-body" class="govuk-body">Each implementation of a design pattern might look slightly different, but the underlying concept, and the research and testing that went into developing that pattern, are still the same.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="a-design-pattern-for-planning-application-data">A design pattern for planning application data</h2>
+<p class="govuk-body" class="govuk-body">Given our experience of working with design patterns at mySociety, I started to wonder whether they might be a good fit for the data standardisation/aggregation dilemma we were facing in this project.</p>
+<p class="govuk-body" class="govuk-body">A design pattern would enable a level of interoperability between standards, without introducing yet another mutually exclusive alternative. Just like the design pattern that ensures <a href="https://design-system.service.gov.uk/patterns/confirm-an-email-address/">consistent email authentication for a wide range of government workflows</a>, a design pattern for planning application data would allow different standards—be they the <a href="https://github.com/esd-org-uk/schemas/tree/master/PlanningApplications">LGA’s 2014 schema</a>, or the <a href="https://www.london.gov.uk/what-we-do/planning/london-plan/london-development-database/london-development-database-automation-project">GLA’s 2019 draft</a>—to diverge where required without losing the common heritage that would power data reuse.</p>
+<p class="govuk-body" class="govuk-body">But more than that, one of the key factors that differentiates the UK Government’s use of design patterns from most previous examples, is their practice of <a href="https://designnotes.blog.gov.uk/2018/05/17/10-principles-for-service-patterns/">sharing the research and design decisions that went into each pattern</a>, and inviting improvement and iteration from reusers. To software developers, this is nothing new – it’s practically the definition of “open source” development. But we’re excited to see whether we can employ the same open, iterative process to a design pattern for <em>data standards</em>, through this planning permissions project.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="getting-feedback">Getting feedback</h2>
+<p class="govuk-body" class="govuk-body">Last sprint, we took everything we’d learned in <a href="/blog-post/register-of-planning-discovery-findings/">our discovery phase</a>, and used it to define the “fields” and considerations that would make up a design pattern for planning application data.</p>
+<p class="govuk-body" class="govuk-body"><a href="https://docs.google.com/document/d/1Y7dFmLTtl4T1MNVIuFdjttME5lKUV8ZtpLovUQ-30U8/edit">You can access a live working draft here.</a></p>
+<p class="govuk-body" class="govuk-body">And this sprint, we shared the draft design pattern with representative users in local and central government, and the PropTech sector. The feedback has been incredibly positive.</p>
+<blockquote>
+<p class="govuk-body" class="govuk-body">We love it. Can we have it now!?</p>
+<p class="govuk-body" class="govuk-body">I think it’s brilliant. I showed it to our tech partner and he thought it was great too.</p>
+<p class="govuk-body" class="govuk-body">We love what you’ve done here. It feels really achievable.</p>
+</blockquote>
+<p class="govuk-body" class="govuk-body">Some fields we thought were important turned out to have limited utility – while others flew under our radar until respondents pointed out they were missing.</p>
+<blockquote>
+<p class="govuk-body" class="govuk-body">Maximum height of development is nice, but I’m not sure we hold that data for all applications.</p>
+<p class="govuk-body" class="govuk-body">What about the <em>type</em> of change, like extension / conversion / new build?</p>
+</blockquote>
+<p class="govuk-body" class="govuk-body">We know that a design pattern like this could never contain <em>every</em> piece of information that anyone would want to know about a planning application. That’s why we’re looking very critically at how the fields we add will actually address user needs. Where possible, we’re favouring existing standards, and identifiers or URLs that will help people combine data prepared to this pattern with other, external datasets.</p>
+<blockquote>
+<p class="govuk-body" class="govuk-body">The use of UPRNs here is really exciting. They’ll make it much easier to find applications for a specific property.</p>
+<p class="govuk-body" class="govuk-body">I wonder whether you could include the Land Registry Title Number? Householders might not know it, but it’d help connect planning application records to addresses?</p>
+</blockquote>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="what-next">What next</h2>
+<p class="govuk-body" class="govuk-body">Our aim is to continue to share the design pattern more widely, especially with an eye on how it can interact with public policy, to encourage adoption and consolidation among existing standards and systems.</p>
+<p class="govuk-body" class="govuk-body">We’ll then test the pattern with real data from a sample of local authorities across the country. What issues do we face extracting geographical data, for example? Are there any fields that simply aren’t achievable with the current planning management systems?</p>
+<p class="govuk-body" class="govuk-body">We’re also beginning to prototype a very lightweight layer of technology that would enable MHCLG to collect, validate, and index the data contributed by planning authorities, so that re-users can access it in one, standardised, convenient feed.</p>
+  </div>
+</div>
+
+
+        </main>
+      </div>
+    
+
+    
+  
+
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
+        >
+  <div class="govuk-width-container ">
+    
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
+        
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
+
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
+
+	
+	
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
+
+  </body>
+</html>

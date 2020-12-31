@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>GOV.UK - The best place to find government services and information</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/assets/images/favicon.ico" type="image/x-icon">
+      <link rel="mask-icon" href="/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
+      <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/govuk-apple-touch-icon-180x180.png">
+      <link rel="apple-touch-icon" sizes="167x167" href="/assets/images/govuk-apple-touch-icon-167x167.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/govuk-apple-touch-icon-152x152.png">
+      <link rel="apple-touch-icon" href="/assets/images/govuk-apple-touch-icon.png">
+    
+
+    
+	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+	
+    
+    
+    <meta property="og:image" content="/assets/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    
+
+    
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+    
+
+    
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div>
+
+
+<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="header-proposition">
+      <div class="govuk-header__content">
+        <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+        Digital Land
+        </a>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+        <nav>
+          <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/about">Team</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/project/">Projects</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/weeknote/">Weeknotes</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/blog-post/">Blog</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/guidance/">Guidance</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/dataset/">Datasets</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/organisation/">Organisations</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/map/">Map</a>
+            </li>
+          </ul>
+        </nav>
+        </div>
+    </div>
+  </div>
+</header>
+
+
+
+    
+      <div class="govuk-width-container ">
+        
+  
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  prototype
+</strong><span class="govuk-phase-banner__text">
+      This is a prototype. Please provide feedback to the Digital Land team.
+    </span>
+  </p>
+</div>
+  
+  <div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/about">About</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">How we work</li>
+    
+  
+  </ol>
+</div>
+  
+
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          
+
+<h1 class="govuk-heading-xl">How we work</h1>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds"><h2 class="govuk-heading-l" class="govuk-heading-l" id="agile-working">Agile working</h2>
+<p class="govuk-body" class="govuk-body">We work as a digital design team, meaning we work iteratively, using <a href="https://www.gov.uk/service-manual/agile-delivery">agile methodology</a>. We design products to meet the needs of our users, which we discover through research. We regularly test our products with users and improve them iteratively, which reduces risk.</p>
+<p class="govuk-body" class="govuk-body">We work in 2-week sprints, making it easier to manage and prioritise tasks. Throughout each sprint, we use agile ceremonies to help us communicate and collaborate as a multidisciplinary team, and to hold ourselves accountable to the work we committed to. These ceremonies include:</p>
+<ul class="govuk-list govuk-list--bullet" class="govuk-list govuk-list--bullet">
+<li>daily standups to each give short updates to spot risks or blockers to progress</li>
+<li>weekly backlog refinement to update and prioritise our backlog of tasks</li>
+<li>fortnightly planning sessions to prioritise and plan our work for the next sprint</li>
+<li>fortnightly show and tells to demo what has been learnt, designed or built</li>
+<li>quarterly showcase to reflect on work from the last 3 months and encourage feedback from stakeholders</li>
+<li>retrospectives to shape and improve our ways of working</li>
+</ul>
+<p class="govuk-body" class="govuk-body">An important aspect of our way of working is <a href="https://www.gov.uk/service-manual/agile-delivery">the digital design process</a>. Where there is a new, large problem space, as is the case with a project like the <a href="/project/golden-thread-of-building-information/">golden thread of building information</a>, we’ll encourage teams to run a <a href="https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works">discovery</a> and <a href="https://www.gov.uk/service-manual/agile-delivery/how-the-alpha-phase-works">alpha</a> phase. The work required to make a dataset available will differ between projects. A discovery ensures that the area is well understood and solutions are based on user needs. At the end of a discovery, we develop hypotheses which shape the alpha phase.</p>
+<p class="govuk-body" class="govuk-body">As is the case with <a href="/project/brownfield-sites/">brownfield land</a>, not all projects need a thorough discovery phase, since this is already an existing policy area that is well understood. With projects like this, our focus is on refining the solutions that already exist, using the existing data to evidence decisions.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="working-in-the-open">Working in the open</h2>
+<p class="govuk-body" class="govuk-body">Working in the open encourages collaboration with teams working in similar areas, suppliers interested in working with us, and users who want to know more about our work or offer feedback. It’s also a great way for us to keep a record of our design decisions, questions, assumptions and hypotheses, which in turn builds the trust of our users and stakeholders. Wherever possible we record our work publicly, using the following tools:</p>
+<ul class="govuk-list govuk-list--bullet" class="govuk-list govuk-list--bullet">
+<li><a href="/project/">project pages</a></li>
+<li><a href="/weeknote/">weeknotes</a></li>
+<li><a href="/blog-post/">blog posts</a></li>
+<li><a href="https://github.com/digital-land/digital-land/issues">GitHub issues</a></li>
+<li><a href="/guidance/data-principles/">guidance on data principles</a></li>
+</ul>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="prioritising-work">Prioritising work</h2>
+<p class="govuk-body" class="govuk-body">There is a huge amount of work to be done improving the quality and accessibility of land and housing data. Therefore, we have to carefully choose and prioritise which datasets we focus on and, within a project, how we prioritise tasks. </p>
+<p class="govuk-body" class="govuk-body">The following are some of our main considerations when prioritising work:</p>
+<h3 class="govuk-heading-m" class="govuk-heading-m" id="users">Users</h3>
+<p class="govuk-body" class="govuk-body">Before we design and build solutions, we research and understand the needs of the users within the project area. We then prioritise our work based on how to best meet our user’s needs. It’s also important to prioritise tasks that we as a government team are in a unique position to do, and which are users may not be able to do.</p>
+<h4 class="govuk-heading-s" class="govuk-heading-s"><a href="/users/policy-maker/">Policymakers</a></h4>
+<p class="govuk-body" class="govuk-body">We work closely with colleagues from the Ministry of Housing, Communities &amp; Local Government to understand new and changing policy requirements. We then prioritise work which improves the quality and accessibility of datasets that can support decision making and improve policy outcomes.</p>
+<h4 class="govuk-heading-s" class="govuk-heading-s"><a href="/users/proptech/">PropTech</a></h4>
+<p class="govuk-body" class="govuk-body">We are also working closely with emerging PropTech companies to understand what data they need to <a href="/about/#our-mission">support their product and services</a>.</p>
+<h4 class="govuk-heading-s" class="govuk-heading-s"><a href="/users/local-government/">Local planning authorities</a></h4>
+<p class="govuk-body" class="govuk-body">During most of our projects, we work closely with local planning authorities, finding ways to help them publish the data they hold in a way that is not overly burdensome to them. We’re also helping local authority digital teams build tools for the PlanTech sector by supporting their data needs.</p>
+<h3 class="govuk-heading-m" class="govuk-heading-m" id="data">Data</h3>
+<p class="govuk-body" class="govuk-body">There are several hundred areas of policy to consider when looking at land and housing issues, and each is informed by a number of different datasets. The same dataset may inform a number of different policies. We often prioritise projects in which the data already exists, since creating positive outcomes in these areas will be quicker and easier.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="choosing-a-team">Choosing a team</h2>
+<p class="govuk-body" class="govuk-body">Depending on the phase of a project, a different shape of team will be needed. An early discovery project will be more focussed on user research, whereas a project in alpha or beta may need developers and designers to prototype solutions to be tested.</p>
+<p class="govuk-body" class="govuk-body">We can help you identify the shape and size of the team and support you through the process of onboarding via the <a href="https://www.digitalmarketplace.service.gov.uk/">Digital Marketplace</a>. </p>
+<p class="govuk-body" class="govuk-body">Projects for which we’ve sourced a team through the Digital Marketplace include:</p>
+<ul class="govuk-list govuk-list--bullet" class="govuk-list govuk-list--bullet">
+<li><a href="/project/single-register-of-planning/">single register of planning</a> alpha phase</li>
+<li><a href="/project/energy-performance-of-buildings/">energy performance of buildings</a> alpha phase</li>
+<li><a href="/project/local-plans/">local plans</a> alpha phase</li>
+</ul>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="starting-a-project">Starting a project</h2>
+<p class="govuk-body" class="govuk-body">At the start of each project it’s important to ensure every person involved is on the same page. An inception meeting with the project team and stakeholders is a good way to ensure everyone is aware of the project boundaries, share corporate knowledge, and outline our approach.</p>
+<p class="govuk-body" class="govuk-body">We will also produce an offer document at the beginning of each project for our stakeholders or supplier. This will outline:</p>
+<ul class="govuk-list govuk-list--bullet" class="govuk-list govuk-list--bullet">
+<li>our understanding of the scope of the project</li>
+<li>team members</li>
+<li>stakeholders</li>
+<li>key outcomes we expect to achieve</li>
+<li>an outline approach how we will achieve our outcomes</li>
+<li>our ways of working</li>
+</ul>
+  </div>
+</div>
+
+
+        </main>
+      </div>
+    
+
+    
+  
+
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
+        >
+  <div class="govuk-width-container ">
+    
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
+        
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
+
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
+
+	
+	
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
+
+  </body>
+</html>
