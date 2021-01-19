@@ -37,9 +37,9 @@ Google Analytics sets cookies that store information about:
 * how you got to the site
 * what you click on whilst on the website
 
-{{% inset-text %}}
+<div class="govuk-inset-text">
 We do not allow Google to use or share our analytics data.
-{{% /inset-text %}}
+</div>
 
 Google Analytics sets the following cookies.
 
