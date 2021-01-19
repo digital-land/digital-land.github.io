@@ -6,15 +6,9 @@ import sys
 from pathlib import Path
 from shutil import copyfile
 
-from frontmatter import Frontmatter
-
 from bin.render import Renderer
 from bin.list import create_list
-from bin.summary import create_summary
 
-from digital_land_frontend.jinja import setup_jinja
-from digital_land_frontend.filters import make_link
-from digital_land_frontend.markdown.filter import markdown_filter
 from digital_land_frontend.markdown.content_file import read_content_file
 
 
