@@ -1,5 +1,9 @@
 {% extends "digital-land-frontend/dlf-base.html" %}
 
+{% block pageTitle %}
+{{ pageContent.pageTitle if pageContent.pageTitle else pageContent.title + " - Digital Land"}}
+{% endblock %}
+
 {% block dlHead %}
 {%- if pageContent.frontmatter.external_url is defined %}
 <!-- redirect to {{pageContent.frontmatter.external_url}} -->
