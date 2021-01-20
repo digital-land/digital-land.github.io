@@ -24,3 +24,5 @@ Render pages
 * `sort_by.reverse` - (optional - defaults to false), set to True if want the list in reverse order 
 
 **`template`** - put the name of a different template to use. This template should exist in the `templates/layouts` directory.
+
+**`pageTitle`** - the page title set in the document head will default to `<title of content> - Digital Land`. Set `pageTitle` in the frontmatter to override.
