@@ -7253,6 +7253,13 @@
 
 .data-reference {
   display: inline-block;
+  margin-top: 5px;
+}
+
+@media (min-width: 40.0625em) {
+  .data-reference {
+    margin-top: 5px;
+  }
 }
 
 .data-table__viewer,
