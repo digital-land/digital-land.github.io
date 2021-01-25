@@ -390,10 +390,17 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 
 @media (min-width: 40.0625em) {
   .app-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: #f8f8f8;
-    flex-direction: column;
-    flex: 1 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
   }
 }
 
@@ -509,6 +516,8 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 
 @media (min-width: 40.0625em) {
   .app-nav__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
     min-height: 0;
@@ -525,7 +534,9 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 @media (min-width: 40.0625em) {
   .app-nav__subnav {
     width: 210px;
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
 }
 
@@ -537,10 +548,17 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 
 @media (min-width: 40.0625em) {
   .app-nav__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     min-width: 0;
-    flex: 1 1 100%;
-    flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -728,6 +746,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .app-back-to-top {
+  position: -webkit-sticky;
   position: sticky;
   top: 30px;
   margin-bottom: 30px;
@@ -955,7 +974,8 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   min-width: 230px;
   min-height: 60px;
   overflow: auto;
-  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 @media (min-width: 48.0625em) {
@@ -1334,3 +1354,5 @@ li code {
   padding: 15px;
   border: 1px solid #b1b4b6;
 }
+
+/*# sourceMappingURL=styleguide.css.map */

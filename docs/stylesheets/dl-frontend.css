@@ -1845,7 +1845,8 @@
   -ms-flex-negative: 0;
   flex-shrink: 0;
   -ms-flex-item-align: center;
-  align-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
 }
 
 @media (min-width: 48.0625em) {
@@ -5144,7 +5145,6 @@
   line-height: 29px;
   text-align: center;
   -webkit-user-select: none;
-  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
@@ -6629,7 +6629,9 @@
   font-size: 1em;
   line-height: 25px;
   text-align: center;
-  user-select: none;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media print {
@@ -6640,6 +6642,48 @@
 
 .dl-image {
   max-width: 100%;
+}
+
+.dl-index-grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.dl-index-grid .dl-index-item__head {
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+.dl-index-grid .dl-index-item__body {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 40.0625em) {
+  .dl-index-grid .dl-index-item__body {
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .dl-index-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: -webkit-max-content minmax(auto, 30em);
+    -ms-grid-columns: max-content minmax(auto, 30em);
+    grid-template-columns: -webkit-max-content minmax(auto, 30em);
+    grid-template-columns: max-content minmax(auto, 30em);
+  }
+  .dl-index-grid * {
+    float: left;
+  }
+  .dl-index-grid *:nth-child(2n) {
+    padding-left: 10px;
+  }
+  .dl-index-grid .dl-index-item__head {
+    clear: both;
+  }
 }
 
 .govuk-body-l, .markdown-output .govuk-body-l p {
@@ -6873,6 +6917,7 @@
   margin-bottom: 0;
   padding: 10px 15px;
   background: #f3f2f1;
+  -webkit-transition: background .15s ease-in;
   transition: background .15s ease-in;
 }
 
@@ -7164,7 +7209,9 @@
 .contribution-box--small .data {
   position: relative;
   padding: 15px;
-  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
 }
 
 .contribution-box--small .data:after {
@@ -7183,7 +7230,9 @@
 
 .contribution-box--small:hover .data {
   padding: 10px;
-  transform: translateY(calc(100% + 10px));
+  -webkit-transform: translateY(calc(100% + 10px));
+      -ms-transform: translateY(calc(100% + 10px));
+          transform: translateY(calc(100% + 10px));
 }
 
 .contribution-box--small:hover .data:after {
@@ -7253,6 +7302,13 @@
 
 .data-reference {
   display: inline-block;
+  margin-top: 5px;
+}
+
+@media (min-width: 40.0625em) {
+  .data-reference {
+    margin-top: 5px;
+  }
 }
 
 .data-table__viewer,
@@ -7380,6 +7436,7 @@
 
 .data-table-right-shadow.with-transition,
 .data-table-left-shadow.with-transition {
+  -webkit-transition: box-shadow .4s ease-out;
   transition: box-shadow .4s ease-out;
 }
 
@@ -7551,8 +7608,12 @@
   margin-top: 5px;
   padding-top: 5px;
   border-top: 1px solid #505a5f;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .data-table__issue__info:first-child {
@@ -7570,6 +7631,8 @@
 }
 
 .issue__part {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   white-space: normal;
 }
@@ -7579,7 +7642,8 @@
 }
 
 .issue__part__label {
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .data-table__notes-cell {
@@ -8465,7 +8529,9 @@
   font-size: 1.6em;
   line-height: 28px;
   text-align: center;
-  user-select: none;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media print {
@@ -9430,10 +9496,16 @@
 }
 
 .map-key .bfs-pt__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-bottom: 10px;
-  align-items: flex-end;
-  justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .map-key .bfs-pt__container .ellipsis {
@@ -9527,11 +9599,20 @@
 }
 
 .dl-map__loader-msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .dl-map__spinning-loader {
@@ -9542,15 +9623,29 @@
   border-radius: 50%;
   border-top-color: rgba(29, 112, 184, 0.5);
   border-top-color: #1d70b8;
-  animation: loader-rotate 1s linear infinite;
+  -webkit-animation: loader-rotate 1s linear infinite;
+          animation: loader-rotate 1s linear infinite;
+}
+
+@-webkit-keyframes loader-rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @keyframes loader-rotate {
   0% {
-    transform: rotate(0);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -10456,10 +10551,17 @@
 }
 
 .dlf-heatmap__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  align-items: flex-end;
-  flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .dlf-svg-heatmap text {
@@ -11148,13 +11250,21 @@
 }
 
 .equal-panels {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (min-width: 40.0625em) {
   .equal-panels {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -11162,7 +11272,9 @@
   margin: 7.5px 15px;
   padding: 15px;
   background: #1d70b8;
-  flex: 1 1 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
 }
 
 @media (min-width: 40.0625em) {
@@ -11561,3 +11673,5 @@
 .cookie-message__confirmation section {
   padding: 20px;
 }
+
+/*# sourceMappingURL=dl-frontend.css.map */
