@@ -7078,6 +7078,7 @@
 }
 
 .dl-page-action-button {
+  display: inline-block;
   margin: 0;
   padding: 10px;
   border: 1px solid #b1b4b6;
