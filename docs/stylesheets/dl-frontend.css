@@ -9930,6 +9930,11 @@
   margin-bottom: 0;
 }
 
+.dlf-inset-card--top {
+  border-top: 2px solid #1d70b8;
+  border-bottom: 0;
+}
+
 .dlf-inset-card--s {
   padding-bottom: 15px;
 }
