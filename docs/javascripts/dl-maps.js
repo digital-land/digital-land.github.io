@@ -192,6 +192,10 @@ Map.prototype.zoomToLayer = function (layer) {
   this.map.fitBounds(layer.getBounds());
 };
 
+/**
+ * Extracts URLs from the data-geojson-urls attribute
+ * URLs added to the list - duplicates are ignored
+ */
 Map.prototype.extractURLS = function () {
   var urlsStr = this.$module.dataset.geojsonUrls;
   var urlList = this.geojsonUrls;
@@ -502,7 +506,64 @@ const brownfieldSites = {
   registerOrganisationMapper: registerMapper
 };
 
+/* global L */
+
+const popupOptions$1 = {
+  minWidth: '270',
+  maxWidth: '270',
+  className: 'bfs-popup'
+};
+
+const popupTemplate$1 =
+  '<div class="bfs">' +
+    '<div class="bfs__header">' +
+      '<span class="govuk-caption-s">{dataType}</span>' +
+      '<h3 class="govuk-heading-s bfs__addr">{identifier} - {name}</h3>' +
+    '</div>' +
+    '<div class="bfs__footer">' +
+      '<a href="{slug}" class="govuk-link">View record</a>' +
+    '</div>' +
+  '</div>';
+
+function processRecord (row, idField) {
+  function getId (data) {
+    return data[idField]
+  }
+  const templateFuncs = {
+    dataType: () => idField,
+    identifier: getId
+  };
+  return Object.assign(row, templateFuncs)
+}
+
+function createPopup$1 (row, idField) {
+  return L.Util.template(popupTemplate$1, processRecord(row, idField))
+}
+
+/**
+ * Creates an onEachFeature function with understanding of the identifier field
+ * @param  {string} id the field name for the record identifier
+ */
+function initOnEachFeature (id) {
+  const identifierField = id || 'slug';
+
+  function onEachFeature (feature, layer) {
+    var popupHTML = createPopup$1(feature.properties, identifierField);
+    layer
+      .bindPopup(popupHTML, popupOptions$1)
+      .on('popupopen', function (e) {
+        console.log('Polygon clicked', e.sourceTarget.feature);
+      });
+  }
+  return onEachFeature
+}
+
+const basicPopup = {
+  initOnEachFeature: initOnEachFeature
+};
+
 exports.Map = Map;
 exports.brownfieldSites = brownfieldSites;
+exports.basicPopup = basicPopup;
 
 })));
