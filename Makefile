@@ -45,7 +45,7 @@ assets/images:
 assets:: assets/css assets/js assets/images
 
 status:
-	git status
+	git status --ignored
 
 commit-docs::
 	git add docs
