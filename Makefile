@@ -10,7 +10,7 @@ init: submodule
 submodule:
 	git submodule update --init --recursive --remote
 
-render: assets copy
+render: copy assets
 	python3 render.py
 
 clean::
