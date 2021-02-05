@@ -11,7 +11,6 @@ submodule:
 	git submodule update --init --recursive --remote
 
 render: assets copy
-	mkdir -p $(DOCS_DIR)
 	python3 render.py
 
 clean::
