@@ -41,5 +41,8 @@ jobs:
     - name: Build docs
       run: make render
 
+    - name: Output git status
+      run: make status
+
     - name: Commit docs
       run: make commit-docs

@@ -44,6 +44,9 @@ assets/images:
 
 assets:: assets/css assets/js assets/images
 
+status:
+	git status
+
 commit-docs::
 	git add docs
 	git diff --quiet && git diff --staged --quiet || (git commit -m "Rebuilt docs $(shell date +%F)"; git push origin $(BRANCH))
