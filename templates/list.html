@@ -22,7 +22,7 @@
           </header>
           {% if i.summary %}
           <div class="entry-summary">
-            {{ i.summary|markdown }}
+            {{ i.summary|markdown|safe }}
           </div>
           {% endif %}
         </article>

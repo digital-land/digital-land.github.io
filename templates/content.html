@@ -9,7 +9,7 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     {%- if pageContent.lede %}<p class="govuk-body-l">{{ pageContent.lede }}</p>{% endif -%}
-    {{ pageContent.content|markdown }}
+    {{ pageContent.content|markdown|safe }}
   </div>
 </div>
 
