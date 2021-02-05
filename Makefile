@@ -18,7 +18,7 @@ clean::
 	mkdir -p $(DOCS_DIR)
 
 copy:
-	cp -r static/ $(DOCS_DIR)
+	cp -r static/images $(DOCS_DIR)
 
 local: assets
 	mkdir -p $(DOCS_DIR)
