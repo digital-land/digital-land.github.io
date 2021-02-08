@@ -1,4 +1,5 @@
 {% extends "digital-land-frontend/dlf-base.html" %}
+{% block dlMetaTemplate %}<meta name="dl-template" content="content-base.html">{% endblock %}
 
 {% block pageTitle %}
 {{ pageContent.pageTitle if pageContent.pageTitle else pageContent.title + " - Digital Land"}}

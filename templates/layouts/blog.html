@@ -1,4 +1,5 @@
 {% extends "content-base.html" %}
+{% block dlMetaTemplate %}<meta name="dl-template" content="digital-land.github.io/blog.html">{% endblock %}
 
 {% block content %}
 <h1 class="govuk-heading-xl">{{ pageContent.title }}</h1>
@@ -30,7 +31,7 @@
         </header>
         {% if i.summary %}
         <div class="entry-summary">
-        {{ i.summary|markdown }}
+        {{ i.summary|markdown|safe }}
         </div>
         {% endif %}
         <footer class="entry-footer">
