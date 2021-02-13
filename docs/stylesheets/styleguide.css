@@ -405,8 +405,9 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 .hljs-container {
   display: block;
   overflow-x: auto;
-  padding: 0.5em;
-  background-color: #f3f2f1;
+  padding: 20px;
+  border: 1px solid #b1b4b6;
+  background-color: #f9f9f8;
   font-family: monospace;
 }
 
@@ -1316,7 +1317,8 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 pre {
-  margin: 30px 0;
+  margin: 0 0 30px;
+  font-size: 16px;
   word-wrap: break-word;
 }
 
@@ -1328,9 +1330,13 @@ pre {
   margin: 0;
 }
 
+pre,
 code {
-  font-family: monospace;
-  font-size: 19px;
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+code {
   line-height: 1.31579em;
 }
 
