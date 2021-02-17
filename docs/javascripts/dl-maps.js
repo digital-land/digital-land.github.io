@@ -330,7 +330,7 @@ const popupTemplate =
       '{datesSection}' +
     '</div>' +
     '<div class="bfs__footer">' +
-      '<a href="/{slug}" class="govuk-link">View complete record</a>' +
+      '<a href="{slug}" class="govuk-link">View complete record</a>' +
     '</div>' +
   '</div>';
 
