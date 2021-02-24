@@ -1,8 +1,8 @@
 appdirs==1.4.4
 black==20.8b1
-click==7.1.2
+click
 dataclasses
--e git+https://github.com/digital-land/frontend.git#egg=digital_land_frontend
+-e git+https://github.com/digital-land/digital-land-python.git#egg=digital-land
 frontmatter==3.0.7
 importlib-metadata==2.0.0
 Jinja2==2.11.2
