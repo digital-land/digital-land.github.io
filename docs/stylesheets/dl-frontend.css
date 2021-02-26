@@ -7243,9 +7243,7 @@
 }
 
 .dl-index-list .historical-item a {
-  color: govuk-color("black");
-  -webkit-text-decoration-style: dashed;
-          text-decoration-style: dashed;
+  color: #505a5f;
 }
 
 .govuk-body-l, .markdown-output .govuk-body-l p {
