@@ -88,6 +88,16 @@ Map.prototype.init = function (params) {
     this.$loader = this.$wrapper.querySelector('.dl-map__loader');
   }
 
+  // add fullscreen control
+  if (this.options.fullscreenControl) {
+    this.map.addControl(new L.Control.Fullscreen({
+      title: {
+        false: 'View Fullscreen',
+        true: 'Exit Fullscreen'
+      }
+    }));
+  }
+
   console.log("params", _params);
   this.geojsonUrls = _params.geojsonURLs || [];
   const geojsonOptions = _params.geojsonOptions || {};
@@ -264,7 +274,8 @@ Map.prototype.setupOptions = function (params) {
     default_pos: params.default_pos || [52.561928, -1.464854],
     default_zoom: params.minZoom || 6,
     minZoom: params.minZoom || 6,
-    maxZoom: params.maxZoom || 18
+    maxZoom: params.maxZoom || 18,
+    fullscreenControl: params.fullscreenControl || true // add fullscreen control by default
   };
   this.mapId = params.mapId || 'aMap';
 };
