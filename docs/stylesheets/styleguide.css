@@ -1341,9 +1341,9 @@ code {
 }
 
 p code,
-li code {
+li code, .dl-code {
   padding: 0 5px;
-  color: #dd1144;
+  color: #9f2815;
   background-color: #f8f8f8;
   font-family: monospace;
 }
