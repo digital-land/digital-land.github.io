@@ -11992,6 +11992,43 @@
   background: #ffffff;
 }
 
+.index-group__count {
+  display: block;
+  color: #505a5f;
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1.25;
+}
+
+@media print {
+  .index-group__count {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .index-group__count {
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.42857;
+  }
+}
+
+@media print {
+  .index-group__count {
+    font-size: 12pt;
+    line-height: 1.2;
+  }
+}
+
+.index-group__count:hover {
+  text-decoration: none;
+}
+
 [aria-sort] button,
 [aria-sort] button:hover {
   position: relative;
@@ -12231,7 +12268,8 @@
   display: block;
 }
 
-.js-enabled .js-hidden {
+.js-enabled .js-hidden,
+.js-enabled .js-hidden--historical {
   display: none;
   visibility: hidden;
 }
