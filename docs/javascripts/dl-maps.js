@@ -98,12 +98,12 @@ Map.prototype.init = function (params) {
     }));
   }
 
-  console.log("params", _params);
   this.geojsonUrls = _params.geojsonURLs || [];
   const geojsonOptions = _params.geojsonOptions || {};
   this.geojsonUrls = this.extractURLS();
   // if pointers to geojson provided add to the default featureGroup (a featureGroup has getBounds() func)
   if (this.geojsonUrls.length) {
+    // FIXME: geojson urls might not be boundaries so fix name
     this.createFeatureGroup('initBoundaries').addTo(this.map);
     this.plotBoundaries(this.geojsonUrls, geojsonOptions);
   }
@@ -263,6 +263,9 @@ Map.prototype.plotBoundaries = function (urls, options) {
         // only pan map once all boundaries have loaded
         if (count === urls.length) {
           map.fitBounds(defaultFG.getBounds());
+          map.addControl(new L.Control.Recentre({
+            layer: defaultFG
+          }));
         }
       });
   });
