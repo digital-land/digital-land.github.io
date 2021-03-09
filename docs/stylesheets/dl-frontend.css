@@ -7202,86 +7202,6 @@
   max-width: 100%;
 }
 
-.dl-index-grid:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.dl-index-grid .dl-index-item__head {
-  margin-bottom: 0;
-  padding-top: 0;
-}
-
-.dl-index-grid .dl-index-item__body {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
-@media (min-width: 40.0625em) {
-  .dl-index-grid .dl-index-item__body {
-    margin-bottom: 5px;
-  }
-}
-
-@media (min-width: 40.0625em) {
-  .dl-index-grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: -webkit-max-content minmax(auto, 30em);
-    -ms-grid-columns: max-content minmax(auto, 30em);
-    grid-template-columns: -webkit-max-content minmax(auto, 30em);
-    grid-template-columns: max-content minmax(auto, 30em);
-  }
-  .dl-index-grid * {
-    float: left;
-  }
-  .dl-index-grid *:nth-child(2n) {
-    padding-left: 10px;
-  }
-  .dl-index-grid .dl-index-item__head {
-    clear: both;
-  }
-}
-
-@media (min-width: 40.0625em) {
-  .dl-index-list tr > td:not(:first-of-type) {
-    padding-left: 10px;
-  }
-}
-
-.dl-index-list td {
-  display: block;
-}
-
-@media (min-width: 40.0625em) {
-  .dl-index-list td {
-    display: table-cell;
-    margin-bottom: 5px;
-    vertical-align: top;
-  }
-}
-
-@media (min-width: 40.0625em) and (min-width: 40.0625em) {
-  .dl-index-list td {
-    margin-bottom: 5px;
-  }
-}
-
-.dl-index-list tr > td:last-of-type {
-  margin-bottom: 5px;
-}
-
-@media (min-width: 40.0625em) {
-  .dl-index-list tr > td:last-of-type {
-    margin-bottom: 5px;
-  }
-}
-
-.dl-index-list .historical-item a {
-  color: #505a5f;
-}
-
 .govuk-body-l, .markdown-output .govuk-body-l p {
   max-width: 30em !important;
 }
@@ -11140,6 +11060,44 @@
 
 .local-plan-card__status .govuk-tag {
   margin-right: 15px;
+}
+
+@media (min-width: 40.0625em) {
+  .dl-index-list tr > td:not(:first-of-type) {
+    padding-left: 10px;
+  }
+}
+
+.dl-index-list td {
+  display: block;
+}
+
+@media (min-width: 40.0625em) {
+  .dl-index-list td {
+    display: table-cell;
+    margin-bottom: 5px;
+    vertical-align: top;
+  }
+}
+
+@media (min-width: 40.0625em) and (min-width: 40.0625em) {
+  .dl-index-list td {
+    margin-bottom: 5px;
+  }
+}
+
+.dl-index-list tr > td:last-of-type {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 40.0625em) {
+  .dl-index-list tr > td:last-of-type {
+    margin-bottom: 5px;
+  }
+}
+
+.dl-index-list .historical-item a {
+  color: #505a5f;
 }
 
 .collection-list > li:not(:last-child) {

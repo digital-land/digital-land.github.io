@@ -75,6 +75,8 @@ function Map ($module) {
 
 Map.prototype.init = function (params) {
   const _params = params || {};
+  // get element id from module
+  this.mapId = this.$module.id || 'aMap';
   this.setupOptions(_params);
   this.tiles = this.setTiles();
   this.map = this.createMap();
@@ -280,7 +282,6 @@ Map.prototype.setupOptions = function (params) {
     maxZoom: params.maxZoom || 18,
     fullscreenControl: params.fullscreenControl || true // add fullscreen control by default
   };
-  this.mapId = params.mapId || 'aMap';
 };
 
 // assign() polyfill from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
