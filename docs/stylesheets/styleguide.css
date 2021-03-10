@@ -418,7 +418,6 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   padding: 20px;
   border: 1px solid #b1b4b6;
   background-color: #f9f9f8;
-  font-family: monospace;
 }
 
 /* Base color: saturation 0; */
@@ -729,13 +728,13 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .app-subnav__section-item {
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   list-style: none;
 }
 
 .app-subnav__link {
-  display: block;
-  padding: 10px;
-  border-left: 4px solid transparent;
   color: #1d70b8;
   text-decoration: none;
 }
@@ -745,7 +744,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .app-subnav__link:hover {
-  border-color: #1d70b8;
+  text-decoration: underline;
 }
 
 .app-subnav__link:focus {
@@ -814,7 +813,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 
 .app-subnav__theme {
   margin: 0;
-  padding: 10px 15px 10px;
+  padding: 10px 15px 10px 0;
   font-family: "GDS Transport", arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1351,7 +1350,7 @@ pre {
 pre,
 code {
   font-family: monospace, monospace;
-  font-size: 1em;
+  font-size: 16px;
 }
 
 code {
@@ -1363,7 +1362,8 @@ li code, .dl-code {
   padding: 0 5px;
   color: #9f2815;
   background-color: #f8f8f8;
-  font-family: monospace;
+  font-family: monospace, monospace;
+  font-size: 100%;
 }
 
 p code,
