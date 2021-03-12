@@ -7377,6 +7377,209 @@
   text-decoration: none;
 }
 
+.dlf-feedback__wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 40.0625em) {
+  .dlf-feedback__wrapper {
+    padding: 0 30px;
+  }
+}
+
+.dlf-feedback {
+  margin-top: 30px;
+  border-bottom: 1px solid #ffffff;
+  background: #ffffff;
+}
+
+@media (min-width: 40.0625em) {
+  .dlf-feedback {
+    margin-top: 60px;
+  }
+}
+
+.dlf-feedback__prompt {
+  display: table;
+  width: 100%;
+  outline: 0;
+  color: #ffffff;
+  background-color: #1d70b8;
+}
+
+.dlf-feedback__prompt-content,
+.dlf-feedback__prompt-action {
+  box-sizing: border-box;
+  padding: 25px 25px 25px 25px;
+  border-bottom: 1px solid #ffffff;
+  text-align: center;
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+@media print {
+  .dlf-feedback__prompt-content,
+  .dlf-feedback__prompt-action {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .dlf-feedback__prompt-content,
+  .dlf-feedback__prompt-action {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .dlf-feedback__prompt-content,
+  .dlf-feedback__prompt-action {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .dlf-feedback__prompt-content,
+  .dlf-feedback__prompt-action {
+    display: table-cell;
+    width: 50%;
+    text-align: left;
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.14286;
+  }
+}
+
+@media print and (min-width: 40.0625em) {
+  .dlf-feedback__prompt-content,
+  .dlf-feedback__prompt-action {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) and (min-width: 40.0625em) {
+  .dlf-feedback__prompt-content,
+  .dlf-feedback__prompt-action {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+}
+
+@media print and (min-width: 40.0625em) {
+  .dlf-feedback__prompt-content,
+  .dlf-feedback__prompt-action {
+    font-size: 14pt;
+    line-height: 1.2;
+  }
+}
+
+.dlf-feedback__prompt-content {
+  vertical-align: middle;
+}
+
+.dlf-feedback__prompt-content__text {
+  font-weight: 400;
+}
+
+.dlf-feedback__prompt-action {
+  vertical-align: bottom;
+}
+
+@media (min-width: 40.0625em) {
+  .dlf-feedback__prompt-action {
+    text-align: right;
+  }
+}
+
+.dlf-feedback__prompt__link {
+  min-width: 100px;
+  margin-bottom: 0;
+  border: 1px #ffffff solid;
+  background: transparent;
+  box-shadow: 0 2px 0 #ffffff;
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+@media print {
+  .dlf-feedback__prompt__link {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .dlf-feedback__prompt__link {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .dlf-feedback__prompt__link {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .dlf-feedback__prompt__link {
+    font-family: "GDS Transport", arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.14286;
+  }
+}
+
+@media print and (min-width: 40.0625em) {
+  .dlf-feedback__prompt__link {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) and (min-width: 40.0625em) {
+  .dlf-feedback__prompt__link {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+}
+
+@media print and (min-width: 40.0625em) {
+  .dlf-feedback__prompt__link {
+    font-size: 14pt;
+    line-height: 1.2;
+  }
+}
+
+.dlf-feedback__prompt__link:hover {
+  background: #0b0c0c;
+  background: rgba(11, 12, 12, 0.2);
+}
+
 .back-to-top {
   margin-top: 20px;
   margin-bottom: 30px;

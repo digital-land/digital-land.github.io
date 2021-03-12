@@ -585,22 +585,21 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   color: #0b0c0c;
 }
 
-.app-nav__list > .app-nav__list-item a {
-  display: inline-block;
+.app-nav__link {
   font-weight: 700;
   color: #1d70b8;
   text-decoration: none;
 }
 
-.app-nav__list > .app-nav__list-item a:visited {
+.app-nav__link:visited {
   color: #1d70b8;
 }
 
-.app-nav__list > .app-nav__list-item a:hover:not(:focus):not(:active) {
+.app-nav__link:hover:not(:focus):not(:active) {
   text-decoration: underline;
 }
 
-.app-nav__list > .app-nav__list-item a:focus {
+.app-nav__link:focus {
   outline: 3px solid transparent;
   color: #0b0c0c;
   background-color: #ffdd00;
