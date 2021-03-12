@@ -7389,9 +7389,12 @@
   }
 }
 
+.dlf-feedback__wrapper + .govuk-footer {
+  border-top: 10px solid #1d70b8;
+}
+
 .dlf-feedback {
   margin-top: 30px;
-  border-bottom: 1px solid #ffffff;
   background: #ffffff;
 }
 
