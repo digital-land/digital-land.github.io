@@ -7323,58 +7323,8 @@
           user-select: all;
 }
 
-.dlf-pg-feedback {
-  margin-top: 30px;
-  border-bottom: 10px solid #1d70b8;
-}
-
-@media (min-width: 40.0625em) {
-  .dlf-pg-feedback {
-    margin-top: 60px;
-  }
-}
-
-.dlf-pg-feedback {
+.dlf-feedback {
   font-family: "GDS Transport", arial, sans-serif;
-}
-
-.dlf-pg-feedback__prompt {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 10px 15px 0;
-  outline: 0;
-  color: #ffffff;
-  background: #1d70b8;
-}
-
-.dlf-pg-feedback__link {
-  font-weight: 400;
-  text-decoration: underline;
-}
-
-.dlf-pg-feedback__link:link {
-  color: #ffffff;
-}
-
-.dlf-pg-feedback__link:visited {
-  color: #ffffff;
-}
-
-.dlf-pg-feedback__link:hover {
-  color: #ffffff;
-}
-
-.dlf-pg-feedback__link:active {
-  color: #ffffff;
-}
-
-.dlf-pg-feedback__link:focus {
-  color: #0b0c0c;
-  outline: 3px solid transparent;
-  color: #0b0c0c;
-  background-color: #ffdd00;
-  box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
-  text-decoration: none;
 }
 
 .dlf-feedback__wrapper {
@@ -7581,6 +7531,36 @@
 .dlf-feedback__prompt__link:hover {
   background: #0b0c0c;
   background: rgba(11, 12, 12, 0.2);
+}
+
+.dlf-feedback__link {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.dlf-feedback__link:link {
+  color: #ffffff;
+}
+
+.dlf-feedback__link:visited {
+  color: #ffffff;
+}
+
+.dlf-feedback__link:hover {
+  color: #ffffff;
+}
+
+.dlf-feedback__link:active {
+  color: #ffffff;
+}
+
+.dlf-feedback__link:focus {
+  color: #0b0c0c;
+  outline: 3px solid transparent;
+  color: #0b0c0c;
+  background-color: #ffdd00;
+  box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
+  text-decoration: none;
 }
 
 .back-to-top {
