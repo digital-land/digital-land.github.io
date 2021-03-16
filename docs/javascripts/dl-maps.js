@@ -92,12 +92,15 @@ Map.prototype.init = function (params) {
 
   // add fullscreen control
   if (this.options.fullscreenControl) {
-    this.map.addControl(new L.Control.Fullscreen({
-      title: {
-        false: 'View Fullscreen',
-        true: 'Exit Fullscreen'
-      }
-    }));
+    // check fullscreen is available
+    if (L.Control.Fullscreen) {
+      this.map.addControl(new L.Control.Fullscreen({
+        title: {
+          false: 'View Fullscreen',
+          true: 'Exit Fullscreen'
+        }
+      }));
+    }
   }
 
   this.geojsonUrls = _params.geojsonURLs || [];
