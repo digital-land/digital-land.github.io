@@ -156,7 +156,7 @@ Map.prototype.addLayerHoverState = function (layer, options) {
 
 Map.prototype.createMap = function () {
   const opts = this.options;
-  var latLng = L.latLng(opts.default_pos[0], opts.default_pos[1]);
+  var latLng = L.latLng(opts.defaultPos[0], opts.defaultPos[1]);
   return L.map(this.mapId, {
     center: latLng,
     zoom: opts.default_zoom,
@@ -279,7 +279,7 @@ Map.prototype.plotBoundaries = function (urls, options) {
 Map.prototype.setupOptions = function (params) {
   params = params || {};
   this.options = {
-    default_pos: params.default_pos || [52.561928, -1.464854],
+    defaultPos: params.defaultPos || [52.561928, -1.464854],
     default_zoom: params.minZoom || 6,
     minZoom: params.minZoom || 6,
     maxZoom: params.maxZoom || 18,
