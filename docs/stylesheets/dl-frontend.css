@@ -7635,6 +7635,54 @@
   }
 }
 
+.sticky-footer-banner__container {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background: #f3f2f1;
+  box-shadow: 0 0 2px #505a5f;
+}
+
+.sticky-footer-banner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sfb-r {
+  text-align: right;
+}
+
+.dl-sticky-banner__container {
+  padding: 0 15px;
+}
+
+@media (min-width: 40.0625em) {
+  .dl-sticky-banner__container {
+    padding: 0 30px;
+  }
+}
+
+.dl-sticky-banner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.dl-sticky-banner--fixed {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background: #f3f2f1;
+  box-shadow: 0 0 2px #505a5f;
+}
+
 .dlf-load-button,
 .dlf-filter-button {
   color: #ffffff;

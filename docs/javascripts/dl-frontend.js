@@ -268,70 +268,58 @@ BackToTop.prototype.init = function (params) {
   if (!('IntersectionObserver' in window)) {
     // If there's no support fallback to regular behaviour
     // Since JavaScript is enabled we can remove the default hidden state
-    return this.$module.classList.remove('back-to-top--hidden')
+    return this.$module.classList.remove(this.hideClass)
   }
 
-  var $footer = document.querySelector(this.footer_selector);
-  var $subNav = document.querySelector(this.head_selector);
+  var $start = document.querySelector(this.startElementSelector);
+  var $end = document.querySelector(this.endElementSelector);
 
   // Check if there is anything to observe
-  if (!$footer || !$subNav) {
+  if (!$end || !$start) {
     return
   }
 
-  var $subNavStyles = document.defaultView.getComputedStyle($subNav);
-  if ($subNavStyles.getPropertyValue('margin-bottom').indexOf('px')) {
-    if (parseInt($subNavStyles.getPropertyValue('margin-bottom').replace('px', '')) < 100) {
-      $subNav.style.marginBottom = '100px';
-    }
-  }
-
-  var footerIsIntersecting = false;
-  var subNavIsIntersecting = false;
-  var subNavIntersectionRatio = 0;
+  let endIsIntersecting = false;
+  let startIsIntersecting = false;
+  let startIntersectionRatio = 0;
 
   var observer = new window.IntersectionObserver(function (entries) {
+    console.log('observed something', entries);
     // Find the elements we care about from the entries
-    var footerEntry = entries.find(function (entry) {
-      return entry.target === $footer
+    var endEntry = entries.find(function (entry) {
+      return entry.target === $end
     });
-    var subNavEntry = entries.find(function (entry) {
-      return entry.target === $subNav
+    var startEntry = entries.find(function (entry) {
+      return entry.target === $start
     });
 
     // If there is an entry this means the element has changed so lets check if it's intersecting.
-    if (footerEntry) {
-      footerIsIntersecting = footerEntry.isIntersecting;
+    if (endEntry) {
+      endIsIntersecting = endEntry.isIntersecting;
     }
-    if (subNavEntry) {
-      subNavIsIntersecting = subNavEntry.isIntersecting;
-      subNavIntersectionRatio = subNavEntry.intersectionRatio;
+    if (startEntry) {
+      startIsIntersecting = startEntry.isIntersecting;
+      startIntersectionRatio = startEntry.intersectionRatio;
     }
 
     // If the subnav or the footer not visible then fix the back to top link to follow the user
-    if (subNavIsIntersecting || footerIsIntersecting) {
-      this.$module.classList.remove('back-to-top--fixed');
-      if (this.classes) {
-        this.$module.classList.remove(this.classes);
-      }
+    if (startIsIntersecting || endIsIntersecting) {
+      this.$module.classList.remove(this.fixClass);
     } else {
-      this.$module.classList.add('back-to-top--fixed');
-      if (this.classes) {
-        this.$module.classList.add(this.classes);
-      }
+      this.$module.classList.add(this.fixClass);
     }
 
     // If the subnav is visible but you can see it all at once, then a back to top link is likely not as useful.
     // We hide the link but make it focusable for screen readers users who might still find it useful.
-    if (subNavIsIntersecting && subNavIntersectionRatio === 1) {
-      this.$module.classList.add('back-to-top--hidden');
+    if (startIsIntersecting && startIntersectionRatio === 1) {
+      this.$module.classList.add(this.hideClass);
     } else {
-      this.$module.classList.remove('back-to-top--hidden');
+      this.$module.classList.remove(this.hideClass);
     }
   }.bind(this));
 
-  observer.observe($footer);
-  observer.observe($subNav);
+  observer.observe($end);
+  observer.observe($start);
 };
 
 BackToTop.prototype.passedBottom = function ($el) {
@@ -342,9 +330,10 @@ BackToTop.prototype.passedBottom = function ($el) {
 
 BackToTop.prototype.setupOptions = function (params) {
   params = params || {};
-  this.footer_selector = params.footer_selector || '.app-footer';
-  this.head_selector = params.head_selector || '.app-subnav';
-  this.classes = params.classes || '';
+  this.endElementSelector = params.endElementSelector || '.app-footer';
+  this.startElementSelector = params.startElementSelector || '.app-subnav';
+  this.hideClass = params.hideClass || 'back-to-top--hidden';
+  this.fixClass = params.fixClass || 'back-to-top--fixed';
 };
 
 // ====================================
