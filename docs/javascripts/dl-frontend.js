@@ -2416,6 +2416,819 @@ AppTabs.prototype.handleClick = function (event) {
   }
 };
 
+(function (global, factory) {
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory() :
+	typeof define === 'function' && define.amd ? define('GOVUKFrontend', factory) :
+	(factory());
+}(undefined, (function () {
+(function(undefined) {
+
+// Detection from https://github.com/Financial-Times/polyfill-service/blob/master/packages/polyfill-library/polyfills/Object/defineProperty/detect.js
+var detect = (
+  // In IE8, defineProperty could only act on DOM elements, so full support
+  // for the feature requires the ability to set a property on an arbitrary object
+  'defineProperty' in Object && (function() {
+  	try {
+  		var a = {};
+  		Object.defineProperty(a, 'test', {value:42});
+  		return true;
+  	} catch(e) {
+  		return false
+  	}
+  }())
+);
+
+if (detect) return
+
+// Polyfill from https://cdn.polyfill.io/v2/polyfill.js?features=Object.defineProperty&flags=always
+(function (nativeDefineProperty) {
+
+	var supportsAccessors = Object.prototype.hasOwnProperty('__defineGetter__');
+	var ERR_ACCESSORS_NOT_SUPPORTED = 'Getters & setters cannot be defined on this javascript engine';
+	var ERR_VALUE_ACCESSORS = 'A property cannot both have accessors and be writable or have a value';
+
+	Object.defineProperty = function defineProperty(object, property, descriptor) {
+
+		// Where native support exists, assume it
+		if (nativeDefineProperty && (object === window || object === document || object === Element.prototype || object instanceof Element)) {
+			return nativeDefineProperty(object, property, descriptor);
+		}
+
+		if (object === null || !(object instanceof Object || typeof object === 'object')) {
+			throw new TypeError('Object.defineProperty called on non-object');
+		}
+
+		if (!(descriptor instanceof Object)) {
+			throw new TypeError('Property description must be an object');
+		}
+
+		var propertyString = String(property);
+		var hasValueOrWritable = 'value' in descriptor || 'writable' in descriptor;
+		var getterType = 'get' in descriptor && typeof descriptor.get;
+		var setterType = 'set' in descriptor && typeof descriptor.set;
+
+		// handle descriptor.get
+		if (getterType) {
+			if (getterType !== 'function') {
+				throw new TypeError('Getter must be a function');
+			}
+			if (!supportsAccessors) {
+				throw new TypeError(ERR_ACCESSORS_NOT_SUPPORTED);
+			}
+			if (hasValueOrWritable) {
+				throw new TypeError(ERR_VALUE_ACCESSORS);
+			}
+			Object.__defineGetter__.call(object, propertyString, descriptor.get);
+		} else {
+			object[propertyString] = descriptor.value;
+		}
+
+		// handle descriptor.set
+		if (setterType) {
+			if (setterType !== 'function') {
+				throw new TypeError('Setter must be a function');
+			}
+			if (!supportsAccessors) {
+				throw new TypeError(ERR_ACCESSORS_NOT_SUPPORTED);
+			}
+			if (hasValueOrWritable) {
+				throw new TypeError(ERR_VALUE_ACCESSORS);
+			}
+			Object.__defineSetter__.call(object, propertyString, descriptor.set);
+		}
+
+		// OK to define value unconditionally - if a getter has been specified as well, an error would be thrown above
+		if ('value' in descriptor) {
+			object[propertyString] = descriptor.value;
+		}
+
+		return object;
+	};
+}(Object.defineProperty));
+})
+.call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+
+(function(undefined) {
+
+// Detection from https://github.com/Financial-Times/polyfill-service/blob/master/packages/polyfill-library/polyfills/Document/detect.js
+var detect = ("Document" in this);
+
+if (detect) return
+
+// Polyfill from https://cdn.polyfill.io/v2/polyfill.js?features=Document&flags=always
+if ((typeof WorkerGlobalScope === "undefined") && (typeof importScripts !== "function")) {
+
+	if (this.HTMLDocument) { // IE8
+
+		// HTMLDocument is an extension of Document.  If the browser has HTMLDocument but not Document, the former will suffice as an alias for the latter.
+		this.Document = this.HTMLDocument;
+
+	} else {
+
+		// Create an empty function to act as the missing constructor for the document object, attach the document object as its prototype.  The function needs to be anonymous else it is hoisted and causes the feature detect to prematurely pass, preventing the assignments below being made.
+		this.Document = this.HTMLDocument = document.constructor = (new Function('return function Document() {}')());
+		this.Document.prototype = document;
+	}
+}
+
+
+})
+.call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+
+(function(undefined) {
+
+// Detection from https://github.com/Financial-Times/polyfill-service/blob/master/packages/polyfill-library/polyfills/Element/detect.js
+var detect = ('Element' in this && 'HTMLElement' in this);
+
+if (detect) return
+
+// Polyfill from https://cdn.polyfill.io/v2/polyfill.js?features=Element&flags=always
+(function () {
+
+	// IE8
+	if (window.Element && !window.HTMLElement) {
+		window.HTMLElement = window.Element;
+		return;
+	}
+
+	// create Element constructor
+	window.Element = window.HTMLElement = new Function('return function Element() {}')();
+
+	// generate sandboxed iframe
+	var vbody = document.appendChild(document.createElement('body'));
+	var frame = vbody.appendChild(document.createElement('iframe'));
+
+	// use sandboxed iframe to replicate Element functionality
+	var frameDocument = frame.contentWindow.document;
+	var prototype = Element.prototype = frameDocument.appendChild(frameDocument.createElement('*'));
+	var cache = {};
+
+	// polyfill Element.prototype on an element
+	var shiv = function (element, deep) {
+		var
+		childNodes = element.childNodes || [],
+		index = -1,
+		key, value, childNode;
+
+		if (element.nodeType === 1 && element.constructor !== Element) {
+			element.constructor = Element;
+
+			for (key in cache) {
+				value = cache[key];
+				element[key] = value;
+			}
+		}
+
+		while (childNode = deep && childNodes[++index]) {
+			shiv(childNode, deep);
+		}
+
+		return element;
+	};
+
+	var elements = document.getElementsByTagName('*');
+	var nativeCreateElement = document.createElement;
+	var interval;
+	var loopLimit = 100;
+
+	prototype.attachEvent('onpropertychange', function (event) {
+		var
+		propertyName = event.propertyName,
+		nonValue = !cache.hasOwnProperty(propertyName),
+		newValue = prototype[propertyName],
+		oldValue = cache[propertyName],
+		index = -1,
+		element;
+
+		while (element = elements[++index]) {
+			if (element.nodeType === 1) {
+				if (nonValue || element[propertyName] === oldValue) {
+					element[propertyName] = newValue;
+				}
+			}
+		}
+
+		cache[propertyName] = newValue;
+	});
+
+	prototype.constructor = Element;
+
+	if (!prototype.hasAttribute) {
+		// <Element>.hasAttribute
+		prototype.hasAttribute = function hasAttribute(name) {
+			return this.getAttribute(name) !== null;
+		};
+	}
+
+	// Apply Element prototype to the pre-existing DOM as soon as the body element appears.
+	function bodyCheck() {
+		if (!(loopLimit--)) clearTimeout(interval);
+		if (document.body && !document.body.prototype && /(complete|interactive)/.test(document.readyState)) {
+			shiv(document, true);
+			if (interval && document.body.prototype) clearTimeout(interval);
+			return (!!document.body.prototype);
+		}
+		return false;
+	}
+	if (!bodyCheck()) {
+		document.onreadystatechange = bodyCheck;
+		interval = setInterval(bodyCheck, 25);
+	}
+
+	// Apply to any new elements created after load
+	document.createElement = function createElement(nodeName) {
+		var element = nativeCreateElement(String(nodeName).toLowerCase());
+		return shiv(element);
+	};
+
+	// remove sandboxed iframe
+	document.removeChild(vbody);
+}());
+
+})
+.call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+
+(function(undefined) {
+
+    // Detection from https://raw.githubusercontent.com/Financial-Times/polyfill-library/master/polyfills/Element/prototype/nextElementSibling/detect.js
+    var detect = (
+      'document' in this && "nextElementSibling" in document.documentElement
+    );
+
+    if (detect) return
+
+    // Polyfill from https://raw.githubusercontent.com/Financial-Times/polyfill-library/master/polyfills/Element/prototype/nextElementSibling/polyfill.js
+    Object.defineProperty(Element.prototype, "nextElementSibling", {
+      get: function(){
+        var el = this.nextSibling;
+        while (el && el.nodeType !== 1) { el = el.nextSibling; }
+        return el;
+      }
+    });
+
+}).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+
+})));
+
+(function (global, factory) {
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory() :
+	typeof define === 'function' && define.amd ? define('GOVUKFrontend', factory) :
+	(factory());
+}(undefined, (function () {
+(function(undefined) {
+
+// Detection from https://github.com/Financial-Times/polyfill-service/blob/master/packages/polyfill-library/polyfills/Object/defineProperty/detect.js
+var detect = (
+  // In IE8, defineProperty could only act on DOM elements, so full support
+  // for the feature requires the ability to set a property on an arbitrary object
+  'defineProperty' in Object && (function() {
+  	try {
+  		var a = {};
+  		Object.defineProperty(a, 'test', {value:42});
+  		return true;
+  	} catch(e) {
+  		return false
+  	}
+  }())
+);
+
+if (detect) return
+
+// Polyfill from https://cdn.polyfill.io/v2/polyfill.js?features=Object.defineProperty&flags=always
+(function (nativeDefineProperty) {
+
+	var supportsAccessors = Object.prototype.hasOwnProperty('__defineGetter__');
+	var ERR_ACCESSORS_NOT_SUPPORTED = 'Getters & setters cannot be defined on this javascript engine';
+	var ERR_VALUE_ACCESSORS = 'A property cannot both have accessors and be writable or have a value';
+
+	Object.defineProperty = function defineProperty(object, property, descriptor) {
+
+		// Where native support exists, assume it
+		if (nativeDefineProperty && (object === window || object === document || object === Element.prototype || object instanceof Element)) {
+			return nativeDefineProperty(object, property, descriptor);
+		}
+
+		if (object === null || !(object instanceof Object || typeof object === 'object')) {
+			throw new TypeError('Object.defineProperty called on non-object');
+		}
+
+		if (!(descriptor instanceof Object)) {
+			throw new TypeError('Property description must be an object');
+		}
+
+		var propertyString = String(property);
+		var hasValueOrWritable = 'value' in descriptor || 'writable' in descriptor;
+		var getterType = 'get' in descriptor && typeof descriptor.get;
+		var setterType = 'set' in descriptor && typeof descriptor.set;
+
+		// handle descriptor.get
+		if (getterType) {
+			if (getterType !== 'function') {
+				throw new TypeError('Getter must be a function');
+			}
+			if (!supportsAccessors) {
+				throw new TypeError(ERR_ACCESSORS_NOT_SUPPORTED);
+			}
+			if (hasValueOrWritable) {
+				throw new TypeError(ERR_VALUE_ACCESSORS);
+			}
+			Object.__defineGetter__.call(object, propertyString, descriptor.get);
+		} else {
+			object[propertyString] = descriptor.value;
+		}
+
+		// handle descriptor.set
+		if (setterType) {
+			if (setterType !== 'function') {
+				throw new TypeError('Setter must be a function');
+			}
+			if (!supportsAccessors) {
+				throw new TypeError(ERR_ACCESSORS_NOT_SUPPORTED);
+			}
+			if (hasValueOrWritable) {
+				throw new TypeError(ERR_VALUE_ACCESSORS);
+			}
+			Object.__defineSetter__.call(object, propertyString, descriptor.set);
+		}
+
+		// OK to define value unconditionally - if a getter has been specified as well, an error would be thrown above
+		if ('value' in descriptor) {
+			object[propertyString] = descriptor.value;
+		}
+
+		return object;
+	};
+}(Object.defineProperty));
+})
+.call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+
+(function(undefined) {
+
+// Detection from https://github.com/Financial-Times/polyfill-service/blob/master/packages/polyfill-library/polyfills/Document/detect.js
+var detect = ("Document" in this);
+
+if (detect) return
+
+// Polyfill from https://cdn.polyfill.io/v2/polyfill.js?features=Document&flags=always
+if ((typeof WorkerGlobalScope === "undefined") && (typeof importScripts !== "function")) {
+
+	if (this.HTMLDocument) { // IE8
+
+		// HTMLDocument is an extension of Document.  If the browser has HTMLDocument but not Document, the former will suffice as an alias for the latter.
+		this.Document = this.HTMLDocument;
+
+	} else {
+
+		// Create an empty function to act as the missing constructor for the document object, attach the document object as its prototype.  The function needs to be anonymous else it is hoisted and causes the feature detect to prematurely pass, preventing the assignments below being made.
+		this.Document = this.HTMLDocument = document.constructor = (new Function('return function Document() {}')());
+		this.Document.prototype = document;
+	}
+}
+
+
+})
+.call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+
+(function(undefined) {
+
+// Detection from https://github.com/Financial-Times/polyfill-service/blob/master/packages/polyfill-library/polyfills/Element/detect.js
+var detect = ('Element' in this && 'HTMLElement' in this);
+
+if (detect) return
+
+// Polyfill from https://cdn.polyfill.io/v2/polyfill.js?features=Element&flags=always
+(function () {
+
+	// IE8
+	if (window.Element && !window.HTMLElement) {
+		window.HTMLElement = window.Element;
+		return;
+	}
+
+	// create Element constructor
+	window.Element = window.HTMLElement = new Function('return function Element() {}')();
+
+	// generate sandboxed iframe
+	var vbody = document.appendChild(document.createElement('body'));
+	var frame = vbody.appendChild(document.createElement('iframe'));
+
+	// use sandboxed iframe to replicate Element functionality
+	var frameDocument = frame.contentWindow.document;
+	var prototype = Element.prototype = frameDocument.appendChild(frameDocument.createElement('*'));
+	var cache = {};
+
+	// polyfill Element.prototype on an element
+	var shiv = function (element, deep) {
+		var
+		childNodes = element.childNodes || [],
+		index = -1,
+		key, value, childNode;
+
+		if (element.nodeType === 1 && element.constructor !== Element) {
+			element.constructor = Element;
+
+			for (key in cache) {
+				value = cache[key];
+				element[key] = value;
+			}
+		}
+
+		while (childNode = deep && childNodes[++index]) {
+			shiv(childNode, deep);
+		}
+
+		return element;
+	};
+
+	var elements = document.getElementsByTagName('*');
+	var nativeCreateElement = document.createElement;
+	var interval;
+	var loopLimit = 100;
+
+	prototype.attachEvent('onpropertychange', function (event) {
+		var
+		propertyName = event.propertyName,
+		nonValue = !cache.hasOwnProperty(propertyName),
+		newValue = prototype[propertyName],
+		oldValue = cache[propertyName],
+		index = -1,
+		element;
+
+		while (element = elements[++index]) {
+			if (element.nodeType === 1) {
+				if (nonValue || element[propertyName] === oldValue) {
+					element[propertyName] = newValue;
+				}
+			}
+		}
+
+		cache[propertyName] = newValue;
+	});
+
+	prototype.constructor = Element;
+
+	if (!prototype.hasAttribute) {
+		// <Element>.hasAttribute
+		prototype.hasAttribute = function hasAttribute(name) {
+			return this.getAttribute(name) !== null;
+		};
+	}
+
+	// Apply Element prototype to the pre-existing DOM as soon as the body element appears.
+	function bodyCheck() {
+		if (!(loopLimit--)) clearTimeout(interval);
+		if (document.body && !document.body.prototype && /(complete|interactive)/.test(document.readyState)) {
+			shiv(document, true);
+			if (interval && document.body.prototype) clearTimeout(interval);
+			return (!!document.body.prototype);
+		}
+		return false;
+	}
+	if (!bodyCheck()) {
+		document.onreadystatechange = bodyCheck;
+		interval = setInterval(bodyCheck, 25);
+	}
+
+	// Apply to any new elements created after load
+	document.createElement = function createElement(nodeName) {
+		var element = nativeCreateElement(String(nodeName).toLowerCase());
+		return shiv(element);
+	};
+
+	// remove sandboxed iframe
+	document.removeChild(vbody);
+}());
+
+})
+.call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+
+(function(undefined) {
+
+    // Detection from https://raw.githubusercontent.com/Financial-Times/polyfill-library/master/polyfills/Element/prototype/previousElementSibling/detect.js
+    var detect = (
+      'document' in this && "previousElementSibling" in document.documentElement
+    );
+
+    if (detect) return
+
+    // Polyfill from https://raw.githubusercontent.com/Financial-Times/polyfill-library/master/polyfills/Element/prototype/previousElementSibling/polyfill.js
+    Object.defineProperty(Element.prototype, 'previousElementSibling', {
+      get: function(){
+        var el = this.previousSibling;
+        while (el && el.nodeType !== 1) { el = el.previousSibling; }
+        return el;
+      }
+    });
+
+}).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+
+})));
+
+function nodeListForEach (nodes, callback) {
+  if (window.NodeList.prototype.forEach) {
+    return nodes.forEach(callback)
+  }
+  for (var i = 0; i < nodes.length; i++) {
+    callback.call(window, nodes[i], i, nodes);
+  }
+}
+
+function SubNavTabs ($module) {
+  this.$module = $module;
+
+  this.keys = { left: 37, right: 39, up: 38, down: 40 };
+  this.jsHiddenClass = 'govuk-tabs__panel--hidden';
+}
+
+SubNavTabs.prototype.init = function (params) {
+  this.setupOptions(params);
+  this.$tabs = this.$module.querySelectorAll(this.subNavTabsSelector);
+  console.log(this.$tabs);
+
+  if (typeof window.matchMedia === 'function') {
+    this.setupResponsiveChecks();
+  } else {
+    this.setup();
+  }
+
+  return this
+};
+
+SubNavTabs.prototype.setupResponsiveChecks = function () {
+  this.mql = window.matchMedia('(min-width: 40.0625em)');
+  this.mql.addListener(this.checkMode.bind(this));
+  this.checkMode();
+};
+
+SubNavTabs.prototype.checkMode = function () {
+  if (this.mql.matches) {
+    this.setup();
+  } else {
+    this.teardown();
+  }
+};
+
+SubNavTabs.prototype.setup = function () {
+  var $module = this.$module;
+  var $tabs = this.$tabs;
+  var $tabList = $module.querySelector(this.subNavListSelector);
+  var $tabListItems = $module.querySelectorAll(this.subNavListItemSelector);
+
+  if (!$tabs || !$tabList || !$tabListItems) {
+    return
+  }
+
+  $tabList.setAttribute('role', 'tablist');
+
+  nodeListForEach($tabListItems, function ($item) {
+    $item.setAttribute('role', 'presentation');
+  });
+
+  nodeListForEach($tabs, function ($tab) {
+    // Set HTML attributes
+    this.setAttributes($tab);
+
+    // Save bounded functions to use when removing event listeners during teardown
+    $tab.boundTabClick = this.onTabClick.bind(this);
+    $tab.boundTabKeydown = this.onTabKeydown.bind(this);
+
+    // Handle events
+    $tab.addEventListener('click', $tab.boundTabClick, true);
+    $tab.addEventListener('keydown', $tab.boundTabKeydown, true);
+
+    // Remove old active panels
+    this.hideTab($tab);
+  }.bind(this));
+
+  // Show either the active tab according to the URL's hash or the first tab
+  var $activeTab = this.getTab(window.location.hash) || this.$tabs[0];
+  this.showTab($activeTab);
+
+  // Handle hashchange events
+  $module.boundOnHashChange = this.onHashChange.bind(this);
+  window.addEventListener('hashchange', $module.boundOnHashChange, true);
+};
+
+SubNavTabs.prototype.teardown = function () {
+  var $module = this.$module;
+  var $tabs = this.$tabs;
+  var $tabList = $module.querySelector(this.subNavListSelector);
+  var $tabListItems = $module.querySelectorAll(this.subNavListItemSelector);
+
+  if (!$tabs || !$tabList || !$tabListItems) {
+    return
+  }
+
+  $tabList.removeAttribute('role');
+
+  nodeListForEach($tabListItems, function ($item) {
+    $item.removeAttribute('role', 'presentation');
+  });
+
+  nodeListForEach($tabs, function ($tab) {
+    // Remove events
+    $tab.removeEventListener('click', $tab.boundTabClick, true);
+    $tab.removeEventListener('keydown', $tab.boundTabKeydown, true);
+
+    // Unset HTML attributes
+    this.unsetAttributes($tab);
+  }.bind(this));
+
+  // Remove hashchange event handler
+  window.removeEventListener('hashchange', $module.boundOnHashChange, true);
+};
+
+SubNavTabs.prototype.onHashChange = function (e) {
+  var hash = window.location.hash;
+  var $tabWithHash = this.getTab(hash);
+  if (!$tabWithHash) {
+    return
+  }
+
+  // Prevent changing the hash
+  if (this.changingHash) {
+    this.changingHash = false;
+    return
+  }
+
+  // Show either the active tab according to the URL's hash or the first tab
+  var $previousTab = this.getCurrentTab();
+
+  this.hideTab($previousTab);
+  this.showTab($tabWithHash);
+  $tabWithHash.focus();
+};
+
+SubNavTabs.prototype.hideTab = function ($tab) {
+  this.unhighlightTab($tab);
+  this.hidePanel($tab);
+};
+
+SubNavTabs.prototype.showTab = function ($tab) {
+  this.highlightTab($tab);
+  this.showPanel($tab);
+};
+
+SubNavTabs.prototype.getTab = function (hash) {
+  return this.$module.querySelector(`${this.subNavTabsSelector}[href="' + hash + '"]`)
+};
+
+SubNavTabs.prototype.setAttributes = function ($tab) {
+  // set tab attributes
+  var panelId = this.getHref($tab).slice(1);
+  $tab.setAttribute('id', 'tab_' + panelId);
+  $tab.setAttribute('role', 'tab');
+  $tab.setAttribute('aria-controls', panelId);
+  $tab.setAttribute('aria-selected', 'false');
+  $tab.setAttribute('tabindex', '-1');
+
+  // set panel attributes
+  var $panel = this.getPanel($tab);
+  $panel.setAttribute('role', 'tabpanel');
+  $panel.setAttribute('aria-labelledby', $tab.id);
+  $panel.classList.add(this.jsHiddenClass);
+};
+
+SubNavTabs.prototype.unsetAttributes = function ($tab) {
+  // unset tab attributes
+  $tab.removeAttribute('id');
+  $tab.removeAttribute('role');
+  $tab.removeAttribute('aria-controls');
+  $tab.removeAttribute('aria-selected');
+  $tab.removeAttribute('tabindex');
+
+  // unset panel attributes
+  var $panel = this.getPanel($tab);
+  $panel.removeAttribute('role');
+  $panel.removeAttribute('aria-labelledby');
+  $panel.classList.remove(this.jsHiddenClass);
+};
+
+SubNavTabs.prototype.onTabClick = function (e) {
+  const tabClass = this.subNavTabsSelector.replace('.', '');
+  if (!e.target.classList.contains(tabClass)) {
+  // Allow events on child DOM elements to bubble up to tab parent
+    return false
+  }
+  e.preventDefault();
+  var $newTab = e.target;
+  var $currentTab = this.getCurrentTab();
+  console.log('current', $currentTab);
+  this.hideTab($currentTab);
+  this.showTab($newTab);
+  this.createHistoryEntry($newTab);
+};
+
+SubNavTabs.prototype.createHistoryEntry = function ($tab) {
+  var $panel = this.getPanel($tab);
+
+  // Save and restore the id
+  // so the page doesn't jump when a user clicks a tab (which changes the hash)
+  var id = $panel.id;
+  $panel.id = '';
+  this.changingHash = true;
+  window.location.hash = this.getHref($tab).slice(1);
+  $panel.id = id;
+};
+
+SubNavTabs.prototype.onTabKeydown = function (e) {
+  switch (e.keyCode) {
+    case this.keys.left:
+    case this.keys.up:
+      this.activatePreviousTab();
+      e.preventDefault();
+      break
+    case this.keys.right:
+    case this.keys.down:
+      this.activateNextTab();
+      e.preventDefault();
+      break
+  }
+};
+
+SubNavTabs.prototype.activateNextTab = function () {
+  var currentTab = this.getCurrentTab();
+  var nextTabListItem = currentTab.parentNode.nextElementSibling;
+  if (nextTabListItem) {
+    var nextTab = nextTabListItem.querySelector(this.subNavTabsSelector);
+  }
+  if (nextTab) {
+    this.hideTab(currentTab);
+    this.showTab(nextTab);
+    nextTab.focus();
+    this.createHistoryEntry(nextTab);
+  }
+};
+
+SubNavTabs.prototype.activatePreviousTab = function () {
+  var currentTab = this.getCurrentTab();
+  var previousTabListItem = currentTab.parentNode.previousElementSibling;
+  if (previousTabListItem) {
+    var previousTab = previousTabListItem.querySelector(this.subNavTabsSelector);
+  }
+  if (previousTab) {
+    this.hideTab(currentTab);
+    this.showTab(previousTab);
+    previousTab.focus();
+    this.createHistoryEntry(previousTab);
+  }
+};
+
+SubNavTabs.prototype.getPanel = function ($tab) {
+  var $panel = this.$module.querySelector(this.getHref($tab));
+  return $panel
+};
+
+SubNavTabs.prototype.showPanel = function ($tab) {
+  var $panel = this.getPanel($tab);
+  console.log('show', $panel);
+  $panel.classList.remove(this.jsHiddenClass);
+};
+
+SubNavTabs.prototype.hidePanel = function (tab) {
+  var $panel = this.getPanel(tab);
+  console.log('hide', $panel);
+  $panel.classList.add(this.jsHiddenClass);
+};
+
+SubNavTabs.prototype.unhighlightTab = function ($tab) {
+  console.log('unhighlight', $tab);
+  $tab.setAttribute('aria-selected', 'false');
+  $tab.parentNode.classList.remove(this.subNavTabSelectedClass);
+  $tab.setAttribute('tabindex', '-1');
+};
+
+SubNavTabs.prototype.highlightTab = function ($tab) {
+  $tab.setAttribute('aria-selected', 'true');
+  $tab.parentNode.classList.add(this.subNavTabSelectedClass);
+  $tab.setAttribute('tabindex', '0');
+};
+
+SubNavTabs.prototype.getCurrentTab = function () {
+  const selector = `.${this.subNavTabSelectedClass} ${this.subNavTabsSelector}`;
+  console.log('selector', selector);
+  return this.$module.querySelector(selector)
+};
+
+// this is because IE doesn't always return the actual value but a relative full path
+// should be a utility function most prob
+// http://labs.thesedays.com/blog/2010/01/08/getting-the-href-value-with-jquery-in-ie/
+SubNavTabs.prototype.getHref = function ($tab) {
+  var href = $tab.getAttribute('href');
+  var hash = href.slice(href.indexOf('#'), href.length);
+  return hash
+};
+
+SubNavTabs.prototype.setupOptions = function (params) {
+  params = params || {};
+  this.subNavListSelector = params.subNavListSelector || '.dlf-subnav__list';
+  this.subNavListItemSelector = params.subNavListItemSelector || '.dlf-subnav__list-item';
+  this.subNavTabsSelector = params.subNavTabsSelector || '.dlf-subnav__list-item__link';
+  this.subNavTabSelectedClass = params.subNavTabSelectedClass || 'dlf-subnav__list-item--selected';
+  this.hideClass = params.hideClass || 'back-to-top--hidden';
+  this.fixClass = params.fixClass || 'back-to-top--fixed';
+};
+
 var utils = {};
 
 function camelCaseReplacer (match, s) {
@@ -2473,6 +3286,7 @@ exports.FilterHistorical = FilterHistorical;
 exports.InputCopy = InputCopy;
 exports.FilterTimelineByDate = FilterTimelineByDate;
 exports.AppTabs = AppTabs;
+exports.SubNavTabs = SubNavTabs;
 exports.utils = utils;
 
 })));
