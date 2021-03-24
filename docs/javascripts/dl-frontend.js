@@ -284,7 +284,6 @@ BackToTop.prototype.init = function (params) {
   let startIntersectionRatio = 0;
 
   var observer = new window.IntersectionObserver(function (entries) {
-    console.log('observed something', entries);
     // Find the elements we care about from the entries
     var endEntry = entries.find(function (entry) {
       return entry.target === $end
