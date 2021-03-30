@@ -24,6 +24,10 @@ utils.toCamelCase = function (s) {
 };
 
 utils.truncate = function (s, len) {
+  if (typeof val === 'undefined') {
+    console.log("Can't truncate undefined string");
+    return ''
+  }
   return s.slice(0, len) + '...'
 };
 
@@ -438,7 +442,6 @@ function processSiteData (row) {
     hasEndDate: hasEndDate,
     datesSection: datesSection,
     orgLink: linkToOrg,
-    resourceTrunc: utils.truncate(row.resource, 9),
     optionalFields: optionalFields
   };
   return Object.assign(row, templateFuncs)
@@ -483,9 +486,10 @@ function loadBrownfieldSites (map, url, groupName, options) {
   const groupNameCC = utils.toCamelCase(groupName);
   // check to see if already loaded data
   if (!Object.prototype.hasOwnProperty.call(map.featureGroups, groupNameCC)) {
-    console.log('fetch from url', url);
     fetch(url)
-      .then(resp => resp.json())
+      .then(function (resp) {
+        return resp.json()
+      })
       .then((data) => {
         var l = map.createFeatureGroup(groupNameCC);
         const geojsonLayer = brownfieldGeojsonToLayer(data, options);
