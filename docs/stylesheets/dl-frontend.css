@@ -8566,11 +8566,11 @@
 .hero__content .govuk-body,
 .hero__content .markdown-output p,
 .markdown-output .hero__content p,
-.hero__content a {
+.hero__content a:not([role="button"]) {
   color: #ffffff;
 }
 
-.hero__content a:hover {
+.hero__content a:not([role="button"]):hover {
   color: #f3f2f1;
 }
 
