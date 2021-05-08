@@ -11540,6 +11540,20 @@
   background-color: #0b0c0c;
 }
 
+.dlf-subnav__heading {
+  margin-top: 40px;
+}
+
+@media (min-width: 40.0625em) {
+  .dlf-subnav__heading {
+    margin-top: 60px;
+  }
+}
+
+.dlf-subnav--init .dlf-subnav__heading {
+  margin-top: 0;
+}
+
 .collection-list > li:not(:last-child) {
   margin-bottom: 15px;
 }
