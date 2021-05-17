@@ -11135,7 +11135,7 @@
 }
 
 .dl-timeline:after {
-  bottom: 0;
+  bottom: 3px;
 }
 
 .dl-timeline .dl-timeline__entry-heading {
@@ -11160,7 +11160,7 @@
 }
 
 .dl-sbs:after {
-  bottom: 0;
+  bottom: 3px;
 }
 
 .dl-sbs .dl-timeline__entry-heading {
@@ -11180,6 +11180,10 @@
   border: 4px solid #505a5f;
   border-radius: 50%;
   background: #ffffff;
+}
+
+.dl-timeline:after {
+  top: unset;
 }
 
 .dl-sbs:after {
@@ -11214,6 +11218,10 @@
   display: none;
 }
 
+.dl-timeline--with-starter-label {
+  padding-bottom: 0;
+}
+
 .dl-timeline--dates .dl-timeline__entry:before {
   margin-top: 4px;
 }
@@ -11230,6 +11238,10 @@
   .dl-sbs__entry {
     padding-bottom: 20px;
   }
+}
+
+.dl-timeline__start-label {
+  padding-left: 20px;
 }
 
 .dl-sbs__entry-heading,
