@@ -260,23 +260,34 @@ Map.prototype.plotBoundaries = function (urls, options) {
   const defaultFG = this.featureGroups.initBoundaries;
   const _type = options.type || 'polygon';
   var count = 0;
-  urls.forEach(function (url) {
-    fetch(url)
-      .then((response) => {
-        return response.json()
-      })
-      .then((data) => {
-        const layer = (utils.isFunction(options.geojsonDataToLayer)) ? options.geojsonDataToLayer(data, options) : that.geojsonLayer(data, _type, options);
-        layer.addTo(defaultFG);
-        count++;
-        // only pan map once all boundaries have loaded
-        if (count === urls.length) {
-          map.fitBounds(defaultFG.getBounds());
-          map.addControl(new L.Control.Recentre({
-            layer: defaultFG
-          }));
-        }
-      });
+  Promise.allSettled(
+    urls.map(function (url) {
+      return fetch(url)
+        .then((response) => {
+          return response.json()
+        })
+        .then((data) => {
+          const layer = (utils.isFunction(options.geojsonDataToLayer)) ? options.geojsonDataToLayer(data, options) : that.geojsonLayer(data, _type, options);
+          layer.addTo(defaultFG);
+          count++;
+          // only pan map once all boundaries have loaded
+          if (count === urls.length) {
+            map.fitBounds(defaultFG.getBounds());
+            map.addControl(new L.Control.Recentre({
+              layer: defaultFG
+            }));
+          }
+          return layer
+        })
+        .catch(function (err) {
+          console.log(url, 'error', err);
+        })
+    })
+  ).then(promiseResolutions => {
+    // one initial boundaries have loaded execute fallback
+    if (utils.isFunction(this.options.initGeoJsonLoadCallback)) {
+      this.options.initGeoJsonLoadCallback(urls, defaultFG);
+    }
   });
 };
 
@@ -287,7 +298,8 @@ Map.prototype.setupOptions = function (params) {
     default_zoom: params.minZoom || 6,
     minZoom: params.minZoom || 6,
     maxZoom: params.maxZoom || 18,
-    fullscreenControl: params.fullscreenControl || true // add fullscreen control by default
+    fullscreenControl: params.fullscreenControl || true, // add fullscreen control by default
+    initGeoJsonLoadCallback: params.initGeoJsonLoadCallback || undefined
   };
 };
 
