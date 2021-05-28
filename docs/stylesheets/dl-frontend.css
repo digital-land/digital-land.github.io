@@ -10425,6 +10425,107 @@
   }
 }
 
+.zoom-controls {
+  position: absolute;
+  z-index: 1001;
+  top: 15px;
+  left: 15px;
+  width: 45px;
+  background: transparent;
+}
+
+.zoom-controls__btn,
+.zoom-controls__count-container {
+  display: block;
+  min-height: 45px;
+  margin-bottom: 3px;
+  background: #ffffff;
+  box-shadow: 0 0 3px rgba(11, 12, 12, 0.8);
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+@media print {
+  .zoom-controls__btn,
+  .zoom-controls__count-container {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .zoom-controls__btn,
+  .zoom-controls__count-container {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .zoom-controls__btn,
+  .zoom-controls__count-container {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.zoom-controls__btn {
+  width: 100%;
+  border: 0;
+  text-transform: none;
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.11111;
+}
+
+@media print {
+  .zoom-controls__btn {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .zoom-controls__btn {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+}
+
+@media print {
+  .zoom-controls__btn {
+    font-size: 18pt;
+    line-height: 1.15;
+  }
+}
+
+.zoom-controls__btn:hover {
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+.zoom-controls__btn:focus, .zoom-controls__btn:active {
+  outline: 3px solid transparent;
+  color: #0b0c0c;
+  background-color: #ffdd00;
+  box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
+  text-decoration: none;
+}
+
+.zoom-controls__count-container {
+  line-height: 45px;
+  text-align: center;
+}
+
 .map-wrapper {
   position: relative;
   padding-top: 30px;
