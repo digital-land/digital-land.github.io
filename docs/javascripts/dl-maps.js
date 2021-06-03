@@ -260,6 +260,17 @@ Map.prototype.plotBoundaries = function (urls, options) {
   const defaultFG = this.featureGroups.initBoundaries;
   const _type = options.type || 'polygon';
   var count = 0;
+
+  // hook for callback to trigger once inital zoom/fitbounds completes
+  if (utils.isFunction(that.options.initZoomCallback)) {
+    const moveEndHandler = function (e) {
+      console.log('inital map move/zoom handler triggered');
+      that.options.initZoomCallback(defaultFG);
+      map.off('moveend', moveEndHandler);
+    };
+    map.on('moveend', moveEndHandler);
+  }
+
   Promise.allSettled(
     urls.map(function (url) {
       return fetch(url)
@@ -284,7 +295,7 @@ Map.prototype.plotBoundaries = function (urls, options) {
         })
     })
   ).then(promiseResolutions => {
-    // one initial boundaries have loaded execute fallback
+    // once initial boundaries have loaded execute callback
     if (utils.isFunction(this.options.initGeoJsonLoadCallback)) {
       this.options.initGeoJsonLoadCallback(urls, defaultFG);
     }
@@ -299,7 +310,8 @@ Map.prototype.setupOptions = function (params) {
     minZoom: params.minZoom || 6,
     maxZoom: params.maxZoom || 18,
     fullscreenControl: params.fullscreenControl || true, // add fullscreen control by default
-    initGeoJsonLoadCallback: params.initGeoJsonLoadCallback || undefined
+    initGeoJsonLoadCallback: params.initGeoJsonLoadCallback || undefined,
+    initZoomCallback: params.initZoomCallback || undefined
   };
 };
 
