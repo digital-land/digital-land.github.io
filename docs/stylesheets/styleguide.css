@@ -328,9 +328,7 @@
 
 @supports (margin: max(calc(0px))) {
   .govuk-width-container {
-    margin-right: max(15px, -webkit-calc(15px + env(safe-area-inset-right)));
     margin-right: max(15px, calc(15px + env(safe-area-inset-right)));
-    margin-left: max(15px, -webkit-calc(15px + env(safe-area-inset-left)));
     margin-left: max(15px, calc(15px + env(safe-area-inset-left)));
   }
 }
@@ -342,9 +340,7 @@
   }
   @supports (margin: max(calc(0px))) {
     .govuk-width-container {
-      margin-right: max(30px, -webkit-calc(15px + env(safe-area-inset-right)));
       margin-right: max(30px, calc(15px + env(safe-area-inset-right)));
-      margin-left: max(30px, -webkit-calc(15px + env(safe-area-inset-left)));
       margin-left: max(30px, calc(15px + env(safe-area-inset-left)));
     }
   }
@@ -1439,7 +1435,6 @@ li code {
   position: absolute;
   bottom: -15px;
   left: -15px;
-  width: -webkit-calc(30px + 100%);
   width: calc(30px + 100%);
   height: 2px;
   background: #ffffff;
@@ -1451,7 +1446,6 @@ li code {
   top: -16px;
   right: -15px;
   width: 1px;
-  height: -webkit-calc(100% + 30px);
   height: calc(100% + 30px);
   background: #b1b4b6;
 }

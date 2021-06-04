@@ -232,7 +232,6 @@
   background-color: #f3f2f1;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
 
@@ -1200,9 +1199,7 @@
 
 @supports (margin: max(calc(0px))) {
   .govuk-width-container {
-    margin-right: max(15px, -webkit-calc(15px + env(safe-area-inset-right)));
     margin-right: max(15px, calc(15px + env(safe-area-inset-right)));
-    margin-left: max(15px, -webkit-calc(15px + env(safe-area-inset-left)));
     margin-left: max(15px, calc(15px + env(safe-area-inset-left)));
   }
 }
@@ -1214,9 +1211,7 @@
   }
   @supports (margin: max(calc(0px))) {
     .govuk-width-container {
-      margin-right: max(30px, -webkit-calc(15px + env(safe-area-inset-right)));
       margin-right: max(30px, calc(15px + env(safe-area-inset-right)));
-      margin-left: max(30px, -webkit-calc(15px + env(safe-area-inset-left)));
       margin-left: max(30px, calc(15px + env(safe-area-inset-left)));
     }
   }
@@ -5567,9 +5562,7 @@
 
 @supports (padding: max(calc(0px))) {
   .govuk-skip-link {
-    padding-right: max(15px, -webkit-calc(15px + env(safe-area-inset-right)));
     padding-right: max(15px, calc(15px + env(safe-area-inset-right)));
-    padding-left: max(15px, -webkit-calc(15px + env(safe-area-inset-left)));
     padding-left: max(15px, calc(15px + env(safe-area-inset-left)));
   }
 }
@@ -7248,9 +7241,7 @@
 
 @supports (margin: max(calc(0px))) {
   .dl-full-width-container {
-    margin-right: max(15px, -webkit-calc(15px + env(safe-area-inset-right)));
     margin-right: max(15px, calc(15px + env(safe-area-inset-right)));
-    margin-left: max(15px, -webkit-calc(15px + env(safe-area-inset-left)));
     margin-left: max(15px, calc(15px + env(safe-area-inset-left)));
   }
 }
@@ -7262,9 +7253,7 @@
   }
   @supports (margin: max(calc(0px))) {
     .dl-full-width-container {
-      margin-right: max(30px, -webkit-calc(15px + env(safe-area-inset-right)));
       margin-right: max(30px, calc(15px + env(safe-area-inset-right)));
-      margin-left: max(30px, -webkit-calc(15px + env(safe-area-inset-left)));
       margin-left: max(30px, calc(15px + env(safe-area-inset-left)));
     }
   }
@@ -7769,7 +7758,6 @@
   }
   .js-enabled .back-to-top--fixed {
     position: fixed;
-    top: -webkit-calc(100% - 50px);
     top: calc(100% - 50px);
     bottom: auto;
     left: auto;
@@ -8089,7 +8077,6 @@
   content: "";
   position: absolute;
   top: 50%;
-  top: -webkit-calc(50% - 1px);
   top: calc(50% - 1px);
   left: 0;
   width: 15px;
@@ -8203,7 +8190,7 @@
 
 .contribution-box--small:hover .data {
   padding: 10px;
-  -webkit-transform: translateY(-webkit-calc(100% + 10px));
+  -webkit-transform: translateY(calc(100% + 10px));
       -ms-transform: translateY(calc(100% + 10px));
           transform: translateY(calc(100% + 10px));
 }
@@ -8229,7 +8216,6 @@
 }
 
 .data-record__properties {
-  width: -webkit-calc(100% - 30px);
   width: calc(100% - 30px);
   margin-bottom: 0;
   padding: 0 15px;
@@ -8405,7 +8391,6 @@
   top: 2px;
   width: 5px;
   height: 100%;
-  height: -webkit-calc(100% - 4px);
   height: calc(100% - 4px);
 }
 
@@ -8418,7 +8403,6 @@
 .table-sort--active .data-table-right-shadow, .table-sort--active
 .data-table-left-shadow {
   top: 22px;
-  height: -webkit-calc(100% - 1.5em);
   height: calc(100% - 1.5em);
 }
 
@@ -8531,7 +8515,6 @@
   display: none;
   position: absolute;
   z-index: 10;
-  top: -webkit-calc(100% - 1px);
   top: calc(100% - 1px);
   left: 0;
   padding: 5px;
@@ -9224,7 +9207,6 @@
   position: absolute;
   bottom: 0;
   left: 15px;
-  width: -webkit-calc(100% - 30px);
   width: calc(100% - 30px);
   height: 1px;
   background: #b1b4b6;
@@ -9361,7 +9343,6 @@
   line-height: 1.25;
   box-sizing: border-box;
   position: relative;
-  width: -webkit-calc(100% - 40px);
   width: calc(100% - 40px);
   height: 40px;
   margin-right: 40px;
@@ -10380,7 +10361,6 @@
   display: block;
   position: absolute;
   top: -6px;
-  left: -webkit-calc(50% - 8px);
   left: calc(50% - 8px);
   width: 16px;
   height: 16px;
@@ -10683,7 +10663,6 @@
   position: absolute;
   bottom: -10px;
   left: -4px;
-  width: -webkit-calc(100% + 7px);
   width: calc(100% + 7px);
   height: 5px;
   border: 1px solid #b1b4b6;
@@ -10696,7 +10675,6 @@
 
 .map-key .bfs-pt--small:after {
   left: -3px;
-  width: -webkit-calc(100% + 4px);
   width: calc(100% + 4px);
   height: 4px;
 }
@@ -11225,7 +11203,6 @@
 .technical-summary-card__result:after {
   content: " ";
   position: absolute;
-  top: -webkit-calc(50% - 5px);
   top: calc(50% - 5px);
   left: 0;
   width: 10px;
