@@ -10803,6 +10803,7 @@
 }
 
 .dl-map__side-panel {
+  box-sizing: border-box;
   position: absolute;
   z-index: 1001;
   top: 15px;
@@ -10810,6 +10811,28 @@
   width: 330px;
   background: #ffffff;
   box-shadow: 0 0 3px rgba(11, 12, 12, 0.8);
+}
+
+.dl-map__side-panel--full {
+  height: calc(100% - 30px);
+}
+
+.dl-map__side-panel__heading {
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 1002;
+  top: 0;
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px solid #b1b4b6;
+  background: #ffffff;
+}
+
+.dl-map__side-panel__content {
+  box-sizing: border-box;
+  max-height: 100%;
+  padding: 70px 15px 15px;
+  overflow: scroll;
 }
 
 .dl-map__side-panel__section {
