@@ -586,6 +586,27 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   var basicPopup = {
     initOnEachFeature: initOnEachFeature
   };
+
+  var circleMarkerStyle = function circleMarkerStyle(hex) {
+    return {
+      color: hex,
+      fillColor: hex,
+      fillOpacity: 0.5
+    };
+  };
+
+  function setCircleSize(hectares, defaultRadius) {
+    if (hectares === null || isNaN(hectares)) {
+      return defaultRadius || 100; // give it a default size
+    }
+
+    return Math.sqrt(hectares * 10000 / Math.PI);
+  }
+
+  var mapUtils = {
+    circleMarkerStyle: circleMarkerStyle,
+    setCircleSize: setCircleSize
+  };
   /* global L, window, DLMaps */
 
   function LayerControls($module, leafletMap) {
@@ -600,14 +621,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     this.$controls = Array.prototype.slice.call($controls);
     this.datasetNames = this.$controls.map(function ($control) {
       return $control.dataset.layerControl;
-    }); // setup default options for geojsonFeatureLayers
-
-    var boundGetLayerStyleOption = this.getLayerStyleOption.bind(this);
-    var boundOnEachFeature = this.onEachFeature.bind(this);
-    this.geoJsonLayerOptions = {
-      style: boundGetLayerStyleOption,
-      onEachFeature: boundOnEachFeature
-    }; // create mapping between dataset and layer, one per control item
+    }); // create mapping between dataset and layer, one per control item
 
     this.layerMap = this.createAllFeatureLayers(); // listen for changes to URL
 
@@ -663,21 +677,36 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     return undefined;
   };
 
-  LayerControls.prototype.createFeatureLayer = function () {
-    return L.geoJSON(false, this.geoJsonLayerOptions).addTo(this.map);
+  LayerControls.prototype.createFeatureLayer = function (geoJsonLayerOptions) {
+    // return L.geoJSON(false, this.geoJsonLayerOptions).addTo(this.map)
+    return L.geoJSON(false, geoJsonLayerOptions).addTo(this.map);
   };
 
   LayerControls.prototype.createAllFeatureLayers = function () {
     var layerToDatasetMap = {};
     var that = this;
+    var boundGetLayerStyleOption = this.getLayerStyleOption.bind(this);
+    var boundPointToLayer = this.defaultPointToLayer.bind(this);
+    var boundOnEachFeature = this.onEachFeature.bind(this);
     this.$controls.forEach(function ($control) {
       var dataset = that.getDatasetName($control);
       var layer;
+      var radiusSetting = that.getMarkerRadius($control); // generate options for the geoJSON layer we are creating
+
+      var geoJsonLayerOptions = {
+        style: boundGetLayerStyleOption,
+        pointToLayer: function pointToLayer(feature, latlng) {
+          return boundPointToLayer(feature, latlng, radiusSetting);
+        },
+        onEachFeature: boundOnEachFeature
+      };
 
       if (dataset === 'brownfield-land') {
-        layer = DLMaps.brownfieldSites.geojsonToLayer(false, that.geoJsonLayerOptions).addTo(that.map);
+        // layer = DLMaps.brownfieldSites.geojsonToLayer(false, that.geoJsonLayerOptions).addTo(that.map)
+        layer = DLMaps.brownfieldSites.geojsonToLayer(false, geoJsonLayerOptions).addTo(that.map);
       } else {
-        layer = that.createFeatureLayer();
+        // layer = that.createFeatureLayer()
+        layer = that.createFeatureLayer(geoJsonLayerOptions);
       }
 
       layerToDatasetMap[dataset] = layer;
@@ -686,6 +715,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   };
 
   LayerControls.prototype.getLayerStyleOption = function (feature) {
+    // gets the layer control and looks for style settings
     var colour = this.getStyle(this.getControlByName(feature.properties.type));
 
     if (typeof colour === 'undefined') {
@@ -797,10 +827,24 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     return $control.dataset.layerColour;
   };
 
+  LayerControls.prototype.getMarkerRadius = function ($control) {
+    return parseInt($control.dataset.layerMarkerRadius);
+  };
+
   LayerControls.prototype.defaultOnEachFeature = function (feature, layer) {
     if (feature.properties) {
       layer.bindPopup("\n      <h3>".concat(feature.properties.name, "</h3>\n      ").concat(feature.properties.type, "<br>\n      <a href=").concat(this.baseUrl).concat(feature.properties.slug, ">").concat(feature.properties.slug, "</a>\n    "));
     }
+  };
+
+  LayerControls.prototype.defaultPointToLayer = function (feature, latlng, radius) {
+    var r = radius || 10; // gets the layer control and looks for style settings
+
+    var colour = this.getStyle(this.getControlByName(feature.properties.type));
+    var style = mapUtils.circleMarkerStyle(colour);
+    var size = mapUtils.setCircleSize(feature.properties.hectares, r);
+    style.radius = size.toFixed(2);
+    return L.circle(latlng, style);
   };
 
   LayerControls.prototype.setupOptions = function (params) {
@@ -869,9 +913,11 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     this.counterSelector = params.counterSelector || '.zoom-controls__count';
   };
 
+  var utils$1 = mapUtils;
   exports.Map = Map;
   exports.brownfieldSites = brownfieldSites;
   exports.basicPopup = basicPopup;
   exports.LayerControls = LayerControls;
   exports.ZoomControls = ZoomControls;
+  exports.utils = utils$1;
 });

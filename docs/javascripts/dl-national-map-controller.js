@@ -28,6 +28,7 @@ NationalMapController.prototype.init = function (params) {
   this.initControls(); // kick it all off
 
   this.fetchAll();
+  return this;
 };
 
 NationalMapController.prototype.createMap = function (mapId) {
@@ -188,9 +189,10 @@ NationalMapController.prototype.buildDataUrl = function (bounds, zoomLevel) {
 
   if (type) {
     query = "".concat(query, "_by_type");
-  }
+  } // just canned query handles point data
 
-  if (type === 'brownfield-land') {
+
+  if (type === 'brownfield-land' || type === 'listed-building') {
     query = 'bounded_geography_brownfield_land';
   }
 
