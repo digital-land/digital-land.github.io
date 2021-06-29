@@ -51,6 +51,10 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   utils.isFunction = function (x) {
     return Object.prototype.toString.call(x) === '[object Function]';
   };
+
+  utils.capitalizeFirstLetter = function (string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  };
   /* global L, fetch, window */
   // govuk consistent colours
 
@@ -586,44 +590,29 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   var basicPopup = {
     initOnEachFeature: initOnEachFeature
   };
+  /* global window */
 
-  var circleMarkerStyle = function circleMarkerStyle(hex) {
-    return {
-      color: hex,
-      fillColor: hex,
-      fillOpacity: 0.5
-    };
-  };
-
-  function setCircleSize(hectares, defaultRadius) {
-    if (hectares === null || isNaN(hectares)) {
-      return defaultRadius || 100; // give it a default size
-    }
-
-    return Math.sqrt(hectares * 10000 / Math.PI);
-  }
-
-  var mapUtils = {
-    circleMarkerStyle: circleMarkerStyle,
-    setCircleSize: setCircleSize
-  };
-  /* global L, window, DLMaps */
-
-  function LayerControls($module, leafletMap) {
+  function LayerControls($module, map, source) {
     this.$module = $module;
-    this.map = leafletMap;
+    this.map = map;
+    this.tileSource = source;
   }
 
   LayerControls.prototype.init = function (params) {
     this.setupOptions(params); // returns a node list so convert to array
 
     var $controls = this.$module.querySelectorAll(this.layerControlSelector);
-    this.$controls = Array.prototype.slice.call($controls);
+    this.$controls = Array.prototype.slice.call($controls); // find parent
+
+    this.$container = this.$module.closest('.' + this.controlsContainerClass);
+    this.$container.classList.remove('js-hidden'); // list all datasets names
+
     this.datasetNames = this.$controls.map(function ($control) {
       return $control.dataset.layerControl;
     }); // create mapping between dataset and layer, one per control item
 
-    this.layerMap = this.createAllFeatureLayers(); // listen for changes to URL
+    this.availableLayers = this.createAllFeatureLayers();
+    console.log(this.availableLayers); // listen for changes to URL
 
     var boundSetControls = this.setControls.bind(this);
     window.addEventListener('popstate', function (event) {
@@ -632,14 +621,17 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     }); // initial set up of controls (default or urlParams)
 
     var urlParams = new URL(document.location).searchParams;
+    console.log('PARAMS', urlParams);
 
     if (!urlParams.has('layer')) {
       // if not set then use default checked controls
+      console.log('NO layer params exist');
       this.updateURL();
     } else {
       // use URL params if available
+      console.log('layer params exist');
       this.setControls();
-    } // listen for changes on each checkbox
+    } // listen for changes on each checkbox and change the URL
 
 
     var boundControlChkbxChangeHandler = this.onControlChkbxChange.bind(this);
@@ -651,17 +643,11 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   };
 
   LayerControls.prototype.onControlChkbxChange = function (e) {
-    console.log("I've been toggled", e.target, this); // get the control containing changed checkbox
+    console.log('Has been toggled', e.target, this); // get the control containing changed checkbox
+    // var $clickedControl = e.target.closest(this.layerControlSelector)
+    // when a control is changed update the URL params
 
-    var $clickedControl = e.target.closest(this.layerControlSelector); // when a control is changed update the URL params
-
-    this.updateURL(); // run provided callback
-
-    var enabled = this.getCheckbox($clickedControl).checked;
-
-    if (this.toggleControlCallback && utils.isFunction(this.toggleControlCallback)) {
-      this.toggleControlCallback(this.map, this.getDatasetName($clickedControl), enabled);
-    }
+    this.updateURL();
   }; // should this return an array or a single control?
 
 
@@ -677,58 +663,57 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     return undefined;
   };
 
-  LayerControls.prototype.createFeatureLayer = function (geoJsonLayerOptions) {
-    // return L.geoJSON(false, this.geoJsonLayerOptions).addTo(this.map)
-    return L.geoJSON(false, geoJsonLayerOptions).addTo(this.map);
+  LayerControls.prototype.createVectorLayer = function (layerId, datasetName, _type, paintOptions) {
+    this.map.addLayer({
+      id: layerId,
+      type: _type,
+      source: this.tileSource,
+      'source-layer': datasetName,
+      paint: paintOptions
+    });
   };
 
   LayerControls.prototype.createAllFeatureLayers = function () {
-    var layerToDatasetMap = {};
+    var availableDatasets = [];
     var that = this;
-    var boundGetLayerStyleOption = this.getLayerStyleOption.bind(this);
-    var boundPointToLayer = this.defaultPointToLayer.bind(this);
-    var boundOnEachFeature = this.onEachFeature.bind(this);
     this.$controls.forEach(function ($control) {
-      var dataset = that.getDatasetName($control);
-      var layer;
-      var radiusSetting = that.getMarkerRadius($control); // generate options for the geoJSON layer we are creating
+      var datasetName = that.getDatasetName($control);
+      var dataType = that.getDatasetType($control);
+      var styleProps = that.getStyle($control);
+      var layers;
 
-      var geoJsonLayerOptions = {
-        style: boundGetLayerStyleOption,
-        pointToLayer: function pointToLayer(feature, latlng) {
-          return boundPointToLayer(feature, latlng, radiusSetting);
-        },
-        onEachFeature: boundOnEachFeature
-      };
+      if (dataType === 'point') {
+        // set options for points as circle markers
+        var paintOptions = {
+          'circle-color': styleProps.colour,
+          'circle-opacity': styleProps.opacity,
+          'circle-radius': {
+            base: 1.5,
+            stops: [[6, 1], [22, 180]]
+          },
+          'circle-stroke-color': styleProps.colour,
+          'circle-stroke-width': styleProps.weight
+        }; // create the layer
 
-      if (dataset === 'brownfield-land') {
-        // layer = DLMaps.brownfieldSites.geojsonToLayer(false, that.geoJsonLayerOptions).addTo(that.map)
-        layer = DLMaps.brownfieldSites.geojsonToLayer(false, geoJsonLayerOptions).addTo(that.map);
+        that.createVectorLayer(datasetName, datasetName, 'circle', paintOptions);
+        layers = [datasetName];
       } else {
-        // layer = that.createFeatureLayer()
-        layer = that.createFeatureLayer(geoJsonLayerOptions);
+        // create fill layer
+        that.createVectorLayer(datasetName + 'Fill', datasetName, 'fill', {
+          'fill-color': styleProps.colour,
+          'fill-opacity': styleProps.opacity
+        }); // create line layer
+
+        that.createVectorLayer(datasetName + 'Line', datasetName, 'line', {
+          'line-color': styleProps.colour,
+          'line-width': styleProps.weight
+        });
+        layers = [datasetName + 'Fill', datasetName + 'Line'];
       }
 
-      layerToDatasetMap[dataset] = layer;
+      availableDatasets[datasetName] = layers;
     });
-    return layerToDatasetMap;
-  };
-
-  LayerControls.prototype.getLayerStyleOption = function (feature) {
-    // gets the layer control and looks for style settings
-    var colour = this.getStyle(this.getControlByName(feature.properties.type));
-
-    if (typeof colour === 'undefined') {
-      return {
-        color: '#003078',
-        weight: 2
-      };
-    } else {
-      return {
-        color: colour,
-        weight: 2
-      };
-    }
+    return availableDatasets;
   };
 
   LayerControls.prototype.enable = function ($control) {
@@ -737,6 +722,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     $chkbx.checked = true;
     $control.dataset.layerControlActive = 'true';
     $control.classList.remove(this.layerControlDeactivatedClass);
+    this.toggleLayerVisibility(this.map, this.getDatasetName($control), true);
   };
 
   LayerControls.prototype.disable = function ($control) {
@@ -745,37 +731,48 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     $chkbx.checked = false;
     $control.dataset.layerControlActive = 'false';
     $control.classList.add(this.layerControlDeactivatedClass);
+    this.toggleLayerVisibility(this.map, this.getDatasetName($control), false);
   };
+  /**
+   * Sets the checkboxes based on ?layer= URL params
+   */
+
 
   LayerControls.prototype.setControls = function () {
     var _this2 = this;
 
     var urlParams = new URL(document.location).searchParams;
+    var enabledLayerNames = [];
 
     if (urlParams.has('layer')) {
       // get the names of the enabled and disabled layers
       // only care about layers that exist
-      var enabledLayerNames = urlParams.getAll('layer').filter(function (name) {
+      enabledLayerNames = urlParams.getAll('layer').filter(function (name) {
         return _this2.datasetNames.indexOf(name) > -1;
       });
       console.log('Enable:', enabledLayerNames);
-      var datasetNamesClone = [].concat(this.datasetNames);
-      var disabledLayerNames = datasetNamesClone.filter(function (name) {
-        return enabledLayerNames.indexOf(name) === -1;
-      }); // map the names to the controls
-
-      var toEnable = enabledLayerNames.map(function (name) {
-        return _this2.getControlByName(name);
-      });
-      var toDisable = disabledLayerNames.map(function (name) {
-        return _this2.getControlByName(name);
-      });
-      console.log(toEnable, toDisable); // pass correct this arg
-
-      toEnable.forEach(this.enable, this);
-      toDisable.forEach(this.disable, this);
     }
+
+    var datasetNamesClone = [].concat(this.datasetNames);
+    var disabledLayerNames = datasetNamesClone.filter(function (name) {
+      return enabledLayerNames.indexOf(name) === -1;
+    }); // map the names to the controls
+
+    var toEnable = enabledLayerNames.map(function (name) {
+      return _this2.getControlByName(name);
+    });
+    var toDisable = disabledLayerNames.map(function (name) {
+      return _this2.getControlByName(name);
+    });
+    console.log(toEnable, toDisable); // pass correct this arg
+
+    toEnable.forEach(this.enable, this);
+    toDisable.forEach(this.disable, this);
   };
+  /**
+   * Updates the URL by adding or removing ?layer= params based on latest changes to checkboxes
+   */
+
 
   LayerControls.prototype.updateURL = function () {
     var _this3 = this;
@@ -819,41 +816,54 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     return $control.dataset.layerControl;
   };
 
+  LayerControls.prototype.getDatasetType = function ($control) {
+    return $control.dataset.layerDataType;
+  };
+
   LayerControls.prototype.getZoomRestriction = function ($control) {
     return $control.dataset.layerControlZoom;
   };
+  /**
+   * Extracts and splits style options from style data attribute string
+   * @param  {Element} $control a control item
+   */
+
 
   LayerControls.prototype.getStyle = function ($control) {
-    return $control.dataset.layerColour;
+    var defaultColour = '#003078';
+    var defaultOpacity = 0.5;
+    var defaultWeight = 2;
+    var s = $control.dataset.styleOptions;
+    var parts = s.split(',');
+    return {
+      colour: parts[0] || defaultColour,
+      opacity: parseFloat(parts[1]) || defaultOpacity,
+      weight: parseInt(parts[2]) || defaultWeight
+    };
   };
 
-  LayerControls.prototype.getMarkerRadius = function ($control) {
-    return parseInt($control.dataset.layerMarkerRadius);
+  LayerControls.prototype._toggleLayer = function (layerId, visibility) {
+    this.map.setLayoutProperty(layerId, 'visibility', visibility);
   };
 
-  LayerControls.prototype.defaultOnEachFeature = function (feature, layer) {
-    if (feature.properties) {
-      layer.bindPopup("\n      <h3>".concat(feature.properties.name, "</h3>\n      ").concat(feature.properties.type, "<br>\n      <a href=").concat(this.baseUrl).concat(feature.properties.slug, ">").concat(feature.properties.slug, "</a>\n    "));
-    }
-  };
+  LayerControls.prototype.toggleLayerVisibility = function (map, datasetName, toEnable) {
+    var _this6 = this;
 
-  LayerControls.prototype.defaultPointToLayer = function (feature, latlng, radius) {
-    var r = radius || 10; // gets the layer control and looks for style settings
-
-    var colour = this.getStyle(this.getControlByName(feature.properties.type));
-    var style = mapUtils.circleMarkerStyle(colour);
-    var size = mapUtils.setCircleSize(feature.properties.hectares, r);
-    style.radius = size.toFixed(2);
-    return L.circle(latlng, style);
+    console.log('toggle layer', datasetName);
+    var visibility = toEnable ? 'visible' : 'none';
+    var layers = this.availableLayers[datasetName];
+    layers.forEach(function (layerId) {
+      return _this6._toggleLayer(layerId, visibility);
+    });
   };
 
   LayerControls.prototype.setupOptions = function (params) {
     params = params || {};
     this.layerControlSelector = params.layerControlSelector || '[data-layer-control]';
     this.layerControlDeactivatedClass = params.layerControlDeactivatedClass || 'deactivated-control';
-    this.toggleControlCallback = params.toggleControlCallback || undefined;
     this.onEachFeature = params.onEachFeature || this.defaultOnEachFeature;
     this.baseUrl = params.baseUrl || 'http://digital-land.github.io';
+    this.controlsContainerClass = params.controlsContainerClass || 'dl-map__side-panel';
   };
 
   function ZoomControls($module, leafletMap, initialZoom) {
@@ -878,10 +888,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     this.$buttons.forEach(function ($button) {
       $button.addEventListener('click', boundClickHandler);
     });
-    var boundZoomHandler = this.zoomHandler.bind(this);
-    this.map.addEventListener('zoomend', boundZoomHandler); // get rid of default zoom controls
+    var boundZoomHandler = this.zoomHandler.bind(this); // use on() not addEventListener()
 
-    this.map.removeControl(this.map.zoomControl);
+    this.map.on('zoomend', boundZoomHandler);
     return this;
   };
 
@@ -904,7 +913,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
   ZoomControls.prototype.zoomHandler = function (e) {
     var zoomLevel = this.map.getZoom();
-    this.$counter.textContent = zoomLevel;
+    this.$counter.textContent = parseFloat(zoomLevel).toFixed(2);
   };
 
   ZoomControls.prototype.setupOptions = function (params) {
@@ -913,6 +922,26 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     this.counterSelector = params.counterSelector || '.zoom-controls__count';
   };
 
+  var circleMarkerStyle = function circleMarkerStyle(hex) {
+    return {
+      color: hex,
+      fillColor: hex,
+      fillOpacity: 0.5
+    };
+  };
+
+  function setCircleSize(hectares, defaultRadius) {
+    if (hectares === null || isNaN(hectares)) {
+      return defaultRadius || 100; // give it a default size
+    }
+
+    return Math.sqrt(hectares * 10000 / Math.PI);
+  }
+
+  var mapUtils = {
+    circleMarkerStyle: circleMarkerStyle,
+    setCircleSize: setCircleSize
+  };
   var Permalink = {
     // gets the map center, zoom-level and rotation from the URL if present, else uses default values
     getMapLocation: function getMapLocation(zoom, center) {

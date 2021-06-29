@@ -3182,6 +3182,10 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     return Object.prototype.toString.call(x) === '[object Function]';
   };
 
+  utils.capitalizeFirstLetter = function (string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  };
+
   function polyfill(options) {
     // polyfill for browsers without NodeList forEach method
     if (window.NodeList && !window.NodeList.prototype.forEach) {

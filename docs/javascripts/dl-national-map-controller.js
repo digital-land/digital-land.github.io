@@ -1,213 +1,138 @@
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+/* global DLMaps, maplibregl, LayerControls, ZoomControls */
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-/* global L, fetch, DLMaps, AbortController */
-function NationalMapController(mapId, $layerControls, $zoomControls) {
-  this.mapId = mapId;
-  this.$layerControls = $layerControls;
+function MapController($layerControlsList, $zoomControls) {
+  this.$layerControlsList = $layerControlsList;
   this.$zoomControls = $zoomControls;
 }
 
-NationalMapController.prototype.init = function (params) {
-  // use options provided
-  this.setupOptions(params); // init controller - used to cancel in flight fetch chains
+MapController.prototype.init = function (params) {
+  // check maplibregl is available
+  // if not return
+  this.setupOptions(params); // create the maplibre map
 
-  this.controller = undefined; // create the map
+  this.map = this.createMap(); // perform setup once map is loaded
 
-  this.map = this.createMap(this.mapId); // initialise the layer and zoom controls
+  var boundSetup = this.setup.bind(this);
+  this.map.on('load', boundSetup); // run debugging code
 
-  this.initControls(); // kick it all off
-
-  this.fetchAll();
+  this.debug();
   return this;
 };
 
-NationalMapController.prototype.createMap = function (mapId) {
-  // default location and zoom level if not set by URL params
-  var mappos = L.Permalink.getMapLocation(this.defaultZoomLevel, [53.865, -5.101]);
-  var theMap = L.map(mapId, {
+MapController.prototype.createMap = function () {
+  var mappos = DLMaps.Permalink.getMapLocation(6, [0, 52]);
+  var map = new maplibregl.Map({
+    container: this.mapId,
+    // container id
+    style: './base-tile.json',
+    // open source tiles?
     center: mappos.center,
-    zoom: mappos.zoom
+    // starting position [lng, lat]
+    zoom: mappos.zoom // starting zoom
+
   });
-  L.Permalink.setup(theMap);
-  this.addTileLayer(theMap); // listen for moveend events
-
-  var boundMoveEndHandler = this.moveEndHandler.bind(this);
-  theMap.on('moveend', boundMoveEndHandler);
-  return theMap;
+  DLMaps.Permalink.setup(map);
+  return map;
 };
 
-NationalMapController.prototype.addTileLayer = function (map) {
-  // add the OpenStreetMap tiles
-  L.tileLayer('https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
-  }).addTo(map);
+MapController.prototype.setup = function () {
+  // add source to map
+  this.addSource(); // add zoom controls
+
+  this.zoomControl = new DLMaps.ZoomControls(this.$zoomControls, this.map, this.map.getZoom()).init({}); // setup layers
+
+  console.log(this.$layerControlsList, this.map);
+  this.layerControlsComponent = new DLMaps.LayerControls(this.$layerControlsList, this.map, this.sourceName).init(); // register click handler
+
+  var boundClickHandler = this.clickHandler.bind(this);
+  this.map.on('click', boundClickHandler);
 };
 
-NationalMapController.prototype.initControls = function () {
-  console.log(this.$layerControls, this.$zoomControls);
-
-  if (!this.$layerControls || !this.$zoomControls) {
-    console.log('No control elements defined');
-    return undefined;
-  }
-
-  this.zoomComponent = new DLMaps.ZoomControls(this.$zoomControls, this.map, this.map.getZoom()).init({});
-  var boundToggleDataLayer = this.toggleDataLayer.bind(this);
-  this.layerControlsComponent = new DLMaps.LayerControls(this.$layerControls, this.map).init({
-    toggleControlCallback: boundToggleDataLayer
+MapController.prototype.addSource = function () {
+  var sourceName = this.sourceName;
+  this.map.addSource(sourceName, {
+    type: 'vector',
+    tiles: [this.vectorSource],
+    minzoom: this.minMapZoom,
+    maxzoom: this.maxMapZoom
   });
 };
 
-NationalMapController.prototype.moveEndHandler = function (e) {
-  var bounds = e.target.getBounds();
-  this.fetchAll(bounds);
-  this.map._fetchSinceControlAction = true;
+MapController.prototype.createPopupHTML = function (feature) {
+  var featureType = capitalizeFirstLetter(feature.sourceLayer).replaceAll('-', ' ');
+  var html = ["<p class=\"secondary-text govuk-!-margin-bottom-0\">".concat(featureType, "</p>"), '<p class="dl-small-text govuk-!-margin-top-0">', "<a href=\"".concat(this.baseURL).concat(feature.properties.slug, "\">").concat(feature.properties.name, "</a>"), '</p>'];
+  return html.join('\n');
 };
 
-NationalMapController.prototype.toggleDataLayer = function (map, datasetName, adding) {
-  var layer = this.layerControlsComponent.layerMap[datasetName];
+MapController.prototype.clickHandler = function (e) {
+  var map = this.map;
+  console.log('click at', e);
+  var bbox = [[e.point.x - 5, e.point.y - 5], [e.point.x + 5, e.point.y + 5]];
+  var that = this; // returns a list of layer ids we want to be 'clickable'
 
-  if (adding) {
-    console.log('Debug: ', layer, datasetName);
-    map.addLayer(layer);
-    /* Not sure this is efficient
-        What to limit the number of fetch requests. If layer toggled off then on
-        with no move of the map there is no need to fetch all the features again */
+  var enabledControls = this.layerControlsComponent.enabledLayers();
+  var enabledLayers = enabledControls.map(function ($control) {
+    return that.layerControlsComponent.getDatasetName($control);
+  });
+  var clickableLayers = enabledLayers.map(function (layer) {
+    var components = that.layerControlsComponent.availableLayers[layer];
 
-    if (map._fetchSinceControlAction) {
-      // if something has changed since layer last shown then trigger fetch all
-      // can further improve by fetching only reenable layer
-      this.fetchAll();
-      map._fetchSinceControlAction = false;
+    if (components.includes(layer + 'Fill')) {
+      return layer + 'Fill';
     }
 
-    if (layer.getLayers().length === 0) {
-      // if contains no layers then maybe no fetch has been done before
-      this.fetchAll();
-    }
-  } else {
-    map.removeLayer(layer);
-  }
-};
-
-NationalMapController.prototype.fetchAll = function () {
-  var _this = this;
-
-  var bounds = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.map.getBounds();
-
-  if (this.controller) {
-    console.log('controller.abort()');
-    this.controller && this.controller.abort();
-  } // eslint-disable-next-line no-unused-vars
-
-
-  for (var _i = 0, _Object$entries = Object.entries(this.layerControlsComponent.layerMap); _i < _Object$entries.length; _i++) {
-    var _Object$entries$_i = _slicedToArray(_Object$entries[_i], 2),
-        key = _Object$entries$_i[0],
-        value = _Object$entries$_i[1];
-
-    value.clearLayers();
-  }
-
-  this.controller = new AbortController();
-  this.layerControlsComponent.enabledLayers().forEach(function (layer) {
-    var type_ = layer.dataset.layerControl;
-
-    var zoom = _this.map.getZoom();
-
-    var zoomConstraint = _this.layerControlsComponent.getZoomRestriction(layer); // check for zoom constraint and only fetch if map is zoomed that far
-
-
-    if (typeof zoomConstraint !== 'undefined') {
-      console.log(type_, 'ZoomConstraint', _this.layerControlsComponent.getZoomRestriction(layer));
-
-      if (zoom < zoomConstraint) {
-        return;
-      }
-    }
-
-    console.log('fetching', type_);
-
-    _this.fetchFeatures(_this.fetchProgressCallback, _this.buildDataUrl(bounds, zoom, type_), _this.layerControlsComponent.layerMap[type_], _this.controller.signal, type_).then(function (geoJsonLayer) {
-      console.log('fetch complete', type_);
-    }).catch(function (e) {
-      console.log('caught error from fetch', type_, e);
-    });
+    return components[0];
   });
-}; // function to perform the fetch
+  console.log('Clickable layers: ', clickableLayers); // need to get all the layers that are clickable
 
-
-NationalMapController.prototype.fetchFeatures = function (progress, url, geoJsonLayer, signal, type_) {
-  var that = this;
-  return new Promise(function (resolve, reject) {
-    return fetch(url, {
-      signal: signal
-    }).then(function (response) {
-      if (response.status !== 200) {
-        throw new Error("".concat(response.status, ": ").concat(response.statusText));
-      }
-
-      response.json().then(function (data) {
-        geoJsonLayer.addData(data);
-
-        if (data.length >= that.pageSize) {
-          progress(geoJsonLayer, type_);
-          var lastItem = data[data.length - 1]; // used to paginate the results
-
-          var nextUrl = url;
-          nextUrl.searchParams.set('after', lastItem.id); // self call if more results still to get
-
-          that.fetchFeatures(progress, nextUrl, geoJsonLayer, signal, type_).then(resolve).catch(reject);
-        } else {
-          resolve(geoJsonLayer);
-        }
-      }).catch(reject);
-    }).catch(reject);
+  var features = map.queryRenderedFeatures(bbox, {
+    layers: clickableLayers
+  });
+  console.log(features);
+  var coordinates = e.lngLat;
+  features.forEach(function (feature) {
+    console.log(feature.properties.name, feature);
+    var popupHTML = that.createPopupHTML(feature);
+    new maplibregl.Popup().setLngLat(coordinates).setHTML(popupHTML).addTo(map);
   });
 };
 
-NationalMapController.prototype.buildDataUrl = function (bounds, zoomLevel) {
-  var type = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-  var afterRowid = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
-  var query = 'bounded_geography_simplified_paged'; // controls whether to get simplified boundaries or full res
-
-  if (zoomLevel > 11) {
-    query = 'bounded_geography_full_paged';
-  }
-
-  if (type) {
-    query = "".concat(query, "_by_type");
-  } // this canned query handles point data
-  // list out point data layers here (TO DO replace with config)
-
-
-  if (type === 'brownfield-land' || type === 'listed-building' || type === 'certificate-of-immunity' || type === 'building-preservation-notice') {
-    query = 'bounded_geography_brownfield_land';
-  }
-
-  var url = new URL("".concat(this.baseUrl, "/").concat(query, ".json?_json=geojson&_shape=arrayfirst&bbox_minx=").concat(bounds._southWest.lng, "&bbox_maxx=").concat(bounds._northEast.lng, "&bbox_miny=").concat(bounds._southWest.lat, "&bbox_maxy=").concat(bounds._northEast.lat, "&after=").concat(afterRowid));
-  if (type) url.searchParams.set('type', type);
-  return url;
+MapController.prototype.getMap = function () {
+  return this.map;
 };
 
-NationalMapController.prototype.fetchProgressCallback = function (geoJsonLayer, datasetName) {
-  console.log("".concat(geoJsonLayer.getLayers().length, " features fetched for ").concat(datasetName));
-};
-
-NationalMapController.prototype.setupOptions = function (params) {
+MapController.prototype.setupOptions = function (params) {
   params = params || {};
-  this.defaultZoomLevel = params.defaultZoomLevel || 6;
-  this.baseUrl = params.baseUrl || 'https://datasette-demo.digital-land.info/view_model';
-  this.pageSize = params.pageSize || 100;
+  this.mapId = params.mapId || 'mapid';
+  this.sourceName = params.sourceName || 'dl-vectors';
+  this.vectorSource = params.vectorSource || 'https://datasette-tiles.digital-land.info/-/tiles/dataset_tiles/{z}/{x}/{y}.vector.pbf';
+  this.minMapZoom = params.minMapZoom || 6;
+  this.maxMapZoom = params.maxMapZoom || 15;
+  this.baseURL = params.baseURL || 'https://digital-land.github.io';
+};
+
+MapController.prototype.debug = function () {
+  var that = this;
+
+  function countFeatures(layerName) {
+    var l = that.map.getLayer(layerName);
+
+    if (l) {
+      return that.map.queryRenderedFeatures({
+        layers: [layerName]
+      }).length;
+    }
+
+    return 0;
+  }
+
+  this.map.on('moveend', function (e) {
+    console.log('moveend');
+    console.log('Brownfield', countFeatures('brownfieldland'));
+    console.log('LA boundaries', countFeatures('ladFill'));
+    console.log('conservation area', countFeatures('conservationareaFill'));
+  });
 };
