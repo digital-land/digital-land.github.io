@@ -1,4 +1,4 @@
-/* global DLMaps, maplibregl, LayerControls, ZoomControls */
+/* global DLMaps, maplibregl */
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
@@ -109,7 +109,7 @@ MapController.prototype.setupOptions = function (params) {
   this.mapId = params.mapId || 'mapid';
   this.sourceName = params.sourceName || 'dl-vectors';
   this.vectorSource = params.vectorSource || 'https://datasette-tiles.digital-land.info/-/tiles/dataset_tiles/{z}/{x}/{y}.vector.pbf';
-  this.minMapZoom = params.minMapZoom || 6;
+  this.minMapZoom = params.minMapZoom || 5;
   this.maxMapZoom = params.maxMapZoom || 15;
   this.baseURL = params.baseURL || 'https://digital-land.github.io';
 };
