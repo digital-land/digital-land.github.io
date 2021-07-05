@@ -3890,7 +3890,8 @@
   padding: 0;
   list-style: none;
   -webkit-column-gap: 30px;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
 .govuk-footer__list .govuk-footer__link:hover {
@@ -3900,11 +3901,13 @@
 @media (min-width: 48.0625em) {
   .govuk-footer__list--columns-2 {
     -webkit-column-count: 2;
-    column-count: 2;
+    -moz-column-count: 2;
+         column-count: 2;
   }
   .govuk-footer__list--columns-3 {
     -webkit-column-count: 3;
-    column-count: 3;
+    -moz-column-count: 3;
+         column-count: 3;
   }
 }
 
@@ -5895,7 +5898,8 @@
   text-align: center;
   -webkit-user-select: none;
   -ms-user-select: none;
-  user-select: none;
+  -moz-user-select: none;
+       user-select: none;
   forced-color-adjust: none;
 }
 
@@ -7388,6 +7392,7 @@
   line-height: 25px;
   text-align: center;
   -webkit-user-select: none;
+     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -7521,6 +7526,7 @@
 
 .dl-select-all {
   -webkit-user-select: all;
+     -moz-user-select: all;
           user-select: all;
 }
 
@@ -9546,6 +9552,7 @@
   line-height: 28px;
   text-align: center;
   -webkit-user-select: none;
+     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
