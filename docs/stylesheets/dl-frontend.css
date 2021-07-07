@@ -7550,8 +7550,10 @@
   border-top: 10px solid #1d70b8;
 }
 
-.dl-full-width-page > .dlf-feedback__wrapper {
-  max-width: 1280px;
+@media (min-width: 63.75em) {
+  .dl-full-width-page > .dlf-feedback__wrapper {
+    max-width: 100%;
+  }
 }
 
 .dlf-feedback {
