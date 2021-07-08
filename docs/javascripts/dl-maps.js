@@ -913,7 +913,13 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
   ZoomControls.prototype.zoomHandler = function (e) {
     var zoomLevel = this.map.getZoom();
-    this.$counter.textContent = parseFloat(zoomLevel).toFixed(2);
+    var zl = parseFloat(zoomLevel);
+
+    if (zl % 1 !== 0) {
+      zl = parseFloat(zoomLevel).toFixed(2);
+    }
+
+    this.$counter.textContent = zl;
   };
 
   ZoomControls.prototype.setupOptions = function (params) {

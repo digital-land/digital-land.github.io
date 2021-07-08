@@ -34,7 +34,11 @@ MapController.prototype.createMap = function () {
     zoom: mappos.zoom // starting zoom
 
   });
-  DLMaps.Permalink.setup(map);
+  DLMaps.Permalink.setup(map); // add fullscreen control
+
+  map.addControl(new maplibregl.FullscreenControl({
+    container: document.querySelector(this.mapContainerSelector)
+  }), 'bottom-left');
   return map;
 };
 
@@ -107,6 +111,7 @@ MapController.prototype.getMap = function () {
 MapController.prototype.setupOptions = function (params) {
   params = params || {};
   this.mapId = params.mapId || 'mapid';
+  this.mapContainerSelector = params.mapContainerSelector || '.dl-map__wrapper';
   this.sourceName = params.sourceName || 'dl-vectors';
   this.vectorSource = params.vectorSource || 'https://datasette-tiles.digital-land.info/-/tiles/dataset_tiles/{z}/{x}/{y}.vector.pbf';
   this.minMapZoom = params.minMapZoom || 5;
