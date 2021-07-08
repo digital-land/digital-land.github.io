@@ -10466,6 +10466,29 @@
   }
 }
 
+.dl-label__key {
+  display: block;
+  position: relative;
+  margin-left: 53px;
+}
+
+.dl-label__key__symbol {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  margin-top: -8px;
+  margin-left: -53px;
+  border: 2px solid #b1b4b6;
+  background: rgba(243, 242, 241, 0.5);
+}
+
+.dl-label__key__symbol--circle {
+  border-radius: 50%;
+}
+
 .zoom-controls {
   position: absolute;
   z-index: 1001;
