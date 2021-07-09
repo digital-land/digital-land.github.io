@@ -10466,6 +10466,42 @@
   }
 }
 
+.dl-map__layer-item .govuk-checkboxes__item {
+  padding-right: 40px;
+  padding-left: 0;
+  cursor: pointer;
+}
+
+.dl-map__layer-item .govuk-checkboxes__item:hover .govuk-checkboxes__label:before {
+  box-shadow: 0 0 0 10px #cfcecd;
+}
+
+.dl-map__layer-item .govuk-checkboxes__input {
+  right: -10px;
+  left: unset;
+}
+
+.dl-map__layer-item .govuk-checkboxes__label {
+  padding-left: 0;
+}
+
+.dl-map__layer-item .govuk-checkboxes__label:before {
+  top: 8px;
+  right: 0;
+  left: unset;
+  width: 24px;
+  height: 24px;
+}
+
+.dl-map__layer-item .govuk-checkboxes__label:after {
+  top: 14px;
+  right: 4px;
+  left: unset;
+  width: 16px;
+  height: 9px;
+  border-width: 0 0 4px 4px;
+}
+
 .dl-label__key {
   display: block;
   position: relative;
