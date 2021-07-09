@@ -605,7 +605,10 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     this.$controls = Array.prototype.slice.call($controls); // find parent
 
     this.$container = this.$module.closest('.' + this.controlsContainerClass);
-    this.$container.classList.remove('js-hidden'); // list all datasets names
+    this.$container.classList.remove('js-hidden'); // add buttons to open and close panel
+
+    this.$closeBtn = this.createCloseButton();
+    this.$openBtn = this.createOpenButton(); // list all datasets names
 
     this.datasetNames = this.$controls.map(function ($control) {
       return $control.dataset.layerControl;
@@ -640,6 +643,54 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
       $control.addEventListener('change', boundControlChkbxChangeHandler, true);
     }, this);
     return this;
+  };
+
+  LayerControls.prototype.createCloseButton = function () {
+    var button = document.createElement('button');
+    button.classList.add('dl-map__close-btn');
+    button.dataset.action = 'close';
+    var label = document.createElement('span');
+    label.textContent = 'Close layer panel';
+    label.classList.add('govuk-visually-hidden');
+    button.appendChild(label);
+    this.$container.appendChild(button);
+    var boundTogglePanel = this.togglePanel.bind(this);
+    button.addEventListener('click', boundTogglePanel);
+    return button;
+  };
+
+  LayerControls.prototype.createOpenButton = function () {
+    var button = document.createElement('button');
+    button.classList.add('dl-map__open-btn', 'dl-map__overlay', 'js-hidden');
+    button.dataset.action = 'open';
+    var label = document.createElement('span');
+    label.textContent = 'Open layer panel';
+    label.classList.add('govuk-visually-hidden');
+    button.appendChild(label);
+    this.map.getContainer().appendChild(button);
+    var boundTogglePanel = this.togglePanel.bind(this);
+    button.addEventListener('click', boundTogglePanel);
+    return button;
+  };
+
+  LayerControls.prototype.togglePanel = function (e) {
+    var action = e.target.dataset.action;
+    var opening = action === 'open'; // set aria attributes
+
+    this.$container.setAttribute('aria-hidden', !opening);
+    this.$container.setAttribute('open', opening);
+
+    if (opening) {
+      this.$container.classList.remove('dl-map__side-panel--collapsed');
+      this.$openBtn.classList.add('js-hidden'); // focus on the panel when opening
+
+      this.$container.focus();
+    } else {
+      this.$container.classList.add('dl-map__side-panel--collapsed');
+      this.$openBtn.classList.remove('js-hidden'); // focus on open btn when closing panel
+
+      this.$openBtn.focus();
+    }
   };
 
   LayerControls.prototype.onControlChkbxChange = function (e) {
