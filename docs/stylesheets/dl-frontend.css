@@ -10525,6 +10525,59 @@
   border-radius: 50%;
 }
 
+.dl-popup {
+  padding-left: 5px;
+}
+
+.dl-popup p:last-child {
+  margin-bottom: 0;
+}
+
+.dl-popup-heading {
+  font-family: "GDS Transport", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.14286;
+  margin: 5px 5px 5px 0;
+}
+
+@media print {
+  .dl-popup-heading {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .dl-popup-heading {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+}
+
+@media print {
+  .dl-popup-heading {
+    font-size: 14pt;
+    line-height: 1.2;
+  }
+}
+
+.dl-popup-list {
+  max-height: 190px;
+  margin-left: 0;
+  padding-left: 0;
+  overflow: scroll;
+}
+
+.dl-popup-item {
+  margin-bottom: 5px;
+  padding-left: 10px;
+  list-style: none;
+}
+
 .dl-map__side-panel {
   box-sizing: border-box;
   position: absolute;

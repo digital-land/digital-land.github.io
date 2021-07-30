@@ -77,7 +77,6 @@ OrgMapController.prototype.addSource = function () {
   var map = this.map;
   var that = this; // add sources for the layers
 
-  console.log('Datasets', this.getDatasets());
   this.getDatasets().forEach(function (d) {
     map.addSource("".concat(d, "-source"), {
       type: 'vector',
@@ -89,7 +88,6 @@ OrgMapController.prototype.addSource = function () {
 };
 
 OrgMapController.prototype.setFilters = function () {
-  console.log('lets set these filters');
   var that = this;
   var datasets = this.datasets.filter(function (d) {
     return d.name !== 'local-authority-district';
@@ -107,24 +105,64 @@ OrgMapController.prototype.setFilters = function () {
 
   this.map.setFilter('local-authority-districtFill', ['in', this.statisticalGeography, ['get', 'slug']]);
   this.map.setFilter('local-authority-districtLine', ['in', this.statisticalGeography, ['get', 'slug']]);
+}; // uses the feature's sourceLayer to return the set colour for data of that type
+
+
+OrgMapController.prototype.getFillColour = function (feature) {
+  var l = this.layerControlsComponent.getControlByName(feature.sourceLayer);
+  var styles = this.layerControlsComponent.getStyle(l);
+  return styles.colour;
+}; // sometimes the same feature can appear multiple times in a list for features
+// return only unique features
+
+
+OrgMapController.prototype.removeDuplicates = function (features) {
+  var uniqueIds = [];
+  console.log(features);
+  return features.filter(function (feature) {
+    if (uniqueIds.indexOf(feature.id) === -1) {
+      uniqueIds.push(feature.id);
+      return true;
+    }
+
+    return false;
+  });
 };
 
-OrgMapController.prototype.createPopupHTML = function (feature) {
-  var featureType = capitalizeFirstLetter(feature.sourceLayer).replaceAll('-', ' ');
-  var html = ["<p class=\"secondary-text govuk-!-margin-bottom-0\">".concat(featureType, "</p>"), '<p class="dl-small-text govuk-!-margin-top-0">', "<a href=\"".concat(this.baseURL).concat(feature.properties.slug, "\">").concat(feature.properties.name, "</a>"), '</p>'];
-  return html.join('\n');
+OrgMapController.prototype.createFeaturesPopup = function (features) {
+  var wrapperOpen = '<div class="dl-popup">';
+  var wrapperClose = '</div>';
+  var headingHTML = "<h3 class=\"dl-popup-heading\">".concat(features.length, " features selected</h3>");
+
+  if (features.length > this.popupMaxListLength) {
+    headingHTML = '<h3 class="dl-popup-heading">Too many features selected</h3>';
+    var tooMany = "<p class=\"govuk-body-s\">You clicked on ".concat(features.length, " features.</p><p class=\"govuk-body-s\">Zoom in or turn off layers to narrow down your choice.</p>");
+    return wrapperOpen + headingHTML + tooMany + wrapperClose;
+  }
+
+  var itemsHTML = '<ul class="dl-popup-list">\n';
+  var that = this;
+  features.forEach(function (feature) {
+    var featureType = capitalizeFirstLetter(feature.sourceLayer).replaceAll('-', ' ');
+    var fillColour = that.getFillColour(feature);
+    var itemHTML = ["<li class=\"dl-popup-item\" style=\"border-left: 5px solid ".concat(fillColour, "\">"), "<p class=\"secondary-text govuk-!-margin-bottom-0 govuk-!-margin-top-0\">".concat(featureType, "</p>"), '<p class="dl-small-text govuk-!-margin-top-0 govuk-!-margin-bottom-0">', "<a href=\"".concat(this.baseURL).concat(feature.properties.slug, "\">").concat(feature.properties.name, "</a>"), '</p>', '</li>'];
+    itemsHTML = itemsHTML + itemHTML.join('\n');
+  });
+  itemsHTML = headingHTML + itemsHTML + '</ul>';
+  return wrapperOpen + itemsHTML + wrapperClose;
 };
 
 OrgMapController.prototype.clickHandler = function (e) {
   var map = this.map;
-  console.log('click at', e);
+  console.log('click location', e);
   var bbox = [[e.point.x - 5, e.point.y - 5], [e.point.x + 5, e.point.y + 5]];
   var that = this; // returns a list of layer ids we want to be 'clickable'
 
   var enabledControls = this.layerControlsComponent.enabledLayers();
   var enabledLayers = enabledControls.map(function ($control) {
     return that.layerControlsComponent.getDatasetName($control);
-  });
+  }); // need to get just the layers that are clickable
+
   var clickableLayers = enabledLayers.map(function (layer) {
     var components = that.layerControlsComponent.availableLayers[layer];
 
@@ -134,18 +172,15 @@ OrgMapController.prototype.clickHandler = function (e) {
 
     return components[0];
   });
-  console.log('Clickable layers: ', clickableLayers); // need to get all the layers that are clickable
-
+  console.log('Clickable layers: ', clickableLayers);
   var features = map.queryRenderedFeatures(bbox, {
     layers: clickableLayers
   });
-  console.log(features);
   var coordinates = e.lngLat;
-  features.forEach(function (feature) {
-    console.log(feature.properties.name, feature);
-    var popupHTML = that.createPopupHTML(feature);
-    new maplibregl.Popup().setLngLat(coordinates).setHTML(popupHTML).addTo(map);
-  });
+  var popupHTML = that.createFeaturesPopup(this.removeDuplicates(features));
+  var popup = new maplibregl.Popup({
+    maxWidth: this.popupWidth
+  }).setLngLat(coordinates).setHTML(popupHTML).addTo(map);
 };
 
 OrgMapController.prototype.flyToFeatureSet = function (dataset, filter, returnFeatures) {
@@ -199,6 +234,8 @@ OrgMapController.prototype.setupOptions = function (params) {
   this.baseURL = params.baseURL || 'https://digital-land.github.io';
   this.baseTileStyleFilePath = params.baseTileStyleFilePath || './base-tile.json';
   this.flyToDataset = params.flyToDataset || 'local-authority-district';
+  this.popupWidth = params.popupWidth || '260px';
+  this.popupMaxListLength = params.popupMaxListLength || 10;
 };
 
 OrgMapController.prototype.debug = function () {
@@ -219,7 +256,7 @@ OrgMapController.prototype.debug = function () {
   this.map.on('moveend', function (e) {
     console.log('moveend');
     console.log('Brownfield', countFeatures('brownfield-land'));
-    console.log('LA boundaries', countFeatures('ladFill'));
+    console.log('LA boundaries', countFeatures('local-authority-districtFill'));
     console.log('conservation area', countFeatures('conservation-areaFill'));
   });
 };
