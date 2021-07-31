@@ -63,12 +63,53 @@ MapController.prototype.addSource = function () {
     minzoom: this.minMapZoom,
     maxzoom: this.maxMapZoom
   });
+}; // uses the feature's sourceLayer to return the set colour for data of that type
+
+
+MapController.prototype.getFillColour = function (feature) {
+  var l = this.layerControlsComponent.getControlByName(feature.sourceLayer);
+  var styles = this.layerControlsComponent.getStyle(l);
+  return styles.colour;
+}; // sometimes the same feature can appear multiple times in a list for features
+// return only unique features
+
+
+MapController.prototype.removeDuplicates = function (features) {
+  var uniqueIds = [];
+  console.log(features);
+  return features.filter(function (feature) {
+    if (uniqueIds.indexOf(feature.id) === -1) {
+      uniqueIds.push(feature.id);
+      return true;
+    }
+
+    return false;
+  });
 };
 
-MapController.prototype.createPopupHTML = function (feature) {
-  var featureType = capitalizeFirstLetter(feature.sourceLayer).replaceAll('-', ' ');
-  var html = ["<p class=\"secondary-text govuk-!-margin-bottom-0\">".concat(featureType, "</p>"), '<p class="dl-small-text govuk-!-margin-top-0">', "<a href=\"".concat(this.baseURL).concat(feature.properties.slug, "\">").concat(feature.properties.name, "</a>"), '</p>'];
-  return html.join('\n');
+MapController.prototype.createFeaturesPopup = function (features) {
+  var featureCount = features.length;
+  var wrapperOpen = '<div class="dl-popup">';
+  var wrapperClose = '</div>';
+  var featureOrFeatures = featureCount > 1 ? 'features' : 'feature';
+  var headingHTML = "<h3 class=\"dl-popup-heading\">".concat(featureCount, " ").concat(featureOrFeatures, " selected</h3>");
+
+  if (featureCount > this.popupMaxListLength) {
+    headingHTML = '<h3 class="dl-popup-heading">Too many features selected</h3>';
+    var tooMany = "<p class=\"govuk-body-s\">You clicked on ".concat(featureCount, " features.</p><p class=\"govuk-body-s\">Zoom in or turn off layers to narrow down your choice.</p>");
+    return wrapperOpen + headingHTML + tooMany + wrapperClose;
+  }
+
+  var itemsHTML = '<ul class="dl-popup-list">\n';
+  var that = this;
+  features.forEach(function (feature) {
+    var featureType = capitalizeFirstLetter(feature.sourceLayer).replaceAll('-', ' ');
+    var fillColour = that.getFillColour(feature);
+    var itemHTML = ["<li class=\"dl-popup-item\" style=\"border-left: 5px solid ".concat(fillColour, "\">"), "<p class=\"secondary-text govuk-!-margin-bottom-0 govuk-!-margin-top-0\">".concat(featureType, "</p>"), '<p class="dl-small-text govuk-!-margin-top-0 govuk-!-margin-bottom-0">', "<a href=\"".concat(this.baseURL).concat(feature.properties.slug, "\">").concat(feature.properties.name, "</a>"), '</p>', '</li>'];
+    itemsHTML = itemsHTML + itemHTML.join('\n');
+  });
+  itemsHTML = headingHTML + itemsHTML + '</ul>';
+  return wrapperOpen + itemsHTML + wrapperClose;
 };
 
 MapController.prototype.clickHandler = function (e) {
@@ -95,13 +136,15 @@ MapController.prototype.clickHandler = function (e) {
   var features = map.queryRenderedFeatures(bbox, {
     layers: clickableLayers
   });
-  console.log(features);
   var coordinates = e.lngLat;
-  features.forEach(function (feature) {
-    console.log(feature.properties.name, feature);
-    var popupHTML = that.createPopupHTML(feature);
-    new maplibregl.Popup().setLngLat(coordinates).setHTML(popupHTML).addTo(map);
-  });
+
+  if (features.length) {
+    // no need to show popup if not clicking on feature
+    var popupHTML = that.createFeaturesPopup(this.removeDuplicates(features));
+    var popup = new maplibregl.Popup({
+      maxWidth: this.popupWidth
+    }).setLngLat(coordinates).setHTML(popupHTML).addTo(map);
+  }
 };
 
 MapController.prototype.getMap = function () {
@@ -118,6 +161,8 @@ MapController.prototype.setupOptions = function (params) {
   this.maxMapZoom = params.maxMapZoom || 15;
   this.baseURL = params.baseURL || 'https://digital-land.github.io';
   this.baseTileStyleFilePath = params.baseTileStyleFilePath || './base-tile.json';
+  this.popupWidth = params.popupWidth || '260px';
+  this.popupMaxListLength = params.popupMaxListLength || 10;
 };
 
 MapController.prototype.debug = function () {

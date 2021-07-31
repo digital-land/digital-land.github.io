@@ -130,13 +130,15 @@ OrgMapController.prototype.removeDuplicates = function (features) {
 };
 
 OrgMapController.prototype.createFeaturesPopup = function (features) {
+  var featureCount = features.length;
   var wrapperOpen = '<div class="dl-popup">';
   var wrapperClose = '</div>';
-  var headingHTML = "<h3 class=\"dl-popup-heading\">".concat(features.length, " features selected</h3>");
+  var featureOrFeatures = featureCount > 1 ? 'features' : 'feature';
+  var headingHTML = "<h3 class=\"dl-popup-heading\">".concat(featureCount, " ").concat(featureOrFeatures, " selected</h3>");
 
-  if (features.length > this.popupMaxListLength) {
+  if (featureCount > this.popupMaxListLength) {
     headingHTML = '<h3 class="dl-popup-heading">Too many features selected</h3>';
-    var tooMany = "<p class=\"govuk-body-s\">You clicked on ".concat(features.length, " features.</p><p class=\"govuk-body-s\">Zoom in or turn off layers to narrow down your choice.</p>");
+    var tooMany = "<p class=\"govuk-body-s\">You clicked on ".concat(featureCount, " features.</p><p class=\"govuk-body-s\">Zoom in or turn off layers to narrow down your choice.</p>");
     return wrapperOpen + headingHTML + tooMany + wrapperClose;
   }
 
@@ -177,10 +179,13 @@ OrgMapController.prototype.clickHandler = function (e) {
     layers: clickableLayers
   });
   var coordinates = e.lngLat;
-  var popupHTML = that.createFeaturesPopup(this.removeDuplicates(features));
-  var popup = new maplibregl.Popup({
-    maxWidth: this.popupWidth
-  }).setLngLat(coordinates).setHTML(popupHTML).addTo(map);
+
+  if (features.length) {
+    var popupHTML = that.createFeaturesPopup(this.removeDuplicates(features));
+    var popup = new maplibregl.Popup({
+      maxWidth: this.popupWidth
+    }).setLngLat(coordinates).setHTML(popupHTML).addTo(map);
+  }
 };
 
 OrgMapController.prototype.flyToFeatureSet = function (dataset, filter, returnFeatures) {
