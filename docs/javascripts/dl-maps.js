@@ -117,12 +117,24 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
     this.geojsonUrls = _params.geojsonURLs || [];
     var geojsonOptions = _params.geojsonOptions || {};
-    this.geojsonUrls = this.extractURLS(); // if pointers to geojson provided add to the default featureGroup (a featureGroup has getBounds() func)
+    this.geojsonUrls = this.extractURLS(); // have features been provided
 
-    if (this.geojsonUrls.length) {
+    if (this.geojsonUrls.length || _params.geojsonFeatures) {
+      // create a FeatureGroup layer to contain provided features
+      // we want to use a FeatureGroup because it has getBounds()
       // FIXME: geojson urls might not be boundaries so fix name
       this.createFeatureGroup('initBoundaries').addTo(this.map);
-      this.plotBoundaries(this.geojsonUrls, geojsonOptions);
+      this.setupInitialZoomHook(this.featureGroups.initBoundaries); // if geojsonFeatures not defined then need to fetch geojson before plotting
+
+      var needToFetchFeatures = true;
+      var initialFeatures = this.geojsonUrls;
+
+      if (typeof _params.geojsonFeatures !== 'undefined') {
+        needToFetchFeatures = false;
+        initialFeatures = _params.geojsonFeatures;
+      }
+
+      this.plotInitialFeatures(initialFeatures, geojsonOptions, needToFetchFeatures);
     }
 
     return this;
@@ -257,70 +269,80 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     }
   };
 
-  Map.prototype.geojsonLayer = function (data, type, options) {
+  Map.prototype.geojsonLayer = function (data, options) {
     var style = options.style || this.styles.defaultBoundaryStyle;
 
     var onEachFeature = options.onEachFeature || function () {};
 
-    if (type === 'point') {
-      return L.geoJSON(data, {
-        pointToLayer: options.pointToLayer,
-        onEachFeature: onEachFeature
-      });
-    }
-
     return L.geoJSON(data, {
       style: style,
-      onEachFeature: onEachFeature
+      onEachFeature: onEachFeature,
+      pointToLayer: options.pointToLayer || function (geoJsonPoint, latlng) {
+        return L.marker(latlng);
+      }
     });
   };
 
-  Map.prototype.plotBoundaries = function (urls, options) {
+  Map.prototype.plotInitialFeatures = function (features, options, needToFetchData) {
     var _this = this;
 
     var that = this;
     var map = this.map;
     var defaultFG = this.featureGroups.initBoundaries;
+    var count = 0;
 
-    var _type = options.type || 'polygon';
+    function addLayer(data) {
+      var layer = utils.isFunction(options.geojsonDataToLayer) ? options.geojsonDataToLayer(data, options) : that.geojsonLayer(data, options);
+      layer.addTo(defaultFG);
+      count++; // check to see if all features have been added
+      // only pan map once all boundaries have been added
 
-    var count = 0; // hook for callback to trigger once inital zoom/fitbounds completes
+      if (count === features.length) {
+        map.fitBounds(defaultFG.getBounds());
+        map.addControl(new L.Control.Recentre({
+          layer: defaultFG
+        }));
+      }
 
-    if (utils.isFunction(that.options.initZoomCallback)) {
+      return layer;
+    } // if needToFetchData is true then features is an array of urls that need to be fetched first
+
+
+    if (needToFetchData) {
+      Promise.allSettled(features.map(function (url) {
+        return fetch(url).then(function (response) {
+          return response.json();
+        }).then(function (data) {
+          return addLayer(data);
+        }).catch(function (err) {
+          console.log(url, 'error', err);
+        });
+      })).then(function (promiseResolutions) {
+        // once initial boundaries have loaded execute callback
+        if (utils.isFunction(_this.options.initGeoJsonLoadCallback)) {
+          _this.options.initGeoJsonLoadCallback(features, defaultFG);
+        }
+      });
+    } else {
+      features.forEach(function (feature) {
+        addLayer(feature);
+      });
+    }
+  };
+
+  Map.prototype.setupInitialZoomHook = function (featureGroup) {
+    var that = this;
+    var map = this.map; // hook for callback to trigger once inital zoom/fitbounds completes
+
+    if (utils.isFunction(this.options.initZoomCallback)) {
       var moveEndHandler = function moveEndHandler(e) {
         console.log('inital map move/zoom handler triggered');
-        that.options.initZoomCallback(defaultFG);
+        that.options.initZoomCallback(featureGroup);
         map.off('moveend', moveEndHandler);
       };
 
       map.on('moveend', moveEndHandler);
     }
-
-    Promise.allSettled(urls.map(function (url) {
-      return fetch(url).then(function (response) {
-        return response.json();
-      }).then(function (data) {
-        var layer = utils.isFunction(options.geojsonDataToLayer) ? options.geojsonDataToLayer(data, options) : that.geojsonLayer(data, _type, options);
-        layer.addTo(defaultFG);
-        count++; // only pan map once all boundaries have loaded
-
-        if (count === urls.length) {
-          map.fitBounds(defaultFG.getBounds());
-          map.addControl(new L.Control.Recentre({
-            layer: defaultFG
-          }));
-        }
-
-        return layer;
-      }).catch(function (err) {
-        console.log(url, 'error', err);
-      });
-    })).then(function (promiseResolutions) {
-      // once initial boundaries have loaded execute callback
-      if (utils.isFunction(_this.options.initGeoJsonLoadCallback)) {
-        _this.options.initGeoJsonLoadCallback(urls, defaultFG);
-      }
-    });
   };
 
   Map.prototype.setupOptions = function (params) {
