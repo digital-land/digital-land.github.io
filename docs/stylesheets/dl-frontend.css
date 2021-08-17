@@ -10511,7 +10511,7 @@
   max-height: 190px;
   margin-left: 0;
   padding-left: 0;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 .dl-popup-item {
@@ -10563,7 +10563,7 @@
   box-sizing: border-box;
   max-height: 100%;
   padding: 70px 15px 15px;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 .dl-map__side-panel__section {
