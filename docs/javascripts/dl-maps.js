@@ -337,7 +337,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     if (utils.isFunction(this.options.initZoomCallback)) {
       var moveEndHandler = function moveEndHandler(e) {
         console.log('inital map move/zoom handler triggered');
-        that.options.initZoomCallback(featureGroup);
+        that.options.initZoomCallback(featureGroup, map);
         map.off('moveend', moveEndHandler);
       };
 
