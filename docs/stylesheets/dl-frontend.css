@@ -10774,7 +10774,9 @@
 }
 
 .dl-map__note-panel {
-  display: inline-block;
+  position: absolute;
+  z-index: 1005;
+  bottom: calc((1rem * -1) - 14px);
   font-family: "GDS Transport", arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10914,6 +10916,10 @@
   top: 0;
   bottom: 0;
   width: 100%;
+}
+
+.dl-map__wrapper--bottom-margin {
+  margin-bottom: 50px;
 }
 
 .dl-map__loader {
