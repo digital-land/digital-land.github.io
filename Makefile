@@ -3,14 +3,11 @@ BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
 
 DOCS_DIR=./docs/
 
-init:
-	pip install -r requirements.txt
-
-submodule:
-	git submodule update --init --recursive --remote
-
 render: copy assets
 	python3 render.py
+
+init:
+	pip install -r requirements.txt
 
 clean::
 	rm -rf $(DOCS_DIR)
