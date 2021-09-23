@@ -6,8 +6,12 @@ DOCS_DIR=./docs/
 render: copy assets
 	python3 render.py
 
-init:
+init: submodule
 	pip install -r requirements.txt
+	cd frontend && pip install -e . && npm install
+
+submodule:
+	git submodule update --init --recursive --remote
 
 clean::
 	rm -rf $(DOCS_DIR)
