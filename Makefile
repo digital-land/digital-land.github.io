@@ -3,9 +3,8 @@ BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
 
 DOCS_DIR=./docs/
 
-init: submodule
+init:
 	pip install -r requirements.txt
-	cd frontend && pip install -e . && npm install
 
 submodule:
 	git submodule update --init --recursive --remote
