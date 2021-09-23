@@ -4,6 +4,7 @@ BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
 DOCS_DIR=./docs/
 
 render: copy assets
+	mkdir -p $(DOCS_DIR)/map
 	python3 render.py
 
 init: submodule
