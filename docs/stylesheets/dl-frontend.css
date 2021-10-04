@@ -889,14 +889,10 @@
 
 .govuk-button-group {
   margin-bottom: 5px;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
@@ -950,13 +946,10 @@
 @media (min-width: 40.0625em) {
   .govuk-button-group {
     margin-right: -15px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-align: baseline;
     -ms-flex-align: baseline;
     align-items: baseline;
   }
@@ -1193,9 +1186,7 @@
 
 @supports (margin: max(calc(0px))) {
   .govuk-width-container {
-    margin-right: max(15px, -webkit-calc(15px + env(safe-area-inset-right)));
     margin-right: max(15px, calc(15px + env(safe-area-inset-right)));
-    margin-left: max(15px, -webkit-calc(15px + env(safe-area-inset-left)));
     margin-left: max(15px, calc(15px + env(safe-area-inset-left)));
   }
 }
@@ -1207,9 +1198,7 @@
   }
   @supports (margin: max(calc(0px))) {
     .govuk-width-container {
-      margin-right: max(30px, -webkit-calc(15px + env(safe-area-inset-right)));
       margin-right: max(30px, calc(15px + env(safe-area-inset-right)));
-      margin-left: max(30px, -webkit-calc(15px + env(safe-area-inset-left)));
       margin-left: max(30px, calc(15px + env(safe-area-inset-left)));
     }
   }
@@ -1786,7 +1775,6 @@
     margin: 0;
   }
   .govuk-breadcrumbs--collapse-on-mobile .govuk-breadcrumbs__list {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
@@ -1958,11 +1946,9 @@
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1;
-  display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-height: auto;
-  -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
@@ -1987,7 +1973,6 @@
   vertical-align: middle;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  -webkit-align-self: center;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
       align-self: center;
@@ -3149,13 +3134,11 @@
 }
 
 .govuk-input__wrapper {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .govuk-input__wrapper .govuk-input {
-  -webkit-box-flex: 0;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
 }
@@ -3194,7 +3177,6 @@
   text-align: center;
   white-space: nowrap;
   cursor: default;
-  -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
 }
@@ -3729,17 +3711,14 @@
 }
 
 .govuk-footer__meta {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-right: -15px;
   margin-left: -15px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-  -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
@@ -3751,7 +3730,6 @@
 }
 
 .govuk-footer__meta-item--grow {
-  -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
@@ -3833,7 +3811,6 @@
 }
 
 .govuk-footer__navigation {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-right: -15px;
@@ -3848,7 +3825,6 @@
   margin-bottom: 30px;
   margin-left: 15px;
   vertical-align: top;
-  -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
   -ms-flex-negative: 1;
@@ -3864,7 +3840,6 @@
 
 @media (min-width: 48.0625em) {
   .govuk-footer__section:first-child:nth-last-child(2) {
-    -webkit-box-flex: 2;
     -ms-flex-positive: 2;
     flex-grow: 2;
   }
@@ -3875,8 +3850,7 @@
   padding: 0;
   list-style: none;
   -webkit-column-gap: 30px;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
 }
 
 .govuk-footer__list .govuk-footer__link:hover {
@@ -3886,13 +3860,11 @@
 @media (min-width: 48.0625em) {
   .govuk-footer__list--columns-2 {
     -webkit-column-count: 2;
-    -moz-column-count: 2;
-         column-count: 2;
+    column-count: 2;
   }
   .govuk-footer__list--columns-3 {
     -webkit-column-count: 3;
-    -moz-column-count: 3;
-         column-count: 3;
+    column-count: 3;
   }
 }
 
@@ -5605,9 +5577,7 @@
 
 @supports (padding: max(calc(0px))) {
   .govuk-skip-link {
-    padding-right: max(15px, -webkit-calc(15px + env(safe-area-inset-right)));
     padding-right: max(15px, calc(15px + env(safe-area-inset-right)));
-    padding-left: max(15px, -webkit-calc(15px + env(safe-area-inset-left)));
     padding-left: max(15px, calc(15px + env(safe-area-inset-left)));
   }
 }
@@ -5893,8 +5863,7 @@
   text-align: center;
   -webkit-user-select: none;
   -ms-user-select: none;
-  -moz-user-select: none;
-       user-select: none;
+  user-select: none;
   forced-color-adjust: none;
 }
 
@@ -7287,9 +7256,7 @@
 
 @supports (margin: max(calc(0px))) {
   .dl-full-width-container {
-    margin-right: max(15px, -webkit-calc(15px + env(safe-area-inset-right)));
     margin-right: max(15px, calc(15px + env(safe-area-inset-right)));
-    margin-left: max(15px, -webkit-calc(15px + env(safe-area-inset-left)));
     margin-left: max(15px, calc(15px + env(safe-area-inset-left)));
   }
 }
@@ -7301,9 +7268,7 @@
   }
   @supports (margin: max(calc(0px))) {
     .dl-full-width-container {
-      margin-right: max(30px, -webkit-calc(15px + env(safe-area-inset-right)));
       margin-right: max(30px, calc(15px + env(safe-area-inset-right)));
-      margin-left: max(30px, -webkit-calc(15px + env(safe-area-inset-left)));
       margin-left: max(30px, calc(15px + env(safe-area-inset-left)));
     }
   }
@@ -7391,7 +7356,6 @@
   line-height: 25px;
   text-align: center;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -7525,7 +7489,6 @@
 
 .dl-select-all {
   -webkit-user-select: all;
-     -moz-user-select: all;
           user-select: all;
 }
 
@@ -7817,7 +7780,6 @@
   }
   .js-enabled .back-to-top--fixed {
     position: fixed;
-    top: -webkit-calc(100% - 50px);
     top: calc(100% - 50px);
     bottom: auto;
     left: auto;
@@ -7864,7 +7826,6 @@
   margin-bottom: 0;
   padding: 10px 15px;
   background: #f3f2f1;
-  -webkit-transition: background .15s ease-in;
   transition: background .15s ease-in;
 }
 
@@ -7883,13 +7844,11 @@
 }
 
 .sticky-footer-banner {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 10px 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
 .sfb-r {
@@ -8135,7 +8094,6 @@
   content: "";
   position: absolute;
   top: 50%;
-  top: -webkit-calc(50% - 1px);
   top: calc(50% - 1px);
   left: 0;
   width: 15px;
@@ -8249,7 +8207,7 @@
 
 .contribution-box--small:hover .data {
   padding: 10px;
-  -webkit-transform: translateY(-webkit-calc(100% + 10px));
+  -webkit-transform: translateY(calc(100% + 10px));
       -ms-transform: translateY(calc(100% + 10px));
           transform: translateY(calc(100% + 10px));
 }
@@ -8275,7 +8233,6 @@
 }
 
 .data-record__properties {
-  width: -webkit-calc(100% - 30px);
   width: calc(100% - 30px);
   margin-bottom: 0;
   padding: 0 15px;
@@ -8451,20 +8408,17 @@
   top: 2px;
   width: 5px;
   height: 100%;
-  height: -webkit-calc(100% - 4px);
   height: calc(100% - 4px);
 }
 
 .data-table-right-shadow.with-transition,
 .data-table-left-shadow.with-transition {
-  -webkit-transition: box-shadow .4s ease-out;
   transition: box-shadow .4s ease-out;
 }
 
 .table-sort--active .data-table-right-shadow, .table-sort--active
 .data-table-left-shadow {
   top: 22px;
-  height: -webkit-calc(100% - 1.5em);
   height: calc(100% - 1.5em);
 }
 
@@ -8577,7 +8531,6 @@
   display: none;
   position: absolute;
   z-index: 10;
-  top: -webkit-calc(100% - 1px);
   top: calc(100% - 1px);
   left: 0;
   padding: 5px;
@@ -8631,12 +8584,10 @@
   margin-top: 5px;
   padding-top: 5px;
   border-top: 1px solid #505a5f;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+      align-items: flex-start;
 }
 
 .data-table__issue__info:first-child {
@@ -8654,7 +8605,6 @@
 }
 
 .issue__part {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   white-space: normal;
@@ -9266,7 +9216,6 @@
   position: absolute;
   bottom: 0;
   left: 15px;
-  width: -webkit-calc(100% - 30px);
   width: calc(100% - 30px);
   height: 1px;
   background: #b1b4b6;
@@ -9403,7 +9352,6 @@
   line-height: 1.25;
   box-sizing: border-box;
   position: relative;
-  width: -webkit-calc(100% - 40px);
   width: calc(100% - 40px);
   height: 40px;
   margin-right: 40px;
@@ -9560,7 +9508,6 @@
   line-height: 32px;
   text-align: center;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
@@ -10424,7 +10371,6 @@
   display: block;
   position: absolute;
   top: -6px;
-  left: -webkit-calc(50% - 8px);
   left: calc(50% - 8px);
   width: 16px;
   height: 16px;
@@ -10606,7 +10552,6 @@
 }
 
 .dl-map__side-panel--full {
-  height: -webkit-calc(100% - 30px);
   height: calc(100% - 30px);
 }
 
@@ -10838,7 +10783,6 @@
 .dl-map__note-panel {
   position: absolute;
   z-index: 1005;
-  bottom: -webkit-calc((1rem * -1) - 14px);
   bottom: calc((1rem * -1) - 14px);
   font-family: "GDS Transport", arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10911,16 +10855,13 @@
 }
 
 .map-key .bfs-pt__container {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 10px;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .map-key .bfs-pt__container .ellipsis {
@@ -10945,7 +10886,6 @@
   position: absolute;
   bottom: -10px;
   left: -4px;
-  width: -webkit-calc(100% + 7px);
   width: calc(100% + 7px);
   height: 5px;
   border: 1px solid #b1b4b6;
@@ -10958,7 +10898,6 @@
 
 .map-key .bfs-pt--small:after {
   left: -3px;
-  width: -webkit-calc(100% + 4px);
   width: calc(100% + 4px);
   height: 4px;
 }
@@ -11028,20 +10967,15 @@
 }
 
 .dl-map__loader-msg {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .dl-map__spinning-loader {
@@ -11471,7 +11405,6 @@
 .technical-summary-card__result:after {
   content: " ";
   position: absolute;
-  top: -webkit-calc(50% - 5px);
   top: calc(50% - 5px);
   left: 0;
   width: 10px;
@@ -12198,17 +12131,13 @@
 }
 
 .dlf-heatmap__container {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .dlf-svg-heatmap text {
@@ -12897,21 +12826,16 @@
 }
 
 .equal-panels {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 @media (min-width: 40.0625em) {
   .equal-panels {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+        flex-direction: row;
   }
 }
 
@@ -12919,9 +12843,8 @@
   margin: 7.5px 15px;
   padding: 15px;
   background: #1d70b8;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 0px;
-          flex: 1 1 0;
+  -ms-flex: 1 1 0px;
+      flex: 1 1 0;
 }
 
 @media (min-width: 40.0625em) {
