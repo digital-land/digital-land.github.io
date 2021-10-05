@@ -4662,7 +4662,9 @@
 
 @media (max-width: 40.0525em) {
   .govuk-panel {
-    padding: 25px;
+    padding: 10px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 }
 
@@ -6991,6 +6993,18 @@
   .govuk-\!-padding-left-9 {
     padding-left: 60px !important;
   }
+}
+
+.govuk-\!-text-align-left {
+  text-align: left !important;
+}
+
+.govuk-\!-text-align-centre {
+  text-align: center !important;
+}
+
+.govuk-\!-text-align-right {
+  text-align: right !important;
 }
 
 .govuk-\!-font-size-80 {
