@@ -480,7 +480,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     ariaEl.textContent = optionCount + ' ' + optionStr + ', ' + selectedCount + ' ' + ariaEl.dataset.selected;
   };
 
-  FilterCheckboxes.prototype.setOptions = function (params) {
+  FilterCheckboxes.prototype.setupOptions = function (params) {
     params = params || {};
     this.listItemSelector = params.listItemSelector || '.govuk-checkboxes__item';
   }; // ================================
