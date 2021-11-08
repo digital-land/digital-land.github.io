@@ -369,11 +369,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   function FilterCheckboxes($module) {
     this.$module = $module;
     this.$textbox = $module.querySelector('.filter-group__auto-filter__input');
-    this.checkboxArr = _toConsumableArray($module.querySelectorAll('.govuk-checkboxes__item'));
   }
 
-  FilterCheckboxes.prototype.init = function () {
+  FilterCheckboxes.prototype.init = function (params) {
+    this.setupOptions(params);
     var $module = this.$module;
+    this.checkboxArr = _toConsumableArray($module.querySelectorAll(this.listItemSelector));
     var $checkboxes = this.checkboxArr; // if no checkboxes then return
 
     if (!$checkboxes) {
@@ -477,6 +478,11 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     }
 
     ariaEl.textContent = optionCount + ' ' + optionStr + ', ' + selectedCount + ' ' + ariaEl.dataset.selected;
+  };
+
+  FilterCheckboxes.prototype.setOptions = function (params) {
+    params = params || {};
+    this.listItemSelector = params.listItemSelector || '.govuk-checkboxes__item';
   }; // ================================
   // Selected counts for filters
   // ================================
