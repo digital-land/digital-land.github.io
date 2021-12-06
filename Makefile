@@ -20,6 +20,8 @@ clean::
 
 copy:
 	cp -r static/images $(DOCS_DIR)
+	cp -r static/javascripts $(DOCS_DIR)
+	cp -r static/stylesheets $(DOCS_DIR)
 
 status:
 	git status --ignored
