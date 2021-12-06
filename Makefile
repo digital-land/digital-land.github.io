@@ -7,8 +7,12 @@ render: copy
 	mkdir -p $(DOCS_DIR)/map
 	python3 render.py
 
-init: 
+init: submodule
 	pip install -r requirements.txt
+	cd frontend && pip install -e .
+
+submodule:
+	git submodule update --init --recursive --remote
 
 clean::
 	rm -rf $(DOCS_DIR)
