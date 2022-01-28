@@ -4,7 +4,7 @@ title: About us
 
 ### Who we are
 
-We’re a team of digital and policy specialists in the [Deparment for Levelling Up, Housing and Communities](https://www.gov.uk/government/organisations/department-for-levelling-up-housing-and-communities).
+We’re a team of digital and policy specialists in the [Department for Levelling Up, Housing and Communities](https://www.gov.uk/government/organisations/department-for-levelling-up-housing-and-communities).
 
 Find out more about [how we work](/about/how-we-work).
 
