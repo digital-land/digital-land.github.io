@@ -3,31 +3,34 @@ title: About us
 ---
 
 ### Who we are
-We’re a team of digital and policy specialists in the [Ministry of Housing, Communities and Local Government](https://www.gov.uk/government/organisations/ministry-of-housing-communities-and-local-government).
+
+We’re a team of digital and policy specialists in the [Department for Levelling Up, Housing and Communities](https://www.gov.uk/government/organisations/department-for-levelling-up-housing-and-communities).
 
 Find out more about [how we work](/about/how-we-work).
 
 ### Our mission
+
 By making land and housing data easier to find, use and trust, we aim to make it easier for:
 
-* everyone involved in land and housing development to make better informed decisions
+- everyone involved in land and housing development to make better informed decisions
 
-* communities to better understand and engage with development decisions in their area
+- communities to better understand and engage with development decisions in their area
 
-* PropTech companies to create new digital services for the marketplace
+- PropTech companies to create new digital services for the marketplace
 
-* local authorities to record decisions and report data, freeing up their limited resources
+- local authorities to record decisions and report data, freeing up their limited resources
 
-* policy teams in MHCLG to create policy based on high quality, relevant data
+- policy teams in DLUHC to create policy based on high quality, relevant data
 
 Read more about the problems with [land and housing data](/about/data/) we're working to solve.
 
 ### Our vision
+
 We are developing a suite of free digital services that will help unlock land and housing data’s potential for everyone involved in land and housing development. Improving data will help open up the housing market to smaller businesses and help transform the relationship between planners, developers and communities.
 
 Our digital design service for policymakers will help them get the land and housing data they need to make decisions, while making it easy for local authorities to record decisions and report that data and for anyone with an interest in land and housing development to find, use and trust it.
 
-### Our values 
+### Our values
 
 We are accountable and open.
 
