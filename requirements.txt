@@ -16,4 +16,4 @@ toml
 typed-ast
 typing-extensions
 zipp
--e file:///Users/adam/repos/clean-land/frontend#egg=digital-land-frontend
+-e git+https://github.com/digital-land/frontend.git#egg=digital-land-frontend
