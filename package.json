@@ -1,0 +1,32 @@
+{
+  "name": "digital-land.github.io",
+  "version": "1.0.0",
+  "description": "[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/digital-land/digital-land.github.io/blob/main/LICENSE) [![Build digital-land.github.io](https://github.com/digital-land/digital-land.github.io/actions/workflows/build.yml/badge.svg)](https://github.com/digital-land/digital-land.github.io/actions/workflows/build.yml)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "server": "npx http-server ./docs",
+    "browsersync": "npx browser-sync start --proxy 'localhost:8080' --files 'docs/*.*'",
+    "start": "npx run-s server browsersync"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digital-land/digital-land.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digital-land/digital-land.github.io/issues"
+  },
+  "homepage": "https://github.com/digital-land/digital-land.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "http-server": "^14.1.1",
+    "install": "^0.13.0",
+    "npm": "^8.19.2",
+    "npm-run-all": "^4.1.5"
+  }
+}

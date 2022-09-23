@@ -132,4 +132,6 @@ dmypy.json
 
 docs/static
 .DS_Store
-/.idea/*
+/.idea/* 
+
+node_modules/
