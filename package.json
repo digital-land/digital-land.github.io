@@ -7,9 +7,13 @@
     "doc": "docs"
   },
   "scripts": {
-    "server": "npx http-server ./docs",
-    "browsersync": "npx browser-sync start --proxy 'localhost:8080' --files 'docs/*.*'",
-    "start": "npx run-s server browsersync"
+    "serve": "run-p serve:* watch:docs",
+    "serve:server": "http-server ./docs",
+    "serve:sync": "browser-sync start --proxy 'localhost:8080' --files './docs/'",
+    "clean:docs": "make clean",
+    "build:docs": "make render",
+    "watch:docs": "chokidar './content/*.html' './content/**' './templates/**/*.*' './templates/*.*' -c 'run-s clean:docs build:docs'",
+    "start": "run-s clean:docs build:docs serve"
   },
   "repository": {
     "type": "git",
@@ -24,6 +28,7 @@
   "homepage": "https://github.com/digital-land/digital-land.github.io#readme",
   "devDependencies": {
     "browser-sync": "^2.27.10",
+    "chokidar-cli": "^3.0.0",
     "http-server": "^14.1.1",
     "install": "^0.13.0",
     "npm": "^8.19.2",
