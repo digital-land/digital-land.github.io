@@ -35,8 +35,8 @@ def create_list(pages, directory, **kwargs):
     )
     data["pages"] = []
 
-    pages.remove("_list.md")
-    for page in pages:
+    # pages.remove("_list.md")
+    for page in [p for p in pages if p != "_list.md"]:
         p = os.path.join(directory, page)
         fn = Path(p)
         info = read_content_file(fn, expanded=True)
