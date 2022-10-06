@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>Local plan pathfinders report | Projects | Digital Land</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+	<link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
+<link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+
+    
+	<meta name="digital-land:template" content="dlf-base.html">
+	
+	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+	
+    
+    
+    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    
+
+    
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+    
+
+    
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div>
+
+
+<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="header-proposition">
+      <div class="govuk-header__content">
+        <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+        Digital Land
+        </a>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+        <nav>
+          <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/about/">About</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/project/">Projects</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/weeknote/">Weeknotes</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/blog-post/">Blog</a>
+            </li>
+            
+          </ul>
+        </nav>
+        </div>
+    </div>
+  </div>
+</header>
+
+
+
+    
+      <div class="govuk-width-container ">
+        
+  
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag govuk-tag govuk-tag--grey">
+  RETIRED
+</strong><span class="govuk-phase-banner__text">
+      This is site is no longer regularly updated. <a href="https://digital-land.github.io/weeknote/2022-09-23/">Read why in our weeknote</a>.
+    </span>
+  </p>
+</div>
+  
+  <div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://digital-land.github.io/">Digital Land</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/project">Projects</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/project/local-plan-pathfinders">Local plan pathfinders</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Local plan pathfinders report</li>
+    
+  
+  </ol>
+</div>
+  
+
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          
+<span class="govuk-caption-xl">Local plan pathfinders</span>
+<h1 class="govuk-heading-xl">Local plan pathfinders report</h1>
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+    <p class="govuk-body">The pathfinder programme brought together 10 local planning authorities (LPAs) to look at how local plan policies and sites data is created and published. The LPAs were asked to provide open, standardised and machine readable data to us.</p>
+<p class="govuk-body">55 local authorities responded to the initial ‘Expression of Interest’. </p>
+<p class="govuk-body">There were two workstreams: 6 LPAs were selected to focus on providing sites data and 4 concentrated on new style local plans tied to policy.</p>
+<p class="govuk-body">The following local authorities took part;</p>
+<p class="govuk-body">Local plans pathfinder local authorities:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li>East Suffolk Council</li>
+<li>Broxbourne Borough Council</li>
+<li>Royal Borough of Kensington and Chelesa</li>
+<li>Ashford Borough Council</li>
+</ul>
+<p class="govuk-body">Sites pathfinder local authorities:</p>
+<ul class="govuk-list govuk-list--bullet">
+<li>Newcastle City Council and Gateshead Council</li>
+<li>Stratford upon Avon District Council and Warwick District Council</li>
+<li>Birmingham City Council</li>
+<li>Plymouth City Council, South Hams District Council, West Devon Borough Council</li>
+<li>Dacorum Borough Council</li>
+<li>London Borough of Hounslow</li>
+</ul>
+<h2 class="govuk-heading-l" id="local-plans-pathfinder">Local plans pathfinder</h2>
+<p class="govuk-body">After the first kick-off workshop, 3 policy workshops were run, so LPAs could think about how to translate their existing local plan into the proposed new system set out in the White Paper.  </p>
+<p class="govuk-body">In the following 4 semi-structured interviews with each LPA, we explored how they found the mapping task including any challenges. We wanted to trace the policy decisions and also explore challenges around access to and creation of data. </p>
+<p class="govuk-body">LPA data was provided to Digital Land to form the basis of a digital map and we engaged <a href="https://wearefuturegov.com/">FutureGov</a> to prototype a new style local plan map.</p>
+<h2 class="govuk-heading-l" id="sites-pathfinder">Sites pathfinder</h2>
+<p class="govuk-body">We ran an introductory kick-off workshop with 6 LPAs.</p>
+<p class="govuk-body">Overall, we carried out 12 semi-structured interviews and 11 usability sessions with LPA planners and GIS specialists. These sessions tested the guidance we provided showing how to structure their sites data and also tested the Digital Land prototype map. We looked at what challenges the LPAs faced when providing standardised sites data.  </p>
+<p class="govuk-body">8 semi-structured interviews took place with PropTech companies. We ran a user needs co-design workshop with 3 LPAs about additional sites data. We were interested in what data could be published openly, how errors could be corrected and how sites data was published.  </p>
+<p class="govuk-body">Digital Land collected publicly available machine readable data from the publishing organisation. Pre-existing data not publicly available from a pathfinder LPA was also collected, such as conservation areas. We collected this data and processed it through our pipeline tool and built a prototype map.</p>
+<h2 class="govuk-heading-l" id="digital-local-plan-prototype">Digital Local Plan prototype</h2>
+<p class="govuk-body">We engaged FutureGov to use local authority data to develop a map prototype for a new style local plan. </p>
+<p class="govuk-body">We interviewed 5 planning inspectors and 5 property developers in the UK from contrasting organisations and backgrounds to capture a range of perspectives. They wanted to understand how these users engage with the local planning process and any current challenges they have.</p>
+<h2 class="govuk-heading-l" id="pathfinder-groups">Pathfinder groups</h2>
+<h3 class="govuk-heading-m" id="local-planning-authorities">Local planning authorities</h3>
+<p class="govuk-body">There are two main user groups in LPAs involved in producing, publishing, and maintaining their data to a standardised format.</p>
+<ol class="govuk-list govuk-list--number">
+<li>
+<p class="govuk-body">Policy planners are professionals responsible for developing planning policies for Local Plans. They own the information and can approve changes and check accuracy.</p>
+</li>
+<li>
+<p class="govuk-body">GIS specialists are technical professionals who know how to store and manage geospatial data. GIS specialists in a team are often the only people with the skills and access to GIS software. They may work in planning teams or could be a corporate resource across the whole local authority.</p>
+</li>
+</ol>
+<p class="govuk-body">Some LPAs employed multiple planners with GIS expertise and others had separate planners with one or more GIS specialists.</p>
+<h3 class="govuk-heading-m" id="proptech-property-technology-company-types">PropTech (Property Technology) company types:</h3>
+<ol class="govuk-list govuk-list--number">
+<li>
+<p class="govuk-body">A specialised service that can collect data from other sources (such as Google Maps). They may occasionally pay for Ordnance Survey or Land Registry data for specific projects or clients.</p>
+</li>
+<li>
+<p class="govuk-body">A company able to innovate using paid for data from Ordnance Survey and/or the Land Registry.</p>
+</li>
+<li>
+<p class="govuk-body">A company that invests time and resources into creating tools or hand transcribing published LPA data. They turn inaccessible formats into usable data which can be used to innovate or be sold to others.</p>
+</li>
+</ol>
+<h3 class="govuk-heading-m" id="digital-local-plans-prototype-user-groups">Digital local plans prototype user groups</h3>
+<h4 class="govuk-heading-s" id="planning-inspectorate">Planning Inspectorate</h4>
+<p class="govuk-body">In the context of Local Plan making, planning inspectors are responsible for the evaluation of submitted local plans. During the examination they assess responses, consultations, policy decisions and evidence to justify a plan’s decisions. They will then make a recommendation on if a plan can be adopted or if it requires changes.</p>
+<h4 class="govuk-heading-s" id="property-developers">Property Developers</h4>
+<p class="govuk-body">Property developers want to be confident in the local plan so they can advise clients on secure and lower risk development investments. Developers refer to local plans during development, when there is a Call for Sites and when proposals are in. Additionally, they use these plans to find new sites suitable for development.</p>
+<p class="govuk-body">Detailed information on user needs can be found <a href="https://docs.google.com/document/d/1ArJjGYrpS8u-e8-WQDJdTPEH8KDV3dWh/edit?usp=sharing&amp;ouid=111443899057594557254&amp;rtpof=true&amp;sd=true">here</a>.</p>
+<h2 class="govuk-heading-l" id="pathfinders-users-research-findings">Pathfinders users research findings</h2>
+<h3 class="govuk-heading-m" id="lpas-local-plans-and-policy-data-findings">LPAs local plans and policy data findings</h3>
+<p class="govuk-body">Map-based local plans could be easier to view and use. LPAs wanted to move away from a planning system with detailed and inaccessible lengthy documents.  </p>
+<p class="govuk-body">Currently, site-specific information is often contained within multiple PDFs. Consequently, planning officers receive regular queries from developers asking for this information. This can be time consuming and LPAs felt a map-based system could have all viewable information in one place.  </p>
+<p class="govuk-body">Where policy is at a national level, LPAs want to be able to say how it applies to their local plan.  </p>
+<p class="govuk-body">The guidance we provided to LPAs to allocate land was not detailed enough to help them convert existing local plans to the new system for a digital map.  </p>
+<p class="govuk-body">With existing low LPA resources this could impact on whether they were able to deliver a digital new style local plan in the future.  </p>
+<h3 class="govuk-heading-m" id="lpas-and-sites-data-findings">LPAs and sites data findings</h3>
+<p class="govuk-body">LPAs vary significantly as some were well resourced and others less so. A number of LPAs had easy access to the tools and IT time they needed to publish data on their website. These LPAs were more likely to have good data sharing relationships with other statutory data providers. Other LPAs had reduced access to tools and IT time. Data sharing with other statutory providers for these LPAs was less frequent and not as reliable.</p>
+<h3 class="govuk-heading-m" id="data-sharing-and-publishing">Data sharing and publishing</h3>
+<p class="govuk-body">The majority of the data provided was owned by the LPA, but a small amount was owned by other statutory providers such as County Council, Greater London Authority (GLA), and Historic England. LPAs were uncertain if they should be the ones publishing this data if they didn’t produce it. </p>
+<p class="govuk-body">All of the LPAs we worked with were unsure about providing shapefiles derived from Ordnance Survey. In some instances there were licensing agreements linked to publishing and viewing an LPA’s data.  </p>
+<p class="govuk-body">For these reasons, LPAs weren’t able to publish data during pathfinders as we had hoped. LPAs provided policy and sites data to us but there wasn’t a consistent format. They were however able to share files exported from their GIS.  </p>
+<p class="govuk-body">Digital Land prototyped a map from this data which showed that interactive maps can help users to find, explore and understand the data. However, a map would need to meet website accessibility needs.  </p>
+<p class="govuk-body">The pathfinders showed us there were user needs around data quality and trust. This raised questions of how and when we measure this so we are developing our <a href="https://digital-land-maturity-model.herokuapp.com/">operations dashboard</a> to try to address this.</p>
+<p class="govuk-body">For PropTech, trustworthy and reliable data is important. We believe the data maturity model will provide a way for PropTech users to determine whether or not they want to use our data. </p>
+<p class="govuk-body">From the perspective of LPAs, we believe that showing a measure of data quality will help LPAs to improve their data over time. </p>
+<p class="govuk-body">The majority of LPAs we worked with on the sites data pathfinder said their sole GIS specialist would be the only person who could provide the data to us.  </p>
+<p class="govuk-body">In other LPAs, planners didn’t have the software to view the data, or had view only access. LPAs who were less reliant on a single GIS person had corporate GIS resources for when it was needed.  </p>
+<p class="govuk-body">The planners and GIS specialists who create and maintain the LPA’s sites data are not responsible for publishing on the local authority’s website. It can be hard to get time with IT officers who can publish the data.  </p>
+<p class="govuk-body">Of the 4 local plan LPAs, each had a different staffing structure with regards to digital, data and GIS skills. Varied levels of resources impacted on how easy it was to create and provide the data needed for the new local plan system. </p>
+<p class="govuk-body">LPAs are hopeful that standardised data can be used to proactively seek sites. If the data is formatted and easier to analyse, LPAs will be able to compare data and make site assessments faster.  </p>
+<p class="govuk-body">LPAs currently use pro-forma documents with open ended questions and large free text boxes. The LPAs we worked with mentioned they are working on or were interested in improving how sites data comes to them. They wanted digital boundaries on maps along with the sites data. This is so they were using exactly what the land owner had submitted.  </p>
+<p class="govuk-body">LPAs who viewed their data on a map were keen to rectify errors. They also wanted a way to let us know about changes to their data. Plus, for users of the data, there needs to be a way to flag potential or actual errors in the data for LPAs to fix.</p>
+<h3 class="govuk-heading-m" id="proptech-findings">Proptech findings</h3>
+<p class="govuk-body">In a Call for Sites, where sites are suggested for development, PropTech companies wanted to know about unallocated and allocated sites and site boundaries data. This is so they know what sites may be allocated in the future. This can save time and reduce the number of rejected site submissions.  </p>
+<p class="govuk-body">They were also keen to access data through APIs and Digital Land already has a minimum viable API.  </p>
+<p class="govuk-body">However, they wanted data more frequently than LPAs usually supply. LPAs update their sites data either quarterly to annually, depending on staff capacity.  </p>
+<p class="govuk-body">PropTech companies spend a lot of time and resources trying to access local authority sites and boundaries data. They currently scrape available data from the <a href="https://data.london.gov.uk/">London Data Store</a>, DEFRA’s <a href="https://magic.defra.gov.uk/">Magic map</a>, local authority interactive maps (where they exist), and Google Imaging. Some PropTech companies pay for access to Ordnance Survey and Land Registry data. While others have created tools to translate LPA PDFs and hand drawn map boundaries into machine readable data. At times, finding the right document often required hiring a professional with knowledge of what to look for.</p>
+<h3 class="govuk-heading-m" id="sites-data-tools-and-challenges">Sites data tools and challenges</h3>
+<h4 class="govuk-heading-s" id="collect-data-service-the-pipeline">Collect data service (the pipeline)</h4>
+<p class="govuk-body">LPAs were able to provide machine readable sites and planning policy data in various formats. Each LPA used and configured their GIS in different ways. This meant geography data exported and provided to us was structured in multiple ways. We learnt how flexible our pipeline was when processing, cleaning and structuring this data into a standardised format for a national dataset.  </p>
+<p class="govuk-body">The team iterated the pipeline which helped improve inconsistent data. We also showed the pipeline could be built upon to obtain, import and improve sites and new style local plan data. </p>
+<p class="govuk-body">We did find the pipeline wasn’t able to correct an error where the LPA had provided multiple formats of the same coordinates (Geox/GeoY as well as Easting/Northing). The team made changes to the pipeline to address this and will continue to develop it.</p>
+<h4 class="govuk-heading-s" id="data-gaps-and-historic-data">Data gaps and historic data</h4>
+<p class="govuk-body">Planning data can exist for a long period of time and LPAs may not have collected certain aspects of this data in the past or may not be currently collecting it. We found this with site start and end dates. LPAs were uncertain how to deal with gaps in their data whilst others provided similar data. As documents move and change over time, LPAs struggle with providing a historic view. </p>
+<p class="govuk-body">Different LPAs approach changes in data in distinct ways. If a site boundary changed, some LPAs would delete the existing boundary and create a new one. Other LPAs would leave the existing data and edit the current boundary. Both approaches to handling past data made it difficult to track historical changes. Therefore, LPAs end up not recording start and end dates. If LPAs are unable to record this data consistently, Digital Land’s platform can help provide this.</p>
+<h4 class="govuk-heading-s" id="fixing-errors-with-the-data-and-getting-in-touch">Fixing errors with the data and getting in touch</h4>
+<p class="govuk-body">We tested a map of LPA data that Digital Land had collected. One LPA’s map showed a location outside of their boundary. The LPA wanted to fix it and quickly realised it wasn’t one of their sites. Another LPA had accidentally added the wrong organisation code to one of their sites causing the issue.  </p>
+<p class="govuk-body">In another session the LPA’s data was missing on the map, despite filters showing the data. This turned out to be a problem with coordinate formatting. The LPA contacted Digital Land afterwards to find out what the problem was and how they could fix it.</p>
+<h3 class="govuk-heading-m" id="availability-of-data">Availability of data</h3>
+<p class="govuk-body">The data we wanted to collect fell into two categories, national designations and local designations.</p>
+<h4 class="govuk-heading-s" id="national-designations">National designations</h4>
+<p class="govuk-body">We successfully collected 9 national designation datasets from <a href="https://digital-land-maturity-model.herokuapp.com/organisation/government-organisation/PB1164">Historic England</a>, 5 datasets from <a href="https://digital-land-maturity-model.herokuapp.com/organisation/government-organisation/PB202">Natural England</a> and <a href="https://digital-land-maturity-model.herokuapp.com/dataset/green-belt">greenbelt data</a> from DLUHC.</p>
+<h4 class="govuk-heading-s" id="local-designations">Local designations</h4>
+<p class="govuk-body">When it came to collecting local planning policy data we were less successful. East Suffolk published their existing local plan data using their <a href="https://data-eastsuffolk.opendata.arcgis.com/search?tags=Local%20Plan">ArcGIS open data platform</a>. From here we were able to collect their <a href="https://www.digital-land.info/entity/?dataset=conservation-area&amp;geometry_reference=E07000244&amp;entries=all&amp;entry_entry_date_day=&amp;entry_entry_date_month=&amp;entry_entry_date_year=">conservation areas</a>, <a href="https://www.digital-land.info/entity/?dataset=employment-allocation&amp;geometry_reference=E07000244&amp;entries=all&amp;entry_entry_date_day=&amp;entry_entry_date_month=&amp;entry_entry_date_year=">employment allocations</a>, <a href="https://www.digital-land.info/entity/?dataset=housing-allocation&amp;geometry_reference=E07000244&amp;entries=all&amp;entry_entry_date_day=&amp;entry_entry_date_month=&amp;entry_entry_date_year=">housing allocations</a> and <a href="https://www.digital-land.info/entity/?dataset=open-space&amp;geometry_reference=E07000244&amp;entries=all&amp;entry_entry_date_day=&amp;entry_entry_date_month=&amp;entry_entry_date_year=">open space</a>. </p>
+<p class="govuk-body">The other pathfinder organisations didn’t make their data publicly available, although they did have visual representations of the data – such as <a href="http://newmaps.ashford.gov.uk/EXTLocalPlan2030_reissue/default.aspx?_ga=2.93234461.1004239581.1628758721-1161812544.1628758721">Ashford’s local plan policies map</a>.</p>
+<h4 class="govuk-heading-s" id="submit-and-maintain-your-data-tool">Submit and maintain your data tool</h4>
+<p class="govuk-body">In research, we found that links to documents can often break, particularly when changes are published as new documents.  </p>
+<p class="govuk-body">We hypothesised that asking LPAs to publish their data using a URL (persistent URL), which doesn’t change, could reduce this problem. </p>
+<p class="govuk-body">However, we found LPAs were unfamiliar with the concept of a persistent URL as they assumed they were using one already. </p>
+<p class="govuk-body">The pathfinders project didn’t have the opportunity to further test the <a href="https://brownfield-sites-validator.herokuapp.com/">‘check your data tool’</a>. We need further research to know what this tool could and should look like. We also need to understand the easiest way data owners can consistently tell Digital Land when they change and update their data.</p>
+<h3 class="govuk-heading-m" id="digital-land-interactive-map-lpa-findings">Digital Land interactive map - LPA findings</h3>
+<p class="govuk-body">During pathfinders, multiple maps were built and iterated on. A <a href="https://www.digital-land.info/map/?">national map of planning data</a> was built showing all the datasets Digital Land collected, and local maps which showed data for a specific local authority.  </p>
+<p class="govuk-body">Pathfinders showed interactive maps used in the right way could help users to find, explore and understand the data.</p>
+<h2 class="govuk-heading-l" id="prototype-of-a-digital-local-plans-findings">Prototype of a digital local plans findings</h2>
+<h3 class="govuk-heading-m" id="research-with-existing-digital-local-plan-maps">Research with existing digital Local Plan maps</h3>
+<h4 class="govuk-heading-s" id="planning-inspectorate-pins">Planning Inspectorate (PINs)</h4>
+<p class="govuk-body">Finding the right information on existing digital plans and examination websites was difficult for planning inspectors.  </p>
+<p class="govuk-body">There is no standardised format for policy, maps and evidence and digital resources can be inconsistent.  </p>
+<p class="govuk-body">Further to this, allocated sites within the local plan often have a large number of associated documents and policies on the map. At times, the online report couldn’t be found.  </p>
+<p class="govuk-body">Currently, people rely on long printed PDFs with lots of information to go through.  </p>
+<p class="govuk-body">Existing maps don’t show neighbouring areas as they end at the boundary, which makes it harder for Inspectors  to consider the duty to cooperate. Bringing <a href="https://www.figma.com/proto/njC21eXJiuKRpQs5KUKONI/MHCLG-local-plan?page-id=0%3A1&amp;node-id=539%3A23615&amp;viewport=775%2C2536%2C0.277587890625&amp;scaling=min-zoom&amp;starting-point-node-id=383%3A18308&amp;show-proto-sidebar=1&amp;hide-ui=1">multiple layers of information together</a> in one space, means users can explore geospatial policy and evidence together.</p>
+<p class="govuk-body">An additional difficulty for planning inspectors was getting updates on a plan.</p>
+<h4 class="govuk-heading-s" id="developers">Developers</h4>
+<p class="govuk-body">During the Call for Sites, it’s difficult for a property developer to know what is likely to be acceptable on different sites. The process is often unstructured and without clear guidance. </p>
+<p class="govuk-body">The plan is used by developers to give a weighting for a potential planning decision. They wanted more detail on the current plans as they don’t always have the key information, for example, an area action plan.  </p>
+<p class="govuk-body">Finding out the current status of a plan is often difficult and slow. Local Plans are frequently changed and the information can quickly become out of date.  </p>
+<p class="govuk-body">Developers were very responsive to the introduction of a local plans framework and had high expectations of the prototype. Generally, they were digitally savvy and used different digital tools.</p>
+<h3 class="govuk-heading-m" id="developer-findings-for-the-digital-local-plans-prototype-map">Developer findings for the digital local plans prototype map</h3>
+<p class="govuk-body">FutureGov created a digital Local Plan prototype which included policy and sites data from a local authority. The locations the prototype tested were not intended to be accurate, and gave an approximation. The initial prototype was built using findings from the research with planning inspectors mentioned above.  </p>
+<p class="govuk-body">Developers found the prototype easy to use and the policy map was useful for assessing site specific information. This new style digital Local Plan linked policy, site specific allocations and evidence. This helped developers to quickly make decisions on the suitability of their site. </p>
+<p class="govuk-body">However, developers would have liked more detailed information around policy considerations and other development plans.</p>
+  </div>
+</div>
+
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+<div class="feedback-panel">
+    <h3 class="feedback-panel__heading">Help improve this page</h3>
+    <p>If you’ve got a question, idea or suggestion share it with the digital land team on <a href="https://github.com/digital-land/design-system">github</a> or email us on <a href="mailto:DigitalLand@communities.gov.uk">digitalland@communities.gov.uk</a></p>
+</div>
+
+
+        </main>
+      </div>
+    
+
+    
+	
+	
+
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
+        >
+  <div class="govuk-width-container ">
+    
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
+        
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
+
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
+
+	
+	
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
+
+  </body>
+</html>
