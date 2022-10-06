@@ -64,6 +64,8 @@ def render_pages(parent_dir=""):
         else:
             # copy other pages to /docs
             print("Moving: ", p, os.path.join(output_dir, parent_dir, page))
+            if not os.path.exists(os.path.join(output_dir, parent_dir)):
+                os.makedirs(os.path.join(output_dir, parent_dir))
             copyfile(p, os.path.join(output_dir, parent_dir, page))
 
 
