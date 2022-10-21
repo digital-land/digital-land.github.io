@@ -1,0 +1,49 @@
+{% extends "digital-land-frontend/dlf-base.html" %}
+{% from 'digital-land-frontend/components/feedback-panel/macro.html' import dlFeedbackPanel %}
+
+{% set project_name = project|replace("-", " ")|capitalize %}
+
+{% block pageTitle %}Design History - {{ project_name }} | Projects | Digital Land{% endblock %}
+
+{% block beforeContent %}
+  {% include 'digital-land-frontend/partials/dl-prototype-banner.html' %}
+  {% block dl_breadcrumbs %}
+  {{ govukBreadcrumbs({
+    "items": [
+      {
+        "text": "Digital Land",
+        "href": "https://digital-land.github.io/"
+      },
+      {
+        "text": "Projects",
+        "href": "/project"
+      },
+      {
+        "text": project_name,
+        "href": "/project/" + project
+      },
+      {
+        "text": "Design history"
+      }
+    ]
+  }) }}
+  {% endblock %}
+{% endblock %}
+
+{% block content %}
+<span class="govuk-caption-xl">{{ project_name }}</span>
+<h1 class="govuk-heading-xl">Design history</h1>
+
+<ul class="govuk-list govuk-list--bullet">
+    {% for p in design_history  %}
+    <li><a href="{{ p.url }}">{{ p.name }}</a></li>
+    {% endfor %}
+</ul>
+
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+{{ dlFeedbackPanel({
+    "title": "Help improve this page",
+    "html": 'If you’ve got a question, idea or suggestion share it with the digital land team on <a href="https://github.com/digital-land/design-system">github</a> or email us on <a href="mailto:DigitalLand@communities.gov.uk">digitalland@communities.gov.uk</a>'
+}) }}
+{% endblock %}

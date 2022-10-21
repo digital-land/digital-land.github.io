@@ -2,9 +2,7 @@
 <html lang="en" class="govuk-template ">
   <head>
     <meta charset="utf-8">
-    <title>
-Legislation - Digital Land
-</title>
+    <title> | Projects | Digital Land</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c"> 
     
@@ -119,12 +117,24 @@ Legislation - Digital Land
   
     
     <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
+      <a class="govuk-breadcrumbs__link" href="https://digital-land.github.io/">Digital Land</a>
     </li>
     
   
     
-    <li class="govuk-breadcrumbs__list-item" aria-current="page">Legislation</li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/project">Projects</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/project/sites-pathfinders">Sites pathfinders</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item" aria-current="page"></li>
     
   
   </ol>
@@ -133,68 +143,40 @@ Legislation - Digital Land
 
         <main class="govuk-main-wrapper " id="main-content" role="main">
           
-<h1 class="govuk-heading-xl">Legislation</h1>
+<span class="govuk-caption-xl">Sites pathfinders</span>
+<h1 class="govuk-heading-xl"></h1>
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds"><p class="govuk-body">Legislation relating to digital land.</p>
-  </div>
+
   <div class="govuk-grid-column-two-thirds">
-    <ul class="govuk-list govuk-list--bullet">
-      
-      
-      <li>
-        <a class="govuk-link" href="ukpga-1979-46">Ancient Monuments and Archaeological Areas Act 1979</a>
-        </li>
-      
-      <li>
-        <a class="govuk-link" href="ukpga-2000-37">Countryside and Rights of Way Act 2000</a>
-        </li>
-      
-      <li>
-        <a class="govuk-link" href="ukpa-1975-76">Local Land Charges Act 1975</a>
-        </li>
-      
-      <li>
-        <a class="govuk-link" href="ukpga-2011-20">Localism Act 2011</a>
-        </li>
-      
-      <li>
-        <a class="govuk-link" href="ukpga-geo6-12-13-14-97">National Parks and Access to the Countryside Act 1949</a>
-        </li>
-      
-      <li>
-        <a class="govuk-link" href="ukpga-2008-29">Planning Act 2008</a>
-        </li>
-      
-      <li>
-        <a class="govuk-link" href="ukpha-2004-5">Planning and Compulsory Purchase Act 2004</a>
-        </li>
-      
-      <li>
-        <a class="govuk-link" href="ukpga-1992-14">The Local Government Finance Act 1992</a>
-        </li>
-      
-      <li>
-        <a class="govuk-link" href="uksi-2018-273">The Local Land Charges Rules 2018</a>
-        </li>
-      
-      <li>
-        <a class="govuk-link" href="uksi-2012-767">The Town and Country Planning (Local Planning) (England) Regulations 2012</a>
-        </li>
-      
-      <li>
-        <a class="govuk-link" href="uksi-2012-605">The Town and Country Planning (Local Planning) (England) Regulations 2012</a>
-        </li>
-      
-      <li>
-        <a class="govuk-link" href="ukpga-1990-8">Town and Country Planning Act 1990</a>
-        </li>
-      
-      <li>
-        <a class="govuk-link" href="ukpga-1991-57">Water Resources Act 1991</a>
-        </li>
-    </ul>
+    <h2 class="govuk-heading-l" id="publish-your-sites-data">Publish your sites data</h2>
+<p class="govuk-body">This guidance is to help pathfinder local planning authorities publish a list of development sites in a standardised format.</p>
+<p class="govuk-body">If you use a <a href="https://en.wikipedia.org/wiki/Geographic_information_system">Geographic information system (GIS)</a> service for your sites data, please provide the data in a .geojson file. We’re able to quickly process this type of data using our pipeline tool. Alternatively, the data can also be submitted in .csv or .xls file formats where we are also able to link to the shapefiles.</p>
+<p class="govuk-body">The <a href="https://en.wikipedia.org/wiki/Shapefile">shapefile</a> and .geojson file will give us geographical sites data which has the potential to be plotted onto a map.</p>
+<p class="govuk-body">Publicly available local authority sites data would provide an overall picture of sites in a given area including those that are suitable for future development. With easily accessible data, it can be used by government, local authorities, <a href="https://en.wikipedia.org/wiki/Property_technology">PropTech</a> and others to develop services, tools and for decision making.</p>
+<h2 class="govuk-heading-l" id="what-information-do-you-need-to-provide-for-your-sites-data">What information do you need to provide for your sites data?</h2>
+<h4 class="govuk-heading-s" id="site-reference">Site reference</h4>
+<p class="govuk-body">A unique number or code used to identify the site. This reference should be unique within your organisation, for example, <code class="dl-code">D1A02</code>.
+If a reference code has been used for a different site or other geographical area in the past, please add numbers or letters to the code to distinguish it from the previous site or area.</p>
+<h4 class="govuk-heading-s" id="site-name">Site name</h4>
+<p class="govuk-body">The name of the site. This will be the name that users see and refer to, for example, <code class="dl-code">Regis Road</code>.</p>
+<h4 class="govuk-heading-s" id="shapefile-site-boundary">Shapefile / site boundary</h4>
+<p class="govuk-body">The shapefile represents geographical data stored in shapes like lines, polygons and points. If a shapefile or data on a site boundary is available please provide this.</p>
+<h4 class="govuk-heading-s" id="start-date">Start date</h4>
+<p class="govuk-body">The date the site area was added. Use the <code class="dl-code">YYYY-MM-DD</code> for dates, for example, <code class="dl-code">1982-07-26</code>.</p>
+<h4 class="govuk-heading-s" id="url-which-gives-information-about-the-site">URL which gives information about the site</h4>
+<p class="govuk-body">If a URL is available for the site, please provide it.</p>
+<h4 class="govuk-heading-s" id="site-category">Site category</h4>
+<p class="govuk-body">We are interested in how you categorise sites. This will help us learn whether a standard categorisation of sites is possible. A site can have many categories.</p>
   </div>
+</div>
+
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+<div class="feedback-panel">
+    <h3 class="feedback-panel__heading">Help improve this page</h3>
+    <p>If you’ve got a question, idea or suggestion share it with the digital land team on <a href="https://github.com/digital-land/design-system">github</a> or email us on <a href="mailto:DigitalLand@communities.gov.uk">digitalland@communities.gov.uk</a></p>
 </div>
 
 

@@ -1,0 +1,74 @@
+{% extends "digital-land-frontend/dlf-base.html" %}
+{% from 'digital-land-frontend/components/feedback-panel/macro.html' import dlFeedbackPanel %}
+
+{% block pageTitle %}Projects | Digital Land{% endblock %}
+
+{% block beforeContent %}
+  {% include 'digital-land-frontend/partials/dl-prototype-banner.html' %}
+  {% block dl_breadcrumbs %}
+  {{ govukBreadcrumbs({
+    "items": [
+      {
+        "text": "Digital Land",
+        "href": "https://digital-land.github.io/"
+      },
+      {
+        "text": "Projects"
+      }
+    ]
+  }) }}
+  {% endblock %}
+{% endblock %}
+
+{% macro projectListing(project) %}
+<li>
+    <h3 class="govuk-heading-m{{ ' govuk-!-margin-bottom-2' if project.description }}">
+        <a href="{{ project['path'] }}" class="govuk-link">{{ project.name }}</a></h3>
+    {%- if project.description %}
+    <p class="govuk-body">{{ project.description }}</p>
+    {% endif -%}
+</li>
+{% endmacro %}
+
+{% block content %}
+<h1 class="govuk-heading-xl">Projects</h1>
+<p class="govuk-body-l">We're collecting and publishing land and housing data to build a national picture of planning.</p>
+<p class="govuk-body">Project groups</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li><a href="#in-progress">In progress</a></li>
+  <li><a href="#ongoing">Ongoing</a></li>
+  <li><a href="#backlog">Backlog</a></li>
+  <li><a href="#completed">Completed</a></li>
+</ul>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      {%- for status in projects.keys() %}
+        {%- set status_details = projects[status]  -%}
+        {% set classes = "govuk-heading-l" if loop.first else "govuk-heading-l govuk-!-margin-top-6" %}
+
+        {#- only show section if projects have that status -#}
+        {% if status_details["projects"]|length > 0 %}
+        <h2 id="{{ status|lower|replace(' ', '-') }}" class="{{ classes }}">{{ status|capitalize }}</h2>
+        {%- if status_details["description"] %}
+        {{ status_details["description"]|markdown|safe }}
+        {% endif -%}
+        <ul class="govuk-list">
+        {%- for project in status_details["projects"] %}
+            {{ projectListing(project) }} 
+        {% endfor -%}
+        </ul>
+        {% endif -%}
+
+      {% endfor -%}
+    </div>
+</div>
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+{{ dlFeedbackPanel({
+    "title": "Help improve this page",
+    "html": 'If you’ve got a question, idea or suggestion share it with the digital land team on <a href="https://github.com/digital-land/design-system">github</a> or email us on <a href="mailto:DigitalLand@communities.gov.uk">digitalland@communities.gov.uk</a>'
+}) }}
+{% endblock %}

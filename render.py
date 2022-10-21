@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 from shutil import copyfile
 
+from bin.projects.render import render_projects
 from bin.render import Renderer
 from bin.list import create_list
 
@@ -38,39 +39,40 @@ def create_output_path(fn, parent_dir=""):
 
 
 def render_pages(parent_dir=""):
-    path_to_directory = os.path.join(content_dir, parent_dir)
+    if parent_dir != "projects":
+        path_to_directory = os.path.join(content_dir, parent_dir)
+        pages = get_content_pages(path_to_directory)
 
-    pages = get_content_pages(path_to_directory)
-
-    for page in pages:
-        p = os.path.join(path_to_directory, page)
-        if os.path.isdir(p):
-            # handle directories
-            print(p, "is a directory")
-            render_pages(os.path.join(parent_dir, page))
-        elif page.endswith(".md"):
-            if page == "_list.md":
-                list = create_list(pages, path_to_directory)
-                output_path = os.path.join(output_dir, parent_dir, "index.html")
-                jinja_renderer.render_content_page(output_path, list_template, list)
+        for page in pages:
+            p = os.path.join(path_to_directory, page)
+            if os.path.isdir(p):
+                # handle directories
+                print(p, "is a directory")
+                render_pages(os.path.join(parent_dir, page))
+            elif page.endswith(".md"):
+                if page == "_list.md":
+                    list = create_list(pages, path_to_directory)
+                    output_path = os.path.join(output_dir, parent_dir, "index.html")
+                    jinja_renderer.render_content_page(output_path, list_template, list)
+                else:
+                    # compile and render markdown file
+                    fn = Path(p)
+                    contents = read_content_file(fn)
+                    output_path = create_output_path(fn, parent_dir)
+                    jinja_renderer.render_content_page(
+                        output_path, content_template, contents
+                    )
             else:
-                # compile and render markdown file
-                fn = Path(p)
-                contents = read_content_file(fn)
-                output_path = create_output_path(fn, parent_dir)
-                jinja_renderer.render_content_page(
-                    output_path, content_template, contents
-                )
-        else:
-            # copy other pages to /docs
-            print("Moving: ", p, os.path.join(output_dir, parent_dir, page))
-            if not os.path.exists(os.path.join(output_dir, parent_dir)):
-                os.makedirs(os.path.join(output_dir, parent_dir))
-            copyfile(p, os.path.join(output_dir, parent_dir, page))
+                # copy other pages to /docs
+                print("Moving: ", p, os.path.join(output_dir, parent_dir, page))
+                if not os.path.exists(os.path.join(output_dir, parent_dir)):
+                    os.makedirs(os.path.join(output_dir, parent_dir))
+                copyfile(p, os.path.join(output_dir, parent_dir, page))
 
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "--local":
         jinja_renderer.set_global("staticPath", "")
 
+    render_projects("content/projects")
     render_pages()

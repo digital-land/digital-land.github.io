@@ -1,0 +1,117 @@
+{% extends "digital-land-frontend/dlf-base.html" %}
+{% from 'digital-land-frontend/components/feedback-panel/macro.html' import dlFeedbackPanel %}
+{%- from "digital-land-frontend/components/related-content/macro.html" import dlRelatedContent %}
+{%- from "digital-land-frontend/components/timeline/macro.html" import dlTimelineEntry %}
+
+{% block pageTitle %}{{ project.name }} | Projects | Digital Land{% endblock %}
+
+{%- block dlHead %}
+{% if project['frontmatter']['redirect'] %}
+<!-- adding a redirect to new location
+     following: https://opensource.com/article/19/7/permanently-redirect-github-pages -->
+<meta http-equiv="refresh" content="0;url={{ project['frontmatter']['redirect']['url'] }}" />
+<link rel="canonical" href="{{ project['frontmatter']['redirect']['url'] }}">
+{% endif %}
+{% endblock -%}
+
+{% block beforeContent %}
+  {% include 'digital-land-frontend/partials/dl-prototype-banner.html' %}
+  {% block dl_breadcrumbs %}
+  {{ govukBreadcrumbs({
+    "items": [
+      {
+        "text": "Digital Land",
+        "href": "https://digital-land.github.io/"
+      },
+      {
+        "text": "Projects",
+        "href": "/project"
+      },
+      {
+        "text": project.name
+      }
+    ]
+  }) }}
+  {% endblock %}
+{% endblock %}
+
+{% block content %}
+<span class="govuk-caption-xl">Project</span>
+<h1 class="govuk-heading-xl">
+    {{ project.name }}
+    {% if project.status -%}
+    <div>
+        <strong class="govuk-tag govuk-!-margin-top-4 govuk-!-margin-bottom-0">{{ project.status }}</strong>
+    </div>
+    {%- endif %}
+</h1>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    {{ project.body|markdown|safe }}
+
+    {% macro schemaDiagram(params) %}
+    {% if params.dataset %}
+    <h4 class="govuk-heading-s">Schema diagram</h4>
+    {% else %}
+    <h3 class="govuk-heading-m govuk-!-margin-top-6">Schema diagram</h3>
+    {% endif %}
+    <a href="{{ params['url'] }}">
+      <img src="{{ params['url'] }}" alt="{{ params['alt'] }}">
+    </a>
+    <a href="{{ params['url'] }}" class="govuk-link">See full size version of diagram (SVG).</a>
+    {% endmacro %}
+
+    {%- if project['frontmatter']['characteristics'] %}
+      <h3 class="govuk-heading-m govuk-!-margin-top-6">Characteristics</h3>
+      <dl class="govuk-summary-list">
+      {% for prop, val in project['frontmatter']['characteristics'].items()  %}
+          <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">{{ prop|capitalize }}</dt>
+              <dd class="govuk-summary-list__value">{{ val|make_link }}</dd>
+          </div>
+      {% endfor %}
+      </dl>
+    {% endif -%}
+
+    {% if updates %}
+    <h2 class="govuk-heading-l">Updates</h2>
+    <ol id="updates" class="dl-timeline dl-timeline--with-starter-label">
+      {% for update in updates %}
+      {% set metaHTML -%}
+      <span>{{ update.date }}</span>
+      <span class="govuk-tag govuk-tag--grey">{{ update.type }}</span>
+      {%- endset %}
+      {{ dlTimelineEntry({
+          "heading": update.name,
+          "meta": {
+            "html": metaHTML
+          },
+          "html": update.body|markdown
+      }) }}
+      {% endfor %}
+      <li class="dl-timeline__start-label">
+        <h4 class="govuk-heading-s">Started{{ ' ' + project['frontmatter']['start_date'] if project['frontmatter']['start_date'] }}</h4>
+      </li>
+    </ol>
+    {% endif %}
+
+  </div>
+  <div class="govuk-grid-column-one-third">
+  {%- if project['frontmatter']['artefacts'] -%}
+    {{ dlRelatedContent({
+      "heading": "Related artefacts",
+      "links": project['frontmatter']['artefacts']
+    }) }}
+  {%- endif -%}
+  </div>
+</div>
+
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+{{ dlFeedbackPanel({
+    "title": "Help improve this page",
+    "html": 'If you’ve got a question, idea or suggestion share it with the digital land team on <a href="https://github.com/digital-land/design-system">github</a> or email us on <a href="mailto:DigitalLand@communities.gov.uk">digitalland@communities.gov.uk</a>'
+}) }}
+
+{% endblock content %}
