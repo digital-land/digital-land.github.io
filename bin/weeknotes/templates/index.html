@@ -1,0 +1,49 @@
+{% extends "digital-land-frontend/dlf-base.html" %}
+
+{%- block pageTitle -%}Weeknotes | Digital Land{%- endblock pageTitle -%}
+
+{% block beforeContent %}
+  {% include 'digital-land-frontend/partials/dl-prototype-banner.html' %}
+  {% block dl_breadcrumbs %}
+  {{ govukBreadcrumbs({
+    "items": [
+      {
+        "text": "Digital Land",
+        "href": "https://digital-land.github.io/"
+      },
+      {
+        "text": "Weeknotes"
+      }
+    ]
+  }) }}
+  {% endblock %}
+{% endblock %}
+
+{% block content %}
+<h1 class="govuk-heading-xl">Weeknotes</h1>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    {% for summary in summaries  %}
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="{{ summary.url }}">{{ summary.date.strftime('%d %B %Y') }}</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        {{ summary.summary|markdown|safe }}
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="{{ summary.url }}">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

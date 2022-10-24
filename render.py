@@ -12,6 +12,7 @@ from bin.list import create_list
 
 from digital_land_frontend.markdown.content_file import read_content_file
 
+from bin.weeknotes.render import render_weeknotes
 
 output_dir = "docs"
 content_dir = "content"
@@ -39,7 +40,7 @@ def create_output_path(fn, parent_dir=""):
 
 
 def render_pages(parent_dir=""):
-    if parent_dir != "projects":
+    if parent_dir not in ["projects", "weeknotes"]:
         path_to_directory = os.path.join(content_dir, parent_dir)
         pages = get_content_pages(path_to_directory)
 
@@ -75,4 +76,5 @@ if __name__ == "__main__":
         jinja_renderer.set_global("staticPath", "")
 
     render_projects("content/projects")
+    render_weeknotes("content/weeknotes")
     render_pages()

@@ -1,0 +1,1726 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>Weeknotes | Digital Land</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+	<link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
+<link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+
+    
+	<meta name="digital-land:template" content="dlf-base.html">
+	
+	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+	
+    
+    
+    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    
+
+    
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+    
+
+    
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div>
+
+
+<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="header-proposition">
+      <div class="govuk-header__content">
+        <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+        Digital Land
+        </a>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+        <nav>
+          <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/about/">About</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/projects/">Projects</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/weeknote/">Weeknotes</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/blog-post/">Blog</a>
+            </li>
+            
+          </ul>
+        </nav>
+        </div>
+    </div>
+  </div>
+</header>
+
+
+
+    
+      <div class="govuk-width-container ">
+        
+  
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag govuk-tag govuk-tag--grey">
+  RETIRED
+</strong><span class="govuk-phase-banner__text">
+      This is site is no longer regularly updated. <a href="https://digital-land.github.io/weeknote/2022-09-23/">Read why in our weeknote</a>.
+    </span>
+  </p>
+</div>
+  
+  <div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://digital-land.github.io/">Digital Land</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Weeknotes</li>
+    
+  
+  </ol>
+</div>
+  
+
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          
+<h1 class="govuk-heading-xl">Weeknotes</h1>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2022-09-23">23 September 2022</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">Our platform is now in public beta and has a new site</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2022-09-23">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2021-09-10">10 September 2021</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">We announced a new <a href="https://www.localdigital.gov.uk/fund/proptech-engagement-fund/">PropTech Engagement Fund</a>, began prototyping our maturity model, introduced our own entity numbers to relate data from different sources, improved how we manage content, and completed the local plans pathfinders project.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2021-09-10">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2021-06-29">29 June 2021</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">The team have begun working with 10 pathfinder local authorities to explore options and <a href="https://www.gov.uk/government/news/government-announces-10-councils-to-test-the-use-of-digital-tools-in-planning-process">test guidance and other tools</a> which may be used to develop new style local plans. We also added more national datasets, and made improvements to how we collect and present data on our <a href="https://digital-land.github.io/map/">national map</a>.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2021-06-29">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2021-05-21">21 May 2021</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">It’s been a busy few weeks at Digital Land during the pre-election period. We’ve been preparing the local plan pathfinders project, revisiting our project and product pages on the site and setting up a view-model for our data. Alongside this, we are continuing to feed into PropTech and policy, as well as evolving how we communicate with our users.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2021-05-21">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2021-02-19">19 February 2021</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">We continued work on Article 4 directions, exploring better ways of giving feedback to people publishing data, collaborated on improving digital planning notices, made a prototype roadmap for our website, and had a spike on our map.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2021-02-19">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2021-02-05">05 February 2021</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This was a busy sprint for the whole team. Amongst other things, we made some great progress working with Buckinghamshire Council to publish a page per development plan document on our site</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2021-02-05">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2021-01-25">25 January 2021</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">A longer sprint which included the Christmas break.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2021-01-25">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-12-02">02 December 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">The main focus for this sprint has been to pilot collecting development plan data from 3 local authorities.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-12-02">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-11-24">24 November 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">The main focus for this sprint has been to get conservation areas onto the site.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-11-24">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-11-10">10 November 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">The main focus for this sprint has been around building a way to collect conservation areas and speaking with local planning authorities to help test our local plans schema.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-11-10">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-10-21">21 October 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">A lot has happened over the last few weeks, including a roundtable with Minister Pincher, lots of work on the platform and website, Kishan joining the team, and Emily and Natalie leaving.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-10-21">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-09-22">22 September 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This sprint we held a show and tell and Loic played back the recent user research findings.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-09-22">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-09-08">08 September 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This sprint we’ve finished our first round of local plans user research into data providers, and we're now speaking with data consumers.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-09-08">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-08-25">25 August 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This sprint we’ve listed datasets we want to standardise, researched with more local authorities about their local plan making process, and added a cookie banner to our website.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-08-25">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-08-11">11 August 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">It’s been a big 2 weeks for the team as the Planning White Paper was published, with lots of content on data and digital.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-08-11">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-07-28">28 July 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This sprint we’ve done a lot of work on local plans, and Paul has written guidance on finding the local authority from an address.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-07-28">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-07-14">14 July 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This sprint we’ve started the local plans beta phase, improved our platform, and started some exciting policy work.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-07-14">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-06-30">30 June 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This sprint we’ve built on our roadmap, published the learnings from the local plans alpha, and had lots of involvement in the PropTech world.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-06-30">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-06-17">17 June 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">We’re back! After supporting the department’s Covid-19 response, we’re working on Digital Land projects once again and we’ve hit the ground running in this first sprint.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-06-17">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-05-07">07 May 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This week we finished our second sprint where we explored what a national picture of plan making could look like, and started our final sprint where we are focussing on how and when local planning authorities should submit their data.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-05-07">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-05-01">01 May 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">We’re coming to the end of our second sprint.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-05-01">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-04-24">24 April 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">The right starting point for the standard.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-04-24">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-04-17">17 April 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">We’ve had a busy start to the project, building up our domain knowledge in a complex area and designing and testing a prototype to get feedback from local authority users.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-04-17">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-04-10">10 April 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">The planning process is complicated and dynamic.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-04-10">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-03-13">13 March 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">A lot has happened over the last 3 weeks, including choosing a supplier for the local plans alpha, emailing 499 people in local planning authorities, and having the brownfield land map announced as part of the housing Budget.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-03-13">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-02-21">21 February 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This sprint we’ve made great progress across projects, including working on IFS calculations, creating new pages for brownfield land data, and iterating the GOV.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-02-21">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-02-07">07 February 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This sprint we’ve made good progress on brownfield land, including creating a report on the data and improving the map.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-02-07">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2020-01-24">24 January 2020</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This sprint we’ve made great progress with analysing developer contributions research and improving brownfield land tools and data.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2020-01-24">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-12-06">06 December 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">We look back on what the Digital Land team worked on during the pre-election period.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-12-06">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-11-01">01 November 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">We updated the guidance on GOV.UK for publishing brownfield land registers, improved the data pages on this site, and published discovery reports for the local plans, and the single register of planning projects.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-11-01">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-10-21">21 October 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">Our week started well with a <a href="https://www.gov.uk/government/news/housing-minister-calls-for-a-digital-revolution-in-the-property-sector">PropTech round table event</a>.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-10-21">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-10-14">14 October 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">Natalie and Jess have been working out plans for a <a href="https://digital-land.github.io/users/proptech/">PropTech</a> event with the Minister of State for Housing, Esther McVey.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-10-14">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-10-07">07 October 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">It’s been a rollercoaster of a week for the Digital Land team.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-10-07">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-10-04">04 October 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">Much of this week has been focussed on planning. Lorna, Matt and Helena have been lining up local authorities for our <a href="https://digital-land.github.io/project/developer-contributions/">Developer Contributions</a> private beta, and preparing for testing <a href="https://digital-land.github.io/project/compulsory-purchase-orders/">Compulsory Purchase Orders</a> in a usability lab.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-10-04">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-09-27">27 September 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">With some of the team still seconded to another project, and a few of the team taking well deserved holidays we were fairly light on people in the office this week.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-09-27">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-09-20">20 September 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">Monday began with a <a href="https://retrospectivewiki.org/index.php?title=The_Prime_Directive">retrospective</a> following <a href="../2019-09-06/">publishing our guidance on GOV.UK</a>.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-09-20">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-09-13">13 September 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">Jess, Natalie, and Ed have been working on next week's PropTech workshop for colleagues in the Housing Delivery and Planning directorates.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-09-13">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-09-06">06 September 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">We started the week on a high with the announcement on Sunday morning of <a href="https://www.gov.uk/government/news/communities-to-see-how-housing-developers-cash-benefits-them-thanks-to-new-planning-rules">new planning rules</a>.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-09-06">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-08-30">30 August 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">A short but busy week for those of us still in the office in August.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-08-30">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-08-23">23 August 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">It's August, and some of the team have been seconded to lend their digital skills to another project in the department, but it's still been quite a busy week for those of us left in the office.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-08-23">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-08-16">16 August 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">The week we've been working on a flow diagram that shows how data for <a href="https://digital-land.github.io/project/developer-contributions/">developer contributions</a> will be collected, stored and used to produce the dashboard and infrastructure funding statement.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-08-16">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-08-09">09 August 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">A few of the digital land team were off on holiday this week, but it was still a busy week.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-08-09">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-08-02">02 August 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">Paul D presented at a couple of boards and attended the <a href="https://www.rtpi.org.uk/">Royal Town Planning Institute (RTPI)</a> workshop at <a href="https://cp.catapult.org.uk/">Connected Places Catapult</a>.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-08-02">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-07-26">26 July 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This week we held the local plans steering group to present the findings from Paul B and Helena's discovery work to our internal stakeholders.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-07-26">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-07-19">19 July 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">Great news this week - EPC data is now being updated and published again on <a href="https://epc.opendatacommunities.org/">Open Data Communities</a>, thanks to a lot of hard work over the past year from policy specialists, including Ed. Read <a href="https://mhclgdigital.blog.gov.uk/2019/07/18/publishing-energy-performance-certificate-data/">Paul's blog post</a> on our user research and policy work involved in resuming the publication of EPC data.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-07-19">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-07-12">12 July 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This week Paul D spoke at the <a href="https://cp.catapult.org.uk/events/plantech-july-breakfast-show-tell/">PlanTech - July Breakfast Show &amp; Tell</a> at the ODI in Leeds, and attended the <a href="https://cptevents.co.uk/event/the-cpa-national-conference-2019">Compulsory Purchase Association conference</a>.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-07-12">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-07-05">05 July 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This week the Digital Land team made good progress on several projects, even with most of the team at an away day on Thursday.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-07-05">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-06-28">28 June 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">It’s been an exciting week! On Tuesday we found out that the Find an Energy Certificate or Assessor alpha, which Jake and Emily worked on, has passed the GDS assessment and can move onto beta.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-06-28">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-06-21">21 June 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This week in the Digital Land team, Adam, Colm and Jake have been working on the brownfield sites validator.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-06-21">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-06-14">14 June 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This week, we spent Tuesday and Wednesday together at our Team Away days. We kicked off with a team retrospective, which led to discussions around building further relationships with policy teams and how to improve the delivery of products we're working on.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-06-14">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-06-07">07 June 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">The big news this week was new regulations for <a href="http://www.legislation.gov.uk/ukdsi/2019/9780111185582">The Community Infrastructure Levy (Amendment) (England) Regulations 2019</a> have been laid before Parliament, an important step for the <a href="https://digital-land.github.io/project/developer-contributions/">developer contributions</a> policy.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-06-07">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-05-31">31 May 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This week Christine has been prototyping the registers editor and Paul D has been revisiting the <a href="https://pypi.org/project/openregister/0.8.8/">python open register library</a>.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-05-31">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-05-24">24 May 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">It’s been a big week for the team as digital services and policy have merged! Ed Culliney and new recruit Natalie Record have joined the team, marking the official joining of Digital Land services with policy – the ultimate multidisciplinary team.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-05-24">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-05-10">10 May 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This week, Paul (Bermudez) and Helena have been busy working on the tail end of the <a href="/project/local-plans">Local Plans discovery</a>.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-05-10">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-02-15">15 February 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This week Paul had his first MHCLG Digital Land birthday! It was a good moment to reflect on what we've done so far and where we're heading over the next year.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-02-15">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-02-08">08 February 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">Following the three workshops we held last week for our project on <a href="https://digital-land.github.io/project/developer-contributions/">developer contributions</a>, this week the team were analysing the findings and putting together an approach to further iterate our design.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-02-08">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-02-01">01 February 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This week the Digital Land Service and the Planning Infrastructure policy team ran 3 workshops with local planning authority representatives focusing on <a href="https://digital-land.github.io/project/developer-contributions">developer contributions</a>.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-02-01">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-01-25">25 January 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This week the team worked on preparing for the three workshops we are holding next week on <a href="https://digital-land.github.io/project/developer-contributions/">developer contributions</a>, to test the data standard with users and get feedback.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-01-25">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-01-18">18 January 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This week the team had a project kickoff with <a href="https://www.mysociety.org">MySociety</a> for the <a href="https://digital-land.github.io/project/single-register-of-planning/">central register of planning applications</a> work.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-01-18">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2019-01-11">11 January 2019</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">Our team is still growing! This week we welcomed our new User Research <a href="https://twitter.com/pebdesign">Paul Bermudez</a>.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2019-01-11">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-12-21">21 December 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This week the developer contributions <a href="https://www.gov.uk/government/consultations/developer-contributions-reform-technical-consultation">public consultation</a> went live.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-12-21">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-12-14">14 December 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">In advance of the public consultation for developer contributions the team have been thinking about how we’ll manage questions and feedback in an open and transparent fashion.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-12-14">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-12-07">07 December 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">We presented our progress on <a href="/project/developer-contributions">developer contributions</a> at a show and tell.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-12-07">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-11-30">30 November 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">We are delighted to welcome <a href="https://twitter.com/hptrippe">Helena Trippe</a> to our team as our new service designer!</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-11-30">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-11-23">23 November 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">On Tuesday Paul joined a panel at the ODI summit to talk about how local governments can take advantage of the opportunities created by data to improve public services and better serve communities.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-11-23">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-11-16">16 November 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">Brownfield sites, Developer Contributions</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-11-16">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-11-09">09 November 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This week we continued further work on the brownfield site validator.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-11-09">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-11-02">02 November 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">A quiet team week with just two of us in the office.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-11-02">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-10-26">26 October 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">The team has been working on the <a href="https://brownfield-sites-validator.cloudapps.digital/">brownfield sites validator</a> iterating the data model so we can understand the history of changes to registers.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-10-26">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-10-19">19 October 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">The team visited the excellent <a href="https://wellcomecollection.org/exhibitions/Wk4sPSQAACcANwrX">Living with Buildings exhibition</a> ahead of retrospective and <a href="http://www.jamiearnold.com/blog/2014/07/22/seven-questions-to-build-a-roadmap">roadmapping</a> sessions in Camden.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-10-19">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-10-12">12 October 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">Along with colleagues in the developer contribution policy team we met with one of the 3rd party suppliers of Section 106 management software.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-10-12">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-10-05">05 October 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">We did some further work on the <a href="https://brownfield-sites-validator.cloudapps.digital/">brownfield site validator</a>, this was demoed by Adam in the show and tell on Thursday 4th.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-10-05">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-09-28">28 September 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">Section 106 and Viability Assessments, Brownfield Site Validator and Documenting our findings</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-09-28">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-09-13">13 September 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">A show and tell hosted by the planning directorate. Paul <a href="https://twitter.com/psd/status/1040230532372684800">Tweeted the agenda</a>.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-09-13">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-09-06">06 September 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">We showed early work on a brownfield site register validator <a href="https://digital-land.github.io/project/brownfield-sites/">brownfield site validation tool</a>.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-09-06">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-08-30">30 August 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">Playback of user research visits to Waltham Forest, Southwalk, Lambeth and Islington councils.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-08-30">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-08-03">03 August 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This week the team continued working on <a href="https://digital-land.github.io/project/developer-contributions/">Section 106</a></p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-08-03">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-07-27">27 July 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">This week the Digital Land Services team ran their first show and tell where we talked about some of our findings from discovery, and demoed an early view of the ‘brownfield sites validator’ tool.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-07-27">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-06-15">15 June 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">We were joined this week by <a href="https://twitter.com/mattlucht">Matt Lucht</a>, our new delivery manager, Michael Nottingham, our new part-time content editor and by <a href="https://twitter.com/blangry">Alex Blandford</a>, a user researcher working for Rose.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-06-15">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-06-08">08 June 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">Rose has been recruiting participants to give us insight into how the brownfield registers were made, and if they are working for users.</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-06-08">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-06-01">01 June 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">More than 40 people came to our <a href="https://attending.io/events/what-land-and-housing-data-do-you-need">open meeting</a> where we gleaned many insights from users of land and housing data</p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-06-01">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+    <article class="blog-post blog-post-preview">
+      <header>
+        <h2 class="govuk-heading-l">
+            <a class="govuk-link" href="2018-05-04">04 May 2018</a>
+        </h2>
+      </header>
+      <div class="markdown-output entry-summary">
+        <p class="govuk-body">Paul presented at the <a href="https://gdstechnology.blog.gov.uk/2018/05/04/developing-api-best-practice-with-the-cross-government-community/">cross government event on API best practice</a></p>
+      </div>
+      <footer class="entry-footer">
+        <ul class="govuk-list">
+            <li>
+            <a class="govuk-link read-more" href="2018-05-04">Read more <span class="govuk-visually-hidden">about this week</span></a>
+            </li>
+        </ul>
+      </footer>
+    </article>
+  
+  </div>
+</div>
+
+
+        </main>
+      </div>
+    
+
+    
+	
+	
+
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
+        >
+  <div class="govuk-width-container ">
+    
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
+        
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
+
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
+
+	
+	
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
+
+  </body>
+</html>

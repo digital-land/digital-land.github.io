@@ -6,6 +6,7 @@ import jinja2
 # output directory
 docs = "docs/projects"
 
+
 def render(path, template, **kwargs):
     path = os.path.join(docs, path)
     directory = os.path.dirname(path)
@@ -23,7 +24,9 @@ def setup(searchpath):
             jinja2.FileSystemLoader(searchpath=searchpath),
             jinja2.PrefixLoader(
                 {
-                    "digital-land-frontend": jinja2.PackageLoader("digital_land_frontend"),
+                    "digital-land-frontend": jinja2.PackageLoader(
+                        "digital_land_frontend"
+                    ),
                     "govuk-jinja-components": jinja2.PackageLoader(
                         "govuk_jinja_components"
                     ),
@@ -32,4 +35,3 @@ def setup(searchpath):
         ]
     )
     return jinja2.Environment(loader=multi_loader, autoescape=True)
-

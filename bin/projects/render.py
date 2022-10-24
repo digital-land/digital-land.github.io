@@ -25,7 +25,6 @@ def markdown_filter(s):
     return compile_markdown(md, s)
 
 
-
 def get_project_content(filename):
     file_content = Frontmatter.read_file(filename)
     return {
@@ -45,26 +44,25 @@ def markdown_files_only(files, file_ext=".md"):
 summary = {
     "in progress": {
         "description": "Projects we have started to investigate. We have begun understanding the planning related user needs and collecting data where data is being created.",
-        "projects": []
+        "projects": [],
     },
     "ongoing": {
         "description": "Projects we haved worked on that are ongoing. This means they are still ticking along in the background but they are not currently our primary focus.",
-        "projects": []
+        "projects": [],
     },
     "backlog": {
         "description": "Areas, impacting planning, where we believe there is useful data to find and publish.\n\nWe will investigate each area to understand the users and their needs in the context of planning, and make sure any relevant data can be published and used by the BOPS and RIPA projects.",
-        "projects": []
+        "projects": [],
     },
     "completed": {
         "description": "Projects that we have finished. These are time boxed projects that have a clear start and end, such as a discovery into a policy area.",
-        "projects": []
+        "projects": [],
     },
     "finished": {
         "description": "Projects we have stopped working on and do not expect to return to. The project may no longer be relevant or we have learnt something that has changed our view of the project.",
-        "projects": []
-    }
+        "projects": [],
+    },
 }
-
 
 
 def add_to_bucket(project_path, project):
@@ -131,6 +129,7 @@ def collect_updates(project_folder):
 # extract frontmatter
 # compile markdown
 # render project page
+
 
 def render_projects(project_dir):
 
