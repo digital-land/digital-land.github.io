@@ -1,5 +1,5 @@
 ---
-name: Planning application boundary
+title: Planning application boundary
 status: backlog
 characteristics:
     identifier: planning-application-boundary

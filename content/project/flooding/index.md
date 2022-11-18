@@ -1,5 +1,5 @@
 ---
-name: Flood zones
+title: Flood zones
 status: backlog
 one-liner: "We are going to explore how we can make data on flooding easier to find, use and trust."
 characteristics:

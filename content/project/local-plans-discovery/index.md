@@ -1,5 +1,5 @@
 ---
-name: Local plans discovery
+title: Local plans discovery
 status: "completed"
 one-liner: "A discovery into Local plans."
 provider-and-maintainer: local planning authorities

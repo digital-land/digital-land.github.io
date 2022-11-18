@@ -1,5 +1,5 @@
 ---
-name: Conservation areas
+title: Conservation areas
 status: "In progress"
 one-liner: "We are going to explore how we can help Local Authorities make Conservation area data available."
 provider-and-maintainer: local planning authorities

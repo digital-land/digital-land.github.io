@@ -1,5 +1,5 @@
 ---
-name: "Local plan pathfinders"
+title: "Local plan pathfinders"
 status: "in progress"
 one-liner: "A project to explore the policy areas that make up a local plan"
 latest_updated: "2021-05-11"

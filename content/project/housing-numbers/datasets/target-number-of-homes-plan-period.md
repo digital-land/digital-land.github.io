@@ -1,5 +1,5 @@
 ---
-name: Target number of homes (plan period)
+title: Target number of homes (plan period)
 characteristics:
     identifier: target-number-of-homes-plan-period
     typology: value

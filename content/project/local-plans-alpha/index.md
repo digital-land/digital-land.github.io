@@ -1,5 +1,5 @@
 ---
-name: Local plans alpha
+title: Local plans alpha
 status: "completed"
 one-liner: "An alpha into Local plans."
 provider-and-maintainer: local planning authorities

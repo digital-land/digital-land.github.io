@@ -1,5 +1,5 @@
 ---
-name: Development plan documents
+title: Development plan documents
 characteristics:
     identifier: development-plan-document
     typology: document

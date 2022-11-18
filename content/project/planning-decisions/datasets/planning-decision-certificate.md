@@ -1,5 +1,5 @@
 ---
-name: Planning decision certificate
+title: Planning decision certificate
 status: backlog
 characteristics:
     identifier: planning-decision-certificate

@@ -1,5 +1,5 @@
 ---
-name: "Trees and hedgerows"
+title: "Trees and hedgerows"
 status: backlog
 one-liner: "We are going to explore how we can make data on Sites of Special Scientific Interest easier to find, use and trust."
 ---

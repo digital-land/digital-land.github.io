@@ -1,5 +1,5 @@
 ---
-name: Affordable housing thresholds
+title: Affordable housing thresholds
 characteristics:
     identifier: affordable-housing-thresholds
     typology: category

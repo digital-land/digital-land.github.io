@@ -1,5 +1,5 @@
 ---
-name: "Partner local planning authorities announced"
+title: "Partner local planning authorities announced"
 date: "2021-06-02"
 type: "update"
 ---

@@ -1,5 +1,5 @@
 ---
-name: National parks
+title: National parks
 status: backlog
 one-liner: "We are going to explore how we can make data on National Parks easier to find, use and trust."
 characteristics:

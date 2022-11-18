@@ -1,5 +1,5 @@
 ---
-name: "Woodlands"
+title: "Woodlands"
 status: backlog
 one-liner: "We are going to explore how we can make data on woodlands easier to find, use and trust."
 ---

@@ -1,7 +1,7 @@
 ---
 author: Colm Britton
 date: '2020-05-07'
-name: DXW completed alpha
+title: DXW completed alpha
 type: update
 ---
 

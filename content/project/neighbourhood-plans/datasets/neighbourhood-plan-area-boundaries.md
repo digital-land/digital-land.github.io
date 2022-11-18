@@ -1,5 +1,5 @@
 ---
-name: Neighbourhood plan area boundaries
+title: Neighbourhood plan area boundaries
 characteristics:
     identifier: neighbourhood-plan-area-boundaries
     typology: geography

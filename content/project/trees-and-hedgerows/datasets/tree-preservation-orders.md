@@ -1,5 +1,5 @@
 ---
-name: Tree preservation orders
+title: Tree preservation orders
 status: backlog
 characteristics:
     identifier: tree-preservation-orders

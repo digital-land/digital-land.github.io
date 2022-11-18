@@ -1,5 +1,5 @@
 ---
-name: Local validation list
+title: Local validation list
 status: backlog
 characteristics:
     identifier: local-validation-list

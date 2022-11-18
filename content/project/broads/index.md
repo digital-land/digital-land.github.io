@@ -1,5 +1,5 @@
 ---
-name: Broads
+title: Broads
 status: backlog
 one-liner: "We are going to explore how we can make data on Broads easier to find, use and trust."
 characteristics:

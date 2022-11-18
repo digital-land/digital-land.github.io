@@ -1,5 +1,5 @@
 ---
-name: "Local heritage"
+title: "Local heritage"
 status: "backlog"
 one-liner: "We are going to explore how we can help Local Authorities make local heritage data available."
 ---

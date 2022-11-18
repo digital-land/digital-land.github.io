@@ -1,5 +1,5 @@
 ---
-name: Scheduled monument
+title: Scheduled monument
 characteristics:
     identifier: scheduled-monument
     typology: geography

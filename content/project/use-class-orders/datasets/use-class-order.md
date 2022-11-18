@@ -1,5 +1,5 @@
 ---
-name: Use class order
+title: Use class order
 status: backlog
 characteristics:
     identifier: use-class-order

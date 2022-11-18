@@ -28,7 +28,7 @@ def markdown_filter(s):
 def get_project_content(filename):
     file_content = Frontmatter.read_file(filename)
     return {
-        "name": file_content["attributes"].get("name"),
+        "name": file_content["attributes"].get("title"),
         "status": file_content["attributes"].get("status"),
         "description": file_content["attributes"].get("one-liner"),
         "frontmatter": file_content["frontmatter"],

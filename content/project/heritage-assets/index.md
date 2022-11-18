@@ -1,5 +1,5 @@
 ---
-name: "National heritage assets"
+title: "National heritage assets"
 status: backlog
 one-liner: "We are going to explore how we can make data on national heritage assets easier to find, use and trust."
 ---

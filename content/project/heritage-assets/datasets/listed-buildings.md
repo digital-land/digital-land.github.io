@@ -1,5 +1,5 @@
 ---
-name: Listed buildings
+title: Listed buildings
 status: backlog
 characteristics:
     identifier: listed-buildings

@@ -1,7 +1,7 @@
 ---
 author: Colm Britton
 date: '2021-01-17'
-name: Renamed Local plans to Development plans
+title: Renamed Local plans to Development plans
 type: decision
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: Brownfield land
+title: Brownfield land
 status: "ongoing"
 one-liner: "We have published a national picture of Brownfield Land using the registers Local Authorities currently maintain."
 characteristics:

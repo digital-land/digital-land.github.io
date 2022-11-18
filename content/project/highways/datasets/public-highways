@@ -1,5 +1,5 @@
 ---
-name: Public highways
+title: Public highways
 characteristics:
     identifier: public-highways
     typology: geography

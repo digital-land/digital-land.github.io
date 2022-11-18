@@ -1,5 +1,5 @@
 ---
-name: "World heritage sites"
+title: "World heritage sites"
 characteristics:
     identifier: World Heritage Site
     typology: geography

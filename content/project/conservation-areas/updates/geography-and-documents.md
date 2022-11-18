@@ -1,5 +1,5 @@
 ---
-name: "A geography and multiple documents"
+title: "A geography and multiple documents"
 date: "2021-04-30"
 type: "Decision"
 ---

@@ -1,5 +1,5 @@
 ---
-name: Target number of homes (yearly)
+title: Target number of homes (yearly)
 characteristics:
     identifier: target-number-of-homes-yearly
     typology: value

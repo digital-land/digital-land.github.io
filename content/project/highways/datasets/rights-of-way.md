@@ -1,5 +1,5 @@
 ---
-name: "Rights of way"
+title: "Rights of way"
 characteristics:
     identifier: rights-of-way
     typology: geography

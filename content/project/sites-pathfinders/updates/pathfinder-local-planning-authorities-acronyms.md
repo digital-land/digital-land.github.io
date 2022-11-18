@@ -1,5 +1,5 @@
 ---
-name: "Acronyms used by Local planning authorities"
+title: "Acronyms used by Local planning authorities"
 date: "2021-06-15"
 type: "update"
 ---

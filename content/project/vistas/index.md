@@ -1,5 +1,5 @@
 ---
-name: Vistas
+title: Vistas
 status: backlog
 one-liner: "We are going to explore how we can help Local Authorities make protected vista data available."
 characteristics:

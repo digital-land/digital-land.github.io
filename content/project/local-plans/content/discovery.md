@@ -1,5 +1,5 @@
 ---
-name: "Discovery: summer 2019"
+title: "Discovery: summer 2019"
 time-length: 5 months
 team-members: 2
 sites-visited: 17

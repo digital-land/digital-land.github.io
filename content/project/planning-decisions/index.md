@@ -1,5 +1,5 @@
 ---
-name: "Planning decisions"
+title: "Planning decisions"
 status: backlog
 one-liner: "We are going to explore how we can help Local Authorities make Neighbourhood Plan data available."
 ---

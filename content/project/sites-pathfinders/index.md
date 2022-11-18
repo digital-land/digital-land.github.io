@@ -1,5 +1,5 @@
 ---
-name: "Sites pathfinders"
+title: "Sites pathfinders"
 status: "in progress"
 one-liner: "A project to explore sites data in the local plan making process"
 latest_updated: 2021-05-18

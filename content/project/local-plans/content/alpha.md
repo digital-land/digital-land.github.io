@@ -1,5 +1,5 @@
 ---
-name: Alpha
+title: Alpha
 key-stats:
     outputs:
         prototypes: 3

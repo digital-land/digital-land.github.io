@@ -1,5 +1,5 @@
 ---
-name: Building use class
+title: Building use class
 status: backlog
 characteristics:
     identifier: building-use-class

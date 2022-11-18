@@ -1,5 +1,5 @@
 ---
-name: "OxCam Arc evidence data "
+title: "OxCam Arc evidence data "
 status: "in progress"
 one-liner: "A project to explore how we collect Local Plan evidence data and provide it to local authorities"
 

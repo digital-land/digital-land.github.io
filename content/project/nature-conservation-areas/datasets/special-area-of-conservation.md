@@ -1,5 +1,5 @@
 ---
-name: Special area of conservation
+title: Special area of conservation
 characteristics:
     identifier: special-area-of-conservation
     typology: geography

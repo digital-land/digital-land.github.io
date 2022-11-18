@@ -1,5 +1,5 @@
 ---
-name: "Local plan pathfinders report"
+title: "Local plan pathfinders report"
 date: "2021-11-24"
 type: "update"
 ---

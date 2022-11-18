@@ -1,5 +1,5 @@
 ---
-name: Standard application form
+title: Standard application form
 status: backlog
 characteristics:
     identifier: standard-application-form

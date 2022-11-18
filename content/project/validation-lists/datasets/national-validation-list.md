@@ -1,5 +1,5 @@
 ---
-name: National validation list
+title: National validation list
 status: backlog
 characteristics:
     identifier: national-validation-list

@@ -1,7 +1,7 @@
 ---
 author: Colm Britton
 date: '2020-03-01'
-name: DXW start alpha
+title: DXW start alpha
 type: event
 ---
 

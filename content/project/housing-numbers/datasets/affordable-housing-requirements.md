@@ -1,5 +1,5 @@
 ---
-name: Affordable housing requirements
+title: Affordable housing requirements
 characteristics:
     identifier: affordable-housing-requirements
     typology: value

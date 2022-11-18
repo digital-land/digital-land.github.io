@@ -1,5 +1,5 @@
 ---
-name: Neighbourhood plan expiration dates
+title: Neighbourhood plan expiration dates
 characteristics:
     identifier: neighbourhood-plan-expiration-dates
     typology: date

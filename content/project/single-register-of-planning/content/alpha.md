@@ -1,5 +1,5 @@
 ---
-name: "Alpha: A planning application data pattern"
+title: "Alpha: A planning application data pattern"
 displayContents: true
 ---
 

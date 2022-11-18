@@ -1,5 +1,5 @@
 ---
-name: Areas of outstanding natural beauty
+title: Areas of outstanding natural beauty
 status: backlog
 one-liner: "We are going to explore how we can make data on Areas of Outstanding National Beauty easier to find, use and trust."
 characteristics:

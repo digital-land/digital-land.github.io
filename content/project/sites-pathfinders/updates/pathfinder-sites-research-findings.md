@@ -1,5 +1,5 @@
 ---
-name: "Findings from user research sessions"
+title: "Findings from user research sessions"
 date: "2021-06-15"
 type: "update"
 ---

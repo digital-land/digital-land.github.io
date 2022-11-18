@@ -1,5 +1,5 @@
 ---
-name: "Locally listed buildings"
+title: "Locally listed buildings"
 characteristics:
     identifier: locally-listed-building
     typology: geography

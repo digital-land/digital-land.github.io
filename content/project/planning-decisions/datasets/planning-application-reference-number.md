@@ -1,5 +1,5 @@
 ---
-name: Planning application reference number
+title: Planning application reference number
 status: backlog
 characteristics:
     identifier: planning-application-reference-number

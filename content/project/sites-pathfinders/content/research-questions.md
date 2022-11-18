@@ -1,5 +1,5 @@
 ---
-name: "Research questions"
+title: "Research questions"
 ---
 
 To help us understand where we should focus our efforts over the course of the sites pathfinder project we have written some initial research questions.

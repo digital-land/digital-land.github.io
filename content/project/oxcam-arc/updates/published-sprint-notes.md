@@ -1,6 +1,6 @@
 ---
 date: '2021-08-12'
-name: Published sprint notes
+title: Published sprint notes
 type: update
 ---
 

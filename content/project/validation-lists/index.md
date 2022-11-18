@@ -1,5 +1,5 @@
 ---
-name: "Validation lists"
+title: "Validation lists"
 status: backlog
 one-liner: "We are going to explore how we can make data on validation lists easier to find, use and trust."
 ---

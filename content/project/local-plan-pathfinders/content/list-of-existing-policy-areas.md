@@ -1,5 +1,5 @@
 ---
-name: "List of existing policy areas"
+title: "List of existing policy areas"
 ---
 
 We've identified a number of existing policy areas that might be interesting to explore. Not all of them will be relevant or important to all local planning authorities.

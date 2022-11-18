@@ -1,5 +1,5 @@
 ---
-name: Planning application fee
+title: Planning application fee
 status: backlog
 characteristics:
     identifier: planning-application-fee

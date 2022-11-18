@@ -1,5 +1,5 @@
 ---
-name: "Local plan pathfinders report"
+title: "Local plan pathfinders report"
 ---
 
 The pathfinder programme brought together 10 local planning authorities (LPAs) to look at how local plan policies and sites data is created and published. The LPAs were asked to provide open, standardised and machine readable data to us.

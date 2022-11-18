@@ -1,5 +1,5 @@
 ---
-name: Single register of planning
+title: Single register of planning
 status: "completed"
 one-liner: "We worked with mySociety to learn how to make planning application data more trustworthy and up to date, as well as easier to find and use."
 provider-and-maintainer: local planning authorities

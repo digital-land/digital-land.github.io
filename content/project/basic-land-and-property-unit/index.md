@@ -1,5 +1,5 @@
 ---
-name: Basic land and property unit classification
+title: Basic land and property unit classification
 one-liner: "We are going to explore how we can make land and property classifaction data available."
 status: backlog
 characteristics:
