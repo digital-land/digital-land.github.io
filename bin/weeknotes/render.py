@@ -11,8 +11,8 @@ from bin.summary import create_summary
 from digital_land_frontend.filters import make_link
 from digital_land_frontend.markdown.filter import compile_markdown, markdown_filter
 
-output_dir = "docs/weeknotes"
-url_root = "weeknotes"
+output_dir = "docs/weeknote"
+url_root = "weeknote"
 
 
 def get_content_pages(directory):

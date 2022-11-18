@@ -4,7 +4,7 @@ import os
 import jinja2
 
 # output directory
-docs = "docs/projects"
+docs = "docs/project"
 
 
 def render(path, template, **kwargs):

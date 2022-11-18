@@ -180,4 +180,4 @@ def render_projects(project_dir):
 
 
 if __name__ == "__main__":
-    render_projects("content/projects")
+    render_projects("content/project")

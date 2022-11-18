@@ -75,6 +75,6 @@ if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "--local":
         jinja_renderer.set_global("staticPath", "")
 
-    render_projects("content/projects")
-    render_weeknotes("content/weeknotes")
+    render_projects("content/project")
+    render_weeknotes("content/weeknote")
     render_pages()
