@@ -1,0 +1,9 @@
+---
+title: Public highways
+characteristics:
+    identifier: public-highways
+    typology: geography
+    data provider and maintainer: Highways England
+---
+
+We have not yet started exploring this area, but we are aware that the Highways England have published an [existing dataset on highway boundaries](https://data.gov.uk/dataset/d92af767-a3d8-4860-b7da-d5edf596f90e/highway-boundary).
