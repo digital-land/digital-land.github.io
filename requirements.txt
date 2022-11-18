@@ -5,7 +5,7 @@ dataclasses
 -e git+https://github.com/digital-land/digital-land-python.git#egg=digital-land
 frontmatter
 importlib-metadata
-MarkupSafe
+MarkupSafe==2.0.1
 Jinja2
 Markdown
 mypy-extensions
