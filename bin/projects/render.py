@@ -50,12 +50,12 @@ summary = {
         "description": "Projects we haved worked on that are ongoing. This means they are still ticking along in the background but they are not currently our primary focus.",
         "projects": [],
     },
-    "backlog": {
-        "description": "Areas, impacting planning, where we believe there is useful data to find and publish.\n\nWe will investigate each area to understand the users and their needs in the context of planning, and make sure any relevant data can be published and used by the BOPS and RIPA projects.",
-        "projects": [],
-    },
     "completed": {
         "description": "Projects that we have finished. These are time boxed projects that have a clear start and end, such as a discovery into a policy area.",
+        "projects": [],
+    },
+    "backlog": {
+        "description": "Areas, impacting planning, where we believe there is useful data to find and publish.\n\nWe will investigate each area to understand the users and their needs in the context of planning, and make sure any relevant data can be published and used by the BOPS and RIPA projects.",
         "projects": [],
     },
     "finished": {
