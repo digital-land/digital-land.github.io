@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>
+Digital land sprint notes - Digital Land
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+	<link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
+<link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+
+    
+	<meta name="digital-land:template" content="dlf-base.html">
+	
+	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+	
+    
+    
+    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    
+
+    
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+    
+
+    
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div>
+
+
+<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="header-proposition">
+      <div class="govuk-header__content">
+        <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+        Digital Land
+        </a>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+        <nav>
+          <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/about/">About</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/projects/">Projects</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/weeknotes/">Weeknotes</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/blog-post/">Blog</a>
+            </li>
+            
+          </ul>
+        </nav>
+        </div>
+    </div>
+  </div>
+</header>
+
+
+
+    
+      <div class="govuk-width-container ">
+        
+  
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag govuk-tag govuk-tag--grey">
+  RETIRED
+</strong><span class="govuk-phase-banner__text">
+      This is site is no longer regularly updated. <a href="https://digital-land.github.io/weeknote/2022-09-23/">Read why in our weeknote</a>.
+    </span>
+  </p>
+</div>
+  
+  <div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/weeknote">Weeknote</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">2020 07 28</li>
+    
+  
+  </ol>
+</div>
+  
+
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          
+
+<h1 class="govuk-heading-xl">Digital land sprint notes</h1>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds"><p class="govuk-body" class="govuk-body"><em>This sprint we’ve done a lot of work on local plans, and Paul has written guidance on finding the local authority from an address.</em></p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="team"><a href="https://digital-land.github.io/about/">Team</a></h2>
+<p class="govuk-body" class="govuk-body">We’re sad to see our developer Jake leave the team for a new role at the Ministry of Justice. He’ll be missed by us. However, we’ve already sifted some great applications for his replacement.</p>
+<p class="govuk-body" class="govuk-body">Jess and Lawrence both spoke at recent PropTech events addressing the role of public sector in supporting built environment innovation, sharing work of the department and hearing from other key organisations. </p>
+<p class="govuk-body" class="govuk-body">We’ve had 2 show and tells this sprint. Ben Duckworth, who works with Natalie on Digital Planning, attended our team show and tell, and we’re looking forward to working closely with Ben. Some of the team also held a show and tell with Minister Pincher, covering the activity of the Digital Land team and the data, policy and PropTech work underway. </p>
+<p class="govuk-body" class="govuk-body">We’ve also been working on our roadmap, making it more outcome driven and adding policy milestones.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="local-plans"><a href="https://digital-land.github.io/project/local-plans/">Local plans</a></h2>
+<p class="govuk-body" class="govuk-body">Colm created a diagram that maps out a digitised planning ecosystem.  It attempts to highlight how data and standards could underpin a modernised planning system that unlocks the potential for innovation in the PropTech sector and helps satisfy user’s planning and housing needs:</p>
+<p class="govuk-body" class="govuk-body"><a data-flickr-embed="true" href="https://www.flickr.com/photos/182343195@N08/50170378162/in/dateposted-public/" title="Diagram of the planning ecosystem showing 6 layers. From top level to bottom: 1) Data standards policies and regulations; 2) Registers - authoritative data you can trust; 3) Devolved land and planning services; and Central government services; 4) Platforms or services which help people build digital services; 5) PropTech; 6) People finding information and land, planning and housing."><img class="dl-image"  class="dl-image"  src="https://live.staticflickr.com/65535/50170378162_5708139ccd_c.jpg" alt="Diagram of the planning ecosystem showing 6 layers. From top level to bottom: 1) Data standards policies and regulations; 2) Registers - authoritative data you can trust; 3) Devolved land and planning services; and Central government services; 4) Platforms or services which help people build digital services; 5) PropTech; 6) People finding information and land, planning and housing."></a></p>
+<p class="govuk-body" class="govuk-body">He has also created a diagram (<a href="/images/diagrams/local-plans-schemas.svg">see full version of local plans schema diagram</a>) to explain how the different schemas that make up the <a href="https://digital-land.github.io/specification/dataset/local-plans/">local plans dataset specification</a> fit together:</p>
+<p class="govuk-body" class="govuk-body"><a data-flickr-embed="true" href="https://www.flickr.com/photos/182343195@N08/50188005427/in/dateposted-public/" title="Local plan dataset diagram, showing 1. the development plan schema as the highest level, linking through to 2. the development plan timetable schema and 3. the development plan document schema, which links to 4. development policy schema."><img class="dl-image"  class="dl-image"  src="https://live.staticflickr.com/65535/50188005427_a836fa717d_c.jpg" alt="Local plan dataset diagram, showing 1. the development plan schema as the highest level, linking through to 2. the development plan timetable schema and 3. the development plan document schema, which links to 4. development policy schema."></a></p>
+<p class="govuk-body" class="govuk-body">Lorna and Loic finalised the user research plans for beta. There will be 2 strands to the work: speaking to new groups of potential consumers of local plan data, and providers of local plan data. Read more about the research we’ve got planned in the <a href="https://docs.google.com/presentation/d/e/2PACX-1vSD5pxJCNJA9A_ZC0N9RVvrKIZO2cdOGsYZHYAtCGxoGCpEFYwtBy9C9UDsu2EUm3L8Z005YHRnRbjR/pub?start=false&amp;loop=false&amp;delayms=3000">slides Lorna presented at our Show and Tell</a>.</p>
+<p class="govuk-body" class="govuk-body">Jon has continued working on the system that will be building the local plans dataset. The data from the housing numbers prototype has been migrated to our new specification, and the generalised pipeline is now able to read the specification files.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="local-authority-addresses">Local authority addresses</h2>
+<p class="govuk-body" class="govuk-body">Paul wrote some guidance to help people building services <a href="https://digital-land.github.io/local-authority-addresses/">find the local authority for an address</a>. This is backed by some <a href="https://digital-land.github.io/local-authority-addresses/analysis/">analysis</a> into how many addresses with the same postcode span a local authority boundary. The code is in a Jupyter notebook in a <a href="https://github.com/digital-land/local-authority-addresses">GitHub repository</a>.</p>
+<p class="govuk-body" class="govuk-body"><a href="https://www.flickr.com/photos/psd/50165771136" title="Spatialite schema"><img class="dl-image"  class="dl-image"  src="https://live.staticflickr.com/65535/50165771136_255fe99b5b_c.jpg" alt="Spatialite schema"></a></p>
+<p class="govuk-body" class="govuk-body">For example, the postcode “BN15 0AY” has addresses in 4 different local authority districts: Adur, Arun, Horsham and Worthing:</p>
+<p class="govuk-body" class="govuk-body"><a href="https://www.flickr.com/photos/psd/49933365576/in/dateposted-public/" title="The BN15 0AY intersection"><img class="dl-image"  class="dl-image"  src="https://live.staticflickr.com/65535/49933365576_7d204a3dc5_c.jpg" alt="The BN15 0AY intersection"></a></p>
+<p class="govuk-body" class="govuk-body">And the postcode “CV4 7ES” has more than 6,000 UPRNs split evenly between Warkwickshire and Coventry:</p>
+<p class="govuk-body" class="govuk-body"><a href="https://www.flickr.com/photos/psd/49930012447/in/dateposted-public/" title="Experimenting loading AddressBase into Datasette"><img class="dl-image"  class="dl-image"  src="https://live.staticflickr.com/65535/49930012447_363e34839f_c.jpg" alt="Experimenting loading AddressBase into Datasette"></a></p>
+  </div>
+</div>
+
+
+        </main>
+      </div>
+    
+
+    
+	
+	
+
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
+        >
+  <div class="govuk-width-container ">
+    
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
+        
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
+
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
+
+	
+	
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
+
+  </body>
+</html>

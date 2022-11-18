@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>
+Digital land sprint notes - Digital Land
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+	<link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
+<link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+
+    
+	<meta name="digital-land:template" content="dlf-base.html">
+	
+	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+	
+    
+    
+    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    
+
+    
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+    
+
+    
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div>
+
+
+<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="header-proposition">
+      <div class="govuk-header__content">
+        <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+        Digital Land
+        </a>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+        <nav>
+          <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/about/">About</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/projects/">Projects</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/weeknotes/">Weeknotes</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/blog-post/">Blog</a>
+            </li>
+            
+          </ul>
+        </nav>
+        </div>
+    </div>
+  </div>
+</header>
+
+
+
+    
+      <div class="govuk-width-container ">
+        
+  
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag govuk-tag govuk-tag--grey">
+  RETIRED
+</strong><span class="govuk-phase-banner__text">
+      This is site is no longer regularly updated. <a href="https://digital-land.github.io/weeknote/2022-09-23/">Read why in our weeknote</a>.
+    </span>
+  </p>
+</div>
+  
+  <div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/weeknote">Weeknote</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">2021 06 29</li>
+    
+  
+  </ol>
+</div>
+  
+
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          
+
+<h1 class="govuk-heading-xl">Digital land sprint notes</h1>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds"><p class="govuk-body" class="govuk-body"><em>The team have begun working with 10 pathfinder local authorities to explore options and <a href="https://www.gov.uk/government/news/government-announces-10-councils-to-test-the-use-of-digital-tools-in-planning-process">test guidance and other tools</a> which may be used to develop new style local plans. We also added more national datasets, and made improvements to how we collect and present data on our <a href="https://digital-land.github.io/map/">national map</a>.</em></p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="local-plan-pathfinders"><a href="https://digital-land.github.io/project/local-plan-pathfinders/">Local plan pathfinders</a></h2>
+<p class="govuk-body" class="govuk-body">Katie ran workshops and several user research interviews with our 10 pathfinder local authorities. The first workshop began by establishing a working definition of a “site”:</p>
+<p class="govuk-body" class="govuk-body"re><code class="dl-code">By “site” we mean a parcel of land, submitted by a land owner or identified by the local authority. It is under consideration for development and is demarcated by a red line boundary. A site can have many uses such as residential, leisure, town centre, employment, retail, regeneration, and gypsy and traveller sites.
+</code></pre>
+<p class="govuk-body" class="govuk-body">We also asked our pathfinders to provide local plan and site data in the form it is currently held. The difficulty of <a href="https://mhclgdigital.blog.gov.uk/2018/10/25/data-and-information/">extracting data from information held in documents</a> remains the biggest obstacle to processing planning information as data, however, not all of the barriers to publishing and using local plans as data are technical. For example license and other data sharing agreements made when the information was created are often seen as a reason they can’t be republished. The pathfinders work is an opportunity for us to better understand these barriers to publication and devise and test ways we can help overcome them.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="datasets"><a href="https://digital-land.github.io/dataset/">Datasets</a></h2>
+<p class="govuk-body" class="govuk-body">We added a number of national environmental and heritage collections to our <a href="https://digital-land.github.io/dataset/">dataset</a> pages. The size and number of these datasets helped us prioritise work to process the files more efficiently, moving from storing the collected resources and processed data from <a href="https://git-lfs.github.com/">GitHub LFS</a> to <a href="https://en.wikipedia.org/wiki/Amazon_S3">Amazon S3</a>.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="map"><a href="https://digital-land.github.io/product/interactive-planning-data-map/">Map</a></h2>
+<p class="govuk-body" class="govuk-body">Our <a href="https://digital-land.github.io/map/">national map</a> became less usable as we added more datasets, especially ones with a large number of features.</p>
+<p class="govuk-body" class="govuk-body">Kishan and Colm ran a <a href="https://en.wikipedia.org/wiki/Spike_(software_development)">technical spike</a> to see if we could move from <a href="https://en.wikipedia.org/wiki/Leaflet_(software)">LeafletJS</a> to <a href="https://docs.mapbox.com/vector-tiles/reference/">mapbox vector tiles</a> using <a href="https://maplibre.org/">MapLibre GL</a>. This shows great promise, panning and zooming without needing to reload individual features, and is easily able to display every <a href="https://digital-land.github.io/listed-building/">listed-building</a> even at the lowest zoom level. The tiles are cached by the browser, meaning less data needs to be transferred, and meaning our servers can easily support larger numbers of users.</p>
+<p class="govuk-body" class="govuk-body">Paul S continued to research accessibility and other needs for our maps, meeting others working on the design of maps from other government organisations. Paul and Colm spoke to <a href="https://twitter.com/abbott567">Craig Abbott</a>, Head of Accessibility at DWP Digital. Craig recently published the <a href="https://accessibility-manual.dwp.gov.uk/">DWP Accessibility Manual</a> and kindly offered to talk to us about how we planned to make our interactive maps accessible and inclusive. We will write more about this in the coming weeks.</p>
+<p class="govuk-body" class="govuk-body">We also plan to attend a planned workshop from the <a href="https://design-system.service.gov.uk/design-system-team/">GOVUK Design System team</a> about interactive maps. People from across the public sector are working on similar problems to ours and have been sharing their work on the <a href="https://github.com/alphagov/govuk-design-system-backlog/issues/75">Design System's Backlog 'issue' for Maps</a> or writing blog posts, such as the team at Defra Digital who blogged about <a href="https://defradigital.blog.gov.uk/2021/05/20/designing-a-more-accessible-flood-map/">Designing a more accessible flood map</a></p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="team">Team</h2>
+<p class="govuk-body" class="govuk-body">This sprint we started work on our <a href="https://medium.com/@stephenjanaway/creating-a-team-charter-4a94971ab7e1">Team Charter</a> that sets out how we want to work together when we return to the office. Some of us are in London, others are national, and some of us will continue to work from home, so it's important that we work out the tools and schedules that will work best for everyone. We’ll revisit our Team Charter every quarter to make sure we are still living by the shared values we agreed.</p>
+<p class="govuk-body" class="govuk-body">We welcomed <a href="https://twitter.com/milsbogunovic">Milan</a> as our new Deputy Director in Planning Digital who will be supporting our delivery and helping align all of the digital programmes.</p>
+  </div>
+</div>
+
+
+        </main>
+      </div>
+    
+
+    
+	
+	
+
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
+        >
+  <div class="govuk-width-container ">
+    
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
+        
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
+
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
+
+	
+	
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
+
+  </body>
+</html>
