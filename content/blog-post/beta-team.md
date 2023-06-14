@@ -157,8 +157,9 @@ So I want to see numbers and boxes that go red and green for all our processes.
 We particularly  need to understand how long each thing takes us to do: 
 
 * discover a dataset
-* design a specification
-* co-design it with local planning authorities
+* co-design a specification, in the open
+* turn it into a data standard
+* support local planning authorities and other make data available
 * and add it to the platform
 
 Most importantly, we need to see how many things are waiting and for how long between each step.
