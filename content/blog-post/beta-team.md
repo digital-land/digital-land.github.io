@@ -1,11 +1,11 @@
 ---
-title: "Being a new Service Owner"
+title: "On becoming a new Service Owner"
 date: 2023-06-14
 author: "Paul Downey"
 status: beta
 ---
 
-A talk Paul Downey gave to the new beta planning data service team.
+*A talk Paul Downey gave to the new beta planning data service team.*
 
 Hello, I'm Paul and I'm your Service Owner for the new Planning Data service.
 When I first met you last week I offered some ways I can help you deliver, and said I'd give you clear outcomes to work to.
