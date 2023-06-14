@@ -25,6 +25,8 @@ And work with you to ensure we’re measurably delivering value.
 AND THAT’S IT!
 
 ## Really, Paul?
+<a href="https://www.flickr.com/photos/psd/9785807361/in/photolist-aK5ng-nRubuW-e8Men-e8Mrq-ebxXk-ebxZD-ebG5M-eYpsD-3KyJpy-4JPcqx-5akr6H-r6TQh-5rW57Y-5t3hRG-61LQB7-6a51f8-6CUqz5-6HPzGj-7PKWFK-2gcQDTA-8ZLFKz-9bfZYs-7iqBu-e6bVpv-fUJPAz-3twpM-5aSM3" title="The devil is the detail"><img src="https://live.staticflickr.com/3801/9785807361_50452018c2.jpg" alt="The devil is the detail"/></a>
+
 I did have a concern before taking on this role. 
 
 I’m fascinated by the details, a lot of the code is my fault, and I have some strong views on some quite detailed things.
@@ -88,9 +90,10 @@ In particular we’re failing to respond to, and action their feedback.
 <a href="https://www.flickr.com/photos/psd/52970036297/in/photolist-2oGMhkT-c6cfGW" title="The bottleneck is usually at the top"><img src="https://live.staticflickr.com/65535/52970036297_209c7e6b75.jpg" alt="The bottleneck is usually at the top"/></a>
 
 Let me be clear.
+
 This is despite you all individually doing great work. I really mean that.
 I loved the last show and tell. There was a lot of great work in there, and it was presented consumately.
-You should be proud of your work, and how you work.
+You should be proud of your work, and how you have been working.
 
 No, we’re failing because despite being productive, we’re not being effective.
 
@@ -151,7 +154,14 @@ It’s also so we have fewer surprises.
 
 So I want to see numbers and boxes that go red and green for all our processes.
 
-We particularly  need to understand how long each thing takes us to do: discover a dataset, design a specification, co-design it with LPAs, and add it to the platform, and how long things wait between steps.
+We particularly  need to understand how long each thing takes us to do: 
+
+* discover a dataset
+* design a specification
+* co-design it with local planning authorities
+* and add it to the platform
+
+Most importantly, we need to see how many things are waiting and for how long between each step.
 
 Maybe start low-tech, post-its, spreadsheets, slide-decks and mural boards, 
 before making notebooks, creating dashboards, and adding automated measurements, monitoring and alerting. 
@@ -172,19 +182,20 @@ For tech, that means ensuring the site stays up, and the data pipeline doesn’t
 And it’s other things you think are broken.
 I trust you to work it out.
 
-For design, it’s better understanding how users see and use our service.
-And clarifying what needs to be done at each stage of our value stream.
+For design, it’s better understanding how users see and use our service, realting that to our value stream,
+and clarifying what users need to do for work to move between each step.
 After that I’m not sure, but I know you know how to work it out. 
+
 I want our designers to be designers.
 Just do what you do best and work in the right way.
-Ask great questions, challenge ideas, test your assumptions, elevate what we’ve learnt, and tell us stuff we don’t already know.
+Ask great questions, challenge our ideas, help us test our assumptions, elevate what we’ve learnt, and tell us stuff we don’t already know.
 
 And that’s it for now.
 
 ## Giving you drive
 <a href="https://www.flickr.com/photos/psd/11134670423/in/photolist-hXW6Ag-2dyCRg5-KuvyB" title="Autonomy, Mastery, Purpose"><img src="https://live.staticflickr.com/7376/11134670423_658bdfeaaa.jpg" alt="Autonomy, Mastery, Purpose"/></a>
 
-So I’ve think I’ve given you a clear purpose. 
+So I think I’ve given you a clear purpose. 
 You’re going to make data faster.
 And I’m giving you the space to mess up.
 But I know you’ll rock it.
