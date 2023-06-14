@@ -30,11 +30,11 @@ AND THAT’S IT!
 I did have a concern before taking on this role. 
 
 I’m fascinated by the details, a lot of the code is my fault, and I have some strong views on some quite detailed things.
-I’ll always be interested in the detail. I love data modelling. I’ll always write code. It’s my happy-place.
+I’ll always be interested in the detail. I love data modelling. I’ll always write code. It’s my happy place.
 And I'm always on hand if you want my view on detail.
 
 But being in the detail is no longer my job, it’s my hobby.
-And that’s something I want you to remind me about if you hear me nitpicking the detail.
+And that’s something I want you to remind me about if you hear me nitpicking over the detail.
 
 I think we need to work out how we’re going to work together.
 But I know it’s something we’ll work out together.
@@ -59,7 +59,7 @@ I think we have a strong vision, one that's survived a lot of challenge and test
 > Data they can understand, use and trust enough to build into services to inform important decisions for their users.
 > Decisions which will help more people know where to build and how to go about building.
 > With the potential to diversify the housing marketplace, transform the relationship between communities and development,
-> and meet more people’s need for housing,
+> and meet more people’s need for housing.
 
 That’s our vision. It’s the reason we’re here, and it’s how our success will be measured and evaluated. 
 
@@ -67,7 +67,7 @@ That’s our vision. It’s the reason we’re here, and it’s how our success 
 <a href="https://www.flickr.com/photos/psd/41029633762/in/photolist-jyYHT4-oPKYJw-oPNTYc-puaxVG-puaBz5-pubaqD-pudh7o-pGfsn5-pJw4x1-pLnFia-pLnHV4-pLBsQk-pLFMBC-xQTbtg-F5Tufk-25vDAEE-7poCaB-7vC8aR-2nc2WAm-c49faQ-dku3xm-dLTVws-dZ3PLs-dZZHnt-f1t7Do-6T7BH-JdMT" title="Design phases"><img src="https://live.staticflickr.com/897/41029633762_95129fdd9b.jpg" alt="Design phases"/></a>
 
 I’m going to say something which might be tough for you to hear, but I think is important for me to say.
-We’re not a discovery, and we’re no long in alpha. We worked hard on many different alphas over three years before passing our [alpha assessment](https://www.gov.uk/service-standard-reports/digital-land-alpha-assessment-report).
+We’re not in discovery, and we’re no longer in alpha. We worked hard on many different alphas over 3 years before passing our [alpha assessment](https://www.gov.uk/service-standard-reports/digital-land-alpha-assessment-report).
 
 We’re a beta service, and have been since we launched [planning.data.gov.uk](https://www.planning.data.gov.uk) last year in September. 
 
@@ -77,12 +77,12 @@ But I think we’re currently failing them.
 ## We need to focus on our flow
 <a href="https://www.flickr.com/photos/psd/46214552701/in/photolist-2dpPEqM" title="Do less, flow more"><img src="https://live.staticflickr.com/4866/46214552701_af5cda2276.jpg" alt="Do less, flow more"/></a>
 
-We are failing our users and not giving them the data they need because our production line is blocked.
+We're failing our users and not giving them the data they need because our production line is blocked:
 
-* Our standards take too long to make.
-* Local authorities are still uncertain about what we expect them to do, and we don’t yet show them enough value from their hard work.
-* We haven’t added many new data sources since the launch.
-* And we still don’t know anywhere near enough about the users of our data.
+* our standards take too long to make
+* local authorities are still uncertain about what we expect them to do, and we don’t yet show them enough value from their hard work
+* we haven’t added many new data sources since launch
+* and we still don’t know anywhere near enough about the users of our data
 
 In particular we’re failing to respond to, and action their feedback.
 
@@ -92,7 +92,7 @@ In particular we’re failing to respond to, and action their feedback.
 Let me be clear.
 
 This is despite you all individually doing great work. I really mean that.
-I loved the last show and tell. There was a lot of great work in there, and it was presented consumately.
+I loved the last show and tell. There was a lot of great work in there, and it was presented consummately.
 You should be proud of your work, and how you have been working.
 
 No, we’re failing because despite being productive, we’re not being effective.
@@ -101,7 +101,7 @@ That’s because we have failed to prioritise the right things.
 And if the team is working on the wrong things, that’s now my fault. And my problem to solve.
 
 So I’m going to help us get started.
-And I’ll do that introducing you to [lean](https://en.wikipedia.org/wiki/Lean_software_development).
+And I’ll do that by introducing you to [lean](https://en.wikipedia.org/wiki/Lean_software_development).
 
 ## But, WILL IT MAKE DATA FASTER?
 <a href="https://www.flickr.com/photos/psd/52973861060/in/dateposted/" title="Will it make data, faster?"><img src="https://live.staticflickr.com/65535/52973861060_ee507466f6.jpg" alt="Will it make data, faster?"/></a>
@@ -111,38 +111,36 @@ Well this is it, and it’s one thing, and one thing only.
 
 We’re going to get the data our users need to them faster.
 
-A big part of that is prioritising which users, what data they need, to what quality.
-I’ve some ideas on which datasets, which users, and what needs, but actually that’s for you lot to work out.
+A big part of that is prioritising which users, what data they need and to what quality.
+I’ve some ideas on which datasets, which users, and which needs, but actually that’s for you lot to work out.
 
 ## Slow down to flow fast 
 <a href="https://www.flickr.com/photos/psd/3352803663/in/album-72157614876087588/" title="Tyranny of the Active"><img src="https://live.staticflickr.com/1311/3352803663_730eb9f5dd.jpg" alt="Tyranny of the Active"/></a>
 
 The first thing we’re going to do is learn how to flow by first slowing down.
 
-If you think that means we’re not going to deliver anything for a while, 
-well we've not delivered anything in while because our flow is blocked.
+If you think that means we’re not going to deliver anything for a while, well we've not delivered anything in while because our flow is blocked.
 
-And don’t worry about being less busy.
-I really don’t want you to be busy. 
-Being too busy to talk to each other, learn, experiment, think about the flow is a big red blinking light for me.
-What I want you to care about is improving our flow because we need to make data, faster.
+And don’t worry about being less busy. I really don’t want you to be busy. 
+
+Being too busy to talk to each other, learn, experiment, think about the flow is a big red blinking light for me. What I want you to care about is improving our flow because we need to make data, faster.
 
 ## We're making data, everything else is waste
 <a href="https://www.flickr.com/photos/psd/52965054397/in/photolist-qKrqJU-2oGkKp4" title="Data matures like wine, software matures like fish"><img src="https://live.staticflickr.com/65535/52965054397_de3bc3f579.jpg" alt="Data matures like wine, software matures like fish"/></a>
 
-I particularly don’t want you just to be productive and pointlessly make lots of stuff.
-We’ll need a lot of software and a lot of content stuff.
-Be it needs to be the right stuff.
+I particularly don’t want you just to be productive and pointlessly make lots of stuff. We’ll need a lot of software and a lot of content stuff.
 
-* Stuff we can afford to keep and maintain.
-* Stuff that helps us make data, faster.
+Be it needs to be the right stuff:
+
+* stuff we can afford to keep and maintain
+* stuff that helps us make data, faster
 
 Everything else is a drag or a waste.
 
 ## Getting started
 
-By now I imagine by now you’re thinking what the heck are we’re going to do next sprint. 
-It’s two things. 
+By now I imagine by now you’re thinking what the heck are we going to do next sprint. 
+It’s 2 things. 
 
 ## Make the work visible
 <a href="https://www.flickr.com/photos/psd/52965740037/in/photolist-2krNDcd-2oGpgdr" title="Log all the things!"><img src="https://live.staticflickr.com/65535/52965740037_572111e2c8.jpg" alt="Log all the things!"/></a>
@@ -154,7 +152,7 @@ It’s also so we have fewer surprises.
 
 So I want to see numbers and boxes that go red and green for all our processes.
 
-We particularly  need to understand how long each thing takes us to do: 
+We particularly need to understand how long each thing takes us to do: 
 
 * discover a dataset
 * openly co-design a specification
@@ -162,12 +160,11 @@ We particularly  need to understand how long each thing takes us to do:
 * help local authorities and others make the data available
 * add the data to the platform
 * validate our users can use it
-* and process and action their feedback
+* process and action their feedback
 
 Most importantly, we need to see how many things are waiting and for how long between each step.
 
-Maybe start low-tech, post-its, spreadsheets, slide-decks and mural boards, 
-before making notebooks, creating dashboards, and adding automated measurements, monitoring and alerting. 
+Maybe start low-tech with post-its, spreadsheets, slide-decks and mural boards, before making notebooks, creating dashboards, and adding automated measurements, monitoring and alerting. 
 
 That’s totally up to you.
 
@@ -178,20 +175,16 @@ Then, when you’ve done that, start working on making things connected and stab
 
 If a step in our process isn’t well connected, we won’t flow.
 
-If each step takes a random amount of time, we won’t know when we’re making data faster.
-So we need to reduce the variability in our work.
+If each step takes a random amount of time, we won’t know when we’re making data faster. So we need to reduce the variability in our work.
  
-For tech, that means ensuring the site stays up, and the data pipeline doesn’t break.
-And it’s other things you think are broken.
-I trust you to work it out.
+For tech, that means ensuring the site stays up, and the data pipeline doesn’t break. And it’s other things you think are broken. I trust you to work it out.
 
-For design, it’s better understanding how users see and use our service, realting that to our value stream,
-and clarifying what users need to do for work to move between each step.
+For design, it’s better understanding of how users see and use our service, relating that to our value stream and clarifying what users need to do for work to move between each step.
 After that I’m not sure, but I know you know how to work it out. 
 
 I want our designers to be designers.
-Just do what you do best and work in the right way.
-Ask great questions, challenge our ideas, help us test our assumptions, elevate what we’ve learnt, and tell us stuff we don’t already know.
+
+Just do what you do best and work in the right way. Ask great questions, challenge our ideas, help us test our assumptions, elevate what we’ve learned and tell us stuff we don’t already know.
 
 And that’s it for now.
 
