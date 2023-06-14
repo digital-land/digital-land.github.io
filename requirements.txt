@@ -4,6 +4,7 @@ click
 dataclasses
 -e git+https://github.com/digital-land/digital-land-python.git#egg=digital-land
 frontmatter
+filelock
 importlib-metadata
 MarkupSafe==2.0.1
 Jinja2
