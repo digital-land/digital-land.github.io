@@ -1,5 +1,5 @@
 ---
-title: "Beta Service Owner"
+title: "Being a new Service Owner"
 date: 2023-06-14
 author: "Paul Downey"
 status: beta
