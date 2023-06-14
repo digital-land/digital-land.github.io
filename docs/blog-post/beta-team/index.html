@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>
+Planing Data Service - Digital Land
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+	<link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
+<link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+
+    
+	<meta name="digital-land:template" content="dlf-base.html">
+	
+	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+	
+    
+    
+    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    
+
+    
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+    
+
+    
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div>
+
+
+<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="header-proposition">
+      <div class="govuk-header__content">
+        <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+        Digital Land
+        </a>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+        <nav>
+          <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/about/">About</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/project/">Projects</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/weeknote/">Weeknotes</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/blog-post/">Blog</a>
+            </li>
+            
+          </ul>
+        </nav>
+        </div>
+    </div>
+  </div>
+</header>
+
+
+
+    
+      <div class="govuk-width-container ">
+        
+  
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag govuk-tag govuk-tag--grey">
+  RETIRED
+</strong><span class="govuk-phase-banner__text">
+      This is site is no longer regularly updated. <a href="https://digital-land.github.io/weeknote/2022-09-23/">Read why in our weeknote</a>.
+    </span>
+  </p>
+</div>
+  
+  <div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/blog-post">Blog post</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Beta team</li>
+    
+  
+  </ol>
+</div>
+  
+
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          
+
+<h1 class="govuk-heading-xl">Planing Data Service</h1>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds"><p class="govuk-body" class="govuk-body">First, I want to apologise for my delivery yesterday.
+I felt it was low-energy, and far too much from me, this soon.
+That's because it's been a long week, I was very tired, a bit too exctied, and in truth a bit nervous to get it right.
+I'll get better, especially if you help me with good questions and kind but direct feedback.
+And I'll learn to talk a bit less about myself.
+Anyway, I thought putting it in writing might help you get started.</p>
+<h1 class="govuk-heading-xl" class="govuk-heading-xl" id="the-planning-data-service">The planning data service</h1>
+<p class="govuk-body" class="govuk-body">Becoming one team, June 2023</p>
+<p class="govuk-body" class="govuk-body">Hello, I'm Paul and I'm your Service Owner for the new Planning Data service.
+When I first met you last week I offered some ways I can help you deliver, and said I'd give you clear outcomes to work to.
+Here they are.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="what-is-a-service-owner">What is a Service Owner?</h2>
+<p class="govuk-body" class="govuk-body">You might not be familiar with the <a href="https://www.gov.uk/guidance/service-owner">Service Owner</a> role.
+Here's what I think it is:</p>
+<ul class="govuk-list govuk-list--bullet" class="govuk-list govuk-list--bullet">
+<li>I’m going to help us validate and communicate our vision.
+One that excites our users, and gives us pride in our work.</li>
+<li>I’m going to clarify our priorities.
+And work with you to ensure we’re measurably delivering value.</li>
+<li>I’m going to establish a healthy team culture.</li>
+<li>And then I’m going to create the space, time, and money for us to work sustainably.</li>
+</ul>
+<p class="govuk-body" class="govuk-body">AND THAT’S IT!</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="really-paul">Really, Paul?</h2>
+<p class="govuk-body" class="govuk-body">I did have a concern before taking on this role. 
+I’m fascinated by the details, a lot of the code is my fault, and I have some strong views on some quite detailed things.
+I’ll always be interested in the detail. I love data modelling. I’ll always write code. It’s my happy-place.
+And I'm always on hand if you want my view on detail.
+But being in the detail is no longer my job, it’s my hobby.
+And that’s something I want you to remind me about if you hear me nitpicking the detail.</p>
+<p class="govuk-body" class="govuk-body">I think we need to work out how we’re going to work together.
+But I know it’s something we’ll work out together.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="the-unit-of-delivery-is-the-team">The unit of delivery is the team</h2>
+<p class="govuk-body" class="govuk-body">Words are cheap, so I’m not going to say too much about culture today. 
+Instead I’m going to try and establish a new culture through leading by example.
+There is one thing for me to tell rather than show. 
+Our results don’t come from how we perform individually. 
+They come from how well we play as a team.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="our-vision">Our vision</h2>
+<p class="govuk-body" class="govuk-body">I think we have a strong vision. And it’s this:</p>
+<blockquote>
+<p class="govuk-body" class="govuk-body">There is no shortage of people willing and able to build services to inform decisions throughout the planning and housing systems.
+But the biggest barrier they face is finding the data they need.
+Data they can understand, use and trust enough to build into services to inform important decisions for their users.
+Decisions which will help more people know where to build and how to go about building.
+With the potential to diversify the housing marketplace, transform the relationship between communities and development,
+and meet more people’s need for housing,</p>
+</blockquote>
+<p class="govuk-body" class="govuk-body">That’s our vision. It’s the reason we’re here, and it’s how our success will be measured and evaluated. </p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="the-pivot">The Pivot</h2>
+<p class="govuk-body" class="govuk-body">I’m going to say something which might be tough for you to hear, but I think is important for me to say.
+We’re not a discovery, and we’re no long in alpha. We worked hard on many different alphas over three years before passing our <a href="https://www.gov.uk/service-standard-reports/digital-land-alpha-assessment-report">alpha assessment</a>.
+We’re a beta service, and have been since we launched planning.data.gov.uk last year in September. 
+That means we have real users doing real things with real data.
+But I think we’re currently failing them.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="we-are-currently-failing-our-users">We are currently failing our users</h2>
+<p class="govuk-body" class="govuk-body">We are failing our users and not giving them the data they need because our production line is blocked.
+Our standards take too long to make.
+Local authorities are still uncertain about what we expect them to do, and we don’t yet show them enough value from their hard work.
+We haven’t added many new data sources since the launch.
+And we still don’t know anywhere near enough about the users of our data.
+In particular we’re failing to respond to, and action their feedback.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="we-need-to-be-effective-not-productive">We need to be effective, not productive</h2>
+<p class="govuk-body" class="govuk-body">Let me be clear.
+This is despite you all individually doing great work. I mean that.
+I loved the show and tell. There was a lot of great work in there, and it was presented consumately.
+You should be proud.</p>
+<p class="govuk-body" class="govuk-body">We’re failing because despite being productive, we’ve not been an effective team. 
+That’s because we’ve failed to prioritise the right things.
+And if the team is working on the wrong things, that’s now my fault. And my problem to solve.</p>
+<p class="govuk-body" class="govuk-body">So I’m going to help us get started.
+And we’ll do that by becoming <a href="https://en.wikipedia.org/wiki/Lean_software_development">lean</a>.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="but-will-it-make-data-faster">But, WILL IT MAKE DATA FASTER?</h2>
+<p class="govuk-body" class="govuk-body">Last time we spoke I promised you some clarity on the outcomes and our priorities.
+Well this is it, and it’s one thing, and one thing only.
+We’re going to get the data our users need to them faster.
+A big part of that is prioritising which users, what data they need, to what quality.
+I’ve some ideas, but actually that’s for you lot to work out.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="slow-down-to-flow-fast">Slow down to flow fast</h2>
+<p class="govuk-body" class="govuk-body">The first thing we’re going to do is learn how to flow by first slowing down.
+If you think that means we’re not going to deliver anything for a while, don’t worry, worry about our flow being blocked.
+And don’t worry about being less busy.
+I really don’t mind how busy you are individually.
+What I care about is improving our flow because we need to make data, faster.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="were-making-data-everything-else-is-waste">We're making data, everything else is waste</h2>
+<p class="govuk-body" class="govuk-body">I particularly don’t want you just to be productive and pointlessly make lots of stuff.
+We’ll need a lot of software and a lot of content stuff.
+Be it needs to be the right stuff.
+Stuff we can afford to keep and maintain.
+Stuff that helps us make data, faster.
+Everything else is a drag or a waste.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="getting-started">Getting started</h2>
+<p class="govuk-body" class="govuk-body">I imagine by now you’re thinking what the heck are we’re going to do next sprint. 
+It’s two things. </p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="make-the-work-visible">Make the work visible</h2>
+<p class="govuk-body" class="govuk-body">Firstly, we need to make all of the work visible.
+We do this because you need to see a problem before you can solve it.
+It’s also so we have fewer surprises.
+So I want to see numbers and boxes that go red and green for all our processes.
+We particularly  need to understand how long each thing takes us to do: discover a dataset, design a specification, co-design it with LPAs, and add it to the platform, and how long things wait between steps.
+Maybe start low-tech, post-its, spreadsheets, slide-decks and mural boards, 
+before making notebooks, creating dashboards, and adding automated measurements, monitoring and alerting. 
+That’s totally up to you.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="make-the-value-chain-stable">Make the value chain stable</h2>
+<p class="govuk-body" class="govuk-body">When you’ve done that, start working on making things connected and stable.
+If a step in our process isn’t well connected, we won’t flow.
+If each step takes a random amount of time, we won’t know when we’re making data faster.
+So we need to reduce the variability in our work.</p>
+<p class="govuk-body" class="govuk-body">For tech, that means ensuring the site stays up, and the data pipeline doesn’t break.
+And it’s other things you think are broken.
+I trust you to work it out.</p>
+<p class="govuk-body" class="govuk-body">For design, it’s better understanding how users see and use our service.
+And clarifying what needs to be done at each stage of our value stream.
+After that I’m not sure, but I know you know how to work it out. 
+I want our designers to be designers.
+Just do what you do best and work in the right way.
+Ask great questions, challenge ideas, test your assumptions, elevate what we’ve learnt, and tell us stuff we don’t already know.</p>
+<p class="govuk-body" class="govuk-body">And that’s it for now.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="your-drive">Your drive</h2>
+<p class="govuk-body" class="govuk-body">So I’ve think I’ve given you a purpose. 
+You’re going to make data faster.
+And I’ve given you the space to mess up.
+But I know you’ll rock it.
+And I think it’s going to be fun.
+So let’s crack on!</p>
+  </div>
+</div>
+
+
+        </main>
+      </div>
+    
+
+    
+	
+	
+
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
+        >
+  <div class="govuk-width-container ">
+    
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
+        
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
+
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
+
+	
+	
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
+
+  </body>
+</html>
