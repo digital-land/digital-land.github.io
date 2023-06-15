@@ -7,7 +7,7 @@ status: beta
 
 *A talk Paul Downey gave to the new planning data team.*
 
-Hello, I'm Paul and I'm now the Service Owner for Planning Data.
+Hello, I'm Paul and I'm the Service Owner for Planning Data.
 When I first met you last week I offered some ways I can help you deliver, and said I'd give you clear outcomes to work to.
 Here they are.
 
