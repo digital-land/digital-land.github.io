@@ -123,7 +123,7 @@ If you think that means we’re not going to deliver anything for a while, well 
 
 And don’t worry about being less busy. I really don’t want you to be busy. 
 
-Being too busy to talk to each other, learn, experiment, think about the flow is a big red blinking light for me. What I want you to care about is improving our flow because we need to make data, faster.
+Being too busy to talk to each other, learn, experiment, think about the flow is a big blinking red light for me. What I want you to care about is improving our flow because we need to make data, faster.
 
 ## We're making data, everything else is waste
 <a href="https://www.flickr.com/photos/psd/52965054397/in/photolist-qKrqJU-2oGkKp4" title="Data matures like wine, software matures like fish"><img src="https://live.staticflickr.com/65535/52965054397_de3bc3f579.jpg" alt="Data matures like wine, software matures like fish"/></a>
