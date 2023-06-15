@@ -1,5 +1,5 @@
 ---
-title: "On becoming a new Service Owner"
+title: "On becoming a Service Owner"
 date: 2023-06-14
 author: "Paul Downey"
 status: beta
@@ -7,7 +7,7 @@ status: beta
 
 *A talk Paul Downey gave to the new planning data team.*
 
-Hello, I'm Paul and I'm your Service Owner for the new Planning Data service.
+Hello, I'm Paul and I'm now the Service Owner for Planning Data.
 When I first met you last week I offered some ways I can help you deliver, and said I'd give you clear outcomes to work to.
 Here they are.
 
@@ -29,7 +29,7 @@ AND THAT’S IT!
 
 I did have a concern before taking on this role. 
 
-I’m fascinated by the details, a lot of the code is my fault, and I have some strong views on some quite detailed things.
+I’m fascinated by the details, a lot of the code here is my fault, and I have some strong views on some quite detailed things.
 I’ll always be interested in the detail. I love data modelling. I’ll always write code. It’s my happy place.
 And I'm always on hand if you want my view on detail.
 
