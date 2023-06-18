@@ -72,7 +72,8 @@ We’re not in discovery, and we’re no longer in alpha. We worked hard on many
 We’re a beta service, and have been since we launched [planning.data.gov.uk](https://www.planning.data.gov.uk) last year in September. 
 
 That means we have real users doing real things with real data.
-But I think we’re currently failing them.
+
+And I think we’re currently failing them.
 
 ## We need to focus on our flow
 <a href="https://www.flickr.com/photos/psd/46214552701/in/photolist-2dpPEqM" title="Do less, flow more"><img src="https://live.staticflickr.com/4866/46214552701_af5cda2276.jpg" alt="Do less, flow more"/></a>
@@ -92,7 +93,7 @@ In particular we’re failing to respond to, and action their feedback.
 Let me be clear.
 
 This is despite you all individually doing great work. I really mean that.
-I loved the last show and tell. There was a lot of great work in there, and it was presented consummately.
+I loved the last show and tell. There was a lot of great stuff in there, and you presented it consummately.
 You should be proud of your work, and how you have been working.
 
 No, we’re failing because despite being productive, we’re not being effective.
@@ -130,7 +131,7 @@ Being too busy to talk to each other, learn, experiment, think about the flow is
 
 I particularly don’t want you just to be productive and pointlessly make lots of stuff. We’ll need a lot of software and a lot of content stuff.
 
-Be it needs to be the right stuff:
+But it needs to be the right stuff:
 
 * stuff we can afford to keep and maintain
 * stuff that helps us make data, faster
