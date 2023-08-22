@@ -9,7 +9,7 @@
   "scripts": {
     "serve": "run-p serve:* watch:docs",
     "serve:server": "http-server ./docs",
-    "serve:sync": "browser-sync start --proxy 'localhost:8080' --files './docs/'",
+    "serve:sync": "browser-sync start --proxy '127.0.0.1:8080' --files './docs/'",
     "clean:docs": "make clean",
     "build:docs": "make render",
     "watch:docs": "chokidar './content/*.html' './content/**' './templates/**/*.*' './templates/*.*' -c 'run-s clean:docs build:docs'",
