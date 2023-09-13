@@ -46,7 +46,7 @@ Specifications now have version numbers with 3 parts, for example: 1.2.1.
 
 If we make a change to the datasets in a specification we update the major number (for example: 2.2.1), if we change the fields in a dataset we update the minor number (for example: 1.3.1), and if we change descriptions we update the patch number (for example: 1.2.2).
 
-[insert image here]
+[!An image showing the semantic version numbering. Under the heading dataset schemas it has 1.2. There is an arrow pointed at the 1 saying "Changes to fields" and an arrow pointing to the 2 labelled "changes to description/guidance. Under the heading Specification there is 1.5.2. An arrow is point at the 1 labelled "changes to datasets", an arrow pointed at the 5 labelled "changes to fields, and an arrow pointed at the 2 labelled "changes to descriptions.](/static/images/diagrams/data-standards-versioning-convention.jpg)
 
 ### Kept old versions of technical specifications
 
