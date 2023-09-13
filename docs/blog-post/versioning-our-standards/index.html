@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>
+Versioning our standards - Digital Land
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+	<link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
+<link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+
+    
+	<meta name="digital-land:template" content="dlf-base.html">
+	
+	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+	
+    
+    
+    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    
+
+    
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+    
+
+    
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div>
+
+
+<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="header-proposition">
+      <div class="govuk-header__content">
+        <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+        Digital Land
+        </a>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+        <nav>
+          <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/about/">About</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/project/">Projects</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/weeknote/">Weeknotes</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/blog-post/">Blog</a>
+            </li>
+            
+          </ul>
+        </nav>
+        </div>
+    </div>
+  </div>
+</header>
+
+
+
+    
+      <div class="govuk-width-container ">
+        
+  
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag govuk-tag govuk-tag--grey">
+  RETIRED
+</strong><span class="govuk-phase-banner__text">
+      This is site is no longer regularly updated. <a href="https://digital-land.github.io/weeknote/2022-09-23/">Read why in our weeknote</a>.
+    </span>
+  </p>
+</div>
+  
+  <div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/blog-post">Blog post</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Versioning our standards</li>
+    
+  
+  </ol>
+</div>
+  
+
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          
+
+<h1 class="govuk-heading-xl">Versioning our standards</h1>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds"><p class="govuk-body" class="govuk-body"><a href="https://digital-land.github.io/specification/specification/">Our standards</a> are living documents that change over time. They change as the needs of data consumers change and as we learn more about how the data will be used.</p>
+<p class="govuk-body" class="govuk-body">So far, we haven’t done a good job of recording what has changed, when it changed and why.</p>
+<p class="govuk-body" class="govuk-body">When we make a change, our technical specifications are updated but it’s not immediately obvious to users that something has changed.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="what-happens-when-we-make-changes">What happens when we make changes</h2>
+<p class="govuk-body" class="govuk-body">Once our standards are out of the ‘working draft’ stage changes are made slowly and deliberately.</p>
+<p class="govuk-body" class="govuk-body">We try not to introduce any changes that may break things and we publish the proposed changes on the relevant <a href="https://github.com/digital-land/data-standards-backlog/discussions/">github discussion</a> before finalising them.</p>
+<p class="govuk-body" class="govuk-body">The platform will continue to collect data published to old versions of a standard and if there have been any changes to existing fields then the platform will try to map the existing data to the newer shape.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="changes-we-want-to-record">Changes we want to record</h2>
+<p class="govuk-body" class="govuk-body">There are 2 things that can change in our standards; our definition of a dataset (or schema) and our specifications. </p>
+<p class="govuk-body" class="govuk-body"><strong>A dataset definition</strong> sets out the shape of a dataset and includes the list of fields that each record will have once it’s available on <a href="https://www.planning.data.gov.uk/">planning.data.gov.uk</a>.</p>
+<p class="govuk-body" class="govuk-body">We want to record changes to the list of fields - we add, remove and edit these - and any associated descriptions or guidance.</p>
+<p class="govuk-body" class="govuk-body"><strong>A specification</strong> is where we define what datasets and fields we want data publishers to provide for a planning consideration.</p>
+<p class="govuk-body" class="govuk-body">We want to record changes to the constituent datasets, the list of fields per dataset and the field descriptions.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="what-weve-done">What we've done</h2>
+<h3 class="govuk-heading-m" class="govuk-heading-m" id="added-version-numbers">Added version numbers</h3>
+<p class="govuk-body" class="govuk-body">We’ve introduced semantic version numbers.</p>
+<p class="govuk-body" class="govuk-body">Dataset definitions now have version numbers with 2 parts, for example: 2.1. </p>
+<p class="govuk-body" class="govuk-body">If we make a change to the fields we bump the major number (for example, 3.1), and if we change descriptions or guidance we update the minor number (for example, 2.2).</p>
+<p class="govuk-body" class="govuk-body">Specifications now have version numbers with 3 parts, for example: 1.2.1. </p>
+<p class="govuk-body" class="govuk-body">If we make a change to the datasets in a specification we update the major number (for example: 2.2.1), if we change the fields in a dataset we update the minor number (for example: 1.3.1), and if we change descriptions we update the patch number (for example: 1.2.2).</p>
+<p class="govuk-body" class="govuk-body">[insert image here]</p>
+<h3 class="govuk-heading-m" class="govuk-heading-m" id="kept-old-versions-of-technical-specifications">Kept old versions of technical specifications</h3>
+<p class="govuk-body" class="govuk-body">We still generate static pages from our specification configuration files, but now we include the version number on the page and keep copies of the old versions.</p>
+<p class="govuk-body" class="govuk-body">The latest version for a specification is still available from the same place. For example the latest version of the conservation-area specification can be found at https://digital-land.github.io/specification/specification/conservation-area/</p>
+<p class="govuk-body" class="govuk-body">This page links to all previous versions of the specification, with each version available at /{specification-name}/v{version-number}. For example, the previous version of the conservation-area specification can be found at https://digital-land.github.io/specification/specification/conservation-area/v1.1.1/</p>
+<h3 class="govuk-heading-m" class="govuk-heading-m" id="logged-the-fields-that-belong-to-each-version-of-a-dataset">Logged the fields that belong to each version of a dataset</h3>
+<p class="govuk-body" class="govuk-body">When the specification repository with all the specification and dataset configuration files is processed, we now output <a href="https://github.com/digital-land/specification/blob/main/specification/dataset-field-version.csv">a csv file containing a breakdown of which fields belong to each version of a dataset</a>.</p>
+<p class="govuk-body" class="govuk-body">For example, if a ‘name’ field is present in both versions of the conservation-area dataset then there will be 2 rows in this file, one for version 1 and one for version 2.</p>
+<p class="govuk-body" class="govuk-body">And, if a <code class="dl-code">designated-date</code> field is added to the second version of the conservation-area dataset then there will be one row in this file that states version 2 of conservation-area has a designation-date field.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="who-needs-versions">Who needs versions</h2>
+<p class="govuk-body" class="govuk-body">Adding versioning to our specifications and dataset definitions helps us track what we change over time and our hope is it will make it easier for our users to interact with them.</p>
+<p class="govuk-body" class="govuk-body">The users it should help include:</p>
+<ul class="govuk-list govuk-list--bullet" class="govuk-list govuk-list--bullet">
+<li>Data providers - when data provides create and publish data that follows our standards they will know what version they are following. When new versions are released it will be easier for them to know something has changed and what they need to do to bring their data inline with the latest version.</li>
+<li>The platform operations team - when processing the collected data it will be easier for the planning data platform to provide data that matches the latest definition of a dataset. And if the need arises, then versioning gives them the option to provide data to consumers that conforms with a particular version of the standard.</li>
+<li>Software providers - when they are asked to provide software that conforms to a standard they will know what version of the technical specification they should use. And when they are asked to bring software inline with a newer version of the specification it will be easier for them to determine what they need to change.</li>
+</ul>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="whats-next">What’s next</h2>
+<p class="govuk-body" class="govuk-body">We’ve been holding off making changes to some of our existing standards. Now we can make them. This week we plan to publish changes to the <a href="https://digital-land.github.io/specification/specification/article-4-direction/">article-4-direction</a>, <a href="https://digital-land.github.io/specification/specification/conservation-area/">conservation-area</a> and <a href="https://digital-land.github.io/specification/specification/tree-preservation-order/">tree-preservation-order</a> specifications.</p>
+<p class="govuk-body" class="govuk-body">We now keep different versions of the technical specification pages, along with the accompanying specification configuration file and relational diagram. This is a good first step.</p>
+<p class="govuk-body" class="govuk-body">However, we now need to make it easier to see what has changed between the different versions. We are working on a ‘changelog’ page that will outline what has changed between each of the different versions of a specification.</p>
+  </div>
+</div>
+
+
+        </main>
+      </div>
+    
+
+    
+	
+	
+
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
+        >
+  <div class="govuk-width-container ">
+    
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
+        
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
+
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
+
+	
+	
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
+
+  </body>
+</html>
