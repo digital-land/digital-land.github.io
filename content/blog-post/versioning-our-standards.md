@@ -3,6 +3,7 @@ title: "Versioning our standards"
 date: 2023-09-13
 author: "Colm Britton"
 status: beta
+summary: Read about why and how we have added versioning to our specifications and dataset definitions.
 ---
 
 [Our standards](https://digital-land.github.io/specification/specification/) are living documents that change over time. They change as the needs of data consumers change and as we learn more about how the data will be used.
