@@ -52,17 +52,17 @@ If we make a change to the datasets in a specification we update the major numbe
 
 We still generate static pages from our specification configuration files, but now we include the version number on the page and keep copies of the old versions.
 
-The latest version for a specification is still available from the same place. For example the latest version of the conservation-area specification can be found at https://digital-land.github.io/specification/specification/conservation-area/
+The latest version for a specification is still available from the same place. For example the latest version of the conservation-area specification can be found at [https://digital-land.github.io/specification/specification/conservation-area/](https://digital-land.github.io/specification/specification/conservation-area/)
 
-This page links to all previous versions of the specification, with each version available at /{specification-name}/v{version-number}. For example, the previous version of the conservation-area specification can be found at https://digital-land.github.io/specification/specification/conservation-area/v1.1.1/
+This page links to all previous versions of the specification, with each version available at `/{specification-name}/v{version-number}`. For example, the previous version of the conservation-area specification can be found at [https://digital-land.github.io/specification/specification/conservation-area/v1.1.1/](https://digital-land.github.io/specification/specification/conservation-area/v1.1.1/)
 
 ### Logged the fields that belong to each version of a dataset
 
 When the specification repository with all the specification and dataset configuration files is processed, we now output [a csv file containing a breakdown of which fields belong to each version of a dataset](https://github.com/digital-land/specification/blob/main/specification/dataset-field-version.csv).
 
-For example, if a ‘name’ field is present in both versions of the conservation-area dataset then there will be 2 rows in this file, one for version 1 and one for version 2.
+For example, if a `name` field is present in both versions of the conservation-area dataset then there will be 2 rows in this file, one for version 1 and one for version 2.
 
-And, if a `designated-date` field is added to the second version of the conservation-area dataset then there will be one row in this file that states version 2 of conservation-area has a designation-date field.
+And, if a `designated-date` field is added to the second version of the conservation-area dataset then there will be one row in this file that states version 2 of conservation-area has a `designation-date` field.
 
 ## Who needs versions
 
@@ -70,9 +70,9 @@ Adding versioning to our specifications and dataset definitions helps us track w
 
 The users it should help include:
 
-* Data providers - when data provides create and publish data that follows our standards they will know what version they are following. When new versions are released it will be easier for them to know something has changed and what they need to do to bring their data inline with the latest version.
-* The platform operations team - when processing the collected data it will be easier for the planning data platform to provide data that matches the latest definition of a dataset. And if the need arises, then versioning gives them the option to provide data to consumers that conforms with a particular version of the standard.
-* Software providers - when they are asked to provide software that conforms to a standard they will know what version of the technical specification they should use. And when they are asked to bring software inline with a newer version of the specification it will be easier for them to determine what they need to change.
+* **Data providers** - when data provides create and publish data that follows our standards they will know what version they are following. When new versions are released it will be easier for them to know something has changed and what they need to do to bring their data inline with the latest version.
+* **The platform operations team** - when processing the collected data it will be easier for the planning data platform to provide data that matches the latest definition of a dataset. And if the need arises, then versioning gives them the option to provide data to consumers that conforms with a particular version of the standard.
+* **Software providers** - when they are asked to provide software that conforms to a standard they will know what version of the technical specification they should use. And when they are asked to bring software inline with a newer version of the specification it will be easier for them to determine what they need to change.
 
 ## What’s next
 
