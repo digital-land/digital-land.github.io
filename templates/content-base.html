@@ -13,7 +13,9 @@
 {% endblock dlHead %}
 
 {% block beforeContent %}
-  {% include 'digital-land-frontend/partials/dl-prototype-banner.html' %}
+  {% if pageContent and 'retired' in pageContent and pageContent.retired %}
+    {% include 'digital-land-frontend/partials/dl-prototype-banner.html' %}  
+  {% endif %}
   {% block dl_breadcrumbs %}
   {{ govukBreadcrumbs({
     "items": breadcrumbs
