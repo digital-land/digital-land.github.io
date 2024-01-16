@@ -32,6 +32,11 @@ Our backlog is a list of things that might be useful to the planning system if t
 
 We take a high-level look at the planning consideration at this stage. We are trying to work out if it is a real thing, has legislation to support it and whether there is a clear need for it. At this stage, it is usually possible to tell if we can use an existing national dataset or whether a standard might be needed.
 
+#### Researching
+
+We dig into the planning consideration in greater detail at this stage. Here we are trying to understand what the planning consideration is used for, how it is ‘created’ and how different users interact with it. We are trying to gather enough information to know whether we can and should start modelling the data.
+
+
 #### Co-designing
 
 We design a data model at this stage. We create the minimal data model that satisfies the user needs we have previously uncovered. We then work with stakeholders and the community to check we are on the right track and to define the supporting code lists - for example planning-application-types. At this stage we also test the model using sample data.
