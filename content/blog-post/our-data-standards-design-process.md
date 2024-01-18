@@ -3,6 +3,7 @@ title: "Our data standards design process"
 date: 2024-01-15
 author: "Colm Britton"
 status: beta
+section: Data standards
 summary: We describe the different stages of our data standards design process.
 ---
 
