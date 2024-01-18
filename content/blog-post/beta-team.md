@@ -3,6 +3,7 @@ title: "On becoming a Service Owner"
 date: 2023-06-14
 author: "Paul Downey"
 status: beta
+section: Planning data
 ---
 
 *A talk Paul Downey gave to the new planning data team.*

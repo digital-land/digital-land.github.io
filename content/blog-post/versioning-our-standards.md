@@ -3,6 +3,7 @@ title: "Versioning our standards"
 date: 2023-09-13
 author: "Colm Britton"
 status: beta
+section: Data standards
 summary: Read about why and how we have added versioning to our specifications and dataset definitions.
 ---
 
