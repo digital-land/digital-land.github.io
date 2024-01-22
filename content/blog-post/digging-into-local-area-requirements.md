@@ -27,7 +27,7 @@ Through analysing the local area requirements we hope to document what planning 
 
 Similar to the triggers, we’re interested in exploring that planning considerations might be needed in order to fulfil a planning requirement. These might be things that help write a report or provide evidence to the outcome of an assessment.
 
-![A sketched diagram showing the relationship between triggers and datasets. Image courtesy of Mike Rose](/images/diagrams/datasets-and-triggers.png)
+![A sketched diagram showing the relationship between triggers and datasets. Image courtesy of Mike Rose](/images/diagrams/data-and-triggers.png)
 
 ## What have we learnt so far?
 
