@@ -64,7 +64,7 @@ The work doesn’t stop once the platform starts collecting the data. For compil
 
 During this period we usually say we are ‘piloting’ the standard. Piloting is a chance for us to collect more feedback from data publishers and where necessary change the standard before it becomes more widely adopted.
 
-You can see the standards we are piloting on our website, as well as the standards that have progressed to candidate or open status. 
+You can see [the standards we are piloting on our website](https://digital-land.github.io/specification/specification/#piloting), as well as [the standards that have progressed to candidate or open status](https://digital-land.github.io/specification/specification/). 
 
 We hope that gives you a better understanding of how we design data standards.
 
