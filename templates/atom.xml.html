@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-GB">
+    <title>{{ pageContent.pageTitle if pageContent.pageTitle else pageContent.title + " - Digital Land"}}</title>
+    <id>{{ staticPath }}/{{parentDir}}/atom.xml</id>
+    <updated>{{ publishedDateTime }}</updated>
+    {% for i in pageContent.pages %}
+        {% set absoluteUrl = staticPath + "/" + parentDir + "/" + i.url %}
+        {% set itemUrl = i.frontmatter.external_url if i.frontmatter.external_url is defined else absoluteUrl %}
+    <entry xml:lang="en-GB">
+        <title>{{ i.title }}</title>
+        {% if i.frontmatter.date -%}
+        <published>{{ i.frontmatter.date }}</published>
+        {%- endif %}
+        {% if i.frontmatter.author -%}
+        <author>
+          <name>
+            {{ i.frontmatter.author }}
+          </name>
+        </author>
+        {%- endif %}
+        <link rel="alternate" type="text/html" href="{{ itemUrl }}"/>
+        <id>{{ itemUrl }}</id>
+        {% if i.summary %}
+        <summary type="html">{{ i.summary|markdown|safe }}</summary>
+        {%- endif %}
+    </entry>
+    {%- endfor %}
+</feed>

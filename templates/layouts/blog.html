@@ -1,5 +1,6 @@
 {% extends "content-base.html" %}
 {% block dlMetaTemplate %}<meta name="dl-template" content="digital-land.github.io/blog.html">{% endblock %}
+{% block dlHead %}<link rel="alternate" type="application/atom+xml" title="{{ pageContent.title }} feed" href="atom.xml">{% endblock %}
 
 {% block content %}
 <h1 class="govuk-heading-xl">{{ pageContent.title }}</h1>
