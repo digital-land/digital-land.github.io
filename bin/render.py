@@ -52,3 +52,19 @@ class Renderer:
             pageContent=page_content,
             **kwargs
         )
+
+    def render_content_feed(self, output_path, template, page_content, parent_dir, **kwargs):
+        template_name = "atom.xml"
+        try:
+            template = self.get_template(template_name)
+        except Exception as e:
+            print(e)
+
+        self.render(
+            output_path,
+            template,
+            breadcrumbs=create_breadcrumbs(output_path),
+            pageContent=page_content,
+            parentDir=parent_dir,
+            **kwargs
+        )        

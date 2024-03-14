@@ -23,7 +23,7 @@ jinja_renderer = Renderer(url_root)
 
 content_template = jinja_renderer.get_template("content.html")
 list_template = jinja_renderer.get_template("list.html")
-
+feed_template = jinja_renderer.get_template("atom.xml.html")
 
 def get_content_pages(directory):
     return os.listdir(directory)
@@ -52,9 +52,12 @@ def render_pages(parent_dir=""):
                 render_pages(os.path.join(parent_dir, page))
             elif page.endswith(".md"):
                 if page == "_list.md":
+                    # create an index page and feed for each _list
                     list = create_list(pages, path_to_directory)
-                    output_path = os.path.join(output_dir, parent_dir, "index.html")
-                    jinja_renderer.render_content_page(output_path, list_template, list)
+                    content_output_path = os.path.join(output_dir, parent_dir, "index.html")
+                    feed_output_path = os.path.join(output_dir, parent_dir, "atom.xml")
+                    jinja_renderer.render_content_page(content_output_path, list_template, list)
+                    jinja_renderer.render_content_feed(feed_output_path, feed_template, list, parent_dir)
                 else:
                     # compile and render markdown file
                     fn = Path(p)
