@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-GB">
+    <link rel="self" type="application/atom+xml" href="https://digital-land.github.io/blog-post/atom.xml"/>
+    <title>Blog posts - Digital Land</title>
+    <id>https://digital-land.github.io/blog-post/atom.xml</id>
+    <updated></updated>
+    
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Digging into local area requirements</title>
+        <published>2024-01-22</published>
+        <author>
+          <name>
+            Matt Lucht
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/blog-post/digging-into-local-area-requirements"/>
+        <id>https://digital-land.github.io/blog-post/digging-into-local-area-requirements</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;How can local area requirements help shape the priority of our data standards work.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Our data standards design process</title>
+        <published>2024-01-15</published>
+        <author>
+          <name>
+            Colm Britton
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/blog-post/our-data-standards-design-process"/>
+        <id>https://digital-land.github.io/blog-post/our-data-standards-design-process</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;We describe the different stages of our data standards design process.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Versioning our standards</title>
+        <published>2023-09-13</published>
+        <author>
+          <name>
+            Colm Britton
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/blog-post/versioning-our-standards"/>
+        <id>https://digital-land.github.io/blog-post/versioning-our-standards</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Read about why and how we have added versioning to our specifications and dataset definitions.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>On becoming a Service Owner</title>
+        <published>2023-06-14</published>
+        <author>
+          <name>
+            Paul Downey
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/blog-post/beta-team"/>
+        <id>https://digital-land.github.io/blog-post/beta-team</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;*A talk Paul Downey gave to the new planning data team.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Meet the Digital Land team</title>
+        <published>2020-10-02</published>
+        <author>
+          <name>
+            Matt Lucht
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://mhclgdigital.blog.gov.uk/2020/10/02/meet-the-digital-land-team/"/>
+        <id>https://mhclgdigital.blog.gov.uk/2020/10/02/meet-the-digital-land-team/</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Watch our video about the work the Digital Land team are doing to improve access to land and housing data.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Start treating planning applications as data, rather than documents</title>
+        <published>2020-05-28</published>
+        <author>
+          <name>
+            Euan Mills
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://mhclgdigital.blog.gov.uk/2020/05/28/start-treating-planning-applications-as-data-rather-than-documents/"/>
+        <id>https://mhclgdigital.blog.gov.uk/2020/05/28/start-treating-planning-applications-as-data-rather-than-documents/</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Euan talks about his first week in MHCLG Digital, and reflects on how digital is transforming the built environment sector.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Unique property identifiers to be opened under Open Government License</title>
+        <published>2020-04-02</published>
+        <author>
+          <name>
+            Rishi Patel
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://mhclgdigital.blog.gov.uk/2020/04/02/unique-property-identifiers-to-be-opened-under-open-government-license/"/>
+        <id>https://mhclgdigital.blog.gov.uk/2020/04/02/unique-property-identifiers-to-be-opened-under-open-government-license/</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Unique property identifiers will be available as open data under the Open Government Licence from July 2020.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Publishing energy performance certificate data</title>
+        <published>2019-07-19</published>
+        <author>
+          <name>
+            Paul Downey
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://mhclgdigital.blog.gov.uk/2019/07/18/publishing-energy-performance-certificate-data/"/>
+        <id>https://mhclgdigital.blog.gov.uk/2019/07/18/publishing-energy-performance-certificate-data/</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Read about the user research and policy work to resume publishing EPC data on Open Data Communities.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Lessons we learned at the Future PropTech exhibition</title>
+        <published>2019-06-18</published>
+        <author>
+          <name>
+            Ed Culliney
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://mhclgdigital.blog.gov.uk/2019/06/18/lessons-we-learned-at-the-future-proptech-exhibition/"/>
+        <id>https://mhclgdigital.blog.gov.uk/2019/06/18/lessons-we-learned-at-the-future-proptech-exhibition/</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;The Digital Land team was represented at this year’s FUTURE: PropTech event to engage with and learn from innovators in the housing and planning sector.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>A design pattern for planning permission data</title>
+        <published>2019-04-02</published>
+        <author>
+          <name>
+            Zarino Zappia
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/blog-post/design-pattern-for-planning-permission-data"/>
+        <id>https://digital-land.github.io/blog-post/design-pattern-for-planning-permission-data</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;mySociety is working with MHCLG on a Discovery and Alpha project to research, prototype, and test ways to make data around planning applications more open, accessible, sustainable, and trustworthy.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Register of planning application data: Discovery findings</title>
+        <published>2019-03-07</published>
+        <author>
+          <name>
+            Mike Thompson
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/blog-post/register-of-planning-discovery-findings"/>
+        <id>https://digital-land.github.io/blog-post/register-of-planning-discovery-findings</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;mySociety is working with MHCLG on a Discovery and Alpha project to research, prototype, and test ways to make data around planning applications more open, accessible, sustainable, and trustworthy.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>A short history of planning application data projects</title>
+        <published>2019-02-12</published>
+        <author>
+          <name>
+            Mike Thompson
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/blog-post/a-short-history-of-planning-application-data-projects"/>
+        <id>https://digital-land.github.io/blog-post/a-short-history-of-planning-application-data-projects</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;mySociety is working with MHCLG on a Discovery and Alpha project to research, prototype, and test ways to make data around planning applications more open, accessible, sustainable, and trustworthy.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Planning permissions ‘Single register of planning’ discovery: Sprint notes 29 Jan - 12 Feb 2019</title>
+        <published>2019-02-12</published>
+        <author>
+          <name>
+            Emily Robertson-Knowlton
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/blog-post/planning-project-sprint-notes-12-feb"/>
+        <id>https://digital-land.github.io/blog-post/planning-project-sprint-notes-12-feb</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;What we’ve been up to this sprint, including: talking to stakeholders, learning about similar projects that have been done, and holding our second round of user research interviews. Coming up next: more interviews; Alpha project phase plan&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Planning permissions ‘Single register of planning’ discovery: Sprint notes 14-28 Jan 2019</title>
+        <published>2019-01-30</published>
+        <author>
+          <name>
+            Emily Robertson-Knowlton
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/blog-post/planning-project-sprint-notes-28-jan"/>
+        <id>https://digital-land.github.io/blog-post/planning-project-sprint-notes-28-jan</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;What we’ve been up to this sprint, including: Kicking off the project, creating a roadmap, and holding our first batch of user research interviews. Coming up next: more interviews, and an adjusted model of the planning submissions process.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Kicking off the Planning Permissions project</title>
+        <published>2019-01-21</published>
+        <author>
+          <name>
+            Emily Robertson-Knowlton
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/blog-post/kicking-off-the-planning-permissions-project"/>
+        <id>https://digital-land.github.io/blog-post/kicking-off-the-planning-permissions-project</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;The Digital Land team at the Ministry of Housing, Communities and Local Government (MHCLG) is working to make it easier for people to find, access and trust the data underlying England’s housing market.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Data and Information</title>
+        <published>2018-10-25</published>
+        <author>
+          <name>
+            Paul Downey
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://mhclgdigital.blog.gov.uk/2018/10/25/data-and-information/"/>
+        <id>https://mhclgdigital.blog.gov.uk/2018/10/25/data-and-information/</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Based on our learnings from discovery, this is the first in a series of blog posts that explains the points of friction that our users face when trying to use housing data.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Making developer contributions open and transparent</title>
+        <published>2018-10-16</published>
+        <author>
+          <name>
+            Matt Lucht
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://mhclgdigital.blog.gov.uk/2018/10/16/making-developer-contributions-open-and-transparent/"/>
+        <id>https://mhclgdigital.blog.gov.uk/2018/10/16/making-developer-contributions-open-and-transparent/</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;How we’re working with planning policy people, local authorities and suppliers to evolve minimal data standards for Section 106 agreements and Viability assessments.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Introducing user research to housing and planning data</title>
+        <published>2018-06-11</published>
+        <author>
+          <name>
+            Rose Rees-Jones
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://mhclgdigital.blog.gov.uk/2018/06/11/introducing-user-research-to-housing-and-planning-data/"/>
+        <id>https://mhclgdigital.blog.gov.uk/2018/06/11/introducing-user-research-to-housing-and-planning-data/</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Our approach for user research during the discovery phase.&lt;/p&gt;</summary>
+    </entry>
+</feed>

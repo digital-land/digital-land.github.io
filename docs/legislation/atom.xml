@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-GB">
+    <link rel="self" type="application/atom+xml" href="https://digital-land.github.io/legislation/atom.xml"/>
+    <title>Legislation - Digital Land</title>
+    <id>https://digital-land.github.io/legislation/atom.xml</id>
+    <updated></updated>
+    
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Ancient Monuments and Archaeological Areas Act 1979</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/legislation/ukpga-1979-46"/>
+        <id>https://digital-land.github.io/legislation/ukpga-1979-46</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Regulations relating to the the preservation of ancient monuments and sites of archaeological or historic importance.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Countryside and Rights of Way Act 2000</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/legislation/ukpga-2000-37"/>
+        <id>https://digital-land.github.io/legislation/ukpga-2000-37</id>
+        
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Local Land Charges Act 1975</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/legislation/ukpa-1975-76"/>
+        <id>https://digital-land.github.io/legislation/ukpa-1975-76</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;An Act to make fresh provision for and in connection with the keeping of local land charges registers and the registration of matters therein.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Localism Act 2011</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/legislation/ukpga-2011-20"/>
+        <id>https://digital-land.github.io/legislation/ukpga-2011-20</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;An Act to make provision about the functions and procedures of local and certain other authorities; to make provision about the functions of the Commission for Local Administration in England; to enable the recovery of financial sanctions imposed by the Court of Justice of the European Union on the United Kingdom from local and public authorities; to make provision about local government finance; to make provision about town and country planning, the Community Infrastructure Levy and the authorisation of nationally significant infrastructure projects; to make provision about social and other housing; to make provision about regeneration in London; and for connected purposes.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>National Parks and Access to the Countryside Act 1949</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/legislation/ukpga-geo6-12-13-14-97"/>
+        <id>https://digital-land.github.io/legislation/ukpga-geo6-12-13-14-97</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;An Act to make provision for National Parks and the establishment of a National Parks Commission.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Planning Act 2008</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/legislation/ukpga-2008-29"/>
+        <id>https://digital-land.github.io/legislation/ukpga-2008-29</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;The Planning Act 2008 introduced [Community Infrastructure Levy] (/wiki/community-infrastructure-levy) planning charges.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Planning and Compulsory Purchase Act 2004</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/legislation/ukpha-2004-5"/>
+        <id>https://digital-land.github.io/legislation/ukpha-2004-5</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Regulation for [local development schemes] (/wiki/local-development-scheme).&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>The Local Government Finance Act 1992</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/legislation/ukpga-1992-14"/>
+        <id>https://digital-land.github.io/legislation/ukpga-1992-14</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Legislation introducing [Council Tax] (/glossary/council-tax/).&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>The Local Land Charges Rules 2018</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/legislation/uksi-2018-273"/>
+        <id>https://digital-land.github.io/legislation/uksi-2018-273</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Regulations pertaining to the &lt;a href=&#34;/legislation/ukpa-1975-76&#34;&gt;Local Land Charges Act 1975&lt;/a&gt; including easements.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>The Town and Country Planning (Local Planning) (England) Regulations 2012</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/legislation/uksi-2012-767"/>
+        <id>https://digital-land.github.io/legislation/uksi-2012-767</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Regulations for local planning in England coming into force April 2012.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>The Town and Country Planning (Local Planning) (England) Regulations 2012</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/legislation/uksi-2012-605"/>
+        <id>https://digital-land.github.io/legislation/uksi-2012-605</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Legislation for Tree Preservation Orders.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Town and Country Planning Act 1990</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/legislation/ukpga-1990-8"/>
+        <id>https://digital-land.github.io/legislation/ukpga-1990-8</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;An Act to consolidate certain enactments relating to town and country planning (excluding special controls in respect of buildings and areas of special architectural or historic interest and in respect of hazardous substances) with amendments to give effect to recommendations of the Law Commission.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Water Resources Act 1991</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/legislation/ukpga-1991-57"/>
+        <id>https://digital-land.github.io/legislation/ukpga-1991-57</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;An Act of Parliment that that regulates water resources, water quality and pollution, and flood defence.&lt;/p&gt;</summary>
+    </entry>
+</feed>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-GB">
+    <link rel="self" type="application/atom+xml" href="https://digital-land.github.io/needs/atom.xml"/>
+    <title>Needs - Digital Land</title>
+    <id>https://digital-land.github.io/needs/atom.xml</id>
+    <updated></updated>
+    
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Access to data in bulk</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/needs/access-to-data-in-bulk"/>
+        <id>https://digital-land.github.io/needs/access-to-data-in-bulk</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;When building a service, I want to be able to access data in bulk, so that I do not have to make multiple requests for data.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Access to raw data</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/needs/maintained-data"/>
+        <id>https://digital-land.github.io/needs/maintained-data</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;When building a service, I want to have access to raw data (as opposed to calculated statistical data), so that I am able to get the fullest value from the data.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Easy access to data</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/needs/easy-access-to-data"/>
+        <id>https://digital-land.github.io/needs/easy-access-to-data</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;When building a service, I want access to data without having to ask for it.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Ensure data meets the specification</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/needs/ensure-data-meets-the-specification"/>
+        <id>https://digital-land.github.io/needs/ensure-data-meets-the-specification</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Before publishing a data, I want to be able to validate that data I&#39;ve collect meets the specification, so that I can fix any issues.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Maintained data</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/needs/access-to-raw-data"/>
+        <id>https://digital-land.github.io/needs/access-to-raw-data</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;When using a dataset, I want to have confidence that the dataset is being maintained, so that I can trust that the data is relevent and usable.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Provide feedback</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/needs/provide-feedback"/>
+        <id>https://digital-land.github.io/needs/provide-feedback</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;When data is incorrect or missing, I want to be able to inform the data maintainer, so that they can fix the dataset.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Unrestrictive usage</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/needs/unrestrictive-usage"/>
+        <id>https://digital-land.github.io/needs/unrestrictive-usage</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;When building a service, I want to use data openly and without any prohibitive restrictions, so that I am able to get full value from the data.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Up-to-date data</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/needs/up-to-date-data"/>
+        <id>https://digital-land.github.io/needs/up-to-date-data</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;When I am building a service, I want to have confidence that I have access to the most recent data, so that the thing I am building is useful and relevant.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>What data is needed</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/needs/what-data-is-needed"/>
+        <id>https://digital-land.github.io/needs/what-data-is-needed</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;When defining a data standard, I want to know what data is needed, so that the right data is made available.&lt;/p&gt;</summary>
+    </entry>
+</feed>

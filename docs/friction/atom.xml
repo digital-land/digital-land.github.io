@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-GB">
+    <link rel="self" type="application/atom+xml" href="https://digital-land.github.io/friction/atom.xml"/>
+    <title>Points of Friction - Digital Land</title>
+    <id>https://digital-land.github.io/friction/atom.xml</id>
+    <updated></updated>
+    
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Asking for open data isn’t open data</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/friction/asking-for-open-data-isnt-open-data"/>
+        <id>https://digital-land.github.io/friction/asking-for-open-data-isnt-open-data</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Often there is no direct download for the data, but rather an email contact, who in many cases must be emailed separately for each requested dataset.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Data collection is hard to keep up to date</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/friction/data-collection-is-hard-to-keep-up-to-date"/>
+        <id>https://digital-land.github.io/friction/data-collection-is-hard-to-keep-up-to-date</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;It’s often hard to write an automatic process to download a dataset:&lt;/p&gt;
+&lt;ul class=&#34;govuk-list govuk-list--bullet&#34;&gt;
+&lt;li&gt;URLs change or break&lt;/li&gt;
+&lt;li&gt;Some data is made using JavaScript which only works when a human is present&lt;/li&gt;
+&lt;li&gt;Many datasets are kept behind email or permissions-walls&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class=&#34;govuk-body&#34;&gt;These barriers mean collecting and updating datasets published by organisations including Ordnance Survey, Environment Agency, Historic England and many local authorities is a manual process.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Data is inaccessible</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/friction/data-is-inaccessible"/>
+        <id>https://digital-land.github.io/friction/data-is-inaccessible</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Data needed is seldom found online, with many datasets held locally and in widely varying formats.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Data is not always available in bulk</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/friction/data-is-not-always-available-in-bulk"/>
+        <id>https://digital-land.github.io/friction/data-is-not-always-available-in-bulk</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Data is also sometimes only accessible in a limited fashion through proprietary tools, such as a mapping tool for &lt;a href=&#34;/glossary/tree-preservation-order&#34;&gt;tree preservation orders&lt;/a&gt; that lets you search for individual trees but doesn’t display the complete dataset.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Data is often hard to trust</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/friction/data-is-often-hard-to-trust"/>
+        <id>https://digital-land.github.io/friction/data-is-often-hard-to-trust</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Users aren’t always confident that the data will be maintained.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Data is often published as statistics</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/friction/data-is-often-published-as-statistics"/>
+        <id>https://digital-land.github.io/friction/data-is-often-published-as-statistics</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Much of the data is compiled in raw form, but only published by government in the form of statistics.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Data often isn&#39;t available as data</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/friction/data-often-isnt-available-as-data"/>
+        <id>https://digital-land.github.io/friction/data-often-isnt-available-as-data</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Often even the most basic information often isn’t available as data.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Data use is restricted</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/friction/data-use-is-restricted"/>
+        <id>https://digital-land.github.io/friction/data-use-is-restricted</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Much data is made available under an open government licence, but with additional, restrictive terms.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Fear of feedback</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/friction/fear-of-feedback"/>
+        <id>https://digital-land.github.io/friction/fear-of-feedback</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;The quality of many datasets is poor, and feedback can be a source of improvement.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Lack of value seen in publishing data</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/friction/lack-of-value-seen-in-publishing-data"/>
+        <id>https://digital-land.github.io/friction/lack-of-value-seen-in-publishing-data</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Some local authorities have seen benefits in publishing open data.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>The same data is inconsistent across publishers</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/friction/data-is-inconsistent-across-publishers"/>
+        <id>https://digital-land.github.io/friction/data-is-inconsistent-across-publishers</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Often the same specific types of data are defined or formatted differently depending on the publisher.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Uncertainty around what data is needed</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/friction/uncertainty-around-what-data-is needed"/>
+        <id>https://digital-land.github.io/friction/uncertainty-around-what-data-is needed</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;It’s hard to determine what data is needed to make a better planning application.&lt;/p&gt;</summary>
+    </entry>
+</feed>

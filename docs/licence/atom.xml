@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-GB">
+    <link rel="self" type="application/atom+xml" href="https://digital-land.github.io/licence/atom.xml"/>
+    <title>Licence - Digital Land</title>
+    <id>https://digital-land.github.io/licence/atom.xml</id>
+    <updated></updated>
+    
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Environment Agency Conditional Licence</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/licence/environment-agency-conditional"/>
+        <id>https://digital-land.github.io/licence/environment-agency-conditional</id>
+        
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Historic England GIS terms</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/licence/historic-england"/>
+        <id>https://digital-land.github.io/licence/historic-england</id>
+        
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>INSPIRE End User Licence</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/licence/inspire-end-user"/>
+        <id>https://digital-land.github.io/licence/inspire-end-user</id>
+        
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Land Registry INSPIRE</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/licence/land-registry-inspire"/>
+        <id>https://digital-land.github.io/licence/land-registry-inspire</id>
+        
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Open Government Licence</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/licence/ogl"/>
+        <id>https://digital-land.github.io/licence/ogl</id>
+        
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Unknown Licence</title>
+        
+        
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/licence/unknown"/>
+        <id>https://digital-land.github.io/licence/unknown</id>
+        
+    </entry>
+</feed>
