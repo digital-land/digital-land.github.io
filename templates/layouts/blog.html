@@ -12,6 +12,10 @@
   <div class="govuk-grid-column-two-thirds">
     {%- if pageContent.lede %}<p class="govuk-body-l">{{ pageContent.lede }}</p>{% endif -%}
     {{ pageContent.content|safe }}
+  
+    <ul class="subscribe">
+      <li><a aria-label="Use this with a feed reader to subscribe" href="https://digital-land.github.io/blog-post/atom.xml" class="feed">Atom</a></li>
+    </ul>
   </div>
 
   <div class="govuk-grid-column-two-thirds">
