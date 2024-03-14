@@ -1,0 +1,24 @@
+.subscribe {
+  margin: 0;
+  padding-left: 0;
+}
+
+.subscribe li {
+  width: 50%;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.subscribe li a {
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-size: 21px 21px;
+  line-height: 30px;
+}
+
+.subscribe li a.feed {
+  background-image: url("/images/icons/icon-rss.svg");
+}
