@@ -8,6 +8,21 @@
         
         
     <entry xml:lang="en-GB">
+        <title>Ordnance Survey and planning data</title>
+        <published>2024-04-03</published>
+        <author>
+          <name>
+            Mike Rose
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/blog-post/ordnance-survey-and-planning-data"/>
+        <id>https://digital-land.github.io/blog-post/ordnance-survey-and-planning-data</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;An update on our introductory conversation with the Ordnance Survey.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
         <title>Digging into local area requirements</title>
         <published>2024-01-22</published>
         <author>
