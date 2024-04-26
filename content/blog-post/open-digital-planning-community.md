@@ -8,7 +8,7 @@ section: Planning data
 
 Last week we welcomed 43 new Local Planning Authorities [we have funded](https://dluhcdigital.blog.gov.uk/2024/02/27/allocation-of-funding-for-council-led-initiatives-advancing-innovative-digital-planning-services/) to the [Open Digital Planning](https://opendigitalplanning.org/) community. We began with two events focused on data, both were well attended, with nearly 100 people joining us last week, and even more participating yesterday.
 
-In these sessions we started with a background on why we’re asking for data, and [how they should provide planning data](https://docs.google.com/presentation/d/1_BfI54W9JfCpmNWPu108nyKa_2zz7pdNDw1QW8XQLY0/edit#slide=id.g2cb3b725970_0_0).
+In these sessions we started with a background on why we’re asking for data, and [how they should provide planning data](https://docs.google.com/presentation/d/e/2PACX-1vSPH6o-fNqQwrUk1bZGjxO-q7pflKj8HzntbduhjnfnwMCvrbjHaRphTJm3FHNbHwh6xxWhqRRL5Zta/pub?start=false&loop=false&delayms=3000).
 
 Our approach is to work in the open, start small and build up. The LPA can begin by publishing the information they readily have, and leave blank things they don’t know. Some data being is better than no data. We can then quickly iterate and improve the data by giving feedback they value, and can easily act upon, as demonstrated in this [example of our work on conservation areas in Barnet](https://digital-land.github.io/barnet-conservation-areas/).
 
