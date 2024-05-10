@@ -15,13 +15,13 @@ A data standard is an **output** from a process looking at the data that is need
 
 * Someone identifies a need for data for planning purposes (a planning consideration)
 * We screen that consideration to understand what it is specifically
-  * Is it driven by a legislative need?
-  * Is it driven by a policy need?
-  * Is it driven by something else?
+  - Is it driven by a legislative need?
+  - Is it driven by a policy need?
+  - Is it driven by something else?
 * We then research the consideration to understand it fully
-  * What is the specific driver? What exactly does it say?
-  * Is there data already available? Where does it come from? What does it look like?
-  * What is the planning need? How will the data be used in the planning process? What do data consumers want?
+  - What is the specific driver? What exactly does it say?
+  - Is there data already available? Where does it come from? What does it look like?
+  - What is the planning need? How will the data be used in the planning process? What do data consumers want?
 * Then we look at whether we need to co-design a specification for the data (a specification is the data model, the data we think we need, documented in a manner that allows others to understand)
 * Finally, we decide whether that specification needs to be formally / legally mandated as a ‘standard’ under the [Levelling-up and Regeneration Act (LURA) 2023](https://www.legislation.gov.uk/ukpga/2023/55/contents).
 
