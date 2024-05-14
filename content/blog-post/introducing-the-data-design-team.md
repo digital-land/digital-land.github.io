@@ -36,7 +36,7 @@ We wanted to try to clear that confusion up and we think our name change helps.
 The Platform team is accountable for maintaining and running the capability of planning.data.gov.uk.
 
 The Data Management team is accountable for taking the specifications and standards (after the Data Design team has designed them), sourcing that data, and getting it onto the platform (capability) for people to build services on. 
-You could call this production data - data that is from authoritative sources.
+The goal is to get to production-quality data - high quality data that is from authoritative sources.
 
 The Data Design team requires the platform (capability) to test potential specifications and standards to co-design them. But unlike the Data Management team, which delivers production-quality data, our process will only produce indicative or experimental data - data that is good enough to test standards and start building and testing services but not yet good enough to use in production.
 
