@@ -29,11 +29,16 @@ This whole process (which obviously I have simplified) is us designing the data 
 
 This process and therefore this team, as reflected by its current make up, needs to have a series of different skill sets. We need to understand the technical aspects of data, building good data, displaying and sharing data but also we need to understand the legal and policy elements of planning and data too as all of these factor into designing data.
 
-We have also noticed, in thinking about our process, confusion around roles across the programme. For example we use the term ‘platform’ to describe a capability and a team.
+We have noticed, in thinking about our process, confusion around roles across the programme. For example, we use the term ‘platform’ to describe a capability and a team. We also have (had) a Data Standards team and a Data Management team, which are often conflated and shortened to the “planning data team”.
 
-The accountability of the platform team is to take specifications and standards (i.e. where data has been designed) and source that data and get it onto the platform (capability) for people to build services on. You could call this production data.
+We wanted to try to clear that confusion up and we think our name change helps.
 
-The data design team has a requirement of the platform (capability) to test potential specifications and standards to co-design them. This may or may not need the involvement of the platform team.
+The Platform team is accountable for maintaining and running the capability of planning.data.gov.uk.
+
+The Data Management team is accountable for taking the specifications and standards (after the Data Design team has designed them), sourcing that data, and getting it onto the platform (capability) for people to build services on. 
+You could call this production data - data that is from authoritative sources.
+
+The Data Design team requires the platform (capability) to test potential specifications and standards to co-design them. But unlike the Data Management team, which delivers production-quality data, our process will only produce indicative or experimental data - data that is good enough to test standards and start building and testing services but not yet good enough to use in production.
 
 By being clear about our name, it’s easier to see the role we play across the programme. We are applying the “[Ronseal Test](https://en.wikipedia.org/wiki/Does_exactly_what_it_says_on_the_tin)”.
 
