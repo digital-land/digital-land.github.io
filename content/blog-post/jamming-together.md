@@ -59,3 +59,5 @@ As a team, we’re pretty spread out, working from villages, towns and cities ac
 As mentioned, we need to do some more analysis and synthesis on the findings first, turning those into insights we can act on. After that, we’ll be deciding which things we can build and release, and which need a bit more design iteration. But we’ve a strong bias to action, testing throwaway prototypes, so we’ll no doubt be talking to lots of people working at LPAs over the next few weeks. 
 
 Looking forward to it!
+
+_Credits: Owen Eveleigh (Tech Lead), Alex Torrance (Design Lead), Gwen Henderson (Content Lead), Jimmy Tidey (User Researcher), George Goodall (Developer), Paris Dharam-Peat (Service Designer), Michael-Jordan Faucher-Folie (Business Analyst), Darren Matthews (Delivery Manager)._
