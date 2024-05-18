@@ -8,6 +8,21 @@
         
         
     <entry xml:lang="en-GB">
+        <title>Jamming together</title>
+        <published>2024-05-17</published>
+        <author>
+          <name>
+            Steve Messer
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/blog-post/jamming-together"/>
+        <id>https://digital-land.github.io/blog-post/jamming-together</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;How we used a design sprint to rapidly prototype and test different solutions to problems faced by data providers.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
         <title>Introducing the Data Design team</title>
         <published>2024-05-10</published>
         <author>
@@ -34,7 +49,7 @@
         <link rel="alternate" type="text/html" href="https://digital-land.github.io/blog-post/open-digital-planning-community"/>
         <id>https://digital-land.github.io/blog-post/open-digital-planning-community</id>
         
-        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Last week we welcomed 43 new Local Planning Authorities [we have funded](https://dluhcdigital.&lt;/p&gt;</summary>
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Last week we welcomed 43 new local planning authorities to the Open Digital Planning community. And it&#39;s already working out well!&lt;/p&gt;</summary>
     </entry>
         
         
