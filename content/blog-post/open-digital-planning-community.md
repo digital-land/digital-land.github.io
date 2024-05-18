@@ -1,6 +1,6 @@
 ---
 title: "The promise of community"
-description: "Last week we welcomed 43 new local planning authorities to the Open Digital Planning community. And it's already working out well!"
+summary: Last week we welcomed 43 new local planning authorities to the Open Digital Planning community. And it's already working out well!
 date: 2024-05-03
 author: "Paul Downey"
 status: beta

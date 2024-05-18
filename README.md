@@ -15,6 +15,10 @@ Render pages
 
     make render
 
+Run local server
+
+    npm run serve
+
 ## Git submodules
 
 The repository depends on gitsubmodules, a decision we regret.
