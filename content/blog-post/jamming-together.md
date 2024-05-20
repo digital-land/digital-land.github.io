@@ -24,11 +24,13 @@ We talked about the barriers they face providing data, related to tech, the data
 
 ## Identifying opportunities
 
-Standing back, looking at all those together, we reframed the problems as opportunities for making things better. There were three main clusters:
+Standing back, looking at all those together, we reframed the problems as opportunities for making things better. There were three main clusters.
 
-- One cluster focused on how we might make the journey of providing data more complete, an [‘end-to-end service’](https://www.gov.uk/service-manual/design/introduction-designing-government-services#the-characteristics-of-a-good-government-service). That means meeting users where they are with contextual guidance, and breaking the process down into chunks that can be completed in an agile, iterative way. We also highlighted being better at communicating progress or specific processes to users.
-- Another cluster looked at giving users the tools to maintain their data and provide more over time, making the provision of trustworthy data a sustained, easy-to-repeat behaviour in LPAs. 
-- A final cluster was focused around communicating the value of providing open data, helping users understand the benefits they’re helping to realise.
+One cluster focused on how we might make the journey of providing data more complete, an [‘end-to-end service’](https://www.gov.uk/service-manual/design/introduction-designing-government-services#the-characteristics-of-a-good-government-service). That means meeting users where they are with contextual guidance, and breaking the process down into chunks that can be completed in an agile, iterative way. We also highlighted being better at communicating progress or specific processes to users.
+
+Another cluster looked at giving users the tools to maintain their data and provide more over time, making the provision of trustworthy data a sustained, easy-to-repeat behaviour in LPAs. 
+
+A final cluster was focused around communicating the value of providing open data, helping users understand the benefits they’re helping to realise.
 
 ## Exploring solutions
 
