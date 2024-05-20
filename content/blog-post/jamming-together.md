@@ -38,6 +38,8 @@ That gave us all the material we needed to sketch, map, design, iterate, and pro
 
 On Thursday and Friday, we were joined by people from four LPAs to help us put our ideas to the test. We set the scenario and they navigated through [our prototype](https://github.com/digital-land/provider-design-sprint), using it as if it was a real service. We collected tons of feedback on what worked well, what didn’t work well, and picked up other insights about our users’ day-to-day tasks and tools. 
 
+![A simple flow diagram showing the main steps in checking and providing data. Image courtesy of Alex Torrance.](/images/diagrams/simple-flow-diagram-check-and-provide-data.png)
+
 ## What we learned
 
 We’ve got more analysis and synthesis to do early next week, but so far we’ve learned that:
