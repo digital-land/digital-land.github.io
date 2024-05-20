@@ -24,17 +24,21 @@ We talked about the barriers they face providing data, related to tech, the data
 
 ## Identifying opportunities
 
-Standing back, looking at all those together, we reframed the problems as opportunities for making things better. There were three main clusters:
+Standing back, looking at all those together, we reframed the problems as opportunities for making things better. There were three main clusters.
 
-- One cluster focused on how we might make the journey of providing data more complete, an [‘end-to-end service’](https://www.gov.uk/service-manual/design/introduction-designing-government-services#the-characteristics-of-a-good-government-service). That means meeting users where they are with contextual guidance, and breaking the process down into chunks that can be completed in an agile, iterative way. We also highlighted being better at communicating progress or specific processes to users.
-- Another cluster looked at giving users the tools to maintain their data and provide more over time, making the provision of trustworthy data a sustained, easy-to-repeat behaviour in LPAs. 
-- A final cluster was focused around communicating the value of providing open data, helping users understand the benefits they’re helping to realise.
+One cluster focused on how we might make the journey of providing data more complete, an [‘end-to-end service’](https://www.gov.uk/service-manual/design/introduction-designing-government-services#the-characteristics-of-a-good-government-service). That means meeting users where they are with contextual guidance, and breaking the process down into chunks that can be completed in an agile, iterative way. We also highlighted being better at communicating progress or specific processes to users.
+
+Another cluster looked at giving users the tools to maintain their data and provide more over time, making the provision of trustworthy data a sustained, easy-to-repeat behaviour in LPAs. 
+
+A final cluster was focused around communicating the value of providing open data, helping users understand the benefits they’re helping to realise.
 
 ## Exploring solutions
 
 That gave us all the material we needed to sketch, map, design, iterate, and prototype a more complete end-to-end journey. Over the next two days we scribbled on whiteboards, used stacks of Post-it notes, drew scrappy diagrams and used [GOV.‌UK Prototype Kit](https://prototype-kit.service.gov.uk/docs/) to turn it all into tangible things we could test with users. Because that was the main goal of the week: going from insight to idea to action as quickly as possible. [Alpha is discovery](https://visitmy.website/2022/04/09/alpha-is-discovery/).
 
 On Thursday and Friday, we were joined by people from four LPAs to help us put our ideas to the test. We set the scenario and they navigated through [our prototype](https://github.com/digital-land/provider-design-sprint), using it as if it was a real service. We collected tons of feedback on what worked well, what didn’t work well, and picked up other insights about our users’ day-to-day tasks and tools. 
+
+![A simple flow diagram showing the main steps in checking and providing data. Image courtesy of Alex Torrance.](/images/diagrams/simple-flow-diagram-check-and-provide-data.png)
 
 ## What we learned
 
