@@ -57,6 +57,7 @@ There were also some limitations to the research, such as:
 
 With this in mind, the list of aggregated output is as follows:
 
+
 | Planning consideration                         | Score awarded |
 | :--------------------------------------------- | :-----------: |
 | Conservation areas                             | 10            |
@@ -97,6 +98,7 @@ With this in mind, the list of aggregated output is as follows:
 | Public rights of way (PRoW)                    | 6             |
 | Religious buildings                            | 6             |
 
+
 So in answer to the questions at the beginning of this post:
 
 - Have we identified those considerations of most value to users to add to the platform next?
@@ -106,4 +108,5 @@ So in answer to the questions at the beginning of this post:
  
 As a final note it is encouraging that even with the previously mentioned limitations of the research, a number of considerations that appear most predominantly in the results (such as conservation areas, listed buildings, sites of special scientific interest, and ancient woodlands) have been or are currently the subject of our focus. We have already supported and designed specifications for these with many more in progress.
 
-_Credits: Claire Miller (Planning SME), Gwen Henderson (Content lead).
+
+Credits: Claire Miller (Planning SME), Gwen Henderson (Content lead).
