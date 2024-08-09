@@ -11,8 +11,7 @@ Getting a nationally consistent listed buildings dataset suitable for planning d
 
 There are a number of challenges in identifying a listing for planning purposes that local planning authorities (LPAs) face. It’s extremely costly to proactively assess every single listing to achieve a high level of data quality, and we have to work collaboratively to reach a solution. 
 
-TL;DR
-Listed buildings for planning is HARD!
+TL;DR - Listed buildings for planning is HARD!
 
 
 ## What we have found out
