@@ -9,7 +9,7 @@ summary: An update on some of the work we've been doing to see which planning co
 
 ## Extensive backlog!
 
-We have an extensive backlog of planning considerations and are keen to identify the considerations with the most value to users, so that we can prioritise what to add to the platform. We’re also interested in understanding how the planning considerations on the backlog support plan-making and planning decisions.
+We have an extensive [backlog](https://design.planning.data.gov.uk/planning-consideration/) of 264 planning considerations (as of writing). Not having any priorities on which considerations to cover and research in more detail feels like it comes with a large risk of wasting time and money as we're not looking at the most beneficial datasets for the platform. So, we were keen to identify the considerations with the most value to users, so that we can prioritise what to add to the platform and minimise that risk of waste. We’re also interested in understanding how the planning considerations on the backlog support plan-making and planning decisions.
 
 To support this, over the last couple of months we have been spending some time looking at: 
 
