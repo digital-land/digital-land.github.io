@@ -1,5 +1,5 @@
 ---
-title: "API Efficiency: How Lean Code Cut Energy Use by 99%"
+title: "Making our API more efficient for data consumers"
 date: 2024-08-13
 author: "Ben Hodgkiss"
 status: beta
