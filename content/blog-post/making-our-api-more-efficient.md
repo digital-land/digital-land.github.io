@@ -3,7 +3,7 @@ title: "Making our API more efficient for data consumers"
 date: 2024-08-13
 author: "Ben Hodgkiss"
 status: beta
-section: Infrastructure
+section: Planning data
 summary: Working with PlanX, the Planning Data team have been able to streamline our API to boost efficiency and reduce energy.
 ---
 
