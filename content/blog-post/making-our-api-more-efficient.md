@@ -10,7 +10,7 @@ summary: Working with PlanX, the Planning Data team have been able to streamline
 The amount of electricity used by data centres is increasing rapidly. Recent research in the Republic of Ireland shows a [400% increase](https://datacentremagazine.com/critical-environments/power-hungry-data-centres-put-pressure-on-irelands-grid) from 2015 to 2024. As AI and digital services grow, it’s important that we aim to minimise the pressure on data centres by providing lean code with the minimal outputs that use the least electricity.
 
 
-## The Challenge of Data Bloat
+## The challenge of data bloat
 
 However, it can be really hard to think about how to do that when you’re in the middle of a large project like [Planning Data](https://www.planning.data.gov.uk/about/). This service collects planning and housing data from a wide variety of sources and transforms it into a consistent state available to all. 
 
