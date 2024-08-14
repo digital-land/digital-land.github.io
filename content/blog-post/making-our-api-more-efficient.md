@@ -28,7 +28,7 @@ When we heard this from PlanX, we quickly workshopped a few ideas and decided on
 Within 3 weeks, we released this back to users. Within 24 hours, PlanX had implemented the parameter across their queries.
 
 
-## Efficiency & Environmental Benefits
+## Efficiency and benefits
 
 For that commercial Lambeth property query above, it’s clear how much shorter the [revised query return](https://www.planning.data.gov.uk/entity.json?entries=current&geometry=MULTIPOLYGON+%28%28%28-0.12093+51.492328%2C+-0.120915+51.492299%2C+-0.11981+51.492079%2C+-0.119785+51.49208%2C+-0.119585+51.492034%2C+-0.119537+51.492132%2C+-0.119409+51.492204%2C+-0.12047+51.492409%2C+-0.120465+51.49242%2C+-0.120554+51.492439%2C+-0.120762+51.492512%2C+-0.12093+51.492328%29%29%29&geometry_relation=intersects&limit=100&dataset=article-4-direction-area&dataset=central-activities-zone&dataset=brownfield-land&dataset=brownfield-site&dataset=area-of-outstanding-natural-beauty&dataset=conservation-area&dataset=green-belt&dataset=national-park&dataset=world-heritage-site&dataset=world-heritage-site-buffer-zone&dataset=flood-risk-zone&dataset=listed-building&dataset=listed-building-outline&dataset=scheduled-monument&dataset=ancient-woodland&dataset=ramsar&dataset=special-area-of-conservation&dataset=special-protection-area&dataset=site-of-special-scientific-interest&dataset=park-and-garden&dataset=tree&dataset=tree-preservation-order&dataset=tree-preservation-zone&exclude_field=geometry,point) is. However, the scale of the decrease in response size did shock us, the new return is a mere 2.5 kB – a hefty 99.9% decrease!
 
