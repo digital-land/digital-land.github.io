@@ -72,3 +72,6 @@ The Facts links on the right allow users to explore the provenance of each field
 The [link to this individual fact](https://www.planning.data.gov.uk/fact/b1fe5cdcec6d7f478338a7a5216b079a38d2e7745b6d79a67dbf1e85bf7c0293?dataset=article-4-direction-area) will show us the resources that this was captured from.
 
 So there you have it\! We’ve traced the journey from an endpoint through resources and facts to the entities that end up on the platform, and how this system helps us record the provenance of the data that we hold.
+
+
+_Credits: Swati Dash (Data Governance Manager), Steve Messer (Strategic Product Lead), Owen Eveleigh (Tech Lead), Paul Downey (Service Owner)._
