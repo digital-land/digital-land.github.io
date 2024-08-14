@@ -1,7 +1,7 @@
 ---
 title: "How we store data from local planning authorities and keep it up to date"
 date: 2024-08-14
-author: "Greg SLater"
+author: "Greg Slater"
 status: beta
 section: Planning data
 summary: An overview of the data model used by planning.data.gov.uk and the benefits it brings to our users.
