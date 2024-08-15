@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>
+Making our API more efficient for data consumers - Digital Land
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+	<link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
+<link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+
+    
+	<meta name="digital-land:template" content="dlf-base.html">
+	
+	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+	
+<link rel="stylesheet" href="https://digital-land.github.io/stylesheets/feed.css">
+
+<meta name="author" content="Ben Hodgkiss">
+
+    
+    
+    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    
+
+    
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+    
+
+    
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div>
+
+
+<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="header-proposition">
+      <div class="govuk-header__content">
+        <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+        Digital Land
+        </a>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+        <nav>
+          <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/about/">About</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/project/">Projects</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/weeknote/">Weeknotes</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/blog-post/">Blog</a>
+            </li>
+            
+          </ul>
+        </nav>
+        </div>
+    </div>
+  </div>
+</header>
+
+
+
+    
+      <div class="govuk-width-container ">
+        
+  
+  
+  <div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/blog-post">Blog post</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Making our api more efficient</li>
+    
+  
+  </ol>
+</div>
+  
+
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          
+
+<span class="govuk-caption-xl">Planning data</span>
+
+<h1 class="govuk-heading-xl">Making our API more efficient for data consumers</h1>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    
+    <p class="govuk-body govuk-hint govuk-!-margin-bottom-6">Ben Hodgkiss &mdash; 2024-08-13</p>
+    <p class="govuk-body" class="govuk-body">The amount of electricity used by data centres is increasing rapidly. Recent research in the Republic of Ireland shows a <a href="https://datacentremagazine.com/critical-environments/power-hungry-data-centres-put-pressure-on-irelands-grid">400% increase</a> from 2015 to 2024. As AI and digital services grow, it’s important that we aim to minimise the pressure on data centres by providing lean code with the minimal outputs that use the least electricity.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="the-challenge-of-data-bloat">The challenge of data bloat</h2>
+<p class="govuk-body" class="govuk-body">However, it can be really hard to think about how to do that when you’re in the middle of a large project like <a href="https://www.planning.data.gov.uk/about/">Planning Data</a>. This service collects planning and housing data from a wide variety of sources and transforms it into a consistent state available to all. </p>
+<p class="govuk-body" class="govuk-body">The platform reduces the work which every planning service needs to undertake to find and make planning data usable, and creates opportunities to learn from users on ways we can further reduce this duplicated effort.</p>
+<p class="govuk-body" class="govuk-body"><a href="https://www.planx.uk/">PlanX</a> are one of the services built using data from the Planning Data platform. Their product uses <a href="https://www.planning.data.gov.uk/docs">our API</a> to check if a property is within an area of conservation, affected by an Article 4 direction, or has a high flood risk along with a number of other considerations offered by the API.</p>
+<p class="govuk-body" class="govuk-body">This could result in a rather large response (as in this example for a <a href="https://www.planning.data.gov.uk/entity.json?entries=current&amp;geometry=MULTIPOLYGON+%28%28%28-0.12093+51.492328%2C+-0.120915+51.492299%2C+-0.11981+51.492079%2C+-0.119785+51.49208%2C+-0.119585+51.492034%2C+-0.119537+51.492132%2C+-0.119409+51.492204%2C+-0.12047+51.492409%2C+-0.120465+51.49242%2C+-0.120554+51.492439%2C+-0.120762+51.492512%2C+-0.12093+51.492328%29%29%29&amp;geometry_relation=intersects&amp;limit=100&amp;dataset=article-4-direction-area&amp;dataset=central-activities-zone&amp;dataset=brownfield-land&amp;dataset=brownfield-site&amp;dataset=area-of-outstanding-natural-beauty&amp;dataset=conservation-area&amp;dataset=green-belt&amp;dataset=national-park&amp;dataset=world-heritage-site&amp;dataset=world-heritage-site-buffer-zone&amp;dataset=flood-risk-zone&amp;dataset=listed-building&amp;dataset=listed-building-outline&amp;dataset=scheduled-monument&amp;dataset=ancient-woodland&amp;dataset=ramsar&amp;dataset=special-area-of-conservation&amp;dataset=special-protection-area&amp;dataset=site-of-special-scientific-interest&amp;dataset=park-and-garden&amp;dataset=tree&amp;dataset=tree-preservation-order&amp;dataset=tree-preservation-zone">commercial premises in Lambeth</a>) because the API would bring back all the data for that record including the boundary data. The example query above returns a rather large 3.7 Mb. This means long loading times for users, especially when a query is being run on a regular basis. PlanX got in touch to ask if we could remove the geometry results from the API. Geometry details are by far the largest amount of data returned. Some datasets (like flood risk zones) are really detailed in their geometries. However, PlanX didn’t need them. They only care whether the property sits within a conservation area, not the exact details of where the conservation area starts and ends!</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="a-targeted-solution">A targeted solution</h2>
+<p class="govuk-body" class="govuk-body">When we heard this from PlanX, we quickly workshopped a few ideas and decided on introducing an <code class="dl-code">exclude-field</code> parameter to the API. This would allow users to do exactly what they wanted - bring back everything except those large geometry files.</p>
+<p class="govuk-body" class="govuk-body">Within 3 weeks, we released this back to users. Within 24 hours, PlanX had implemented the parameter across their queries.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="efficiency-and-benefits">Efficiency and benefits</h2>
+<p class="govuk-body" class="govuk-body">For that commercial Lambeth property query above, it’s clear how much shorter the <a href="https://www.planning.data.gov.uk/entity.json?entries=current&amp;geometry=MULTIPOLYGON+%28%28%28-0.12093+51.492328%2C+-0.120915+51.492299%2C+-0.11981+51.492079%2C+-0.119785+51.49208%2C+-0.119585+51.492034%2C+-0.119537+51.492132%2C+-0.119409+51.492204%2C+-0.12047+51.492409%2C+-0.120465+51.49242%2C+-0.120554+51.492439%2C+-0.120762+51.492512%2C+-0.12093+51.492328%29%29%29&amp;geometry_relation=intersects&amp;limit=100&amp;dataset=article-4-direction-area&amp;dataset=central-activities-zone&amp;dataset=brownfield-land&amp;dataset=brownfield-site&amp;dataset=area-of-outstanding-natural-beauty&amp;dataset=conservation-area&amp;dataset=green-belt&amp;dataset=national-park&amp;dataset=world-heritage-site&amp;dataset=world-heritage-site-buffer-zone&amp;dataset=flood-risk-zone&amp;dataset=listed-building&amp;dataset=listed-building-outline&amp;dataset=scheduled-monument&amp;dataset=ancient-woodland&amp;dataset=ramsar&amp;dataset=special-area-of-conservation&amp;dataset=special-protection-area&amp;dataset=site-of-special-scientific-interest&amp;dataset=park-and-garden&amp;dataset=tree&amp;dataset=tree-preservation-order&amp;dataset=tree-preservation-zone&amp;exclude_field=geometry,point">revised query return</a> is. However, the scale of the decrease in response size did shock us, the new return is a mere 2.5 kB – a hefty 99.9% decrease!</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="lessons-for-sustainable-software-development">Lessons for sustainable software development</h2>
+<p class="govuk-body" class="govuk-body">Obviously, this level of decrease will change for each individual query, depending on which datasets are returned and the complexity. However, it is clear that by doing this, we have solved more than just our initial problem.</p>
+<p class="govuk-body" class="govuk-body">We’ve made life easier for our API users, like PlanX. Going forward, we will be making sure that we keep a close eye on how we can reduce data bloat from the outset with our code, not just for our users, but also to pass on this vast power saving to our data centres – and therefore minimise electricity and ultimately carbon output.</p>
+<p class="govuk-body" class="govuk-body">Credit: Feba Rajan (Developer) </p>
+  </div>
+</div>
+
+
+        </main>
+      </div>
+    
+
+    
+	
+	
+
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
+        >
+  <div class="govuk-width-container ">
+    
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
+        
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
+
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
+
+	
+	
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
+
+  </body>
+</html>

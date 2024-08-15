@@ -8,6 +8,51 @@
         
         
     <entry xml:lang="en-GB">
+        <title>Making our API more efficient for data consumers</title>
+        <published>2024-08-13</published>
+        <author>
+          <name>
+            Ben Hodgkiss
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/blog-post/making-our-api-more-efficient"/>
+        <id>https://digital-land.github.io/blog-post/making-our-api-more-efficient</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;Working with PlanX, the Planning Data team have been able to streamline our API to boost efficiency and reduce energy.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Challenges with listed buildings</title>
+        <published>2024-08-09</published>
+        <author>
+          <name>
+            Kieran Wint
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/blog-post/challenges-with-listed-buildings"/>
+        <id>https://digital-land.github.io/blog-post/challenges-with-listed-buildings</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;An overview of the work we&#39;ve done towards a national listed building dataset and the various challenges we still face.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
+        <title>Local plan and local area requirement analysis</title>
+        <published>2024-07-30</published>
+        <author>
+          <name>
+            Kieran Wint and Claire Miller
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/blog-post/local-plan-and-local-requirement-analysis"/>
+        <id>https://digital-land.github.io/blog-post/local-plan-and-local-requirement-analysis</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;An update on some of the work we&#39;ve been doing to see which planning considerations might be of most value to users in the future.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
         <title>Jamming together</title>
         <published>2024-05-17</published>
         <author>
