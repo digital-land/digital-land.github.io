@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>
+How we store data from local planning authorities and keep it up to date - Digital Land
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+	<link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
+<link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+
+    
+	<meta name="digital-land:template" content="dlf-base.html">
+	
+	<link href="https://digital-land.github.io/stylesheets/dl-frontend.css" rel="stylesheet" />
+	
+<link rel="stylesheet" href="https://digital-land.github.io/stylesheets/feed.css">
+
+<meta name="author" content="Greg Slater">
+
+    
+    
+    <meta property="og:image" content="/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    
+
+    
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+    
+
+    
+<!-- Cookie banner partial version 1.0.1 -->
+<div id="global-cookie-message" class="govuk-clearfix global-cookie-message" data-module="cookie-banner" role="region" aria-label="cookie banner" data-nosnippet="">
+
+  <div id="cookie-banner" class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="cookie-banner__message govuk-!-margin-top-6">
+          <h2 class="govuk-heading-m">Tell us whether you accept cookies</h2>
+          <p class="govuk-body">We use <a class="govuk-link" href="/cookies">cookies to collect information</a> about how you use the Digital Land website to make the website work as well as possible.</p>
+        </div>
+        <div class="cooke-banner__buttons govuk-grid-row">
+          <div class="govuk-grid-column-one-half">
+            <button class="govuk-button" onclick="acceptCookies();showCookieConfirmation();">Accept all cookies</button>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <a class="govuk-button" href="/cookies">Set cookie preferences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cookie-confirmation" class="govuk-width-container govuk-!-padding-top-6" tabindex="-1" style="display: none;">
+    <p class="cookie-banner__confirmation-message govuk-body">You’ve accepted all cookies. You can <a class="govuk-link" href="/cookies">change your cookie settings</a> at any time.</p>
+    <button class="cookie-banner__hide-button govuk-button govuk-button--secondary" onclick="document.getElementById('cookie-confirmation').style.display='none';">Hide</button>
+  </div>
+
+</div>
+
+
+<header role="banner" id="global-header" class="govuk-header  with-proposition dl-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="header-proposition">
+      <div class="govuk-header__content">
+        <a href="https://digital-land.github.io/" class="govuk-header__link govuk-header__link--service-name">
+        Digital Land
+        </a>
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+        <nav>
+          <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/about/">About</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/project/">Projects</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/weeknote/">Weeknotes</a>
+            </li>
+            
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/blog-post/">Blog</a>
+            </li>
+            
+          </ul>
+        </nav>
+        </div>
+    </div>
+  </div>
+</header>
+
+
+
+    
+      <div class="govuk-width-container ">
+        
+  
+  
+  <div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Digital Land</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/blog-post">Blog post</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Storing and updating data</li>
+    
+  
+  </ol>
+</div>
+  
+
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+          
+
+<span class="govuk-caption-xl">Planning data</span>
+
+<h1 class="govuk-heading-xl">How we store data from local planning authorities and keep it up to date</h1>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    
+    <p class="govuk-body govuk-hint govuk-!-margin-bottom-6">Greg Slater &mdash; 2024-08-14</p>
+    <p class="govuk-body" class="govuk-body">The planning data platform collects data from a diverse range of sources. How we store and manage this data once it’s been collected is fundamental to our vision of making land and housing data easier to find, use and trust.</p>
+<p class="govuk-body" class="govuk-body">The data model used by the platform is based on the concept of a <a href="https://en.wikipedia.org/wiki/Named_graph">named graph</a>. This means that we can create globally unique identifiers (URIs) for the things that we hold information about. For example, this Article 4 direction area in Barnet can be identified as: <a href="https://www.planning.data.gov.uk/entity/7010002551">https://www.planning.data.gov.uk/entity/7010002551</a>. We refer to this Article 4 direction area as an “entity”, i.e. a distinct thing. Each distinct thing we hold data about is its own entity with its own unique identifier, and each entity essentially acts as a container for all the pieces of information we gather about it.</p>
+<p class="govuk-body" class="govuk-body">This model has advantages:</p>
+<ul class="govuk-list govuk-list--bullet" class="govuk-list govuk-list--bullet">
+<li>We can use a single data model to store data from a huge range of different sources, and about lots of different things  </li>
+<li>We can combine data from different providers who publish information about the same things  </li>
+<li>We can keep a record of the provenance for all the pieces of data we collect</li>
+</ul>
+<p class="govuk-body" class="govuk-body">This provides benefits for our users:</p>
+<ul class="govuk-list govuk-list--bullet" class="govuk-list govuk-list--bullet">
+<li>They can access a huge range of data using <a href="https://www.planning.data.gov.uk/docs">consistent methods</a>, whether they’re interested in <a href="https://www.planning.data.gov.uk/entity/?dataset=tree-preservation-zone&amp;geometry_curie=statistical-geography%3AE09000028&amp;entry_date_day=&amp;entry_date_month=&amp;entry_date_year=">tree preservation zones in Southwark</a>, or <a href="https://www.planning.data.gov.uk/entity/?dataset=transport-access-node\&amp;geometry_curie=statistical-geography%3AE08000001\&amp;entry_date_day=\&amp;entry_date_month=\&amp;entry_date_year=">public transport access nodes in Bolton</a>  </li>
+<li>They can always interrogate the provenance of the data they’re interested in, helping to improve their trust in it  </li>
+<li>They can use a unique and persistent identifier to make reliable references to the same thing across different systems, for example, from our platform to planning services like <a href="https://www.planx.uk/">PlanX</a></li>
+</ul>
+<p class="govuk-body" class="govuk-body">Let’s run through how we collect open data published by a local planning authority to create an entity on our platform, explaining the model that we use to store this data throughout that process. We’ll use the Barnet Article 4 direction area entity as an example to follow the process from beginning to end.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="endpoint-and-resources">Endpoint and resources</h2>
+<p class="govuk-body" class="govuk-body">We ask local planning authorities to <a href="https://www.planning.data.gov.uk/guidance/publish-data-on-your-website">publish open data on their website</a> using a publicly accessible URL, which we refer to as an “endpoint”. Once an endpoint is added to our data processing pipeline it will be checked each night for the latest data. When an endpoint is added for the first time we take a copy of the data; this unique copy is referred to as a “resource”. If the pipeline detects any changes in the data, no matter how small, we save a new version of the entire dataset, saving this copy as a new resource. Each separate resource gets given a unique reference which we can use to identify it.</p>
+<p class="govuk-body" class="govuk-body">This URL is the endpoint Barnet have provided for their Article 4 direction area data: </p>
+<p class="govuk-body" class="govuk-body"><a href="https://open.barnet.gov.uk/download/e5l77/dhv/article4-direction-areas.csv">https://open.barnet.gov.uk/download/e5l77/dhv/article4-direction-areas.csv</a> </p>
+<p class="govuk-body" class="govuk-body">You can follow the link yourself to see the CSV file that Barnet have used to share their data.</p>
+<p class="govuk-body" class="govuk-body">This <a href="https://datasette.planning.data.gov.uk/digital-land?sql=SELECT+%0D%0A++name%2C+%0D%0A++collection%2C+%0D%0A++pipeline%2C+%0D%0A++endpoint_url%2C+%0D%0A++resource%2C+%0D%0A++endpoint_entry_date%2C+%0D%0A++endpoint_end_date%2C+%0D%0A++resource_start_date%2C+%0D%0A++resource_end_date+%0D%0AFROM+reporting_historic_endpoints+%0D%0AWHERE+%0D%0A+++organisation+%3D+%22local-authority-eng%3ABNE%22+%0D%0A+++AND+pipeline+%3D+%22article-4-direction-area%22">query</a> in datasette – a tool we use to explore the datasets produced by our pipeline – shows the IDs for each of the resources which have been collected from this endpoint, each a unique hash code with a start-date and end-date which record when the resource was first collected (start-date), and when it was superseded by a new resource (end-date). The most recently collected resource has no end-date, as hasn’t yet been replaced by any new data.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="resources-and-facts">Resources and facts</h2>
+<p class="govuk-body" class="govuk-body">Each resource contains a lot of data, and we record this data in a way which means we build up a record of all the information that has ever appeared on an endpoint, as well as tracking when it appeared. This provides a valuable record of any changes made to the data.</p>
+<p class="govuk-body" class="govuk-body">The data from each resource is saved as a series of “facts”. If we imagine a resource as a table of data, like the CSV file from Barnet, then each combination of entry (row) and field (column) generates a separate fact: a record of the value for that entry and field.</p>
+<p class="govuk-body" class="govuk-body">Using Barnet’s article 4 direction area endpoint from above as an example, here is how the first two rows look for the <code class="dl-code">reference</code> and <code class="dl-code">name</code> fields:</p>
+<table class="govuk-table"  class="govuk-table" >
+<thead class="govuk-table__head">
+<tr class="govuk-table__row">
+<th style="text-align: left;">reference</th>
+<th style="text-align: left;">name</th>
+</tr>
+</thead>
+<tbody class="govuk-table__body">
+<tr class="govuk-table__row">
+<td style="text-align: left;">A4D1A1</td>
+<td style="text-align: left;">Article 4(2) for Finchley Church End CA Area 1</td>
+</tr>
+<tr class="govuk-table__row">
+<td style="text-align: left;">A4D1A2</td>
+<td style="text-align: left;">Article 4(2) for Finchley Church End CA Area 2</td>
+</tr>
+</tbody>
+</table>
+<p class="govuk-body" class="govuk-body">This snippet of the full table contains 2 entries and 2 fields, meaning there are a total of 4 facts. Each fact gets given a unique identifier in the same way the resource does. You can see how these facts appear in our <a href="https://datasette.planning.data.gov.uk/article-4-direction-area?sql=SELECT+%0D%0A++fr.resource%2C+%0D%0A++fr.entry_number%2C+%0D%0A++f.fact%2C+%0D%0A++f.field%2C+%0D%0A++f.value%0D%0AFROM+fact_resource+fr%0D%0AINNER+JOIN+fact+f+on+fr.fact+%3D+f.fact%0D%0AWHERE+%0D%0A+++resource+%3D+%222702f238b05ec028cbd33738b718a81ba9fc70680f1e6f313a000980989a96ec%22%0D%0A+++AND+field+in+%28%22reference%22%2C+%22name%22%29%0D%0A+++AND+fr.entry_number+%3C%3D+2%0D%0A%0D%0A">data</a>.</p>
+<p class="govuk-body" class="govuk-body">So a table with 10 rows and 10 columns would generate 100 facts. And each time data changes on an endpoint, all of the facts from the new resource are recorded again. We can use these records to trace back through the history of data from an endpoint.</p>
+<h2 class="govuk-heading-l" class="govuk-heading-l" id="entities">Entities</h2>
+<p class="govuk-body" class="govuk-body">Entities are important as they’re the things that actually end up being displayed on the website, in maps, and in planning services using our data. We create new entities when we add an endpoint for the first time, usually creating one for each unique record in a resource. We ask that data providers share data with a unique reference field so that we can record the relationship between our entity numbers and the reference that the data provider uses to refer to that entity.</p>
+<p class="govuk-body" class="govuk-body">Once that record of the relationship between the data provider, their reference value, and our entity number is created, the entity will hold all of the facts from entries with that same reference value that have ever been generated from relevant resources. The value displayed for each field on the web page for an entity is always from the most recently updated fact.</p>
+<p class="govuk-body" class="govuk-body">Using our example Barnet Article 4 direction area entity we can see the information we’ve captured as facts represented on the <a href="https://www.planning.data.gov.uk/entity/7010002551#">entity web page</a>.</p>
+<p class="govuk-body" class="govuk-body"><img class="dl-image"  class="dl-image"  alt="A screengrab of the entity page for our example Barnet Article 4 direction area on planning.data.gov.uk" src="/images/diagrams/screengrabs/entity_page_7010002551.png" /></p>
+<p class="govuk-body" class="govuk-body">The Facts links on the right allow users to explore the provenance of each field and value through the facts that we’ve collected. Following the <a href="https://www.planning.data.gov.uk/fact/?dataset=article-4-direction-area\&amp;entity=7010002551\&amp;field=name">Facts link</a> for the <code class="dl-code">name</code> field of this entity shows that the value was initially “<em>Article 4 Agricultural Land Restriction (1952) Area 1</em>”, but this was superseded by a new fact on 17/07/2024 with a value of “<em>Article 4 Agricultural Land Restriction Area 1</em>”. </p>
+<p class="govuk-body" class="govuk-body"><img class="dl-image"  class="dl-image"  alt="A screengrab of the fact page of the name field for our example Barnet Article 4 direction area on planning.data.gov.uk" src="/images/diagrams/screengrabs/fact_page_7010002551_name.png" /></p>
+<p class="govuk-body" class="govuk-body">The <a href="https://www.planning.data.gov.uk/fact/b1fe5cdcec6d7f478338a7a5216b079a38d2e7745b6d79a67dbf1e85bf7c0293?dataset=article-4-direction-area">link to this individual fact</a> will show us the resources that this was captured from.</p>
+<p class="govuk-body" class="govuk-body">So there you have it! We’ve traced the journey from an endpoint through resources and facts to the entities that end up on the platform, and how this system helps us record the provenance of the data that we hold.</p>
+<p class="govuk-body" class="govuk-body"><em>Credits: Swati Dash (Data Governance Manager), Steve Messer (Strategic Product Lead), Owen Eveleigh (Tech Lead), Paul Downey (Service Owner).</em></p>
+  </div>
+</div>
+
+
+        </main>
+      </div>
+    
+
+    
+	
+	
+
+
+
+
+
+
+
+<footer class="govuk-footer " role="contentinfo"
+        >
+  <div class="govuk-width-container ">
+    
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+          <h2 class="govuk-visually-hidden">Support links</h2>
+              <ul class="govuk-footer__inline-list">
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/cookies">
+                      Cookies
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/accessibility-statement">
+                      Accessibility statement
+                    </a>
+                  </li>
+                
+                  <li class="govuk-footer__inline-list-item">
+                    <a class="govuk-footer__link" href="/design-system">
+                      Design system
+                    </a>
+                  </li>
+                
+              </ul>
+            
+          
+          
+            <div class="govuk-footer__meta-custom">
+              The <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">software</a> and <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/">data</a> used to build these pages is <a class="govuk-footer__link" href="https://github.com/digital-land/digital-land/blob/master/LICENSE">open source</a>.
+            </div>
+          
+        
+        <svg
+          role="presentation"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="https://digital-land.github.io/javascripts/dl-cookies.js"></script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- end google analytics -->
+	
+
+	<script src="https://digital-land.github.io/javascripts/govuk/govuk-frontend.min.js"></script>
+	<script>
+		// initiate all GOVUK components
+		window.GOVUKFrontend.initAll();
+	</script>
+
+	
+	
+	<script src="https://digital-land.github.io/javascripts/dl-frontend.js"></script>
+	<script>
+		// adds any necessary polyfills
+		window.DLFrontend.polyfill();
+	</script>
+	
+
+
+  </body>
+</html>

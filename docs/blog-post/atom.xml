@@ -8,6 +8,21 @@
         
         
     <entry xml:lang="en-GB">
+        <title>How we store data from local planning authorities and keep it up to date</title>
+        <published>2024-08-14</published>
+        <author>
+          <name>
+            Greg Slater
+          </name>
+        </author>
+        <link rel="alternate" type="text/html" href="https://digital-land.github.io/blog-post/storing-and-updating-data"/>
+        <id>https://digital-land.github.io/blog-post/storing-and-updating-data</id>
+        
+        <summary type="html">&lt;p class=&#34;govuk-body&#34;&gt;An overview of the data model used by planning.data.gov.uk and the benefits it brings to our users.&lt;/p&gt;</summary>
+    </entry>
+        
+        
+    <entry xml:lang="en-GB">
         <title>Making our API more efficient for data consumers</title>
         <published>2024-08-13</published>
         <author>
