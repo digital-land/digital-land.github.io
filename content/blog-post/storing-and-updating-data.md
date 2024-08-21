@@ -63,11 +63,11 @@ Once that record of the relationship between the data provider, their reference 
 
 Using our example Barnet Article 4 direction area entity we can see the information we’ve captured as facts represented on the [entity web page](https://www.planning.data.gov.uk/entity/7010002551\#).
 
-![A screengrab of the entity page for our example Barnet Article 4 direction area on planning.data.gov.uk](/images/diagrams/screengrabs/entity_page_7010002551.png)
+![A screengrab of the entity page for our example Barnet Article 4 direction area on planning.data.gov.uk](/images/entity_page_7010002551.png)
 
 The Facts links on the right allow users to explore the provenance of each field and value through the facts that we’ve collected. Following the [Facts link](https://www.planning.data.gov.uk/fact/?dataset=article-4-direction-area\&entity=7010002551\&field=name) for the `name` field of this entity shows that the value was initially “*Article 4 Agricultural Land Restriction (1952) Area 1*”, but this was superseded by a new fact on 17/07/2024 with a value of “*Article 4 Agricultural Land Restriction Area 1*”. 
 
-![A screengrab of the fact page of the name field for our example Barnet Article 4 direction area on planning.data.gov.uk](/images/diagrams/screengrabs/fact_page_7010002551_name.png)
+![A screengrab of the fact page of the name field for our example Barnet Article 4 direction area on planning.data.gov.uk](/images/fact_page_7010002551_name.png)
 
 The [link to this individual fact](https://www.planning.data.gov.uk/fact/b1fe5cdcec6d7f478338a7a5216b079a38d2e7745b6d79a67dbf1e85bf7c0293?dataset=article-4-direction-area) will show us the resources that this was captured from.
 
