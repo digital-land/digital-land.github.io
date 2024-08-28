@@ -14,14 +14,15 @@ The planning data team have an extensive [backlog](https://design.planning.data.
 The reason why we have been holding off on this is because while there are several very distinct strategic green infrastructure designations which are widely used and understood, for the more local open space typologies, these are less distinct.
 
 The [National Planning Policy Framework (NPPF)](https://assets.publishing.service.gov.uk/media/669a25e9a3c2a28abb50d2b4/NPPF_December_2023.pdf), and Planning Practice Guidance (PPG) on both [Natural Environment](https://www.gov.uk/guidance/natural-environment) and [Open space, sports and recreation facilities, public rights of way and local green space](https://www.gov.uk/guidance/open-space-sports-and-recreation-facilities-public-rights-of-way-and-local-green-space), include reference to many different forms of open space, such as:
-- National Parks and the Broads;
-- Areas of Outstanding Natural Beauty (AONB);
-- Sites of Special Scientific Importance (SSSI);
-- Special Protection Areas;
-- Special Areas of Conservation;
-- Ramsar Sites;
-- Green Belt; and
-- Local Wildlife Sites;
+
+- National Parks and the Broads
+- Areas of Outstanding Natural Beauty (AONB)
+- Sites of Special Scientific Importance (SSSI)
+- Special Protection Areas
+- Special Areas of Conservation
+- Ramsar Sites
+- Green Belt
+- Local Wildlife Sites
 
 These all have clear definitions, and criteria for meeting their designation. In many cases, a Local Planning Authority (LPA) would have to go through a formal process to designate additional land, or to change or remove boundaries of these planning considerations.
 
@@ -44,24 +45,26 @@ The data design team have been undertaking a review of existing national, region
 From this, we propose the following approach:
 
 Separate standalone designations for more strategic open space typologies:
-- Area of Outstanding Natural Beauty;
-- Conservation Areas;
-- Green Belt;
-- Green Corridors;
-- Local Green Space;
-- Local Nature Reserves;
-- Metropolitan Open Land;
-- National Nature Reserves;
-- National Parks and the Broads;
-- Ramsar;
-- Regionally Important Geological Site;
-- Sites of importance for Nature Conservation;
-- Sites of Special Scientific Interest;
-- Special Areas of Conservation;
-- Special Protection Areas; and
-- Suitable Alternative Natural Greenspace;
+
+- Area of Outstanding Natural Beauty
+- Conservation Areas
+- Green Belt
+- Green Corridors
+- Local Green Space
+- Local Nature Reserves
+- Metropolitan Open Land
+- National Nature Reserves
+- National Parks and the Broads
+- Ramsar
+- Regionally Important Geological Site
+- Sites of importance for Nature Conservation
+- Sites of Special Scientific Interest
+- Special Areas of Conservation
+- Special Protection Areas
+- Suitable Alternative Natural Greenspace
 
 For more local open space typologies, we propose asking for LPAs to provide their data using the following open space typologies:
+
 - Amenity Greenspace - Informal recreation spaces, communal green spaces in and around housing, village greens, urban commons, and civic spaces
 - Public Parks and Gardens - Accessible, high quality opportunities for informal recreation and community events, including urban parks, country parks, regional parks, forest parks, and formal gardens
 - Natural and Semi-Natural Greenspace - Informal and natural green space providing the opportunity to promote meaningful and safe recreation, including woodland and scrub, grassland, heath or moor, wetlands, open and running water, and wastelands
