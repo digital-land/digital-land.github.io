@@ -74,4 +74,4 @@ For more local open space typologies, we propose asking for LPAs to provide thei
 - Playing pitches - Pitch sports including football, rugby union, rugby league, hockey, lacrosse, cricket, American football etc
 - Other outdoor sports - Courts and greens comprising natural or artificial surfaces, including tennis courts, bowling greens, athletics tracks and other outdoor sports areas
 
-We would be really keen to hear from anyone who has any thoughts on this proposed approach, and whether providing data in this format would work for you. 
+We would be really keen to hear from anyone who has any thoughts on this proposed approach, and whether providing data in this format would work for you. We have an open github discussion page on ['Green space'](https://github.com/digital-land/data-standards-backlog/discussions/64) and would welcome your input.
