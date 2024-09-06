@@ -1,7 +1,7 @@
 ---
 title: "Open data and the planning data platform"
 date: 2024-09-05
-author: "Kieran Wint and Mike Rose"
+author: "Mike Rose and Kieran Wint"
 status: beta
 section: Data standards
 summary: An explainer on what open data is, how it works, and why we need it for the platform.
