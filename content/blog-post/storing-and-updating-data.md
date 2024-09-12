@@ -20,7 +20,7 @@ This model has advantages:
 
 This provides benefits for our users:
 
-* They can access a huge range of data using [consistent methods](https://www.planning.data.gov.uk/docs), whether they’re interested in [tree preservation zones in Southwark](https://www.planning.data.gov.uk/entity/?dataset=tree-preservation-zone&geometry_curie=statistical-geography%3AE09000028&entry_date_day=&entry_date_month=&entry_date_year=), or [public transport access nodes in Bolton](https://www.planning.data.gov.uk/entity/?dataset=transport-access-node\&geometry\_curie=statistical-geography%3AE08000001\&entry\_date\_day=\&entry\_date\_month=\&entry\_date\_year=)  
+* They can access a huge range of data using [consistent methods](https://www.planning.data.gov.uk/docs), whether they’re interested in [tree preservation zones in Southwark](https://www.planning.data.gov.uk/entity/?dataset=tree-preservation-zone&geometry_curie=statistical-geography%3AE09000028&entry_date_day=&entry_date_month=&entry_date_year=), or [public transport access nodes in Bolton](https://www.planning.data.gov.uk/entity/?dataset=transport-access-node&geometry_curie=statistical-geography%3AE08000001)  
 * They can always interrogate the provenance of the data they’re interested in, helping to improve their trust in it  
 * They can use a unique and persistent identifier to make reliable references to the same thing across different systems, for example, from our platform to planning services like [PlanX](https://www.planx.uk/)
 
