@@ -13,7 +13,7 @@ In particular to support in navigating the question of ensuring the right permis
 
 I may have already lost you, so what this really means is…
 
-DLUHC are putting in place processes and technology to produce national level datasets by collating data from local planning authorities (LPAs). What I have been brought in to consider on a dataset by dataset basis is whether there are any intellectual property or legal data sharing type issues in doing this.
+MHCLG are putting in place processes and technology to produce national level datasets by collating data from local planning authorities (LPAs). What I have been brought in to consider on a dataset by dataset basis is whether there are any intellectual property or legal data sharing type issues in doing this.
 
 This blog post is to introduce myself and this activity that we are undertaking, and also to report back on a meeting we had yesterday with the Ordnance Survey.
 
