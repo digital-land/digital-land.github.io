@@ -20,7 +20,7 @@ To achieve this the data design team has been looking at what data is available,
 By providing the right data for everyone to access we can unlock the potential in the planning system. Enabling our users to build services, develop new policies that enable planners, local authorities and communities to access and use planning information more effectively.
 
 ## A local plan specification   
-In order to collate all of the existing local plans in England, from different LPAs, the team [developed a specification for local plans](https://digital-land.github.io/specification/specification/local-plan/) which could standardise and streamline how we collect and handle this data from multiple sources. See the [Appendix](https://github.com/digital-land/digital-land.github.io/new/main/content/blog-post#appendix) for more details.
+In order to collate all of the existing local plans in England, from different LPAs, the team [developed a specification for local plans](https://digital-land.github.io/specification/specification/local-plan/) which could standardise and streamline how we collect and handle this data from multiple sources. See the [Appendix](https://digital-land.github.io/blog-post/swarming-around-local-plan-data/#appendix) for more details.
 
 The team gathered data from [311 LPA websites](https://www.gov.uk/find-local-council) in England and collected thousands of PDFs and other documents relating to their local plan.
 
