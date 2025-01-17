@@ -24,7 +24,7 @@ In order to collate all of the existing local plans in England, from different L
 
 The team gathered data from [311 LPA websites](https://www.gov.uk/find-local-council) in England and collected thousands of PDFs and other documents relating to their local plan.
 
-To help with this time-consuming task we created a [Local Plans Explorer prototype](https://local-plans-explorer.digital-land.info/), a tool which can quickly and carefully review documents to make sure they are valid and relevant \- for example checking the documents contain a date, a local plan description, a local plan boundary etc to decide if the document contains the right data to put on the planning data platform. This was validated by members of the team who have previously been planners and colleagues from the Local Plans policy team at MHCLG. They swarmed together to help to check that the information ‘scraped’ from the websites was accurate, relevant and useful.
+To help with this time-consuming task we created a Local Plans Explorer prototype, a tool which can quickly and carefully review documents to make sure they are valid and relevant \- for example checking the documents contain a date, a local plan description, a local plan boundary etc to decide if the document contains the right data to put on the planning data platform. This was validated by members of the team who have previously been planners and colleagues from the Local Plans policy team at MHCLG. They swarmed together to help to check that the information ‘scraped’ from the websites was accurate, relevant and useful.
 
 ## Rapid progress
 In just one afternoon, with the help of the prototype, the team processed, ready for export to the platform:
