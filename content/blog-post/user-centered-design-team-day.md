@@ -1,13 +1,11 @@
 ---
-title: "User-centerd design team day"
+title: "User-centred design team day"
 date: 2025-02-14
 author: "Gwen Henderson and Maddie Broxup - content designers"
 status: beta
 section: Data standards
 summary: Design team day.
 ---
-
-User-centred design day
 
 ##Who we are
 
