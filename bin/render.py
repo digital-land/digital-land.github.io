@@ -1,18 +1,5 @@
 #!/usr/bin/env python3
 
-# =====================================================================
-# Monkeypatch: Fix Jinja2 3.1+ compatibility for digital-land-frontend
-# TODO: Apply this fix on digital-land-frontend
-# =====================================================================
-import sys
-import jinja2
-
-jinja2.filters.evalcontextfilter = jinja2.pass_eval_context
-
-# Force it into the sys.modules cache so legacy internal imports resolve
-sys.modules['jinja2.filters'] = jinja2.filters
-# =====================================================================
-
 import os
 
 from digital_land_frontend.jinja import setup_jinja
