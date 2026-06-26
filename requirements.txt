@@ -3,7 +3,7 @@ black
 click
 dataclasses
 -e git+https://github.com/digital-land/digital-land-python.git#egg=digital-land
-frontmatter
+frontmatter==3.0.8
 filelock
 importlib-metadata
 MarkupSafe>=1.1,<2.0
