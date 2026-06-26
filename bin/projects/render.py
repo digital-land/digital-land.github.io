@@ -3,7 +3,7 @@
 import os
 import markdown
 
-import frontmatter
+from frontmatter import Frontmatter
 
 from bin.projects.jinja_setup import setup, render
 from digital_land_frontend.filters import make_link
@@ -26,7 +26,7 @@ def markdown_filter(s):
 
 
 def get_project_content(filename):
-    file_content = frontmatter.load(filename)
+    file_content = Frontmatter.read_file(filename)
     return {
         "name": file_content["attributes"].get("title"),
         "status": file_content["attributes"].get("status"),
@@ -83,7 +83,7 @@ def render_project_content_pages(content_template, project_dir, project):
     content_dir = f"{project_dir}/{project}/content"
     md_files = markdown_files_only(os.listdir(content_dir))
     for f in md_files:
-        file_content = frontmatter.load(f"{content_dir}/{f}")
+        file_content = Frontmatter.read_file(f"{content_dir}/{f}")
         html = compile_markdown(md, file_content["body"])
         render(
             f"{project}/{f.replace('.md', '')}/index.html",
@@ -96,7 +96,7 @@ def render_project_content_pages(content_template, project_dir, project):
 
 
 def get_update_content(filename):
-    file_content = frontmatter.load(filename)
+    file_content = Frontmatter.read_file(filename)
     return {
         "name": file_content["attributes"].get("name"),
         "type": file_content["attributes"].get("type"),

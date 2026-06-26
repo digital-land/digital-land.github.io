@@ -4,7 +4,7 @@ import os
 import jinja2
 
 from pathlib import Path
-import frontmatter
+from frontmatter import Frontmatter
 from bin.weeknotes.summary import create_summary
 from bin.summary import create_summary
 
@@ -26,7 +26,7 @@ def markdown_files_only(files, file_ext=".md"):
 def read_content_file(filename, expanded=False):
     content = {}
     # fn = Path(filename)
-    file_content = frontmatter.load(filename)
+    file_content = Frontmatter.read_file(filename)
 
     content["content"] = compile_markdown(file_content["body"])
     content["frontmatter"] = file_content["attributes"]
