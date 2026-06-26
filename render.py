@@ -2,6 +2,9 @@
 
 import os
 import sys
+import jinja2.filters
+if not hasattr(jinja2.filters, "evalcontextfilter"):
+    jinja2.filters.evalcontextfilter = jinja2.pass_eval_context
 
 from pathlib import Path
 from shutil import copyfile
