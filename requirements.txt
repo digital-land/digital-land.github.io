@@ -7,7 +7,7 @@ python-frontmatter
 filelock
 importlib-metadata
 MarkupSafe==2.0.1
-Jinja2>=3.1.6
+Jinja2>=3.0.3
 Markdown
 mypy-extensions
 pathspec
